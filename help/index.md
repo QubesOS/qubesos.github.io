@@ -9,9 +9,9 @@ Need help with Qubes OS? Try these resources.
 
 Add **Qubes OS** to refine your query, you might find just what you need.
 
-### [QubesOS Mailing Lists]({{ site.url }}/wiki/QubesLists)
+### [QubesOS Mailing Lists]({{ site.baseurl }}/wiki/QubesLists)
 
--   Please send all the questions regarding Qubes OS to one of [these]({{ site.url }}/wiki/QubesLists) mailing lists. 
+-   Please send all the questions regarding Qubes OS to one of [these]({{ site.baseurl }}/wiki/QubesLists) mailing lists. 
 -   To subscribe to the user list, send a blank mail to `qubes-users+subscribe@googlegroups.com`.
 -   By sending a message to the appropriate mailing list, you are not only giving others a chance to help you, 
 but you may also be helping others by starting a public discussion about a shared problem or interest.

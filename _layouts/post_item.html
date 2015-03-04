@@ -16,8 +16,8 @@ layout: news
     <span class="post-date">
       {{ post.date | date_to_string }}
     </span>
-    <a href="{{ post.author | uri_escape | prepend: "/author/" | prepend: site.baseurl | prepend: site.url }}" class="post-author">
-      <img src="{{ post.author | uri_escape | prepend: "/attachment/author/" | prepend: site.baseurl | prepend: site.url | append: ".png" }}" class="avatar" alt="{{ post.author }} avatar" width="24" height="24">
+    <a href="{{ post.author | uri_escape | prepend: "/author/" | prepend: site.baseurl }}" class="post-author">
+      <img src="{{ post.author | uri_escape | prepend: "/attachment/author/" | prepend: site.baseurl | append: ".png" }}" class="avatar" alt="{{ post.author }} avatar" width="24" height="24">
       {{ post.author }}
     </a>
   </div>

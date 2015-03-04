@@ -1,0 +1,27 @@
+<article>
+  <h2>
+    <a href="{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </h2>
+  <span class="post-category">
+    <span class="label">
+      {{ post.categories | array_to_sentence_string }}
+    </span>
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      {{ post.date | date_to_string }}
+    </span>
+    <a href="{{ post.author | prepend: "/author/" | prepend: site.baseurl | prepend: site.url | append: "/" | uri_escape }}" class="post-author">
+      <img src="{{ post.author | prepend: "/attachment/author/" | prepend: site.baseurl | prepend: site.url | append: ".png"  | uri_escape }}" class="avatar" alt="{{ post.author }} avatar" width="24" height="24">
+      {{ post.author }}
+    </a>
+  </div>
+  <div class="clear">
+    <br />
+  </div>
+  <div class="post-content">
+    {{ post.content }}
+  </div>
+</article>

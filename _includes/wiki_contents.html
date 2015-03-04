@@ -1,0 +1,8 @@
+<div class="unit one-fifth hide-on-mobiles">
+  <aside>
+    {% for section in site.data.wiki %}
+    <h4>{{ section.title }}</h4>
+    {% include wiki_ul.html items=section.wiki %}
+    {% endfor %}
+  </aside>
+</div>

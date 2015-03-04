@@ -12,7 +12,7 @@
 
     <div class="unit one-third align-center center-on-mobiles">
       <p>
-        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">News feed (RSS)</a><br />
+        <a href="{{ "/feed.xml" | prepend: site.url }}">News feed (RSS)</a><br />
         <a href="{{ "/commits/master.atom" | prepend: site.repository }}">Commit feed (RSS)</a><br />
       </p>
     </div>
@@ -20,9 +20,9 @@
     <div class="unit one-third align-right center-on-mobiles">
       <p>
         <a href="{{ site.repository }}">Source of this site</a><br />
-        <a rel="license" href="{{ "/LICENSE" | prepend:  site.baseurl }}">
+        <a rel="license" href="{{ "/LICENSE" | prepend:  site.url }}">
         <img alt="License" style="border-width:0"
-             src="{{ "/attachment/img/LICENSE.png" | prepend:  site.baseurl }}"/>
+             src="{{ "/attachment/img/LICENSE.png" | prepend:  site.url }}"/>
         </a><br />
       </p>
     </div>

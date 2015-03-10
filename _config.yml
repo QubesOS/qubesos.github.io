@@ -1,0 +1,40 @@
+# Site settings
+title: Qubes OS Project
+#email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Qubes OS is an open source operating system designed to provide strong 
+  security for desktop computing using Security by Compartmentalization 
+  approach. 
+  Qubes is based on Xen, X Window System, and Linux, and can run most 
+  Linux applications and utilize most of the Linux drivers. 
+  It can also run Windows apps natively in Windows AppVMs (Beta).
+#baseurl: "" # the subpath of your site, e.g. /blog/
+#url: "https://www.qubes-os.org" # the base hostname & protocol for your site
+#twitter_username: 
+github_username:  QubesOS
+# Project Settings
+project_url: "https://www.qubes-os.org"
+project_repo_path: "https://github.com/QubesOS"
+project_repo_site: "/qubesos.github.io"
+project_repo_wiki: "/qubes-wiki"
+project_repo_artwork: "/qubes-artwork"
+
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+timezone: UTC
+encoding: utf-8
+relative_permalinks: false
+permalink: /news/:year/:month/:day/:title/
+excerpt_separator: ""
+gems:
+  - jekyll-redirect-from
+
+collections:
+#  docs:
+#    output: true
+  wiki:
+    output: true
+  hcl:
+    output: true

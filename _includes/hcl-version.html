@@ -1,0 +1,9 @@
+{% assign value = include.version.works %}
+{% capture background %}{% include hcl-color.css value=value %}{% endcapture %}
+
+<td style="background: {{ background }}">{{ include.version.qubes }}</td>
+<td style="background: {{ background }}">{{ include.version.xen }}</td>
+<td style="background: {{ background }}">{{ include.version.kernel }}</td>
+<td>{{ include.version.remark }}</td>
+<td>{{ include.version.credit }}</td>
+

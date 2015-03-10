@@ -15,5 +15,5 @@ Use `git clone --recursive` to check out submodules, too.
 
 # Running jekyll on your localhost
 
-Run `jekyll s -V --trace (--skip-initial)`.
+Run `jekyll s --safe -V --trace (--skip-initial)`.
 

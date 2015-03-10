@@ -1,0 +1,11 @@
+{% assign items = include.items %}
+
+{% for item in items %}
+  {% assign item_url = item | prepend:"/wiki/" | append:"/" %}
+
+  {% for p in site.wiki %}
+    {% if p.url == item_url %}
+      <a class="page-link" href="{{ p.url | prepend: site.baseurl | prepend: site.url }}">{{ p.title }}</a>
+    {% endif %}
+  {% endfor %}
+{% endfor %}

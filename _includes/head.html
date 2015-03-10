@@ -1,0 +1,16 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" type="image/x-icon" href="{{ "/attachment/icons/512x512/apps/qubes-logo-icon.png" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - Official Feed" href="{{ "/feed.xml" | prepend: site.project_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - Feed" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="alternate" type="application/atom+xml" title="Recent commits to {{ site.title }} Official Website’s master branch" href="{{ "/commits/master.atom" | prepend: site.project_repo_site | prepend: site.project_repo_path }}">
+  <link rel="alternate" type="application/atom+xml" title="Recent commits to {{ site.title }} Website’s master branch" href="{{ site.repository }}/commits/master.atom">
+</head>

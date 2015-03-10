@@ -1,0 +1,10 @@
+{% if include.param %}
+    {% assign value = include.param %}
+{% else %}
+    {% assign value = 'unknown' %}
+{% endif %}
+
+<td{{ include.rowspan }} style="background: {% include hcl-color.css value=value %};">
+    {{ value }}
+</td>
+

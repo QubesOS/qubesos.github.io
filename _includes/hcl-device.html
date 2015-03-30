@@ -1,7 +1,7 @@
 {% assign rowspan = device.versions | size %}
 {% assign range = rowspan | minus:1 %}
 
-{% if rowspan > 1 %}
+{% if rowspan >= 1 %}
     {% capture rowspan %} rowspan="{{ rowspan }}"{% endcapture %}
 {% endif %}
 

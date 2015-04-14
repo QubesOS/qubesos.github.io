@@ -32,8 +32,10 @@
 }
 
 .site-nav {
-    float: right;
+    float: left;
     line-height: 56px;
+    margin-left: 0;
+    list-style: none;
 
     .menu-icon {
         display: none;
@@ -45,7 +47,7 @@
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
-            margin-left: 20px;
+          margin-left: 5px;
         }
     }
 

@@ -1,15 +1,12 @@
 [submodule "attachment"]
 	path = attachment
-	url = https://github.com/Nukama/qubes-attachment
-[submodule "_author"]
-	path = _author
-	url = https://github.com/Nukama/qubes-author
-[submodule "_hcl"]
-	path = _hcl
-	url = https://github.com/Nukama/qubes-hcl
-[submodule "_wiki"]
-	path = _wiki
-	url = https://github.com/Nukama/nukama.github.io.wiki.git
+	url = https://github.com/QubesOS/qubes-attachment
 [submodule "_posts"]
 	path = _posts
-	url = https://github.com/Nukama/qubes-posts
+	url = https://github.com/QubesOS/qubes-posts
+[submodule "_hcl"]
+	path = _hcl
+	url = https://github.com/QubesOS/qubes-hcl
+[submodule "_doc"]
+	path = _doc
+	url = https://github.com/Nukama/qubes-doc

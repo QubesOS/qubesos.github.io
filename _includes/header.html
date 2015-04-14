@@ -2,8 +2,8 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.url }}{{ site.baseurl }}/wiki/">
-    <img src="{{ "/attachment/icons/128x128/apps/qubes-logo-icon.png" | prepend: site.baseurl | prepend: site.url }}"
+    <a class="site-title" href="{{ site.url }}{{ site.baseurl }}/">
+    <img src="{{ "/attachment/icons/48x48/apps/qubes-logo-icon.png" | prepend: site.baseurl | prepend: site.url }}"
                 width="48" height="48" alt="Qubes OS Project">{{ site.title }}</a>
 
     <form class="site-search" action="https://duckduckgo.com/" method="get">
@@ -21,18 +21,12 @@
       </a>
 
       <div class="trigger">
-        <a class="page-link" href="{{ "/wiki/" | prepend: site.baseurl | prepend: site.url }}">Home</a>
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
--->
-        {% for section in site.data.wiki %}
-          {% include nav-wiki.html items=section.wiki %}
-        {% endfor %}
-        <a class="page-link" href="{{ "/hcl/" | prepend: site.baseurl | prepend: site.url }}">HCL</a>
+        <a class="page-link" href="{{ "/doc/SimpleIntro/" | prepend: site.baseurl | prepend: site.url }}">Intro</a>
+        <a class="page-link" href="{{ "/doc/QubesScreenshots/" | prepend: site.baseurl | prepend: site.url }}">Screenshots</a>
+        <a class="page-link" href="{{ "/doc/QubesDevelopers/" | prepend: site.baseurl | prepend: site.url }}">Contact</a>
+        <a class="page-link" href="{{ "/doc/QubesDownloads/" | prepend: site.baseurl | prepend: site.url }}">Download</a>
+        <a class="page-link" href="{{ "/doc/" | prepend: site.baseurl | prepend: site.url }}">Documentation</a>
+        <a class="page-link" href="{{ "/community/" | prepend: site.baseurl | prepend: site.url }}">Community</a>
       </div>
     </nav>
 

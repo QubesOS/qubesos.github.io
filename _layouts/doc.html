@@ -10,6 +10,11 @@ layout: default
           <h1>{{ page.title }}</h1>
           -->
           {{ content }}
+<!--
+          <div>
+            <a href="{{ "/edit/master" | prepend: site.project_repo_doc | prepend: site.project_repo_path | append: page.url | replace: '/doc', '' | append: '.md' | replace: '/.md','.md' }}">edit source of this page</a>
+          </div>
+-->
         </article>
       </div>
 

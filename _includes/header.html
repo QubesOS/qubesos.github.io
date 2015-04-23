@@ -2,14 +2,8 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.url }}{{ site.baseurl }}/">
     <img src="{{ "/attachment/icons/128x128/apps/qubes-logo-icon.png" | prepend: site.baseurl | prepend: site.url }}"
-                width="48" height="48" alt="Qubes OS Project">{{ site.title }}</a>
-
-    <form class="site-search" action="https://duckduckgo.com/" method="get">
-        <input type="hidden" name="sites" value="www.qubes-os.org" />
-        <input class="search" type="text" name="q" results="0" placeholder="Search&hellip;" />
-    </form>
+                width="48" height="48" style="float:right" alt="Qubes OS Project">
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -21,6 +15,7 @@
       </a>
 
       <div class="trigger">
+        <a class="page-link" href="{{ "/" | prepend: site.baseurl | prepend: site.url }}">Home</a>
         <a class="page-link" href="{{ "/doc/SimpleIntro/" | prepend: site.baseurl | prepend: site.url }}">Intro</a>
         <a class="page-link" href="{{ "/doc/QubesScreenshots/" | prepend: site.baseurl | prepend: site.url }}">Screenshots</a>
         <a class="page-link" href="{{ "/doc/QubesDevelopers/" | prepend: site.baseurl | prepend: site.url }}">Contact</a>

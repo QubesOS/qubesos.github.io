@@ -9,4 +9,4 @@
 	url = https://github.com/QubesOS/qubes-hcl
 [submodule "_doc"]
 	path = _doc
-	url = https://github.com/Nukama/qubes-doc
+	url = https://github.com/QubesOS/qubes-doc

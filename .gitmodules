@@ -4,9 +4,9 @@
 [submodule "_posts"]
 	path = _posts
 	url = https://github.com/QubesOS/qubes-posts
-[submodule "_hcl"]
-	path = _hcl
-	url = https://github.com/QubesOS/qubes-hcl
 [submodule "_doc"]
 	path = _doc
 	url = https://github.com/QubesOS/qubes-doc
+[submodule "_hcl"]
+	path = _hcl
+	url = https://github.com/QubesOS/qubes-hcl

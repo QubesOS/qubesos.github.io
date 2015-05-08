@@ -1,0 +1,53 @@
+#!/bin/bash
+
+script_dir="`dirname $0`"
+
+commit_msg_file=`mktemp`
+
+set -e
+
+update_submodule() {
+    module=$1
+
+    git -C $module fetch --tags origin master
+    if [ -n "`git -C $module log HEAD..FETCH_HEAD 2>/dev/null`" ]; then
+        if $script_dir/verify-git-tag $module FETCH_HEAD; then
+            echo "$module:" >>$commit_msg_file
+            git -C $module tag -v `git -C $module describe FETCH_HEAD` 2>&1 |\
+                tail -n +3 | sed 's/^/    /' >>$commit_msg_file
+            echo >>$commit_msg_file
+            git -C $module log --oneline HEAD..FETCH_HEAD |\
+                sed 's/^/    /' >>$commit_msg_file
+            git -C $module merge --ff-only FETCH_HEAD || exit 1
+            echo >>$commit_msg_file
+            return 0
+        else
+            return 1
+        fi
+    else
+        return 1
+    fi
+}
+
+changed=
+
+for mod in _doc _hcl _posts attachment; do
+    if update_submodule $mod; then
+        git add $mod
+        changed="$changed $mod"
+    fi
+done
+
+if [ -n "$changed" ]; then
+    echo "autoupdate:$changed" >${commit_msg_file}.full
+    echo >>${commit_msg_file}.full
+    cat ${commit_msg_file}  >>${commit_msg_file}.full
+    git commit --no-edit -F ${commit_msg_file}.full
+    rm -f ${commit_msg_file}.full
+    commit_id=`git show --pretty=format:%H|head -1`
+    tag_name=auto_${commit_id:0:8}
+    git tag -s -m "Automatic tag for commit $commit_id" $tag_name
+    git push origin master $tag_name
+fi
+
+rm -f $commit_msg_file

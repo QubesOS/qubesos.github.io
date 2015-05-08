@@ -29,6 +29,13 @@ update_submodule() {
     fi
 }
 
+# first update itself
+git fetch origin master
+if $script_dir/verify-git-tag . FETCH_HEAD; then
+    git merge --ff-only FETCH_HEAD || exit 1
+    git submodule update || exit 1
+fi
+
 changed=
 
 for mod in _doc _hcl _posts attachment; do

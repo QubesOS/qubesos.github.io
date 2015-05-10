@@ -30,10 +30,12 @@ update_submodule() {
 }
 
 # first update itself
-git fetch origin master
+git fetch --tags origin master
 if $script_dir/verify-git-tag . FETCH_HEAD; then
     git merge --ff-only FETCH_HEAD || exit 1
     git submodule update || exit 1
+else
+    exit 1
 fi
 
 changed=

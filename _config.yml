@@ -16,6 +16,8 @@ project_repo_site: "/qubesos.github.io"
 project_repo_wiki: "/qubes-wiki"
 project_repo_artwork: "/qubes-artwork"
 
+# Tor Mirror
+project_url_tor: "http://qubesosmamapaxpa.onion"
 
 # Build settings
 markdown: kramdown

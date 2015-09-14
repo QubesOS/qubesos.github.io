@@ -229,14 +229,6 @@
     }
 
     h2 {
-        font-size: $base-font-size+12px;
-
-        @include media-query($on-laptop) {
-            font-size: $base-font-size+10px;
-        }
-    }
-
-    h3 {
         font-size: $base-font-size+10px;
 
         @include media-query($on-laptop) {
@@ -244,15 +236,7 @@
         }
     }
 
-    h4 {
-        font-size: $base-font-size+8px;
-
-        @include media-query($on-laptop) {
-            font-size: $base-font-size+6px;
-        }
-    }
-
-    h5 {
+    h3 {
         font-size: $base-font-size+6px;
 
         @include media-query($on-laptop) {
@@ -260,11 +244,27 @@
         }
     }
 
-    h6 {
+    h4 {
         font-size: $base-font-size+4px;
 
         @include media-query($on-laptop) {
             font-size: $base-font-size+2px;
+        }
+    }
+
+    h5 {
+        font-size: $base-font-size+2px;
+
+        @include media-query($on-laptop) {
+            font-size: $base-font-size;
+        }
+    }
+
+    h6 {
+        font-size: $base-font-size;
+
+        @include media-query($on-laptop) {
+            font-size: $base-font-size;
         }
     }
 }

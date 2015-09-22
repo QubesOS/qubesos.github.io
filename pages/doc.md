@@ -14,6 +14,7 @@ The Basics
 ----------
  *  [A Simple Introduction to Qubes](/doc/SimpleIntro/)
  *  [Getting Started](/doc/GettingStarted/)
+ *  [Users' FAQ](/doc/UserFaq/)
  *  [Further reading: How is Qubes different from...?](http://blog.invisiblethings.org/2012/09/12/how-is-qubes-os-different-from.html)
  *  [Further reading: Why Qubes is more than a collection of VMs](http://www.invisiblethingslab.com/resources/2014/Software_compartmentalization_vs_physical_separation.pdf)
 
@@ -29,7 +30,7 @@ Installing Qubes
 ----------------
  *  [Use Qubes without installing: Qubes Live USB (alpha)](https://groups.google.com/d/msg/qubes-users/IQdCEpkooto/iyMh3LuzCAAJ)
  *  [How to Install Qubes](/doc/InstallationGuide/)
- *  [Qubes Downloads](/doc/Downloads/)
+ *  [Qubes Downloads](/doc/downloads/)
  *  [Why and How to Verify Signatures](/doc/VerifyingSignatures/)
  *  [Security Considerations when Installing](/doc/InstallSecurity/)
 
@@ -69,7 +70,8 @@ Managing Operating Systems within Qubes
 
 Security Guides
 ---------------
- *  [General Security Guidelines](/doc/SecurityGuidelines/)
+ *  [General Security Information](/doc/QubesSecurity/)
+ *  [Security Guidelines](/doc/SecurityGuidelines/)
  *  [Understanding Qubes Firewall](/doc/QubesFirewall/)
  *  [Understanding and Preventing Data Leaks](/doc/DataLeaks/)
  *  [Installing Anti Evil Maid](/doc/AntiEvilMaid/)

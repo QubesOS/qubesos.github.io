@@ -20,50 +20,56 @@ Qubes Downloads
 Qubes Release 3.0
 ---------------
 
--   [Release notes](/doc/releases/3.0/release-notes/)
--   [Qubes-R3.0-rc3-x86\_64-DVD.iso](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-rc3-x86_64-DVD.iso) (mirror 1)
--   [Digital Signature](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-rc3-x86_64-DVD.iso.asc) (mirror 1)
--   [Digests](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-rc3-x86_64-DVD.iso.DIGESTS) (mirror 1)
--   [Qubes-R3.0-rc3-x86\_64-DVD.iso](https://ftp.qubes-os.org/iso/Qubes-R3.0-rc3-x86_64-DVD.iso) (mirror 2)
--   [Digital Signature](https://ftp.qubes-os.org/iso/Qubes-R3.0-rc3-x86_64-DVD.iso.asc) (mirror 2)
--   [Digests](https://ftp.qubes-os.org/iso/Qubes-R3.0-rc3-x86_64-DVD.iso.DIGESTS) (mirror 2)
+-   [Qubes-R3.0-rc3-x86\_64-DVD.iso](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-rc3-x86_64-DVD.iso)
+      [[signature]](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-rc3-x86_64-DVD.iso.asc)
+      [[digests]](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-rc3-x86_64-DVD.iso.DIGESTS)
+      `mirrors.kernel.org`
+-   [Qubes-R3.0-rc3-x86\_64-DVD.iso](https://ftp.qubes-os.org/iso/Qubes-R3.0-rc3-x86_64-DVD.iso)
+      [[signature]](https://ftp.qubes-os.org/iso/Qubes-R3.0-rc3-x86_64-DVD.iso.asc)
+      [[digests]](https://ftp.qubes-os.org/iso/Qubes-R3.0-rc3-x86_64-DVD.iso.DIGESTS)
+      `ftp.qubes-os.org`
 
 -   **[Installation Guide](/doc/InstallationGuide/)**
+-   [Release notes](/doc/releases/3.0/release-notes/)
 -   [Upgrading to Qubes R3.0 rc3](/doc/releases/3.0/release-notes/#upgrading)
 
 Qubes Release 2
 ---------------
 
--   [Release notes](/doc/releases/2.0/release-notes/)
--   [Qubes-R2-x86\_64-DVD.iso](https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso) (mirror 1)
--   [Digital Signature](https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso.asc) (mirror 1)
--   [Digests](https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso.DIGESTS) (mirror 1)
--   [Qubes-R2-x86\_64-DVD.iso](https://ftp.qubes-os.org/iso/Qubes-R2-x86_64-DVD.iso) (mirror 2)
--   [Digital Signature](https://ftp.qubes-os.org/iso/Qubes-R2-x86_64-DVD.iso.asc) (mirror 2)
--   [Digests](https://ftp.qubes-os.org/iso/Qubes-R2-x86_64-DVD.iso.DIGESTS) (mirror 2)
+-   [Qubes-R2-x86\_64-DVD.iso](https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso)
+      [[signature]](https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso.asc)
+      [[digests]](https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso.DIGESTS)
+      `mirrors.kernel.org`
+-   [Qubes-R2-x86\_64-DVD.iso](https://ftp.qubes-os.org/iso/Qubes-R2-x86_64-DVD.iso)
+      [[signature]](https://ftp.qubes-os.org/iso/Qubes-R2-x86_64-DVD.iso.asc)
+      [[digests]](https://ftp.qubes-os.org/iso/Qubes-R2-x86_64-DVD.iso.DIGESTS)
+      `ftp.qubes-os.org`
 
 -   **[Installation Guide](/doc/InstallationGuide/)**
+-   [Release notes](/doc/releases/2.0/release-notes/)
 -   [Upgrading to Qubes R2](/doc/releases/2.0/release-notes/#upgrading)
 
 Qubes Release 1
 ---------------
 
-(This is mainly for historical reference, we strongly recommend Qubes R2 above)
+(This is mainly for historical reference. We strongly recommend using Qubes R2 or higher.)
 
--   [Release notes](/doc/releases/1.0/release-notes/)
--   [Qubes-R1-x86\_64-DVD.iso](https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso) (mirror 1)
--   [Digital Signature](https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso.asc) (mirror 1)
--   [Digests](https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso.DIGESTS) (mirror 1)
--   [Qubes-R1-x86\_64-DVD.iso](https://ftp.qubes-os.org/iso/Qubes-R1-x86_64-DVD.iso) (mirror 2)
--   [Digital Signature](https://ftp.qubes-os.org/iso/Qubes-R1-x86_64-DVD.iso.asc) (mirror 2)
--   [Digests](https://ftp.qubes-os.org/iso/Qubes-R1-x86_64-DVD.iso.DIGESTS) (mirror 2)
+-   [Qubes-R1-x86\_64-DVD.iso](https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso)
+      [[signature]](https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso.asc)
+      [[digests]](https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso.DIGESTS)
+      `mirrors.kernel.org`
+-   [Qubes-R1-x86\_64-DVD.iso](https://ftp.qubes-os.org/iso/Qubes-R1-x86_64-DVD.iso)
+      [[signature]](https://ftp.qubes-os.org/iso/Qubes-R1-x86_64-DVD.iso.asc)
+      [[digests]](https://ftp.qubes-os.org/iso/Qubes-R1-x86_64-DVD.iso.DIGESTS)
+      `ftp.qubes-os.org`
 
 -   **[Installation Guide](/doc/InstallationGuide/)**
+-   [Release notes](/doc/releases/1.0/release-notes/)
 
 Mirrors
 -------
 
-Qubes ISOs are also available from the following mirrors:
+Qubes ISOs are available from the following mirrors:
 
 -   [Burnbit torrent](http://burnbit.com/search?q=qubes)
 -   [mirrors.kernel.org](http://mirrors.kernel.org/qubes/iso/)

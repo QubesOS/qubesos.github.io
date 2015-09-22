@@ -2,9 +2,9 @@
 layout: doc
 title: Introduction
 permalink: /intro/
-redirect_from: \
-  /doc/SimpleIntro/
-  /wiki/SimpleIntro/
+redirect_from:
+- "/doc/SimpleIntro/"
+- "/wiki/SimpleIntro/"
 ---
 
 A Simple Introduction to Qubes

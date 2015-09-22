@@ -2,9 +2,9 @@
 layout: doc
 title: Media
 permalink: /media/
-redirect_from: \
-  /doc/QubesScreenshots/
-  /wiki/QubesScreenshots/
+redirect_from:
+- "/doc/QubesScreenshots/"
+- "/wiki/QubesScreenshots/"
 ---
 
 Select Qubes OS Screenshots

@@ -2,9 +2,9 @@
 layout: doc
 title: People
 permalink: /people/
-redirect_from: \
-  /doc/QubesDevelopers/
-  /wiki/QubesDevelopers/
+redirect_from:
+- "/doc/QubesDevelopers/"
+- "/wiki/QubesDevelopers/"
 ---
 
 Qubes Developers and Contributors

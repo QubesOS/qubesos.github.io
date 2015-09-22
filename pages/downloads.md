@@ -2,9 +2,9 @@
 layout: doc
 title: Downloads
 permalink: /downloads/
-redirect_from: \
-  /doc/QubesDownloads/
-  /wiki/QubesDownloads/
+redirect_from:
+- "/doc/QubesDownloads/"
+- "/wiki/QubesDownloads/"
 ---
 
 Qubes Downloads

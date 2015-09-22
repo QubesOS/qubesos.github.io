@@ -2,9 +2,9 @@
 layout: doc
 title: Donations
 permalink: /donate/
-redirect_from: \
-  /doc/Donations/
-  /wiki/Donations/
+redirect_from:
+- "/doc/Donations/"
+- "/wiki/Donations/"
 ---
 
 Donating to the Qubes Project

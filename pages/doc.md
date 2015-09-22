@@ -2,9 +2,9 @@
 layout: doc
 title: Documentation
 permalink: /doc/
-redirect_from: \
-  /doc/UserDoc/
-  /wiki/UserDoc/
+redirect_from:
+- "/doc/UserDoc/"
+- "/wiki/UserDoc/"
 ---
 
 Qubes Documentation

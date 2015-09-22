@@ -135,7 +135,7 @@ For Developers
  *  [How can I contribute to the Qubes project?](/doc/ContributingHowto/)
  *  [Source Code](/doc/SourceCode/)
  *  [Coding Guidelines](/doc/CodingStyle/)
- *  [Documentation Guidelines](/doc/DocStyle/)
+ *  [Documentation Guidelines](/doc/doc-guidelines/)
  *  [Books for Developers](/doc/DevelBooks/)
  *  [Research Papers](/doc/QubesResearch/)
  *  [Architecture](/doc/QubesArchitecture/)

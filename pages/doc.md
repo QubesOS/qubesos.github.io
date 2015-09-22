@@ -98,11 +98,6 @@ Configuration Guides
  *  [Configuring a Network Printer](/doc/NetworkPrinter/)
  *  [Using External Audio Devices](/doc/ExternalAudio/)
  *  [Booting with GRUB2 and GPT](https://groups.google.com/group/qubes-devel/browse_thread/thread/e4ac093cabd37d2b/d5090c20d92c4128#d5090c20d92c4128)
- *  [Installing on system with new AMD GPU (missing firmware problem)](https://groups.google.com/group/qubes-devel/browse_thread/thread/e27a57b0eda62f76)
- *  [How to install an Nvidia driver in dom0](/doc/InstallNvidiaDriver/)
- *  [Solving problems with Macbook Air 2012](https://groups.google.com/group/qubes-devel/browse_thread/thread/b8b0d819d2a4fc39/d50a72449107ab21#8a9268c09d105e69)
- *  [Getting Sony Vaio Z laptop to work with Qubes](/doc/SonyVaioTinkering/)
- *  [Getting Lenovo 450 to work with Qubes](/doc/Lenovo450Tinkering/)
 
 
 Customization Guides
@@ -113,6 +108,16 @@ Customization Guides
  *  [Language Localization](/doc/LanguageLocalization/)
 
 
+Troubleshooting
+---------------
+ *  [Installing on system with new AMD GPU (missing firmware problem)](https://groups.google.com/group/qubes-devel/browse_thread/thread/e27a57b0eda62f76)
+ *  [How to install an Nvidia driver in dom0](/doc/InstallNvidiaDriver/)
+ *  [Solving problems with Macbook Air 2012](https://groups.google.com/group/qubes-devel/browse_thread/thread/b8b0d819d2a4fc39/d50a72449107ab21#8a9268c09d105e69)
+ *  [Getting Sony Vaio Z laptop to work with Qubes](/doc/SonyVaioTinkering/)
+ *  [Getting Lenovo 450 to work with Qubes](/doc/Lenovo450Tinkering/)
+ *  [Home directory is out of disk space error](/doc/OutOfmemory/)
+
+
 Reference Pages
 ---------------
  *  [Dom0 Command-Line Tools](/doc/DomZeroTools/)
@@ -120,3 +125,18 @@ Reference Pages
  *  [Glossary of Qubes Terminology](/doc/Glossary/)
  *  [Qubes Service Framework](/doc/QubesService/)
  *  [Command Execution in VMs (and Qubes RPC)](/doc/Qrexec/)
+
+
+For Developers
+--------------
+
+ *  [Developer Documentation](/doc/SystemDoc/)
+ *  [Developers' FAQ](/doc/DevelFaq/)
+ *  [How can I contribute to the Qubes project?](/doc/ContributingHowto/)
+ *  [Source Code](/doc/SourceCode/)
+ *  [Coding Guidelines](/doc/CodingStyle/)
+ *  [Documentation Guidelines](/doc/DocStyle/)
+ *  [Books for Developers](/doc/DevelBooks/)
+ *  [Research Papers](/doc/QubesResearch/)
+ *  [Architecture](/doc/QubesArchitecture/)
+ *  [Licensing](/doc/QubesLicensing/)

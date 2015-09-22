@@ -1,10 +1,11 @@
 ---
 layout: doc
-title: Media
-permalink: /media/
+title: Screenshots
+permalink: /screenshots/
 redirect_from:
 - "/doc/QubesScreenshots/"
 - "/wiki/QubesScreenshots/"
+- "/media/"
 ---
 
 Select Qubes OS Screenshots

@@ -5,14 +5,16 @@ permalink: /doc/
 redirect_from:
 - "/doc/UserDoc/"
 - "/wiki/UserDoc/"
+- "/doc/QubesDocs/"
+- "/wiki/QubesDocs/"
 ---
 
-Qubes Documentation
-===================
+Qubes OS Documentation
+======================
 
 The Basics
 ----------
- *  [A Simple Introduction to Qubes](/doc/SimpleIntro/)
+ *  [A Simple Introduction to Qubes](/intro/)
  *  [Getting Started](/doc/GettingStarted/)
  *  [Users' FAQ](/doc/UserFaq/)
  *  [Further reading: How is Qubes different from...?](http://blog.invisiblethings.org/2012/09/12/how-is-qubes-os-different-from.html)
@@ -30,7 +32,7 @@ Installing Qubes
 ----------------
  *  [Use Qubes without installing: Qubes Live USB (alpha)](https://groups.google.com/d/msg/qubes-users/IQdCEpkooto/iyMh3LuzCAAJ)
  *  [How to Install Qubes](/doc/InstallationGuide/)
- *  [Qubes Downloads](/doc/downloads/)
+ *  [Qubes Downloads](/downloads/)
  *  [Why and How to Verify Signatures](/doc/VerifyingSignatures/)
  *  [Security Considerations when Installing](/doc/InstallSecurity/)
 
@@ -112,12 +114,12 @@ Customization Guides
 
 Troubleshooting
 ---------------
+ *  [Home directory is out of disk space error](/doc/OutOfmemory/)
  *  [Installing on system with new AMD GPU (missing firmware problem)](https://groups.google.com/group/qubes-devel/browse_thread/thread/e27a57b0eda62f76)
  *  [How to install an Nvidia driver in dom0](/doc/InstallNvidiaDriver/)
  *  [Solving problems with Macbook Air 2012](https://groups.google.com/group/qubes-devel/browse_thread/thread/b8b0d819d2a4fc39/d50a72449107ab21#8a9268c09d105e69)
  *  [Getting Sony Vaio Z laptop to work with Qubes](/doc/SonyVaioTinkering/)
  *  [Getting Lenovo 450 to work with Qubes](/doc/Lenovo450Tinkering/)
- *  [Home directory is out of disk space error](/doc/OutOfmemory/)
 
 
 Reference Pages
@@ -131,7 +133,6 @@ Reference Pages
 
 For Developers
 --------------
-
  *  [Developer Documentation](/doc/SystemDoc/)
  *  [Developers' FAQ](/doc/DevelFaq/)
  *  [How can I contribute to the Qubes project?](/doc/ContributingHowto/)

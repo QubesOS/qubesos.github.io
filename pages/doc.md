@@ -78,15 +78,15 @@ Security Guides
  *  [Understanding and Preventing Data Leaks](/doc/DataLeaks/)
  *  [Installing Anti Evil Maid](/doc/AntiEvilMaid/)
  *  [Using Multi-factor Authentication with Qubes](/doc/Multi-factorAuthentication/)
- *  [Using GPG more securely in Qubes: Split GPG](/doc/UserDoc/SplitGpg/)
+ *  [Using GPG more securely in Qubes: Split GPG](/doc/SplitGpg/)
  *  [Configuring YubiKey for user authentication](/doc/YubiKey/)
  *  [Note regarding password-less root access in VM](/doc/VMSudo/)
 
 
 Configuration Guides
 --------------------
- *  [Configuration Files](/doc/UserDoc/ConfigFiles/)
- *  [How to Install a Transparent Tor ProxyVM (TorVM)](/doc/UserDoc/TorVM/)
+ *  [Configuration Files](/doc/ConfigFiles/)
+ *  [How to Install a Transparent Tor ProxyVM (TorVM)](/doc/TorVM/)
  *  [How to set up a ProxyVM as a VPN Gateway](/doc/VPN/)
  *  [Storing AppVMs on Secondary Drives](/doc/SecondaryStorage/)
  *  [Where are my external storage devices mounted?](/doc/ExternalDeviceMountPoint/)
@@ -106,8 +106,8 @@ Configuration Guides
 
 Customization Guides
 --------------------
- *  [DispVM Customization](/doc/UserDoc/DispVMCustomization/)
- *  [XFCE Installation in dom0](/doc/UserDoc/XFCE/)
+ *  [DispVM Customization](/doc/DispVMCustomization/)
+ *  [XFCE Installation in dom0](/doc/XFCE/)
  *  [Customizing the GUI experience with KDE](https://groups.google.com/d/topic/qubes-users/KhfzF19NG1s/discussion)
  *  [Language Localization](/doc/LanguageLocalization/)
 

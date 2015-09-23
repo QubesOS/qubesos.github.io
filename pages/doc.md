@@ -91,7 +91,7 @@ Configuration Guides
  *  [Storing AppVMs on Secondary Drives](/doc/SecondaryStorage/)
  *  [Where are my external storage devices mounted?](/doc/ExternalDeviceMountPoint/)
  *  [Resizing AppVM and HVM Disk Images](/doc/ResizeDiskImage/)
- *  [Extending \`root.img\` Size](/doc/ResizeRootDiskImage/)
+ *  [Extending `root.img` Size](/doc/ResizeRootDiskImage/)
  *  [Installing ZFS in Qubes](/doc/ZFS/)
  *  [Creating Custom NetVMs and ProxyVMs](http://theinvisiblethings.blogspot.com/2011/09/playing-with-qubes-networking-for-fun.html)
  *  [How to make proxy for individual tcp connection from networkless VM](https://groups.google.com/group/qubes-devel/msg/4ca950ab6d7cd11a)

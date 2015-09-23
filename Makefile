@@ -7,6 +7,6 @@ clean:
 	$(RM) -r _site
 
 serve:
-	jekyll serve $(JEKYLLOPTS)
+	jekyll serve --watch $(JEKYLLOPTS)
 
 .PHONY: all clean serve

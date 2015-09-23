@@ -54,8 +54,6 @@ Common Tasks
 Managing Operating Systems within Qubes
 ---------------------------------------
  *  [TemplateVMs](/doc/Templates/)
- *  [Upgrading the Fedora 18 Template](/doc/FedoraTemplateUpgrade18/)
- *  [Upgrading the Fedora 20 Template](/doc/FedoraTemplateUpgrade20/)
  *  [Templates: Fedora - minimal](/doc/Templates/FedoraMinimal/)
  *  [Templates: Debian](/doc/Templates/Debian/)
  *  [Templates: Archlinux](/doc/Templates/Archlinux/)
@@ -66,6 +64,8 @@ Managing Operating Systems within Qubes
  *  [Advanced options and troubleshooting of Qubes Tools for Windows (R3)](/doc/WindowsTools3/)
  *  [Advanced options and troubleshooting of Qubes Tools for Windows (R2)](/doc/WindowsTools2/)
  *  [Uninstalling Qubes Tools for Windows 2.x](/doc/UninstallingWindowsTools2/)
+ *  [Upgrading the Fedora 20 Template](/doc/FedoraTemplateUpgrade20/)
+ *  [Upgrading the Fedora 18 Template](/doc/FedoraTemplateUpgrade18/)
  *  [Tips for Using Linux in an HVM](/doc/LinuxHVMTips/)
  *  [Creating NetBSD VM](https://groups.google.com/group/qubes-devel/msg/4015c8900a813985)
 

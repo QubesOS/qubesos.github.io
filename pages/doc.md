@@ -60,13 +60,13 @@ Managing Operating Systems within Qubes
  *  [Templates: Debian](/doc/Templates/Debian/)
  *  [Templates: Archlinux](/doc/Templates/Archlinux/)
  *  [Templates: Ubuntu](/doc/Templates/Ubuntu/)
+ *  [Templates: Whonix](/doc/Templates/Whonix/)
  *  [Installing and Using Windows-based AppVMs (Qubes R2 Beta 3 and later)](/doc/WindowsAppVms/)
  *  [Creating and Using HVM and Windows Domains (Qubes R2+)](/doc/HvmCreate/)
  *  [Advanced options and troubleshooting of Qubes Tools for Windows (R3)](/doc/WindowsTools3/)
  *  [Advanced options and troubleshooting of Qubes Tools for Windows (R2)](/doc/WindowsTools2/)
  *  [Uninstalling Qubes Tools for Windows 2.x](/doc/UninstallingWindowsTools2/)
  *  [Tips for Using Linux in an HVM](/doc/LinuxHVMTips/)
- *  [Creating Whonix HVMs in Qubes](https://www.whonix.org/wiki/Qubes)
  *  [Creating NetBSD VM](https://groups.google.com/group/qubes-devel/msg/4015c8900a813985)
 
 

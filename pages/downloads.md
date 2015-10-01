@@ -29,23 +29,25 @@ Qubes Live USB (alpha)
 
 -   [Announcement and usage instructions](https://groups.google.com/d/msg/qubes-users/IQdCEpkooto/iyMh3LuzCAAJ)
 
-Qubes Release 3.0 (release candidate)
+Qubes Release 3.0 (latest stable release)
 -------------------------------------
 
--   [**Qubes-R3.0-rc3-x86_64-DVD.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-rc3-x86_64-DVD.iso)
-      [[signature](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-rc3-x86_64-DVD.iso.asc)]
-      [[digests](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-rc3-x86_64-DVD.iso.DIGESTS)]
+<!---
+-   [**Qubes-R3.0-x86_64-DVD.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso)
+      [[signature](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso.asc)]
+      [[digests](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso.DIGESTS)]
       (mirrors.kernel.org)
--   [**Qubes-R3.0-rc3-x86_64-DVD.iso**](https://ftp.qubes-os.org/iso/Qubes-R3.0-rc3-x86_64-DVD.iso)
-      [[signature](https://ftp.qubes-os.org/iso/Qubes-R3.0-rc3-x86_64-DVD.iso.asc)]
-      [[digests](https://ftp.qubes-os.org/iso/Qubes-R3.0-rc3-x86_64-DVD.iso.DIGESTS)]
+--->
+-   [**Qubes-R3.0-x86_64-DVD.iso**](https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso)
+      [[signature](https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso.asc)]
+      [[digests](https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso.DIGESTS)]
       (ftp.qubes-os.org)
 
 -   [**Installation Guide**](/doc/InstallationGuide/)
 -   [Release notes](/doc/releases/3.0/release-notes/)
--   [Upgrading to Qubes R3.0 rc3](/doc/releases/3.0/release-notes/#upgrading)
+-   [Upgrading to Qubes R3.0](/doc/releases/3.0/release-notes/#upgrading)
 
-Qubes Release 2 (latest stable release)
+Qubes Release 2
 ---------------------------------------
 
 -   [**Qubes-R2-x86_64-DVD.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso)
@@ -64,7 +66,7 @@ Qubes Release 2 (latest stable release)
 Qubes Release 1
 ---------------
 
-(This is mainly for historical reference. We strongly recommend using Qubes R2 or higher.)
+(This is mainly for historical reference. We strongly recommend using Qubes R3.0 or higher.)
 
 -   [**Qubes-R1-x86_64-DVD.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso)
       [[signature](https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso.asc)]

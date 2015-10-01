@@ -33,6 +33,12 @@ Contributors to Open-source Code
 -   Radoslaw Szkodzinski `astralstorm at gmail.com` -- minor gui build fixes
 -   László Zrubecz `mail at zrubi.hu` -- HCL wiki page maintenance, HCL scripts
 -   Vincent Penquerc'h `vincent.penquerch@collabora.co.uk` -- code review, misc fixes
+-   Andrew Sorensen `andrew at localcoast dot net` -- misc backup subsystem fixes
+-   Victor Lopez `gallando at gmail dot com` -- misc minor fixes
+-   Davíð Steinn Geirsson `david at dsg dot is` -- initial Debian template integration
+-   HW42 `hw42 at ipsumj dot de` -- Debian templates improvements
+-   Jason Mehring `nrgaway at gmail dot com` -- Debian templates improvements, Whonix integration
+-   Patrick Schleizer `adrelanos at riseup dot net` -- Whonix integration and maintenance
 
 Proprietary Code Developers
 ---------------------------

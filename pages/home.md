@@ -14,7 +14,7 @@ Welcome to the Qubes OS Project
 
 [![Qubes OS Architecture](/attachment/wiki/QubesArchitecture/qubes-arch-diagram-1.png)](/doc/QubesArchitecture/)
 
-Qubes is an open-source operating system designed to provide strong security for desktop computing using **Security by Compartmentalization** approach. Qubes is based on Xen, the X Window System, and Linux, and can run most Linux applications and utilize most of the Linux drivers. Qubes **Release 1** was released in September 2012 and **Release 2** in September 2014. Qubes also supports Windows-based AppVMs beginning with Release 2 (currently in "Beta"). Qubes **Release 3** is coming soon and will introduce **Hypervisor Abstraction Layer (HAL)**, allowing easy porting to alternative virtualization systems.
+Qubes is a security-oriented, open-source operating system for personal computers. It uses virtualization to implement [security by compartmentalization](/intro/) and supports both Linux and Windows virtual environments. [Qubes 3.0](http://blog.invisiblethings.org/2015/10/01/qubes-30.html) introduces the [Hypervisor Abstraction Layer (HAL)](http://blog.invisiblethings.org/2013/03/21/introducing-qubes-odyssey-framework.html), which renders Qubes independent of its underlying virtualization system.
 
 -   [A Simple Introduction to Qubes](/intro/)
 -   [Getting Started](/doc/GettingStarted/)

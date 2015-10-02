@@ -50,6 +50,8 @@ Qubes Release 3.0 (latest stable release)
 Qubes Release 2
 ---------------------------------------
 
+(This is an old release. We strongly recommend using Qubes 3.0 or higher.)
+
 -   [**Qubes-R2-x86_64-DVD.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso)
       [[signature](https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso.asc)]
       [[digests](https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso.DIGESTS)]
@@ -66,7 +68,7 @@ Qubes Release 2
 Qubes Release 1
 ---------------
 
-(This is mainly for historical reference. We strongly recommend using Qubes R3.0 or higher.)
+(This is an old release. We strongly recommend using Qubes 3.0 or higher.)
 
 -   [**Qubes-R1-x86_64-DVD.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso)
       [[signature](https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso.asc)]

@@ -52,3 +52,7 @@ Documentation and Website Maintainers
 -   Hakisho Nukama `nukama at gmail dot com`
 -   Axon `axon at openmailbox dot org`
 
+Coordination, Outreach, Funding
+------------------------------
+
+- Michael Carbone `michael at invisiblethingslab dot com`

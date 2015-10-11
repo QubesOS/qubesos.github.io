@@ -2,9 +2,8 @@
 title: Qubes OS Project
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Qubes OS is an open source operating system designed to provide strong 
-  security for desktop computing using a Security by Compartmentalization 
-  approach. 
+  Qubes is a security-oriented, open-source operating system for personal
+  computers.
 #baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "https://www.qubes-os.org" # the base hostname & protocol for your site
 twitter_username: QubesOS

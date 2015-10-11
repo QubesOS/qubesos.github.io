@@ -1,8 +1,9 @@
 ---
 layout: doc
 title: Qubes OS Project
-permalink: /
+permalink: /en/
 redirect_from:
+- "/"
 - "/wiki/"
 - "/wiki/WikiStart/"
 - "/trac/"

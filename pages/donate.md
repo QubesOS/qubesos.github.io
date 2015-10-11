@@ -1,8 +1,9 @@
 ---
 layout: doc
 title: Donations
-permalink: /donate/
+permalink: /en/donate/
 redirect_from:
+- "/donate/"
 - "/doc/Donations/"
 - "/wiki/Donations/"
 ---

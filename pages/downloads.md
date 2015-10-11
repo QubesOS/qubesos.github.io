@@ -1,8 +1,9 @@
 ---
 layout: doc
 title: Downloads
-permalink: /downloads/
+permalink: /en/downloads/
 redirect_from:
+- "/downloads/"
 - "/doc/QubesDownloads/"
 - "/wiki/QubesDownloads/"
 ---

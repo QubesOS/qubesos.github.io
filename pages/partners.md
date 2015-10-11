@@ -1,7 +1,8 @@
 ---
 layout: doc
 title: Partners
-permalink: /partners/
+permalink: /en/partners/
+redirect_from: /partners/
 ---
 
 Qubes Partners

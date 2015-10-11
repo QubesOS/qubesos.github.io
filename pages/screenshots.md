@@ -1,8 +1,9 @@
 ---
 layout: doc
 title: Screenshots
-permalink: /screenshots/
+permalink: /en/screenshots/
 redirect_from:
+- "/screenshots/"
 - "/doc/QubesScreenshots/"
 - "/wiki/QubesScreenshots/"
 - "/media/"

@@ -1,8 +1,9 @@
 ---
 layout: doc
 title: People
-permalink: /people/
+permalink: /en/people/
 redirect_from:
+- "/people/"
 - "/doc/QubesDevelopers/"
 - "/wiki/QubesDevelopers/"
 ---

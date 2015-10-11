@@ -1,7 +1,8 @@
 ---
 layout: doc
 title: Community
-permalink: /community/
+permalink: /en/community/
+redirect_from: /community/
 ---
 
 Need help with Qubes OS? Try these resources.

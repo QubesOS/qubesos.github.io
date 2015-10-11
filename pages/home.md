@@ -29,6 +29,7 @@ Qubes is a security-oriented, open-source operating system for personal computer
 
 Recent News
 -----------
+-   `Oct 05, 2015` [Article about Qubes OS in *Motherboard*](http://motherboard.vice.com/read/finally-a-reasonably-secure-operating-system-qubes-r3)
 -   `Oct 01, 2015` **Qubes OS 3.0 has been released!**
       [[announcement](http://blog.invisiblethings.org/2015/10/01/qubes-30.html)]
       [[download](https://www.qubes-os.org/downloads/)]

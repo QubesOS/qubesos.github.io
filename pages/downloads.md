@@ -32,12 +32,10 @@ Qubes Live USB (alpha)
 Qubes Release 3.0 (latest stable release)
 -------------------------------------
 
-<!---
 -   [**Qubes-R3.0-x86_64-DVD.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso)
       [[signature](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso.asc)]
       [[digests](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso.DIGESTS)]
       (mirrors.kernel.org)
---->
 -   [**Qubes-R3.0-x86_64-DVD.iso**](https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso)
       [[signature](https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso.asc)]
       [[digests](https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso.DIGESTS)]
@@ -88,4 +86,4 @@ Mirrors
 Qubes ISOs are available from the following mirrors:
 
 -   [Burnbit torrent](http://burnbit.com/search?q=qubes)
--   [mirrors.kernel.org](http://mirrors.kernel.org/qubes/iso/)
+-   [mirrors.kernel.org](https://mirrors.kernel.org/qubes/iso/)

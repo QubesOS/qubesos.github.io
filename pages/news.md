@@ -52,7 +52,32 @@ Qubes OS News Archives
 
 2013
 ----
-`2013-12-11` Qubes OS R2 Beta 3 has been released! [announcement](http://blog.invisiblethings.org/2013/12/10/qubes-r2-beta-3-has-been-released.html)  
-`2013-11-26` Windows 7 seamless GUI integration coming to Qubes OS! [article](http://blog.invisiblethings.org/2013/11/26/windows-7-seamless-gui-integration.html)  
-`2013-06-21` Qubes OS R3 Alpha preview: Odyssey HAL in action! [announcement](http://blog.invisiblethings.org/2013/06/21/qubes-os-r3-alpha-preview-odyssey-hal.html)  
-`2013-03-21` Introducing Qubes Odyssey Framework [article](http://blog.invisiblethings.org/2013/03/21/introducing-qubes-odyssey-framework.html)  
+`2013-12-11` Qubes OS R2 Beta 3 has been released! [[announcement](http://blog.invisiblethings.org/2013/12/10/qubes-r2-beta-3-has-been-released.html)]  
+`2013-11-26` Windows 7 seamless GUI integration coming to Qubes OS! [[article](http://blog.invisiblethings.org/2013/11/26/windows-7-seamless-gui-integration.html)]  
+`2013-06-21` Qubes OS R3 Alpha preview: Odyssey HAL in action! [[announcement](http://blog.invisiblethings.org/2013/06/21/qubes-os-r3-alpha-preview-odyssey-hal.html)]  
+`2013-03-21` Introducing Qubes Odyssey Framework [[article](http://blog.invisiblethings.org/2013/03/21/introducing-qubes-odyssey-framework.html)]  
+`2013-02-28` Qubes 2 Beta 2 has been released! [[announcement](http://blog.invisiblethings.org/2013/02/28/qubes-2-beta-2-has-been-released.html)]  
+
+2012
+----
+`2012-12-14` Qubes 2 Beta 1 has been released! [[announcement](http://blog.invisiblethings.org/2012/12/14/qubes-2-beta-1-with-initial-windows.html)]  
+`2012-11-16` Qubes Security Team has joined the Xen Security Pre-disclousre list [[more](http://lists.xen.org/archives/html/xen-devel/2012-11/msg00821.html)]  
+`2012-09-12` How is Qubes OS different from other approaches to desktop security? ​[[article](http://blog.invisiblethings.org/2012/09/12/how-is-qubes-os-different-from.html)]  
+`2012-09-03` Qubes 1 has been released! [[announcement](http://blog.invisiblethings.org/2012/09/03/introducing-qubes-10.html)]  
+`2012-03-03` Windows support coming to Qubes! ​[[article](http://blog.invisiblethings.org/2012/03/03/windows-support-coming-to-qubes.html)]  
+`2012-02-06` Qubes 1 Beta 3 has been released! [[announcement](http://blog.invisiblethings.org/2012/02/06/qubes-beta-3.html)]  
+
+2011
+----
+`2011-09-28` Playing with Qubes Networking for Fun and Profit ​[[article](http://blog.invisiblethings.org/2011/09/28/playing-with-qubes-networking-for-fun.html)]  
+`2011-09-19` Qubes Beta 2 has been released [[download](https://www.qubes-os.org/downloads/)]  
+`2011-04-11` Qubes Beta 1 has been released [[download](https://www.qubes-os.org/downloads/)]  
+`2011-03-13` Partitioning ones digital life into security domains on Qubes OS [[article](http://blog.invisiblethings.org/2011/03/13/partitioning-my-digital-life-into.html)]  
+
+2010
+----
+`2010-10-06` Qubes Alpha 3 is out! [[announcement](http://blog.invisiblethings.org/2010/10/06/qubes-alpha-3.html)]  
+`2010-09-28` ITL to hire Qubes OS developers [[more](http://blog.invisiblethings.org/2010/09/28/itl-is-hiring.html)]  
+`2010-07-01` Qubes Alpha 2 has been released! [[announcement](http://blog.invisiblethings.org/2010/07/01/qubes-alpha-2-released.html)]  
+`2010-04-16` Joanna Rutkowska speaks about Qubes at [Campus Party EU](http://www.campus-party.eu/).  
+`2010-04-07` Initial public release. [[announcement](http://blog.invisiblethings.org/2010/04/07/introducing-qubes-os.html)]  

@@ -70,8 +70,8 @@ Qubes OS News Archives
 2011
 ----
 `2011-09-28` Playing with Qubes Networking for Fun and Profit ​[[article](http://blog.invisiblethings.org/2011/09/28/playing-with-qubes-networking-for-fun.html)]  
-`2011-09-19` Qubes Beta 2 has been released [[download](https://www.qubes-os.org/downloads/)]  
-`2011-04-11` Qubes Beta 1 has been released [[download](https://www.qubes-os.org/downloads/)]  
+`2011-09-19` Qubes Beta 2 has been released [[announcement](http://blog.invisiblethings.org/2011/09/19/qubes-beta-2-released.html)]  
+`2011-04-11` Qubes Beta 1 has been released [[announcement](http://blog.invisiblethings.org/2011/04/12/qubes-beta-1-has-been-released.html)]  
 `2011-03-13` Partitioning ones digital life into security domains on Qubes OS [[article](http://blog.invisiblethings.org/2011/03/13/partitioning-my-digital-life-into.html)]  
 
 2010

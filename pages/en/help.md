@@ -1,8 +1,10 @@
 ---
 layout: doc
-title: Community
-permalink: /en/community/
-redirect_from: /community/
+title: Help
+permalink: /en/help/
+redirect_from:
+- /en/community/
+- /community/
 ---
 
 Need help with Qubes OS? Try these resources.
@@ -11,16 +13,16 @@ Need help with Qubes OS? Try these resources.
 
 Add **Qubes OS** to refine your query, you might find just what you need.
 
-## [QubesOS Mailing Lists]({{ site.url }}{{ site.baseurl }}/doc/QubesLists/)
+## [QubesOS Mailing Lists]({{ site.url }}{{ site.baseurl }}/en/doc/mailing-lists/)
 
--   Please send all the questions regarding Qubes OS to one of [these]({{ site.url }}{{ site.baseurl }}/doc/QubesLists/) mailing lists.
+-   Please send all the questions regarding Qubes OS to one of [these]({{ site.url }}{{ site.baseurl }}/en/doc/mailing-lists/) mailing lists.
 -   To subscribe to the user list, send a blank mail to `qubes-users+subscribe@googlegroups.com`.
 -   By sending a message to the appropriate mailing list, you are not only giving others a chance to help you,
 but you may also be helping others by starting a public discussion about a shared problem or interest.
 -   **Please do not send questions to individual Qubes developers.**
 -   **Please do not [top-post](https://en.wikipedia.org/wiki/Posting_style), use inline replying or bottom-posting instead.**
 
-## [QubesOS/qubes-doc]({{ site.url }}{{ site.baseurl }}/doc/UserFaq/#qubes-users-faq)
+## [QubesOS/qubes-doc]({{ site.url }}{{ site.baseurl }}/en/doc/user-faq/)
 
 Search through the issues that the fine folks on the **Qubes Documentation** team
 have answered, or ask your own at **qubes-users** mailinglist.

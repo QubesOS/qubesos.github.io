@@ -12,18 +12,18 @@ redirect_from:
 Welcome to the Qubes OS Project
 ===============================
 
-[![Qubes OS Architecture](/attachment/wiki/QubesArchitecture/qubes-arch-diagram-1.png)](/doc/QubesArchitecture/)
+[![Qubes OS Architecture](/attachment/wiki/QubesArchitecture/qubes-arch-diagram-1.png)](/en/doc/qubes-architecture/)
 
-Qubes is a security-oriented, open-source operating system for personal computers. It uses virtualization to implement [security by compartmentalization](/intro/) and supports both Linux and Windows virtual environments. [Qubes 3.0](http://blog.invisiblethings.org/2015/10/01/qubes-30.html) introduces the [Hypervisor Abstraction Layer (HAL)](http://blog.invisiblethings.org/2013/03/21/introducing-qubes-odyssey-framework.html), which renders Qubes independent of its underlying virtualization system.
+Qubes is a security-oriented, open-source operating system for personal computers. It uses virtualization to implement [security by compartmentalization](/en/intro/) and supports both Linux and Windows virtual environments. [Qubes 3.0](http://blog.invisiblethings.org/2015/10/01/qubes-30.html) introduces the [Hypervisor Abstraction Layer (HAL)](http://blog.invisiblethings.org/2013/03/21/introducing-qubes-odyssey-framework.html), which renders Qubes independent of its underlying virtualization system.
 
--   [A Simple Introduction to Qubes](/intro/)
--   [Getting Started](/doc/GettingStarted/)
+-   [A Simple Introduction to Qubes](/en/intro/)
+-   [Getting Started](/en/doc/getting-started/)
 -   [Qubes OS Tutorial slides by ITL](http://www.invisiblethingslab.com/resources/2014/LinuxCon_2014_Qubes_Tutorial.pdf) (LinuxCon October 2014)
--   [Screenshots](/media/)
--   [Architecture Overview](/doc/QubesArchitecture/), and also the more recent: [Why Qubes OS is more than a bunch of VMs?](http://www.invisiblethingslab.com/resources/2014/Software_compartmentalization_vs_physical_separation.pdf)
--   [Security](/doc/QubesSecurity/)
--   [FAQ](/doc/UserFaq/)
--   [Documentation](/doc/)
+-   [Screenshots](/screenshots/)
+-   [Architecture Overview](/en/doc/qubes-architecture/), and also the more recent: [Why Qubes OS is more than a bunch of VMs?](http://www.invisiblethingslab.com/resources/2014/Software_compartmentalization_vs_physical_separation.pdf)
+-   [Security](/en/doc/qubes-security/)
+-   [FAQ](/en/doc/user-faq/)
+-   [Documentation](/en/doc/)
 -   [How is Qubes OS different from...?](http://blog.invisiblethings.org/2012/09/12/how-is-qubes-os-different-from.html)
 -   Beyond Qubes R2 -- the [Qubes Odyssey Framework](http://blog.invisiblethings.org/2013/03/21/introducing-qubes-odyssey-framework.html)
 

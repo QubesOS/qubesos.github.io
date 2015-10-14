@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: People
+title: Team
 permalink: /team/
 redirect_from:
 - "/people/"

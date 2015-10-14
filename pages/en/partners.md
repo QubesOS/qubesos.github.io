@@ -9,8 +9,8 @@ Qubes Partners
 ==============
 
 This page is dedicated to recogizing the organizations which have contributed
-to the development of Qubes OS and its features. The Qubes Project is grateful
-for their support!
+support to the development of Qubes OS and its features. The Qubes Project is
+grateful for their support!
 
 If your organization is interested in becoming a Qubes
 Partner, please contact `michael at invisiblethingslab dot com`. For monetary

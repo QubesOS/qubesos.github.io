@@ -4,6 +4,10 @@ layout: default
 <div class="post">
 
   <article class="post-content">
+    <div class="post-source">
+      <a href="{{site.github.repository_url}}/blob/master/{{page.path}}" class="icon fa fa-code" title="View page source"> Source</a>&nbsp;&nbsp;
+      <a href="{{site.github.repository_url}}/edit/master/{{page.path}}" class="icon fa fa-code-fork" title="Edit this page"> Edit</a>
+    </div>
     {{ content }}
   </article>
 

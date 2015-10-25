@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: default
 title: Partners
 permalink: /en/partners/
 redirect_from: /partners/

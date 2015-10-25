@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: default
 title: News
 permalink: /en/news/
 ---

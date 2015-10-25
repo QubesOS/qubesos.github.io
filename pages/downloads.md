@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: default
 title: Downloads
 permalink: /downloads/
 redirect_from:

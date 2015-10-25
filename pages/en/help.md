@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: default
 title: Help
 permalink: /en/help/
 redirect_from:

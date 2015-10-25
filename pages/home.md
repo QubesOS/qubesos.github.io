@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: default
 title: Qubes OS Project
 permalink: /
 redirect_from:

@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: default
 title: Security
 permalink: /en/security/
 redirect_from: 

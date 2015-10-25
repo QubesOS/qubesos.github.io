@@ -2,22 +2,12 @@
 layout: default
 ---
 <div class="post">
-
   <article class="post-content">
-    <div class="post-source">
-      <a href="{{site.github.repository_url}}/blob/master/{{page.path}}"
-         class="post-source-link"
-         title="View page source"
-         target="_blank">
-        <span class="fa fa-code"></span> Source</a>
-      &nbsp;
-      <a href="{{site.github.repository_url}}/edit/master/{{page.path}}"
-         class="post-source-link"
-         title="Edit this page"
-         target="_blank">
-        <span class="fa fa-code-fork"></span> Edit</a>
-    </div>
     {{ content }}
   </article>
-
+  <div class="toc">
+    <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/jquery.toc.js" | prepend: site.baseurl }}"></script>
+    <script>$('.post-content').toc()</script>
+  </div>
 </div>

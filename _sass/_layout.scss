@@ -171,7 +171,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 0;
 }
 
 .page-heading {
@@ -197,6 +197,26 @@
     font-size: 24px;
 }
 
+.toc {
+    float: right;
+}
+
+.page-source {
+    float: right;
+    text-align:right;
+}
+
+.page-source-link {
+    color: $grey-color;
+
+        &:visited {
+        color: $grey-color;
+    }
+
+        &:hover {
+        color: $brand-color;
+    }
+}
 
 
 /**
@@ -268,19 +288,3 @@
     }
 }
 
-.post-source {
-    float: right;
-    text-align:right;
-}
-
-.post-source-link {
-    color: $grey-color;
-    
-        &:visited {
-        color: $grey-color;
-    }
-    
-        &:hover {
-        color: $brand-color;
-    }
-}

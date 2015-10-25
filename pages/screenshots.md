@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: default
 title: Screenshots
 permalink: /screenshots/
 redirect_from:

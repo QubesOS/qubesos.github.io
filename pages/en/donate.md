@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: default
 title: Donations
 permalink: /en/donate/
 redirect_from:

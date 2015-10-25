@@ -5,8 +5,17 @@ layout: default
 
   <article class="post-content">
     <div class="post-source">
-      <a href="{{site.github.repository_url}}/blob/master/{{page.path}}" class="icon fa fa-code" title="View page source"> Source</a>&nbsp;&nbsp;
-      <a href="{{site.github.repository_url}}/edit/master/{{page.path}}" class="icon fa fa-code-fork" title="Edit this page"> Edit</a>
+      <a href="{{site.github.repository_url}}/blob/master/{{page.path}}"
+         class="post-source-link"
+         title="View page source"
+         target="_blank">
+        <span class="fa fa-code"></span> Source</a>
+      &nbsp;&nbsp;
+      <a href="{{site.github.repository_url}}/edit/master/{{page.path}}"
+         class="post-source-link"
+         title="Edit this page"
+         target="_blank">
+        <span class="fa fa-code-fork"></span> Edit</a>
     </div>
     {{ content }}
   </article>

@@ -272,3 +272,15 @@
     float: right;
     text-align:right;
 }
+
+.post-source-link {
+    color: $grey-color;
+    
+        &:visited {
+        color: $grey-color;
+    }
+    
+        &:hover {
+        color: $brand-color;
+    }
+}

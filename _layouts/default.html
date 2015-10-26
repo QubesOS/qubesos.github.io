@@ -1,27 +1,13 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body>
-    {% include header.html %}
-      <div class="wrapper">
-        <div class="page-content">
-          <div class="page-source">
-            <a href="{{site.github.repository_url}}/blob/master/{{page.path}}"
-               class="page-source-link"
-               title="View page source"
-               target="_blank">
-              <span class="fa fa-code"></span> Source</a>
-              &nbsp;
-            <a href="{{site.github.repository_url}}/edit/master/{{page.path}}"
-               class="page-source-link"
-               title="Edit this page"
-               target="_blank">
-              <span class="fa fa-code-fork"></span> Edit</a>
-          </div>
-          <br>
-        {{ content }}
+    <body>
+      {% include header.html %}
+        <div class="wrapper">
+          <div class="page-content">
+          {{ content }}
+        </div>
       </div>
-    </div>
     {% include footer.html %}
   </body>
 </html>

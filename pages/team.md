@@ -3,9 +3,9 @@ layout: default
 title: Team
 permalink: /team/
 redirect_from:
-- "/people/"
-- "/doc/QubesDevelopers/"
-- "/wiki/QubesDevelopers/"
+- /people/
+- /doc/QubesDevelopers/
+- /wiki/QubesDevelopers/
 ---
 
 Qubes Developers and Contributors
@@ -65,5 +65,5 @@ The Qubes Community
 Qubes would not be where it is today without the input of the many
 users, testers, and developers of all skill levels who have come together
 to form this thriving community. The community's discussions take place
-primarily on the [Qubes mailing lists](/en/doc/mailing-lists/).
+primarily on the [Qubes mailing lists](/doc/mailing-lists/).
 

@@ -3,9 +3,9 @@ layout: default
 title: Screenshots
 permalink: /screenshots/
 redirect_from:
-- "/doc/QubesScreenshots/"
-- "/wiki/QubesScreenshots/"
-- "/media/"
+- /media/
+- /doc/QubesScreenshots/
+- /wiki/QubesScreenshots/
 ---
 
 Select Qubes OS Screenshots

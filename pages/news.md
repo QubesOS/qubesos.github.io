@@ -1,7 +1,8 @@
 ---
 layout: default
 title: News
-permalink: /en/news/
+permalink: /news/
+redirect_from: /en/news/
 ---
 
 Qubes OS News Archives

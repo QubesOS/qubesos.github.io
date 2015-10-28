@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Partners
-permalink: /en/partners/
-redirect_from: /partners/
+permalink: /partners/
+redirect_from: /en/partners/
 ---
 
 Qubes Partners

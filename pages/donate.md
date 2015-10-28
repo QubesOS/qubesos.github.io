@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Donations
-permalink: /en/donate/
+permalink: /donate/
 redirect_from:
-- "/donate/"
-- "/doc/Donations/"
-- "/wiki/Donations/"
+- /en/donate/
+- /doc/Donations/
+- /wiki/Donations/
 ---
 
 Donating to the Qubes Project

@@ -1,10 +1,11 @@
 Qubes OS Official Website
 =========================
-https://www.qubes-os.org
 
-This is the main repo for the [Qubes OS Project][qubes] website. Qubes is a
-security-oriented, open-source operating system for personal computers. It uses
-virtualization to implement [security by compartmentalization][intro] and
+Canonical URL: https://www.qubes-os.org
+
+This is the main repository for the [Qubes OS Project][qubes] website. Qubes is
+a security-oriented, open-source operating system for personal computers. It
+uses virtualization to implement [security by compartmentalization][intro] and
 supports both Linux and Windows virtual environments.
 
 
@@ -89,4 +90,4 @@ areas, please observe the following style conventions, where appropriate:
 [gh-fork]: https://guides.github.com/activities/forking/
 [gh-pull]: https://help.github.com/articles/using-pull-requests/
 [patch]: https://www.qubes-os.org/doc/source-code/#sending-a-patch
-[lists]: https://www.qubes-os.org/doc/qubes-lists/
+[lists]: https://www.qubes-os.org/doc/mailing-lists/

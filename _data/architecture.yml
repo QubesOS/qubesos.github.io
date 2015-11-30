@@ -1,0 +1,71 @@
+- title: Tour
+  url: /tour/
+  sub-pages:
+  - title: Intro
+    url: /intro/
+  - title: Screenshots
+    url: /screenshots/
+
+- title: Getting Started
+  url: /doc/getting-started/
+  sub-pages:
+  - title: Downloads
+    url: /downloads/
+  - title: Compatible Hardware
+    url: /hcl/
+  - title: Try on Live USB
+    url: /downloads/
+
+- title: Help & Support
+  url: /help-and-support/
+  sub-pages:
+  - title: Documentation
+    url: /doc/
+  - title: FAQ
+    url: /doc/user-faq/
+  - title: Developers
+    url: /doc/devel-faq/
+  - title: Mailing Lists
+    url: /doc/mailing-lists/
+  - title: Report a Bug
+    url: https://github.com/QubesOS/qubes-issues/issues
+  - title: StackOverflow
+    url: https://stackoverflow.com/questions/tagged/Qubes+OS
+  - title: Github
+    url: https://github.com/QubesOS/
+
+- title: News
+  url: /news/
+  sub-pages:
+  - title: Announcements
+    url: /news#announcements/
+  - title: Releases
+    url: /releases/
+  - title: Press
+    url: /news#press/
+  - title: Twitter
+    url: https://twitter.com/QubesOS
+
+- title: About
+  url: /about/
+  sub-pages:
+  - title: Team
+    url: /team/
+  - title: Partners
+    url: /partners/
+  - title: Security
+    url: /security/
+  - title: Contact
+    url: /contact/
+
+- title: Donate
+  url: /donate/
+  sub-pages:
+  - title: Our Funding
+    url: /donate/
+  - title: Direct Donation
+    url: /donate/
+  - title: PayPal
+    url: /donate#paypal/
+  - title: Bitcoin
+    url: /donate#bitcoin/

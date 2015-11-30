@@ -1,0 +1,47 @@
+- title: Super secret new partnership
+  url: /news/super-secret-parternship/
+  date: 2015-12-01
+  type: announcement
+  download: false
+
+- title: Article about Qubes OS in *Motherboard*
+  url: http://motherboard.vice.com/read/finally-a-reasonably-secure-operating-system-qubes-r3
+  date: 2015-10-05
+  type: press
+  download: false
+
+- title: Qubes OS 3.0 has been released!
+  url: http://blog.invisiblethings.org/2015/10/01/qubes-30.html
+  date: 2015-10-01
+  type: release
+  download: true
+
+- title: Qubes OS 3.0 rc3 has been released!
+  url: https://groups.google.com/d/msg/qubes-users/v-eTHh3JLo0/AlaBthwhLQAJ
+  date: 2015-09-16
+  type: release
+  download: true
+
+- title: Qubes OS 3.0 rc2 LiveUSB (alpha) has been released!
+  url: https://groups.google.com/d/msg/qubes-users/IQdCEpkooto/iyMh3LuzCAAJ
+  date: 2015-08-10
+  type: release
+  download: true
+
+- title: Qubes OS 3.0 rc2 has been released!
+  url: https://groups.google.com/d/msg/qubes-users/jw9CdQepMPE/95HQDF6QBwAJ
+  date: 2015-07-31
+  type: release
+  download: true
+
+- title: Qubes OS 3.0 rc1 has been released!
+  url: http://blog.invisiblethings.org/2015/04/23/qubes-30rc1-and-roadmap.html
+  date: 2015-04-23
+  type: release
+  download: true
+
+- title: Article about Qubes OS in *Wired*
+  url: http://www.wired.com/2014/11/protection-from-hackers/
+  date: 2014-11-20
+  type: press
+  download: false

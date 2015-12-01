@@ -1,0 +1,74 @@
+//
+// Extras - Adding & Removing Margins
+// --------------------------------------------------
+
+.more-top {
+  margin-top: 35px !important;
+}
+
+.more-bottom {
+  margin-bottom: 35px !important;
+}
+
+.more-left {
+  margin-left: 35px !important;
+}
+
+.more-right {
+  margin-right: 35px !important;
+}
+
+.add-top {
+  margin-top: 15px !important;
+}
+
+.add-bottom {
+  margin-bottom: 15px !important;
+}
+
+.add-left {
+  margin-left: 15px !important;
+}
+
+.add-right {
+  margin-right: 15px !important;
+}
+
+.remove-top {
+  margin-top: 0px !important;
+}
+
+.remove-bottom {
+  margin-bottom: 0px !important;
+}
+
+.remove-left {
+  margin-left: 0px !important;
+}
+
+.remove-right {
+  margin-right: 0px !important;
+}
+
+.display-table {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.display-table-cell {
+  border: 1px solid red;
+  display: table-cell;
+}
+
+.text-top {
+  vertical-align: text-top;
+}
+
+.text-middle {
+  vertical-align: middle;
+}
+
+.text-bottom {
+  vertical-align: text-bottom;
+}

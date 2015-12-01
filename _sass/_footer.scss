@@ -1,0 +1,29 @@
+/* Footer */
+
+.footer-nav h4 {
+  font-family: $ostrich-heavy;
+}
+
+.footer-nav h4 i.fa-heart {
+  color: $brand-danger;
+}
+
+.footer-nav a {
+  color: $gray-base;
+  font-size: 12px;
+}
+
+.footer-logo {
+  padding: $spacing-unit;
+  font-family: $ostrich;
+  font-size: 30px;
+  color: $gray-base;
+}
+
+.footer-logo img {
+  margin-right: 10px;
+}
+
+.footer-logo strong {
+  font-family: $ostrich-heavy;
+}

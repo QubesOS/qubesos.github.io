@@ -16,12 +16,9 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav nav-justified">
         <li><a href="{{ "/" | prepend: site.baseurl | prepend: site.url }}">Qubes</a></li>
-        <li><a href="{{ "/tour/" | prepend: site.baseurl | prepend: site.url }}">Tour</a></li>
-        <li><a href="{{ "/get-started/" | prepend: site.baseurl | prepend: site.url }}">Get Started</a></li>
-        <li><a href="{{ "/help/" | prepend: site.baseurl | prepend: site.url }}">Help</a></li>
-        <li><a href="{{ "/news/" | prepend: site.baseurl | prepend: site.url }}">News</a></li>
-        <li><a href="{{ "/about/" | prepend: site.baseurl | prepend: site.url }}">About</a></li>
-        <li><a href="{{ "/donate/" | prepend: site.baseurl | prepend: site.url }}">Donate</a></li>
+        {% for section in site.data.architecture %}
+        <li><a href="{{ section.url | prepend: site.baseurl | presend: site.url }}">{{ section.title }}</a></li>
+        {% endfor %}
       </ul>
     </div><!--/.nav-collapse -->
   </div>

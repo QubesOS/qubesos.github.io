@@ -5,9 +5,6 @@ permalink: /news/
 redirect_from: /en/news/
 ---
 
-Qubes OS News Archives
-======================
-
 2015
 ----
 `2015-10-05` [Article about Qubes OS in *Motherboard*](http://motherboard.vice.com/read/finally-a-reasonably-secure-operating-system-qubes-r3)  
@@ -26,6 +23,10 @@ Qubes OS News Archives
 `2015-04-23` Qubes OS 3.0 rc1 has been released!
   [[announcement](http://blog.invisiblethings.org/2015/04/23/qubes-30rc1-and-roadmap.html)]
   [[download](https://www.qubes-os.org/downloads/)]  
+
+
+## News Archives
+
 
 2014
 ----

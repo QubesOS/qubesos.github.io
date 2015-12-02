@@ -94,7 +94,6 @@ redirect_from:
     </div>
   </div>
 
-
   <!-- News -->
   <div class="row">
   <div class="col-lg-6 more-bottom">
@@ -133,7 +132,7 @@ redirect_from:
   <div class="col-lg-6 more-bottom">
     <h2 class="text-center"><i class="fa fa-bullhorn"></i> Posts &amp; Announcements</h2>
     <div class="white-box">
-      <ul class="list-unstyled">
+      <ul class="list-unstyled remove-bottom">
         {% for article in site.data.news %}
         <li class="list-links">
           <a class="black-link" href="{{article.url}}">
@@ -188,13 +187,12 @@ redirect_from:
     <div class="clearfix"></div>
   </div>
 
-
   <!-- Details: Research / Help -->
   <div class="row">
     <div class="col-lg-6 more-bottom">
       <h3 class="text-center"><i class="fa fa-file-text"></i> Our Research</h3>
       <div class="white-box">
-      <ul class="list-unstyled">
+      <ul class="list-unstyled remove-bottom">
         {% for research in site.data.research %}
         <li class="list-links">
           <a class="black-link" href="{{research.url}}">
@@ -212,11 +210,13 @@ redirect_from:
     <div class="col-lg-6 more-bottom">
       <h3 class="text-center"><i class="fa fa-medkit"></i> Help &amp; Support</h3>
       <div class="white-box">
-      <ul class="list-unstyled">
-        <li><a href="">Frequently Asked Questions</a></li>
-        <li><a href="">Email Support Forums</a></li>
-        <li><a href="">Get our code at Github</a></li>
-        <li><a href="">Report a bug</a></li>
+      <ul class="list-unstyled list-spaced remove-bottom">
+        <li><a href="/doc/user-faq/">Frequently Asked Questions</a></li>
+        <li><a href="/doc/mailing-lists/">Email Support Forums</a></li>
+
+        <li><a href="/doc/devel-faq/">Developers</a></li>
+        <li><a href="https://github.com/QubesOS">Get our code at Github</a></li>
+        <li><a href="https://github.com/QubesOS/qubes-issues/issues">Report a bug</a></li>
       </ul>
       </div>
     </div>
@@ -227,7 +227,7 @@ redirect_from:
     <div class="col-lg-6 more-bottom">
       <h3 class="text-center"><i class="fa fa-trophy"></i> Awards &amp; Grants</h3>
       <div class="white-box">
-      <ul class="list-unstyled">
+      <ul class="list-unstyled remove-bottom">
         <li class="list-links text-center">
         <a href="https://www.accessnow.org/blog/2014/02/13/endpoint-security-prize-finalists-announced" target="_blank">
           <img src="attachment/site/access-innovation-prize.jpg" class="featured-logo center-block">
@@ -252,7 +252,7 @@ redirect_from:
     <div class="col-lg-6 more-bottom">
       <h3 class="text-center"><i class="fa fa-comments"></i> Follow &amp; Contact</h3>
       <div class="white-box">
-      <ul class="list-unstyled">
+      <ul class="list-unstyled list-spaced">
         <li><a href="">Follow @QubesOS on Twitter</a></li>
       </ul>
       </div>

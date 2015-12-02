@@ -3,81 +3,27 @@
 ---
 @charset "utf-8";
 
-@font-face {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: 500;
-	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Open Sans Italic';
-	font-style: italic;
-	font-weight: 500;
-	src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Open Sans Bold';
-	font-style: normal;
-	font-weight: 700;
-	src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Open Sans Bold Italic';
-	font-style: italic;
-	font-weight: 700;
-	src: url('../fonts/OpenSans-BoldItalic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Ostrich Heavy';
-	font-style: normal;
-	font-weight: 700;
-	src: url('../fonts/OstrichSans-Heavy.eot');
-	src: url('../fonts/OstrichSans-Heavy.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/OstrichSans-Heavy.woff') format('font-woff'),
-	url('../fonts/OstrichSans-Heavy.ttf') format('truetype'),
-	url('../fonts/OstrichSans-Heavy.svg#wf') format('svg');
-}
-
-@font-face {
-	font-family: 'Ostrich Medium';
-	font-style: normal;
-	font-weight: 200;
-	src: url('../fonts/OstrichSansRounded-Medium.eot');
-	src: url('../fonts/OstrichSansRounded-Medium.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/OstrichSansRounded-Medium.woff') format('font-woff'),
-	url('../fonts/OstrichSansRounded-Medium.ttf') format('truetype'),
-	url('../fonts/OstrichSansRounded-Medium.svg#wf') format('svg');
-}
-
-// Our variables
-$base-radius: 5px;
-
+// Custom - Fonts
 $base-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-family-italic: "Open Sans Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family-italic: "Open Sans-Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-family-bold: "Opens Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-family-bold-italic: "Opens Sans Bold Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   14px;
 $small-font-size:  $base-font-size * 0.85;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
-
-$color-white:      #FFFFFF;
-
-
-// Width of the content area
-$content-width:    1024px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-// Fonts
 $ostrich: "Ostrich Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $ostrich-heavy: "Ostrich Heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$color-white: #FFFFFF;
+
+// Custom - Sizing & Widths
+$spacing-unit: 30px;
+$base-radius: 5px;
+
+$content-width:    1024px;
+$on-palm:          600px;
+$on-laptop:        800px;
 
 
 /* Bootstrap imports */
@@ -101,12 +47,12 @@ $ostrich-heavy: "Ostrich Heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Components
 @import "bootstrap/component-animations";
-@import "bootstrap/dropdowns";
+//@import "bootstrap/dropdowns";
 @import "bootstrap/button-groups";
 @import "bootstrap/input-groups";
 @import "bootstrap/navs";
 @import "bootstrap/navbar";
-@import "bootstrap/breadcrumbs";
+//@import "bootstrap/breadcrumbs";
 //@import "bootstrap/pagination";
 //@import "bootstrap/pager";
 @import "bootstrap/labels";
@@ -123,10 +69,10 @@ $ostrich-heavy: "Ostrich Heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @import "bootstrap/close";
 
 // Components w/ JavaScript
-@import "bootstrap/modals";
-@import "bootstrap/tooltip";
+//@import "bootstrap/modals";
+//@import "bootstrap/tooltip";
 //@import "bootstrap/popovers";
-@import "bootstrap/carousel";
+//@import "bootstrap/carousel";
 
 // Utility classes
 @import "bootstrap/utilities";
@@ -146,59 +92,5 @@ $ostrich-heavy: "Ostrich Heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
         "syntax-highlighting",
         "extras",
         "home",
-        "post";
-
-
-/*
- * jQuery Table of Content Generator for Markdown v1.0
- *
- * https://github.com/dafi/tocmd-generator
- * Examples and documentation at: https://github.com/dafi/tocmd-generator
- *
- * Requires: jQuery v1.7+
- *
- * Copyright (c) 2013 Davide Ficano
- *
- * Dual licensed under the MIT and GPL licenses:
- *   http://www.opensource.org/licenses/mit-license.php
- *   http://www.gnu.org/licenses/gpl.html
- */
-
-#toc, .toc, .mw-warning {
-    background-color: #F9F9F9;
-    border: 1px solid #AAAAAA;
-    font-size: 95%;
-    padding: 5px;
-}
-#toc h2, .toc h2 {
-    border: medium none;
-    display: inline;
-    font-size: 100%;
-    font-weight: bold;
-    padding: 0;
-}
-#toc #toctitle, .toc #toctitle, #toc .toctitle, .toc .toctitle {
-    text-align: center;
-}
-#toc ul, .toc ul {
-    list-style-image: none;
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
-    text-align: left;
-}
-#toc ul ul, .toc ul ul {
-    margin: 0 0 0 2em;
-}
-#toc .toctoggle, .toc .toctoggle {
-    font-size: 94%;
-}
-
-#toc ul li {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#toc-container {
-	margin-bottom: 10px;
-}
+        "post",
+				"toc";

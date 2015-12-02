@@ -4,6 +4,58 @@ $bootstrap-sass-asset-helper: false !default;
 // --------------------------------------------------
 
 
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Open Sans Italic';
+	font-style: italic;
+	font-weight: 500;
+	src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Open Sans Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Open Sans Bold Italic';
+	font-style: italic;
+	font-weight: 700;
+	src: url('../fonts/OpenSans-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Ostrich Heavy';
+	font-style: bold;
+	font-weight: 700;
+	src: url('../fonts/OstrichSans-Heavy.eot');
+	src: url('../fonts/OstrichSans-Heavy.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OstrichSans-Heavy.woff') format('font-woff'),
+	url('../fonts/OstrichSans-Heavy.ttf') format('truetype'),
+	url('../fonts/OstrichSans-Heavy.svg#wf') format('svg');
+}
+
+@font-face {
+	font-family: 'Ostrich Medium';
+	font-style: normal;
+	font-weight: 200;
+	src: url('../fonts/OstrichSansRounded-Medium.eot');
+	src: url('../fonts/OstrichSansRounded-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OstrichSansRounded-Medium.woff') format('font-woff'),
+	url('../fonts/OstrichSansRounded-Medium.ttf') format('truetype'),
+	url('../fonts/OstrichSansRounded-Medium.svg#wf') format('svg');
+}
+
+
+
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
@@ -29,7 +81,7 @@ $brand-danger:          #bd2727 !default;
 //** Background color for `<body>`.
 $body-bg:               #f5f5f5 !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $gray-base !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -43,7 +95,7 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  "Open-Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
@@ -138,7 +190,7 @@ $table-bg-hover:                #f5f5f5 !default;
 $table-bg-active:               $table-bg-hover !default;
 
 //** Border color for table and cell borders.
-$table-border-color:            #ddd !default;
+$table-border-color:            $gray !default;
 
 
 //== Buttons

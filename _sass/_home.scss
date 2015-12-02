@@ -1,4 +1,4 @@
-.home-banner {
+div.home-banner {
   width: 100%;
   min-height: 575px;
   padding-top: 75px;
@@ -35,6 +35,7 @@ div.featured-quotes {
       padding-left: 10px;
       font-family: $base-font-family;
       font-size: 18px;
+      font-weight: normal;
       letter-spacing: 0px;
       font-style: normal;
       > :last-child {

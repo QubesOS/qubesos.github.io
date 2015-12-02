@@ -1,3 +1,78 @@
+/**
+ * Buttons
+ */
+.btn {
+  font-family: $base-font-family-bold !important;
+  font-weight: normal;
+
+  .btn-lg {
+    padding: 15px 25px;
+  }
+
+  small {
+    display: inline-block;
+    font-family: $base-font-family;
+    font-weight: normal;
+    font-size: .75em;
+    color: $gray;
+  }
+}
+
+
+/**
+ * White boxes
+ */
+ .white-box {
+   background: $color-white;
+   border: 1px solid $gray-light;
+   border-radius: 10px;
+   padding: 25px;
+ }
+
+
+/**
+ * Black Links
+ */
+a.black-link {
+  color: $gray-base;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a.black-link span.detail {
+  display: block;
+  font-size: 14px;
+  color: $gray-dark;
+  text-transform: capitalize;
+}
+
+
+/**
+ * Lists
+ */
+
+ul.list-spaced li,
+ol.list-spaced li {
+  margin-bottom: ($spacing-unit / 1.5);
+}
+
+li.list-links {
+  display: block;
+  padding: ($spacing-unit / 2);
+  border-radius: $base-radius;
+}
+
+li.list-links:hover {
+  background-color: $gray-lighter;
+}
+
+li.list-links-normal {
+  // Offers same to non-styled links
+  padding: ($spacing-unit / 2);
+}
+
+
+
 //
 // Extras - Adding & Removing Margins
 // --------------------------------------------------

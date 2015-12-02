@@ -11,6 +11,7 @@
   background-color: $body-bg;
 
   a {
+    font-family: $ostrich-heavy;
     font-size: 21px;
     color: $gray-base;
   }
@@ -30,6 +31,7 @@
       }
 
       a {
+        font-family: $ostrich-heavy;
         -webkit-transition: background .25s ease-in-out;
         -moz-transition: background .25s ease-in-out;
         transition: background .25s ease-in-out;

@@ -82,25 +82,17 @@ img {
  * Links
  */
 a {
-    color: $brand-primary;
-    text-decoration: none;
-    font-size: 14px;
-    border-bottom: 0px solid transparent;
+  color: $brand-primary;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: $base-font-family-bold;
+  font-weight: bold;
+  border-bottom: 0px solid transparent;
 
-    /*&:visited {
-        color: darken($brand-color, 15%);
-    }*/
-
-    /*&:hover {
-        color: $text-color;
-        border-bottom: 1px solid $text-color;
-    }*/
-}
-
-a {
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+
   &:hover,
   &:focus {
     text-decoration: none;
@@ -108,6 +100,14 @@ a {
   }
 }
 
+
+/**
+ * Text Styling
+ */
+em,
+i {
+  font-family: $base-font-family-italic;
+}
 
 /**
  * Paragraphs
@@ -136,13 +136,12 @@ blockquote {
     > :last-child {
         margin-bottom: 0;
     }
-    
+
     small,
     footer {
       color: $gray;
     }
 }
-
 
 
 /**
@@ -171,8 +170,6 @@ pre {
     }
 }
 
-
-
 /**
  * Clearfix
  */
@@ -185,70 +182,6 @@ pre {
     }
 }
 
-
-/**
- * Buttons
- */
-.btn {
-  font-family: $base-font-family-bold !important;
-}
-
-.btn.btn-lg {
-  padding: 15px 25px;
-}
-
-.btn.btn-lg small {
-  display: inline-block;
-  font-family: $base-font-family;
-  font-weight: normal;
-  color: $gray;
-}
-
-
-/**
- * White boxes
- */
- .white-box {
-   background: $color-white;
-   border: 1px solid $gray-light;
-   border-radius: 10px;
-   padding: 25px;
- }
-
-
-/**
- * Black Links
- */
-a.black-link {
-  color: $gray-base;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-a.black-link span.detail {
-  display: block;
-  font-size: 14px;
-  color: $gray-dark;
-  text-transform: capitalize;
-}
-
-/**
- * List Links
- */
-li.list-links {
-  display: block;
-  padding: ($spacing-unit / 2);
-  border-radius: $base-radius;
-}
-
-li.list-links:hover {
-  background-color: $gray-lighter;
-}
-
-li.list-links-normal {
-  // Offers same to non-styled links
-  padding: ($spacing-unit / 2);
-}
 
 /**
  * Cursor Select

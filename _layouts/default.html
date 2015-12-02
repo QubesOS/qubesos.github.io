@@ -4,7 +4,23 @@
     <body>
       {% include header.html %}
       <div class="container">
+        <h1 class="more-top add-left">
+        {% for section in site.data.architecture %}
+          {% if section.url == page.permalink %}
+          <i class="fa {{section.icon}}"></i> &nbsp;
+          {% else %}
+          {% for sub in section.sub-pages %}
+          {% if sub.url == page.permalink %}
+          <i class="fa {{sub.icon}}"></i> &nbsp;
+          {% endif %}
+          {% endfor %}
+          {% endif %}
+        {% endfor %}
+        {{ page.title }}
+        </h1>
+        <div class="white-box more-bottom">
         {{ content }}
+        </div>
         {% include footer.html %}
       </div>
   </body>

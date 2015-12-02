@@ -1,32 +1,44 @@
 - title: Tour
   url: /tour/
+  icon: fa-flag
   sub-pages:
   - title: Intro
     url: /intro/
+    icon: fa-flag
   - title: Screenshots
     url: /screenshots/
+    icon: fa-picture-o
 
-- title: Getting Started
-  url: /doc/getting-started/
+- title: Get Started
+  url: /doc/
+  icon: fa-fort-awesome
   sub-pages:
   - title: Downloads
     url: /downloads/
+    icon: fa-download
   - title: Compatible Hardware
-    url: /hcl/
+    url: /compatible-hardware/
+    icon: fa-laptop
   - title: Try on Live USB
-    url: /downloads/
+    url: /downloads/#qubes-live-usb-alpha
+    icon: fa-download
 
-- title: Help & Support
-  url: /help-and-support/
+- title: Help
+  url: /help/
+  icon: fa-medkit
   sub-pages:
   - title: Documentation
     url: /doc/
+    icon: fa-book
   - title: FAQ
     url: /doc/user-faq/
+    icon: fa-info-circle
   - title: Developers
     url: /doc/devel-faq/
+    icon: fa-code
   - title: Mailing Lists
     url: /doc/mailing-lists/
+    icon: fa-envelope-o
   - title: Report a Bug
     url: https://github.com/QubesOS/qubes-issues/issues
   - title: StackOverflow
@@ -36,18 +48,23 @@
 
 - title: News
   url: /news/
+  icon: fa-newspaper-o
   sub-pages:
   - title: Announcements
     url: /news#announcements/
+    icon: fa-bullhorn
   - title: Releases
     url: /releases/
+    icon: fa-rocket
   - title: Press
     url: /news#press/
+    icon: fa-newspaper-o
   - title: Twitter
     url: https://twitter.com/QubesOS
 
-- title: About
-  url: /about/
+- title: Team
+  url: /team/
+  icon: fa-qube
   sub-pages:
   - title: Team
     url: /team/
@@ -57,14 +74,14 @@
     url: /security/
   - title: Contact
     url: /contact/
+    icon: fa-comments
 
 - title: Donate
   url: /donate/
+  icon: fa-heart
   sub-pages:
-  - title: Our Funding
-    url: /donate/
   - title: Direct Donation
-    url: /donate/
+    url: /donate/#direct-donation
   - title: PayPal
     url: /donate#paypal/
   - title: Bitcoin

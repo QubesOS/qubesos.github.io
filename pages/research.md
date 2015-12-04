@@ -31,5 +31,5 @@ Here are some links to various papers/research projects that somehow relate to Q
 
 ### VMM/Xen disagregation
 
--   [[http://tjd.phlegethon.org/words/sosp11-xoar.pdf](http://tjd.phlegethon.org/words/sosp11-xoar.pdf) "Breaking Up is Hard to Do: Security and Functionality in a Commodity Hypervisor] by Patrick Colp at el.
+-   [Breaking Up is Hard to Do: Security and Functionality in a Commodity Hypervisor](http://tjd.phlegethon.org/words/sosp11-xoar.pdf) by Patrick Colp at el.
      (Also see [this thread on xen-devel](http://www.gossamer-threads.com/lists/xen/devel/230011))

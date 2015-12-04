@@ -12,24 +12,17 @@ redirect_from:
 <div class="row">
   <div class="col-lg-4">
     <h2>Documentation</h2>
-    <p>No matter what you are </p>
+    <p>Check out our documentation for information about setting up and using Qubes.</p>
     <a href="/doc/" class="btn btn-primary">Read Documentation</a>
   </div>
   <div class="col-lg-4">
     <h2>FAQ</h2>
-    <p>Search through frequently asked questions or issues that the fine folks on the <strong>Qubes Documentation</strong> team have answered to help people use Qubes.</p>
+    <p>Search through frequently asked questions people have had with Qubes.</p>
     <a href="/doc/user-faq/" class="btn btn-primary">Frequently Asked Questions</a>
   </div>
   <div class="col-lg-4">
     <h2>Mailing Lists</h2>
-    <ul>
-      <li>Please send all the questions regarding Qubes OS to one of [these](/doc/mailing-lists/) mailing lists.</li>
-      <li>To subscribe to the user list, send a blank mail to `qubes-users+subscribe@googlegroups.com` </li>
-      <li>By sending a message to the appropriate mailing list, you are not only giving others a chance to help you,
-    but you may also be helping others by starting a public discussion about a shared problem or interest.</li>
-      <li><strong>Please do not send questions to individual Qubes developers.</strong></li>
-      <li><strong>Please do not [top-post](https://en.wikipedia.org/wiki/Posting_style), use inline replying or bottom-posting instead.</strong></li>
-    </ul>
+    <p>If you still have questions, please search or join the Qubes OS mailing lists.</p>
     <a href="/doc/mailing-lists/" class="btn btn-primary">Join Mailing Lists</a>
   </div>
 </div>
@@ -43,14 +36,14 @@ redirect_from:
     <a href="https://github.com/QubesOS/qubes-issues/issues" class="btn btn-primary">Report a Bug</a>
   </div>
   <div class="col-lg-4">
-    <h2>Search StackOverflow</h2>
-    <p>StackOverflow is a staple of any developer's diet. Check out the QubesOS tag on StackOverflow for an answer to your question. Not there? Ask a new question!</p>
+    <h2>StackOverflow</h2>
+    <p>Check out the QubesOS tag on StackOverflow for potential answers to any questions you may have. Not there? Ask a new question!</p>
     <a href="https://stackoverflow.com/questions/tagged/Qubes+OS" class="btn btn-primary">Search StackOverflow</a>
   </div>
   <div class="col-lg-4">
     <h2>IRC Chat</h2>
     <p>
-    Get together at <strong>#qubes</strong> on <strong>irc.freenode.net</strong>, the inofficial
+    Get together at <strong>#qubes</strong> on <strong>irc.freenode.net</strong>, the unofficial
     QubesOS IRC channel.</p>
     <a href="irc:irc.freenode.net/qubes">In Your IRC Client</a>
     <a href="https://webchat.freenode.net/?channels=qubes" class="btn btn-primary">Webchat</a>

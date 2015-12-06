@@ -1,18 +1,26 @@
 <footer>
-  <div class="row more-bottom">
-    <div class="col-lg-12">
-      <form class="site-search" action="https://duckduckgo.com/" method="get">
-        <i class="fa fa-search"></i>
-        <input type="hidden" name="sites" value="https://www.qubes-os.org" />
-        <input class="search" type="text" name="q" results="0" placeholder="Search with DuckDuckGo&hellip;" />
-        <button class="btn btn-primary" type="submit">Search</button>
+  <div class="white-box more-bottom">
+  <div class="row footer-search">
+    <div class="col-lg-3 text-center">
+      <h4 class="remove-bottom"><i class="fa fa-search"></i> Search Qubes-OS.org</h4>
+    </div>
+    <div class="col-lg-9 text-left">
+      <form action="https://duckduckgo.com/" method="get">
+        <div class="input-group">
+          <input type="hidden" name="sites" value="https://www.qubes-os.org">
+          <input type="text" class="form-control" name="q" placeholder="Using DuckDuckGo&hellip;">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="submit">Go!</button>
+          </span>
+        </div><!-- /input-group -->
       </form>
     </div>
+  </div>
   </div>
   <div class="row footer-nav">
     {% for section in site.data.architecture %}
     <div class="col-lg-2">
-      <h4 class="text-left add-bottom">{{section.title}} {% if section.title == "Donate" %}<i class="fa fa-heart"></i>{% endif %}</h4>
+      <h5 class="text-left add-bottom">{{section.title}} {% if section.title == "Donate" %}<i class="fa fa-heart"></i>{% endif %}</h5>
       <ul class="list-unstyled">
         {% for sub in section.sub-pages %}
         <li><a href="{{sub.url}}">{{sub.title}}</a></li>

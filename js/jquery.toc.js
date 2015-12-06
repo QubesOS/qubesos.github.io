@@ -30,6 +30,7 @@
 
     $.fn.toc = function(settings) {
         var config = {
+            renderIn: 'self',
             anchorPrefix: 'tocAnchor-',
             showAlways: false,
             saveShowStatus: true,
@@ -94,11 +95,17 @@
             var replacedTocContainer = tocContainerHTML
                 .replace('%1', replacedToggleHTML)
                 .replace('%2', tocHTML);
-            tocContainer.prepend(replacedTocContainer);
+
+            // Renders in default or specificed path
+            if (config.renderIn != 'self') {
+              $(config.renderIn).html(replacedTocContainer);
+            } else {
+              tocContainer.prepend(replacedTocContainer);
+            }
 
             $('#toctogglelink').click(function() {
                 var ul = $($('#toc ul')[0]);
-                
+
                 if (ul.is(':visible')) {
                     ul.hide();
                     $(this).text(config.showText);
@@ -119,7 +126,7 @@
 
             if (config.saveShowStatus && $.cookie('toc-hide')) {
                 var ul = $($('#toc ul')[0]);
-                
+
                 ul.hide();
                 $('#toctogglelink').text(config.showText);
                 $('#toc').addClass('tochidden');

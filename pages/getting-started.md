@@ -11,18 +11,18 @@ redirect_from:
 
 <div class="row">
   <div class="col-lg-4">
-    <h2>Try Qubes Now</h2>
-    <p>If you don't have an extra computer laying around and / or are not ready to install Qubes on your primary  computer, you can try it out our bootable live USB .</p>
-    <a href="/downloads/#qubes-live-usb-alpha/" class="btn btn-primary">Try Qubes Live USB</a>
+    <h2>Try Qubes</h2>
+    <p>You don't have to replace your current operating system in order to try out Qubes, make a bootable live USB/DVD to try it out now!</p>
+    <a href="/downloads/#qubes-live-usb-alpha/" class="btn btn-primary">Try Qubes Live USB/DVD</a>
   </div>
   <div class="col-lg-4">
     <h2>Compatible Hardware</h2>
-    <p>If you've read enough and think Qubes is right for you, first make sure your hardware is compatible as Qubes cannot run every type of computer.</p>
+    <p>If you want to jumpstart think Qubes is right for you, first make sure your hardware is compatible as Qubes cannot run every type of computer.</p>
     <a href="/compatible-hardware/" class="btn btn-primary">Compatible Hardware</a>
   </div>
   <div class="col-lg-4">
     <h2>Downloads</h2>
-    <p>This guide assumes that you've just installed Qubes for the first time. The installation guide for your Qubes release can be found on the.</p>
+    <p>This guide assumes that you have Qubes up and running. If you don't have Qubes yet, you can download it here.</p>
     <a href="/downloads/" class="btn btn-primary">Downloads</a>
   </div>
 </div>

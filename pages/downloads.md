@@ -7,8 +7,8 @@ redirect_from:
 - /wiki/QubesDownloads/
 ---
 
-Qubes Downloads
-===============
+Before You Download...
+----------------------
 
 -   [System Requirements](/doc/system-requirements/)
 -   [Hardware Compatibility List](/hcl/)

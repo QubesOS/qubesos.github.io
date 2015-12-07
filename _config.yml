@@ -26,11 +26,29 @@ encoding: utf-8
 relative_permalinks: false
 permalink: /news/:year/:month/:day/:title/
 excerpt_separator: ""
+
 gems:
   - jekyll-redirect-from
 
 collections:
   doc:
     output: true
+    permalink: /doc/:path/
   hcl:
     output: false
+
+allowed_categories:
+  - press
+  - announcements
+  - releases
+  - articles
+
+defaults:
+  -
+    scope:
+      path: "news"
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Qubes OS"
+      category: "announcement"

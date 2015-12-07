@@ -36,7 +36,7 @@ redirect_from:
   </div>
 </div>
 
-<div class="container">
+<div class="home-content container">
 
   <!-- Experts -->
   <div class="row">
@@ -88,7 +88,7 @@ redirect_from:
       </div>
       <div class="col-lg-6 text-center">
         <h4>Why do the experts like Qubes?</h4>
-        <a class="btn btn-primary" href="">The Qubes Approach</a>
+        <a class="btn btn-primary" href="/doc/qubes-architecture/">The Qubes Approach</a>
       </div>
       </div>
     </div>
@@ -126,23 +126,31 @@ redirect_from:
             </blockquote>
           </a>
       </div>
-          <a href="/news/">More Media &amp; Press</a>
+      <a href="/news/" class="btn btn-sm btn-primary">More Media &amp; Press</a>
     </div>
   </div>
   <div class="col-lg-6 more-bottom">
-    <h2 class="text-center"><i class="fa fa-bullhorn"></i> Posts &amp; Announcements</h2>
+    <h2 class="text-center"><i class="fa fa-bullhorn"></i> Articles &amp; Announcements</h2>
     <div class="white-box">
       <ul class="list-unstyled remove-bottom">
-        {% for article in site.data.news %}
+        {% for post in site.posts limit:5 %}
         <li class="list-links">
-          <a class="black-link" href="{{article.url}}">
-            {{article.title}}
-            <span class="detail"><strong>{{article.type}}</strong> on {{article.date}}</span>
+          <a class="black-link" href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.title }}
+            <span class="detail">
+              <strong>
+                {% for category in post.categories %}
+                {% if site.allowed_categories contains category %}
+                <strong>{{ category | capitalize }}</strong>
+                {% endif %}
+                {% endfor %}
+                on {{ post.date | date: "%b %-d, %Y" }}
+            </span>
           </a>
         </li>
         {% endfor %}
         <li class="list-links-normal">
-          <a href="/news/">More Posts &amp; Announcements</a>
+          <a href="/news/" class="btn btn-sm btn-primary">More Articles &amp; Announcements</a>
         </li>
       </ul>
     </div>
@@ -202,7 +210,7 @@ redirect_from:
         </li>
         {% endfor %}
         <li class="list-links-normal">
-          <a href="/research/">All of our research</a>
+          <a href="/research/" class="btn btn-sm btn-primary">More of Our Research</a>
         </li>
       </ul>
       </div>

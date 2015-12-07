@@ -3,6 +3,58 @@
  */
 
 
+.page-content {
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+    margin: 0 0 35px;
+    font-weight: 200;
+    font-family: $base-font-family;
+    color: $gray-base;
+    letter-spacing: 1px;
+  }
+
+  h1 { font-size: 36px; }
+  h2 { font-size: 30px; }
+  h3 { font-size: 24px; }
+  h4 { font-size: 21px; }
+  h5 { font-size: 18px; }
+
+
+  h1 i,
+  h2 i,
+  h3 i,
+  h4 i,
+  h5 i,
+  h6 i {
+    margin-right: .25em;
+  }
+
+  h1 strong,
+  h2 strong,
+  h3 strong,
+  h4 strong,
+  h5 strong,
+  h6 strong {
+    font-family: $base-font-family-bold;
+    color: $gray-base;
+  }
+
+  ul,
+  ol {
+    margin-left: 0px;
+  }
+
+  .page-content-left {
+    border-right: 1px solid $gray-light;
+  }
+
+}
+
 
 @media screen and (max-width: $on-palm) {
 

@@ -15,6 +15,13 @@ div.home-banner {
 
   h1 {
     font-size: 115px;
+    font-weight: 200;
+    font-family: $ostrich;
+    letter-spacing: 1px;
+  }
+
+  h1 strong {
+    font-family: $ostrich-heavy;
   }
 
   h1 small {

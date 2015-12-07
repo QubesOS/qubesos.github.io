@@ -15,7 +15,6 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav nav-justified">
-        <li><a href="{{ "/" | prepend: site.baseurl | prepend: site.url }}">Qubes</a></li>
         {% for section in site.data.architecture %}
         <li><a href="{{ section.url | prepend: site.baseurl | presend: site.url }}">{{ section.title }}</a></li>
         {% endfor %}

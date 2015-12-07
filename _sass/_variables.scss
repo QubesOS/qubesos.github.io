@@ -60,7 +60,7 @@ $bootstrap-sass-asset-helper: false !default;
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #111111 !default;
+$gray-base:              #333333 !default;
 $gray-darker:            #888888 !default;
 $gray-dark:              #8e8e95 !default;
 $gray:                   #bfbfbf !default;
@@ -95,7 +95,7 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Open-Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
@@ -107,11 +107,11 @@ $font-size-large:         18px !default; // ~18px
 $font-size-small:         12px !default; // ~12px
 
 $font-size-h1:            48px !default;
-$font-size-h2:            36px !default;
-$font-size-h3:            30px !default;
-$font-size-h4:            24px !default;
-$font-size-h5:            18px !default;
-$font-size-h6:            14px !default;
+$font-size-h2:            48px !default;
+$font-size-h3:            36px !default;
+$font-size-h4:            30px !default;
+$font-size-h5:            24px !default;
+$font-size-h6:            18px !default;
 
 
 //** Unit-less `line-height` for use in components like buttons.
@@ -921,4 +921,4 @@ $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Point at which .dl-horizontal becomes horizontal
 $dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 //** Horizontal line color.
-$hr-border:                   $gray-lighter !default;
+$hr-border:                   $gray-light !default;

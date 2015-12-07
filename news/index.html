@@ -1,0 +1,33 @@
+---
+layout: post
+title: News
+permalink: /news/
+redirect_from: /en/news/
+---
+
+<ul class="list-unstyled remove-bottom">
+{% for post in site.posts %}
+  <li>
+    <h2 class="post-title remove-top remove-bottom">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+        {{ post.title }}
+        {% if post.redirect_to %}
+        <i class="fa fa-external-link"></i>
+        {% endif %}
+      </a>
+    </h2>
+    <p class="post-meta">
+      {{ post.date | date: "%b %-d, %Y" }} by <strong>{{ post.author }}</strong> in
+      <strong>
+      {% for category in post.categories %}
+        {{ category | capitalize }}{% if forloop.index < forloop.length %},{% endif %}
+      {% endfor %}
+    </strong>
+    </p>
+    {% if post.download_url %}
+    <a href="{{post.download_url}}" class="btn btn-info btn-sm"><i class="fa fa-download"></i> Go Download</a>
+    {% endif %}
+    {% if forloop.index < forloop.length %}<hr>{% endif %}
+  </li>
+{% endfor %}
+</ul>

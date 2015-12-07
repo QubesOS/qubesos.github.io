@@ -20,7 +20,6 @@ body {
 }
 
 
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -28,7 +27,7 @@ h1, h2, h3, h4, h5, h6,
 hr, p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 2;
 }
 
 
@@ -41,12 +40,21 @@ ul, ol, dl, figure,
  h4,
  h5,
  h6 {
-   margin: 0 0 35px;
-   font-weight: 200;
-   font-family: $ostrich;
-   color: $gray-base;
-   letter-spacing: 1px;
- }
+  margin: 0 0 35px;
+  font-weight: 200;
+  font-family: $ostrich;
+  color: $gray-base;
+  letter-spacing: 1px;
+}
+
+ h1 i,
+ h2 i,
+ h3 i,
+ h4 i,
+ h5 i,
+ h6 i {
+  margin-right: .25em;
+}
 
  h1 strong,
  h2 strong,
@@ -54,9 +62,9 @@ ul, ol, dl, figure,
  h4 strong,
  h5 strong,
  h6 strong {
-   font-family: $ostrich-heavy;
-   color: $gray-base;
- }
+  font-family: $ostrich-heavy;
+  color: $gray-base;
+}
 
 
 /**
@@ -79,7 +87,7 @@ img {
 
 
 /**
- * Links
+ * Links - base.scss
  */
 a {
   color: $brand-primary;
@@ -96,7 +104,7 @@ a {
   &:hover,
   &:focus {
     text-decoration: none;
-    color: darken($brand-primary,0.2);
+    color: $gray-darker;
   }
 }
 
@@ -150,9 +158,10 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $gray-light;
-    border-radius: 3px;
-    background-color: #eef;
+    border: 1px solid $gray;
+    border-radius: 4px;
+    background-color: $gray-base;
+    color: $color-white;
 }
 
 code {
@@ -188,6 +197,6 @@ pre {
  */
 ::-moz-selection, ::selection  {
   text-shadow: none;
-  background: #fcfcfc;
-  background: transparentize($gray-dark, 0.8);
+  background: $brand-primary;
+  color: $color-white;
 }

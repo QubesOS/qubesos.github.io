@@ -9,6 +9,10 @@
     padding: 15px 25px;
   }
 
+  i.fa {
+    margin-right: 5px;
+  }
+
   small {
     display: inline-block;
     font-family: $base-font-family;
@@ -34,17 +38,29 @@
  * Black Links
  */
 a.black-link {
+  display: block;
+  width: 100%;
+  height: 100%;
   color: $gray-base;
   font-size: 18px;
   font-weight: bold;
+
+  span.detail {
+    display: block;
+    font-size: 14px;
+    color: $gray-dark;
+    text-transform: capitalize;
+  }
 }
 
-a.black-link span.detail {
-  display: block;
-  font-size: 14px;
-  color: $gray-dark;
-  text-transform: capitalize;
+a.black-link:hover {
+  color: $brand-primary;
+
+  span.detail {
+    color: $gray;
+  }
 }
+
 
 
 /**
@@ -71,6 +87,16 @@ li.list-links-normal {
   padding: ($spacing-unit / 2);
 }
 
+
+
+/**
+ * Headings
+ */
+.heading-label {
+  background: $gray-lighter;
+  border-radius: $base-radius;
+  padding: ($spacing-unit / 2);
+}
 
 
 //
@@ -125,6 +151,8 @@ li.list-links-normal {
   margin-right: 0px !important;
 }
 
+
+
 .display-table {
   width: 100%;
   height: 100%;
@@ -135,6 +163,7 @@ li.list-links-normal {
   border: 1px solid red;
   display: table-cell;
 }
+
 
 .text-top {
   vertical-align: text-top;

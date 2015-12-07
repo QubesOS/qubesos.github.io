@@ -1,28 +1,39 @@
 /* Footer */
 
-.footer-nav h4 {
-  font-family: $ostrich-heavy;
-}
+.footer-nav {
 
-.footer-nav h4 i.fa-heart {
-  color: $brand-danger;
-}
+  h5 {
+    font-family: $ostrich-heavy;
+    color: $gray-base;
+    letter-spacing: 0px;
 
-.footer-nav a {
-  color: $gray-base;
-  font-size: 14px;
-  font-weight: normal;
+    i.fa-heart {
+      font-size: .8em;
+      color: $brand-danger;
+    }
+  }
+
+  a {
+    color: $gray-darker;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  a:hover {
+    color: $gray-base;
+  }
+
 }
 
 .footer-logo {
   padding: $spacing-unit;
   font-family: $ostrich;
   font-size: 30px;
-  color: $gray-base;
-}
+  color: $gray-darker;
 
-.footer-logo img {
-  margin-right: 10px;
+  img {
+    margin-right: 10px;
+  }
 }
 
 .footer-logo strong {

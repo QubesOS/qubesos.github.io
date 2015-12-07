@@ -4,9 +4,9 @@
 @charset "utf-8";
 
 // Custom - Fonts
-$base-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-family-italic: "Open Sans-Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-family-bold: "Opens Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family-italic: Helvetica, Arial, sans-serif;
+$base-font-family-bold: Helvetica, Arial, sans-serif;
 $base-font-family-bold-italic: "Opens Sans Bold Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   14px;
 $small-font-size:  $base-font-size * 0.85;
@@ -16,6 +16,10 @@ $ostrich: "Ostrich Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $ostrich-heavy: "Ostrich Heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $color-white: #FFFFFF;
+$color-black: #111111;
+$color-qube-dark: #99bfff;
+$color-qube-middle: #63a0ff;
+$color-qube-light: #3874d8;
 
 // Custom - Sizing & Widths
 $spacing-unit: 30px;

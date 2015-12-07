@@ -1,0 +1,14 @@
+<ul class="list-unstyled remove-bottom">
+{% for category in site.categories %}
+  {% if site.allowed_categories contains category[0] %}
+  <li><a href="{{ category[0] }}" class="btn"><h3>{{ category[0] | capitalize }}</h3></a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+<hr>
+
+{% for category in site.categories %}
+  {% unless site.allowed_categories contains category[0] %}
+  <a href="{{ category[0] }}">{{ category[0] | capitalize }}</a>,
+  {% endunless %}
+{% endfor %}

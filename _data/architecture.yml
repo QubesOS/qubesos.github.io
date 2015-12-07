@@ -8,10 +8,13 @@
   - title: Screenshots
     url: /screenshots/
     icon: fa-picture-o
+  - title: Research
+    icon: fa-file-text
+    url: /research/
 
-- title: Get Started
-  url: /doc/
-  icon: fa-fort-awesome
+- title: Getting Started
+  url: /getting-started/
+  icon: fa-cube
   sub-pages:
   - title: Downloads
     url: /downloads/
@@ -51,27 +54,27 @@
   icon: fa-newspaper-o
   sub-pages:
   - title: Announcements
-    url: /news#announcements/
+    url: /news#announcements
     icon: fa-bullhorn
   - title: Releases
-    url: /releases/
+    url: /doc/releases/
     icon: fa-rocket
   - title: Press
-    url: /news#press/
+    url: /news#press
     icon: fa-newspaper-o
   - title: Twitter
     url: https://twitter.com/QubesOS
 
 - title: Team
   url: /team/
-  icon: fa-qube
+  icon: fa-users
   sub-pages:
-  - title: Team
-    url: /team/
   - title: Partners
     url: /partners/
+    icon: fa-globe
   - title: Security
     url: /security/
+    icon: fa-lock
   - title: Contact
     url: /contact/
     icon: fa-comments

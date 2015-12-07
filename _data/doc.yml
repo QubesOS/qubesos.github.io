@@ -1,11 +1,35 @@
-- title: Qubes OS
-  doc:
-# - QubesDownloads
-# - QubesScreenshots
-# - QubesSecurity
-# - QubesDocs
-# - QubesLists
-# - QubesLicensing
-# - QubesDevelopers
-# - Donations
-# - QubesContacts
+- title: The Basics
+  folder: basics
+
+- title: Choosing Your Hardware
+  folder: hardware
+
+- title: Installing Qubes
+  folder: installing
+
+- title: Common Tasks
+  folder: common-tasks
+
+- title: Managing Operating Systems
+  folder: managing-os
+
+- title: Security Guides
+  folder: security
+
+- title: Privacy Guides
+  folder: privacy
+
+- title: Configuration Guides
+  folder: configuration
+
+- title: Customization Guides
+  folder: customization
+
+- title: Troubleshooting
+  folder: troubleshooting
+
+- title: Reference Pages
+  folder: reference
+
+- title: For Developers
+  folder: developers

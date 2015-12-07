@@ -33,17 +33,17 @@ Instructions
         GIT_REPO=/usr/home/git/repositories/www.qubes-os.org.git
         GIT_CLONE=/usr/home/git/tmp/www.qubes-os.org
         PUBLIC_WWW=/usr/local/www/qubes-os.org/www/
-        
+
         if [ ! -d "$GIT_CLONE" ]; then
             git clone --recursive $GIT_REPO $GIT_CLONE
         else
             git --work-tree=$GIT_CLONE --git-dir=$GIT_CLONE/.git pull
         fi
         cd $GIT_CLONE && jekyll build -s $GIT_CLONE -d $PUBLIC_WWW
-        
+
         find $PUBLIC_WWW -type f -print0 | xargs -0 chmod 666
         find $PUBLIC_WWW -type d -print0 | xargs -0 chmod 777
-        
+
         exit
 
 
@@ -57,6 +57,33 @@ please [fork and clone][gh-fork] this repo, make your changes, then either
 browse this repository and edit the files here. The GitHub interface will
 automatically guide you through the [fork and pull request process][gh-fork].
 
+#### Adding Normal Pages
+
+To add normal pages such as [Getting Started](https://qubes-os.org/getting-started) or [Donate](https://qubes-os.org/donate/), do the following:
+
+1. Create a file `your-new-page.md` or `.html`
+2. Place this inside of the `pages/` directory
+3. Copy a header section from another page and edit corresponding values
+4. Add this page to `_data/architecture.yml` file so that your page shows up in the footer navigation
+5. Pick an icon that matches thematically with your page :)
+
+#### Adding Blog Posts
+
+1. Copy the template file `_drafts/2015-12-06-a-template-daft.md` to something like `2015-12-08-your-new-post.md`
+2. This can be a `.html` file as well
+3. Place this inside of the `_drafts/` directory
+3. To see drafts, add the `--drafts` flag when you run Jekyll such as `jekyll s -V --drafts`
+4. Edit the template file you just created
+5. Make sure to add "categories" to it
+6. When you are ready to publish your post, put your file inside of the `_posts/` directory
+
+#### Dependencies & Third Party Docs
+
+- [Jekyll Documentation] - template rendering engine
+- [Bootstrap 3] - styling and CSS structure
+- [FontAwesome] - the icon font throughout the site
+- [jQuery 1.7] - javascript helper library
+- [jQuery ToC MD Generator] - renders header menu on documentation section
 
 Markdown Conventions
 --------------------
@@ -80,13 +107,18 @@ areas, please observe the following style conventions, where appropriate:
    possible, use Atx-style headings on both the left and right sides
    (`### H3 ###`).
  * Use `[reference-style][ref]` links.  
- 
+
 `[ref]: http://daringfireball.net/projects/markdown/syntax#link`
 
 
 [qubes]: https://github.com/QubesOS
 [intro]: https://www.qubes-os.org/intro/
 [Jekyll]: https://jekyllrb.com/
+[Jekyll Documentation]: http://jekyllrb.com/docs/
+[FontAwesome]: http://fontawesome.io
+[Bootstrap 3]: http://getbootstrap.com
+[jQuery 1.7]: http://api.jquery.com
+[jQuery ToC MD Generator]: https://github.com/dafi/tocmd-generator
 [gh-fork]: https://guides.github.com/activities/forking/
 [gh-pull]: https://help.github.com/articles/using-pull-requests/
 [patch]: https://www.qubes-os.org/doc/source-code/#sending-a-patch

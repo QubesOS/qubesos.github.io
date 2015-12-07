@@ -83,9 +83,9 @@
   url: /donate/
   icon: fa-heart
   sub-pages:
-  - title: Direct Donation
-    url: /donate/#direct-donation
-  - title: PayPal
-    url: /donate#paypal/
+#  - title: Direct Donation
+#    url: /donate/#direct-donation
+#  - title: PayPal
+#    url: /donate#paypal/
   - title: Bitcoin
-    url: /donate#bitcoin/
+    url: /donate#bitcoin

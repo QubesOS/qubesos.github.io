@@ -13,7 +13,7 @@ $bootstrap-sass-asset-helper: false !default;
 
 @font-face {
 	font-family: 'Open Sans Italic';
-	font-style: italic;
+	font-style: normal;
 	font-weight: 500;
 	src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
 }
@@ -27,14 +27,14 @@ $bootstrap-sass-asset-helper: false !default;
 
 @font-face {
 	font-family: 'Open Sans Bold Italic';
-	font-style: italic;
+	font-style: normal;
 	font-weight: 700;
 	src: url('../fonts/OpenSans-BoldItalic.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'Ostrich Heavy';
-	font-style: bold;
+	font-style: normal;
 	font-weight: 700;
 	src: url('../fonts/OstrichSans-Heavy.eot');
 	src: url('../fonts/OstrichSans-Heavy.eot?#iefix') format('embedded-opentype'),

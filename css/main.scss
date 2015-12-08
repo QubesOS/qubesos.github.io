@@ -15,6 +15,11 @@ $base-line-height: 1.5;
 $ostrich: "Ostrich Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $ostrich-heavy: "Ostrich Heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+$open-sans: "Opens Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$open-sans-italic: "Opens Sans Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$open-sans-bold: "Opens Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$open-sans-bold-italic: "Opens Sans Bold Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 $color-white: #FFFFFF;
 $color-black: #111111;
 $color-qube-dark: #99bfff;
@@ -28,7 +33,7 @@ $base-radius: 5px;
 $content-width:    1024px;
 $on-palm:          600px;
 $on-laptop:        800px;
-
+$on-laptop-wide:   1150px;
 
 /* Bootstrap imports */
 

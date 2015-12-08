@@ -14,7 +14,7 @@ div.home-banner {
   border-bottom: 1px solid $gray-light;
 
   h1 {
-    font-size: 115px;
+    font-size: 125px;
     font-weight: 200;
     font-family: $ostrich;
     letter-spacing: 1px;
@@ -30,6 +30,12 @@ div.home-banner {
     font-size: 30px;
     color: #888888;
   }
+
+  div.home-big-button {
+    padding-top: $spacing-unit;
+    width: 400px;
+    margin: 0px auto;
+  }
 }
 
 
@@ -40,7 +46,7 @@ div.featured-quotes {
       border-left: 0px;
       padding-top: 0px;
       padding-left: 10px;
-      font-family: $base-font-family;
+      font-family: $open-sans;
       font-size: 18px;
       font-weight: normal;
       letter-spacing: 0px;
@@ -51,6 +57,7 @@ div.featured-quotes {
       small,
       footer {
         color: $gray;
+        font-family: $open-sans;
       }
   }
 
@@ -87,4 +94,16 @@ img.featured-logo {
   max-width: 200px;
   max-height: 60px;
   margin-bottom: ($spacing-unit / 2);
+}
+
+
+@media screen and (max-width: 1100px) {
+
+  div.home-banner {
+    div.home-big-button {
+      padding-top: 0px;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
 }

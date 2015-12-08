@@ -33,6 +33,28 @@ Qubes Live USB (alpha)
 
 -   [Announcement and usage instructions](https://groups.google.com/d/msg/qubes-users/IQdCEpkooto/iyMh3LuzCAAJ)
 
+Qubes Release 3.1 (release candidate)
+-------------------------------------
+
+<!---
+-   [**Qubes-R3.1-rc1-x86_64-DVD.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc1-x86_64-DVD.iso)
+      [[hash](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc1-x86_64-DVD.iso.DIGESTS)]
+      [[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc1-x86_64-DVD.iso.asc)]
+      [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]
+      [[?](/doc/verifying-signatures/)]
+      (mirrors.kernel.org)
+--->
+-   [**Qubes-R3.1-rc1-x86_64-DVD.iso**](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc1-x86_64-DVD.iso)
+      <!---[[hash](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc1-x86_64-DVD.iso.DIGESTS)]--->
+      [[sig](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc1-x86_64-DVD.iso.asc)]
+      [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]
+      [[?](/doc/verifying-signatures/)]
+      (ftp.qubes-os.org)
+
+-   [**Installation Guide**](/doc/installation-guide/)
+-   [Release notes](/doc/releases/3.1/release-notes/)
+-   [Upgrading to Qubes R3.1 rc1](/doc/releases/3.1/release-notes/#upgrading)
+
 Qubes Release 3.0 (latest stable release)
 -------------------------------------
 

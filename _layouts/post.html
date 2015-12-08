@@ -1,15 +1,41 @@
----
-layout: default
----
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-</div>
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <body>
+      {% include header.html %}
+      <div class="container">
+        <h1 class="more-top add-left">
+          <i class="fa fa-newspaper-o"></i> News
+        </h1>
+        <div class="more-bottom white-box page-content">
+          <div class="row">
+            <div class="col-lg-10">
+              {% if page.path == "news/index.html" %}
+              <article class="post-content">
+                {{ content }}
+              </article>
+              {% else %}
+              <header class="post-header">
+                <h1 class="post-title remove-bottom">{{ page.title }}</h1>
+                <p class="post-meta">
+                  {{ page.date | date: "%b %-d, %Y" }}
+                  {% if page.author %} by <strong>{{ page.author }}</strong>{% endif %}
+                  {% if page.meta %}{{ page.meta }}{% endif %}
+                  in <strong>
+                  {% for category in page.categories %}
+                    {{ category | capitalize }}{% if forloop.index < forloop.length %},{% endif %}
+                  {% endfor %}
+                  </strong>
+                </p>
+              </header>
+              <article class="post-content">
+                {{ content }}
+              </article>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% include footer.html %}
+      </div>
+  </body>
+</html>

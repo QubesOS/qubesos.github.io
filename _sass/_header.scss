@@ -1,0 +1,127 @@
+/*
+* Greyscale overwrites.
+*/
+
+.navbar-custom {
+  height: 72px;
+  margin-bottom: 0;
+  font-family: $ostrich-heavy;
+  font-size: 21px;
+  letter-spacing: 1px;
+  background-color: $body-bg;
+
+  a {
+    font-family: $ostrich-heavy;
+    font-size: 21px;
+    color: $gray-base;
+  }
+
+  a.page-link {
+    margin-right: 10px;
+  }
+
+  .nav {
+
+    li {
+
+      &.active {
+        outline: none;
+        background-color: $gray-light;
+        border-radius: $base-radius;
+      }
+
+      a {
+        font-family: $ostrich-heavy;
+        -webkit-transition: background .25s ease-in-out;
+        -moz-transition: background .25s ease-in-out;
+        transition: background .25s ease-in-out;
+
+        &:hover,
+        &:focus,
+        &.active {
+          outline: none;
+          background-color: $gray-light;
+          border-radius: $base-radius;
+        }
+      }
+    }
+  }
+}
+
+.navbar.navbar-custom {
+  border-bottom: 1px solid $gray-light;
+}
+
+.navbar-custom .navbar-collapse a {
+  color: $gray-light;
+}
+
+@media(min-width:$screen-xs-max) {
+
+  .navbar {
+    padding: 10px 0;
+    letter-spacing: 0px;
+
+  }
+
+  .navbar-custom .navbar-collapse a {
+    color: $gray-base;
+  }
+
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background-color: $gray-base;
+
+    a {
+      color: $gray-base;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  .navbar-custom {
+    .top-nav-collapse {
+      border-bottom: 1px solid transparentize($gray-base, 0.7);
+    }
+  }
+
+  .navbar-custom .navbar-brand {
+    font-size: 18px;
+  }
+}
+
+/**
+ * Site header
+ */
+.site-header {
+    min-height: 72px;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+}
+
+.navbar-brand .logo {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-top: -4px;
+    display: inline-block;
+
+    path {
+        color: #000;
+        fill: #fff;
+    }
+}
+
+.top-nav-collapse {
+    .logo path {
+        color: #fff;
+        fill: #fff;
+    }
+}
+
+
+.navbar-nav > li > a {
+  padding-top: 20px;
+}

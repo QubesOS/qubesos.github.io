@@ -1,0 +1,178 @@
+/**
+ * Buttons
+ */
+.btn {
+  font-family: $base-font-family-bold !important;
+  font-weight: normal;
+
+  .btn-lg {
+    padding: 15px 25px;
+  }
+
+  i.fa {
+    margin-right: 5px;
+  }
+
+  small {
+    display: inline-block;
+    font-family: $base-font-family;
+    font-weight: normal;
+    font-size: .75em;
+    color: $gray;
+  }
+}
+
+
+/**
+ * White boxes
+ */
+ .white-box {
+   background: $color-white;
+   border: 1px solid $gray-light;
+   border-radius: 10px;
+   padding: 25px;
+ }
+
+
+/**
+ * Black Links
+ */
+a.black-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: $gray-base;
+  font-size: 18px;
+  font-weight: bold;
+
+  span.detail {
+    display: block;
+    font-size: 14px;
+    color: $gray-dark;
+    text-transform: capitalize;
+  }
+}
+
+a.black-link:hover {
+  color: $brand-primary;
+
+  span.detail {
+    color: $gray;
+  }
+}
+
+
+
+/**
+ * Lists
+ */
+
+ul.list-spaced li,
+ol.list-spaced li {
+  margin-bottom: ($spacing-unit / 1.5);
+}
+
+li.list-links {
+  display: block;
+  padding: ($spacing-unit / 2);
+  border-radius: $base-radius;
+}
+
+li.list-links:hover {
+  background-color: $gray-lighter;
+}
+
+li.list-links-normal {
+  // Offers same to non-styled links
+  padding: ($spacing-unit / 2);
+}
+
+
+
+/**
+ * Headings
+ */
+.heading-label {
+  background: $gray-lighter;
+  border-radius: $base-radius;
+  padding: ($spacing-unit / 2);
+}
+
+
+//
+// Extras - Adding & Removing Margins
+// --------------------------------------------------
+
+.more-top {
+  margin-top: 35px !important;
+}
+
+.more-bottom {
+  margin-bottom: 35px !important;
+}
+
+.more-left {
+  margin-left: 35px !important;
+}
+
+.more-right {
+  margin-right: 35px !important;
+}
+
+.add-top {
+  margin-top: 15px !important;
+}
+
+.add-bottom {
+  margin-bottom: 15px !important;
+}
+
+.add-left {
+  margin-left: 15px !important;
+}
+
+.add-right {
+  margin-right: 15px !important;
+}
+
+.remove-top {
+  margin-top: 0px !important;
+}
+
+.remove-bottom {
+  margin-bottom: 0px !important;
+}
+
+.remove-left {
+  margin-left: 0px !important;
+}
+
+.remove-right {
+  margin-right: 0px !important;
+}
+
+
+
+.display-table {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.display-table-cell {
+  border: 1px solid red;
+  display: table-cell;
+}
+
+
+.text-top {
+  vertical-align: text-top;
+}
+
+.text-middle {
+  vertical-align: middle;
+}
+
+.text-bottom {
+  vertical-align: text-bottom;
+}

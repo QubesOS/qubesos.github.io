@@ -1,0 +1,41 @@
+/* Footer */
+
+.footer-nav {
+
+  h5 {
+    font-family: $ostrich-heavy;
+    color: $gray-base;
+    letter-spacing: 0px;
+
+    i.fa-heart {
+      font-size: .8em;
+      color: $brand-danger;
+    }
+  }
+
+  a {
+    color: $gray-darker;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  a:hover {
+    color: $gray-base;
+  }
+
+}
+
+.footer-logo {
+  padding: $spacing-unit;
+  font-family: $ostrich;
+  font-size: 30px;
+  color: $gray-darker;
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.footer-logo strong {
+  font-family: $ostrich-heavy;
+}

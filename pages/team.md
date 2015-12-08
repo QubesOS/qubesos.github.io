@@ -41,7 +41,7 @@ Contributors to Open-source Code
 -   Jason Mehring `nrgaway at gmail dot com` -- Debian templates improvements, Whonix integration
 -   Patrick Schleizer `adrelanos at riseup dot net` -- Whonix integration and maintenance
 
-Proprietary Code Developers
+Windows Tools Developers
 ---------------------------
 
 -   Alexander Tereshkin `alex at invisiblethingslab dot com` -- core windows (Qubes Windows Tools)

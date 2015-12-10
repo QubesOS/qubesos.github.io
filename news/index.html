@@ -17,11 +17,15 @@ redirect_from: /en/news/
       </a>
     </h2>
     <p class="post-meta">
-      {{ post.date | date: "%b %-d, %Y" }} by <strong>{{ post.author }}</strong> in
+      {{ post.date | date: "%b %-d, %Y" }} by <strong>{% if post.author %}{{ post.author }}{% else %}{{ site.default_author }}{% endif %}</strong> in
       <strong>
+      {% if post.categories.first %}
       {% for category in post.categories %}
         {{ category | capitalize }}{% if forloop.index < forloop.length %},{% endif %}
       {% endfor %}
+      {% else %}
+      {{ site.default_category | capitalize }}
+      {% endif %}
     </strong>
     </p>
     {% if post.download_url %}

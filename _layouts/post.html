@@ -19,12 +19,16 @@
                 <h1 class="post-title remove-bottom">{{ page.title }}</h1>
                 <p class="post-meta">
                   {{ page.date | date: "%b %-d, %Y" }}
-                  {% if page.author %} by <strong>{{ page.author }}</strong>{% endif %}
+                  by <strong>{% if page.author %}{{ page.author }}{% else %}{{ site.default_author }}{% endif %}</strong>
                   {% if page.meta %}{{ page.meta }}{% endif %}
                   in <strong>
+                  {% if post.categories.first %}
                   {% for category in page.categories %}
                     {{ category | capitalize }}{% if forloop.index < forloop.length %},{% endif %}
                   {% endfor %}
+                  {% else %}
+                    {{ site.default_category | capitalize }}
+                  {% endif %}
                   </strong>
                 </p>
               </header>

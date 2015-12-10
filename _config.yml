@@ -43,12 +43,5 @@ allowed_categories:
   - releases
   - articles
 
-defaults:
-  -
-    scope:
-      path: "news"
-      type: "posts"
-    values:
-      layout: "post"
-      author: "Qubes OS"
-      category: "announcement"
+default_author: "Qubes OS"
+default_category: "announcements"

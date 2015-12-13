@@ -31,7 +31,7 @@ Qubes Live USB (alpha)
       [[?](/doc/verifying-signatures/)]
       (ftp.qubes-os.org)
 
--   [Announcement and usage instructions](https://groups.google.com/d/msg/qubes-users/IQdCEpkooto/iyMh3LuzCAAJ)
+-   [**Usage Guide**](/doc/live-usb/)
 
 Qubes Release 3.1 (release candidate)
 -------------------------------------

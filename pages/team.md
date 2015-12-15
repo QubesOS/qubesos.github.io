@@ -18,7 +18,7 @@ Architects and Core Developers
 -   Marek Marczykowski `marmarek at invisiblethingslab dot com` -- everything Xen/Linux related :)
 -   Wojciech Porczyk `woju at invisiblethingslab dot com` -- various Linux-related things
 
-Contributors to Open-source Code
+Developers and Contributors
 --------------------------------
 
 (Roughly in chronology order:)
@@ -57,6 +57,7 @@ Coordination, Outreach, Funding
 ------------------------------
 
 - Michael Carbone `michael at invisiblethingslab dot com`
+- Joanna "Asia" Gołębiewska `asia at invisiblethingslab dot com`
 
 
 The Qubes Community

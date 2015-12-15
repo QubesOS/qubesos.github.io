@@ -57,7 +57,7 @@ Coordination, Outreach, Funding
 ------------------------------
 
 - Michael Carbone `michael at invisiblethingslab dot com`
-- Joanna "Asia" Gołębiewska `asia at invisiblethingslab dot com`
+- Joanna Gołębiewska `asia at invisiblethingslab dot com`
 
 
 The Qubes Community

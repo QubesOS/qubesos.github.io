@@ -53,6 +53,11 @@ Documentation and Website Maintainers
 -   Hakisho Nukama `nukama at gmail dot com`
 -   Axon `axon at openmailbox dot org`
 
+Design and User Experience
+---------------
+
+- Brennan Novak `bnvk at invisiblethingslab dot com`
+
 Coordination, Outreach, Funding
 ------------------------------
 

@@ -3,6 +3,8 @@ layout: default
 title: Downloads
 permalink: /downloads/
 redirect_from:
+- /doc/releases/
+- /en/doc/releases/
 - /doc/QubesDownloads/
 - /wiki/QubesDownloads/
 ---
@@ -50,7 +52,8 @@ Qubes Release 3.1 (release candidate)
       (ftp.qubes-os.org)
 
 -   [**Installation Guide**](/doc/installation-guide/)
--   [Release notes](/doc/releases/3.1/release-notes/)
+-   [Release Notes](/doc/releases/3.1/release-notes/)
+-   [Release Schedule](/doc/releases/3.1/schedule/)
 -   [Upgrading to Qubes R3.1 rc1](/doc/releases/3.1/release-notes/#upgrading)
 
 Qubes Release 3.0 (latest stable release)
@@ -70,7 +73,8 @@ Qubes Release 3.0 (latest stable release)
       (ftp.qubes-os.org)
 
 -   [**Installation Guide**](/doc/installation-guide/)
--   [Release notes](/doc/releases/3.0/release-notes/)
+-   [Release Notes](/doc/releases/3.0/release-notes/)
+-   [Release Schedule](/doc/releases/3.0/schedule/)
 -   [Upgrading to Qubes R3.0](/doc/releases/3.0/release-notes/#upgrading)
 
 Qubes Release 2
@@ -92,7 +96,7 @@ Qubes Release 2
       (ftp.qubes-os.org)
 
 -   [**Installation Guide**](/doc/installation-guide/)
--   [Release notes](/doc/releases/2.0/release-notes/)
+-   [Release Notes](/doc/releases/2.0/release-notes/)
 -   [Upgrading to Qubes R2](/doc/releases/2.0/release-notes/#upgrading)
 
 Qubes Release 1
@@ -114,7 +118,7 @@ Qubes Release 1
       (ftp.qubes-os.org)
 
 -   [**Installation Guide**](/doc/installation-guide/)
--   [Release notes](/doc/releases/1.0/release-notes/)
+-   [Release Notes](/doc/releases/1.0/release-notes/)
 
 Mirrors
 -------

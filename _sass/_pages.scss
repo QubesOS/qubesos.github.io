@@ -1,0 +1,51 @@
+/* Pages */
+
+#team-core {
+  .team {
+    padding-bottom: $padding-large-vertical * 4;
+  }
+  .team:last-child {
+    padding-bottom: 0px;
+  }
+}
+
+.team {
+
+  margin: 0 1em;
+
+  .picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: $gray-lighter;
+
+    img {
+      max-width: 100px;
+    }
+
+    i {
+      display: block;
+      margin-top: 25px;
+      font-size: 48px;
+      color: $gray-light;
+    }
+  }
+
+  .role {
+    display: block;
+    color: $gray-dark;
+  }
+
+  .fingerprint {
+    display: block;
+    background-color: $gray-lighter;
+    padding: 10px;
+    margin-bottom: $padding-large-vertical;
+    border-radius: 4px;
+    font-family: $font-family-monospace;
+  }
+
+}

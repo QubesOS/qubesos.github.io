@@ -8,68 +8,95 @@ redirect_from:
 - /wiki/QubesDevelopers/
 ---
 
-Qubes Developers and Contributors
-=================================
+<div id="team-core" class="more-top">
+  {% assign core_count = 0 %}
+  {% assign maintainers_count = 0 %}
+  {% assign emeritus_count = 0 %}
+  {% for team in site.data.team %}
+  {% if team.type == "core" %}
+  {% assign core_count = core_count | plus:1 %}
+  <div class="row team team-core">
+    <div class="col-lg-2 text-center">
+    <div class="picture more-bottom">
+      {% if team.picture %}
+      <img src="/attachment/site/{{team.picture}}" title="Picture of {{team.name}}">
+      {% else %}
+      <i class="fa fa-user"></i>
+      {% endif %}
+    </div>
+    </div>
+    <div class="col-lg-4">
+      {% assign name_array = team.name | split:" " %}
+      <h4 class="half-bottom">{{team.name}}</h4>
+      <em class="role half-bottom">{{team.role}}</em>
+      <a href="mailto:{{team.email}}" class="add-right"><i class="fa fa-envelope"></i> Email</a>
+      {% if team.website %}
+      <a href="{{team.website}}" class="add-right" target="blank"><i class="fa fa-link"></i> Website</a>
+      {% endif %}
+      {% if team.twitter %}
+      <a href="https://twitter.com/{{team.twitter}}" target="blank"><i class="fa fa-twitter"></i> Twitter</a>
+      {% endif %}
+    </div>
+    <div class="col-lg-6 text-center">
+      {% if team.fingerprint %}
+      <span class="fingerprint" title="{{team.name}}'s PGP Encryption Key Fingerprint">{{team.fingerprint}}</span>
+      {% endif %}
+      {% if team.pgp_key %}
+      <a href="{{team.pgp_key}}"><i class="fa fa-key"></i> Get {{name_array[0]}}'s PGP Encryption Key</a>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+<hr class="more-bottom">
+<div class="row team more-top more-bottom">
+  <div class="col-lg-6">
+    <h2 class="text-center">Website & Documentation</h2>
+    {% for team in site.data.team %}
+    {% if team.type == "maintainers" %}
+    {% assign maintainers_count = maintainers_count | plus:1 %}
+    {% include team-simple.html %}
+    {% endif %}
+    {% endfor %}
+  </div>
+  <div class="col-lg-6">
+    <h2 class="text-center">Emeritus</h2>
+    {% for team in site.data.team %}
+    {% if team.type == "emeritus" %}
+    {% assign emeritus_count = emeritus_count | plus:1 %}
+    {% include team-simple.html %}
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+<hr class="more-bottom">
+<div class="row team">
+  <div class="col-lg-12">
+    <h2 class="text-center more-bottom">Community Contributors</h2>
+    <p>Qubes would not be where it is today without the input of the many users, testers, and developers of all skill levels who have come together to form this thriving community. The community's discussions take place primarily on the <a href="/doc/mailing-lists/">Qubes mailing lists</a>.</p>
+  </div>
+</div>
+{% assign non_community_count =  core_count | plus:maintainers_count | plus:emeritus_count %}
+{% assign community_count =  site.data.team | size | minus:non_community_count %}
+{% assign community_half = community_count | divided_by:2 | plus:1 %}
+{% assign community_shown =  0 %}
 
-Architects and Core Developers
-------------------------------
-
--   Joanna Rutkowska `joanna at invisiblethingslab dot com` -- architecture & project management, original core, occasional addons
--   Marek Marczykowski `marmarek at invisiblethingslab dot com` -- everything Xen/Linux related :)
--   Wojciech Porczyk `woju at invisiblethingslab dot com` -- various Linux-related things
-
-Developers and Contributors
---------------------------------
-
-(Roughly in chronology order:)
-
--   Rafal Wojtczuk `rafal at invisiblethingslab dot com` -- architecture & system-level stuff (notably original gui virtualization)
--   Tomasz Sterna `tomek at xiaoka dot com` -- installer & gui
--   Agnieszka Kostrzewa `a.kostrzewa at alx dot pl` -- qubes-manager, docs
--   Abel Luck `abel at outcomedubious dot im` -- torvm
--   Alexandre Bezroutchko `abb at gremwell dot com` -- pvusb support
--   Bruce A Downs `bruceadowns at gmail.com` -- minor various cleanups and miscs
--   Olivier Médoc `o_medoc at yahoo.fr` -- core and gui fixes, template builder generalization (Arch Linux support)
--   Timo Juhani Lindfors `timo.lindfors at iki.fi` -- minor core cleanups
--   Radoslaw Szkodzinski `astralstorm at gmail.com` -- minor gui build fixes
--   László Zrubecz `mail at zrubi.hu` -- HCL wiki page maintenance, HCL scripts
--   Vincent Penquerc'h `vincent.penquerch@collabora.co.uk` -- code review, misc fixes
--   Andrew Sorensen `andrew at localcoast dot net` -- misc backup subsystem fixes
--   Victor Lopez `gallando at gmail dot com` -- misc minor fixes
--   Davíð Steinn Geirsson `david at dsg dot is` -- initial Debian template integration
--   HW42 `hw42 at ipsumj dot de` -- Debian templates improvements
--   Jason Mehring `nrgaway at gmail dot com` -- Debian templates improvements, Whonix integration
--   Patrick Schleizer `adrelanos at riseup dot net` -- Whonix integration and maintenance
-
-Windows Tools Developers
----------------------------
-
--   Alexander Tereshkin `alex at invisiblethingslab dot com` -- core windows (Qubes Windows Tools)
--   Rafał Wojdyła `omeg at invisiblethingslab dot com` -- currently main developer for Qubes Windows Tools (core, gui agent)
-
-Documentation and Website Maintainers
--------------------------------------
-
--   Hakisho Nukama `nukama at gmail dot com`
--   Axon `axon at openmailbox dot org`
-
-Design and User Experience
----------------
-
-- Brennan Novak `bnvk at invisiblethingslab dot com`
-
-Coordination, Outreach, Funding
-------------------------------
-
-- Michael Carbone `michael at invisiblethingslab dot com`
-- Joanna Gołębiewska `asia at invisiblethingslab dot com`
-
-
-The Qubes Community
-===================
-
-Qubes would not be where it is today without the input of the many
-users, testers, and developers of all skill levels who have come together
-to form this thriving community. The community's discussions take place
-primarily on the [Qubes mailing lists](/doc/mailing-lists/).
-
+<div class="row team">
+  <div class="col-lg-6">
+    {% for team in site.data.team %}
+    {% if team.type == "community" %}
+    {% if community_shown < community_half %}
+    {% include team-simple.html %}
+    {% elsif community_shown == community_half %}
+    </div>
+    <div class="col-lg-6">
+    {% include team-simple.html %}
+    {% else %}
+    {% include team-simple.html %}
+    {% endif %}
+    {% assign community_shown = community_shown | plus:1 %}
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

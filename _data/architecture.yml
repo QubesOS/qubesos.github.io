@@ -75,8 +75,8 @@
   - title: Security
     url: /security/
     icon: fa-lock
-  - title: Contact
-    url: /contact/
+#  - title: Contact
+#    url: /contact/
     icon: fa-comments
 
 - title: Donate

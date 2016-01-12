@@ -45,9 +45,9 @@ redirect_from:
   </div>
   <div class="col-lg-4">
     <h2>StackOverflow</h2>
-    <p>Check out the QubesOS tag on StackOverflow for potential answers to any questions you may have. Not there? Ask a new question!</p>
-    <a href="https://stackoverflow.com/questions/tagged/Qubes+OS" class="btn btn-primary">
-      <i class="fa fa-stack-overflow"></i> Search StackOverflow
+    <p>Check out the QubesOS tag on StackExchange for potential answers to any questions you may have. Not there? Ask a new question!</p>
+    <a href="https://stackexchange.com/search?q=qubes" class="btn btn-primary">
+      <i class="fa fa-stack-overflow"></i> Search StackExchange
     </a>
   </div>
   <div class="col-lg-4">

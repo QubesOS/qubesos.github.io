@@ -1,0 +1,166 @@
+- name: Joanna Rutkowska
+  role: Founder, architecture & security, developer emeritus
+  type: core
+  picture: team-joanna.jpg
+  email: joanna@invisiblethingslab.com
+  pgp_key: http://blog.invisiblethings.org/keys/
+  fingerprint: ED72 7C30 6E76 6BC8 5E62 1AA6 5FA6 C3E4 D9AF BB99
+  website: https://invisiblethings.org
+  twitter: rootkovska
+
+- name: Marek Marczykowski
+  role: Lead engineer; everything Xen / Linux related
+  type: core
+  picture: team-marek.png
+  email: marmarek@invisiblethingslab.com
+  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0xDB8FD31CCAD7D72C
+  fingerprint: 86BA 6E93 318F BA44 6642 A90A DB8F D31C CAD7 D72C
+
+- name: Wojciech Porczyk
+  role: Various Linux-related things
+  type: core
+  email: woju@invisiblethingslab.com
+  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0x70483D0A15CE40BF
+  fingerprint: DF9E 7E80 EB28 C2FE 4932  B455 7048 3D0A 15CE 40BF
+
+- name: Rafał Wojdyła
+  role: Main developer for Qubes Windows Tools
+  type: core
+  email: omeg@invisiblethingslab.com
+  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0x045A13284C85173A
+  fingerprint: 3AC8 7FA3 04E4 59D0 DF08  21A1 045A 1328 4C85 173A
+
+- name: Michael Carbone
+  role: Project management and funding
+  type: core
+  picture: team-michael.jpg
+  email: michael@invisiblethingslab.com
+  fingerprint: 2DBE 2014 E7B0 0730 303D  7AAB 99AB 0624 6EEB F5A8
+  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0x99AB06246EEBF5A8
+  twitter: wandermfc
+
+- name: Joanna Gołębiewska
+  role: Coordination, accounting, and operations
+  type: core
+  email: asia@invisiblethingslab.com
+  fingerprint: 8C8F F70B 60A4 726F F451 7D96 67F4 097B AF59 B942
+
+- name: Patrick Schleizer
+  role: Whonix, Tor, and Debian integration
+  type: core
+  picture: team-patrick.jpg
+  email: adrelanos@riseup.net
+  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0x8D66066A2EEACCDA
+  fingerprint: 916B 8D99 C38E AF5E 8ADC 7A2A 8D66 066A 2EEA CCDA
+  website: https://www.whonix.org
+
+- name: Brennan Novak
+  role: Design, interfaces, and user experience
+  type: core
+  picture: team-brennan.jpg
+  email: bnvk@invisiblethingslab.com
+  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0xC4CAA23B0F8C68B2
+  fingerprint: 01AE EADB 9EED 1B5B 4280  E5B6 C4CA A23B 0F8C 68B2
+  website: https://brennannovak.com
+  twitter: brennannovak
+
+# Maintainers
+
+- name: Axon
+  role: Documentation & website maintainer
+  type: maintainers
+  email: axon@openmailbox.org
+
+- name: Hakisho Nukama
+  role: Documentation & Website maintainer
+  type: maintainers
+  email: nukama@gmail.com
+
+# Emeritus
+
+- name: Alexander Tereshkin
+  role: Core windows Qubes Windows Tools
+  type: emeritus
+  email: alex@invisiblethingslab.com
+
+- name: Rafal Wojtczuk
+  role: Architecture & system-level stuff
+  type: emeritus
+  email: rafal@invisiblethingslab.com
+
+# Community
+
+- name: Abel Luck
+  email: abel@outcomedubious.im
+  role: Developed TorVM
+  type: community
+
+- name: Agnieszka Kostrzewa
+  email: a.kostrzewa@alx.pl
+  role: Docs, qubes-manager
+  type: community
+
+- name: Alexandre Bezroutchko
+  email: abb@gremwell.com
+  role: PVUSB support
+  type: community
+
+- name: Andrew Sorensen
+  email: andrew@localcoast.net
+  role: Misc backup subsystem fixes
+  type: community
+
+- name: Bruce A Downs
+  email: bruceadowns@gmail.com
+  role: Minor various cleanups and miscs
+  type: community
+
+- name: Davíð Steinn Geirsson
+  email: david@dsg.is
+  role: Initial Debian template integration
+  type: community
+
+- name: HW42
+  email: hw42@ipsumj.de
+  role: Debian templates improvements
+  type: community
+
+- name: Jason Mehring
+  email: nrgaway@gmail.com
+  role: Debian templates improvements, Whonix integration
+  type: community
+
+- name: László Zrubecz
+  email: mail@zrubi.hu
+  role: HCL wiki page maintenance, HCL scripts
+  type: community
+
+- name: Olivier Médoc
+  email: o_medoc@yahoo.fr
+  role: Core and gui fixes, template builder generalization
+  type: community
+
+- name: Radoslaw Szkodzinski
+  email: astralstorm@gmail.com
+  role: Minor gui build fixes
+  type: community
+
+- name: Timo Juhani Lindfors
+  email: timo.lindfors@iki.fi
+  role: Minor core cleanups
+  type: community
+
+- name: Tomasz Sterna
+  email: tomek at xiaoka dot com
+  role: Installer & GUI
+  type: community
+
+- name: Vincent Penquerc'h
+  email: vincent.penquerch@collabora.co.uk
+  role: Code review, misc fixes
+  type: community
+
+- name: Victor Lopez
+  email: gallando@gmail.com`
+  role: Misc minor fixes
+  type: community

@@ -12,17 +12,17 @@ redirect_from: /hcl/
     <div class="col-lg-3">
       <h4>Hardware Type</h4>
       <p>
-        <a href="#hardware-laptops" class="btn btn-lg btn-primary btn-block" href=""><i class="fa fa-laptop"></i> Laptop Devices</a>
+        <a href="#hardware-laptops" class="btn btn-primary btn-block" href=""><i class="fa fa-laptop"></i> Laptop Devices</a>
       </p>
       <p>
-        <a href="#hardware-desktops" class="btn btn-lg btn-primary btn-block" href=""><i class="fa fa-desktop"></i> Desktop, Workstation &amp; Servers</a>
+        <a href="#hardware-desktops" class="btn btn-primary btn-block" href=""><i class="fa fa-desktop"></i> Desktop, Workstation &amp; Servers</a>
       </p>
       <p>
-        <a href="#hardware-motherboards" class="btn btn-lg btn-primary btn-block" href=""><i class="fa fa-server"></i> Motherboards</a>
+        <a href="#hardware-motherboards" class="btn btn-primary btn-block" href=""><i class="fa fa-server"></i> Motherboards</a>
       </p>
-      <hr class="more-bottom">
+      <hr>
       <p>
-        <a href="/doc/HCL/" class="btn btn-lg btn-default btn-block" href=""><i class="fa fa-plus"></i> Add Your Device</a>
+        <a href="/doc/HCL/" class="btn btn-default btn-block" href=""><i class="fa fa-plus"></i> Add Your Device</a>
       </p>
       <p>Information about this <strong>hardware comapatibility list</strong> and how to contribute can be found
       <a class='ext-link' href='/doc/HCL/'>in the documentation</a></p>
@@ -38,37 +38,57 @@ redirect_from: /hcl/
       </tr>
       </table>
       <h4>List Columns</h4>
-      <p>
-        <strong>Model</strong> - manufacturer and Devicename (Socket/CPU, Chipset/Southbridge, Graphics)
-      </p>
-      <p>
-        <strong>BIOS</strong> - reported BIOS version
-      </p>
-      <p>
-        <a class='ext-link' href='https://en.wikipedia.org/wiki/Hardware_virtual_machine'>HVM</a> -
-        <a class='ext-link' href='https://en.wikipedia.org/wiki/Intel_VT-x#Intel-VT-x'>Intel VT-x</a> or <a class='ext-link' href='https://en.wikipedia.org/wiki/AMD-V#AMD_virtualization_.28AMD-V.29'>AMD-v</a> technology (required for running HVM domains, such as <a class='ext-link' href='/doc/WindowsAppVms/'>Windows-based AppVMs</a>)
-      </p>
-      <p>
-        <a class='ext-link' href='https://en.wikipedia.org/wiki/IOMMU'>IOMMU</a> -
-        Intel VT-d or AMD IOMMU technology (required for effective isolation of network VMs and <a class='ext-link' href='http://wiki.xen.org/wiki/Xen_PCI_Passthrough'>PCI passthrough</a>)
-      </p>
-      <p>
-        <a class='ext-link' href='https://en.wikipedia.org/wiki/Trusted_Platform_Module'>TPM</a> -
-        TPM with proper BIOS support (required for <a class='ext-link' href='/doc/AntiEvilMaid/'>Anti Evil Maid</a>)
-      </p>
-      <p>
-        <strong>Qubes</strong> - reported Qubes version (R=Release, rc=release candidate, B=Beta, i.e.: R1, R2B1, R2rc1)
-      </p>
-      <p>
-        <a class='ext-link' href='https://en.wikipedia.org/wiki/Linux_kernel#Maintenance'>Kernel</a> -
-        reported <a class='ext-link' href='https://en.wikipedia.org/wiki/Dom0'>dom0</a> kernel version (numbers in uname -r), can be selected during installation and boot in Troubleshooting menu
-      </p>
-      <p>
-        <strong>Remark</strong> - further information field. Qubes, Kernel and this field is coloured in conjunction to reflect general machine compatibility
-      </p>
-      <p>
-        <strong>Credit</strong> - name linked to report in <a class='ext-link' href='https://groups.google.com/forum/#!forum/qubes-users'>qubes-users</a>
-      </p>
+      <table class="table table-bordered table-responsive">
+      <tr>
+        <td><strong>Model</strong></td>
+        <td>Manufacturer and Devicename (Socket/CPU, Chipset/Southbridge, Graphics)</td>
+      </tr>
+      <tr>
+        <td><strong>BIOS</strong></td>
+        <td>Reported BIOS version</td>
+      </tr>
+      <tr>
+        <td><a class='ext-link' href='https://en.wikipedia.org/wiki/Hardware_virtual_machine'>HVM</a></td>
+        <td>
+          <a class='ext-link' href='https://en.wikipedia.org/wiki/Intel_VT-x#Intel-VT-x'>Intel VT-x</a> or <a class='ext-link' href='https://en.wikipedia.org/wiki/AMD-V#AMD_virtualization_.28AMD-V.29'>AMD-v</a> technology (required for running HVM domains, such as <a class='ext-link' href='/doc/WindowsAppVms/'>Windows-based AppVMs</a>)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a class='ext-link' href='https://en.wikipedia.org/wiki/IOMMU'>IOMMU</a>
+        </td>
+        <td>
+          Intel VT-d or AMD IOMMU technology (required for effective isolation of network VMs and <a class='ext-link' href='http://wiki.xen.org/wiki/Xen_PCI_Passthrough'>PCI passthrough</a>)
+        </td>
+      </tr>
+      <tr>
+        <td><a class='ext-link' href='https://en.wikipedia.org/wiki/Trusted_Platform_Module'>TPM</a></td>
+        <td>
+          TPM with proper BIOS support (required for <a class='ext-link' href='/doc/AntiEvilMaid/'>Anti Evil Maid</a>)
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Qubes</strong></td>
+        <td>Reported Qubes version (R=Release, rc=release candidate, B=Beta, i.e.: R1, R2B1, R2rc1)</td>
+      </tr>
+      <tr>
+        <td>
+          <a class='ext-link' href='https://en.wikipedia.org/wiki/Linux_kernel#Maintenance'>Kernel</a>
+        </td>
+        <td>
+          Reported <a class='ext-link' href='https://en.wikipedia.org/wiki/Dom0'>dom0</a> kernel version (numbers in uname -r), can be selected during installation and boot in Troubleshooting menu
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Remark</strong></td>
+        <td>Further information field. Qubes, Kernel and this field is coloured in conjunction to reflect general machine compatibility
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Credit</strong></td>
+        <td>Name linked to report in <a class='ext-link' href='https://groups.google.com/forum/#!forum/qubes-users'>qubes-users</a></td>
+      </tr>
+    </table>
     </div>
   </div>
 

@@ -64,6 +64,9 @@
     icon: fa-newspaper-o
   - title: Twitter
     url: https://twitter.com/QubesOS
+  - title: Statistics
+    url: /counter/
+    icon: fa-bar-chart
 
 - title: Team
   url: /team/

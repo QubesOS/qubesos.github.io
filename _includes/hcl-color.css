@@ -1,11 +1,10 @@
 {% case include.value %}
 {% when 'yes' %}
-    green
+    success
 {% when 'partial' %}
-    yellow
+    warning
 {% when 'no' %}
-    red
+    danger
 {% else %}
-    blue;
+    info
 {% endcase %}
-

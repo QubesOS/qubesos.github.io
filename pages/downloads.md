@@ -38,12 +38,12 @@ Qubes Live USB (alpha)
 Qubes Release 3.1 (release candidate)
 -------------------------------------
 
-<!--- -   [**Qubes-R3.1-rc2-x86_64.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso)
+-   [**Qubes-R3.1-rc2-x86_64.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso)
       [[hash](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.DIGESTS)]
       [[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.asc)]
       [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]
       [[?](/doc/verifying-signatures/)]
-      (mirrors.kernel.org)--->
+      (mirrors.kernel.org)
 -   [**Qubes-R3.1-rc2-x86_64.iso**](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc2-x86_64.iso)
       [[hash](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc2-x86_64.iso.DIGESTS)]
       [[sig](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc2-x86_64.iso.asc)]

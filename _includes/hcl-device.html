@@ -1,34 +1,28 @@
 {% assign rowspan = device.versions | size %}
 {% assign range = rowspan | minus:1 %}
-
 {% if rowspan >= 1 %}
-    {% capture rowspan %} rowspan="{{ rowspan }}"{% endcapture %}
+  {% capture rowspan %} rowspan="{{ rowspan }}"{% endcapture %}
 {% endif %}
-
 <tr>
-    <td{{ rowspan }}>
-        {{ device.brand }} {{ device.model }}<br/>
-        ({{ device.cpu-short }} {{ device.chipset-short }}
-            {{ device.gpu-short }})
-    </td>
-    <td{{ rowspan }}>{{ device.bios }}</td>
-
-    {% assign param=device.hvm %}
-    {% include hcl-cell.html param=param rowspan=rowspan %}
-
-    {% assign param=device.iommu %}
-    {% include hcl-cell.html param=param rowspan=rowspan %}
-
-    {% assign param=device.tpm %}
-    {% include hcl-cell.html param=param rowspan=rowspan %}
-
-{% assign version = device.versions[0] %}
-{% include hcl-version.html version=version %}
+  <td{{ rowspan }}>
+    <strong>{{ device.brand }} {{ device.model }}</strong><br/>
+    {% if device.cpu-short != "" or device.chipset-short != "" or device.gpu-short != "" %}
+    <small>{{ device.cpu-short }} {{ device.chipset-short }} {{ device.gpu-short }}</small>
+    {% endif %}
+  </td>
+  <td{{ rowspan }}>{{ device.bios }}</td>
+  {% assign param=device.hvm %}
+  {% include hcl-cell.html param=param rowspan=rowspan %}
+  {% assign param=device.iommu %}
+  {% include hcl-cell.html param=param rowspan=rowspan %}
+  {% assign param=device.tpm %}
+  {% include hcl-cell.html param=param rowspan=rowspan %}
+  {% assign version = device.versions[0] %}
+  {% include hcl-version.html version=version %}
 </tr>
-
 {% for i in (1..range) %}
-    <tr>
-        {% assign version = device.versions[i] %}
-        {% include hcl-version.html version=version %}
-    </tr>
+<tr>
+  {% assign version = device.versions[i] %}
+  {% include hcl-version.html version=version %}
+</tr>
 {% endfor %}

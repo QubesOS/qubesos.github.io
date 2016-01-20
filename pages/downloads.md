@@ -38,11 +38,11 @@ Qubes Live USB (alpha)
 Qubes Release 3.1 (release candidate)
 -------------------------------------
 
-| Source                                         | Bootable image  | [Verifiers](/doc/verifying-signatures/) |
-| ---------------------------------------------- | --------------- | --------------------------------------- |
-| `mirrors.kernel.org` (HTTPS)                   | [**Qubes-R3.1-rc2-x86_64.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso)  | [[hash](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.DIGESTS)]&nbsp;[[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.asc)]&nbsp;[[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)] |
-| `ftp.qubes-os.org`   (HTTPS)                   | [**Qubes-R3.1-rc2-x86_64.iso**](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc2-x86_64.iso) | [[hash](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc2-x86_64.iso.DIGESTS)]&nbsp;[[sig](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc2-x86_64.iso.asc)]&nbsp;[[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)] |
-| [Rudd-O.com](https://rudd-o.com/) (BitTorrent) | [**Qubes-R3.1-rc2-x86_64.iso**](https://rudd-o.com/downloads/qubes/Qubes-R3.1-rc2-x86_64.iso.torrent) at `magnet:?xt=urn:btih:fa9e5aefd7399b7e51fb4a6d543283153b41387a` | [[hash](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.DIGESTS)]&nbsp;[[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.asc)]&nbsp;[[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)] |
+| Source                                           | Bootable image  | [Verifiers](/doc/verifying-signatures/) |
+| ------------------------------------------------ | --------------- | --------------------------------------- |
+| `mirrors.kernel.org` (HTTPS)                     | [**Qubes-R3.1-rc2-x86_64.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso)  | [[hash](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.DIGESTS)]&nbsp;[[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.asc)]&nbsp;[[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)] |
+| `ftp.qubes-os.org`   (HTTPS)                     | [**Qubes-R3.1-rc2-x86_64.iso**](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc2-x86_64.iso) | [[hash](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc2-x86_64.iso.DIGESTS)]&nbsp;[[sig](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc2-x86_64.iso.asc)]&nbsp;[[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)] |
+| `[Rudd-O.com](https://rudd-o.com/)` (BitTorrent) | [**Qubes-R3.1-rc2-x86_64.iso**](https://rudd-o.com/downloads/qubes/Qubes-R3.1-rc2-x86_64.iso.torrent) at `magnet:?xt=urn:btih:fa9e5aefd7399b7e51fb4a6d543283153b41387a` | [[hash](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.DIGESTS)]&nbsp;[[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.asc)]&nbsp;[[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)] |
 
 -   [**Installation Guide**](/doc/installation-guide/)
 -   [Release Notes](/doc/releases/3.1/release-notes/)

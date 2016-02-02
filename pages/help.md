@@ -12,9 +12,12 @@ redirect_from:
 <div class="row">
   <div class="col-lg-4">
     <h2>Documentation</h2>
-    <p>Check out our documentation for information about setting up and using Qubes.</p>
+    <p>Check out our documentation for information about setting up and using Qubes, and help us improve it!</p>
     <a href="/doc/" class="btn btn-primary">
       <i class="fa fa-book"></i> Read Documentation
+    </a>
+    <a href="/doc/doc-guidelines/" class="btn btn-primary">
+      <i class="fa fa-pencil-square-o"></i> Contribute
     </a>
   </div>
   <div class="col-lg-4">

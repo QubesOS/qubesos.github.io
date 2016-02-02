@@ -14,11 +14,12 @@ Before You Download...
 
 -   [System Requirements](/doc/system-requirements/)
 -   [Hardware Compatibility List](/hcl/)
--   [Version Scheme](/doc/version-scheme/)
 -   [Supported Versions](/doc/supported-versions/)
+-   [Version Scheme](/doc/version-scheme/)
 -   [How to Verify Signatures](/doc/verifying-signatures/)
 -   [Installation Security Considerations](/doc/install-security/)
 -   [Qubes OS License](/doc/license/)
+-   [Qubes OS Source Code](https://github.com/QubesOS)
 
 Qubes Live USB (alpha)
 ----------------------

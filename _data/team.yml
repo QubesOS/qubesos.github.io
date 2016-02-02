@@ -72,14 +72,14 @@
   email: axon@openmailbox.org
 
 - name: Hakisho Nukama
-  role: Documentation & Website maintainer
+  role: Documentation & website maintainer
   type: maintainers
   email: nukama@gmail.com
 
 # Emeritus
 
 - name: Alexander Tereshkin
-  role: Core windows Qubes Windows Tools
+  role: Qubes Windows Tools
   type: emeritus
   email: alex@invisiblethingslab.com
 
@@ -97,7 +97,7 @@
 
 - name: Agnieszka Kostrzewa
   email: a.kostrzewa@alx.pl
-  role: Docs, qubes-manager
+  role: Documentation, Qubes Manager
   type: community
 
 - name: Alexandre Bezroutchko
@@ -107,12 +107,12 @@
 
 - name: Andrew Sorensen
   email: andrew@localcoast.net
-  role: Misc backup subsystem fixes
+  role: Misc. backup subsystem fixes
   type: community
 
 - name: Bruce A Downs
   email: bruceadowns@gmail.com
-  role: Minor various cleanups and miscs
+  role: Minor various cleanups and miscs.
   type: community
 
 - name: Davíð Steinn Geirsson
@@ -132,17 +132,17 @@
 
 - name: László Zrubecz
   email: mail@zrubi.hu
-  role: HCL wiki page maintenance, HCL scripts
+  role: HCL page maintenance, HCL scripts
   type: community
 
 - name: Olivier Médoc
   email: o_medoc@yahoo.fr
-  role: Core and gui fixes, template builder generalization
+  role: Core and GUI fixes, template builder generalization
   type: community
 
 - name: Radoslaw Szkodzinski
   email: astralstorm@gmail.com
-  role: Minor gui build fixes
+  role: Minor GUI build fixes
   type: community
 
 - name: Timo Juhani Lindfors
@@ -157,10 +157,10 @@
 
 - name: Vincent Penquerc'h
   email: vincent.penquerch@collabora.co.uk
-  role: Code review, misc fixes
+  role: Code review, misc. fixes
   type: community
 
 - name: Victor Lopez
   email: gallando@gmail.com`
-  role: Misc minor fixes
+  role: Misc. minor fixes
   type: community

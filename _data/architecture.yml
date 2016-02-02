@@ -2,15 +2,15 @@
   url: /tour/
   icon: fa-flag
   sub-pages:
-  - title: Intro
-    url: /intro/
-    icon: fa-flag
   - title: Screenshots
     url: /screenshots/
     icon: fa-picture-o
   - title: Research
     icon: fa-file-text
     url: /research/
+  - title: Architecture
+    url: /doc/architecture/
+    icon: fa-cubes
 
 - title: Getting Started
   url: /getting-started/

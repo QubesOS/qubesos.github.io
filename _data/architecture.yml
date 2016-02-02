@@ -33,21 +33,19 @@
   - title: Documentation
     url: /doc/
     icon: fa-book
-  - title: FAQ
+  - title: Users' FAQs
     url: /doc/user-faq/
     icon: fa-info-circle
-  - title: Developers
+  - title: Devs' FAQs
     url: /doc/devel-faq/
     icon: fa-code
   - title: Mailing Lists
     url: /doc/mailing-lists/
     icon: fa-envelope-o
   - title: Report a Bug
-    url: https://github.com/QubesOS/qubes-issues/issues
-  - title: StackOverflow
-    url: https://stackoverflow.com/questions/tagged/Qubes+OS
-  - title: Github
-    url: https://github.com/QubesOS/
+    url: /doc/reporting-bugs/
+  - title: StackExchange
+    url: https://stackexchange.com/search?q=qubes
 
 - title: News
   url: /news/

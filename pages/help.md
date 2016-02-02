@@ -21,10 +21,13 @@ redirect_from:
     </a>
   </div>
   <div class="col-lg-4">
-    <h2>FAQ</h2>
+    <h2>FAQs</h2>
     <p>Search through frequently asked questions people have had with Qubes.</p>
     <a href="/doc/user-faq/" class="btn btn-primary">
-     <i class="fa fa-question-circle"></i> Frequently Asked Questions
+     <i class="fa fa-question-circle"></i> Users' FAQs
+    </a>
+    <a href="/doc/devel-faq/" class="btn btn-primary">
+     <i class="fa fa-question-circle"></i> Devs' FAQs
     </a>
   </div>
   <div class="col-lg-4">
@@ -42,12 +45,15 @@ redirect_from:
     <h2>Found a Bug?</h2>
     <p>Search through the issues on the main Qubes OS development. Think you've
     found a bug? File a new issue.</p>
+    <a href="/doc/reporting-bugs/" class="btn btn-primary">
+      <i class="fa fa-bug"></i> How to Report Bugs
+    </a>
     <a href="https://github.com/QubesOS/qubes-issues/issues" class="btn btn-primary">
-      <i class="fa fa-bug"></i> Report a Bug
+      <i class="fa fa-list"></i> Issue Tracker
     </a>
   </div>
   <div class="col-lg-4">
-    <h2>StackOverflow</h2>
+    <h2>StackExchange</h2>
     <p>Check out the QubesOS tag on StackExchange for potential answers to any questions you may have. Not there? Ask a new question!</p>
     <a href="https://stackexchange.com/search?q=qubes" class="btn btn-primary">
       <i class="fa fa-stack-overflow"></i> Search StackExchange

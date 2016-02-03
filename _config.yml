@@ -20,7 +20,7 @@ project_url_tor: "http://qubesosmamapaxpa.onion"
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
 timezone: UTC
 encoding: utf-8
 relative_permalinks: false

@@ -157,19 +157,22 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+    font-size: 14px;
     border: 1px solid $gray;
-    border-radius: 4px;
-    background-color: $gray-base;
-    color: $color-white;
+    border-radius: 5px;
+    background-color: $color-code-bg;
+    color: $color-black;
 }
 
 code {
-    padding: 1px 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
 }
 
 pre {
-    padding: 8px 12px;
+    padding: 6px 10px;
     overflow-x: scroll;
 
     > code {

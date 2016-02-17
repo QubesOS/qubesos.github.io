@@ -9,12 +9,12 @@
         </h1>
         <div class="more-bottom white-box page-content">
           <div class="row">
-            <div class="col-lg-9 page-content-left">
+            <div class="col-lg-9 col-md-9 col-xs-8 page-content-left">
               <article id="doc-content" class="post-content">
                 {{ content }}
               </article>
             </div>
-            <div class="col-lg-3 text-center">
+            <div class="col-lg-3 col-md-3 col-xs-4 text-center">
               <div class="heading-label">
               {% assign doc_segments = page.relative_path | split: '/' %}
               {% for section in site.data.doc %}

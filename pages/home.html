@@ -13,10 +13,10 @@ redirect_from:
 <div class="home-banner text-center more-bottom">
   <div class="container-fluid">
     <div class="row more-bottom">
-      <div class="col-lg-5 col-lg-offset-1">
+      <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-1">
         <img class="logo" src="/attachment/icons/qubes-logo-home.svg">
       </div>
-      <div class="col-lg-5">
+      <div class="col-lg-6 col-md-5">
         <h1 class="add-top">
           <strong>Qubes</strong> OS
           <small>A reasonably secure operating system</small>
@@ -24,8 +24,8 @@ redirect_from:
       </div>
     </div>
     <div class="clearfix"></div>
-    <div class="row">
-      <div class="col-lg-12">
+    <div class="row more-bottom">
+      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
         <div class="home-big-button">
           <a class="btn btn-lg btn-primary btn-block" href="/downloads/" role="button">
             Download &amp; Install<br>
@@ -34,9 +34,16 @@ redirect_from:
         </div>
       </div>
     </div>
+    <div class="clearfix"></div>
     <div class="row more-top">
-      <p><a class="black-link" href="/tour/#what-is-qubes-os">What is Qubes OS?</a></p>
+      <div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2">
+        <a class="black-link" href="/tour/#what-is-qubes-os">What is Qubes OS?</a>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <a class="black-link" href="/doc/certified-laptops/">Qubes-certified Laptops</a>
+      </div>
     </div>
+    <div class="clearfix"></div>
   </div>
 </div>
 
@@ -44,31 +51,31 @@ redirect_from:
 
   <!-- Experts -->
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-12 col-md-12">
       <h2 class="text-center"><i class="fa fa-thumbs-up"></i> What the experts are saying</h2>
     </div>
   </div>
 
   <div class="white-box more-bottom">
     <div class="row featured-quotes">
-      <div class="col-lg-1 text-center">
+      <div class="col-lg-1 col-md-1 text-center">
         <a class="avatar" href="https://twitter.com/hashbreaker/status/577206817475850240" target="_blank">
           <img src="attachment/site/picture-dan-bernstein.jpg">
         </a>
       </div>
-      <div class="col-lg-5">
+      <div class="col-lg-5 col-md-5">
         <a href="https://twitter.com/hashbreaker/status/577206817475850240" target="_blank">
           <blockquote>"Happy thought of the day: An attacker who merely finds a browser bug can't listen to my microphone except when I've told Qubes to enable it."
             <footer>Daniel J. Bernstein<cite title="Source Title">, mathematician, cryptologist, computer scientist</cite></footer>
           </blockquote>
         </a>
       </div>
-      <div class="col-lg-1 text-center">
+      <div class="col-lg-1 col-md-1 text-center">
         <a class="avatar" href="https://twitter.com/micahflee/status/577998730340622337" target="_blank">
           <img src="attachment/site/picture-micah-lee.jpg">
         </a>
       </div>
-      <div class="col-lg-5">
+      <div class="col-lg-5 col-md-5">
         <a href="https://twitter.com/micahflee/status/577998730340622337" target="_blank">
           <blockquote>"When I use Qubes I feel like a god. Software thinks that it's in control, that it can do what it wants? It can't. I'm in control."
             <footer>Micah Lee<cite title="Source Title">, Freedom of the Press Foundation, The Intercept</cite></footer>
@@ -78,19 +85,19 @@ redirect_from:
     </div>
     <div>
     <div class="row featured-quotes">
-      <div class="col-lg-1 text-center">
+      <div class="col-lg-1 col-md-1 text-center">
         <a class="avatar" href="https://theintercept.com/2015/11/12/edward-snowden-explains-how-to-reclaim-your-privacy/" target="_blank">
           <img src="attachment/site/picture-snowden.jpg">
         </a>
       </div>
-      <div class="col-lg-5">
+      <div class="col-lg-5 col-md-5">
         <a href="https://theintercept.com/2015/11/12/edward-snowden-explains-how-to-reclaim-your-privacy/" target="_blank">
           <blockquote>"I’m really excited about Qubes"
             <footer>Edward Snowden<cite>, whistleblower and privacy advocate</cite></footer>
           </blockquote>
         </a>
       </div>
-      <div class="col-lg-6 text-center">
+      <div class="col-lg-6 col-md-6 text-center">
         <h4>Why do the experts like Qubes?</h4>
         <a class="btn btn-primary" href="/doc/architecture/">The Qubes Approach</a>
       </div>
@@ -100,7 +107,7 @@ redirect_from:
 
   <!-- News -->
   <div class="row">
-  <div class="col-lg-6 more-bottom">
+  <div class="col-lg-6 col-md-6 more-bottom">
     <h2 class="text-center"><i class="fa fa-newspaper-o"></i> Media &amp; Press</h2>
     <div class="white-box">
       <div class="featured-quotes">
@@ -133,8 +140,8 @@ redirect_from:
       <a href="/news/" class="btn btn-sm btn-primary">More Media &amp; Press</a>
     </div>
   </div>
-  <div class="col-lg-6 more-bottom">
-    <h2 class="text-center"><i class="fa fa-bullhorn"></i> Articles &amp; Announcements</h2>
+  <div class="col-lg-6 col-md-6 more-bottom">
+    <h2 class="text-center"><i class="fa fa-bullhorn"></i> Announcements</h2>
     <div class="white-box">
       <ul class="list-unstyled remove-bottom">
         {% for post in site.posts limit:5 %}
@@ -163,35 +170,35 @@ redirect_from:
 
   <!-- Technology -->
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-12 col-md-12">
       <h2 class="text-center"><i class="fa fa-cogs"></i> What's going on inside of Qubes</h2>
     </div>
   </div>
 
   <div class="white-box more-bottom">
     <div class="row">
-      <div class="col-lg-6 text-center">
+      <div class="col-lg-6 col-md-6 text-center">
         <img src="attachment/site/xen-logo.svg" class="add-top">
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 col-md-6">
         <h3 class="text-center add-bottom">Security that Works</h3>
         <p>Qubes brings to your personal computer the security of the Xen Project hypervisor - the same software relied on by major hosting providers to isolate websites and services from each other. If it breaks, so goes the global digital economy. <a href="/doc/architecture/">Learn more</a></p>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6 text-center">
+      <div class="col-lg-6 col-md-6 text-center">
         <img src="attachment/site/OS-logos.svg" class="add-top">
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 col-md-6">
         <h3 class="text-center add-bottom">Use the OS &amp; Apps You Like</h3>
         <p>Can't decide which Linux distribution you prefer? Still need that one Windows program for work? With Qubes you don't need to pick a favorite or compromise. <a href="/doc/templates/">Learn more</a></p>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6 text-center">
+      <div class="col-lg-6 col-md-6 text-center">
         <img src="attachment/site/whonix-tor.svg" class="add-top">
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 col-md-6">
         <h3 class="text-center add-bottom">Get serious with privacy</h3>
         <p>With Whonix integrated into Qubes, you can easily route network traffic through the Tor anonymity network. <a href="/doc/privacy/whonix/">Learn more</a></p>
       </div>
@@ -201,7 +208,7 @@ redirect_from:
 
   <!-- Details: Research / Help -->
   <div class="row">
-    <div class="col-lg-6 more-bottom">
+    <div class="col-lg-6 col-md-6 more-bottom">
       <h3 class="text-center"><i class="fa fa-file-text"></i> Our Research</h3>
       <div class="white-box">
       <ul class="list-unstyled remove-bottom">
@@ -219,7 +226,7 @@ redirect_from:
       </ul>
       </div>
     </div>
-    <div class="col-lg-6 more-bottom">
+    <div class="col-lg-6 col-md-6 more-bottom">
       <h3 class="text-center"><i class="fa fa-medkit"></i> Help &amp; Support</h3>
       <div class="white-box">
       <ul class="list-unstyled list-spaced remove-bottom">
@@ -235,7 +242,7 @@ redirect_from:
 
   <!-- Details: Awards / Follow -->
   <div class="row">
-    <div class="col-lg-6 more-bottom">
+    <div class="col-lg-6 col-md-6 more-bottom">
       <h3 class="text-center"><i class="fa fa-trophy"></i> Awards &amp; Grants</h3>
       <div class="white-box">
       <ul class="list-unstyled remove-bottom">
@@ -260,7 +267,7 @@ redirect_from:
       </ul>
       </div>
     </div>
-    <div class="col-lg-6 more-bottom">
+    <div class="col-lg-6 col-md-6 more-bottom">
       <h3 class="text-center"><i class="fa fa-comments"></i> Follow &amp; Contact</h3>
       <div class="white-box">
       <ul class="list-unstyled list-spaced">

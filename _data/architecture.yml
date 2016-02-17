@@ -19,6 +19,9 @@
   - title: Downloads
     url: /downloads/
     icon: fa-download
+  - title: Certified Laptops
+    url: /doc/certified-laptops/
+    icon: fa-laptop
   - title: Compatible Hardware
     url: /compatible-hardware/
     icon: fa-laptop

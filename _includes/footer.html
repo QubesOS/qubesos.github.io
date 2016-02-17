@@ -1,10 +1,10 @@
 <footer>
   <div class="white-box more-bottom">
   <div class="row footer-search">
-    <div class="col-lg-3 text-center">
+    <div class="col-lg-3 col-md-3 text-center">
       <h4 class="remove-bottom"><i class="fa fa-search"></i> Search Qubes-OS.org</h4>
     </div>
-    <div class="col-lg-9 text-left">
+    <div class="col-lg-9 col-md-9 text-left">
       <form action="https://duckduckgo.com/" method="get">
         <div class="input-group">
           <input type="hidden" name="sites" value="https://www.qubes-os.org">
@@ -19,7 +19,7 @@
   </div>
   <div class="row footer-nav">
     {% for section in site.data.architecture %}
-    <div class="col-lg-2">
+    <div class="col-lg-2 col-md-2">
       <h5 class="text-left add-bottom">{{section.title}} {% if section.title == "Donate" %}<i class="fa fa-heart"></i>{% endif %}</h5>
       <ul class="list-unstyled">
         {% for sub in section.sub-pages %}

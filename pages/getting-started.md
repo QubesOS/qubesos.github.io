@@ -19,7 +19,7 @@ redirect_from:
   </div>
   <div class="col-lg-4">
     <h2>Compatible Hardware</h2>
-    <p>If you want to jumpstart think Qubes is right for you, first make sure your hardware is compatible as Qubes cannot run every type of computer.</p>
+    <p>Ready to install Qubes? Make sure your hardware is compatible, as Qubes cannot run on every type of computer. Also, checkout <a href="/doc/certified-laptops/">Qubes-certified Laptops</a></p>
     <a href="/compatible-hardware/" class="btn btn-primary">
       <i class="fa fa-laptop"></i> Compatible Hardware
     </a>

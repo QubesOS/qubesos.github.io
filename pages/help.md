@@ -62,12 +62,12 @@ redirect_from:
   <div class="col-lg-4">
     <h2>IRC Chat</h2>
     <p>
-    Get together at <strong>#qubes</strong> on <strong>irc.freenode.net</strong>, the unofficial
+    Get together at <strong>#qubes</strong> on <strong>irc.otfc.net</strong>, the unofficial
     QubesOS IRC channel.</p>
-    <a href="irc:irc.freenode.net/qubes" class="btn btn-primary">
+    <a href="irc:irc.otfc.net:6667/qubes" class="btn btn-primary">
       <i class="fa fa-comment"></i> Your IRC Client
     </a>
-    <a href="https://webchat.freenode.net/?channels=qubes" class="btn btn-primary">
+    <a href="https://webchat.otfc.net/?channels=qubes" class="btn btn-primary">
       <i class="fa fa-link"></i> Webchat
     </a>
   </div>

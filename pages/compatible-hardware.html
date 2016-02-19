@@ -107,7 +107,7 @@ redirect_from: /hcl/
       <th style="width=20%">Credit</th>
     </tr>
     {% for device in site.hcl %}
-    {% if device.type == 'laptop' %}
+    {% if device.type == 'laptop' or device.type == 'notebook' %}
     {% include hcl-device.html %}
     {% endif  %}
     {% endfor %}

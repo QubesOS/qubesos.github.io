@@ -22,7 +22,7 @@
   - title: Certified Laptops
     url: /doc/certified-laptops/
     icon: fa-laptop
-  - title: Hardware Compatibility List
+  - title: Compatible Hardware
     url: /hcl/
     icon: fa-laptop
   - title: Try on Live USB
@@ -35,7 +35,7 @@
   sub-pages:
   - title: The Basics
     url: /doc/#the-basics
-  - title: Choosing Your Hardware
+  - title: Choosing Hardware
     url: /doc/#choosing-your-hardware
   - title: Installing Qubes
     url: /doc/#installing-qubes

@@ -22,8 +22,8 @@
   - title: Certified Laptops
     url: /doc/certified-laptops/
     icon: fa-laptop
-  - title: Compatible Hardware
-    url: /compatible-hardware/
+  - title: Hardware Compatibility List
+    url: /hcl/
     icon: fa-laptop
   - title: Try on Live USB
     url: /downloads/#qubes-live-usb-alpha

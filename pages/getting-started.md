@@ -19,9 +19,9 @@ redirect_from:
   </div>
   <div class="col-lg-4">
     <h2>Compatible Hardware</h2>
-    <p>Ready to install Qubes? Make sure your hardware is compatible, as Qubes cannot run on every type of computer. Also, checkout <a href="/doc/certified-laptops/">Qubes-certified Laptops</a></p>
-    <a href="/compatible-hardware/" class="btn btn-primary">
-      <i class="fa fa-laptop"></i> Compatible Hardware
+    <p>Ready to install Qubes? Make sure your hardware is compatible, as Qubes cannot run on every type of computer. Also, checkout <a href="/doc/certified-laptops/">Qubes-certified Laptops</a>.</p>
+    <a href="/hcl/" class="btn btn-primary">
+      <i class="fa fa-laptop"></i> Hardware Compatibility List
     </a>
   </div>
   <div class="col-lg-4">

@@ -45,7 +45,7 @@ Qubes Live USB (alpha)
   <thead>
     <tr>
       <th>Source</th>
-      <th>Bootable image</th>
+      <th>Download</th>
       <th><a href="/doc/verifying-signatures/"
              title="How to verify the authenticity of your download">Verifiers ⚠</a></th>
     </tr>

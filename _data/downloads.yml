@@ -2,7 +2,8 @@ releases:
   - name: Qubes Release 3.1 (release candidate)
     sources:
       mirrors.kernel.org:
-        type: HTTPS
+        method: HTTPS
+        type: bootable image
         filename: Qubes-R3.1-rc2-x86_64.iso
         url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso
         verifiers:
@@ -10,7 +11,8 @@ releases:
           sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       ftp.qubes-os.org:
-        type: HTTPS
+        method: HTTPS
+        type: bootable image
         filename: Qubes-R3.1-rc2-x86_64.iso
         url: https://ftp.qubes-os.org/iso/Qubes-R3.1-rc2-x86_64.iso
         verifiers:
@@ -18,7 +20,8 @@ releases:
           sig: https://ftp.qubes-os.org/iso/Qubes-R3.1-rc2-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       Rudd-O.com:
-        type: BitTorrent
+        method: BitTorrent
+        type: torrent to bootable image
         filename: Qubes-R3.1-rc2-x86_64.iso.torrent
         url: https://rudd-o.com/downloads/qubes/Qubes-R3.1-rc2-x86_64.iso.torrent
         verifiers:
@@ -38,7 +41,8 @@ releases:
   - name: Qubes Release 3.0 (latest stable release)
     sources:
       mirrors.kernel.org:
-        type: HTTPS
+        method: HTTPS
+        type: bootable image
         filename: Qubes-R3.0-x86_64-DVD.iso
         url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso
         verifiers:
@@ -46,7 +50,8 @@ releases:
           sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       ftp.qubes-os.org:
-        type: HTTPS
+        method: HTTPS
+        type: bootable image
         filename: Qubes-R3.0-x86_64-DVD.iso
         url: https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso
         verifiers:

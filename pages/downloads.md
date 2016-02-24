@@ -24,6 +24,10 @@ Before You Download...
 Qubes Live USB (alpha)
 ----------------------
 
+**Warning: Live USB edition is older than recent 3.1 release and lack some of
+its features (and bug fixes). If you want newest available image, download 3.1
+installation image. You can install it on a second USB stick**
+
 -   [**Qubes-R3.1-alpha1.1-x86_64-LIVE.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso)
       [[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc)]
       [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]

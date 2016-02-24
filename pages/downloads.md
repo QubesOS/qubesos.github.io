@@ -81,27 +81,6 @@ Qubes Live USB (alpha)
 
 {% endfor %}
 
-Qubes Release 3.0 (latest stable release)
--------------------------------------
-
--   [**Qubes-R3.0-x86_64-DVD.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso)
-      [[hash](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso.DIGESTS)]
-      [[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso.asc)]
-      [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]
-      [[?](/doc/verifying-signatures/)]
-      (mirrors.kernel.org)
--   [**Qubes-R3.0-x86_64-DVD.iso**](https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso)
-      [[hash](https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso.DIGESTS)]
-      [[sig](https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso.asc)]
-      [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]
-      [[?](/doc/verifying-signatures/)]
-      (ftp.qubes-os.org)
-
--   [**Installation Guide**](/doc/installation-guide/)
--   [Release Notes](/doc/releases/3.0/release-notes/)
--   [Release Schedule](/doc/releases/3.0/schedule/)
--   [Upgrading to Qubes R3.0](/doc/releases/3.0/release-notes/#upgrading)
-
 Qubes Release 2
 ---------------------------------------
 

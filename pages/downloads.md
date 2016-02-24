@@ -70,10 +70,11 @@ Qubes Live USB (alpha)
   {% for docdata in release.docs %}
   {% assign doc_name = docdata[0] %}
   {% assign doc = docdata[1] %}
+  {% assign featured = doc.featured | default: "no" %}
   <li>
-  {% if doc.featured | default: 0 %}<strong>{% endif %}
+  {% if featured != "no" %}<strong>{% endif %}
     <a href="{{ doc.url }}">{{ doc_name }}</a>
-  {% if doc.featured | default: 0 %}</strong>{% endif %}
+  {% if featured != "no" %}</strong>{% endif %}
   </li>
   {% endfor %}
 </ul>

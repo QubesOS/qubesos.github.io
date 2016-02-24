@@ -38,7 +38,7 @@ Qubes Live USB (alpha)
 
 {% for release in site.data.downloads.releases %}
 
-Qubes Release 3.1 (release candidate)
+{{ release.name }}
 -------------------------------------
 
 <table class="table">

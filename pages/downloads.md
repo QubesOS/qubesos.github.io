@@ -47,7 +47,7 @@ Qubes Live USB (alpha)
       <th>Source</th>
       <th>Bootable image</th>
       <th><a href="/doc/verifying-signatures/"
-             title="How to verify the authenticity of your download">Verifiers</a></th>
+             title="How to verify the authenticity of your download">Verifiers ⚠</a></th>
     </tr>
   </thead>
   <tbody>
@@ -55,14 +55,14 @@ Qubes Live USB (alpha)
     {% assign source_name = sourcedata[0] %}
     {% assign source = sourcedata[1] %}
     <tr>
-      <td><em><a href="https://{{ source_name }}/">{{ source_name }}</a></em> ({{ source.type }})</td>
-      <td><a href="{{ source.url }}">{{ source.filename }}</a></td>
+      <td><em><a href="https://{{ source_name }}/">{{ source_name }}</a></em> ({{ source.method }})</td>
+      <td><a href="{{ source.url }}">{{ source.filename }}</a> ({{ source.type }})</td>
       <td>
         {% for verifier in source.verifiers %}
           [<a href="{{ verifier[1] }}">{{ verifier[0] }}</a>]
         {% endfor %}
           [<a href="/doc/verifying-signatures/"
-              title="How to verify the authenticity of your download">?</a>]
+              title="How to verify the authenticity of your download">⚠</a>]
       </td>
     </tr>
     {% endfor %}

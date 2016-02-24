@@ -111,7 +111,7 @@ redirect_from:
       <th>Source</th>
       <th>Download</th>
       <th><a href="/doc/verifying-signatures/"
-             title="How to verify the authenticity of your download">Verifiers</a> ⚠</th>
+             title="How to verify the authenticity of your download">Verifiers</a></th>
     </tr>
   </thead>
   <tbody>

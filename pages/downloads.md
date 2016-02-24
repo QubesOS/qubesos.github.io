@@ -96,14 +96,14 @@ redirect_from:
 {% for releasex in site.data.downloads.releases %}
 {% assign release_name = releasex[0] %}
 {% assign release = releasex[1] %}
-{% assign deprecated = release.deprecated | default: "no" %}
-{% assign testing = release.testing | default: "no" %}
+{% assign deprecated = release.deprecated | default: false %}
+{% assign testing = release.testing | default: false %}
 
 <h2>{{ release_name }}</h2>
 
-{% if deprecated != "no" %}<p>⚠ {% if deprecated != "yes" %}{{ deprecated }}{% else %}This is an old release.  We strongly recommend you prefer <a href="/doc/supported-versions/">using a current and supported release</a>.{% endif %}</p>{% endif %}
+{% if deprecated %}<p>⚠ {% if deprecated != true %}{{ deprecated }}{% else %}This is an old release.  We strongly recommend you prefer <a href="/doc/supported-versions/">using a current and supported release</a>.{% endif %}</p>{% endif %}
 
-{% if testing != "no" %}<p>⚠ {% if testing != "yes" %}{{ testing }}{% else %}This is a testing release.  We appreciate your desire to help us with testing Qubes OS; that said, we recommend you use <a href="/doc/supported-versions/">a current and supported release</a> for your daily computing.{% endif %}</p>{% endif %}
+{% if testing %}<p>⚠ {% if testing != true %}{{ testing }}{% else %}This is a testing release.  We appreciate your desire to help us with testing Qubes OS; that said, we recommend you use <a href="/doc/supported-versions/">a current and supported release</a> for your daily computing.{% endif %}</p>{% endif %}
 
 <table class="table">
   <thead>

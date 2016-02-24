@@ -15,7 +15,7 @@ redirect_from:
 {% assign release = site.data.downloads.releases[release_name] %}
 {% assign primary_source = release.sources|first %}
 
-<h1 class="more-top add-left">Get</h1>
+<h1 class="more-top add-left">Get Qubes OS</h1>
 
 <table class="step-options">
 <tr>
@@ -41,7 +41,7 @@ redirect_from:
 </ul>
 
 
-<h1 class="more-top add-left">Verify</h1>
+<h1 class="more-top add-left">Verify Qubes OS</h1>
 
 <table class="step-options">
 <tr>
@@ -60,7 +60,7 @@ redirect_from:
 </ul>
 
 
-<h1 class="more-top add-left">Deploy</h1>
+<h1 class="more-top add-left">Deploy Qubes OS</h1>
 
 <table class="step-options">
 <tr>
@@ -74,7 +74,7 @@ redirect_from:
 </ul>
 
 
-<h1 class="more-top add-left">Enjoy</h1>
+<h1 class="more-top add-left">Enjoy Qubes OS</h1>
 
 <table class="step-options">
 <tr>

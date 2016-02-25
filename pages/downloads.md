@@ -29,7 +29,7 @@ redirect_from:
 </tr>
 </table>
 
-<p><a class="btn btn-default" href="#more-releases">See live, experimental and past releases</a></p>
+<p><a class="btn btn-default" href="#more-releases">Pick a live, experimental or older release</a></p>
 
 <ul>
   {% for fdoc in release.featured_docs["get"] %}

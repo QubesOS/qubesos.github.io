@@ -1,12 +1,12 @@
 ---
 layout: full
-title: Compatible Hardware (HCL)
-permalink: /compatible-hardware/
+title: Hardware Compatibility List (HCL)
+permalink: /hcl/
 model: all
-redirect_from: /hcl/
+redirect_from: /compatible-hardware/
 ---
 
-<div id="compatible-hardware">
+<div id="hcl">
   <div class="row">
     <div class="col-lg-3 col-md-3">
       <h4>Hardware Type</h4>
@@ -21,10 +21,10 @@ redirect_from: /hcl/
       </p>
       <hr>
       <p>
-        <a href="/doc/HCL/" class="btn btn-default btn-block" href=""><i class="fa fa-plus"></i> Add Your Device</a>
+        <a href="/doc/hcl/" class="btn btn-default btn-block" href=""><i class="fa fa-plus"></i> Add Your Device</a>
       </p>
       <p>Information about this <strong>hardware comapatibility list</strong> and how to contribute can be found
-      <a class='ext-link' href='/doc/HCL/'>in the documentation</a></p>
+      <a class='ext-link' href='/doc/hcl/'>in the documentation</a></p>
     </div>
     <div class="col-lg-9 col-md-9">
       <h4>Marks &amp; Colours</h4>
@@ -106,7 +106,7 @@ redirect_from: /hcl/
       <th style="width=20%">Credit</th>
     </tr>
     {% for device in site.hcl %}
-    {% if device.type == 'laptop' %}
+    {% if device.type == 'laptop' or device.type == 'notebook' %}
     {% include hcl-device.html %}
     {% endif  %}
     {% endfor %}

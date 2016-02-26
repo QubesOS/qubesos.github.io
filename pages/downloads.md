@@ -24,6 +24,10 @@ Before You Download...
 Qubes Live USB (alpha)
 ----------------------
 
+**Warning: Live USB edition is older than recent 3.1 release and lack some of
+its features (and bug fixes). If you want newest available image, download 3.1
+installation image. You can install it on a second USB stick**
+
 -   [**Qubes-R3.1-alpha1.1-x86_64-LIVE.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso)
       [[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc)]
       [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]
@@ -37,40 +41,50 @@ Qubes Live USB (alpha)
 
 -   [**Usage Guide**](/doc/live-usb/)
 
-Qubes Release 3.1 (release candidate)
+{% for release in site.data.downloads.releases %}
+
+{{ release.name }}
 -------------------------------------
 
-| Source                                           | Bootable image  | [Verifiers](/doc/verifying-signatures/) |
-| ------------------------------------------------ | --------------- | --------------------------------------- |
-| [*mirrors.kernel.org*](https://mirrors.kernel.org/) (HTTPS)                     | [**Qubes-R3.1-rc2-x86_64.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso)  | [[hash](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.DIGESTS)]&nbsp;[[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.asc)]&nbsp;[[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)] |
-| [*ftp.qubes-os.org*](https://ftp.qubes-os.org/)   (HTTPS)                     | [**Qubes-R3.1-rc2-x86_64.iso**](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc2-x86_64.iso) | [[hash](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc2-x86_64.iso.DIGESTS)]&nbsp;[[sig](https://ftp.qubes-os.org/iso/Qubes-R3.1-rc2-x86_64.iso.asc)]&nbsp;[[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)] |
-| [*Rudd-O.com*](https://rudd-o.com/) (BitTorrent) | [**Qubes-R3.1-rc2-x86_64.iso.torrent**](https://rudd-o.com/downloads/qubes/Qubes-R3.1-rc2-x86_64.iso.torrent) | [[hash](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.DIGESTS)]&nbsp;[[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc2-x86_64.iso.asc)]&nbsp;[[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)] |
+<table class="table">
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Download</th>
+      <th><a href="/doc/verifying-signatures/"
+             title="How to verify the authenticity of your download">Verifiers</a> ⚠</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for sourcedata in release.sources %}
+    {% assign source_name = sourcedata[0] %}
+    {% assign source = sourcedata[1] %}
+    <tr>
+      <td><em><a href="https://{{ source_name }}/">{{ source_name }}</a></em> ({{ source.method }})</td>
+      <td><a href="{{ source.url }}">{{ source.filename }}</a> ({{ source.type }})</td>
+      <td>
+        {% for verifier in source.verifiers %}
+          ◇ <a href="{{ verifier[1] }}">{{ verifier[0] }}</a>
+        {% endfor %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
--   [**Installation Guide**](/doc/installation-guide/)
--   [Release Notes](/doc/releases/3.1/release-notes/)
--   [Release Schedule](/doc/releases/3.1/schedule/)
--   [Upgrading to Qubes R3.1 rc1](/doc/releases/3.1/release-notes/#upgrading)
+<ul>
+  {% for docdata in release.docs %}
+  {% assign doc_name = docdata[0] %}
+  {% assign doc = docdata[1] %}
+  {% assign featured = doc.featured | default: "no" %}
+  <li>
+    <a href="{{ doc.url }}">{{ doc_name }}</a>
+    {% if featured != "no" %} ☚{% endif %}
+  </li>
+  {% endfor %}
+</ul>
 
-Qubes Release 3.0 (latest stable release)
--------------------------------------
-
--   [**Qubes-R3.0-x86_64-DVD.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso)
-      [[hash](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso.DIGESTS)]
-      [[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso.asc)]
-      [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]
-      [[?](/doc/verifying-signatures/)]
-      (mirrors.kernel.org)
--   [**Qubes-R3.0-x86_64-DVD.iso**](https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso)
-      [[hash](https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso.DIGESTS)]
-      [[sig](https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso.asc)]
-      [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]
-      [[?](/doc/verifying-signatures/)]
-      (ftp.qubes-os.org)
-
--   [**Installation Guide**](/doc/installation-guide/)
--   [Release Notes](/doc/releases/3.0/release-notes/)
--   [Release Schedule](/doc/releases/3.0/schedule/)
--   [Upgrading to Qubes R3.0](/doc/releases/3.0/release-notes/#upgrading)
+{% endfor %}
 
 Qubes Release 2
 ---------------------------------------

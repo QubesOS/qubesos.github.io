@@ -10,14 +10,14 @@ redirect_from:
 
 
 <div class="row">
-  <div class="col-lg-4 col-md-4">
-    <h2>Documentation</h2>
-    <p>Check out our documentation for information about setting up and using Qubes, and help us improve it!</p>
-    <a href="/doc/" class="btn btn-primary">
-      <i class="fa fa-book"></i> Read Documentation
+  <div class="col-lg-4">
+    <h2>Troubleshooting</h2>
+    <p>Check the Troubleshooting section of the documentation. See something missing? Contribute a guide!</p>
+    <a href="/doc/#troubleshooting" class="btn btn-primary">
+      <i class="fa fa-book"></i> Troubleshooting
     </a>
     <a href="/doc/doc-guidelines/" class="btn btn-primary">
-      <i class="fa fa-pencil-square-o"></i> Contribute
+      <i class="fa fa-pencil-square-o"></i> Contribute a Guide
     </a>
   </div>
   <div class="col-lg-4 col-md-4">
@@ -62,12 +62,12 @@ redirect_from:
   <div class="col-lg-4 col-md-4">
     <h2>IRC Chat</h2>
     <p>
-    Get together at <strong>#qubes</strong> on <strong>irc.freenode.net</strong>, the unofficial
+    Get together at <strong>#qubes</strong> on <strong>irc.oftc.net</strong>, the unofficial
     QubesOS IRC channel.</p>
-    <a href="irc:irc.freenode.net/qubes" class="btn btn-primary">
+    <a href="irc:irc.oftc.net:6697/qubes" class="btn btn-primary">
       <i class="fa fa-comment"></i> Your IRC Client
     </a>
-    <a href="https://webchat.freenode.net/?channels=qubes" class="btn btn-primary">
+    <a href="https://webchat.oftc.net/?channels=qubes" class="btn btn-primary">
       <i class="fa fa-link"></i> Webchat
     </a>
   </div>

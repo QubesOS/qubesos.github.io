@@ -23,19 +23,31 @@
     url: /doc/certified-laptops/
     icon: fa-laptop
   - title: Compatible Hardware
-    url: /compatible-hardware/
+    url: /hcl/
     icon: fa-laptop
   - title: Try on Live USB
     url: /downloads/#qubes-live-usb-alpha
     icon: fa-download
 
+- title: Docs
+  url: /doc/
+  icon: fa-book
+  sub-pages:
+  - title: The Basics
+    url: /doc/#the-basics
+  - title: Choosing Hardware
+    url: /doc/#choosing-your-hardware
+  - title: Installing Qubes
+    url: /doc/#installing-qubes
+  - title: Common Tasks
+    url: /doc/#common-tasks
+  - title: Troubleshooting
+    url: /doc/#troubleshooting
+
 - title: Help
   url: /help/
   icon: fa-medkit
   sub-pages:
-  - title: Documentation
-    url: /doc/
-    icon: fa-book
   - title: Users' FAQs
     url: /doc/user-faq/
     icon: fa-info-circle

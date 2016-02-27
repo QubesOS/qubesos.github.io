@@ -154,7 +154,6 @@ redirect_from:
 <p>Qubes ISOs are available from the following mirrors:</p>
 
 <ul>
-  <li><a href="http://burnbit.com/search?q=qubes">Burnbit torrent</a></li>
   <li><a href="https://mirrors.kernel.org/qubes/iso/">mirrors.kernel.org</a></li>
 </ul>
 

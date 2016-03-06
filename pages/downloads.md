@@ -96,6 +96,7 @@ redirect_from:
 {% for releasex in site.data.downloads.releases %}
 {% assign release_name = releasex[0] %}
 {% assign release = releasex[1] %}
+{% if release_name == site.data.downloads.featured_release %}{% continue %}{% endif %}
 {% assign deprecated = release.deprecated | default: false %}
 {% assign testing = release.testing | default: false %}
 

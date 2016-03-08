@@ -173,12 +173,15 @@ code {
 
 pre {
     padding: 6px 10px;
-    overflow-x: scroll;
+    overflow-x: auto;
 
     > code {
         border: 0;
         padding-right: 0;
         padding-left: 0;
+        overflow-wrap: normal;
+        word-wrap: normal;
+        white-space: pre;
     }
 }
 

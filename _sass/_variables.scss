@@ -54,7 +54,8 @@ $bootstrap-sass-asset-helper: false !default;
 	url('../fonts/OstrichSansRounded-Medium.svg#wf') format('svg');
 }
 
-
+$font-ostrich: "Ostrich Medium";
+$font-ostrich-heavy: "Ostrich Heavy";
 
 //== Colors
 //
@@ -73,6 +74,10 @@ $brand-info:            #43c4f3 !default;
 $brand-warning:         #e79e27 !default;
 $brand-danger:          #bd2727 !default;
 
+$qubes-blue: 						#63a0ff;
+$qubes-blue-light:			#99bfff;
+$qubes-purple:					#9f389f;
+$qubes-yellow: 					#e7e532;
 
 //== Scaffolding
 //
@@ -95,7 +100,7 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.

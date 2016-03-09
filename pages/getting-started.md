@@ -34,7 +34,7 @@ redirect_from:
 </div>
 <hr class="more-top more-bottom">
 
-Now that you've installed Qubes, let's cover some basic concepts.
+<a name="already-installed"></a>Now that you've installed Qubes, let's cover some basic concepts.
 
 AppVMs (Domains) and TemplateVMs
 --------------------------------

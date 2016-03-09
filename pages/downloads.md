@@ -21,26 +21,6 @@ Before You Download...
 -   [Qubes OS License](/doc/license/)
 -   [Qubes OS Source Code](https://github.com/QubesOS)
 
-Qubes Live USB (alpha)
-----------------------
-
-**Warning: Live USB edition is older than recent 3.1 release and lack some of
-its features (and bug fixes). If you want newest available image, download 3.1
-installation image. You can install it on a second USB stick**
-
--   [**Qubes-R3.1-alpha1.1-x86_64-LIVE.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso)
-      [[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc)]
-      [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]
-      [[?](/doc/verifying-signatures/)]
-      (mirrors.kernel.org)
--   [**Qubes-R3.1-alpha1.1-x86_64-LIVE.iso**](https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso)
-      [[sig](https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc)]
-      [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]
-      [[?](/doc/verifying-signatures/)]
-      (ftp.qubes-os.org)
-
--   [**Usage Guide**](/doc/live-usb/)
-
 {% for release in site.data.downloads.releases %}
 
 {{ release.name }}
@@ -85,6 +65,26 @@ installation image. You can install it on a second USB stick**
 </ul>
 
 {% endfor %}
+
+Qubes Live USB (alpha)
+----------------------
+
+**Warning: Live USB edition is older than recent 3.1 release and lack some of
+its features (and bug fixes). If you want newest available image, download 3.1
+installation image. You can install it on a second USB stick**
+
+-   [**Qubes-R3.1-alpha1.1-x86_64-LIVE.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso)
+      [[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc)]
+      [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]
+      [[?](/doc/verifying-signatures/)]
+      (mirrors.kernel.org)
+-   [**Qubes-R3.1-alpha1.1-x86_64-LIVE.iso**](https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso)
+      [[sig](https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc)]
+      [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]
+      [[?](/doc/verifying-signatures/)]
+      (ftp.qubes-os.org)
+
+-   [**Usage Guide**](/doc/live-usb/)
 
 Qubes Release 2
 ---------------------------------------

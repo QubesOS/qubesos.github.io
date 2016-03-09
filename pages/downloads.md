@@ -19,7 +19,7 @@ Before You Download...
 -   [How to Verify Signatures](/doc/verifying-signatures/)
 -   [Installation Security Considerations](/doc/install-security/)
 -   [Qubes OS License](/doc/license/)
--   [Qubes OS Source Code](https://github.com/QubesOS)
+-   [Qubes OS Source Code](/doc/source-code/)
 
 {% for release in site.data.downloads.releases %}
 

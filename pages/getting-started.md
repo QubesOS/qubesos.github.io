@@ -10,21 +10,21 @@ redirect_from:
 ---
 
 <div class="row">
-  <div class="col-lg-4">
+  <div class="col-lg-4 col-md-4">
     <h2>Try Qubes</h2>
     <p>You don't have to replace your current operating system in order to try out Qubes, make a bootable live USB/DVD to try it out now!</p>
     <a href="/downloads/#qubes-live-usb-alpha/" class="btn btn-primary">
       <i class="fa fa-usb"></i> Try Qubes Live USB
     </a>
   </div>
-  <div class="col-lg-4">
+  <div class="col-lg-4 col-md-4">
     <h2>Compatible Hardware</h2>
     <p>Ready to install Qubes? Make sure your hardware is compatible, as Qubes cannot run on every type of computer. Also, checkout <a href="/doc/certified-laptops/">Qubes-certified Laptops</a>.</p>
     <a href="/hcl/" class="btn btn-primary">
       <i class="fa fa-laptop"></i> Hardware Compatibility List
     </a>
   </div>
-  <div class="col-lg-4">
+  <div class="col-lg-4 col-md-4">
     <h2>Downloads</h2>
     <p>This guide assumes that you have Qubes up and running. If you don't have Qubes yet, you can download it here.</p>
     <a href="/downloads/" class="btn btn-primary">

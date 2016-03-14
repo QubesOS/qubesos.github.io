@@ -1,0 +1,177 @@
+/* Docs */
+
+
+.focus {
+
+  margin-bottom: 15px;
+
+  .fa-check {
+    color: $brand-success;
+  }
+
+  .fa-times {
+    color: $brand-danger;
+  }
+
+}
+
+
+/* Style Guide */
+@mixin styleguide-focus() {
+  background-color: $gray-lighter;
+  border-radius: $border-radius-base;
+  padding: $spacing-unit;
+}
+
+.styleguide {
+
+  .swatch {
+    display: inline-block;
+
+    .color {
+      width: 90px;
+      height: 90px;
+      border-radius: $border-radius-base;
+    }
+
+    strong {
+      display: block;
+    }
+  }
+
+  .focus {
+
+    background-color: $gray-lighter;
+    border-radius: $border-radius-base;
+    padding: $spacing-unit;
+
+    .font {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    img {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      max-height: 175px;
+    }
+  }
+
+}
+
+
+// Font
+.ostrich {
+  font-family: $ostrich;
+}
+
+.ostrich-heavy {
+  font-family: $ostrich-heavy;
+}
+
+.opensans {
+  font-family: "Open Sans";
+}
+
+.opensans-bold {
+  font-family: "Open Sans Bold";
+}
+
+// Text Color
+.gray-base {
+  color: $gray-base;
+}
+.gray-darker {
+  color: $gray-darker;
+}
+.gray-dark {
+  color: $gray-dark;
+}
+.gray {
+  color: $gray;
+}
+.gray-light {
+  color: $gray-light;
+}
+.gray-lighter {
+  color: $gray-lighter;
+}
+
+.primary {
+  color: $brand-primary;
+}
+.info {
+  color: $brand-info;
+}
+.success {
+  color: $brand-success;
+}
+.danger {
+  color: $brand-danger;
+}
+.warning {
+  color: $brand-warning;
+}
+
+.blue {
+  color: $qubes-blue;
+}
+.blue-light {
+  color: $qubes-blue-light;
+}
+.purple {
+  color: $qubes-purple;
+}
+.yellow {
+  color: $qubes-yellow;
+}
+
+
+// Background Color
+.bg-gray-base {
+  background-color: $gray-base;
+}
+.bg-gray-darker {
+  background-color: $gray-darker;
+}
+.bg-gray-dark {
+  background-color: $gray-dark;
+}
+.bg-gray {
+  background-color: $gray;
+}
+.bg-gray-light {
+  background-color: $gray-light;
+}
+.bg-gray-lighter {
+  background-color: $gray-lighter;
+}
+
+.bg-primary {
+  background-color: $brand-primary;
+}
+.bg-success {
+  background-color: $brand-success;
+}
+.bg-info {
+  background-color: $brand-info;
+}
+.bg-warning {
+  background-color: $brand-warning;
+}
+.bg-danger {
+  background-color: $brand-danger;
+}
+
+.bg-blue {
+  background-color: $qubes-blue;
+}
+.bg-blue-light {
+  background-color: $qubes-blue-light;
+}
+.bg-purple {
+  background-color: $qubes-purple;
+}
+.bg-yellow {
+  background-color: $qubes-yellow;
+}

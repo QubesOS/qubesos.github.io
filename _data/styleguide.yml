@@ -1,0 +1,94 @@
+fonts:
+  - class: ostrich-heavy
+    family: Ostrich Sans Bold
+  - class: ostrich
+    family: Ostrich Sans
+  - class: opensans-bold
+    family: Open Sans Bold
+  - class: opensans
+    family: Open Sans
+
+colors:
+  - class: gray-base
+    name: Main Black
+    hex: 333333
+    type: grayscale
+  - class: gray-darker
+    name: Sub Gray
+    hex: 888888
+    type: grayscale
+  - class: gray-dark
+    name: Icon Dark Gray
+    hex: 8e8e95
+    type: grayscale
+  - class: gray
+    name: Middle Gray
+    hex: bfbfbf
+    type: grayscale
+  - class: gray-light
+    name: Light Gray
+    hex: d2d2d2
+    type: grayscale
+  - class: gray-lighter
+    name: Backround Gray
+    hex: f5f5f5
+    type: grayscale
+  - class: primary
+    name: Primary Blue
+    hex: 3874D8
+    type: colors
+  - class: info
+    name: Info Blue
+    hex: 43C4f3
+    type: colors
+  - class: blue
+    name: Qubes Blue
+    hex: 63a0ff
+    type: colors
+  - class: blue-light
+    name: Light Blue
+    hex: 99bfff
+    type: colors
+  - class: success
+    name: Success Green
+    hex: 5AD840
+    type: colors
+  - class: purple
+    name: Purple
+    hex: 9f389f
+    type: colors
+  - class: danger
+    name: Danger Red
+    hex: BD2727
+    type: colors
+  - class: warning
+    name: Warning Orange
+    hex: E79E27
+    type: colors
+  - class: yellow
+    name: Alert Yellow
+    hex: e7e532
+    type: colors
+
+logos:
+  - image: qubes-logo-home.svg
+    versions:
+      - path: /attachment/icons/
+        size: 200x200px
+        format: SVG
+  - image: logo-outline-small.svg
+    versions:
+      - path: /attachment/icons/
+        size: 40x40px
+        format: SVG
+  - image: qubes-logo-icon.png
+    versions:
+      - path: /attachment/icons/512x512/apps/
+        size: 512x512px
+        format: PNG
+      - path: /attachment/icons/128x128/apps/
+        size: 128x128px
+        format: PNG
+      - path: /attachment/icons/48x48/apps/
+        size: 48x48px
+        format: PNG

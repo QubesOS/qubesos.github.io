@@ -1,6 +1,6 @@
 ---
-layout: downloads
-title: Get Qubes OS
+layout: boxless
+title: Download Qubes OS
 permalink: /downloads/
 redirect_from:
 - /doc/releases/
@@ -9,222 +9,157 @@ redirect_from:
 - /wiki/QubesDownloads/
 ---
 
-<h1 class="more-top add-left"><i class="fa fa-download"></i>Get Qubes OS</h1>
+<div class="white-box more-bottom page-content">
+  {% assign release_name = site.data.downloads.featured_release %}
+  {% assign release = site.data.downloads.releases[release_name] %}
+  {% assign primary_source = release.sources|first %}
 
-<div class="download-steps page-content white-box">
-
-{% assign release_name = site.data.downloads.featured_release %}
-{% assign release = site.data.downloads.releases[release_name] %}
-{% assign primary_source = release.sources|first %}
-
-<div class="row more-bottom">
-
-    <div class="col-lg-2">
-
-        <h2>Download</h2>
-
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <h2>{{ release_name }}</h2>
     </div>
+  </div>
 
-    <div class="col-lg-6">
+  <div class="row">
+    <div class="col-lg-4 col-md-4">
+      <h3>1. Download ISO Image</h3>
 
-        <table class="step-options">
-        <tr>
-        <td><a class="btn btn-primary btn-lg" href="{{ primary_source[1].url }}">Via {{ primary_source[1].method }} from {{ primary_source[0] }}</a></td>
-        </tr>
-        {% for source in release.sources %}
-        {% if source[0] == primary_source[0] %}{% continue %}{% endif %}
-        <tr>
-        <td><a class="btn btn-default" href="{{ source[1].url }}">Via {{ source[1].method }} from {{ source[0] }}</a></td>
-        </tr>
+      <a class="btn btn-primary" href="{{ primary_source[1].url }}">
+        <i class="fa fa-download"></i> Download Now <br>
+        <small>{{ primary_source[0] }} ({{ primary_source[1].method }})</small>
+      </a>
+
+      {% for source in release.sources %}
+      {% if source[0] == primary_source[0] %}{% continue %}{% endif %}
+      <a class="btn btn-default" href="{{ source[1].url }}">
+        <i class="fa fa-download"></i> Download Now {{source.count}} <br>
+        <small>{{ source[0] }} ({{ source[1].method }}) </small>
+      </a>
+      {% endfor %}
+
+      <ul class="more-top">
+        {% for fdoc in release.featured_docs["get"] %}
+        <li><a href="{{ release.docs[fdoc].url }}">{{ fdoc }}</a></li>
         {% endfor %}
-        <tr>
-        <td><a class="btn btn-default" href="#more-releases">Pick a live, experimental or older release</a></td>
-        </tr>
-        </table>
+        <li><a href="/doc/supported-versions/">Supported Qubes OS versions</a></li>
+        <li><a href="/doc/version-scheme/">The Qubes OS version scheme</a></li>
+        <li><a href="/doc/license/">Read the Qubes OS License</a></li>
+      </ul>
 
     </div>
-
-    <div class="col-lg-4">
-
-        <p>Current release:<br/>
-        {{ release_name }}</p>
-
-        <ul>
-            {% for fdoc in release.featured_docs["get"] %}
-            <li><a href="{{ release.docs[fdoc].url }}">{{ fdoc }}</a></li>
-            {% endfor %}
-            <li><a href="/doc/supported-versions/">Supported Qubes OS versions</a></li>
-            <li><a href="/doc/version-scheme/">The Qubes OS version scheme</a></li>
-            <li><a href="/doc/license/">Read the Qubes OS License</a></li>
-        </ul>
-
-    </div>
-
-
-</div>
-
-<div class="row more-bottom">
-
-    <div class="col-lg-2">
-
-        <h2>Verify</h2>
-
-    </div>
-
-    <div class="col-lg-6">
-
-        <table class="step-options">
-        <tr>
-        <td colspan="3"><a class="btn btn-primary btn-lg" href="/doc/verifying-signatures/">Check your Qubes OS is authentic</a></td>
-        </tr>
+    <div class="col-lg-4 col-md-4">
+      <h3>2. Verify Your Download</h3>
+      <table class="step-options">
         <tr>
         <td><a class="btn btn-default" href="{{ primary_source[1].verifiers['hash'] }}">Hashes</a></td>
         <td><a class="btn btn-default" href="{{ primary_source[1].verifiers['sig'] }}">Signature</a></td>
-        <td><a class="btn btn-default" href="{{ primary_source[1].verifiers['key'] }}">Signer key</a></td>
+        <td><a class="btn btn-default" href="{{ primary_source[1].verifiers['key'] }}"><i class="fa fa-key"></i> Get Signing Key</a></td>
         </tr>
-        </table>
-
-    </div>
-
-    <div class="col-lg-4">
-
-        <ul>
+      </table>
+      <ul class="more-top">
         <li><a href="/doc/install-security/">Installation Security Considerations</a></li>
-        </ul>
-
-
+        <li><a href="/doc/verifying-signatures/">Learn To Verify Signatures</a></li>
+      </ul>
     </div>
 
-</div>
-
-
-<div class="row more-bottom">
-
-    <div class="col-lg-2">
-
-        <h2>Deploy</h2>
-
-    </div>
-
-    <div class="col-lg-6">
-
-        <table class="step-options">
+    <div class="col-lg-4 col-md-4">
+      <h3>3. Install & Setup</h3>
+      <table class="step-options">
         <tr>
-        <td><a class="btn btn-primary btn-lg" href="/doc/installation-guide/#burning-the-iso-onto-a-dvd-or-usb-stick">Deploy and boot Qubes OS</a></td>
+        <td><a class="btn btn-primary" href="/doc/installation-guide/#burning-the-iso-onto-a-dvd-or-usb-stick">Create Bootable USB / DVD</a></td>
         </tr>
-        </table>
-
-    </div>
-
-    <div class="col-lg-4">
-
-        <ul>
+      </table>
+      <ul class="more-top">
         <li><a href="/doc/system-requirements/">System Requirements</a></li>
         <li><a href="/hcl/">Hardware Compatibility List</a></li>
-        </ul>
-
+      </ul>
     </div>
 
+  </div>
 </div>
 
-<div class="row">
-
-    <div class="col-lg-2">
-
-        <h2>Enjoy!</h2>
-
-    </div>
-
-    <div class="col-lg-6">
-
-        <table class="step-options">
-        <tr>
-        <td><a class="btn btn-primary btn-lg" href="/getting-started/#already-installed">Get started with Qubes OS</a></td>
-        </tr>
-        </table>
-
-    </div>
-
-    <div class="col-lg-4">
-        <ul>
-        <li><a href="/help/">Get help</a></li>
-        <li><a href="https://github.com/QubesOS">See the source</a></li>
-        </ul>
-    </div>
-
-</div>
-
-
-</div>
+## Experimental and Older Releases
 
 <div class="white-box more-bottom page-content">
 
-<h1 id="more-releases">Live, experimental and older releases</h1>
-
-{% for releasex in site.data.downloads.releases %}
-{% assign release_name = releasex[0] %}
-{% assign release = releasex[1] %}
-{% if release_name == site.data.downloads.featured_release %}{% continue %}{% endif %}
-{% assign deprecated = release.deprecated | default: false %}
-{% assign testing = release.testing | default: false %}
-
-<h2>{{ release_name }}</h2>
-
-{% if deprecated %}<p>⚠ {% if deprecated != true %}{{ deprecated }}{% else %}This is an old release.  We strongly recommend you prefer <a href="/doc/supported-versions/">using a current and supported release</a>.{% endif %}</p>{% endif %}
-
-{% if testing %}<p>⚠ {% if testing != true %}{{ testing }}{% else %}This is a testing release.  We appreciate your desire to help us with testing Qubes OS; that said, we recommend you use <a href="/doc/supported-versions/">a current and supported release</a> for your daily computing.{% endif %}</p>{% endif %}
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Source</th>
-      <th>Download</th>
-      <th><a href="/doc/verifying-signatures/"
-             title="How to verify the authenticity of your download">Verifiers</a></th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for sourcedata in release.sources %}
-    {% assign source_name = sourcedata[0] %}
-    {% assign source = sourcedata[1] %}
-    <tr>
-      <td><em><a href="https://{{ source_name }}/">{{ source_name }}</a></em><br/>{{ source.method }}</td>
-      <td><a href="{{ source.url }}">{{ source.filename }}</a><br/>{{ source.type }}</td>
-      <td>
-        {% for verifier in source.verifiers %}
-          <a class="btn btn-default" href="{{ verifier[1] }}">{{ verifier[0] }}</a>
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      {% for releasex in site.data.downloads.releases %}
+      {% assign release_name = releasex[0] %}
+      {% assign release = releasex[1] %}
+      {% if release_name == site.data.downloads.featured_release %}{% continue %}{% endif %}
+      {% assign deprecated = release.deprecated | default: false %}
+      {% assign testing = release.testing | default: false %}
+      <h3>{{ release_name }}</h3>
+      {% if deprecated %}
+      <div class="alert alert-warning" role="alert">
+        <i class="fa fa-exclamation-triangle"></i>{% if deprecated != true %}{{ deprecated }}{% else %} This is an old release. We strongly recommend and prefer <a href="/doc/supported-versions/" class="alert-link">using a current and supported release</a>.{% endif %}
+      </div>
+      {% endif %}
+      {% if testing %}
+      <div class="alert alert-info" role="alert">
+        <i class="fa fa-exclamation-triangle"></i>{% if testing != true %}{{ testing }}{% else %} This is a testing release. We appreciate your desire to help us test Qubes. However, we recommend you use a <a href="/doc/supported-versions/" class="alert-link">current and supported release</a> for daily use.{% endif %}
+      </div>{% endif %}
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Downloads</th>
+            <th>Verifiers</th>
+            <th>File</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for sourcedata in release.sources %}
+          {% assign source_name = sourcedata[0] %}
+          {% assign source = sourcedata[1] %}
+          <tr>
+            <td>
+              <a class="btn btn-primary" href="{{ source.url }}">
+                <i class="fa fa-download"></i> Download Now
+              </a>
+            </td>
+            <td>
+              {% for verifier in source.verifiers %}
+                {% if verifier[0] == "hash" %}
+                <a class="btn btn-default" href="{{ verifier[1] }}">Hash</a>
+                {% elsif verifier[0] == "sig" %}
+                <a class="btn btn-default" href="{{ verifier[1] }}">Signature</a>
+                {% elsif verifier[0] == "key" %}
+                <a class="btn btn-default" href="{{ verifier[1] }}"><i class="fa fa-key"></i> Get Signing Key</a>
+                {% endif %}
+              {% endfor %}
+            </td>
+            <td>
+              <strong>{{ source.filename }}</strong><br>
+              <em>{{ source.type }}</em>
+            </td>
+            <td>
+              <a href="https://{{ source_name }}/">{{ source_name }}</a><br/>
+              <em>{{ source.method }}</em>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <ul>
+        {% for docdata in release.docs %}
+        {% assign doc_name = docdata[0] %}
+        {% assign doc = docdata[1] %}
+        {% assign featured = doc.featured | default: "no" %}
+        <li>
+          <a href="{{ doc.url }}">{{ doc_name }}</a>
+        </li>
         {% endfor %}
-      </td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+      </ul>
+      <hr class="more-top more-bottom">
+      {% endfor %}
 
-<ul>
-  {% for docdata in release.docs %}
-  {% assign doc_name = docdata[0] %}
-  {% assign doc = docdata[1] %}
-  {% assign featured = doc.featured | default: "no" %}
-  <li>
-    <a href="{{ doc.url }}">{{ doc_name }}</a>
-    {% if featured != "no" %} ☚{% endif %}
-  </li>
-  {% endfor %}
-</ul>
-
-<br/><!-- TODO: this is needed because of the shit 0-top big-bottom margin in the headings -->
-
-{% endfor %}
-
-
-<h2>Mirrors</h2>
-
-
-<p>Qubes ISOs are available from the following mirrors:</p>
-
-<ul>
-  <li><a href="https://mirrors.kernel.org/qubes/iso/">mirrors.kernel.org</a></li>
-</ul>
-
-
+      <h3 class="more-top">Mirrors</h3>
+      <p>Qubes ISOs are available from the following mirrors:</p>
+      <ul>
+        <li><a href="https://mirrors.kernel.org/qubes/iso/">mirrors.kernel.org</a></li>
+      </ul>
+    </div>
+  </div>
 </div>

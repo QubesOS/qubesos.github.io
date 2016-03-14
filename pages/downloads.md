@@ -103,8 +103,10 @@ redirect_from:
       <table class="table">
         <thead>
           <tr>
-            <th>Downloads</th>
-            <th>Verifiers</th>
+            <th>Download</th>
+            <th>Verify
+              <a class="fa fa-question-circle" href="/doc/verifying-signatures/"
+                 title="How do I verify my download?"></a></th>
             <th>File</th>
             <th>Source</th>
           </tr>

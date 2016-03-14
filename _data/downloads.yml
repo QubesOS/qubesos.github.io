@@ -1,5 +1,7 @@
 # The testing entry under a release can have "yes", "no", or a custom message to display.
-# The deprecated entry works in the same way.
+# The aging and deprecated entries work in the same way.
+# "Aging" means old but still supported.
+# "Deprecated" means old and no longer supported.
 # The featured_release toplevel entry controls which release gets featured as primary.
 
 featured_release: Qubes Release 3.1 (latest stable release)
@@ -49,7 +51,9 @@ releases:
       - Release Notes
       - Release Schedule
   Qubes Release 3.0:
-    deprecated: yes
+    aging: yes
+    deprecated: no
+    testing: no
     sources:
       mirrors.kernel.org:
         method: HTTPS
@@ -85,7 +89,13 @@ releases:
       - Release Notes
       - Release Schedule
   Qubes Live USB (alpha):
-    deprecated: The Live USB edition is older than recent 3.1 release and lacks some of its features (and bug fixes). If you want the newest available image, download the 3.1 installation image.  You can install from an USB stick onto a second USB stick without touching your computer's disks and data.
+    aging: no
+    deprecated: no
+    testing: The Live USB edition is older than recent 3.1 release and lacks
+             some of its features (and bug fixes). If you want the newest
+             available image, download the 3.1 installation image.  You can
+             install from a USB drive onto a second USB drive without touching
+             your computer's disks and data.
     sources:
       mirrors.kernel.org:
         method: HTTPS
@@ -108,7 +118,9 @@ releases:
         featured: yes
         url: /doc/live-usb/
   Qubes Release 2:
-    deprecated: yes
+    aging: yes
+    deprecated: no
+    testing: no
     sources:
       mirrors.kernel.org:
         method: HTTPS
@@ -137,7 +149,9 @@ releases:
       Upgrading to Qubes R2:
         url: /doc/releases/2.0/release-notes/#upgrading
   Qubes Release 1:
+    aging: no
     deprecated: yes
+    testing: no
     sources:
       mirrors.kernel.org:
         method: HTTPS

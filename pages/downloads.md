@@ -88,18 +88,25 @@ redirect_from:
       {% assign release_name = releasex[0] %}
       {% assign release = releasex[1] %}
       {% if release_name == site.data.downloads.featured_release %}{% continue %}{% endif %}
+      {% assign aging = release.aging | default: false %}
       {% assign deprecated = release.deprecated | default: false %}
       {% assign testing = release.testing | default: false %}
       <h3>{{ release_name }}</h3>
+      {% if aging %}
+      <div class="alert alert-info" role="alert">
+        <i class="fa fa-info-circle"></i>{% if aging != true %}{{ aging }}{% else %} This is an old, <a href="/doc/supported-versions/" class="alert-link">supported</a> release. For the best Qubes OS experience, we suggest upgrading to the latest stable release.{% endif %}
+      </div>
+      {% endif %}
       {% if deprecated %}
       <div class="alert alert-warning" role="alert">
-        <i class="fa fa-exclamation-triangle"></i>{% if deprecated != true %}{{ deprecated }}{% else %} This is an old release. We strongly recommend and prefer <a href="/doc/supported-versions/" class="alert-link">using a current and supported release</a>.{% endif %}
+        <i class="fa fa-exclamation-triangle"></i>{% if deprecated != true %}{{ deprecated }}{% else %} This is an old, <a href="/doc/supported-versions/" class="alert-link">unsupported</a> release. We strongly recommend upgrading to a supported release in order to receive the latest security updates.{% endif %}
       </div>
       {% endif %}
       {% if testing %}
       <div class="alert alert-info" role="alert">
-        <i class="fa fa-exclamation-triangle"></i>{% if testing != true %}{{ testing }}{% else %} This is a testing release. We appreciate your desire to help us test Qubes. However, we recommend you use a <a href="/doc/supported-versions/" class="alert-link">current and supported release</a> for daily use.{% endif %}
-      </div>{% endif %}
+        <i class="fa fa-info-circle"></i>{% if testing != true %}{{ testing }}{% else %} This is a testing release. We appreciate your desire to help us test Qubes. However, we recommend you use a <a href="/doc/supported-versions/" class="alert-link">current and supported release</a> for daily use.{% endif %}
+      </div>
+      {% endif %}
       <table class="table">
         <thead>
           <tr>

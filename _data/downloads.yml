@@ -2,60 +2,36 @@
 # The deprecated entry works in the same way.
 # The featured_release toplevel entry controls which release gets featured as primary.
 
-featured_release: Qubes Release 3.0 (latest stable release)
+featured_release: Qubes Release 3.1 (latest stable release)
 releases:
-  Qubes Live USB (alpha):
-    deprecated: The Live USB edition is older than recent 3.1 release and lacks some of its features (and bug fixes). If you want the newest available image, download the 3.1 installation image.  You can install from an USB stick onto a second USB stick without touching your computer's disks and data.
+  Qubes Release 3.1 (latest stable release):
     sources:
-      mirrors.kernel.org:
-        method: HTTPS
-        type: bootable image
-        filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
-        url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
-        verifiers:
-          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc
-          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+#      mirrors.kernel.org:
+#        method: HTTPS
+#        type: bootable image
+#        filename: Qubes-R3.1-x86_64.iso
+#        url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso
+#        verifiers:
+#          hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso.DIGESTS
+#          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso.asc
+#          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       ftp.qubes-os.org:
         method: HTTPS
         type: bootable image
-        filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
-        url: https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
+        filename: Qubes-R3.1-x86_64.iso
+        url: https://ftp.qubes-os.org/iso/Qubes-R3.1-x86_64.iso
         verifiers:
-          sig: https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc
+          hash: https://ftp.qubes-os.org/iso/Qubes-R3.1-x86_64.iso.DIGESTS
+          sig: https://ftp.qubes-os.org/iso/Qubes-R3.1-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-    docs:
-      Usage Guide:
-        featured: yes
-        url: /doc/live-usb/
-  Qubes Release 3.1 (release candidate):
-    testing: yes
-    sources:
-      mirrors.kernel.org:
-        method: HTTPS
-        type: bootable image
-        filename: Qubes-R3.1-rc3-x86_64.iso
-        url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc3-x86_64.iso
-        verifiers:
-          hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc3-x86_64.iso.DIGESTS
-          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc3-x86_64.iso.asc
-          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      ftp.qubes-os.org:
-        method: HTTPS
-        type: bootable image
-        filename: Qubes-R3.1-rc3-x86_64.iso
-        url: https://ftp.qubes-os.org/iso/Qubes-R3.1-rc3-x86_64.iso
-        verifiers:
-          hash: https://ftp.qubes-os.org/iso/Qubes-R3.1-rc3-x86_64.iso.DIGESTS
-          sig: https://ftp.qubes-os.org/iso/Qubes-R3.1-rc3-x86_64.iso.asc
-          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      Rudd-O.com:
+      'ftp.qubes-os.org ':
         method: BitTorrent
         type: torrent to bootable image
-        filename: Qubes-R3.1-rc3-x86_64.iso.torrent
-        url: https://rudd-o.com/downloads/qubes/Qubes-R3.1-rc3-x86_64.iso.torrent
+        filename: Qubes-R3.1-x86_64.iso.torrent
+        url: https://ftp.qubes-os.org/iso/Qubes-R3.1-x86_64.iso.torrent
         verifiers:
-          hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc3-x86_64.iso.DIGESTS
-          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-rc3-x86_64.iso.asc
+          hash: https://ftp.qubes-os.org/qubes/iso/Qubes-R3.1-x86_64.iso.DIGESTS
+          sig: https://ftp.qubes-os.org/qubes/iso/Qubes-R3.1-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
     docs:
       Installation Guide:
@@ -65,14 +41,15 @@ releases:
         url: /doc/releases/3.1/release-notes/
       Release Schedule:
         url: /doc/releases/3.1/schedule/
-      Upgrading to Qubes R3.1 rc3:
+      Upgrading to Qubes R3.1:
         url: /doc/releases/3.1/release-notes/#upgrading
     featured_docs:
       get:
-      - Upgrading to Qubes R3.1 rc1
+      - Upgrading to Qubes R3.1
       - Release Notes
       - Release Schedule
-  Qubes Release 3.0 (latest stable release):
+  Qubes Release 3.0:
+    deprecated: yes
     sources:
       mirrors.kernel.org:
         method: HTTPS
@@ -107,6 +84,29 @@ releases:
       - Upgrading to Qubes R3.0
       - Release Notes
       - Release Schedule
+  Qubes Live USB (alpha):
+    deprecated: The Live USB edition is older than recent 3.1 release and lacks some of its features (and bug fixes). If you want the newest available image, download the 3.1 installation image.  You can install from an USB stick onto a second USB stick without touching your computer's disks and data.
+    sources:
+      mirrors.kernel.org:
+        method: HTTPS
+        type: bootable image
+        filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
+        url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
+        verifiers:
+          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc
+          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+      ftp.qubes-os.org:
+        method: HTTPS
+        type: bootable image
+        filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
+        url: https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
+        verifiers:
+          sig: https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc
+          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+    docs:
+      Usage Guide:
+        featured: yes
+        url: /doc/live-usb/
   Qubes Release 2:
     deprecated: yes
     sources:

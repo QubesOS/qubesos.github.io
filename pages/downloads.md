@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Downloads
+layout: downloads
+title: Get Qubes OS
 permalink: /downloads/
 redirect_from:
 - /doc/releases/
@@ -9,22 +9,170 @@ redirect_from:
 - /wiki/QubesDownloads/
 ---
 
-Before You Download...
-----------------------
+<h1 class="more-top add-left"><i class="fa fa-download"></i>Get Qubes OS</h1>
 
--   [System Requirements](/doc/system-requirements/)
--   [Hardware Compatibility List](/hcl/)
--   [Supported Versions](/doc/supported-versions/)
--   [Version Scheme](/doc/version-scheme/)
--   [How to Verify Signatures](/doc/verifying-signatures/)
--   [Installation Security Considerations](/doc/install-security/)
--   [Qubes OS License](/doc/license/)
--   [Qubes OS Source Code](/doc/source-code/)
+<div class="download-steps page-content white-box">
 
-{% for release in site.data.downloads.releases %}
+{% assign release_name = site.data.downloads.featured_release %}
+{% assign release = site.data.downloads.releases[release_name] %}
+{% assign primary_source = release.sources|first %}
 
-{{ release.name }}
--------------------------------------
+<div class="row more-bottom">
+
+    <div class="col-lg-2">
+
+        <h2>Download</h2>
+
+    </div>
+
+    <div class="col-lg-6">
+
+        <table class="step-options">
+        <tr>
+        <td><a class="btn btn-primary btn-lg" href="{{ primary_source[1].url }}">Via {{ primary_source[1].method }} from {{ primary_source[0] }}</a></td>
+        </tr>
+        {% for source in release.sources %}
+        {% if source[0] == primary_source[0] %}{% continue %}{% endif %}
+        <tr>
+        <td><a class="btn btn-default" href="{{ source[1].url }}">Via {{ source[1].method }} from {{ source[0] }}</a></td>
+        </tr>
+        {% endfor %}
+        <tr>
+        <td><a class="btn btn-default" href="#more-releases">Pick a live, experimental or older release</a></td>
+        </tr>
+        </table>
+
+    </div>
+
+    <div class="col-lg-4">
+
+        <p>Current release:<br/>
+        {{ release_name }}</p>
+
+        <ul>
+            {% for fdoc in release.featured_docs["get"] %}
+            <li><a href="{{ release.docs[fdoc].url }}">{{ fdoc }}</a></li>
+            {% endfor %}
+            <li><a href="/doc/supported-versions/">Supported Qubes OS versions</a></li>
+            <li><a href="/doc/version-scheme/">The Qubes OS version scheme</a></li>
+            <li><a href="/doc/license/">Read the Qubes OS License</a></li>
+        </ul>
+
+    </div>
+
+
+</div>
+
+<div class="row more-bottom">
+
+    <div class="col-lg-2">
+
+        <h2>Verify</h2>
+
+    </div>
+
+    <div class="col-lg-6">
+
+        <table class="step-options">
+        <tr>
+        <td colspan="3"><a class="btn btn-primary btn-lg" href="/doc/verifying-signatures/">Check your Qubes OS is authentic</a></td>
+        </tr>
+        <tr>
+        <td><a class="btn btn-default" href="{{ primary_source[1].verifiers['hash'] }}">Hashes</a></td>
+        <td><a class="btn btn-default" href="{{ primary_source[1].verifiers['sig'] }}">Signature</a></td>
+        <td><a class="btn btn-default" href="{{ primary_source[1].verifiers['key'] }}">Signer key</a></td>
+        </tr>
+        </table>
+
+    </div>
+
+    <div class="col-lg-4">
+
+        <ul>
+        <li><a href="/doc/install-security/">Installation Security Considerations</a></li>
+        </ul>
+
+
+    </div>
+
+</div>
+
+
+<div class="row more-bottom">
+
+    <div class="col-lg-2">
+
+        <h2>Deploy</h2>
+
+    </div>
+
+    <div class="col-lg-6">
+
+        <table class="step-options">
+        <tr>
+        <td><a class="btn btn-primary btn-lg" href="/doc/installation-guide/#burning-the-iso-onto-a-dvd-or-usb-stick">Deploy and boot Qubes OS</a></td>
+        </tr>
+        </table>
+
+    </div>
+
+    <div class="col-lg-4">
+
+        <ul>
+        <li><a href="/doc/system-requirements/">System Requirements</a></li>
+        <li><a href="/hcl/">Hardware Compatibility List</a></li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-lg-2">
+
+        <h2>Enjoy!</h2>
+
+    </div>
+
+    <div class="col-lg-6">
+
+        <table class="step-options">
+        <tr>
+        <td><a class="btn btn-primary btn-lg" href="/getting-started/#already-installed">Get started with Qubes OS</a></td>
+        </tr>
+        </table>
+
+    </div>
+
+    <div class="col-lg-4">
+        <ul>
+        <li><a href="/help/">Get help</a></li>
+        <li><a href="https://github.com/QubesOS">See the source</a></li>
+        </ul>
+    </div>
+
+</div>
+
+
+</div>
+
+<div class="white-box more-bottom page-content">
+
+<h1 id="more-releases">Live, experimental and older releases</h1>
+
+{% for releasex in site.data.downloads.releases %}
+{% assign release_name = releasex[0] %}
+{% assign release = releasex[1] %}
+{% if release_name == site.data.downloads.featured_release %}{% continue %}{% endif %}
+{% assign deprecated = release.deprecated | default: false %}
+{% assign testing = release.testing | default: false %}
+
+<h2>{{ release_name }}</h2>
+
+{% if deprecated %}<p>⚠ {% if deprecated != true %}{{ deprecated }}{% else %}This is an old release.  We strongly recommend you prefer <a href="/doc/supported-versions/">using a current and supported release</a>.{% endif %}</p>{% endif %}
+
+{% if testing %}<p>⚠ {% if testing != true %}{{ testing }}{% else %}This is a testing release.  We appreciate your desire to help us with testing Qubes OS; that said, we recommend you use <a href="/doc/supported-versions/">a current and supported release</a> for your daily computing.{% endif %}</p>{% endif %}
 
 <table class="table">
   <thead>
@@ -32,7 +180,7 @@ Before You Download...
       <th>Source</th>
       <th>Download</th>
       <th><a href="/doc/verifying-signatures/"
-             title="How to verify the authenticity of your download">Verifiers</a> ⚠</th>
+             title="How to verify the authenticity of your download">Verifiers</a></th>
     </tr>
   </thead>
   <tbody>
@@ -40,11 +188,11 @@ Before You Download...
     {% assign source_name = sourcedata[0] %}
     {% assign source = sourcedata[1] %}
     <tr>
-      <td><em><a href="https://{{ source_name }}/">{{ source_name }}</a></em> ({{ source.method }})</td>
-      <td><a href="{{ source.url }}">{{ source.filename }}</a> ({{ source.type }})</td>
+      <td><em><a href="https://{{ source_name }}/">{{ source_name }}</a></em><br/>{{ source.method }}</td>
+      <td><a href="{{ source.url }}">{{ source.filename }}</a><br/>{{ source.type }}</td>
       <td>
         {% for verifier in source.verifiers %}
-          ◇ <a href="{{ verifier[1] }}">{{ verifier[0] }}</a>
+          <a class="btn btn-default" href="{{ verifier[1] }}">{{ verifier[0] }}</a>
         {% endfor %}
       </td>
     </tr>
@@ -64,75 +212,19 @@ Before You Download...
   {% endfor %}
 </ul>
 
+<br/><!-- TODO: this is needed because of the shit 0-top big-bottom margin in the headings -->
+
 {% endfor %}
 
-Qubes Live USB (alpha)
-----------------------
 
-**Warning: Live USB edition is older than recent 3.1 release and lack some of
-its features (and bug fixes). If you want newest available image, download 3.1
-installation image. You can install it on a second USB stick**
+<h2>Mirrors</h2>
 
--   [**Qubes-R3.1-alpha1.1-x86_64-LIVE.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso)
-      [[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc)]
-      [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]
-      [[?](/doc/verifying-signatures/)]
-      (mirrors.kernel.org)
--   [**Qubes-R3.1-alpha1.1-x86_64-LIVE.iso**](https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso)
-      [[sig](https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc)]
-      [[key](https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc)]
-      [[?](/doc/verifying-signatures/)]
-      (ftp.qubes-os.org)
 
--   [**Usage Guide**](/doc/live-usb/)
+<p>Qubes ISOs are available from the following mirrors:</p>
 
-Qubes Release 2
----------------------------------------
+<ul>
+  <li><a href="https://mirrors.kernel.org/qubes/iso/">mirrors.kernel.org</a></li>
+</ul>
 
-(This is an old release. We strongly recommend using Qubes 3.0 or higher.)
 
--   [**Qubes-R2-x86_64-DVD.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso)
-      [[hash](https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso.DIGESTS)]
-      [[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso.asc)]
-      [[key](https://keys.qubes-os.org/keys/qubes-release-2-signing-key.asc)]
-      [[?](/doc/verifying-signatures/)]
-      (mirrors.kernel.org)
--   [**Qubes-R2-x86_64-DVD.iso**](https://ftp.qubes-os.org/iso/Qubes-R2-x86_64-DVD.iso)
-      [[hash](https://ftp.qubes-os.org/iso/Qubes-R2-x86_64-DVD.iso.DIGESTS)]
-      [[sig](https://ftp.qubes-os.org/iso/Qubes-R2-x86_64-DVD.iso.asc)]
-      [[key](https://keys.qubes-os.org/keys/qubes-release-2-signing-key.asc)]
-      [[?](/doc/verifying-signatures/)]
-      (ftp.qubes-os.org)
-
--   [**Installation Guide**](/doc/installation-guide/)
--   [Release Notes](/doc/releases/2.0/release-notes/)
--   [Upgrading to Qubes R2](/doc/releases/2.0/release-notes/#upgrading)
-
-Qubes Release 1
----------------
-
-(This is an old release. We strongly recommend using Qubes 3.0 or higher.)
-
--   [**Qubes-R1-x86_64-DVD.iso**](https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso)
-      [[hash](https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso.DIGESTS)]
-      [[sig](https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso.asc)]
-      [[key](https://keys.qubes-os.org/keys/qubes-release-1-signing-key.asc)]
-      [[?](/doc/verifying-signatures/)]
-      (mirrors.kernel.org)
--   [**Qubes-R1-x86_64-DVD.iso**](https://ftp.qubes-os.org/iso/Qubes-R1-x86_64-DVD.iso)
-      [[hash](https://ftp.qubes-os.org/iso/Qubes-R1-x86_64-DVD.iso.DIGESTS)]
-      [[sig](https://ftp.qubes-os.org/iso/Qubes-R1-x86_64-DVD.iso.asc)]
-      [[key](https://keys.qubes-os.org/keys/qubes-release-1-signing-key.asc)]
-      [[?](/doc/verifying-signatures/)]
-      (ftp.qubes-os.org)
-
--   [**Installation Guide**](/doc/installation-guide/)
--   [Release Notes](/doc/releases/1.0/release-notes/)
-
-Mirrors
--------
-
-Qubes ISOs are available from the following mirrors:
-
--   [Burnbit torrent](http://burnbit.com/search?q=qubes)
--   [mirrors.kernel.org](https://mirrors.kernel.org/qubes/iso/)
+</div>

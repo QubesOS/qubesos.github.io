@@ -152,7 +152,6 @@ redirect_from:
         </li>
         {% endfor %}
       </ul>
-      <hr class="more-top more-bottom">
       {% endfor %}
 
     </div>

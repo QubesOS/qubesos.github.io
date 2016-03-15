@@ -149,13 +149,9 @@ redirect_from:
           <a class="black-link" href="{{ post.url | prepend: site.baseurl }}">
             {{ post.title }}
             <span class="detail">
-              <strong>
-                {% for category in post.categories %}
-                {% if site.allowed_categories contains category %}
-                <strong>{{ category | capitalize }}</strong>
-                {% endif %}
-                {% endfor %}
-                on {{ post.date | date: "%b %-d, %Y" }}
+              {% for category in post.categories %}{% if site.allowed_categories contains category %}
+              <strong>{{ category | capitalize }}</strong>
+              {% endif %}{% endfor %} on {{ post.date | date: "%b %-d, %Y" }}
             </span>
           </a>
         </li>
@@ -166,7 +162,7 @@ redirect_from:
       </ul>
     </div>
   </div>
-  </div>
+</div>
 
   <!-- Technology -->
   <div class="row">

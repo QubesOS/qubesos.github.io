@@ -14,11 +14,7 @@ redirect_from:
   {% assign release = site.data.downloads.releases[release_name] %}
   {% assign primary_source = release.sources|first %}
 
-  <div class="row">
-    <div class="col-lg-12 col-md-12">
-      <h2>{{ release_name }}</h2>
-    </div>
-  </div>
+  <h2 class="add-bottom">{{ release_name }}</h2>
 
   <div class="row">
     <div class="col-lg-4 col-md-4">
@@ -49,13 +45,9 @@ redirect_from:
     </div>
     <div class="col-lg-4 col-md-4">
       <h3>2. Verify Your Download</h3>
-      <table class="step-options">
-        <tr>
-        <td><a class="btn btn-default" href="{{ primary_source[1].verifiers['hash'] }}">Hashes</a></td>
-        <td><a class="btn btn-default" href="{{ primary_source[1].verifiers['sig'] }}">Signature</a></td>
-        <td><a class="btn btn-default" href="{{ primary_source[1].verifiers['key'] }}"><i class="fa fa-key"></i> Get Signing Key</a></td>
-        </tr>
-      </table>
+      <a class="btn btn-default" href="{{ primary_source[1].verifiers['hash'] }}">Hashes</a>
+      <a class="btn btn-default" href="{{ primary_source[1].verifiers['sig'] }}">Signature</a>
+      <a class="btn btn-default" href="{{ primary_source[1].verifiers['key'] }}"><i class="fa fa-key"></i> Get Signing Key</a>
       <ul class="more-top">
         <li><a href="/doc/install-security/">Installation Security Considerations</a></li>
         <li><a href="/doc/verifying-signatures/">Learn To Verify Signatures</a></li>
@@ -91,7 +83,7 @@ redirect_from:
       {% assign aging = release.aging | default: false %}
       {% assign deprecated = release.deprecated | default: false %}
       {% assign testing = release.testing | default: false %}
-      <h3>{{ release_name }}</h3>
+      <h3 class="more-bottom">{{ release_name }}</h3>
       {% if aging %}
       <div class="alert alert-info" role="alert">
         <i class="fa fa-info-circle"></i>{% if aging != true %}{{ aging }}{% else %} This is an old, <a href="/doc/supported-versions/" class="alert-link">supported</a> release. For the best Qubes OS experience, we suggest upgrading to the latest stable release.{% endif %}
@@ -161,8 +153,14 @@ redirect_from:
         </li>
         {% endfor %}
       </ul>
+      <hr class="more-top more-bottom">
       {% endfor %}
 
+      <h3 class="more-top">Mirrors</h3>
+      <p>Qubes ISOs are available from the following mirrors:</p>
+      <ul>
+        <li><a href="https://mirrors.kernel.org/qubes/iso/">mirrors.kernel.org</a></li>
+      </ul>
     </div>
   </div>
 </div>

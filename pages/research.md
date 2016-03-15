@@ -29,7 +29,8 @@ Here are some links to various papers/research projects that somehow relate to Q
 
 -   [Virtics: A System for Privilege Separation of Legacy Desktop Applications](http://www.eecs.berkeley.edu/Pubs/TechRpts/2010/EECS-2010-70.pdf) by Matt Piotrowski
 
-### VMM/Xen disagregation
+### Compartmentalization, isolation, and separation
 
+-   [Software compartmentalization vs. physical separation](http://www.invisiblethingslab.com/resources/2014/Software_compartmentalization_vs_physical_separation.pdf) by Joanna Rutkowska
 -   [Breaking Up is Hard to Do: Security and Functionality in a Commodity Hypervisor](http://tjd.phlegethon.org/words/sosp11-xoar.pdf) by Patrick Colp at el.
      (Also see [this thread on xen-devel](http://www.gossamer-threads.com/lists/xen/devel/230011))

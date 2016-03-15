@@ -55,7 +55,7 @@
     url: /doc/devel-faq/
     icon: fa-code
   - title: Mailing Lists
-    url: /doc/mailing-lists/
+    url: /mailing-lists/
     icon: fa-envelope-o
   - title: Report a Bug
     url: /doc/reporting-bugs/
@@ -93,7 +93,7 @@
     icon: fa-lock
 #  - title: Contact
 #    url: /contact/
-    icon: fa-comments
+#    icon: fa-comments
 
 - title: Donate
   url: /donate/

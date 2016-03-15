@@ -1,8 +1,9 @@
 ---
-layout: doc
+layout: default
 title: Mailing Lists
-permalink: /doc/mailing-lists/
+permalink: /mailing-lists/
 redirect_from:
+- /doc/mailing-lists/
 - /en/doc/mailing-lists/
 - /en/doc/qubes-lists/
 - /doc/qubes-lists/

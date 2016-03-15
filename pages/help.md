@@ -33,7 +33,7 @@ redirect_from:
   <div class="col-lg-4 col-md-4">
     <h2>Mailing Lists</h2>
     <p>If you still have questions, please search or join the Qubes OS mailing lists.</p>
-    <a href="/doc/mailing-lists/" class="btn btn-primary">
+    <a href="/mailing-lists/" class="btn btn-primary">
      <i class="fa fa-envelope-o"></i> Join Mailing Lists
     </a>
   </div>

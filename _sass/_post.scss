@@ -36,8 +36,8 @@
   font-family: $base-font-family;
 
   h2, h3, h4 {
-    margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit;
+    margin-top: ($spacing-unit * 1.5);
+    margin-bottom: $base-line-height;
   }
 
   h2 {

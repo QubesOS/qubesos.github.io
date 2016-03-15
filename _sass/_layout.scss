@@ -11,7 +11,7 @@
    h4,
    h5,
    h6 {
-    margin: 0 0 35px;
+    margin-bottom: 10px;
     font-weight: 200;
     font-family: $base-font-family;
     color: $gray-base;
@@ -53,6 +53,10 @@
     border-right: 1px solid $gray-light;
   }
 
+}
+
+.white-box {
+  margin-bottom: -($spacing-unit * 9);
 }
 
 

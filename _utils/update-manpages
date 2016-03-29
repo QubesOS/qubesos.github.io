@@ -1,0 +1,44 @@
+#!/bin/sh
+
+set -e
+
+if [ $# -lt 2 ]; then
+    echo "Usage: $0 <sourcedir> <targetdir>"
+    echo ""
+    echo "Examples: "
+    echo "  $0 ~/qubes-core-admin/doc/qvm-tools _doc/reference/dom0-tools"
+    echo "  $0 ~/qubes-core-admin/doc/qubes-tools _doc/reference/dom0-tools"
+    echo "  $0 ~/qubes-core-agent-linux/doc/vm-tools _doc/reference/vm-tools"
+    echo ""
+    echo "Note: it doesn't remote obsolete pages, nor update index. You need to"
+    echo "do that manually."
+    exit 1
+fi
+
+srcdir="$1"
+dstdir="$2"
+
+for input in "$srcdir"/*.rst; do
+    echo "Processing $input..." >&2
+    output="$dstdir/$(basename $input .rst).md"
+    # save frontmatter, if any
+    if [ -f "$output" ]; then
+        grep -B 100 -A 1 '^---$' "$output" > "$output".frontmatter || :
+    else
+        title="$(basename $input .rst)"
+        category="$(basename $dstdir)"
+        cat >"$output".frontmatter <<EOF
+---
+layout: doc
+title: $title
+permalink: /doc/$category/$title/
+redirect_from:
+- /en/doc/$category/$title/
+---
+
+EOF
+    fi
+    ( cat "$output".frontmatter; 
+    pandoc -f rst -t markdown_github "$input" ) > "$output"
+    rm -f "$output".frontmatter
+done

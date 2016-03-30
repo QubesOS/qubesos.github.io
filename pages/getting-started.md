@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Getting Started
+title: Get Started
 permalink: /getting-started/
 redirect_from:
 - /doc/getting-started/

@@ -2,6 +2,11 @@
 * Greyscale overwrites.
 */
 
+.navbar {
+  padding: 14px 0 10px 0;
+  letter-spacing: 0px;
+}
+
 .navbar-custom {
   height: 72px;
   margin-bottom: 0;
@@ -9,15 +14,30 @@
   font-size: 21px;
   letter-spacing: 1px;
   background-color: $body-bg;
-
-  a {
-    font-family: $ostrich-heavy;
-    font-size: 21px;
-    color: $gray-base;
-  }
+  border-bottom: 1px solid $gray-light;
 
   a.page-link {
+    display: inline-block;
     margin-right: 10px;
+
+    span {
+      font-family: $ostrich;
+      font-size: 30px;
+      line-height: 30px;
+      display: none;
+      color: $gray-base;
+
+      strong {
+        font-family: $ostrich-heavy;
+      }
+    }
+  }
+
+  .navbar-collapse a {
+    color: $gray-base;
+    font-family: $ostrich-heavy;
+    font-size: 21px;
+    line-height: 21px;
   }
 
   .nav {
@@ -46,82 +66,75 @@
       }
     }
   }
-}
 
-.navbar.navbar-custom {
-  border-bottom: 1px solid $gray-light;
-}
+  // Toggles responsive menu
+  .navbar-toggle {
+    background-color: $color-white;
+    border-color: $gray;
+    margin-top: 5px;
 
-.navbar-custom .navbar-collapse a {
-  color: $gray-light;
-}
+    &:hover,
+    &:focus {
+      background-color: $gray-light;
 
-@media(min-width:$screen-xs-max) {
-
-  .navbar {
-    padding: 10px 0;
-    letter-spacing: 0px;
-
-  }
-
-  .navbar-custom .navbar-collapse a {
-    color: $gray-base;
-  }
-
-  .navbar-custom.top-nav-collapse {
-    padding: 0;
-    background-color: $gray-base;
-
-    a {
-      color: $gray-base;
-      padding-right: 10px;
-      padding-left: 10px;
+      .icon-bar {
+        background-color: $gray-darker;
+      }
+    }
+    .icon-bar {
+      background-color: $gray-darker;
     }
   }
+}
+
+/* Makes links not wrap */
+@media(max-width: $screen-md-max) {
 
   .navbar-custom {
-    .top-nav-collapse {
-      border-bottom: 1px solid transparentize($gray-base, 0.7);
+    .navbar-collapse {
+      ul.nav-justified > li > a {
+        padding: 10px 5px;
+        letter-spacing: 0px;
+      }
     }
   }
+}
 
-  .navbar-custom .navbar-brand {
-    font-size: 18px;
+/* Responsive menu */
+@media (max-width: $screen-xs-max) {
+
+  .navbar-custom {
+
+    a.page-link {
+      margin-left: 15px;
+
+      span {
+        position: relative;
+        top: 5px;
+        left: 15px;
+        display: inline-block;
+      }
+    }
+
+    .navbar-collapse {
+      position: relative;
+      top: 10px;
+      left: 0px;
+      padding: 0px 5px;
+      background-color: $color-white;
+      border-bottom: 1px solid $gray-light;
+
+      ul > li > a {
+        color: $gray-base;
+        padding: 10px 5px;
+        letter-spacing: 1px;
+
+        &:hover,
+        &:focus {
+          color: $gray-base;
+          background-color: $gray-light;
+        }
+      }
+    }
   }
-}
-
-/**
- * Site header
- */
-.site-header {
-    min-height: 72px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-.navbar-brand .logo {
-    width: 40px;
-    height: 40px;
-    vertical-align: middle;
-    margin-right: 4px;
-    margin-top: -4px;
-    display: inline-block;
-
-    path {
-        color: #000;
-        fill: #fff;
-    }
-}
-
-.top-nav-collapse {
-    .logo path {
-        color: #fff;
-        fill: #fff;
-    }
-}
-
-
-.navbar-nav > li > a {
-  padding-top: 20px;
 }

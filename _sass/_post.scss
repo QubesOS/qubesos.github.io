@@ -37,7 +37,7 @@
 
   h2, h3, h4 {
     margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit;
+    margin-bottom: $line-height-computed / 2;
   }
 
   h2 {

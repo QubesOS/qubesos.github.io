@@ -11,7 +11,7 @@
    h4,
    h5,
    h6 {
-    margin: 0 0 35px;
+    margin: 0 0 ($line-height-computed / 2) 0;
     font-weight: 200;
     font-family: $base-font-family;
     color: $gray-base;

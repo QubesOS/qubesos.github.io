@@ -155,12 +155,6 @@ redirect_from:
       </ul>
       <hr class="more-top more-bottom">
       {% endfor %}
-
-      <h3 class="more-top">Mirrors</h3>
-      <p>Qubes ISOs are available from the following mirrors:</p>
-      <ul>
-        <li><a href="https://mirrors.kernel.org/qubes/iso/">mirrors.kernel.org</a></li>
-      </ul>
     </div>
   </div>
 </div>

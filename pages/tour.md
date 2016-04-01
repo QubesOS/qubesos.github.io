@@ -4,27 +4,58 @@ title: Tour
 permalink: /tour/
 ---
 
-<div class="row">
-  <div class="col-lg-4">
-    <h2>Screenshots</h2>
-    <p>See what using Qubes actually looks like with these screenshots of various applications running in Qubes.</p>
-    <a href="/screenshots/" class="btn btn-primary">
-      <i class="fa fa-picture-o"></i> See Screenshots
-    </a>
+<div id="tour">
+  <div class="row">
+    <div class="col-lg-8 col-md-12 col-xs-12">
+      <h2 class="add-bottom">Video Tour of Qubes</h2>
+      <div id="player"></div>
+      <p>Are you completely new to Qubes OS? We suggest watching the full 33 minute video to get an overview of how to better protect your privacy and make you more secure. Alternatively, you can also browse to specific chapter by using the menu on the right to learn about just that feature.</p>
+      <p class="remove-bottom"><em>The video was made by a passionate community member, thanks <a href="http://mattwilson.org">Matthew Wilson</a>.</em></p>
+    </div>
+    <div class="col-lg-4 col-md-12 col-xs-12">
+      <h2 class="add-bottom">&nbsp;</h2>
+      <ul id="player-menu" class="list-unstyled remove-bottom">
+        <li><a href="00:00" class="player-seek">An Overview of Qubes OS</a></li>
+        <li><a href="01:47" class="player-seek">Web browsing with multiple identities</a></li>
+        <li><a href="05:23" class="player-seek">Isolating files in different Qubes</a></li>
+        <li><a href="07:26" class="player-seek">Moving files between Qubes</a></li>
+        <li><a href="09:21" class="player-seek">Using the secure clipboard</a></li>
+        <li><a href="11:13" class="player-seek">Web browsing securely in a Disposable Qube</a></li>
+        <li><a href="13:40" class="player-seek">Handling untrusted files in a Disposable Qube</a></li>
+        <li><a href="16:45" class="player-seek">Exploring the Qubes Manager</a></li>
+        <li><a href="18:54" class="player-seek">Installing temporary applications</a></li>
+        <li><a href="22:08" class="player-seek">Installing persistent applications</a></li>
+        <li><a href="24:22" class="player-seek">Adding applications to the menu</a></li>
+        <li><a href="25:14" class="player-seek">Creating & using a Standalone Qube</a></li>
+        <li><a href="26:38" class="player-seek">Editing a Qubes settings</a></li>
+        <li><a href="28:40" class="player-seek">Creating a Qube for added security & privacy</a></li>
+        <li><a href="29:42" class="player-seek">Whonix and Tor for privacy & anonymity</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="col-lg-4">
-    <h2>Research</h2>
-    <p>Are you a security researcher, computer scientist, or low-level hacker? Read the research papers of the Qubes team arrived at our radical approach to security and OS design.</p>
-    <a href="/research/" class="btn btn-primary">
-      <i class="fa fa-file-text"></i> Read Our Research
-    </a>
-  </div>
-  <div class="col-lg-4">
-    <h2>Architecture</h2>
-    <p>Interested in understanding the design principles governing Qubes? Start with an overview, then dive into the full architecture spec.</p>
-    <a href="/doc/architecture/" class="btn btn-primary">
-      <i class="fa fa-cubes"></i> Architecture Overview
-    </a>
+  <hr class="add-top more-bottom">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-xs-12">
+      <h2>Screenshots</h2>
+      <p>See what using Qubes actually looks like with these screenshots of various applications running in Qubes.</p>
+      <a href="/screenshots/" class="btn btn-primary">
+        <i class="fa fa-picture-o"></i> See Screenshots
+      </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-xs-12">
+      <h2>Research</h2>
+      <p>Are you a security researcher, computer scientist, or low-level hacker? Read the research papers of the Qubes team arrived at our radical approach to security and OS design.</p>
+      <a href="/research/" class="btn btn-primary">
+        <i class="fa fa-file-text"></i> Read Our Research
+      </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-xs-12">
+      <h2>Architecture</h2>
+      <p>Interested in understanding the design principles governing Qubes? Start with an overview, then dive into the full architecture spec.</p>
+      <a href="/doc/architecture/" class="btn btn-primary">
+        <i class="fa fa-cubes"></i> Architecture Overview
+      </a>
+    </div>
   </div>
 </div>
 <hr class="more-top more-bottom">
@@ -149,7 +180,9 @@ more secure than using one computer with a conventional OS for everything,
 but there are still risks to consider. Briefly, here are some of the main
 pros and cons of this approach relative to Qubes:
 
-Pros:
+<div class="focus">
+  <i class="fa fa-check"></i> <strong>Pros</strong>
+</div>
 
  * Physical separation doesn't rely on a hypervisor. (It's very unlikely
    that an attacker will break out of Qubes' hypervisor, but if she were to
@@ -158,7 +191,9 @@ Pros:
    example, you might find it natural to lock your secure laptop in a safe
    when you take your unsecure laptop out with you.)
 
-Cons:
+<div class="focus">
+    <i class="fa fa-times"></i> <strong>Cons</strong>
+</div>
 
  * Physical separation can be cumbersome and expensive, since we may have to
    obtain and set up a separate physical machine for each security level we

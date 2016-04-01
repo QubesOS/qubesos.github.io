@@ -36,3 +36,46 @@
 
 <script src="{{ "/js/jquery-2.2.2.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+{% if page.permalink == "/tour/" %}
+<script src="{{ "/js/jquery.tubeplayer.min.js" | prepend: site.baseurl }}"></script>
+<script>
+$(document).ready(function() {
+
+  // Uses the jQuery plugin, TubePlayer
+  // https://github.com/nirvanatikku/jQuery-TubePlayer-Plugin/
+  var tourVideo = $("#player").tubeplayer({
+      width: 700,
+      height: 393,
+      allowFullScreen: "true",
+      initialVideo: "dD0_gq_ugw8",
+      start: 0,
+      preferredQuality: "h720",
+      showControls: true,
+      showRelated: false,
+      playsinline: false,
+      autoPlay: false,
+      autoHide: true,
+      theme: "dark",
+      color: "white",
+      showinfo: false,
+      modestbranding: true,
+      annotations: true,
+      loop: 0,
+      protocol: 'https',
+      loadSWFObject: false,
+      iframed: true,
+      onPlayerUnstarted: function(){},
+      onSeek: function(time){
+        this.play()
+      }
+  })
+
+  $('.player-seek').on('click', function(e) {
+    e.preventDefault()
+    //console.log('Jump to: ' + $(this).attr('href'))
+    tourVideo.tubeplayer("seek", $(this).attr('href'))
+  })
+
+})
+</script>
+{% endif %}

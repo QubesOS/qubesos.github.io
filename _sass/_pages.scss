@@ -1,7 +1,44 @@
 /* Pages */
 
-#hcl {
+#tour {
 
+  #player {
+    width: 702px;
+    height: 395px;
+    border: 1px solid $gray-light;
+    margin-bottom: $spacing-unit;
+
+    iframe {
+      border: 0px;
+    }
+  }
+
+  #player-menu {
+
+    li {
+      padding-bottom: ($spacing-unit / 2);
+
+      a {
+        font-size: 14px;
+        display: block;
+      }
+    }
+  }
+}
+
+
+@media(max-width: $screen-md-max) {
+
+  #tour {
+    #player {
+      width: 100%;
+    }
+  }
+}
+
+
+
+#hcl {
 
 }
 

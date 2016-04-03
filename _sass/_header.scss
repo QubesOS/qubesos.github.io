@@ -55,13 +55,13 @@
         -webkit-transition: background .25s ease-in-out;
         -moz-transition: background .25s ease-in-out;
         transition: background .25s ease-in-out;
+        border-radius: $base-radius;
 
         &:hover,
         &:focus,
         &.active {
           outline: none;
           background-color: $gray-light;
-          border-radius: $base-radius;
         }
       }
     }

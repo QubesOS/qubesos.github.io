@@ -64,16 +64,22 @@ $(document).ready(function() {
       protocol: 'https',
       loadSWFObject: false,
       iframed: true,
-      onPlayerUnstarted: function(){},
-      onSeek: function(time){
-        this.play()
-      }
+      onPlayerUnstarted: function(){ console.log('onPlayerUnstarted must be loaded...') },
+      onPlayerCued: function(){ console.log('onPlayerCued must ready...') },
+      onSeek: function(time){}
   })
 
   $('.player-seek').on('click', function(e) {
     e.preventDefault()
     //console.log('Jump to: ' + $(this).attr('href'))
     tourVideo.tubeplayer("seek", $(this).attr('href'))
+    tourVideo.tubeplayer("play")
+
+    $.each($('#player-menu li'), function() {
+      $(this).find('i.fa').remove()
+    })
+
+    $(this).prepend('<i class="fa fa-arrow-right"></i> ')
   })
 
 })

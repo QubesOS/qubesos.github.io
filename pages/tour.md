@@ -17,17 +17,18 @@ permalink: /tour/
       <ul id="player-menu" class="list-unstyled remove-bottom">
         <li><a href="00:00" class="player-seek">An Overview of Qubes OS</a></li>
         <li><a href="01:47" class="player-seek">Web browsing with multiple identities</a></li>
-        <li><a href="05:23" class="player-seek">Isolating files in different Qubes</a></li>
-        <li><a href="07:26" class="player-seek">Moving files between Qubes</a></li>
+        <li><a href="05:26" class="player-seek">Isolating files in different Qubes</a></li>
+        <li><a href="07:28" class="player-seek">Moving files between Qubes</a></li>
         <li><a href="09:21" class="player-seek">Using the secure clipboard</a></li>
         <li><a href="11:13" class="player-seek">Web browsing securely in a Disposable Qube</a></li>
-        <li><a href="13:40" class="player-seek">Handling untrusted files in a Disposable Qube</a></li>
-        <li><a href="16:45" class="player-seek">Exploring the Qubes Manager</a></li>
-        <li><a href="18:54" class="player-seek">Installing temporary applications</a></li>
-        <li><a href="22:08" class="player-seek">Installing persistent applications</a></li>
-        <li><a href="24:22" class="player-seek">Adding applications to the menu</a></li>
-        <li><a href="25:14" class="player-seek">Creating & using a Standalone Qube</a></li>
-        <li><a href="26:38" class="player-seek">Editing a Qubes settings</a></li>
+        <li><a href="13:51" class="player-seek">Handling untrusted files in a Disposable Qube</a></li>
+        <li><a href="16:50" class="player-seek">Exploring the Qubes Manager</a></li>
+        <li><a href="18:54" class="player-seek">Templates and App Qubes</a></li>
+        <li><a href="20:04" class="player-seek">Installing temporary applications</a></li>
+        <li><a href="21:57" class="player-seek">Installing persistent applications</a></li>
+        <li><a href="24:20" class="player-seek">Managing the applications menu</a></li>
+        <li><a href="25:09" class="player-seek">Creating & using a Standalone Qube</a></li>
+        <li><a href="26:38" class="player-seek">Editing settings of a Qube</a></li>
         <li><a href="28:40" class="player-seek">Creating a Qube for added security & privacy</a></li>
         <li><a href="29:42" class="player-seek">Whonix and Tor for privacy & anonymity</a></li>
       </ul>

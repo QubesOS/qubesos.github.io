@@ -26,6 +26,15 @@ verify_tag() {
 	return $ret
 }
 
+# first check signature on the commit itself
+#   %G?: show "G" for a Good signature, "B" for a Bad signature, 
+#        "U" for a good, untrusted signature and "N" for no signature
+
+commit_status=$(git log -1 --pretty=format:%G? $REF)
+if [ "$commit_status" = "G" ]; then
+    exit 0
+fi
+
 VALID_TAG_FOUND=0
 for tag in `git tag --points-at=$REF`; do
 	if verify_tag $tag; then

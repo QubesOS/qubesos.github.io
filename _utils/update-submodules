@@ -11,7 +11,7 @@ update_submodule() {
 
     git -C $module fetch --tags origin master
     if [ -n "`git -C $module log HEAD..FETCH_HEAD 2>/dev/null`" ]; then
-        if $script_dir/verify-git-tag $module FETCH_HEAD; then
+        if $script_dir/verify-git-ref $module FETCH_HEAD; then
             echo "$module:" >>$commit_msg_file
             git -C $module tag -v `git -C $module describe FETCH_HEAD` 2>&1 |\
                 tail -n +3 | sed 's/^/    /' >>$commit_msg_file
@@ -31,7 +31,7 @@ update_submodule() {
 
 # first update itself
 git fetch --tags origin master
-if $script_dir/verify-git-tag . FETCH_HEAD; then
+if $script_dir/verify-git-ref . FETCH_HEAD; then
     git merge --ff-only FETCH_HEAD || exit 1
     git submodule update || exit 1
 else

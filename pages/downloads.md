@@ -14,7 +14,7 @@ redirect_from:
   {% assign release = site.data.downloads.releases[release_name] %}
   {% assign primary_source = release.sources|first %}
 
-  <h2 class="add-bottom">{{ release_name }}</h2>
+  <h2 class="more-bottom">{{ release_name }}</h2>
 
   <div class="row">
     <div class="col-lg-4 col-md-4">

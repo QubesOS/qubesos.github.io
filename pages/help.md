@@ -10,7 +10,7 @@ redirect_from:
 
 
 <div class="row">
-  <div class="col-lg-4">
+  <div class="col-lg-4 col-md-4 col-sm-12">
     <h2>Troubleshooting</h2>
     <p>Check the Troubleshooting section of the documentation. See something missing? Contribute a guide!</p>
     <a href="/doc/#troubleshooting" class="btn btn-primary">
@@ -20,7 +20,7 @@ redirect_from:
       <i class="fa fa-pencil-square-o"></i> Contribute a Guide
     </a>
   </div>
-  <div class="col-lg-4 col-md-4">
+  <div class="col-lg-4 col-md-4 col-sm-12">
     <h2>FAQs</h2>
     <p>Search through frequently asked questions people have had with Qubes.</p>
     <a href="/doc/user-faq/" class="btn btn-primary">
@@ -30,7 +30,7 @@ redirect_from:
      <i class="fa fa-question-circle"></i> Devs' FAQs
     </a>
   </div>
-  <div class="col-lg-4 col-md-4">
+  <div class="col-lg-4 col-md-4 col-sm-12">
     <h2>Mailing Lists</h2>
     <p>If you still have questions, please search or join the Qubes OS mailing lists.</p>
     <a href="/mailing-lists/" class="btn btn-primary">
@@ -41,7 +41,7 @@ redirect_from:
 <div class="clearfix"></div>
 <hr class="more-top more-bottom">
 <div class="row">
-  <div class="col-lg-4 col-md-4">
+  <div class="col-lg-4 col-md-4 col-sm-12">
     <h2>Found a Bug?</h2>
     <p>Search through the issues on the main Qubes OS development. Think you've
     found a bug? File a new issue.</p>
@@ -52,14 +52,14 @@ redirect_from:
       <i class="fa fa-list"></i> Issue Tracker
     </a>
   </div>
-  <div class="col-lg-4 col-md-4">
+  <div class="col-lg-4 col-md-4 col-sm-12">
     <h2>StackExchange</h2>
     <p>Check out the QubesOS tag on StackExchange for potential answers to any questions you may have. Not there? Ask a new question!</p>
     <a href="https://stackexchange.com/search?q=qubes" class="btn btn-primary">
       <i class="fa fa-stack-overflow"></i> Search StackExchange
     </a>
   </div>
-  <div class="col-lg-4 col-md-4">
+  <div class="col-lg-4 col-md-4 col-sm-12">
     <h2>IRC Chat</h2>
     <p>
     Get together at <strong>#qubes</strong> on <strong>irc.oftc.net</strong>, the unofficial

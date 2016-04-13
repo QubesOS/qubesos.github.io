@@ -91,6 +91,9 @@
   - title: Security
     url: /security/
     icon: fa-lock
+  - title: Hardware Certification
+    url: /hardware-certification/
+    icon: fa-laptop
 #  - title: Contact
 #    url: /contact/
 #    icon: fa-comments

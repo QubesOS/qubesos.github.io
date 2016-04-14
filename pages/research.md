@@ -9,11 +9,17 @@ redirect_from:
 - /wiki/QubesResearch/
 ---
 
-{% for research in site.data.research %}
-  <li class="list-links">
-    <a class="black-link" href="{{research.url}}">
-      {{research.title}}
-        <span class="detail"><strong>{{research.author}}</strong>, {{research.date}}</span>
-    </a>
-  </li>
+Here are links to various research papers and projects that relate to Qubes OS.
+
+{% for category in site.data.research.categories %}
+  <h3>{{category.name}}</h3>
+  <ul class="add-top more-bottom">
+  {% for paper in site.data.research.papers %}
+    {% if paper.category == category.slug %}
+    <li>
+      <a href="{{paper.url}}">{{paper.title}}</a> by {{paper.author}}{% if paper.date %}, {{paper.date}}{% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
 {% endfor %}

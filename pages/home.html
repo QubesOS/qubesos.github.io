@@ -242,10 +242,10 @@ redirect_from:
   <!-- Details: Awards / Follow -->
   <div class="row">
     <div class="col-lg-6 col-md-6 more-bottom">
-      <h3 class="text-center"><i class="fa fa-file-text"></i> Our Research</h3>
+      <h3 class="text-center"><i class="fa fa-file-text"></i> Recent Research</h3>
       <div class="white-box">
       <ul class="list-unstyled remove-bottom">
-        {% for research in site.data.research %}
+        {% for research in site.data.research.papers limit:5 %}
         <li class="list-links">
           <a class="black-link" href="{{research.url}}">
             {{research.title}}
@@ -254,7 +254,7 @@ redirect_from:
         </li>
         {% endfor %}
         <li class="list-links-normal">
-          <a href="/research/" class="btn btn-sm btn-primary">See More of Our Research</a>
+          <a href="/research/" class="btn btn-sm btn-primary">Read More Research</a>
         </li>
       </ul>
       </div>

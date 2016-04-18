@@ -71,21 +71,6 @@ redirect_from:
         </a>
       </div>
       <div class="col-lg-1 col-md-1 text-center">
-        <a class="avatar" href="https://twitter.com/micahflee/status/577998730340622337" target="_blank">
-          <img src="attachment/site/picture-micah-lee.jpg">
-        </a>
-      </div>
-      <div class="col-lg-5 col-md-5">
-        <a href="https://twitter.com/micahflee/status/577998730340622337" target="_blank">
-          <blockquote>"When I use Qubes I feel like a god. Software thinks that it's in control, that it can do what it wants? It can't. I'm in control."
-            <footer>Micah Lee<cite title="Source Title">, Freedom of the Press Foundation, The Intercept</cite></footer>
-          </blockquote>
-        </a>
-      </div>
-    </div>
-    <div>
-    <div class="row featured-quotes">
-      <div class="col-lg-1 col-md-1 text-center">
         <a class="avatar" href="https://theintercept.com/2015/11/12/edward-snowden-explains-how-to-reclaim-your-privacy/" target="_blank">
           <img src="attachment/site/picture-snowden.jpg">
         </a>
@@ -97,10 +82,36 @@ redirect_from:
           </blockquote>
         </a>
       </div>
-      <div class="col-lg-6 col-md-6 text-center">
-        <h4>Why do the experts like Qubes?</h4>
-        <a class="btn btn-primary" href="/doc/architecture/">The Qubes Approach</a>
+    </div>
+    <div class="row featured-quotes">
+      <div class="col-lg-1 col-md-1 text-center">
+        <a class="avatar" href="https://twitter.com/micahflee/status/577998730340622337" target="_blank">
+          <img src="attachment/site/picture-micah-lee.jpg">
+        </a>
       </div>
+      <div class="col-lg-5 col-md-5">
+        <a href="https://twitter.com/micahflee/status/577998730340622337" target="_blank">
+          <blockquote>"When I use Qubes I feel like a god. Software thinks that it's in control, that it can do what it wants? It can't. I'm in control."
+            <footer>Micah Lee<cite title="Source Title">, Freedom of the Press Foundation, The Intercept</cite></footer>
+          </blockquote>
+        </a>
+      </div>
+      <div class="col-lg-1 col-md-1 text-center">
+        <a class="avatar" href="https://twitter.com/isislovecruft" target="_blank">
+          <img src="attachment/site/picture-isis.jpg">
+        </a>
+      </div>
+      <div class="col-lg-5 col-md-5">
+        <a href="https://twitter.com/isislovecruft" target="_blank">
+          <blockquote>"With QubesOS, I feel more comfortable accessing Tor Project infrastructure from the same laptop I use to execute random GameBoy ROMs I downloaded from the internet."
+            <footer>Isis Agora Lovecruft<cite title="Source Title">, cypherpunk, Tor Project core developer</cite></footer>
+          </blockquote>
+        </a>
+      </div>
+    </div>
+    <div class="row featured-quotes add-bottom">
+      <div class="col-lg-12 col-md-12 text-center">
+        <a class="btn btn-small btn-primary" href="/doc/architecture/">Learn About The Qubes Approach</a>
       </div>
     </div>
   </div>
@@ -205,10 +216,47 @@ redirect_from:
   <!-- Details: Research / Help -->
   <div class="row">
     <div class="col-lg-6 col-md-6 more-bottom">
-      <h3 class="text-center"><i class="fa fa-file-text"></i> Our Research</h3>
+      <h3 class="text-center"><i class="fa fa-laptop"></i> Certified Laptops</h3>
+      <div class="white-box">
+        <p class="add-top more-bottom"><img src="/attachment/site/qubes-plus-purism.png" class="center-block" width="80%"></p>
+        <p>Qubes-certified laptops are laptops that have been tested by the Qubes developers to ensure compatibility with all of Qubes' feature.</p>
+        <p><a href="https://www.crowdsupply.com/purism/librem-13" class="btn btn-sm btn-primary" target="_blank">Buy Librem 13" (via CrowdSupply)</a></p>
+        <ul class="list-unstyled list-spaced">
+          <li><a href="/doc/certified-laptops/">Certified Laptops Documentation</a></li>
+          <li><a href="/hardware-certification/">Become Hardware Certified</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 more-bottom">
+      <h3 class="text-center"><i class="fa fa-comments"></i> Participate &amp; Engage</h3>
+      <div class="white-box">
+        <p><strong>Support</strong></p>
+        <ul class="list-unstyled list-spaced more-bottom">
+          <li><a href="/doc/">Documentation</a></li>
+          <li><a href="/doc/#troubleshooting">Troubleshooting</a></li>
+          <li><a href="/doc/user-faq/">Users FAQs</a></li>
+          <li><a href="/doc/devel-faq/">Devs FAQs</a></li>
+          <li><a href="/doc/reporting-bugs/">Report a bug</a></li>
+        </ul>
+        <p><strong>Follow &amp; Contact</strong></p>
+        <ul class="list-unstyled list-spaced remove-bottom">
+          <li><a href="https://twitter.com/QubesOS">Follow us on Twitter</a></li>
+          <li><a href="https://github.com/QubesOS">Our codebase on GitHub</a></li>
+          <li><a href="/doc/mailing-lists/">Join mailing lists</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Details: Awards / Follow -->
+  <div class="row">
+    <div class="col-lg-6 col-md-6 more-bottom">
+      <h3 class="text-center"><i class="fa fa-file-text"></i> Recent Research</h3>
       <div class="white-box">
       <ul class="list-unstyled remove-bottom">
-        {% for research in site.data.research %}
+        {% for research in site.data.research.papers limit:5 %}
         <li class="list-links">
           <a class="black-link" href="{{research.url}}">
             {{research.title}}
@@ -217,27 +265,11 @@ redirect_from:
         </li>
         {% endfor %}
         <li class="list-links-normal">
-          <a href="/research/" class="btn btn-sm btn-primary">More of Our Research</a>
+          <a href="/research/" class="btn btn-sm btn-primary">Read More Research</a>
         </li>
       </ul>
       </div>
     </div>
-    <div class="col-lg-6 col-md-6 more-bottom">
-      <h3 class="text-center"><i class="fa fa-medkit"></i> Help &amp; Support</h3>
-      <div class="white-box">
-      <ul class="list-unstyled list-spaced remove-bottom">
-        <li><a href="/doc/">Documentation</a></li>
-        <li><a href="/doc/user-faq/">Users' FAQs</a></li>
-        <li><a href="/doc/devel-faq/">Devs' FAQs</a></li>
-        <li><a href="/doc/mailing-lists/">Mailing lists</a></li>
-        <li><a href="/doc/reporting-bugs/">Report a bug</a></li>
-      </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Details: Awards / Follow -->
-  <div class="row">
     <div class="col-lg-6 col-md-6 more-bottom">
       <h3 class="text-center"><i class="fa fa-trophy"></i> Awards &amp; Grants</h3>
       <div class="white-box">
@@ -260,16 +292,6 @@ redirect_from:
           <span>We would love for you to fund or partner with us</span>
         </a>
       </li>
-      </ul>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 more-bottom">
-      <h3 class="text-center"><i class="fa fa-comments"></i> Follow &amp; Contact</h3>
-      <div class="white-box">
-      <ul class="list-unstyled list-spaced">
-        <li><a href="https://github.com/QubesOS">Follow us on GitHub</a></li>
-        <li><a href="https://twitter.com/QubesOS">Follow us on Twitter</a></li>
-        <li><a href="https://www.qubes-os.org/doc/mailing-lists/">Join the Qubes mailing lists</a></li>
       </ul>
       </div>
     </div>

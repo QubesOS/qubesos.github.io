@@ -16,7 +16,7 @@ redirect_from:
   {% if team.type == "core" %}
   {% assign core_count = core_count | plus:1 %}
   <div class="row team team-core">
-    <div class="col-lg-2 text-center">
+    <div class="col-lg-2 col-md-2 col-sm-5 col-xs-12 text-center">
     <div class="picture more-bottom">
       {% if team.picture %}
       <img src="/attachment/site/{{team.picture}}" title="Picture of {{team.name}}">
@@ -25,7 +25,7 @@ redirect_from:
       {% endif %}
     </div>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-md-4 col-sm-7 col-xs-12">
       {% assign name_array = team.name | split:" " %}
       <h4 class="half-bottom">{{team.name}}</h4>
       <em class="role half-bottom">{{team.role}}</em>
@@ -37,7 +37,7 @@ redirect_from:
       <a href="https://twitter.com/{{team.twitter}}" target="blank"><i class="fa fa-twitter"></i> Twitter</a>
       {% endif %}
     </div>
-    <div class="col-lg-6 text-center">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
       {% if team.fingerprint %}
       <span class="fingerprint" title="{{team.name}}'s PGP Encryption Key Fingerprint">{{team.fingerprint}}</span>
       {% endif %}
@@ -51,16 +51,7 @@ redirect_from:
 </div>
 <hr class="more-bottom">
 <div class="row team more-top more-bottom">
-  <div class="col-lg-6">
-    <h2 class="text-center">Website & Documentation</h2>
-    {% for team in site.data.team %}
-    {% if team.type == "maintainers" %}
-    {% assign maintainers_count = maintainers_count | plus:1 %}
-    {% include team-simple.html %}
-    {% endif %}
-    {% endfor %}
-  </div>
-  <div class="col-lg-6">
+  <div class="col-lg-12 col-md-12 col-sm-12">
     <h2 class="text-center">Emeritus</h2>
     {% for team in site.data.team %}
     {% if team.type == "emeritus" %}
@@ -72,7 +63,7 @@ redirect_from:
 </div>
 <hr class="more-bottom">
 <div class="row team">
-  <div class="col-lg-12">
+  <div class="col-lg-12 col-md-12 col-sm-12">
     <h2 class="text-center more-bottom">Community Contributors</h2>
     <p>Qubes would not be where it is today without the input of the many users, testers, and developers of all skill levels who have come together to form this thriving community. The community's discussions take place primarily on the <a href="/doc/mailing-lists/">Qubes mailing lists</a>.</p>
   </div>
@@ -83,14 +74,14 @@ redirect_from:
 {% assign community_shown =  0 %}
 
 <div class="row team">
-  <div class="col-lg-6">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
     {% for team in site.data.team %}
     {% if team.type == "community" %}
     {% if community_shown < community_half %}
     {% include team-simple.html %}
     {% elsif community_shown == community_half %}
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
     {% include team-simple.html %}
     {% else %}
     {% include team-simple.html %}

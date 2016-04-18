@@ -5,7 +5,7 @@
   email: joanna@invisiblethingslab.com
   pgp_key: http://blog.invisiblethings.org/keys/
   fingerprint: ED72 7C30 6E76 6BC8 5E62 1AA6 5FA6 C3E4 D9AF BB99
-  website: https://invisiblethings.org
+  website: http://blog.invisiblethings.org
   twitter: rootkovska
 
 - name: Marek Marczykowski-Górecki
@@ -64,17 +64,12 @@
   website: https://brennannovak.com
   twitter: brennannovak
 
-# Maintainers
-
 - name: Axon
-  role: Documentation & website maintainer
-  type: maintainers
+  role: Community manager; documentation and website maintainer
+  type: core
   email: axon@openmailbox.org
-
-- name: Hakisho Nukama
-  role: Documentation & website maintainer
-  type: maintainers
-  email: nukama@gmail.com
+  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0xA4ECAE9C8E97231E
+  fingerprint: 746A B6DE 2A02 B5A5 DCBD  3F32 A4EC AE9C 8E97 231E
 
 # Emeritus
 
@@ -133,6 +128,11 @@
 - name: László Zrubecz
   email: mail@zrubi.hu
   role: HCL page maintenance, HCL scripts
+  type: community
+
+- name: Hakisho Nukama
+  email: nukama@gmail.com
+  role: Documentation & website maintainer
   type: community
 
 - name: Olivier Médoc

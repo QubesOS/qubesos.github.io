@@ -1,14 +1,101 @@
-- title: Intel x86 considered harmful
-  url: http://blog.invisiblethings.org/papers/2015/x86_harmful.pdf
-  date: Oct, 2015
-  author: Joanna Rutkowska
+categories:
+  - slug: trusted-hardware
+    name: Towards Trusted Hardware
+  - slug: intel-safeguard
+    name: Intel's Safeguard Extensions
+  - slug: intel-txt
+    name: Attacks on Intel TXT
+  - slug: software-attacks-devices
+    name: Software Attacks Coming Through Devices
+  - slug: application-security
+    name: Application-level Security
+  - slug: compartmentalization-isolation
+    name: Compartmentalization, Isolation, and Separation
+papers:
+  - title: State considered harmful
+    url: http://blog.invisiblethings.org/papers/2015/state_harmful.pdf
+    date: December 2015
+    author: Joanna Rutkowska
+    category: trusted-hardware
 
-- title: Software compartmentalization vs. physical separation
-  url: http://invisiblethingslab.com/resources/2014/Software_compartmentalization_vs_physical_separation.pdf
-  date: Aug, 2014
-  author: Joanna Rutkowska
+  - title: Intel x86 considered harmful
+    url: http://blog.invisiblethings.org/papers/2015/x86_harmful.pdf
+    date: October 2015
+    author: Joanna Rutkowska
+    category: trusted-hardware
 
-- title: Thoughts on Intel's upcoming SoftwareGuard Extensions
-  url: http://theinvisiblethings.blogspot.fr/2013/08/thoughts-on-intels-upcoming-software.html
-  date: Sep, 2013
-  author: Joanna Rutkowska
+  - title: Software compartmentalization vs. physical separation
+    url: http://invisiblethingslab.com/resources/2014/Software_compartmentalization_vs_physical_separation.pdf
+    date: August 2014
+    author: Joanna Rutkowska
+    category: compartmentalization-isolation
+
+  - title: Thoughts on Intel's upcoming SoftwareGuard Extensions (Part 2)
+    url: http://blog.invisiblethings.org/2013/09/23/thoughts-on-intels-upcoming-software.html
+    date: September 2013
+    author: Joanna Rutkowska
+    category: intel-safeguard
+
+  - title: Thoughts on Intel's upcoming SoftwareGuard Extensions (Part 1)
+    url: http://blog.invisiblethings.org/2013/08/30/thoughts-on-intels-upcoming-software.html
+    date: August 2013
+    author: Joanna Rutkowska
+    category: intel-safeguard
+
+  - title: Attacking Intel TXT® via SINIT code execution hijacking
+    url: http://www.invisiblethingslab.com/resources/2011/Attacking_Intel_TXT_via_SINIT_hijacking.pdf
+    date: November 2011
+    author: Rafal Wojtczuk and Joanna Rutkowska
+    category: intel-txt
+
+  - title: "Breaking Up is Hard to Do: Security and Functionality in a Commodity Hypervisor"
+    url: http://tjd.phlegethon.org/words/sosp11-xoar.pdf
+    date: October 2011
+    author: Patrick Colp at el.
+    category: compartmentalization-isolation
+
+  - title: "Following the White Rabbit: Software Attacks against Intel® VT-d"
+    url: http://www.invisiblethingslab.com/resources/2011/Software%20Attacks%20on%20Intel%20VT-d.pdf
+    date: April 2011
+    author: Rafal Wojtczuk and Joanna Rutkowska
+    category: software-attacks-devices
+
+  - title: "Virtics: A System for Privilege Separation of Legacy Desktop Applications"
+    url: http://www.eecs.berkeley.edu/Pubs/TechRpts/2010/EECS-2010-70.pdf
+    date: May 2010
+    author: Matt Piotrowski
+    category: application-security
+
+  - title: On Formally Verified Microkernels (and on attacking them)
+    url: http://blog.invisiblethings.org/2010/05/03/on-formally-verified-microkernels-and.html
+    date: May 2010
+    author: Joanna Rutkowska
+    category: software-attacks-devices
+
+  - title: Remotely Attacking Network Cards (or why we do need VT-d and TXT)
+    url: http://blog.invisiblethings.org/2010/04/30/remotely-attacking-network-cards-or-why.html
+    date: April 2010
+    author: Joanna Rutkowska
+    category: software-attacks-devices
+
+  - title: Another Way to Circumvent Intel® Trusted Execution Technology
+    url: http://invisiblethingslab.com/resources/misc09/Another%20TXT%20Attack.pdf
+    date: December 2009
+    author: Rafal Wojtczuk, Joanna Rutkowska, Alex Tereshkin
+    category: intel-txt
+
+  - title: "ACPI: Design Principles and Concerns"
+    url: http://www.ssi.gouv.fr/IMG/pdf/article_acpi.pdf
+    date: 2009
+    author: Loic Duflot, Olivier Levillain, and Benjamin Morin
+    category: intel-txt
+
+  - title: Can you still trust your network card?
+    url: http://www.ssi.gouv.fr/IMG/pdf/csw-trustnetworkcard.pdf
+    author: Loïc Duflot, Yves-Alexis Perez and others
+    category: software-attacks-devices
+
+  - title: Attacking Intel® Trusted Execution Technology
+    url: http://invisiblethingslab.com/resources/bh09dc/Attacking%20Intel%20TXT%20-%20paper.pdf
+    author: Rafal Wojtczuk and Joanna Rutkowska
+    category: intel-txt

@@ -108,3 +108,7 @@
 #    url: /donate#paypal/
   - title: Bitcoin
     url: /donate#bitcoin
+  - title: Funding
+    url: /funding/
+    icon: fa-money
+

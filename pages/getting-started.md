@@ -138,6 +138,8 @@ To allow only select AppVMs to enter full screen mode, create a per-VM section, 
 
 In order for the changes to take effect, restart the AppVM(s).
 
+More details can me found [here](/doc/full-screen-mode/).
+
 * * * * *
 
 Now that you're familiar with the basics, please have a look at the rest of the [documentation](/doc/).

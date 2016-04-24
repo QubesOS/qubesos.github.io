@@ -1,13 +1,14 @@
 ---
 layout: default
-title: Jobs
-permalink: /jobs/
+title: Join
+permalink: /join/
 ---
 
 Join the Qubes OS Team
 ======================
 
-The Qubes OS project is currently hiring for the following positions:
+The Qubes OS project is currently seeking individuals for the following
+positions:
 
 Debian template maintainer
 --------------------------

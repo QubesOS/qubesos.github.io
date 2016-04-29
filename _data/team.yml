@@ -64,12 +64,15 @@
   website: https://brennannovak.com
   twitter: brennannovak
 
-- name: Axon
+- name: Andrew David Wong
   role: Community manager; documentation and website maintainer
   type: core
-  email: axon@openmailbox.org
-  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0xA4ECAE9C8E97231E
-  fingerprint: 746A B6DE 2A02 B5A5 DCBD  3F32 A4EC AE9C 8E97 231E
+  picture: team-andrew.jpg
+  email: adw@qubes-os.org
+  pgp_key: https://andrewdavidwong.com/adw.asc
+  fingerprint: BBAF 910D 1BC9 DDF4 1043  629F BC21 1FCE E9C5 4C53
+  website: https://andrewdavidwong.com/
+  twitter: andrewdavidwong
 
 # Emeritus
 

@@ -77,6 +77,8 @@
     icon: fa-newspaper-o
   - title: Twitter
     url: https://twitter.com/QubesOS
+  - title: Facebook
+    url: https://www.facebook.com/QubesOS
   - title: Statistics
     url: /counter/
     icon: fa-bar-chart

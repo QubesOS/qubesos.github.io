@@ -186,8 +186,8 @@ pros and cons of this approach relative to Qubes:
 </div>
 
  * Physical separation doesn't rely on a hypervisor. (It's very unlikely
-   that an attacker will break out of Qubes' hypervisor, but if she were to
-   manage to do so, she could potentially gain control over the entire system.)
+   that an attacker will break out of Qubes' hypervisor, but if one were to
+   manage to do so, one could potentially gain control over the entire system.)
  * Physical separation can be a natural complement to physical security. (For
    example, you might find it natural to lock your secure laptop in a safe
    when you take your unsecure laptop out with you.)

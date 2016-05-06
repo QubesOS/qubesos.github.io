@@ -4,10 +4,10 @@ title: Join
 permalink: /join/
 ---
 
-Join the Qubes OS Team
-======================
+Join the Qubes OS Team!
+=======================
 
-The Qubes OS project is currently seeking individuals for the following
+The Qubes OS Project is currently seeking individuals for the following
 positions:
 
 Debian template maintainer

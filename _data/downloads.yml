@@ -118,8 +118,8 @@ releases:
         featured: yes
         url: /doc/live-usb/
   Qubes Release 2:
-    aging: yes
-    deprecated: no
+    aging: no
+    deprecated: yes
     testing: no
     sources:
       mirrors.kernel.org:

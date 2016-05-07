@@ -89,6 +89,37 @@ The more "optional" the better :)
  * https://github.com/QubesOS/qubes-issues/issues/866
  * https://github.com/QubesOS/qubes-issues/issues/830
 
+Qubes Live USB Maintainer
+-------------------------
 
+### Required Skills ###
+
+ * Shell
+ * Python
+ * Bootloaders (`grub2`, `isolinux`)
+ * `initrd` creation (`dracut`)
+ * Kickstart (automated installation -- basics are enough)
+ * A general understanding of Qubes OS ;)
+
+GNOME Desktop Environment Implementer
+-------------------------------------
+
+### Required Skills ###
+
+ * GNOME
+ * GTK
+ * Whatever is needed to customize GNOME
+
+### Tasks ###
+
+ * Custom window decorations (colored frames)
+ * Configuration for Qubes OS dom0
+   * Disable uneeded things (e.g., file manager)
+   * Configure menu to ease navigation through multiple VMs (similar to [what is
+     configured in KDE](https://github.com/QubesOS/qubes-issues/issues/1784#issuecomment-216868265))
+
+### Example Tasks ###
+
+ Listed here: https://github.com/QubesOS/qubes-issues/issues/1806
 
 

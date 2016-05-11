@@ -7,7 +7,8 @@ permalink: /hardware-certification/
 ## Become Hardware Certified
 
 If you are a hardware vendor, you can have your hardware certified as
-compatible with Qubes OS.
+compatible with Qubes OS. To view currently certified hardware, please see
+the [Qubes-certified Laptops] page.
 
 The benefits of hardware certification include:
 
@@ -46,3 +47,6 @@ simple issues, we will need to charge a consulting fee for more engaging
 work.
 
 If you are interested in having your hardware certified, please [contact us](mailto:joanna@invisiblethingslab.com)
+
+[Qubes-certified Laptops]: /doc/certified-laptops/
+

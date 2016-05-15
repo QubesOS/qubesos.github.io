@@ -58,7 +58,7 @@ redirect_from:
       <h3>3. Install & Setup</h3>
       <table class="step-options">
         <tr>
-        <td><a class="btn btn-primary" href="/doc/installation-guide/#burning-the-iso-onto-a-dvd-or-usb-stick">Create Bootable USB / DVD</a></td>
+        <td><a class="btn btn-primary" href="/doc/installation-guide/">Create Bootable USB / DVD</a></td>
         </tr>
       </table>
       <ul class="more-top">

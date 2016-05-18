@@ -74,6 +74,16 @@
   website: https://andrewdavidwong.com/
   twitter: andrewdavidwong
 
+- name: Bahtiar `kalkin-` Gadimov
+  role: Linux / Python development
+  type: core
+  picture: team-kalkin.jpg
+  email: bahtiar@gadimov.de
+  pgp_key: https://bahtiar.gadimov.de/kalkin-public-key.gpg
+  fingerprint: 9F4D 813F 582E 0392 1ECD 6F7B 4C71 9092 C0E7 3330 
+  website: https://bahtiar.gadimov.de/
+  twitter: _kalkin
+
 # Emeritus
 
 - name: Alexander Tereshkin

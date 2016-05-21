@@ -60,7 +60,7 @@
   - title: Report a Bug
     url: /doc/reporting-bugs/
   - title: StackExchange
-    url: https://stackexchange.com/search?q=qubes
+    url: https://area51.stackexchange.com/proposals/98519/qubes-os
 
 - title: News
   url: /news/
@@ -79,6 +79,8 @@
     url: https://twitter.com/QubesOS
   - title: Facebook
     url: https://www.facebook.com/QubesOS
+  - title: StackExchange
+    url: https://area51.stackexchange.com/proposals/98519/qubes-os
   - title: Statistics
     url: /counter/
     icon: fa-bar-chart

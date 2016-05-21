@@ -54,9 +54,9 @@ redirect_from:
   </div>
   <div class="col-lg-4 col-md-4 col-sm-12">
     <h2>StackExchange</h2>
-    <p>Check out the QubesOS tag on StackExchange for potential answers to any questions you may have. Not there? Ask a new question!</p>
+    <p>Check out our proposal on StackExchange. If you think it would make a good addition, please consider following it, voting on questions, and adding your own!</p>
     <a href="https://stackexchange.com/search?q=qubes" class="btn btn-primary">
-      <i class="fa fa-stack-overflow"></i> Search StackExchange
+      <i class="fa fa-stack-overflow"></i> StackExchange
     </a>
   </div>
   <div class="col-lg-4 col-md-4 col-sm-12">

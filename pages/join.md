@@ -7,8 +7,9 @@ permalink: /join/
 Join the Qubes OS Team!
 =======================
 
-The Qubes OS Project is currently seeking individuals for the following
-positions:
+The Qubes OS Project is currently seeking individuals for the positions listed
+below. If you're interested in any of these positions, please send an email to
+[Marek Marczykowski-Górecki](mailto:marmarek@invisiblethingslab.com).
 
 Debian template maintainer
 --------------------------

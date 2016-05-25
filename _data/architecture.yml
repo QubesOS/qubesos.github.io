@@ -89,6 +89,9 @@
   url: /team/
   icon: fa-users
   sub-pages:
+  - title: Join
+    url: /join/
+    icon: fa-thumbs-o-up
   - title: Partners
     url: /partners/
     icon: fa-globe

@@ -16,12 +16,12 @@ Debian template maintainer
 ### General tasks ###
 
  * Working on proper packaging of Qubes-specific components for Debian
-   * https://github.com/QubesOS/qubes-issues/issues/1567
-   * https://github.com/QubesOS/qubes-issues/issues/1416
+   * [#1567](https://github.com/QubesOS/qubes-issues/issues/1567)
+   * [#1416](https://github.com/QubesOS/qubes-issues/issues/1416)
  * Debugging Debian specific issues (Debian template configuration,
    Qubes-specific code)
-   * https://github.com/QubesOS/qubes-issues/issues/1514
-   * https://github.com/QubesOS/qubes-issues/issues/1438
+   * [#1514](https://github.com/QubesOS/qubes-issues/issues/1514)
+   * [#1438](https://github.com/QubesOS/qubes-issues/issues/1438)
  * Testing and handling user feedback
 
 See [some of the issues related to this role](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+Debian%22).
@@ -74,20 +74,20 @@ The more "optional" the better :)
 
 #### Smaller ####
 
- * https://github.com/QubesOS/qubes-issues/issues/1499
- * https://github.com/QubesOS/qubes-issues/issues/1454
- * https://github.com/QubesOS/qubes-issues/issues/1363
- * https://github.com/QubesOS/qubes-issues/issues/1329
- * https://github.com/QubesOS/qubes-issues/issues/979
+ * [#1499](https://github.com/QubesOS/qubes-issues/issues/1499)
+ * [#1454](https://github.com/QubesOS/qubes-issues/issues/1454)
+ * [#1363](https://github.com/QubesOS/qubes-issues/issues/1363)
+ * [#1329](https://github.com/QubesOS/qubes-issues/issues/1329)
+ * [#979](https://github.com/QubesOS/qubes-issues/issues/979)
 
 #### Larger ####
 
- * https://github.com/QubesOS/qubes-issues/issues/1455
- * https://github.com/QubesOS/qubes-issues/issues/1426
- * https://github.com/QubesOS/qubes-issues/issues/971
- * https://github.com/QubesOS/qubes-issues/issues/889
- * https://github.com/QubesOS/qubes-issues/issues/866
- * https://github.com/QubesOS/qubes-issues/issues/830
+ * [#1455](https://github.com/QubesOS/qubes-issues/issues/1455)
+ * [#1426](https://github.com/QubesOS/qubes-issues/issues/1426)
+ * [#971](https://github.com/QubesOS/qubes-issues/issues/971)
+ * [#889](https://github.com/QubesOS/qubes-issues/issues/889)
+ * [#866](https://github.com/QubesOS/qubes-issues/issues/866)
+ * [#830](https://github.com/QubesOS/qubes-issues/issues/830)
 
 Qubes Live USB Maintainer
 -------------------------
@@ -120,6 +120,6 @@ GNOME Desktop Environment Implementer
 
 ### Example Tasks ###
 
- Listed here: https://github.com/QubesOS/qubes-issues/issues/1806
+ Listed here: [#1806](https://github.com/QubesOS/qubes-issues/issues/1806)
 
 

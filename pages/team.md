@@ -49,6 +49,9 @@ redirect_from:
   {% endif %}
   {% endfor %}
 </div>
+<div class="text-center">
+  <a href="/join/" class="btn btn-primary">Join the team!</a>
+</div>
 <hr class="more-bottom">
 <div class="row team more-top more-bottom">
   <div class="col-lg-12 col-md-12 col-sm-12">

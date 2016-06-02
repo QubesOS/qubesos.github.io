@@ -40,6 +40,10 @@ Stable release manager
    released to the `current-testing` repository and when it should be moved to
    the `current` repository)
 
+As this position involves great trust and may have major impact on project
+security, we'd like for the candidate to be already known and active in Qubes
+OS community.
+
 Core developer
 --------------
 
@@ -102,14 +106,8 @@ Qubes Live USB Maintainer
  * Kickstart (automated installation -- basics are enough)
  * A general understanding of Qubes OS ;)
 
-GNOME Desktop Environment Implementer
+GNOME Desktop Environment developer
 -------------------------------------
-
-### Required Skills ###
-
- * GNOME
- * GTK
- * Whatever is needed to customize GNOME
 
 ### Tasks ###
 
@@ -118,9 +116,16 @@ GNOME Desktop Environment Implementer
    * Disable uneeded things (e.g., file manager)
    * Configure menu to ease navigation through multiple VMs (similar to [what is
      configured in KDE](https://github.com/QubesOS/qubes-issues/issues/1784#issuecomment-216868265))
+ * [Implementation of new, GTK based Qubes Manager](https://github.com/QubesOS/qubes-issues/issues/1870)
 
 ### Example Tasks ###
 
  Listed here: [#1806](https://github.com/QubesOS/qubes-issues/issues/1806)
+
+### Required Skills ###
+
+ * GNOME
+ * GTK
+ * Whatever is needed to customize GNOME
 
 

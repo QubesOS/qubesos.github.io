@@ -87,6 +87,27 @@ list:
 
 ### How to subscribe and post
 
+#### Gmane
+
+The mailing list is available via Gmane, a service that provide mailing lists in
+the form of newsgroups. This make it possible for you to subscribe and read all
+mails sent to the list without all the mails sent to your normal mail account.
+To use Gmane you need a newsreader, e.g. Mozilla Thunderbird (Icedove in Debian).
+
+To add Gmane's server to Thunderbird follow the instructions in
+[Mozilla Thunderbird's documentation for how to add newsgroups][mozilla-thunderbird-create-newsgroup].
+In the fourth step replace *news.mozilla.org* with *news.gmane.org*.
+
+  * To subscribe to the list, click on *Subscribe...* and search for the
+    newsgroup *gmane.os.qubes.user*. Click on the checkbox besides the name and
+    *OK*.
+  * You send and reply to mails the same way you would normally.
+  * To unsubscribe from the list you only need to click on *Subscribe...* and
+    search for the newsgroup *gmane.os.qubes.user* and uncheck the checkbox and
+    click on *OK*. Thunderbrid will automatically remove the newsgroup.
+
+#### Google Groups
+
 You don't have to subscribe in order to post to this list. However, subscribing
 might nonetheless be desirable, as it ensures that your messages will not be
 eaten by the Google Groups spam filter and allows you to receive messages which
@@ -126,6 +147,27 @@ implementation. Examples of topics and questions suitable for this list include:
 
 ### How to subscribe and post
 
+#### Gmane
+
+The mailing list is available via Gmane, a service that provide mailing lists in
+the form of newsgroups. This make it possible for you to subscribe and read all
+mails sent to the list without all the mails sent to your normal mail account.
+To use Gmane you need a newsreader, e.g. Mozilla Thunderbird (Icedove in Debian).
+
+To add Gmane's server to Thunderbird follow the instructions in
+[Mozilla Thunderbird's documentation for how to add newsgroups][mozilla-thunderbird-create-newsgroup].
+In the fourth step replace *news.mozilla.org* with *news.gmane.org*.
+
+  * To subscribe to the list, click on *Subscribe...* and search for the
+    newsgroup *gmane.os.qubes.devel*. Click on the checkbox besides the name and
+    *OK*.
+  * You send and reply to mails the same way you would normally.
+  * To unsubscribe from the list you only need to click on *Subscribe...* and
+    search for the newsgroup *gmane.os.qubes.devel* and uncheck the checkbox and
+    click on *OK*. Thunderbrid will automatically remove the newsgroup.
+
+#### Google Groups
+
 You must be subscribed in order to post to this list.
 
  * To subscribe to the list, send a blank email to
@@ -152,6 +194,7 @@ You must be subscribed in order to post to this list.
 [System Requirements]: /doc/system-requirements/
 [User FAQ]: /doc/user-faq/
 [documentation]: /doc/
+[mozilla-thunderbird-create-newsgroup]: https://support.mozilla.org/en-US/kb/creating-newsgroup-account
 [qubes-users-web]: https://groups.google.com/group/qubes-users
 [qubes-devel-web]: https://groups.google.com/group/qubes-devel
 

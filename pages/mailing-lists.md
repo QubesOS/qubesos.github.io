@@ -87,6 +87,8 @@ list:
 
 ### How to subscribe and post
 
+#### Google Groups
+
 You don't have to subscribe in order to post to this list. However, subscribing
 might nonetheless be desirable, as it ensures that your messages will not be
 eaten by the Google Groups spam filter and allows you to receive messages which
@@ -105,6 +107,27 @@ were sent directly to the list.
      interface. This has the advantage that it allows you to search and reply to
      messages which were sent prior to your subscription to the list. However, a
      Google account is required in order to post through this interface.
+
+#### Gmane
+
+The mailing list is also available via Gmane, a service that provides mailing
+lists in the form of newsgroups. This makes it possible for you to subscribe
+and read all mails sent to the list without having them all sent to your normal
+mail account.  To use Gmane, you need a newsreader such as Mozilla Thunderbird
+(or Icedove in Debian).
+
+To add Gmane's server to Thunderbird, follow the instructions in
+[Mozilla Thunderbird's documentation for how to add
+newsgroups][thunderbird-newsgroup].
+In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
+
+  * To subscribe to the list, click on **Subscribe...** and search for the
+    newsgroup `gmane.os.qubes.user`. Click on the checkbox besides the name and
+    **OK**.
+  * You send and reply to mails the same way you would normally.
+  * To unsubscribe from the list, click on **Subscribe...**
+    search for the newsgroup `gmane.os.qubes.user`, uncheck the checkbox, and
+    click on **OK**. Thunderbrid will automatically remove the newsgroup.
 
 
 The **qubes-devel** list
@@ -126,6 +149,8 @@ implementation. Examples of topics and questions suitable for this list include:
 
 ### How to subscribe and post
 
+#### Google Groups
+
 You must be subscribed in order to post to this list.
 
  * To subscribe to the list, send a blank email to
@@ -143,6 +168,27 @@ You must be subscribed in order to post to this list.
      messages which were sent prior to your subscription to the list. However, a
      Google account is required in order to post through this interface.
 
+#### Gmane
+
+The mailing list is also available via Gmane, a service that provides mailing
+lists in the form of newsgroups. This makes it possible for you to subscribe
+and read all mails sent to the list without having them all sent to your normal
+mail account.  To use Gmane, you need a newsreader such as Mozilla Thunderbird
+(or Icedove in Debian).
+
+To add Gmane's server to Thunderbird, follow the instructions in
+[Mozilla Thunderbird's documentation for how to add
+newsgroups][thunderbird-newsgroup].
+In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
+
+  * To subscribe to the list, click on **Subscribe...** and search for the
+    newsgroup `gmane.os.qubes.devel`. Click on the checkbox besides the name and
+    **OK**.
+  * You send and reply to mails the same way you would normally.
+  * To unsubscribe from the list, click on **Subscribe...**
+    search for the newsgroup `gmane.os.qubes.devel`, uncheck the checkbox, and
+    click on **OK**. Thunderbrid will automatically remove the newsgroup.
+
 
 [top-post]: https://en.wikipedia.org/wiki/Posting_style
 [roadmap]: https://github.com/QubesOS/qubes-issues/milestones
@@ -152,6 +198,7 @@ You must be subscribed in order to post to this list.
 [System Requirements]: /doc/system-requirements/
 [User FAQ]: /doc/user-faq/
 [documentation]: /doc/
+[thunderbird-newsgroup]: https://support.mozilla.org/en-US/kb/creating-newsgroup-account
 [qubes-users-web]: https://groups.google.com/group/qubes-users
 [qubes-devel-web]: https://groups.google.com/group/qubes-devel
 

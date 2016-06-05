@@ -30,7 +30,7 @@ both in terms of the entities providing the funding and the timelines of the
 funding. We are currently seeking new sources of funding. We also welcome your
 help in these endeavors. If you or your organization has relevant knowledge,
 experience, leads, or resources and would like to help us secure the future of
-Qubes OS, please contact our funding coordinator, [Michael Carbone].
+Qubes OS, please contact `michael at qubes-os dot org`.
 
 
 [FOSS]: https://en.wikipedia.org/wiki/Free_and_open-source_software
@@ -38,5 +38,4 @@ Qubes OS, please contact our funding coordinator, [Michael Carbone].
 [donate]: /donate/
 [OTF]: https://www.opentech.fund/project/qubes-os
 [announcement]: http://blog.invisiblethings.org/2015/06/04/otf-funding-announcement.html
-[Michael Carbone]: mailto:michael@invisiblethingslab.com
 

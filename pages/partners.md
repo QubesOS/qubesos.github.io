@@ -13,7 +13,7 @@ support to the development of Qubes OS and its features. The Qubes Project is
 grateful for their support!
 
 If your organization is interested in becoming a Qubes Partner, please 
-contact `michael at invisiblethingslab dot com`. For monetary
+contact `michael at qubes-os dot org`. For monetary
 donations, please see the [donations page](/en/donate).
 
 

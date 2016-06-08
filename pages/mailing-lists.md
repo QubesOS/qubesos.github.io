@@ -122,11 +122,11 @@ newsgroups][thunderbird-newsgroup].
 In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
 
   * To subscribe to the list, click on **Subscribe...** and search for the
-    newsgroup `gmane.os.qubes.user`. Click on the checkbox besides the name and
-    **OK**.
+    newsgroup [`gmane.os.qubes.user`]. Click on the checkbox besides the name
+    and **OK**.
   * You send and reply to mails the same way you would normally.
   * To unsubscribe from the list, click on **Subscribe...**
-    search for the newsgroup `gmane.os.qubes.user`, uncheck the checkbox, and
+    search for the newsgroup [`gmane.os.qubes.user`], uncheck the checkbox, and
     click on **OK**. Thunderbrid will automatically remove the newsgroup.
 
 
@@ -182,11 +182,11 @@ newsgroups][thunderbird-newsgroup].
 In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
 
   * To subscribe to the list, click on **Subscribe...** and search for the
-    newsgroup `gmane.os.qubes.devel`. Click on the checkbox besides the name and
-    **OK**.
+    newsgroup [`gmane.os.qubes.devel`]. Click on the checkbox besides the name
+    and **OK**.
   * You send and reply to mails the same way you would normally.
   * To unsubscribe from the list, click on **Subscribe...**
-    search for the newsgroup `gmane.os.qubes.devel`, uncheck the checkbox, and
+    search for the newsgroup [`gmane.os.qubes.devel`], uncheck the checkbox, and
     click on **OK**. Thunderbrid will automatically remove the newsgroup.
 
 
@@ -201,5 +201,7 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
 [thunderbird-newsgroup]: https://support.mozilla.org/en-US/kb/creating-newsgroup-account
 [qubes-users-web]: https://groups.google.com/group/qubes-users
 [qubes-devel-web]: https://groups.google.com/group/qubes-devel
+[`gmane.os.qubes.user`]: http://dir.gmane.org/gmane.os.qubes.user
+[`gmane.os.qubes.devel`]: http://dir.gmane.org/gmane.os.qubes.devel
 
 

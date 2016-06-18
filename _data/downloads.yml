@@ -33,8 +33,8 @@ releases:
         filename: Qubes-R3.2-rc1-x86_64.torrent
         url: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc1-x86_64.torrent
         verifiers:
-          hash: https://ftp.qubes-os.org/qubes/iso/Qubes-R3.2-rc1-x86_64.iso.DIGESTS
-          sig: https://ftp.qubes-os.org/qubes/iso/Qubes-R3.2-rc1-x86_64.iso.asc
+          hash: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc1-x86_64.iso.DIGESTS
+          sig: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc1-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
     docs:
       Installation Guide:

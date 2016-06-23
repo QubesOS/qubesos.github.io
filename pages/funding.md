@@ -21,6 +21,7 @@ following sources:
 
  * [Bitcoin donations][donate]
  * [The Open Technology Fund (OTF)][OTF] (read the [announcement])
+ * [NLnet Foundation][nlnet]
 
 Future Funding Sources
 ----------------------
@@ -38,4 +39,4 @@ Qubes OS, please contact `michael at qubes-os dot org`.
 [donate]: /donate/
 [OTF]: https://www.opentech.fund/project/qubes-os
 [announcement]: http://blog.invisiblethings.org/2015/06/04/otf-funding-announcement.html
-
+[nlnet]: https://nlnet.nl

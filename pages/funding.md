@@ -19,9 +19,11 @@ Current and Past Funding Sources
 The Qubes OS Project currently receives (or has received) funding from the
 following sources:
 
- * [Bitcoin donations][donate]
- * [The Open Technology Fund (OTF)][OTF] (read the [announcement])
- * [NLnet Foundation][nlnet]
+[![btc](/attachment/site/btc.png) Bitcoin donations][donate]
+
+[![otf](/attachment/site/OTF-logo.png)][OTF] (read the [announcement])
+
+[![nlnet](/attachment/site/nlnet.gif)][nlnet]
 
 Future Funding Sources
 ----------------------

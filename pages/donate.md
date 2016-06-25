@@ -8,7 +8,7 @@ redirect_from:
 - /wiki/Donations/
 ---
 
-## Donate Bitcoin
+## ![btc](/attachment/site/btc.png) Donate Bitcoin
 
 Thanks for your interest in supporting Qubes! The Qubes project currently accepts money donations in Bitcoins. If you are interested instead in donating hardware or providing substantial and sustained funding, please visit the [Qubes Partners page](/partners/) and send us an email.
 

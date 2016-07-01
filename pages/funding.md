@@ -19,11 +19,13 @@ Current and Past Funding Sources
 The Qubes OS Project currently receives (or has received) funding from the
 following sources:
 
-[![btc](/attachment/site/btc.png) Bitcoin donations][donate]
+[![itl](/attachment/site/itl.png)][itl]
 
 [![otf](/attachment/site/OTF-logo.png)][OTF] (read the [announcement])
 
 [![nlnet](/attachment/site/nlnet.gif)][nlnet]
+
+[![btc](/attachment/site/btc.png) Bitcoin donations][donate]
 
 Future Funding Sources
 ----------------------
@@ -38,7 +40,8 @@ Qubes OS, please contact `michael at qubes-os dot org`.
 
 [FOSS]: https://en.wikipedia.org/wiki/Free_and_open-source_software
 [license]: /doc/license/
-[donate]: /donate/
+[itl]: http://invisiblethingslab.com/itl/Welcome.html
 [OTF]: https://www.opentech.fund/project/qubes-os
 [announcement]: http://blog.invisiblethings.org/2015/06/04/otf-funding-announcement.html
 [nlnet]: https://nlnet.nl
+[donate]: /donate/

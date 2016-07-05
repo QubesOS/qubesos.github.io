@@ -21,6 +21,12 @@ following sources:
 
 [![itl](/attachment/site/itl.png)][itl]
 
+Invisible Things Lab s.c. (ITL) supported Qubes OS development from the
+beginning of the project in 2010 until the end of 2014. ITL's primary source of
+revenue is security research and development. ITL s.c. is a privately held
+company, registered in Warsaw, Poland, and owned by Joanna Rutkowska and her
+partner.
+
 [![otf](/attachment/site/OTF-logo.png)][OTF] (read the [announcement])
 
 [![nlnet](/attachment/site/nlnet.gif)][nlnet]

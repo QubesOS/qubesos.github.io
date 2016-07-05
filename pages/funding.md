@@ -24,12 +24,15 @@ following sources:
 Invisible Things Lab s.c. (ITL) supported Qubes OS development from the
 beginning of the project in 2010 until the end of 2014. ITL's primary source of
 revenue is security research and development. ITL s.c. is a privately held
-company, registered in Warsaw, Poland, and owned by Joanna Rutkowska and her
-partner.
+company, registered in Warsaw, Poland, and owned by Joanna Rutkowska and Joanna Gołębiewska.
 
 [![otf](/attachment/site/OTF-logo.png)][OTF] (read the [announcement])
 
+The Open Technology Fund (OTF) is a Unites States government-funded program of [Radio Free Asia](http://www.rfa.org), whose [stated mission is](https://www.opentech.fund/about/program) to "support open technologies and communities that increase free expression, circumvent censorship, and obstruct repressive surveillance as a way to promote human rights and open societies." 
+
 [![nlnet](/attachment/site/nlnet.gif)][nlnet]
+
+"Stichting NLnet" (NLnet Foundation in Dutch) is a recognized philathropic non-profit foundation based in the Netherlands, whose [stated mission is](https://nlnet.nl/foundation/) "to promote the exchange of electronic information and all that is related or beneficial to that purpose."
 
 [![btc](/attachment/site/btc.png) Bitcoin donations][donate]
 

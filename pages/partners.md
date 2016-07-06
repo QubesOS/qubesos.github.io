@@ -13,8 +13,8 @@ support to the development of Qubes OS and its features. The Qubes Project is
 grateful for their support!
 
 If your organization is interested in becoming a Qubes Partner, please 
-contact `michael at qubes-os dot org`. For monetary
-donations, please see the [donations page](/en/donate).
+contact `michael at qubes-os dot org`. You can also read more about how Qubes is
+[funded] and about making a [monetary donation] to the project.
 
 [![nlnet](/attachment/site/nlnet.gif)][nlnet]
 
@@ -31,6 +31,8 @@ In 2014-2015, the [Open Technology Fund funded][otf-f] the Qubes project to inte
 Beginning in 2015 the international human rights organization [Access Now][accessnow]
 generously agreed to provide staff time to help manage the Qubes OS project.
 
+[funded]: /funding/
+[monetary donation]: /donate/
 [nlnet]: https://nlnet.nl
 [otf]: https://www.opentechfund.org/
 [otf-f]: https://www.opentech.fund/project/qubes-os

@@ -11,7 +11,8 @@ Qubes OS is [free open-source software][FOSS] (read about the [license]). This
 means that Qubes OS is not a paid or proprietary product. We do not earn any
 revenue by selling it. Instead, we rely external sources of funding from
 individuals and organizations who find the work we do valuable and who in turn
-rely on Qubes OS for secure computing in their work and personal lives.
+rely on Qubes OS for secure computing in their work and personal lives. (Read
+more about our [partners].)
 
 Current and Past Funding Sources
 --------------------------------
@@ -49,6 +50,7 @@ Qubes OS, please contact `michael at qubes-os dot org`.
 
 [FOSS]: https://en.wikipedia.org/wiki/Free_and_open-source_software
 [license]: /doc/license/
+[partners]: /partners/
 [itl]: http://invisiblethingslab.com/itl/Welcome.html
 [OTF]: https://www.opentech.fund/project/qubes-os
 [announcement]: http://blog.invisiblethings.org/2015/06/04/otf-funding-announcement.html

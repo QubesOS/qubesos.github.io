@@ -10,7 +10,10 @@ redirect_from:
 
 ## ![btc](/attachment/site/btc.png) Donate Bitcoin
 
-Thanks for your interest in supporting Qubes! The Qubes project currently accepts money donations in Bitcoins. If you are interested instead in donating hardware or providing substantial and sustained [funding](/funding/), please visit the [Qubes Partners page](/partners/) and send us an email.
+Thanks for your interest in supporting Qubes! The Qubes project currently
+accepts monetary donations in Bitcoins. If you are interested instead in
+donating hardware or providing substantial and sustained [funding], please visit
+the [Qubes Partners page] and send us an email.
 
 #### Send Bitcoins to:
 
@@ -36,9 +39,12 @@ You can also view the address on [blockexplorer.com] and [blockchain.info].
 ## About Your Donation
 
 - We will use your donations to fund our continued development of Qubes.
-- We regret that we cannot implement requested features based on funding - *if everybody were to decide, then nothing would get implemented.*
+- We regret that we cannot implement requested features based on funding. (If
+  everybody were to decide, then nothing would get implemented.)
 - Donations to the Qubes project are not tax-deductible.
 
+[funding]: /funding/
+[Qubes Partners page]: /partners/
 [Qubes Security Pack]: /doc/security-pack/
 [fund]: https://github.com/QubesOS/qubes-secpack/tree/master/fund
 [verify]: /doc/security-pack/#how-to-obtain-verify-and-read

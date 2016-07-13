@@ -18,20 +18,18 @@ Thanks for your interest in supporting Qubes! The Qubes project currently accept
   <div class="form-group">
   <div class="input-group input-group-lg">
     <span class="input-group-addon" id="donate-btn-icon"><i class="fa fa-btc"></i></span>
-    <input type="text" class="form-control" aria-describedby="donate-btc-icon" value="14zockMSKKp5MK6X2cHJ3mQwm9MwYsJ39j" readonly>
+    <input type="text" class="form-control" aria-describedby="donate-btc-icon" value="3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq" readonly>
   </div>
   </div>
 </form>
 
-#### Or scan this QR code:
-
-![Bitcoin QR Code](/attachment/site/btc-qr.png)
-
 #### Verification of Bitcoin address
 
-This address can also be found in a message posted to Qubes mailing list, which can be viewed via Google Groups Web interface over SSL [here](https://groups.google.com/d/msg/qubes-devel/u3wAzm1dB5Y/s5CiUGDebL4J), for double verification. For additional verification, you can verify the digital signature on the message, which should come from Joanna Rutkowska.
+The donation address can be verified via the [Qubes Security Pack]
+(QSP or `qubes-secpack`), specficially in the [fund] directory. Detailed
+instructions for verifying the digital signatures are available [here][verify].
 
-You can check how much others have donated already (over the entire time) via [blockexplorer](https://blockexplorer.com/address/14zockMSKKp5MK6X2cHJ3mQwm9MwYsJ39j) and [blockchain](https://blockchain.info/address/14zockMSKKp5MK6X2cHJ3mQwm9MwYsJ39j).
+You can also view the address on [blockexplorer.com] and [blockchain.info].
 
 ---
 
@@ -40,3 +38,9 @@ You can check how much others have donated already (over the entire time) via [b
 - We will use your donations to fund our continued development of Qubes.
 - We regret that we cannot implement requested features based on funding - *if everybody were to decide, then nothing would get implemented.*
 - Donations to the Qubes project are not tax-deductible.
+
+[Qubes Security Pack]: /doc/security-pack/
+[fund]: https://github.com/QubesOS/qubes-secpack/tree/master/fund
+[verify]: /doc/security-pack/#how-to-obtain-verify-and-read
+[blockexplorer.com]: https://blockexplorer.com/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
+[blockchain.info]: https://blockchain.info/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq

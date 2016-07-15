@@ -33,6 +33,8 @@ redirect_from:
       </a>
       {% endfor %}
 
+      <b>Size:</b> {{ primary_source[1].size }}
+
       <ul class="more-top">
         {% for fdoc in release.featured_docs["get"] %}
         <li><a href="{{ release.docs[fdoc].url }}">{{ fdoc }}</a></li>
@@ -133,6 +135,7 @@ redirect_from:
             </td>
             <td>
               <strong>{{ source.filename }}</strong><br>
+              <em>{{ source.size }}</em><br>
               <em>{{ source.type }}</em>
             </td>
             <td>

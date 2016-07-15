@@ -13,6 +13,7 @@ releases:
 #        method: HTTPS
 #        type: bootable image
 #        filename: Qubes-R3.2-rc1-x86_64.iso
+#        size: 4.8 GB (4,816,109,568 bytes)
 #        url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-rc1-x86_64.iso
 #        verifiers:
 #          hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-rc1-x86_64.iso.DIGESTS
@@ -22,6 +23,7 @@ releases:
         method: HTTPS
         type: bootable image
         filename: Qubes-R3.2-rc1-x86_64.iso
+        size: 4.8 GB (4,816,109,568 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc1-x86_64.iso
         verifiers:
           hash: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc1-x86_64.iso.DIGESTS
@@ -31,6 +33,7 @@ releases:
         method: BitTorrent
         type: torrent to bootable image
         filename: Qubes-R3.2-rc1-x86_64.torrent
+        size: 92.4 kB (92,435 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc1-x86_64.torrent
         verifiers:
           hash: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc1-x86_64.iso.DIGESTS
@@ -56,6 +59,7 @@ releases:
         method: HTTPS
         type: bootable image
         filename: Qubes-R3.1-x86_64.iso
+        size: 5.0 GB (4,984,930,304 bytes)
         url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso
         verifiers:
           hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso.DIGESTS
@@ -65,6 +69,7 @@ releases:
 #        method: HTTPS
 #        type: bootable image
 #        filename: Qubes-R3.1-x86_64.iso
+#        size: 5.0 GB (4,984,930,304 bytes)
 #        url: https://ftp.qubes-os.org/iso/Qubes-R3.1-x86_64.iso
 #        verifiers:
 #          hash: https://ftp.qubes-os.org/iso/Qubes-R3.1-x86_64.iso.DIGESTS
@@ -103,6 +108,7 @@ releases:
         method: HTTPS
         type: bootable image
         filename: Qubes-R3.0-x86_64-DVD.iso
+        size: 3.7 GB (3,704,619,008 bytes)
         url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso
         verifiers:
           hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso.DIGESTS
@@ -112,6 +118,7 @@ releases:
         method: HTTPS
         type: bootable image
         filename: Qubes-R3.0-x86_64-DVD.iso
+        size: 3.7 GB (3,704,619,008 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso
         verifiers:
           hash: https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso.DIGESTS
@@ -145,6 +152,7 @@ releases:
         method: HTTPS
         type: bootable image
         filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
+        size: 2.4 GB (2,425,356,288 bytes)
         url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
         verifiers:
           sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc
@@ -153,6 +161,7 @@ releases:
         method: HTTPS
         type: bootable image
         filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
+        size: 2.4 GB (2,425,356,288 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
         verifiers:
           sig: https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc
@@ -170,6 +179,7 @@ releases:
         method: HTTPS
         type: bootable image
         filename: Qubes-R2-x86_64-DVD.iso
+        size: 3.1 GB (3,077,570,560 bytes)
         url: https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso
         verifiers:
           hash: https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso.DIGESTS
@@ -179,6 +189,7 @@ releases:
         method: HTTPS
         type: bootable image
         filename: Qubes-R2-x86_64-DVD.iso
+        size: 3.1 GB (3,077,570,560 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R2-x86_64-DVD.iso
         verifiers:
           hash: https://ftp.qubes-os.org/iso/Qubes-R2-x86_64-DVD.iso.DIGESTS
@@ -201,6 +212,7 @@ releases:
         method: HTTPS
         type: bootable image
         filename: Qubes-R1-x86_64-DVD.iso
+        size: 1.7 GB (1,749,024,768 bytes)
         url: https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso
         verifiers:
           hash: https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso.DIGESTS
@@ -210,6 +222,7 @@ releases:
         method: HTTPS
         type: bootable image
         filename: Qubes-R1-x86_64-DVD.iso
+        size: 1.7 GB (1,749,024,768 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R1-x86_64-DVD.iso
         verifiers:
           hash: https://ftp.qubes-os.org/iso/Qubes-R1-x86_64-DVD.iso.DIGESTS

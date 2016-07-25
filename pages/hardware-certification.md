@@ -24,6 +24,10 @@ further develops*
 - *support the continued development of everyone's favorite "reasonably
 secure" OS*
 
+## Hardware Certification Requirements
+
+Please see the [updated requirements] for Qubes R4.x certification.
+
 ## Hardware Certification Process
 
 To have hardware certified, the vendor must:
@@ -49,4 +53,5 @@ work.
 If you are interested in having your hardware certified, please [contact us](mailto:joanna@invisiblethingslab.com)
 
 [Qubes-certified Laptops]: /doc/certified-laptops/
+[updated requirements]: /news/2016/07/21/new-hw-certification-for-q4/
 

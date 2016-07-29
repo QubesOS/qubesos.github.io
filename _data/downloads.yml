@@ -23,7 +23,7 @@ releases:
         method: HTTPS
         type: bootable image
         filename: Qubes-R3.2-rc2-x86_64.iso
-        size: 4.8 GB (4,816,109,568 bytes)
+        size: 4.0 GiB (4,213,178,368 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc2-x86_64.iso
         verifiers:
           hash: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc2-x86_64.iso.DIGESTS
@@ -33,7 +33,7 @@ releases:
         method: BitTorrent
         type: torrent to bootable image
         filename: Qubes-R3.2-rc2-x86_64.torrent
-        size: 92.4 kB (92,435 bytes)
+        size: 80.0 kB (80,935 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc2-x86_64.torrent
         verifiers:
           hash: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc2-x86_64.iso.DIGESTS

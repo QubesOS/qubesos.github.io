@@ -16,12 +16,13 @@
   pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0xDB8FD31CCAD7D72C
   fingerprint: 86BA 6E93 318F BA44 6642 A90A DB8F D31C CAD7 D72C
 
-- name: Wojciech Porczyk
-  role: Various Linux-related things
+- name: Wojtek Porczyk
+  role: Python, Linux, infra
   type: core
+  picture: team-woju.jpg
   email: woju@invisiblethingslab.com
-  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0x70483D0A15CE40BF
-  fingerprint: DF9E 7E80 EB28 C2FE 4932  B455 7048 3D0A 15CE 40BF
+  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0xBF6BD932103A2351
+  fingerprint: 68ED 1515 FA6B D2D1 05EA  1624 BF6B D932 103A 2351
 
 - name: Rafał Wojdyła
   role: Main developer for Qubes Windows Tools

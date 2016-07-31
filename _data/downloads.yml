@@ -9,16 +9,16 @@ releases:
   Qubes Release 3.2-rc2 (release candidate):
     testing: yes
     sources:
-#      mirrors.kernel.org:
-#        method: HTTPS
-#        type: bootable image
-#        filename: Qubes-R3.2-rc2-x86_64.iso
-#        size: 4.8 GB (4,816,109,568 bytes)
-#        url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-rc2-x86_64.iso
-#        verifiers:
-#          hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-rc2-x86_64.iso.DIGESTS
-#          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-rc2-x86_64.iso.asc
-#          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+      mirrors.kernel.org:
+        method: HTTPS
+        type: bootable image
+        filename: Qubes-R3.2-rc2-x86_64.iso
+        size: 4.8 GB (4,816,109,568 bytes)
+        url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-rc2-x86_64.iso
+        verifiers:
+          hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-rc2-x86_64.iso.DIGESTS
+          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-rc2-x86_64.iso.asc
+          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       ftp.qubes-os.org:
         method: HTTPS
         type: bootable image

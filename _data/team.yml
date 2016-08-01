@@ -36,8 +36,8 @@
   type: core
   picture: team-michael.jpg
   email: michael@qubes-os.org
-  fingerprint: 2DBE 2014 E7B0 0730 303D  7AAB 99AB 0624 6EEB F5A8
-  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0x99AB06246EEBF5A8
+  fingerprint: D3D8 BEBF ECE8 91AC 46A7  30DE 63FC 4D26 84A7 33B4
+  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0x63FC4D2684A733B4
   twitter: wandermfc
 
 - name: Joanna Gołębiewska

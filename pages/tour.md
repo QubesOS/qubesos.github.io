@@ -10,7 +10,7 @@ permalink: /tour/
       <h2 class="add-bottom">Video Tour of Qubes</h2>
       <div id="player"></div>
       <p>Are you completely new to Qubes OS? We suggest watching the full 33 minute video to get an overview of how to better protect your privacy and make you more secure. Alternatively, you can also browse to specific chapter by using the menu on the right to learn about just that feature.</p>
-      <p class="remove-bottom"><em>The video was made by a passionate community member, thanks <a href="http://mattwilson.org">Matthew Wilson</a>.</em></p>
+      <p class="remove-bottom"><em>The video was made by a passionate community member. Thanks, <a href="http://mattwilson.org">Matthew Wilson</a>.</em></p>
     </div>
     <div class="col-lg-4 col-md-12 col-xs-12">
       <h2 class="add-bottom">&nbsp;</h2>
@@ -65,8 +65,8 @@ permalink: /tour/
 What is Qubes OS?
 -----------------
 
-Qubes is a security-oriented operating system (OS). The OS is the software
-which runs all the other programs on a computer. Some examples of popular
+Qubes OS is a security-oriented operating system (OS). The OS is the software
+that runs all the other programs on a computer. Some examples of popular
 OSes are Microsoft Windows, Mac OS X, Android, and iOS. Qubes is free and
 open-source software (FOSS). This means that everyone is free to use, copy,
 and change the software in any way. It also means that the source code is
@@ -115,21 +115,36 @@ How does Qubes OS provide security?
 
 Qubes takes an approach called **security by compartmentalization**, which
 allows you to compartmentalize the various parts of your digital life into
-securely isolated virtual machines (VMs). A VM is basically a simulated
-computer with its own OS which runs as software on your physical computer. You
-can think of a VM as a *computer within a computer*.
+securely isolated compartments called *qubes*.
 
 This approach allows you to keep the different things you do on your computer
-securely separated from each other in isolated VMs so that one VM getting
-compromised won't affect the others. For example, you might have one VM for
-visiting untrusted websites and a different VM for doing online banking. This
-way, if your untrusted browsing VM gets compromised by a malware-laden
+securely separated from each other in isolated qubes so that one qube getting
+compromised won't affect the others. For example, you might have one qube for
+visiting untrusted websites and a different qube for doing online banking. This
+way, if your untrusted browsing qube gets compromised by a malware-laden
 website, your online banking activities won't be at risk. Similarly, if
 you're concerned about malicious email attachments, Qubes can make it so
-that every attachment gets opened in its own single-use, "disposable" VM. In
-this way, Qubes allows you to do everything on the same physical computer
-without having to worry about a single successful cyberattack taking down
-your entire digital life in one fell swoop.
+that every attachment gets opened in its own single-use [disposable
+qube]. In this way, Qubes allows you to do everything on the same physical
+computer without having to worry about a single successful cyberattack taking
+down your entire digital life in one fell swoop.
+
+Moreover, all of these isolated qubes are integrated into a single, usable
+system. Programs are isolated in their own separate qubes, but all windows are
+displayed in a single, unified desktop environment with [unforgeable colored
+window borders][getting started] so that you can easily identify windows from
+different security levels. Common attack vectors like network cards and USB
+controllers are isolated in their own hardware qubes while their functionality
+is preserved through secure [networking], [firewalls], and [USB device
+management][USB]. Integrated [file] and [clipboard] copy and paste operations
+make it easy to work across various qubes without compromising security. The
+innovative [Template] system separates software installation from software use,
+allowing qubes to share a root filesystem without sacrificing security (and
+saving disk space, to boot). Qubes even allows you to sanitize PDFs and images
+in a few clicks. Users concerned about privacy will appreciate the
+[integration][Qubes-Whonix] of [Whonix] with Qubes, which makes it easy to use
+[Tor] securely, while those concerned about physical hardware attacks will
+benefit from [Anti Evil Maid].
 
 
 How does Qubes OS compare to using a "live CD" OS?
@@ -226,6 +241,17 @@ technical details have been omitted here for the sake of presentation.
  * Once you've installed Qubes, here's a guide on [getting started].
 
 
+[disposable qube]: /doc/dispvm/
+[networking]: /doc/networking/
+[firewalls]: /doc/qubes-firewall/
+[USB]: /doc/usb/
+[file]: /doc/copying-files/
+[clipboard]: /doc/copy-paste/
+[Template]: /doc/templates/
+[Qubes-Whonix]: /doc/whonix/
+[Whonix]: https://www.whonix.org/
+[Tor]: https://torproject.org/
+[Anti Evil Maid]: /doc/anti-evil-maid/
 [Tails]: https://tails.boum.org/
 [Xen]: http://www.xenproject.org
 [paper-compart]: http://www.invisiblethingslab.com/resources/2014/Software_compartmentalization_vs_physical_separation.pdf
@@ -234,4 +260,5 @@ technical details have been omitted here for the sake of presentation.
 [system-doc]: /doc/system-doc/
 [devel-faq]: /doc/devel-faq/
 [downloads]: /downloads/
-[getting started]: /doc/getting-started/
+[getting started]: /getting-started/
+

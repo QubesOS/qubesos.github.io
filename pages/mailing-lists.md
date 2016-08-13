@@ -40,6 +40,23 @@ Mailing list guidelines
    think about how many messages come to the list every day and whether people
    will want to read through your lengthy message (hint: they won't!).
 
+ * Keep the mailing list CCed throughout the conversation unless there's a
+   special need for privacy (in which case, use PGP encryption). This increases
+   the likelihood that a greater quantity of useful information will be
+   available to everyone in the future.
+
+ * Quote selectively. For example, if you are replying to a message
+   that includes an advertisement in the email's signature (inserted by the
+   sender's mail provider), you should not quote the advertisement. Likewise, it
+   is not necessary to quote the standard Google Groups signature block. We also
+   recommend against preserving other people's inline PGP signatures, since
+   doing so is unnecessary and interferes with the ability of programs like
+   Enigmail to properly quote replies thereafter. It can also be a good idea to
+   quote only the parts of a message to which you're replying. However, if
+   you're genuinely not sure whether some portion of the body of your
+   interlocutor's message should be included, it's fine to err on the side of
+   quoting more.
+
  * Do not apologize for your poor English. This is a waste of everyone's time,
    including your own. If we can't understand you, we will ask you to clarify
    (or ignore your message if it's a total mess ;).

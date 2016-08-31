@@ -6,38 +6,38 @@
 
 featured_release: Qubes Release 3.1 (latest stable release)
 releases:
-  Qubes Release 3.2-rc2 (release candidate):
+  Qubes Release 3.2-rc3 (release candidate):
     testing: yes
     sources:
-      mirrors.kernel.org:
-        method: HTTPS
-        type: bootable image
-        filename: Qubes-R3.2-rc2-x86_64.iso
-        size: 4.0 GiB (4,213,178,368 bytes)
-        url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-rc2-x86_64.iso
-        verifiers:
-          hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-rc2-x86_64.iso.DIGESTS
-          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-rc2-x86_64.iso.asc
-          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+#      mirrors.kernel.org:
+#        method: HTTPS
+#        type: bootable image
+#        filename: Qubes-R3.2-rc3-x86_64.iso
+#        size: 4.0 GiB (4,213,178,368 bytes)
+#        url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-rc3-x86_64.iso
+#        verifiers:
+#          hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-rc3-x86_64.iso.DIGESTS
+#          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-rc3-x86_64.iso.asc
+#          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       ftp.qubes-os.org:
         method: HTTPS
         type: bootable image
-        filename: Qubes-R3.2-rc2-x86_64.iso
+        filename: Qubes-R3.2-rc3-x86_64.iso
         size: 4.0 GiB (4,213,178,368 bytes)
-        url: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc2-x86_64.iso
+        url: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc3-x86_64.iso
         verifiers:
-          hash: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc2-x86_64.iso.DIGESTS
-          sig: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc2-x86_64.iso.asc
+          hash: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc3-x86_64.iso.DIGESTS
+          sig: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc3-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       'ftp.qubes-os.org ':
         method: BitTorrent
         type: torrent to bootable image
-        filename: Qubes-R3.2-rc2-x86_64.torrent
+        filename: Qubes-R3.2-rc3-x86_64.torrent
         size: 80.0 kB (80,935 bytes)
-        url: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc2-x86_64.torrent
+        url: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc3-x86_64.torrent
         verifiers:
-          hash: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc2-x86_64.iso.DIGESTS
-          sig: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc2-x86_64.iso.asc
+          hash: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc3-x86_64.iso.DIGESTS
+          sig: https://ftp.qubes-os.org/iso/Qubes-R3.2-rc3-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
     docs:
       Installation Guide:

@@ -99,6 +99,37 @@ releases:
       - Upgrading to Qubes R3.1
       - Release Notes
       - Release Schedule
+  Qubes Live USB (alpha):
+    aging: no
+    deprecated: no
+    testing: The Live USB edition is older than recent 3.1 release and lacks
+             some of its features (and bug fixes). If you want the newest
+             available image, download the 3.1 installation image.  You can
+             install from a USB drive onto a second USB drive without touching
+             your computer's disks and data.
+    sources:
+      mirrors.kernel.org:
+        method: HTTPS
+        type: bootable image
+        filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
+        size: 2.4 GB (2,425,356,288 bytes)
+        url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
+        verifiers:
+          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc
+          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+      ftp.qubes-os.org:
+        method: HTTPS
+        type: bootable image
+        filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
+        size: 2.4 GB (2,425,356,288 bytes)
+        url: https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
+        verifiers:
+          sig: https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc
+          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+    docs:
+      Usage Guide:
+        featured: yes
+        url: /doc/live-usb/
   Qubes Release 3.0:
     aging: no
     deprecated: yes
@@ -139,37 +170,6 @@ releases:
       - Upgrading to Qubes R3.0
       - Release Notes
       - Release Schedule
-  Qubes Live USB (alpha):
-    aging: no
-    deprecated: no
-    testing: The Live USB edition is older than recent 3.1 release and lacks
-             some of its features (and bug fixes). If you want the newest
-             available image, download the 3.1 installation image.  You can
-             install from a USB drive onto a second USB drive without touching
-             your computer's disks and data.
-    sources:
-      mirrors.kernel.org:
-        method: HTTPS
-        type: bootable image
-        filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
-        size: 2.4 GB (2,425,356,288 bytes)
-        url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
-        verifiers:
-          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc
-          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      ftp.qubes-os.org:
-        method: HTTPS
-        type: bootable image
-        filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
-        size: 2.4 GB (2,425,356,288 bytes)
-        url: https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
-        verifiers:
-          sig: https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc
-          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-    docs:
-      Usage Guide:
-        featured: yes
-        url: /doc/live-usb/
   Qubes Release 2:
     aging: no
     deprecated: yes

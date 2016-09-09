@@ -100,8 +100,8 @@ releases:
       - Release Notes
       - Release Schedule
   Qubes Release 3.0:
-    aging: yes
-    deprecated: no
+    aging: no
+    deprecated: yes
     testing: no
     sources:
       mirrors.kernel.org:

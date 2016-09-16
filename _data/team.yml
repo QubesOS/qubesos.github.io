@@ -55,16 +55,6 @@
   fingerprint: 916B 8D99 C38E AF5E 8ADC 7A2A 8D66 066A 2EEA CCDA
   website: https://www.whonix.org
 
-- name: Brennan Novak
-  role: Design, interfaces, and user experience
-  type: core
-  picture: team-brennan.jpg
-  email: bnvk@invisiblethingslab.com
-  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0xC4CAA23B0F8C68B2
-  fingerprint: 01AE EADB 9EED 1B5B 4280  E5B6 C4CA A23B 0F8C 68B2
-  website: https://brennannovak.com
-  twitter: brennannovak
-
 - name: Andrew David Wong
   role: Community manager; documentation and website maintainer
   type: core
@@ -154,6 +144,11 @@
 - name: Jason Mehring
   email: nrgaway@gmail.com
   role: Debian templates improvements, Whonix integration
+  type: community
+
+- name: Brennan Novak
+  email: hi@brennannovak.com
+  role: Web design, art, documentation, and minor UX contributions
   type: community
 
 - name: Hakisho Nukama

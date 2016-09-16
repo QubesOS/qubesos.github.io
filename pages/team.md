@@ -7,7 +7,10 @@ redirect_from:
 - /doc/QubesDevelopers/
 - /wiki/QubesDevelopers/
 ---
-
+<div id="group-contact" class="text-center">
+  For press inquiries, please email <a href="mailto:press@qubes-os.org">press@qubes-os.org</a>.
+  For business matters, please email <a href="mailto:business@qubes-os.org">business@qubes-os.org</a>.
+</div>
 <div id="team-core" class="more-top">
   {% assign core_count = 0 %}
   {% assign maintainers_count = 0 %}

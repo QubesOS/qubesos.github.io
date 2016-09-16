@@ -59,6 +59,8 @@ redirect_from:
 <div class="row team more-top more-bottom">
   <div class="col-lg-12 col-md-12 col-sm-12">
     <h2 class="text-center">Emeritus</h2>
+    <p>Emeriti are honorary members of the Qubes team who previously contributed
+    to the project in a central way but who are no longer currently active.</p>
     {% for team in site.data.team %}
     {% if team.type == "emeritus" %}
     {% assign emeritus_count = emeritus_count | plus:1 %}

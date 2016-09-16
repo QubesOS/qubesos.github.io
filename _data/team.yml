@@ -106,24 +106,9 @@
 
 # Community
 
-- name: Abel Luck
-  email: abel@outcomedubious.im
-  role: Developed TorVM
-  type: community
-
-- name: Agnieszka Kostrzewa
-  email: a.kostrzewa@alx.pl
-  role: Documentation, Qubes Manager
-  type: community
-
 - name: Alexandre Bezroutchko
   email: abb@gremwell.com
   role: PVUSB support
-  type: community
-
-- name: Andrew Sorensen
-  email: andrew@localcoast.net
-  role: Misc. backup subsystem fixes
   type: community
 
 - name: Bruce A Downs
@@ -141,29 +126,9 @@
   role: Debian templates improvements
   type: community
 
-- name: Jason Mehring
-  email: nrgaway@gmail.com
-  role: Debian templates improvements, Whonix integration
-  type: community
-
-- name: László Zrubecz
-  email: mail@zrubi.hu
-  role: HCL page maintenance, HCL scripts
-  type: community
-
-- name: Hakisho Nukama
-  email: nukama@gmail.com
-  role: Documentation & website maintainer
-  type: community
-
-- name: Olivier Médoc
-  email: o_medoc@yahoo.fr
-  role: Core and GUI fixes, template builder generalization
-  type: community
-
-- name: Radoslaw Szkodzinski
-  email: astralstorm@gmail.com
-  role: Minor GUI build fixes
+- name: Agnieszka Kostrzewa
+  email: a.kostrzewa@alx.pl
+  role: Documentation, Qubes Manager
   type: community
 
 - name: Timo Juhani Lindfors
@@ -171,9 +136,29 @@
   role: Minor core cleanups
   type: community
 
-- name: Tomasz Sterna
-  email: tomek at xiaoka dot com
-  role: Installer & GUI
+- name: Victor Lopez
+  email: gallando@gmail.com`
+  role: Misc. minor fixes
+  type: community
+
+- name: Abel Luck
+  email: abel@outcomedubious.im
+  role: Developed TorVM
+  type: community
+
+- name: Olivier Médoc
+  email: o_medoc@yahoo.fr
+  role: Core and GUI fixes, template builder generalization
+  type: community
+
+- name: Jason Mehring
+  email: nrgaway@gmail.com
+  role: Debian templates improvements, Whonix integration
+  type: community
+
+- name: Hakisho Nukama
+  email: nukama@gmail.com
+  role: Documentation & website maintainer
   type: community
 
 - name: Vincent Penquerc'h
@@ -181,7 +166,23 @@
   role: Code review, misc. fixes
   type: community
 
-- name: Victor Lopez
-  email: gallando@gmail.com`
-  role: Misc. minor fixes
+- name: Andrew Sorensen
+  email: andrew@localcoast.net
+  role: Misc. backup subsystem fixes
   type: community
+
+- name: Tomasz Sterna
+  email: tomek at xiaoka dot com
+  role: Installer & GUI
+  type: community
+
+- name: Radoslaw Szkodzinski
+  email: astralstorm@gmail.com
+  role: Minor GUI build fixes
+  type: community
+
+- name: László Zrubecz
+  email: mail@zrubi.hu
+  role: HCL page maintenance, HCL scripts
+  type: community
+

@@ -32,7 +32,9 @@ redirect_from:
       {% assign name_array = team.name | split:" " %}
       <h4 class="half-bottom">{{team.name}}</h4>
       <em class="role half-bottom">{{team.role}}</em>
+      {% if team.email %}
       <a href="mailto:{{team.email}}" class="add-right"><i class="fa fa-envelope"></i> Email</a>
+      {% endif %}
       {% if team.website %}
       <a href="{{team.website}}" class="add-right" target="blank"><i class="fa fa-link"></i> Website</a>
       {% endif %}

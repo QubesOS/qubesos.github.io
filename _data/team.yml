@@ -75,13 +75,6 @@
   website: https://bahtiar.gadimov.de/
   twitter: _kalkin
 
-- name: unman   
-  role: Debian template maintainer
-  type: core
-  email: unman@thirdeyesecurity.org
-  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0x0C6D15D5E0A9816E
-  fingerprint: C6E2 533D 976E 4B29 A82B  79CB 0C6D 15D5 E0A9 816E
-
 - name: Simon Gaiser (aka HW42)
   role: Software developer; Linux, misc.
   type: core
@@ -176,6 +169,11 @@
 - name: Radoslaw Szkodzinski
   email: astralstorm@gmail.com
   role: Minor GUI build fixes
+  type: community
+
+- name: unman   
+  email: unman@thirdeyesecurity.org
+  role: Debian template maintainer
   type: community
 
 - name: László Zrubecz

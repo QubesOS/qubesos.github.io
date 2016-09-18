@@ -91,15 +91,15 @@
 
 # Emeritus
 
-- name: Alexander Tereshkin
-  role: Qubes Windows Tools
-  type: emeritus
-  email: alex@invisiblethingslab.com
-
 - name: Rafal Wojtczuk
   role: Architecture & system-level stuff
   type: emeritus
   email: rafal@invisiblethingslab.com
+
+- name: Alexander Tereshkin
+  role: Qubes Windows Tools
+  type: emeritus
+  email: alex@invisiblethingslab.com
 
 # Community
 

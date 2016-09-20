@@ -77,6 +77,7 @@
 - name: Simon Gaiser (aka HW42)
   role: Software developer; Linux, misc.
   type: core
+  picture: team-simon.jpg
   email: hw42@ipsumj.de
   pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0xE4ACC9278A646816
   fingerprint: AA27 B2CE F3A6 8BD1 4669  0713 E4AC C927 8A64 6816

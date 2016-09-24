@@ -38,7 +38,7 @@
   - title: Choosing Hardware
     url: /doc/#choosing-your-hardware
   - title: Installing Qubes
-    url: /doc/#installing-qubes
+    url: /doc/#installing--upgrading-qubes
   - title: Common Tasks
     url: /doc/#common-tasks
   - title: Troubleshooting
@@ -67,14 +67,8 @@
   icon: fa-newspaper-o
   sub-pages:
   - title: Announcements
-    url: /news#announcements
+    url: /news
     icon: fa-bullhorn
-  - title: Releases
-    url: /doc/releases/
-    icon: fa-rocket
-  - title: Press
-    url: /news#press
-    icon: fa-newspaper-o
   - title: Twitter
     url: https://twitter.com/QubesOS
   - title: Facebook
@@ -114,7 +108,7 @@
 #  - title: PayPal
 #    url: /donate#paypal/
   - title: Bitcoin
-    url: /donate#bitcoin
+    url: /donate
   - title: Funding
     url: /funding/
     icon: fa-money

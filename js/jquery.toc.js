@@ -57,6 +57,9 @@
             h1.nextUntil('h1').filter('h2').each(function() {
                 ++innerSection;
                 var anchorId = config.anchorPrefix + tocLevel + '-' + tocSection + '-' +  + innerSection;
+                if ($(this).attr('id')) {
+                    anchorId = $(this).attr('id');
+                }
                 $(this).attr('id', anchorId);
                 levelHTML += createLevelHTML(anchorId,
                     tocLevel + 1,
@@ -68,6 +71,9 @@
                 levelHTML = '<ul>' + levelHTML + '</ul>\n';
             }
             var anchorId = config.anchorPrefix + tocLevel + '-' + tocSection;
+            if (h1.attr('id')) {
+                anchorId = h1.attr('id');
+            }
             h1.attr('id', anchorId);
             tocHTML += createLevelHTML(anchorId,
                 tocLevel,

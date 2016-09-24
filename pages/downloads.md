@@ -85,7 +85,7 @@ redirect_from:
       {% assign aging = release.aging | default: false %}
       {% assign deprecated = release.deprecated | default: false %}
       {% assign testing = release.testing | default: false %}
-      <h3 class="more-bottom">{{ release_name }}</h3>
+      <h3 class="more-bottom" id="{{ release.link }}">{{ release_name }}</h3>
       {% if aging %}
       <div class="alert alert-info" role="alert">
         <i class="fa fa-info-circle"></i>{% if aging != true %}{{ aging }}{% else %} This is an old, <a href="/doc/supported-versions/" class="alert-link">supported</a> release. For the best Qubes OS experience, we suggest upgrading to the latest stable release.{% endif %}

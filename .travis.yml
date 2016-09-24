@@ -2,7 +2,7 @@ language: ruby
 rvm: 
  - 2.1
 install: gem install github-pages html-proofer
-script: jekyll build && htmlproofer ./_site --disable-external
+script: jekyll build && htmlproofer ./_site --disable-external --checks-to-ignore ImageCheck --file-ignore ./_site/tour/index.html --url-ignore "/qubes-issues/,https://ftp.qubes-os.org /"
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true

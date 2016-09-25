@@ -13,7 +13,7 @@ redirect_from:
   <div class="col-lg-4 col-md-4">
     <h2>Try Qubes</h2>
     <p>You don't have to replace your current operating system in order to try out Qubes, make a bootable live USB/DVD to try it out now!</p>
-    <a href="/downloads/#qubes-live-usb-alpha/" class="btn btn-primary">
+    <a href="/downloads/#qubes-live-usb-alpha" class="btn btn-primary">
       <i class="fa fa-usb"></i> Try Qubes Live USB
     </a>
   </div>

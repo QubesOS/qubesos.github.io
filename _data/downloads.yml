@@ -102,6 +102,7 @@ releases:
   Qubes Live USB (alpha):
     aging: no
     deprecated: no
+    link: qubes-live-usb-alpha
     testing: The Live USB edition is older than recent 3.1 release and lacks
              some of its features (and bug fixes). If you want the newest
              available image, download the 3.1 installation image.  You can

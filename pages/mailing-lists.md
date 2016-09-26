@@ -76,6 +76,11 @@ Mailing list guidelines
    (If you're already asking questions the smart way but still not getting any
    replies, then it's probably just that no one else knows the answer either.)
 
+ * If your message is not successfully sent to the list, it probably got caught
+   in the spam filter. We check the spam filter regularly, so please be patient,
+   and your message should be approved (and your email address added to the
+   whitelist) within a couple of days.
+
 
 The **qubes-users** list
 ------------------------

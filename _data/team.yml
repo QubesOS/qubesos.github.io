@@ -49,7 +49,7 @@
   role: Whonix, Tor, and Debian integration
   type: core
   picture: team-patrick.jpg
-  email: adrelanos@riseup.net
+  email: patrick@qubes-os.org
   pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0x8D66066A2EEACCDA
   fingerprint: 916B 8D99 C38E AF5E 8ADC 7A2A 8D66 066A 2EEA CCDA
   website: https://www.whonix.org

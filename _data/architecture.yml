@@ -2,6 +2,10 @@
   url: /tour/
   icon: fa-flag
   sub-pages:
+  - title: What is Qubes OS?
+    url: /tour/#what-is-qubes-os
+  - title: Video Tour
+    url: /tour/
   - title: Screenshots
     url: /screenshots/
     icon: fa-picture-o

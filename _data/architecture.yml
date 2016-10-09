@@ -6,6 +6,8 @@
     url: /tour/#what-is-qubes-os
   - title: Video Tour
     url: /tour/
+  - title: Getting Started
+    url: /getting-started/
   - title: Screenshots
     url: /screenshots/
     icon: fa-picture-o
@@ -16,22 +18,22 @@
     url: /doc/architecture/
     icon: fa-cubes
 
-- title: Get Started
-  url: /getting-started/
+- title: Downloads
+  url: /downloads/
   icon: fa-cube
   sub-pages:
-  - title: Downloads
-    url: /downloads/
-    icon: fa-download
-  - title: Certified Laptops
-    url: /doc/certified-laptops/
-    icon: fa-laptop
+  - title: System Requirements
+    url: /doc/system-requirements/
   - title: Compatible Hardware
     url: /hcl/
-    icon: fa-laptop
-  - title: Try on Live USB
-    url: /downloads/#qubes-live-usb-alpha
-    icon: fa-download
+  - title: Verifying Signatures
+    url: /doc/verifying-signatures/
+  - title: Supported Versions
+    url: /doc/supported-versions/
+  - title: Version Scheme
+    url: /doc/version-scheme/
+  - title: The Qubes OS License
+    url: /doc/license/
 
 - title: Docs
   url: /doc/

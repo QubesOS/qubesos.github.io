@@ -49,6 +49,8 @@
     url: /doc/#common-tasks
   - title: Troubleshooting
     url: /doc/#troubleshooting
+  - title: Developer Documentation
+    url: /doc/#developer-documentation
 
 - title: Help
   url: /help/

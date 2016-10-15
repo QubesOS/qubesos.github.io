@@ -9,7 +9,8 @@ redirect_from:
 - /wiki/QubesResearch/
 ---
 
-Here are links to various research papers and projects that relate to Qubes OS.
+Here are links to various research papers, projects, and blog posts that relate
+to Qubes OS.
 
 {% for category in site.data.research.categories %}
   <h3>{{category.name}}</h3>

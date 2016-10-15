@@ -1,4 +1,6 @@
 categories:
+  - slug: software-development
+    name: Secure Software Development
   - slug: trusted-hardware
     name: Towards Trusted Hardware
   - slug: intel-safeguard
@@ -12,6 +14,18 @@ categories:
   - slug: compartmentalization-isolation
     name: Compartmentalization, Isolation, and Separation
 papers:
+  - title: Thoughts on the "physically secure" ORWL computer
+    url: http://blog.invisiblethings.org/2016/09/03/thoughts-about-orwl.html
+    date: September 2016
+    author: Joanna Rutkowska
+    category: trusted-hardware
+
+  - title: Security challenges for the Qubes build process
+    url: http://blog.invisiblethings.org/2016/05/30/build-security.html
+    date: May 2016
+    author: Joanna Rutkowska
+    category: software-development
+
   - title: State considered harmful
     url: http://blog.invisiblethings.org/papers/2015/state_harmful.pdf
     date: December 2015

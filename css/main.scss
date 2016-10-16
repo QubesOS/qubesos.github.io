@@ -44,6 +44,28 @@ $on-laptop-wide:   1150px;
 .fa-stack-exchange {color: #3399ff;}
 .fa-rss-square     {color: #f26f22;}
 
+// Custom - Article Tables
+article table {
+    border-collapse: collapse;
+}
+article td, article th {
+    border: 1px solid #ddd;
+    padding: 12px 48px;
+}
+article tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+article tr:hover {
+    background-color: #ddd;
+}
+article th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: $color-qube-light;
+    color: white;
+}
+
 /* Bootstrap imports */
 
 // Core variables and mixins

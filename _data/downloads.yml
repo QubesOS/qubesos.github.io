@@ -21,16 +21,16 @@ releases:
           hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-x86_64.iso.DIGESTS
           sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      #ftp.qubes-os.org:
-      #  method: HTTPS
-      #  type: ISO
-      #  filename: Qubes-R3.2-x86_64.iso
-      #  size: 4.0 GiB (4,246,732,800 bytes)
-      #  url: https://ftp.qubes-os.org/iso/Qubes-R3.2-x86_64.iso
-      #  verifiers:
-      #    hash: https://ftp.qubes-os.org/iso/Qubes-R3.2-x86_64.iso.DIGESTS
-      #    sig: https://ftp.qubes-os.org/iso/Qubes-R3.2-x86_64.iso.asc
-      #    key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+      ftp.qubes-os.org:
+        method: HTTPS
+        type: ISO
+        filename: Qubes-R3.2-x86_64.iso
+        size: 4.0 GiB (4,246,732,800 bytes)
+        url: https://ftp.qubes-os.org/iso/Qubes-R3.2-x86_64.iso
+        verifiers:
+          hash: https://ftp.qubes-os.org/iso/Qubes-R3.2-x86_64.iso.DIGESTS
+          sig: https://ftp.qubes-os.org/iso/Qubes-R3.2-x86_64.iso.asc
+          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       'ftp.qubes-os.org ':
         method: BitTorrent
         type: Torrent

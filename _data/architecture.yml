@@ -1,16 +1,17 @@
-- title: Tour
-  url: /tour/
+- title: Intro
+  url: /intro/
   icon: fa-flag
   sub-pages:
   - title: What is Qubes OS?
-    url: /tour/#what-is-qubes-os
-  - title: Video Tour
-    url: /tour/
-  - title: Getting Started
-    url: /getting-started/
+    url: /intro/
+  - title: Video Tours
+    url: /video-tours/
+    icon: fa-play-circle
   - title: Screenshots
     url: /screenshots/
     icon: fa-picture-o
+  - title: Getting Started
+    url: /getting-started/
   - title: Research
     icon: fa-file-text
     url: /research/
@@ -32,7 +33,7 @@
     url: /doc/supported-versions/
   - title: Version Scheme
     url: /doc/version-scheme/
-  - title: The Qubes OS License
+  - title: Qubes OS License
     url: /doc/license/
 
 - title: Docs

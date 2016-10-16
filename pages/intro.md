@@ -1,66 +1,14 @@
 ---
 layout: default
-title: Tour
-permalink: /tour/
+title: An Introduction to Qubes OS
+permalink: /intro/
+redirect_from:
+- /tour/
+- /en/tour/
+- /tour/#what-is-qubes-os
+- /about/
+- /en/about/
 ---
-
-<div id="tour">
-  <div class="row">
-    <div class="col-lg-8 col-md-12 col-xs-12">
-      <h2 class="add-bottom">Video Tour of Qubes</h2>
-      <div id="player"></div>
-      <p>Are you completely new to Qubes OS? We suggest watching the full 33 minute video to get an overview of how to better protect your privacy and make you more secure. Alternatively, you can also browse to specific chapter by using the menu on the right to learn about just that feature.</p>
-      <p class="remove-bottom"><em>The video was made by a passionate community member. Thanks, <a href="http://mattwilson.org">Matthew Wilson</a>.</em></p>
-    </div>
-    <div class="col-lg-4 col-md-12 col-xs-12">
-      <h2 class="add-bottom">&nbsp;</h2>
-      <ul id="player-menu" class="list-unstyled remove-bottom">
-        <li><a href="00:00" class="player-seek">An Overview of Qubes OS</a></li>
-        <li><a href="01:47" class="player-seek">Web browsing with multiple identities</a></li>
-        <li><a href="05:26" class="player-seek">Isolating files in different Qubes</a></li>
-        <li><a href="07:28" class="player-seek">Moving files between Qubes</a></li>
-        <li><a href="09:21" class="player-seek">Using the secure clipboard</a></li>
-        <li><a href="11:13" class="player-seek">Web browsing securely in a Disposable Qube</a></li>
-        <li><a href="13:51" class="player-seek">Handling untrusted files in a Disposable Qube</a></li>
-        <li><a href="16:50" class="player-seek">Exploring the Qubes Manager</a></li>
-        <li><a href="18:54" class="player-seek">Templates and App Qubes</a></li>
-        <li><a href="20:04" class="player-seek">Installing temporary applications</a></li>
-        <li><a href="21:57" class="player-seek">Installing persistent applications</a></li>
-        <li><a href="24:20" class="player-seek">Managing the applications menu</a></li>
-        <li><a href="25:09" class="player-seek">Creating & using a Standalone Qube</a></li>
-        <li><a href="26:38" class="player-seek">Editing settings of a Qube</a></li>
-        <li><a href="28:40" class="player-seek">Creating a Qube for added security & privacy</a></li>
-        <li><a href="29:42" class="player-seek">Whonix and Tor for privacy & anonymity</a></li>
-      </ul>
-    </div>
-  </div>
-  <hr class="add-top more-bottom">
-  <div class="row">
-    <div class="col-lg-4 col-md-4 col-xs-12">
-      <h2>Screenshots</h2>
-      <p>See what using Qubes actually looks like with these screenshots of various applications running in Qubes.</p>
-      <a href="/screenshots/" class="btn btn-primary">
-        <i class="fa fa-picture-o"></i> See Screenshots
-      </a>
-    </div>
-    <div class="col-lg-4 col-md-4 col-xs-12">
-      <h2>Research</h2>
-      <p>Are you a security researcher, computer scientist, or low-level hacker? Read the research papers of the Qubes team arrived at our radical approach to security and OS design.</p>
-      <a href="/research/" class="btn btn-primary">
-        <i class="fa fa-file-text"></i> Read Our Research
-      </a>
-    </div>
-    <div class="col-lg-4 col-md-4 col-xs-12">
-      <h2>Architecture</h2>
-      <p>Interested in understanding the design principles governing Qubes? Start with an overview, then dive into the full architecture spec.</p>
-      <a href="/doc/architecture/" class="btn btn-primary">
-        <i class="fa fa-cubes"></i> Architecture Overview
-      </a>
-    </div>
-  </div>
-</div>
-<hr class="more-top more-bottom">
-
 
 What is Qubes OS?
 -----------------
@@ -71,7 +19,6 @@ OSes are Microsoft Windows, Mac OS X, Android, and iOS. Qubes is free and
 open-source software (FOSS). This means that everyone is free to use, copy,
 and change the software in any way. It also means that the source code is
 openly available so others can contribute to and audit it.
-
 
 Why is OS security important?
 -----------------------------
@@ -90,7 +37,6 @@ communications, or thoughts written in a private journal. Malware can also
 interfere with the activities you perform with your computer. For example,
 if you use your computer to conduct financial transactions, the malware
 might allow its creator to make fraudulent transactions in your name.
-
 
 Aren't antivirus programs and firewalls enough?
 -----------------------------------------------
@@ -226,6 +172,31 @@ pros and cons of this approach relative to Qubes:
 (For more on this topic, please see the paper
 [Software compartmentalization vs. physical separation][paper-compart].)
 
+<hr class="add-top more-bottom">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-xs-12">
+      <h2>Video Tours</h2>
+      <p>Want to see Qubes OS in action? Sit back and watch a guided tour!</p><br>
+      <a href="/video-tours/" class="btn btn-primary">
+        <i class="fa fa-play-circle"></i> Video Tours
+      </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-xs-12">
+      <h2>Screenshots</h2>
+      <p>See what using Qubes actually looks like with these screenshots of various applications running in Qubes.</p>
+      <a href="/screenshots/" class="btn btn-primary">
+        <i class="fa fa-picture-o"></i> Screenshots
+      </a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-xs-12">
+      <h2>Getting Started</h2>
+      <p>Ready to get started with Qubes? Here's what you need to know after installing.</p><br>
+      <a href="/getting-started/" class="btn btn-primary">
+        <i class="fa fa-cubes"></i> Getting Started
+      </a>
+    </div>
+  </div>
+<hr class="more-top more-bottom">
 
 More information
 ----------------
@@ -238,7 +209,6 @@ technical details have been omitted here for the sake of presentation.
  * If you're a developer, there's dedicated [documentation][system-doc]
    and an [FAQ][devel-faq] just for you.
  * Ready to give Qubes a try? Head on over to the [downloads] page.
- * Once you've installed Qubes, here's a guide on [getting started].
 
 
 [disposable qube]: /doc/dispvm/

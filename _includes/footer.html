@@ -20,7 +20,7 @@
   <div class="row footer-nav">
     {% for section in site.data.architecture %}
     <div class="col-lg-2 col-md-2">
-      <h5 class="text-left add-bottom">{{section.title}} {% if section.title == "Donate" %}<i class="fa fa-heart"></i>{% endif %}</h5>
+      <a href="{{section.url}}"><h5 class="text-left add-bottom">{{section.title}} {% if section.title == "Donate" %}<i class="fa fa-heart"></i>{% endif %}</h5></a>
       <ul class="list-unstyled">
         {% for sub in section.sub-pages %}
         <li><a href="{{sub.url}}">{{sub.title}}</a></li>

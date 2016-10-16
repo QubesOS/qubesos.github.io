@@ -176,7 +176,7 @@ pros and cons of this approach relative to Qubes:
   <div class="row">
     <div class="col-lg-4 col-md-4 col-xs-12">
       <h2>Video Tours</h2>
-      <p>Want to see Qubes OS in action? Sit back and watch a guided tour!</p><br>
+      <p>Want to see Qubes OS in action? Sit back and watch a guided tour!</p>
       <a href="/video-tours/" class="btn btn-primary">
         <i class="fa fa-play-circle"></i> Video Tours
       </a>
@@ -190,7 +190,7 @@ pros and cons of this approach relative to Qubes:
     </div>
     <div class="col-lg-4 col-md-4 col-xs-12">
       <h2>Getting Started</h2>
-      <p>Ready to get started with Qubes? Here's what you need to know after installing.</p><br>
+      <p>Ready to get started with Qubes? Here's what you need to know after installing.</p>
       <a href="/getting-started/" class="btn btn-primary">
         <i class="fa fa-cubes"></i> Getting Started
       </a>

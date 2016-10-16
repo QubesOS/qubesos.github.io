@@ -10,100 +10,68 @@ redirect_from:
 ---
 
 <div class="white-box more-bottom page-content">
-  {% assign release_name = site.data.downloads.featured_release %}
-  {% assign release = site.data.downloads.releases[release_name] %}
-  {% assign primary_source = release.sources|first %}
-
-  <h2 class="more-bottom">{{ release_name }}</h2>
-
   <div class="row">
     <div class="col-lg-4 col-md-4">
-      <h3>1. Download ISO Image</h3>
-
-      <a class="btn btn-primary" href="{{ primary_source[1].url }}">
-        <i class="fa fa-download"></i> Download Now <br>
-        <small>{{ primary_source[0] }} ({{ primary_source[1].method }})</small>
-      </a>
-
-      {% for source in release.sources %}
-      {% if source[0] == primary_source[0] %}{% continue %}{% endif %}
-      <a class="btn btn-default" href="{{ source[1].url }}">
-        <i class="fa fa-download"></i> Download Now {{source.count}} <br>
-        <small>{{ source[0] }} ({{ source[1].method }}) </small>
-      </a>
-      {% endfor %}
-
-      <b>Size:</b> {{ primary_source[1].size }}
-
-      <ul class="more-top">
-        {% for fdoc in release.featured_docs["get"] %}
-        <li><a href="{{ release.docs[fdoc].url }}">{{ fdoc }}</a></li>
-        {% endfor %}
-        <li><a href="/doc/supported-versions/">Supported Qubes OS versions</a></li>
-        <li><a href="/doc/version-scheme/">The Qubes OS version scheme</a></li>
-        <li><a href="/doc/license/">Read the Qubes OS License</a></li>
-      </ul>
-
-    </div>
-    <div class="col-lg-4 col-md-4">
-      <h3>2. Verify Your Download</h3>
-      <a class="btn btn-default" href="{{ primary_source[1].verifiers['hash'] }}">Hashes</a>
-      <a class="btn btn-default" href="{{ primary_source[1].verifiers['sig'] }}">Signature</a>
-      <a class="btn btn-default" href="{{ primary_source[1].verifiers['key'] }}"><i class="fa fa-key"></i> Get Signing Key</a>
-      <ul class="more-top">
-        <li><a href="/doc/install-security/">Installation Security Considerations</a></li>
-        <li><a href="/doc/verifying-signatures/">Learn To Verify Signatures</a></li>
-      </ul>
-    </div>
-
-    <div class="col-lg-4 col-md-4">
-      <h3>3. Install & Setup</h3>
-      <table class="step-options">
-        <tr>
-        <td><a class="btn btn-primary" href="/doc/installation-guide/">Create Bootable USB / DVD</a></td>
-        </tr>
-      </table>
+      <h3>Choosing Your Hardware</h3>
       <ul class="more-top">
         <li><a href="/doc/system-requirements/">System Requirements</a></li>
         <li><a href="/hcl/">Hardware Compatibility List</a></li>
+        <li><a href="/doc/certified-laptops">Qubes-Certified Laptops</a></li>
       </ul>
     </div>
-
+    <div class="col-lg-4 col-md-4">
+      <h3>Installing Qubes Securely</h3>
+      <ul class="more-top">
+        <li><a href="/doc/installation-guide/">Installation Guide</a></li>
+        <li><a href="/doc/verifying-signatures/">How and Why to Verify Signatures</a></li>
+        <li><a href="/doc/install-security/">Installation Security Considerations</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <h3>Qubes Versions & License</h3>
+      <ul class="more-top">
+        <li><a href="/doc/supported-versions/">Supported Qubes OS Versions</a></li>
+        <li><a href="/doc/version-scheme/">Qubes OS Version Scheme</a></li>
+        <li><a href="/doc/license/">Qubes OS Software License</a></li>
+      </ul>
+    </div>
   </div>
 </div>
-
-## Experimental and Older Releases
-
 <div class="white-box more-bottom page-content">
-
   <div class="row">
     <div class="col-lg-12 col-md-12">
       {% for releasex in site.data.downloads.releases %}
       {% assign release_name = releasex[0] %}
       {% assign release = releasex[1] %}
-      {% if release_name == site.data.downloads.featured_release %}{% continue %}{% endif %}
+      {% assign testing = release.testing | default: false %}
+      {% assign latest = release.latest | default: false %}
       {% assign aging = release.aging | default: false %}
       {% assign deprecated = release.deprecated | default: false %}
-      {% assign testing = release.testing | default: false %}
       <h3 class="more-bottom" id="{{ release.link }}">{{ release_name }}</h3>
-      {% if aging %}
+      {% if testing %}
       <div class="alert alert-info" role="alert">
-        <i class="fa fa-info-circle"></i>{% if aging != true %}{{ aging }}{% else %} This is an old, <a href="/doc/supported-versions/" class="alert-link">supported</a> release. For the best Qubes OS experience, we suggest upgrading to the latest stable release.{% endif %}
+        <i class="fa fa-question-circle"></i>{% if testing != true %} {{ testing }}{% else %} This is a testing release. We appreciate your desire to help us test Qubes. However, we recommend you use a <a href="/doc/supported-versions/" class="alert-link">current and supported release</a> for daily use.{% endif %}
+      </div>
+      {% endif %}
+      {% if latest %}
+      <div class="alert alert-success" role="alert">
+        <i class="fa fa-check-circle"></i>{% if latest != true %} {{ latest }}{% else %} This is the latest stable Qubes OS release. We recommend this release for all new and existing users.{% endif %}
+      </div>
+      {% endif %}
+      {% if aging %}
+      <div class="alert alert-warning" role="alert">
+        <i class="fa fa-info-circle"></i>{% if aging != true %} {{ aging }}{% else %} This is an old, <a href="/doc/supported-versions/" class="alert-link">supported</a> release. For the best Qubes OS experience, we suggest upgrading to the latest stable release.{% endif %}
       </div>
       {% endif %}
       {% if deprecated %}
-      <div class="alert alert-warning" role="alert">
-        <i class="fa fa-exclamation-triangle"></i>{% if deprecated != true %}{{ deprecated }}{% else %} This is an old, <a href="/doc/supported-versions/" class="alert-link">unsupported</a> release. We strongly recommend upgrading to a supported release in order to receive the latest security updates.{% endif %}
-      </div>
-      {% endif %}
-      {% if testing %}
-      <div class="alert alert-info" role="alert">
-        <i class="fa fa-info-circle"></i>{% if testing != true %}{{ testing }}{% else %} This is a testing release. We appreciate your desire to help us test Qubes. However, we recommend you use a <a href="/doc/supported-versions/" class="alert-link">current and supported release</a> for daily use.{% endif %}
+      <div class="alert alert-danger" role="alert">
+        <i class="fa fa-exclamation-circle"></i>{% if deprecated != true %} {{ deprecated }}{% else %} This is an old, <a href="/doc/supported-versions/" class="alert-link">unsupported</a> release. We strongly recommend upgrading to a supported release in order to receive the latest security updates.{% endif %}
       </div>
       {% endif %}
       <table class="table">
         <thead>
           <tr>
+            <th>Type</th>
             <th>Download</th>
             <th>Verify
               <a class="fa fa-question-circle" href="/doc/verifying-signatures/"
@@ -118,29 +86,31 @@ redirect_from:
           {% assign source = sourcedata[1] %}
           <tr>
             <td>
+              <strong>{{ source.type }}</strong>
+            </td>
+            <td>
               <a class="btn btn-primary" href="{{ source.url }}">
-                <i class="fa fa-download"></i> Download Now
+                <i class="fa fa-download"></i> Download
               </a>
             </td>
             <td>
               {% for verifier in source.verifiers %}
                 {% if verifier[0] == "hash" %}
-                <a class="btn btn-default" href="{{ verifier[1] }}">Hash</a>
+                <a title="MD5, SHA-128, SHA-256, and SHA-512 hash values" class="btn btn-default" href="{{ verifier[1] }}">Digests</a>
                 {% elsif verifier[0] == "sig" %}
-                <a class="btn btn-default" href="{{ verifier[1] }}">Signature</a>
+                <a title="Detached PGP signature file" class="btn btn-default" href="{{ verifier[1] }}">Signature</a>
                 {% elsif verifier[0] == "key" %}
-                <a class="btn btn-default" href="{{ verifier[1] }}"><i class="fa fa-key"></i> Get Signing Key</a>
+                <a title="PGP Release Signing Key" class="btn btn-default" href="{{ verifier[1] }}">PGP Key</a>
                 {% endif %}
               {% endfor %}
             </td>
             <td>
-              <strong>{{ source.filename }}</strong><br>
-              <em>{{ source.size }}</em><br>
-              <em>{{ source.type }}</em>
+              <code>{{ source.filename }}</code><br>
+              <strong>Size:</strong> {{ source.size }}
             </td>
             <td>
               <a href="https://{{ source_name }}/">{{ source_name }}</a><br/>
-              <em>{{ source.method }}</em>
+              <strong>Method:</strong> {{ source.method }}
             </td>
           </tr>
           {% endfor %}

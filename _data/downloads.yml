@@ -1,16 +1,19 @@
-# The testing entry under a release can have "yes", "no", or a custom message to display.
-# The aging and deprecated entries work in the same way.
+# The "testing", "latest", "aging", and "deprecated" entries under each release
+# can have the values "yes", "no", or a custom message to display.
+# "Latest" denotes the latest stable release.
 # "Aging" means old but still supported.
 # "Deprecated" means old and no longer supported.
-# The featured_release toplevel entry controls which release gets featured as primary.
 
-featured_release: Qubes Release 3.2 (latest stable release)
 releases:
-  Qubes Release 3.2 (latest stable release):
+  Qubes Release 3.2:
+    testing: no
+    latest: yes
+    aging: no
+    deprecated: no
     sources:
       mirrors.kernel.org:
         method: HTTPS
-        type: bootable image
+        type: ISO
         filename: Qubes-R3.2-x86_64.iso
         size: 4.0 GiB (4,246,732,800 bytes)
         url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-x86_64.iso
@@ -20,7 +23,7 @@ releases:
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       #ftp.qubes-os.org:
       #  method: HTTPS
-      #  type: bootable image
+      #  type: ISO
       #  filename: Qubes-R3.2-x86_64.iso
       #  size: 4.0 GiB (4,246,732,800 bytes)
       #  url: https://ftp.qubes-os.org/iso/Qubes-R3.2-x86_64.iso
@@ -30,7 +33,7 @@ releases:
       #    key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       'ftp.qubes-os.org ':
         method: BitTorrent
-        type: torrent to bootable image
+        type: Torrent
         filename: Qubes-R3.2-x86_64.torrent
         size: 80.0 kB (81,559 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R3.2-x86_64.torrent
@@ -53,12 +56,14 @@ releases:
       - Upgrading to Qubes R3.2
       - Release Notes
   Qubes Release 3.1:
+    testing: no
+    latest: no
     aging: yes
     deprecated: no
     sources:
       mirrors.kernel.org:
         method: HTTPS
-        type: bootable image
+        type: ISO
         filename: Qubes-R3.1-x86_64.iso
         size: 5.0 GB (4,984,930,304 bytes)
         url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso
@@ -68,7 +73,7 @@ releases:
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       ftp.qubes-os.org:
         method: HTTPS
-        type: bootable image
+        type: ISO
         filename: Qubes-R3.1-x86_64.iso
         size: 5.0 GB (4,984,930,304 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R3.1-x86_64.iso
@@ -78,8 +83,9 @@ releases:
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       'ftp.qubes-os.org ':
         method: BitTorrent
-        type: torrent to bootable image
+        type: Torrent
         filename: Qubes-R3.1-x86_64.iso.torrent
+        size: 95.6 kB (95,639 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R3.1-x86_64.iso.torrent
         verifiers:
           hash: https://ftp.qubes-os.org/qubes/iso/Qubes-R3.1-x86_64.iso.DIGESTS
@@ -101,6 +107,8 @@ releases:
       - Release Notes
       - Release Schedule
   Qubes Live USB (alpha):
+    testing: no
+    latest: no
     aging: no
     deprecated: no
     link: qubes-live-usb-alpha
@@ -112,7 +120,7 @@ releases:
     sources:
       mirrors.kernel.org:
         method: HTTPS
-        type: bootable image
+        type: ISO
         filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
         size: 2.4 GB (2,425,356,288 bytes)
         url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
@@ -121,7 +129,7 @@ releases:
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       ftp.qubes-os.org:
         method: HTTPS
-        type: bootable image
+        type: ISO
         filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
         size: 2.4 GB (2,425,356,288 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
@@ -133,13 +141,14 @@ releases:
         featured: yes
         url: /doc/live-usb/
   Qubes Release 3.0:
+    testing: no
+    latest: no
     aging: no
     deprecated: yes
-    testing: no
     sources:
       mirrors.kernel.org:
         method: HTTPS
-        type: bootable image
+        type: ISO
         filename: Qubes-R3.0-x86_64-DVD.iso
         size: 3.7 GB (3,704,619,008 bytes)
         url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso
@@ -149,7 +158,7 @@ releases:
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       ftp.qubes-os.org:
         method: HTTPS
-        type: bootable image
+        type: ISO
         filename: Qubes-R3.0-x86_64-DVD.iso
         size: 3.7 GB (3,704,619,008 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R3.0-x86_64-DVD.iso
@@ -173,13 +182,14 @@ releases:
       - Release Notes
       - Release Schedule
   Qubes Release 2:
+    testing: no
+    latest: no
     aging: no
     deprecated: yes
-    testing: no
     sources:
       mirrors.kernel.org:
         method: HTTPS
-        type: bootable image
+        type: ISO
         filename: Qubes-R2-x86_64-DVD.iso
         size: 3.1 GB (3,077,570,560 bytes)
         url: https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso
@@ -189,7 +199,7 @@ releases:
           key: https://keys.qubes-os.org/keys/qubes-release-2-signing-key.asc
       ftp.qubes-os.org:
         method: HTTPS
-        type: bootable image
+        type: ISO
         filename: Qubes-R2-x86_64-DVD.iso
         size: 3.1 GB (3,077,570,560 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R2-x86_64-DVD.iso
@@ -206,13 +216,14 @@ releases:
       Upgrading to Qubes R2:
         url: /doc/releases/2.0/release-notes/#upgrading
   Qubes Release 1:
+    testing: no
+    latest: no
     aging: no
     deprecated: yes
-    testing: no
     sources:
       mirrors.kernel.org:
         method: HTTPS
-        type: bootable image
+        type: ISO
         filename: Qubes-R1-x86_64-DVD.iso
         size: 1.7 GB (1,749,024,768 bytes)
         url: https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso
@@ -222,7 +233,7 @@ releases:
           key: https://keys.qubes-os.org/keys/qubes-release-1-signing-key.asc
       ftp.qubes-os.org:
         method: HTTPS
-        type: bootable image
+        type: ISO
         filename: Qubes-R1-x86_64-DVD.iso
         size: 1.7 GB (1,749,024,768 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R1-x86_64-DVD.iso

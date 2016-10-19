@@ -12,9 +12,6 @@
     icon: fa-picture-o
   - title: Getting Started
     url: /getting-started/
-  - title: Research
-    icon: fa-file-text
-    url: /research/
   - title: Architecture
     url: /doc/architecture/
     icon: fa-cubes
@@ -50,26 +47,29 @@
     url: /doc/#common-tasks
   - title: Troubleshooting
     url: /doc/#troubleshooting
-  - title: Developer Documentation
+  - title: Developer Docs
     url: /doc/#developer-documentation
 
 - title: Help
   url: /help/
   icon: fa-medkit
   sub-pages:
-  - title: Users' FAQs
+  - title: User FAQ
     url: /doc/user-faq/
     icon: fa-info-circle
-  - title: Devs' FAQs
+  - title: Developer FAQ
     url: /doc/devel-faq/
     icon: fa-code
   - title: Mailing Lists
     url: /mailing-lists/
     icon: fa-envelope-o
+  - title: Contribute
+    url: /doc/contributing/
   - title: Report a Bug
     url: /doc/reporting-bugs/
-  - title: StackExchange
-    url: https://area51.stackexchange.com/proposals/98519/qubes-os
+  - title: Improve the Docs
+    url: /doc/doc-guidelines/
+
 
 - title: News
   url: /news/
@@ -78,15 +78,21 @@
   - title: Announcements
     url: /news
     icon: fa-bullhorn
+  - title: Research
+    icon: fa-file-text
+    url: /research/
+  - title: Statistics
+    url: /counter/
+    icon: fa-bar-chart
   - title: Twitter
     url: https://twitter.com/QubesOS
+  - title: Reddit
+    url: https://www.reddit.com/r/Qubes/
   - title: Facebook
     url: https://www.facebook.com/QubesOS
   - title: StackExchange
     url: https://area51.stackexchange.com/proposals/98519/qubes-os
-  - title: Statistics
-    url: /counter/
-    icon: fa-bar-chart
+
 
 - title: Team
   url: /team/

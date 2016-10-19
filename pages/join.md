@@ -11,22 +11,6 @@ The Qubes OS Project is currently seeking individuals for the positions listed
 below. If you're interested in any of these positions, please send an email to
 [Marek Marczykowski-Górecki](mailto:marmarek@invisiblethingslab.com).
 
-Debian template maintainer
---------------------------
-
-### General tasks ###
-
- * Working on proper packaging of Qubes-specific components for Debian
-   * [#1567](https://github.com/QubesOS/qubes-issues/issues/1567)
-   * [#1416](https://github.com/QubesOS/qubes-issues/issues/1416)
- * Debugging Debian specific issues (Debian template configuration,
-   Qubes-specific code)
-   * [#1514](https://github.com/QubesOS/qubes-issues/issues/1514)
-   * [#1438](https://github.com/QubesOS/qubes-issues/issues/1438)
- * Testing and handling user feedback
-
-See [some of the issues related to this role](https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+Debian%22).
-
 Stable release manager
 ----------------------
 

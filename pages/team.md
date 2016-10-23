@@ -9,7 +9,8 @@ redirect_from:
 ---
 <div id="group-contact" class="text-center">
   For press inquiries, please email <a href="mailto:press@qubes-os.org">press@qubes-os.org</a>.
-  For business matters, please email <a href="mailto:business@qubes-os.org">business@qubes-os.org</a>.
+  For business matters, please email <a href="mailto:business@qubes-os.org">business@qubes-os.org</a>.<br>
+  Please note that there are separate channels for <a href="/security/">reporting security issues</a> and <a href="/doc/reporting-bugs/">reporting bugs</a>.
 </div>
 <div id="team-core" class="more-top">
   {% assign core_count = 0 %}

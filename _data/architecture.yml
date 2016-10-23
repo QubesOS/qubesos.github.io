@@ -78,15 +78,19 @@
   url: /team/
   icon: fa-users
   sub-pages:
-  - title: Join
+  - title: Security
+    url: /security/
+    icon: fa-lock
+  - title: Mailing Lists
+    url: /mailing-lists/
+  - title: Bug Reports
+    url: /doc/reporting-bugs/
+  - title: Join the Team
     url: /join/
     icon: fa-thumbs-o-up
   - title: Partners
     url: /partners/
     icon: fa-globe
-  - title: Security
-    url: /security/
-    icon: fa-lock
   - title: Hardware Certification
     url: /hardware-certification/
     icon: fa-laptop
@@ -107,4 +111,6 @@
   - title: Funding
     url: /funding/
     icon: fa-money
+  - title: Contributing
+    url: /doc/contributing/
 

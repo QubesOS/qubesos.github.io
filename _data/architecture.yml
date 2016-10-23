@@ -78,13 +78,13 @@
   url: /team/
   icon: fa-users
   sub-pages:
-  - title: Security
+  - title: Security Information
     url: /security/
     icon: fa-lock
-  - title: Mailing Lists
-    url: /mailing-lists/
   - title: Bug Reports
     url: /doc/reporting-bugs/
+  - title: Mailing Lists
+    url: /mailing-lists/
   - title: Join the Team
     url: /join/
     icon: fa-thumbs-o-up

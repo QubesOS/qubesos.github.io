@@ -13,26 +13,26 @@ redirect_from:
   <div class="row">
     <div class="col-lg-4 col-md-4">
       <h3>Choosing Your Hardware</h3>
-      <ul class="more-top">
-        <li><a href="/doc/system-requirements/">System Requirements</a></li>
-        <li><a href="/hcl/">Hardware Compatibility List</a></li>
-        <li><a href="/doc/certified-laptops">Qubes-Certified Laptops</a></li>
+      <ul class="list-unstyled more-top">
+        <li><a href="/doc/system-requirements/"><i class="fa fa-server fa-fw black-icon"></i> System Requirements</a></li>
+        <li><a href="/hcl/"><i class="fa fa-desktop fa-fw black-icon"></i> Hardware Compatibility List</a></li>
+        <li><a href="/doc/certified-laptops"><i class="fa fa-laptop fa-fw black-icon"></i> Qubes-Certified Laptops</a></li>
       </ul>
     </div>
     <div class="col-lg-4 col-md-4">
       <h3>Installing Qubes Securely</h3>
-      <ul class="more-top">
-        <li><a href="/doc/installation-guide/">Installation Guide</a></li>
-        <li><a href="/doc/verifying-signatures/">How and Why to Verify Signatures</a></li>
-        <li><a href="/doc/install-security/">Installation Security Considerations</a></li>
+      <ul class="list-unstyled more-top">
+        <li><a href="/doc/installation-guide/"><i class="fa fa-book fa-fw black-icon"></i> Installation Guide</a></li>
+        <li><a href="/doc/verifying-signatures/"><i class="fa fa-lock fa-fw black-icon"></i> How and Why to Verify Signatures</a></li>
+        <li><a href="/doc/install-security/"><i class="fa fa-lightbulb-o fa-fw black-icon"></i> Installation Security Considerations</a></li>
       </ul>
     </div>
     <div class="col-lg-4 col-md-4">
       <h3>Qubes Versions & License</h3>
-      <ul class="more-top">
-        <li><a href="/doc/supported-versions/">Supported Qubes OS Versions</a></li>
-        <li><a href="/doc/version-scheme/">Qubes OS Version Scheme</a></li>
-        <li><a href="/doc/license/">Qubes OS Software License</a></li>
+      <ul class="list-unstyled more-top">
+        <li><a href="/doc/supported-versions/"><i class="fa fa-life-ring fa-fw black-icon"></i> Supported Qubes OS Versions</a></li>
+        <li><a href="/doc/version-scheme/"><i class="fa fa-code-fork fa-fw black-icon"></i> Qubes OS Version Scheme</a></li>
+        <li><a href="/doc/license/"><i class="fa fa-file-text-o fa-fw black-icon"></i> Qubes OS Software License</a></li>
       </ul>
     </div>
   </div>

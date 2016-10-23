@@ -15,18 +15,23 @@ redirect_from:
         <li><a href="/security/"><i class="fa fa-lock fa-fw black-icon"></i> Report a security issue</a></li>
         <li><a href="/doc/reporting-bugs/"><i class="fa fa-bug fa-fw black-icon"></i> Report a bug</a></li>
         <li><a href="/mailing-lists/"><i class="fa fa-envelope fa-fw black-icon"></i> Join the mailing lists</a></li>
+        <li><a href="/join/"><i class="fa fa-user-plus fa-fw black-icon"></i> Join the team</a></li>
       </ul>
     </div>
     <div id="pre-contact" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
       <ul class="list-unstyled">
         <li><i class="fa fa-newspaper-o fa-fw"></i> Press inquiries: <a href="mailto:press@qubes-os.org">press@qubes-os.org</a></li>
         <li><i class="fa fa-briefcase fa-fw"></i> Business inquiries: <a href="mailto:business@qubes-os.org">business@qubes-os.org</a></li>
-        <li><a href="/join/"><i class="fa fa-user-plus fa-fw black-icon"></i> Join the team</a></li>
+        <li><a href="/join/"><i class="fa fa-globe fa-fw black-icon"></i> Become a Qubes partner</a></li>
+        <li><a href="/join/"><i class="fa fa-laptop fa-fw black-icon"></i> Request hardware certification</a></li>
       </ul>
     </div>
   </div>
 </div>
 <div id="team-core" class="white-box page-content more-bottom">
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <h2 class="text-center more-bottom">Core Team</h2>
+  </div>
   {% assign core_count = 0 %}
   {% assign maintainers_count = 0 %}
   {% assign emeritus_count = 0 %}
@@ -73,12 +78,14 @@ redirect_from:
   </div>
 </div>
 <div class="white-box page-content more-bottom">
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <h2 class="text-center more-bottom">Emeritus</h2>
+    <p>Emeriti are honorary members of the Qubes team who previously
+    contributed to the project in a central way but who are no longer
+    currently active.</p>
+  </div>
   <div class="row team">
-    <div class="col-lg-12 col-md-12 col-sm-12">
-      <h2 class="text-center">Emeritus</h2>
-      <p>Emeriti are honorary members of the Qubes team who previously
-      contributed to the project in a central way but who are no longer
-      currently active.</p>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
       {% for team in site.data.team %}
       {% if team.type == "emeritus" %}
       {% assign emeritus_count = emeritus_count | plus:1 %}

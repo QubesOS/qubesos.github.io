@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: boxless
 title: Team
 permalink: /team/
 redirect_from:
@@ -7,12 +7,26 @@ redirect_from:
 - /doc/QubesDevelopers/
 - /wiki/QubesDevelopers/
 ---
-<div id="group-contact" class="text-center">
-  For press inquiries, please email <a href="mailto:press@qubes-os.org">press@qubes-os.org</a>.
-  For business matters, please email <a href="mailto:business@qubes-os.org">business@qubes-os.org</a>.<br>
-  Please note that there are separate channels for <a href="/security/">reporting security issues</a> and <a href="/doc/reporting-bugs/">reporting bugs</a>.
+<div id="pre-contact" class="white-box page-content more-bottom">
+  <div class="row team">
+    <div class="col-lg-2 col-md-2"></div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <ul class="list-unstyled">
+        <li><a href="/security/"><i class="fa fa-lock fa-fw black-icon"></i> Report a security issue</a></li>
+        <li><a href="/doc/reporting-bugs/"><i class="fa fa-bug fa-fw black-icon"></i> Report a bug</a></li>
+        <li><a href="/mailing-lists/"><i class="fa fa-envelope fa-fw black-icon"></i> Join the mailing lists</a></li>
+      </ul>
+    </div>
+    <div id="pre-contact" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <ul class="list-unstyled">
+        <li><i class="fa fa-newspaper-o fa-fw"></i> Press inquiries: <a href="mailto:press@qubes-os.org">press@qubes-os.org</a></li>
+        <li><i class="fa fa-briefcase fa-fw"></i> Business inquiries: <a href="mailto:business@qubes-os.org">business@qubes-os.org</a></li>
+        <li><a href="/join/"><i class="fa fa-user-plus fa-fw black-icon"></i> Join the team</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
-<div id="team-core" class="more-top">
+<div id="team-core" class="white-box page-content more-bottom">
   {% assign core_count = 0 %}
   {% assign maintainers_count = 0 %}
   {% assign emeritus_count = 0 %}
@@ -54,51 +68,55 @@ redirect_from:
   </div>
   {% endif %}
   {% endfor %}
-</div>
-<div class="text-center">
-  <a href="/join/" class="btn btn-primary">Join the team!</a>
-</div>
-<hr class="more-bottom">
-<div class="row team more-top more-bottom">
-  <div class="col-lg-12 col-md-12 col-sm-12">
-    <h2 class="text-center">Emeritus</h2>
-    <p>Emeriti are honorary members of the Qubes team who previously contributed
-    to the project in a central way but who are no longer currently active.</p>
-    {% for team in site.data.team %}
-    {% if team.type == "emeritus" %}
-    {% assign emeritus_count = emeritus_count | plus:1 %}
-    {% include team-simple.html %}
-    {% endif %}
-    {% endfor %}
+  <div class="text-center more-bottom">
+    <a href="/join/" class="btn btn-primary"><i class="fa fa-user-plus fa-fw white-icon"></i> Join the team!</a>
   </div>
 </div>
-<hr class="more-bottom">
-<div class="row team">
+<div class="white-box page-content more-bottom">
+  <div class="row team">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <h2 class="text-center">Emeritus</h2>
+      <p>Emeriti are honorary members of the Qubes team who previously
+      contributed to the project in a central way but who are no longer
+      currently active.</p>
+      {% for team in site.data.team %}
+      {% if team.type == "emeritus" %}
+      {% assign emeritus_count = emeritus_count | plus:1 %}
+      {% include team-simple.html %}
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="white-box page-content more-bottom">
   <div class="col-lg-12 col-md-12 col-sm-12">
     <h2 class="text-center more-bottom">Community Contributors</h2>
-    <p>Qubes would not be where it is today without the input of the many users, testers, and developers of all skill levels who have come together to form this thriving community. The community's discussions take place primarily on the <a href="/doc/mailing-lists/">Qubes mailing lists</a>.</p>
+    <p>Qubes would not be where it is today without the input of the many users,
+    testers, and developers of all skill levels who have come together to form
+    this thriving community. The community's discussions take place primarily on
+    the <a href="/doc/mailing-lists/">Qubes mailing lists</a>.</p>
   </div>
-</div>
-{% assign non_community_count =  core_count | plus:maintainers_count | plus:emeritus_count %}
-{% assign community_count =  site.data.team | size | minus:non_community_count %}
-{% assign community_half = community_count | divided_by:2 | plus:1 %}
-{% assign community_shown =  0 %}
-
-<div class="row team">
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    {% for team in site.data.team %}
-    {% if team.type == "community" %}
-    {% if community_shown < community_half %}
-    {% include team-simple.html %}
-    {% elsif community_shown == community_half %}
-    </div>
+  {% assign non_community_count =  core_count | plus:maintainers_count | plus:emeritus_count %}
+  {% assign community_count =  site.data.team | size | minus:non_community_count %}
+  {% assign community_half = community_count | divided_by:2 | plus:1 %}
+  {% assign community_shown =  0 %}
+  <div class="row team">
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    {% include team-simple.html %}
-    {% else %}
-    {% include team-simple.html %}
-    {% endif %}
-    {% assign community_shown = community_shown | plus:1 %}
-    {% endif %}
-    {% endfor %}
+      {% for team in site.data.team %}
+      {% if team.type == "community" %}
+      {% if community_shown < community_half %}
+      {% include team-simple.html %}
+      {% elsif community_shown == community_half %}
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      {% include team-simple.html %}
+      {% else %}
+      {% include team-simple.html %}
+      {% endif %}
+      {% assign community_shown = community_shown | plus:1 %}
+      {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </div>
+

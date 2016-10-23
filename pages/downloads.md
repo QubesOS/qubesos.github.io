@@ -50,7 +50,7 @@ redirect_from:
       <h3 class="more-bottom" id="{{ release.link }}">{{ release_name }}</h3>
       {% if testing %}
       <div class="alert alert-info" role="alert">
-        <i class="fa fa-question-circle"></i>{% if testing != true %} {{ testing }}{% else %} This is a testing release. We appreciate your desire to help us test Qubes. However, we recommend you use a <a href="/doc/supported-versions/" class="alert-link">current and supported release</a> for daily use.{% endif %}
+        <i class="fa fa-question-circle"></i>{% if testing != true %} {{ testing }}{% else %} This is a testing release. We appreciate your desire to help us test Qubes. However, we recommend you use a <a href="/doc/supported-versions/">current and supported release</a> for daily use.{% endif %}
       </div>
       {% endif %}
       {% if latest %}
@@ -60,12 +60,12 @@ redirect_from:
       {% endif %}
       {% if aging %}
       <div class="alert alert-warning" role="alert">
-        <i class="fa fa-info-circle"></i>{% if aging != true %} {{ aging }}{% else %} This is an old, <a href="/doc/supported-versions/" class="alert-link">supported</a> release. For the best Qubes OS experience, we suggest upgrading to the latest stable release.{% endif %}
+        <i class="fa fa-info-circle"></i>{% if aging != true %} {{ aging }}{% else %} This is an old, <a href="/doc/supported-versions/">supported</a> release. For the best Qubes OS experience, we suggest upgrading to the latest stable release.{% endif %}
       </div>
       {% endif %}
       {% if deprecated %}
       <div class="alert alert-danger" role="alert">
-        <i class="fa fa-exclamation-circle"></i>{% if deprecated != true %} {{ deprecated }}{% else %} This is an old, <a href="/doc/supported-versions/" class="alert-link">unsupported</a> release. We strongly recommend upgrading to a supported release in order to receive the latest security updates.{% endif %}
+        <i class="fa fa-exclamation-circle"></i>{% if deprecated != true %} {{ deprecated }}{% else %} This is an old, <a href="/doc/supported-versions/">unsupported</a> release. We strongly recommend upgrading to a supported release in order to receive the latest security updates.{% endif %}
       </div>
       {% endif %}
       <table class="table">

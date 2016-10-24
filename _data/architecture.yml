@@ -12,7 +12,11 @@
     icon: fa-picture-o
   - title: Getting Started
     url: /getting-started/
-  - title: Architecture
+  - title: User FAQ
+    url: /doc/user-faq/
+  - title: Developer FAQ
+    url: /doc/devel-faq/
+  - title: OS Architecture
     url: /doc/architecture/
     icon: fa-cubes
 
@@ -24,13 +28,17 @@
     url: /doc/system-requirements/
   - title: Compatible Hardware
     url: /hcl/
+  - title: Installation Guide
+    url: /doc/installation-guide/
   - title: Verifying Signatures
     url: /doc/verifying-signatures/
   - title: Supported Versions
     url: /doc/supported-versions/
   - title: Version Scheme
     url: /doc/version-scheme/
-  - title: Qubes OS License
+  - title: Source Code
+    url: /doc/source-code/
+  - title: Software License
     url: /doc/license/
 
 - title: Docs
@@ -45,6 +53,10 @@
     url: /doc/#installing--upgrading-qubes
   - title: Common Tasks
     url: /doc/#common-tasks
+  - title: Managing OSes
+    url: /doc/#managing-operating-systems-within-qubes
+  - title: Security Guides
+    url: /doc/#security-guides
   - title: Troubleshooting
     url: /doc/#troubleshooting
   - title: Developer Docs

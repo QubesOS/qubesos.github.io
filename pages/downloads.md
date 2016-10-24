@@ -144,14 +144,14 @@ redirect_from:
     </div>
     <div class="col-lg-4 col-md-4">
       <ul class="list-unstyled">
-        <li><a href="/doc/version-scheme/"><i class="fa fa-code fa-fw black-icon"></i> Source Code</a></li>
+        <li><a href="/doc/source-code/"><i class="fa fa-code fa-fw black-icon"></i> Source Code</a></li>
         <li><a href="/doc/license/"><i class="fa fa-file-text-o fa-fw black-icon"></i> Software License</a></li>
       </ul>
     </div>
     <div class="col-lg-4 col-md-4">
       <ul class="list-unstyled">
-        <li><a href="/doc/supported-versions/"><i class="fa fa-lock fa-fw black-icon"></i> Security Information</a></li>
-        <li><a href="/doc/license/"><i class="fa fa-cubes fa-fw black-icon"></i> OS Architecture</a></li>
+        <li><a href="/security/"><i class="fa fa-lock fa-fw black-icon"></i> Security Information</a></li>
+        <li><a href="/doc/architecture/"><i class="fa fa-cubes fa-fw black-icon"></i> OS Architecture</a></li>
       </ul>
     </div>
   </div>

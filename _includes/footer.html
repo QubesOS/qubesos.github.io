@@ -69,6 +69,32 @@ $(document).ready(function() {
       onSeek: function(time){}
   })
 
+  var tourVideo = $("#player1").tubeplayer({
+      width: 700,
+      height: 393,
+      allowFullScreen: "true",
+      initialVideo: "q7mCeYCrQ24&list=PLHj4WuEG4h_oh1y7EKsiYhjxT-Lmwtb_R",
+      start: 0,
+      preferredQuality: "h720",
+      showControls: true,
+      showRelated: false,
+      playsinline: false,
+      autoPlay: false,
+      autoHide: true,
+      theme: "dark",
+      color: "white",
+      showinfo: false,
+      modestbranding: true,
+      annotations: true,
+      loop: 0,
+      protocol: 'https',
+      loadSWFObject: false,
+      iframed: true,
+      onPlayerUnstarted: function(){ console.log('onPlayerUnstarted must be loaded...') },
+      onPlayerCued: function(){ console.log('onPlayerCued must ready...') },
+      onSeek: function(time){}
+  })
+
   $('.player-seek').on('click', function(e) {
     e.preventDefault()
     //console.log('Jump to: ' + $(this).attr('href'))

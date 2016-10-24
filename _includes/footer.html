@@ -101,6 +101,11 @@ $(document).ready(function() {
     tourVideo.tubeplayer("seek", $(this).attr('href'))
     tourVideo.tubeplayer("play")
 
+  $('.player-play').on('click', function(e) {
+    e.preventDefault()
+    //console.log('Jump to: ' + $(this).attr('href'))
+    tourVideo.tubeplayer("play", $(this).attr('href'))
+
     $.each($('#player-menu li'), function() {
       $(this).find('i.fa').remove()
     })

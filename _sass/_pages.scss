@@ -2,7 +2,7 @@
 
 #tour {
 
-  #player {
+  #player, #player1 {
     width: 702px;
     height: 395px;
     border: 1px solid $gray-light;
@@ -30,7 +30,7 @@
 @media(max-width: $screen-md-max) {
 
   #tour {
-    #player {
+    #player, #player1 {
       width: 100%;
     }
   }

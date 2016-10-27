@@ -26,60 +26,96 @@ interest.
 Mailing list guidelines
 -----------------------
 
+These are open mailing lists where people freely come together to discuss Qubes
+and voluntarily help each other out of mutual interest and good will. They are
+*not* your personal, paid support service. **No one owes you a reply.** No one
+here is responsible for solving your problems for you. Nonetheless, there are
+many things you can do to make it more likely that you will receive a reply.
+This community is fortunate to have an exceptionally large number of friendly
+and knowledgeable people who enjoy corresponding on these lists. The vast
+majority of them will be happy to help you if you follow these simple
+guidelines.
+
+ * **Be polite and respectful.** Remember, no one here is under any obligation
+   to reply to you. Think about your readers. Most of them are coming home after
+   a long, hard day at work. The last thing they need is someone's temper
+   tantrum in their inboxes. If you are rude and disrespectful, you are very
+   likely to be ignored.
+
+ * **Be concise.** Include only essential information. Most of your readers lead
+   busy lives and have precious little time. We *want* to spend some of that
+   time helping you, if we can. But if you ramble, it will be easier to skip
+   over you and help someone else who gets right to the point.
+
+ * **Help us help you.** Tell us what you've already tried, and which
+   documentation pages you've already read. Put yourself in your readers' shoes.
+   What essential information would they require in order to be able to help
+   you? Make sure to include that information in your message. [Ask
+   questions the smart way.][smart-questions]
+
+ * **Be patient.** Do not "bump" a thread more than once every three days *at
+   most*. If it seems like your messages to the mailing lists are consistently
+   being ignored, make sure you're following the guidelines explained on this
+   page. If you're already doing so but still not getting any replies, then it's
+   likely that no one who knows the answer has had time to reply yet. Remember
+   that the devs are very busy working on Qubes. They usually only have a chance
+   to answer questions on the mailing lists once every several days.
+
+ * **Be a good community member.** As with any social community, members of the
+   mailing list earn different reputations for themselves over time. We want the
+   mailing lists to be a friendly, productive place where information and ideas
+   are exchanged for the mutual benefit of all. We understand that the best way
+   to achieve this is to encourage and cultivate other like-minded individuals.
+   Those who have shown themselves to be good community members through their
+   past contributions have earned our good will, and we will be especially eager
+   to help them and collaborate with them. If you are new to the community, you
+   should understand that it will take time for you to earn the good will of
+   others. This does not mean that you will not receive help. On the contrary,
+   we are fortunate to have such a helpful and understanding community that many
+   of them spend hours of their personal time helping complete strangers,
+   including many who post to the lists anonymously. (Given the integration of
+   Qubes with [Whonix], we understand better than most the complexities of
+   privacy and anonymity, and we know that many users have no other choice but
+   to post anonymously.)
+
+### Specific rules and notes ###
+
  * Send your message to the correct list. Read the sections below to determine
    which list is correct for your message.
-
  * Do not [top-post].
-
  * Include a precise and informative subject line. This will allow others to
-   easily find your thread in the future and use it as a reference.
-   * Bad: "Help! Qubes problems!"
-   * Good: "R2B2 Installation problem: Apple keyboard not working in installer."
-
- * Be concise. Do not write an essay. Include only essential information. Please
-   think about how many messages come to the list every day and whether people
-   will want to read through your lengthy message (hint: they won't!).
-
+   easily find your thread in the future and use it as a reference. (Bad: "Help!
+   Qubes problems!" Good: "R2B2 Installation problem: Apple keyboard not working
+   in installer.")
+ * If your message is not successfully sent to the list, it probably got caught
+   in the spam filter. We check the spam filter regularly, so please be patient,
+   and your message should be approved (and your email address added to the
+   whitelist) within a few days.
  * Keep the mailing list CCed throughout the conversation unless there's a
    special need for privacy (in which case, use PGP encryption). This increases
    the likelihood that a greater quantity of useful information will be
    available to everyone in the future.
-
- * Quote selectively. For example, if you are replying to a message
-   that includes an advertisement in the email's signature (inserted by the
-   sender's mail provider), you should not quote the advertisement. Likewise, it
-   is not necessary to quote the standard Google Groups signature block. We also
-   recommend against preserving other people's inline PGP signatures, since
-   doing so is unnecessary and interferes with the ability of programs like
-   Enigmail to properly quote replies thereafter. It can also be a good idea to
-   quote only the parts of a message to which you're replying. However, if
-   you're genuinely not sure whether some portion of the body of your
-   interlocutor's message should be included, it's fine to err on the side of
-   quoting more.
-
- * Do not apologize for your poor English. This is a waste of everyone's time,
-   including your own. If we can't understand you, we will ask you to clarify
-   (or ignore your message if it's a total mess ;).
-
+ * Quote selectively. Exclude advertisements in signatures and inline PGP
+   signature blocks. (Quoting the latter interferes with the ability of programs
+   like Enigmail to properly quote replies thereafter). Quote only the parts of
+   a message to which you're replying. If you're genuinely not sure whether some
+   portion of the body of your interlocutor's message should be included, it's
+   fine to err on the side of quoting more.
+ * If you do not speak English, you should feel free to post in your own
+   language. However, bear in mind that most members of the list can only read
+   English. You may wish to include an automated translation in your message out
+   of consideration for those readers. If you choose to write in English, please
+   do not apologize for doing so poorly, as it is unnecessary. We understand and
+   will ask for clarification if needed.
  * While we're generally open to hearing suggestions for new features, please
    note that we already have a pretty well defined [roadmap], and it's rather
    unlikely that we will change our schedule in order to accommodate your
    request. If there's a particular feature you'd like to see in Qubes, a much
-   more effective way to make it happen is to... contribute code to Qubes which
-   implements it! We happily accept such contributions, provided they meet our
-   standards. Please note, however, that it's always a good idea to field a
-   discussion of your idea on the `qubes-devel` list before putting in a lot of
-   hard work on something that we may not be able or willing to accept.
-
- * If it seems like your messages to the mailing lists are consistently being
-   ignored, then take the time to learn [how to ask questions the smart way].
-   (If you're already asking questions the smart way but still not getting any
-   replies, then it's probably just that no one else knows the answer either.)
-
- * If your message is not successfully sent to the list, it probably got caught
-   in the spam filter. We check the spam filter regularly, so please be patient,
-   and your message should be approved (and your email address added to the
-   whitelist) within a couple of days.
+   more effective way to make it happen is to contribute a patch that implements
+   it. We happily accept such contributions, provided they meet our standards.
+   Please note, however, that it's always a good idea to field a discussion of
+   your idea on the `qubes-devel` list before putting in a lot of hard work on
+   something that we may not be able or willing to accept.
 
 
 The **qubes-users** list
@@ -214,7 +250,8 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
 
 [top-post]: https://en.wikipedia.org/wiki/Posting_style
 [roadmap]: https://github.com/QubesOS/qubes-issues/milestones
-[how to ask questions the smart way]: http://www.catb.org/esr/faqs/smart-questions.html
+[smart-questions]: http://www.catb.org/esr/faqs/smart-questions.html
+[Whonix]: /doc/whonix/
 [HCL]: /doc/hcl/
 [Installation Guide]: /doc/installation-guide/
 [System Requirements]: /doc/system-requirements/

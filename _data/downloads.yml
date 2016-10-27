@@ -41,6 +41,16 @@ releases:
           hash: https://ftp.qubes-os.org/iso/Qubes-R3.2-x86_64.iso.DIGESTS
           sig: https://ftp.qubes-os.org/iso/Qubes-R3.2-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+      'mirrors.kernel.org ':
+        method: BitTorrent
+        type: Torrent
+        filename: Qubes-R3.2-x86_64.torrent
+        size: 80.0 kB (81,559 bytes)
+        url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-x86_64.torrent
+        verifiers:
+          hash: hhttps://mirrors.kernel.org/qubes/iso/Qubes-R3.2-x86_64.iso.DIGESTS
+          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-x86_64.iso.asc
+          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       'ftp.halifax.rwth-aachen.de ':
         method: BitTorrent
         type: Torrent
@@ -110,6 +120,16 @@ releases:
         verifiers:
           hash: https://ftp.qubes-os.org/iso/Qubes-R3.1-x86_64.iso.DIGESTS
           sig: https://ftp.qubes-os.org/iso/Qubes-R3.1-x86_64.iso.asc
+          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+      'mirrors.kernel.org ':
+        method: BitTorrent
+        type: Torrent
+        filename: Qubes-R3.1-x86_64.iso.torrent
+        size: 95.6 kB (95,639 bytes)
+        url: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-x86_64.torrent
+        verifiers:
+          hash: hhttps://mirrors.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso.DIGESTS
+          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
       'ftp.halifax.rwth-aachen.de ':
         method: BitTorrent

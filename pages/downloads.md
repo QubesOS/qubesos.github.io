@@ -77,7 +77,7 @@ redirect_from:
                  title="How do I verify my download?"></a></th>
             <th>File</th>
             <th>Size</th>
-            <th>Source</th>
+            <th>Source <a class="pull-right" href="#mirrors"><i class="fa fa-download black-icon"></i> Mirrors</a></th>
           </tr>
         </thead>
         <tbody>
@@ -103,13 +103,13 @@ redirect_from:
                 {% endfor %}
               </td>
               <td>
-                <code>{{ source.filename }}</code>
+                <samp>{{ source.filename }}</samp>
               </td>
               <td>
-                {{ source.size }}
+                <samp>{{ source.size }}</samp>
               </td>
               <td>
-                <a href="https://{{ source_name }}/">{{ source_name }}</a>
+                <a href="https://{{ source_name }}/"><i class="fa fa-linux fa-fw black-icon"></i><samp> {{ source_name }}</samp></a>
               </td>
             </tr>
             {% endif %}
@@ -120,21 +120,20 @@ redirect_from:
         {% assign doc_name = docdata[0] %}
         {% assign doc = docdata[1] %}
           {% if doc_name == "Installation Guide" %}
-            <a class="btn btn-link" href="{{ doc.url }}"><i class="fa fa-book fa-fw black-icon"></i>{{ doc_name }}</a>
+            <a class="btn btn-link" href="{{ doc.url }}"><i class="fa fa-book black-icon"></i> {{ doc_name }}</a>
           {% endif %}
           {% if doc_name == "Release Notes" %}
-            <a class="btn btn-link" href="{{ doc.url }}"><i class="fa fa-file-text-o fa-fw black-icon"></i>{{ doc_name }}</a>
+            <a class="btn btn-link" href="{{ doc.url }}"><i class="fa fa-file-text-o black-icon"></i> {{ doc_name }}</a>
           {% endif %}
           {% if doc_name == "Release Schedule" %}
-            <a class="btn btn-link" href="{{ doc.url }}"><i class="fa fa-calendar fa-fw black-icon"></i>{{ doc_name }}</a>
+            <a class="btn btn-link" href="{{ doc.url }}"><i class="fa fa-calendar black-icon"></i> {{ doc_name }}</a>
           {% endif %}
           {% if doc_name contains "Upgrading" %}
-            <a class="btn btn-link" href="{{ doc.url }}"><i class="fa fa-arrow-circle-up fa-fw black-icon"></i>{{ doc_name }}</a>
+            <a class="btn btn-link" href="{{ doc.url }}"><i class="fa fa-arrow-circle-up black-icon"></i> {{ doc_name }}</a>
           {% endif %}
         {% endfor %}
-          <a class="btn btn-link" href="#mirrors"><i class="fa fa-download fa-fw black-icon"></i>All Mirrors</a>
-          <a class="btn btn-link" href="#versions"><i class="fa fa-history fa-fw black-icon"></i>Versions</a>
-          <a class="btn btn-link" href="#source-code"><i class="fa fa-code fa-fw black-icon"></i>Source Code</a>
+          <a class="btn btn-link" href="#versions"><i class="fa fa-history black-icon"></i> Version Information</a>
+          <a class="btn btn-link" href="#source-code"><i class="fa fa-code black-icon"></i> Source Code</a>
       <hr class="more-top more-bottom">
       {% endfor %}
     </div>

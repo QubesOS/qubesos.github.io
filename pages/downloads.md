@@ -131,28 +131,40 @@ redirect_from:
     </div>
   </div>
 </div>
-<div class="white-box more-top more-bottom page-content">
-  <div class="row">
-    <div class="col-lg-12">
-      <h3>About Qubes OS</h3>
-    </div>
-    <div class="col-lg-4 col-md-4">
+<div class="row">
+  <div class="col-lg-4 col-md-4">
+    <div class="white-box more-bottom page-content">
+      <h3 id="mirrors">Mirrors</h3>
       <ul class="list-unstyled">
-        <li><a href="/doc/supported-versions/"><i class="fa fa-history fa-fw black-icon"></i> Supported Versions</a></li>
-        <li><a href="/doc/version-scheme/"><i class="fa fa-code-fork fa-fw black-icon"></i> Version Scheme</a></li>
+        <li><a href="https://mirrors.kernel.org/qubes/iso/"><i class="fa fa-download fa-fw black-icon"></i> mirrors.kernel.org</a></li>
+        <li><a href="http://ftp.halifax.rwth-aachen.de/qubes/iso/"><i class="fa fa-download fa-fw black-icon"></i> ftp.halifax.rwth-aachen.de</a></li>
+        <li><a href="https://ftp.qubes-os.org/iso/"><i class="fa fa-download fa-fw black-icon"></i> ftp.qubes-os.org</a></li>
       </ul>
     </div>
-    <div class="col-lg-4 col-md-4">
-      <ul class="list-unstyled">
-        <li><a href="/doc/source-code/"><i class="fa fa-code fa-fw black-icon"></i> Source Code</a></li>
-        <li><a href="/doc/license/"><i class="fa fa-file-text-o fa-fw black-icon"></i> Software License</a></li>
-      </ul>
-    </div>
-    <div class="col-lg-4 col-md-4">
-      <ul class="list-unstyled">
-        <li><a href="/security/"><i class="fa fa-lock fa-fw black-icon"></i> Security Information</a></li>
-        <li><a href="/doc/architecture/"><i class="fa fa-cubes fa-fw black-icon"></i> OS Architecture</a></li>
-      </ul>
+  </div>
+  <div class="col-lg-8 col-md-8">
+    <div class="white-box more-bottom page-content">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <h3>About Qubes OS</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 col-md-5">
+          <ul class="list-unstyled">
+            <li><a href="/doc/source-code/"><i class="fa fa-code fa-fw black-icon"></i> Source Code</a></li>
+            <li><a href="/doc/license/"><i class="fa fa-file-text-o fa-fw black-icon"></i> Software License</a></li>
+            <li><a href="/doc/architecture/"><i class="fa fa-cubes fa-fw black-icon"></i> OS Architecture</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-7 col-md-7">
+          <ul class="list-unstyled">
+            <li><a href="/doc/supported-versions/"><i class="fa fa-history fa-fw black-icon"></i> Supported Versions</a></li>
+            <li><a href="/doc/version-scheme/"><i class="fa fa-code-fork fa-fw black-icon"></i> Version Scheme</a></li>
+            <li><a href="/security/"><i class="fa fa-lock fa-fw black-icon"></i> Security Information</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>

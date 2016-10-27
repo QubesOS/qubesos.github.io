@@ -14,6 +14,30 @@ redirect_from:
 Qubes Mailing Lists
 ===================
 
+qubes-announce
+--------------
+
+This is a read-only list for those who wish to receive only very important,
+infrequent messages. Only the core Qubes team can post to this list, and only
+[Qubes Security Bulletins (QSBs)][qsb] and new Qubes OS releases are announced
+here.
+
+### How to subscribe
+
+#### Google Groups
+
+ * To subscribe to the list, send a blank email to
+   `qubes-announce+subscribe@googlegroups.com`.
+   * Note: A Gmail account is *not* required. Any email address will work.
+ * To unsubscribe, send a blank email to
+   `qubes-announce+unsubscribe@googlegroups.com`.
+ * This list can also be browsed via an optional [Google Groups web
+   interface][qubes-announce-web].
+
+
+Discussion list guidelines
+--------------------------
+
 Qubes discussions take place on two mailing lists: `qubes-users` and
 `qubes-devel`, both of which are explained below. Please send all questions
 regarding Qubes to one of these two lists. **Please do not send questions to
@@ -21,10 +45,6 @@ individual Qubes developers.** By sending a message to the appropriate mailing
 list, you are not only giving others a chance to help you, but you may also be
 helping others by starting a public discussion about a shared problem or
 interest.
-
-
-Mailing list guidelines
------------------------
 
 These are open mailing lists where people freely come together to discuss Qubes
 and voluntarily help each other out of mutual interest and good will. They are
@@ -118,8 +138,8 @@ guidelines.
    something that we may not be able or willing to accept.
 
 
-The **qubes-users** list
-------------------------
+qubes-users
+-----------
 
 ### How to use this list
 
@@ -188,8 +208,8 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
     click on **OK**. Thunderbrid will automatically remove the newsgroup.
 
 
-The **qubes-devel** list
-------------------------
+qubes-devel
+-----------
 
 ### How to use this list
 
@@ -248,6 +268,8 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
     click on **OK**. Thunderbrid will automatically remove the newsgroup.
 
 
+[qsb]: /doc/security-bulletins/
+[qubes-announce-web]: https://groups.google.com/group/qubes-announce
 [top-post]: https://en.wikipedia.org/wiki/Posting_style
 [roadmap]: https://github.com/QubesOS/qubes-issues/milestones
 [smart-questions]: http://www.catb.org/esr/faqs/smart-questions.html

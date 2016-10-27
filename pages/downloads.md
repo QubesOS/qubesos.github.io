@@ -152,7 +152,7 @@ redirect_from:
   </div>
   <div class="col-lg-4 col-md-4">
     <div class="white-box more-bottom page-content">
-      <h3 id="versions">Versions</h3>
+      <h3 id="versions">Version Information</h3>
       <ul class="list-unstyled">
         <li><a href="/doc/supported-versions/"><i class="fa fa-history fa-fw black-icon"></i> Supported Versions</a></li>
         <li><a href="/doc/version-scheme/"><i class="fa fa-code-fork fa-fw black-icon"></i> Version Scheme</a></li>

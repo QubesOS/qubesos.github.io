@@ -71,12 +71,12 @@ redirect_from:
       <table class="table">
         <thead>
           <tr>
-            <th>Type</th>
             <th>Download</th>
             <th>Verify
               <a class="fa fa-question-circle" href="/doc/verifying-signatures/"
                  title="How do I verify my download?"></a></th>
             <th>File</th>
+            <th>Size</th>
             <th>Source</th>
           </tr>
         </thead>
@@ -84,48 +84,57 @@ redirect_from:
           {% for sourcedata in release.sources %}
           {% assign source_name = sourcedata[0] %}
           {% assign source = sourcedata[1] %}
-          <tr>
-            <td>
-              <strong>{{ source.type }}</strong>
-            </td>
-            <td>
-              <a class="btn btn-primary" href="{{ source.url }}">
-                <i class="fa fa-download"></i> Download
-              </a>
-            </td>
-            <td>
-              {% for verifier in source.verifiers %}
-                {% if verifier[0] == "hash" %}
-                <a title="MD5, SHA-128, SHA-256, and SHA-512 hash values" class="btn btn-default" href="{{ verifier[1] }}">Digests</a>
-                {% elsif verifier[0] == "sig" %}
-                <a title="Detached PGP signature file" class="btn btn-default" href="{{ verifier[1] }}">Signature</a>
-                {% elsif verifier[0] == "key" %}
-                <a title="PGP Release Signing Key" class="btn btn-default" href="{{ verifier[1] }}">PGP Key</a>
-                {% endif %}
-              {% endfor %}
-            </td>
-            <td>
-              <code>{{ source.filename }}</code><br>
-              <strong>Size:</strong> {{ source.size }}
-            </td>
-            <td>
-              <a href="https://{{ source_name }}/">{{ source_name }}</a><br/>
-              <strong>Method:</strong> {{ source.method }}
-            </td>
-          </tr>
+            {% if source_name contains "mirrors.kernel.org" %}
+            <tr>
+              <td>
+                <a class="btn btn-primary btn-block" href="{{ source.url }}">
+                  <i class="fa fa-download"></i> {{ source.type }}
+                </a>
+              </td>
+              <td>
+                {% for verifier in source.verifiers %}
+                  {% if verifier[0] == "hash" %}
+                  <a title="MD5, SHA-128, SHA-256, and SHA-512 hash values" class="btn btn-default" href="{{ verifier[1] }}">Digests</a>
+                  {% elsif verifier[0] == "sig" %}
+                  <a title="Detached PGP signature file" class="btn btn-default" href="{{ verifier[1] }}">Signature</a>
+                  {% elsif verifier[0] == "key" %}
+                  <a title="PGP Release Signing Key" class="btn btn-default" href="{{ verifier[1] }}">PGP Key</a>
+                  {% endif %}
+                {% endfor %}
+              </td>
+              <td>
+                <code>{{ source.filename }}</code>
+              </td>
+              <td>
+                {{ source.size }}
+              </td>
+              <td>
+                <a href="https://{{ source_name }}/">{{ source_name }}</a>
+              </td>
+            </tr>
+            {% endif %}
           {% endfor %}
         </tbody>
       </table>
-      <ul>
         {% for docdata in release.docs %}
         {% assign doc_name = docdata[0] %}
         {% assign doc = docdata[1] %}
-        {% assign featured = doc.featured | default: "no" %}
-        <li>
-          <a href="{{ doc.url }}">{{ doc_name }}</a>
-        </li>
+          {% if doc_name == "Installation Guide" %}
+            <a class="btn btn-link" href="{{ doc.url }}"><i class="fa fa-book fa-fw black-icon"></i>{{ doc_name }}</a>
+          {% endif %}
+          {% if doc_name == "Release Notes" %}
+            <a class="btn btn-link" href="{{ doc.url }}"><i class="fa fa-file-text-o fa-fw black-icon"></i>{{ doc_name }}</a>
+          {% endif %}
+          {% if doc_name == "Release Schedule" %}
+            <a class="btn btn-link" href="{{ doc.url }}"><i class="fa fa-calendar fa-fw black-icon"></i>{{ doc_name }}</a>
+          {% endif %}
+          {% if doc_name contains "Upgrading" %}
+            <a class="btn btn-link" href="{{ doc.url }}"><i class="fa fa-arrow-circle-up fa-fw black-icon"></i>{{ doc_name }}</a>
+          {% endif %}
         {% endfor %}
-      </ul>
+          <a class="btn btn-link" href="#mirrors"><i class="fa fa-download fa-fw black-icon"></i>All Mirrors</a>
+          <a class="btn btn-link" href="#versions"><i class="fa fa-history fa-fw black-icon"></i>Versions</a>
+          <a class="btn btn-link" href="#source-code"><i class="fa fa-code fa-fw black-icon"></i>Source Code</a>
       <hr class="more-top more-bottom">
       {% endfor %}
     </div>
@@ -134,7 +143,7 @@ redirect_from:
 <div class="row">
   <div class="col-lg-4 col-md-4">
     <div class="white-box more-bottom page-content">
-      <h3 id="mirrors">Mirrors</h3>
+      <h3 id="mirrors">Download Mirrors</h3>
       <ul class="list-unstyled">
         <li><a href="https://mirrors.kernel.org/qubes/iso/"><i class="fa fa-download fa-fw black-icon"></i> mirrors.kernel.org</a></li>
         <li><a href="http://ftp.halifax.rwth-aachen.de/qubes/iso/"><i class="fa fa-download fa-fw black-icon"></i> ftp.halifax.rwth-aachen.de</a></li>
@@ -142,29 +151,24 @@ redirect_from:
       </ul>
     </div>
   </div>
-  <div class="col-lg-8 col-md-8">
+  <div class="col-lg-4 col-md-4">
     <div class="white-box more-bottom page-content">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <h3>About Qubes OS</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-5 col-md-5">
-          <ul class="list-unstyled">
-            <li><a href="/doc/source-code/"><i class="fa fa-code fa-fw black-icon"></i> Source Code</a></li>
-            <li><a href="/doc/license/"><i class="fa fa-file-text-o fa-fw black-icon"></i> Software License</a></li>
-            <li><a href="/doc/architecture/"><i class="fa fa-cubes fa-fw black-icon"></i> OS Architecture</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-7 col-md-7">
-          <ul class="list-unstyled">
-            <li><a href="/doc/supported-versions/"><i class="fa fa-history fa-fw black-icon"></i> Supported Versions</a></li>
-            <li><a href="/doc/version-scheme/"><i class="fa fa-code-fork fa-fw black-icon"></i> Version Scheme</a></li>
-            <li><a href="/security/"><i class="fa fa-lock fa-fw black-icon"></i> Security Information</a></li>
-          </ul>
-        </div>
-      </div>
+      <h3 id="versions">Versions</h3>
+      <ul class="list-unstyled">
+        <li><a href="/doc/supported-versions/"><i class="fa fa-history fa-fw black-icon"></i> Supported Versions</a></li>
+        <li><a href="/doc/version-scheme/"><i class="fa fa-code-fork fa-fw black-icon"></i> Version Scheme</a></li>
+        <li><a href="/security/"><i class="fa fa-lock fa-fw black-icon"></i> Security Information</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <div class="white-box more-bottom page-content">
+      <h3 id="source-code">Source Code</h3>
+      <ul class="list-unstyled">
+        <li><a href="/doc/source-code/"><i class="fa fa-code fa-fw black-icon"></i> Source Code</a></li>
+        <li><a href="/doc/license/"><i class="fa fa-file-text-o fa-fw black-icon"></i> Software License</a></li>
+        <li><a href="/doc/architecture/"><i class="fa fa-cubes fa-fw black-icon"></i> OS Architecture</a></li>
+      </ul>
     </div>
   </div>
 </div>

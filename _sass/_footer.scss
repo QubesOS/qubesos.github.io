@@ -1,6 +1,6 @@
 /* Footer */
 
-.footer-nav, .footer-text {
+.footer-nav {
 
   h5 {
     font-family: $ostrich-heavy;
@@ -25,7 +25,7 @@
 
 }
 
-.footer-logo {
+.footer-logo a {
   padding: $spacing-unit;
   font-family: $ostrich;
   font-size: 30px;

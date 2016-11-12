@@ -213,7 +213,7 @@ technical details have been omitted here for the sake of presentation.
 
 [disposable qube]: /doc/dispvm/
 [networking]: /doc/networking/
-[firewalls]: /doc/qubes-firewall/
+[firewalls]: /doc/firewall/
 [USB]: /doc/usb/
 [file]: /doc/copying-files/
 [clipboard]: /doc/copy-paste/

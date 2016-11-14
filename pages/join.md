@@ -7,9 +7,11 @@ permalink: /join/
 Join the Qubes OS Team!
 =======================
 
-The Qubes OS Project is currently seeking individuals for the positions listed
+The Qubes OS Project is seeking individuals for the positions listed
 below. If you're interested in any of these positions, please send an email to
 [Marek Marczykowski-Górecki](mailto:marmarek@invisiblethingslab.com).
+
+Besides the positions below, there are many different ways you can [contribute to the Qubes OS project](/doc/contributing/). 
 
 Stable release manager
 ----------------------

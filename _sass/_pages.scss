@@ -2,7 +2,7 @@
 
 #tour {
 
-  #player, #player1 {
+  #player0 #player1 {
     width: 702px;
     height: 395px;
     border: 1px solid $gray-light;
@@ -13,7 +13,7 @@
     }
   }
 
-  #player-menu {
+  #player0-menu, #player1-menu {
 
     li {
       padding-bottom: ($spacing-unit / 2);
@@ -30,7 +30,7 @@
 @media(max-width: $screen-md-max) {
 
   #tour {
-    #player, #player1 {
+    #player0, #player1 {
       width: 100%;
     }
   }

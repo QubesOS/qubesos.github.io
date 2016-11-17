@@ -53,7 +53,7 @@ $(document).ready(function() {
 
   // Uses the jQuery plugin, TubePlayer
   // https://github.com/nirvanatikku/jQuery-TubePlayer-Plugin/
-  var tourVideo = $("#player").tubeplayer({
+  var tourVideo0 = $("#player0").tubeplayer({
       width: 700,
       height: 393,
       allowFullScreen: "true",
@@ -79,7 +79,7 @@ $(document).ready(function() {
       onSeek: function(time){}
   })
 
-  var tourVideo = $("#player1").tubeplayer({
+  var tourVideo1 = $("#player1").tubeplayer({
       width: 700,
       height: 393,
       allowFullScreen: "true",
@@ -105,25 +105,25 @@ $(document).ready(function() {
       onSeek: function(time){}
   })
 
-  $('.player-seek').on('click', function(e) {
+  $('.player0-seek').on('click', function(e) {
     e.preventDefault()
     //console.log('Jump to: ' + $(this).attr('href'))
-    tourVideo.tubeplayer("seek", $(this).attr('href'))
-    tourVideo.tubeplayer("play")
+    tourVideo0.tubeplayer("seek", $(this).attr('href'))
+    tourVideo0.tubeplayer("play")
 
-    $.each($('#player-menu li'), function() {
+    $.each($('#player0-menu li'), function() {
       $(this).find('i.fa').remove()
     })
 
     $(this).prepend('<i class="fa fa-arrow-right"></i> ')
   })
 
-  $('.player-play').on('click', function(e) {
+  $('.player1-play').on('click', function(e) {
     e.preventDefault()
     //console.log('Jump to: ' + $(this).attr('href'))
-    tourVideo.tubeplayer("play", $(this).attr('href'))
+    tourVideo1.tubeplayer("play", $(this).attr('href'))
 
-    $.each($('#player-menu li'), function() {
+    $.each($('#player1-menu li'), function() {
       $(this).find('i.fa').remove()
     })
 

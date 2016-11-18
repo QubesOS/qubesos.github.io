@@ -8,12 +8,13 @@ redirect_from:
 - /wiki/Donations/
 ---
 
-## ![btc](/attachment/site/btc.png) Donate Bitcoin
+[Donate using Bitcoin](#bitcoin) [Donate using Credit Card](#credit-card)
 
-Thanks for your interest in supporting Qubes! The Qubes Project currently
-accepts monetary donations in Bitcoins. If you are interested instead in
-donating hardware or providing substantial and sustained [funding], please visit
-the [Qubes Partners page] and send us an email.
+Thanks for your interest in supporting Qubes! The Qubes Project accepts monetary donations in [Bitcoins](#bitcoin) (preferred) or [credit card](#credit-card). If you are interested instead in donating hardware or providing substantial and sustained [funding], please visit the [Qubes Partners page] and send us an email.
+
+## ![btc](/attachment/site/btc.png) <a name="bitcoin">Donate Bitcoin</a>
+
+Bitcoin donations have zero administrative overhead for us, which means 100% of your donation goes towards supporting Qubes development!
 
 #### Donation Address:
 
@@ -39,6 +40,10 @@ The donation address can be verified via the [Qubes Security Pack]
 instructions for verifying the digital signatures are available [here][verify].
 
 You can also view the address on [blockexplorer.com] and [blockchain.info].
+
+## Donate Using <a name="credit-card">Credit Card</a>
+
+You can donate towards Qubes development using your credit card through [Open Collective](https://opencollective.com/qubes-os). Unlike donating with Bitcoin, we lose [~14%](https://opencollective.com/faq) of your donation to administrative overhead.
 
 ---
 

@@ -120,7 +120,7 @@ article table {
     display: block;
     overflow: auto;
     border-collapse: collapse;
-    max-height: 55vh;
+    white-space: nowrap;
 }
 article td, article th {
     border: 1px solid #ddd;

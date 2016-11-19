@@ -26,7 +26,11 @@ secure" OS*
 
 ## Hardware Certification Requirements
 
-Please see the [updated requirements] for Qubes R4.x certification.
+Please see the [updated requirements] for Qubes 4.x certification.
+
+**Note:** These are the requirements for hardware certification, *not* the
+requirements for *running* Qubes 4.x. For the latter, please see the
+[system requirements for Qubes 4.x].
 
 ## Hardware Certification Process
 
@@ -50,8 +54,10 @@ themselves before shipping to us. While we are willing to troubleshoot
 simple issues, we will need to charge a consulting fee for more engaging
 work.
 
-If you are interested in having your hardware certified, please [contact us](mailto:joanna@invisiblethingslab.com)
+If you are interested in having your hardware certified, please [contact us].
 
 [Qubes-certified Laptops]: /doc/certified-laptops/
 [updated requirements]: /news/2016/07/21/new-hw-certification-for-q4/
+[system requirements for Qubes 4.x]: https://www.qubes-os.org/doc/system-requirements/#qubes-release-4x
+[contact us]: mailto:business@qubes-os.org
 

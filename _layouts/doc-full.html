@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <body>
+      {% include header.html %}
+      <div class="container-fluid">
+        <h1 class="more-top add-left">
+          <i class="fa fa-book"></i> Documentation
+        </h1>
+        <div class="more-bottom white-box page-content">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+              <article id="doc-content" class="post-content">
+                {{ content }}
+              </article>
+            </div>
+          </div>
+        </div>
+        {% include footer.html %}
+      </div>
+  </body>
+</html>

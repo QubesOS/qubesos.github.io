@@ -8,13 +8,18 @@ redirect_from:
 - /wiki/Donations/
 ---
 
-[Donate using Bitcoin](#bitcoin) [Donate using Credit Card](#credit-card)
+Thank you for your interest in supporting Qubes! The Qubes Project accepts
+monetary donations in
+<a href="#bitcoin"><i class="fa fa-btc black-icon" aria-hidden="true"></i> Bitcoin</a>
+(preferred) or by
+<a href="#credit-card"><i class="fa fa-credit-card black-icon" aria-hidden="true"></i> Credit Card</a>.
+If you are interested instead in donating hardware or providing substantial and
+sustained [funding], please visit the [Qubes Partners page].
 
-Thanks for your interest in supporting Qubes! The Qubes Project accepts monetary donations in [Bitcoins](#bitcoin) (preferred) or [credit card](#credit-card). If you are interested instead in donating hardware or providing substantial and sustained [funding], please visit the [Qubes Partners page] and send us an email.
+<h2 id="bitcoin"><img src="/attachment/site/btc.png"> Donate Bitcoin</h2>
 
-## ![btc](/attachment/site/btc.png) <a name="bitcoin">Donate Bitcoin</a>
-
-Bitcoin donations have zero administrative overhead for us, which means 100% of your donation goes towards supporting Qubes development!
+Bitcoin donations have zero administrative overhead for us, which means 100% of
+your donation goes towards supporting Qubes development!
 
 #### Donation Address:
 
@@ -27,23 +32,25 @@ Bitcoin donations have zero administrative overhead for us, which means 100% of 
   </div>
 </form>
 
+#### How to Verify the Address
+
+The donation address can be verified via the [Qubes Security Pack]
+(QSP or `qubes-secpack`), specifically in the [fund] directory. Detailed
+instructions for verifying the digital signatures are available [here][verify].
+You can also view the address on [blockexplorer.com] and [blockchain.info].
+
 #### About the Donation Fund
 
 The Qubes Project maintains a decentralized Bitcoin fund using a
 multi-signature wallet. This means that no single person is capable of spending
 these funds. For further details, please see [here][announcement].
 
-#### How to Verify the Address
+<h2 id="credit-card"><i class="fa fa-credit-card" aria-hidden="true"></i> Donate with a Credit Card</h2>
 
-The donation address can be verified via the [Qubes Security Pack]
-(QSP or `qubes-secpack`), specifically in the [fund] directory. Detailed
-instructions for verifying the digital signatures are available [here][verify].
-
-You can also view the address on [blockexplorer.com] and [blockchain.info].
-
-## Donate Using <a name="credit-card">Credit Card</a>
-
-You can donate towards Qubes development using your credit card through [Open Collective](https://opencollective.com/qubes-os). Unlike donating with Bitcoin, we lose [~14%](https://opencollective.com/faq) of your donation to administrative overhead.
+You can donate towards Qubes development using your credit card through
+[Open Collective]. Please note that, unlike [Bitcoin donations], we lose
+[~14%][open-collective-faq] of every credit card donation to administrative
+overhead.
 
 ---
 
@@ -62,4 +69,7 @@ You can donate towards Qubes development using your credit card through [Open Co
 [verify]: /doc/security-pack/#how-to-obtain-verify-and-read
 [blockexplorer.com]: https://blockexplorer.com/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
 [blockchain.info]: https://blockchain.info/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
+[Open Collective]: https://opencollective.com/qubes-os
+[Bitcoin donations]: #bitcoin
+[open-collective-faq]: https://opencollective.com/faq
 

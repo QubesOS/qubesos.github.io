@@ -1,5 +1,5 @@
-- title: The Basics
-  folder: basics
+- title: User Basics
+  folder: basics_user
 
 - title: Choosing Your Hardware
   folder: hardware
@@ -31,5 +31,21 @@
 - title: Reference Pages
   folder: reference
 
-- title: For Developers
-  folder: developers
+- title: Developer Basics
+  folder: basics_dev
+
+- title: System
+  folder: system
+
+- title: Services
+  folder: services
+
+- title: Debugging
+  folder: debugging
+
+- title: Building
+  folder: building
+
+- title: Releases
+  folder: releases
+

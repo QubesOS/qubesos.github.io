@@ -102,9 +102,39 @@ content:
 Instructions
 ------------
 
- * To clone the submodules along with this repo, use `git clone --recursive`.
- * To update the submodules, use `git submodule foreach git pull`.
- * To run Jekyll on your localhost, use `jekyll s -V --trace (--skip-initial)`.
+1. Install dependencies:
+
+    $ sudo dnf install redhat-rpm-config ruby ruby-devel zlib-devel nodejs
+
+2. Clone this repo, including all submodules, and enter it:
+
+    $ git clone --recursive https://github.com/QubesOS/qubesos.github.io.git
+    $ cd qubesos.github.io/
+
+3. Update RubyGems:
+
+    $ sudo gem update --system
+
+4. Install required Gems:
+
+    $ gem install jekyll bundler github-pages
+
+5. Serve the website:
+
+    $ bundle exec jekyll serve
+
+6. Open your browser, and navigate to:
+
+    http://127.0.0.1:4000/
+
+Done!
+
+### Notes ###
+
+ * To update the submodules, use `git submodule foreach git pull --tags`.
+ * For troubleshooting with RubyGems, see: <http://guides.rubygems.org/>
+ * For troubleshooting with Jekyll, see: <https://jekyllrb.com/docs/home/>
+ * For troubleshooting with GitHub pages and Jekyll, see: <https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/>
  * To run on a Git post-receive hook, use:
 
         GIT_REPO=/usr/home/git/repositories/www.qubes-os.org.git

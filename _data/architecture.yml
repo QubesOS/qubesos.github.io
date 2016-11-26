@@ -19,6 +19,8 @@
   - title: OS Architecture
     url: /doc/architecture/
     icon: fa-cubes
+  - title: Security Information
+    url: /security/
 
 - title: Downloads
   url: /downloads/
@@ -47,6 +49,8 @@
   sub-pages:
   - title: The Basics
     url: /doc/#the-basics
+  - title: Security Information
+    url: /doc/#security-information
   - title: Choosing Hardware
     url: /doc/#choosing-your-hardware
   - title: Installing Qubes
@@ -55,8 +59,6 @@
     url: /doc/#common-tasks
   - title: Managing OSes
     url: /doc/#managing-operating-systems-within-qubes
-  - title: Security Guides
-    url: /doc/#security-guides
   - title: Troubleshooting
     url: /doc/#troubleshooting
   - title: Developer Docs
@@ -90,10 +92,10 @@
   url: /team/
   icon: fa-users
   sub-pages:
-  - title: Security Information
+  - title: Report a Security Issue
     url: /security/
     icon: fa-lock
-  - title: Bug Reports
+  - title: Report a Bug
     url: /doc/reporting-bugs/
   - title: Mailing Lists
     url: /mailing-lists/

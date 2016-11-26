@@ -34,6 +34,9 @@
 - title: Developer Basics
   folder: basics_dev
 
+- title: Security Information
+  folder: security-info
+
 - title: System
   folder: system
 

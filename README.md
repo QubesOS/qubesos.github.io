@@ -104,28 +104,28 @@ Instructions
 
 1. Install dependencies:
 
-    $ sudo dnf install redhat-rpm-config ruby ruby-devel zlib-devel nodejs
+        $ sudo dnf install redhat-rpm-config ruby ruby-devel zlib-devel nodejs
 
 2. Clone this repo, including all submodules, and enter it:
 
-    $ git clone --recursive https://github.com/QubesOS/qubesos.github.io.git
-    $ cd qubesos.github.io/
+        $ git clone --recursive https://github.com/QubesOS/qubesos.github.io.git
+        $ cd qubesos.github.io/
 
 3. Update RubyGems:
 
-    $ sudo gem update --system
+        $ sudo gem update --system
 
 4. Install required Gems:
 
-    $ gem install jekyll bundler github-pages
+        $ gem install jekyll bundler github-pages
 
 5. Serve the website:
 
-    $ bundle exec jekyll serve
+        $ bundle exec jekyll serve
 
 6. Open your browser, and navigate to:
 
-    http://127.0.0.1:4000/
+        http://127.0.0.1:4000/
 
 Done!
 

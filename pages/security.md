@@ -17,11 +17,12 @@ redirect_from:
 Qubes OS Project Security Information
 =====================================
 
--   [Qubes Security Pack](/doc/security-pack/)
--   [Qubes Security Bulletins](/doc/security-bulletins/)
--   [Qubes Security Goals](/doc/security-goals/)
--   [How to Verify Signatures](/doc/verifying-signatures/)
--   [Qubes PGP Keys](http://keys.qubes-os.org/keys/)
+-   [Security Goals](/doc/security-goals/)
+-   [Security Pack](/doc/security-pack/)
+-   [Security Bulletins](/doc/security-bulletins/)
+-   [Canaries](/doc/canaries/)
+-   [Why and How to Verify Signatures](/doc/verifying-signatures/)
+-   [PGP Keys](http://keys.qubes-os.org/keys/)
 
 Reporting Security Issues in Qubes OS
 -------------------------------------

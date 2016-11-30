@@ -48,7 +48,9 @@ these funds. For further details, please see [here][announcement].
 <h2 id="credit-card"><i class="fa fa-credit-card" aria-hidden="true"></i> Donate with a Credit Card</h2>
 
 You can donate towards Qubes development using your credit card through
-[Open Collective] (which uses [Stripe][stripe] to process financial transactions). Please note that, unlike [Bitcoin donations], we lose [~14%][open-collective-faq] of every credit card donation to administrative
+[Open Collective] (which uses [Stripe][stripe] to process financial
+transactions). Please note that, unlike [Bitcoin donations], we lose
+[~14%][open-collective-faq] of every credit card donation to administrative
 overhead.
 
 ---

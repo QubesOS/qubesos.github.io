@@ -8,6 +8,8 @@ redirect_from:
 - /wiki/Donations/
 ---
 
+**News:** [Qubes OS Begins Commercialization and Community Funding Efforts!](/news/2016/11/30/qubes-commercialization/)
+
 Thank you for your interest in supporting Qubes! The Qubes Project accepts
 monetary donations in
 <a href="#bitcoin"><i class="fa fa-btc black-icon" aria-hidden="true"></i> Bitcoin</a>

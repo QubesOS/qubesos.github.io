@@ -5,7 +5,12 @@
       {% include header.html %}
       <div class="container">
         <h1 class="more-top add-left">
-          <i class="fa fa-book"></i> Documentation
+          <i class="fa fa-book"></i>
+            {% assign doc_segments = page.relative_path | split: '/' %}
+            {% for section in site.data.doc %}
+            {% for topic in section.topics %}
+            {% if doc_segments contains topic.folder %}
+              {{section.category}}
         </h1>
         <div class="more-bottom white-box page-content">
           <div class="row">
@@ -16,11 +21,9 @@
             </div>
             <div class="col-lg-3 col-md-3 col-xs-4 text-center">
               <div class="heading-label">
-              {% assign doc_segments = page.relative_path | split: '/' %}
-              {% for section in site.data.doc %}
-              {% if doc_segments contains section.folder %}
-                <h5 class="remove-bottom">{{section.title}}</h5>
+                <h5 class="remove-bottom">{{topic.title}}</h5>
               {% endif %}
+              {% endfor %}
               {% endfor %}
               </div>
               <div id="page-toc"></div>

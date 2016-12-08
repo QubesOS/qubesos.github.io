@@ -1,54 +1,60 @@
-- title: User Basics
-  folder: basics_user
+- category: User Documentation
+  topics:
 
-- title: Choosing Your Hardware
-  folder: hardware
+  - title: User Basics
+    folder: basics_user
 
-- title: Installing & Upgrading Qubes
-  folder: installing
+  - title: Choosing Your Hardware
+    folder: hardware
 
-- title: Common Tasks
-  folder: common-tasks
+  - title: Installing & Upgrading Qubes
+    folder: installing
 
-- title: Managing Operating Systems
-  folder: managing-os
+  - title: Common Tasks
+    folder: common-tasks
 
-- title: Security Guides
-  folder: security
+  - title: Managing Operating Systems
+    folder: managing-os
 
-- title: Privacy Guides
-  folder: privacy
+  - title: Security Guides
+    folder: security
 
-- title: Configuration Guides
-  folder: configuration
+  - title: Privacy Guides
+    folder: privacy
 
-- title: Customization Guides
-  folder: customization
+  - title: Configuration Guides
+    folder: configuration
 
-- title: Troubleshooting
-  folder: troubleshooting
+  - title: Customization Guides
+    folder: customization
 
-- title: Reference Pages
-  folder: reference
+  - title: Troubleshooting
+    folder: troubleshooting
 
-- title: Developer Basics
-  folder: basics_dev
+  - title: Reference Pages
+    folder: reference
 
-- title: Security Information
-  folder: security-info
+- category: Developer Documentation
+  topics:
 
-- title: System
-  folder: system
+  - title: Developer Basics
+    folder: basics_dev
 
-- title: Services
-  folder: services
+  - title: Security Information
+    folder: security-info
 
-- title: Debugging
-  folder: debugging
+  - title: System
+    folder: system
 
-- title: Building
-  folder: building
+  - title: Services
+    folder: services
 
-- title: Releases
-  folder: releases
+  - title: Debugging
+    folder: debugging
+
+  - title: Building
+    folder: building
+
+  - title: Releases
+    folder: releases
 

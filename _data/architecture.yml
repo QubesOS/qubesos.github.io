@@ -42,6 +42,8 @@
     url: /doc/source-code/
   - title: Software License
     url: /doc/license/
+  - title: Download Mirrors
+    url: /downloads/#mirrors
 
 - title: Docs
   url: /doc/
@@ -59,6 +61,10 @@
     url: /doc/#common-tasks
   - title: Managing OSes
     url: /doc/#managing-operating-systems-within-qubes
+  - title: Security Guides
+    url: /doc/#security-guides
+  - title: Privacy Guides
+    url: /doc/#privacy-guides
   - title: Troubleshooting
     url: /doc/#troubleshooting
   - title: Developer Docs
@@ -70,8 +76,13 @@
   icon: fa-newspaper-o
   sub-pages:
   - title: Announcements
-    url: /news
-    icon: fa-bullhorn
+    url: /news/categories/#announcements
+  - title: Articles
+    url: /news/categories/#articles
+  - title: Press
+    url: /news/categories/#press
+  - title: Talks
+    url: /news/categories/#talks
   - title: Research
     icon: fa-file-text
     url: /research/

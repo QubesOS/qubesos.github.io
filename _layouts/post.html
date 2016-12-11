@@ -15,15 +15,31 @@
                 <h1 class="post-title remove-bottom">{{ page.title }}</h1>
                 <p class="post-meta">
                   {{ page.date | date: "%b %-d, %Y" }}
-                  by <strong>{% if page.author %}{{ page.author }}{% else %}{{ site.default_author }}{% endif %}</strong>
+                  by <strong>
+                  {% assign author_team = false %}
+                  {% for member in site.data.team %}
+                    {% if page.author == member.name %}
+                      {% assign author_team = true %}
+                    {% endif %}
+                  {% endfor %}
+                  {% if page.author %}
+                    {% if author_team %}
+                      <a href="/team/#{{ page.author | slugify }}">{{ page.author }}</a>
+                    {% else %}
+                      {{ page.author }}
+                    {% endif %}
+                  {% else %}
+                    {{ site.default_author }}
+                  {% endif %}
+                  </strong>
                   {% if page.meta %}{{ page.meta }}{% endif %}
                   in <strong>
                   {% if page.categories.first %}
-                  {% for category in page.categories %}
-                    {{ category | capitalize }}{% if forloop.index < forloop.length %},{% endif %}
-                  {% endfor %}
+                    {% for category in page.categories %}
+                      <a href="/news/categories/#{{ category | slugify }}">{{ category | capitalize }}</a>{% if forloop.index < forloop.length %},{% endif %}
+                    {% endfor %}
                   {% else %}
-                    {{ site.default_category | capitalize }}
+                    <a href="/news/categories/#{{ site.default_category | slugify }}">{{ site.default_category | capitalize }}</a>
                   {% endif %}
                   </strong>
                 </p>

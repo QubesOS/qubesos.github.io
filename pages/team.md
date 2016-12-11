@@ -38,15 +38,15 @@ redirect_from:
         <div class="col-lg-2 col-md-2 col-sm-5 col-xs-12 text-center">
         <div class="picture more-bottom">
           {% if team.picture %}
-          <img src="/attachment/site/{{team.picture}}" title="Picture of {{team.name}}">
+          <a href="/team/#{{team.name | slugify}}"><img src="/attachment/site/{{team.picture}}" title="Picture of {{team.name}}"></a>
           {% else %}
           <i class="fa fa-user"></i>
           {% endif %}
         </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-7 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-7 col-xs-12" id="{{team.name | slugify}}">
           {% assign name_array = team.name | split:" " %}
-          <h4 class="half-bottom">{{team.name}}</h4>
+          <a href="/team/#{{team.name | slugify}}"><h4 class="half-bottom">{{team.name}}</h4></a>
           <em class="role half-bottom">{{team.role}}</em>
           {% if team.email %}
           <a href="mailto:{{team.email}}" class="add-right"><i class="fa fa-envelope"></i> Email</a>

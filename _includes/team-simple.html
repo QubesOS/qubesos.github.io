@@ -1,5 +1,5 @@
-<p>
-  <strong>{{team.name}}</strong><br>
+<p id="{{team.name | slugify}}">
+  <a href="/team/#{{team.name | slugify}}" class="black-link">{{team.name}}</a>
   <em>{{team.role}}</em><br>
   <a href="mailto:{{team.email}}"><i class="fa fa-envelope"></i> Email</a>
 </p>

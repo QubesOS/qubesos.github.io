@@ -11,11 +11,6 @@
         <div class="more-bottom white-box page-content">
           <div class="row">
             <div class="col-lg-10 col-md-10 col-xs-10">
-              {% if page.path == "news/index.html" %}
-              <article class="post-content">
-                {{ content }}
-              </article>
-              {% else %}
               <header class="post-header">
                 <h1 class="post-title remove-bottom">{{ page.title }}</h1>
                 <p class="post-meta">
@@ -36,7 +31,6 @@
               <article class="post-content">
                 {{ content }}
               </article>
-              {% endif %}
             </div>
           </div>
         </div>

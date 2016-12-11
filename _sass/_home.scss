@@ -56,7 +56,7 @@ div.featured-quotes {
       }
       small,
       footer {
-        color: $gray;
+        color: $gray-darker;
         font-family: $open-sans;
       }
   }
@@ -73,6 +73,20 @@ div.featured-quotes {
   a.avatar img {
     width: 85px;
     height: 85px;
+  }
+
+  a.avatar-large {
+    width: 170px;
+    height: 170px;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid $gray-light;
+    overflow: hidden;
+  }
+
+  a.avatar-large img {
+    width: 170px;
+    height: 170px;
   }
 
   img.logo {

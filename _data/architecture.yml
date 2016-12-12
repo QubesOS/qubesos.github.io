@@ -6,6 +6,8 @@
     url: /intro/
   - title: Video Tours
     url: /video-tours/
+  - title: From the Experts
+    url: /experts/
     icon: fa-play-circle
   - title: Screenshots
     url: /screenshots/
@@ -108,6 +110,10 @@
     icon: fa-lock
   - title: Report a Bug
     url: /doc/reporting-bugs/
+  - title: Press Inquiries
+    url: mailto:press@qubes-os.org
+  - title: Business Inquiries
+    url: mailto:business@qubes-os.org
   - title: Mailing Lists
     url: /mailing-lists/
     icon: fa-envelope-o
@@ -120,20 +126,15 @@
   - title: Hardware Certification
     url: /hardware-certification/
     icon: fa-laptop
-#  - title: Contact
-#    url: /contact/
-#    icon: fa-comments
 
 - title: Donate
   url: /donate/
   icon: fa-heart
   sub-pages:
-#  - title: Direct Donation
-#    url: /donate/#direct-donation
-#  - title: PayPal
-#    url: /donate#paypal/
   - title: Bitcoin
-    url: /donate
+    url: /donate/#bitcoin
+  - title: Credit Credit
+    url: /donate/#credit-card
   - title: Funding
     url: /funding/
     icon: fa-money

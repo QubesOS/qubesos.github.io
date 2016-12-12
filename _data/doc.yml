@@ -4,6 +4,9 @@
   - title: User Basics
     folder: basics_user
 
+  - title: Security Information
+    folder: security-info
+
   - title: Choosing Your Hardware
     folder: hardware
 
@@ -39,9 +42,6 @@
 
   - title: Developer Basics
     folder: basics_dev
-
-  - title: Security Information
-    folder: security-info
 
   - title: System
     folder: system

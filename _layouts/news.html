@@ -4,16 +4,24 @@
     <body>
       {% include header.html %}
       <div class="container">
-        <h1 class="more-top add-left">
-          <i class="fa fa-newspaper-o"></i> News
-          <a href="/news/categories/" class="btn btn-default more-left half-top"><i class="fa fa-tag" aria-hidden="true"></i> News by Category</a>
-          <a title="Qubes OS Userbase Statistics" href="/counter/" class="fa fa-bar-chart black-icon pull-right" aria-hidden="true"></a>
-          <a title="Subscribe via RSS" href="https://www.qubes-os.org/feed.xml" class="fa fa-rss-square pull-right more-right" aria-hidden="true"></a>
-          <a title="Facebook" href="https://www.facebook.com/QubesOS" class="fa fa-facebook-square pull-right" aria-hidden="true"></a>
-          <a title="Reddit" href="https://www.reddit.com/r/Qubes/" class="fa fa-reddit-square pull-right" aria-hidden="true"></a>
-          <a title="Twitter" href="https://twitter.com/QubesOS" class="fa fa-twitter-square pull-right" aria-hidden="true"></a>
-          <a title="GitHub" href="https://github.com/QubesOS" class="fa fa-github-square black-icon pull-right" aria-hidden="true"></a>
-        </h1>
+        <div class="row more-top">
+          <div class="col-lg-6 col-md-6">
+            <h1 class="add-left">
+              <i class="fa fa-newspaper-o"></i> News
+              <a href="/news/categories/" class="btn btn-default more-left half-top"><i class="fa fa-tag" aria-hidden="true"></i> News by Category</a>
+            </h1>
+          </div>
+          <div class="col-lg-6 col-md-6 text-right">
+            <h1>
+            <a title="GitHub" href="https://github.com/QubesOS" class="fa fa-github-square black-icon" aria-hidden="true"></a>
+            <a title="Twitter" href="https://twitter.com/QubesOS" class="fa fa-twitter-square" aria-hidden="true"></a>
+            <a title="Reddit" href="https://www.reddit.com/r/Qubes/" class="fa fa-reddit-square" aria-hidden="true"></a>
+            <a title="Facebook" href="https://www.facebook.com/QubesOS" class="fa fa-facebook-square" aria-hidden="true"></a>
+            <a title="Subscribe via RSS" href="https://www.qubes-os.org/feed.xml" class="fa fa-rss-square" aria-hidden="true"></a>
+            <a title="Qubes OS Userbase Statistics" href="/counter/" class="fa fa-bar-chart black-icon more-left" aria-hidden="true"></a>
+            </h1>
+          </div>
+        </div>
         <div class="more-bottom white-box page-content">
           <div class="row">
             <div class="col-lg-12 col-md-12 col-xs-12">

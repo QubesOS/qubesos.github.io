@@ -1,9 +1,10 @@
 # Site settings
-title: Qubes OS Project
+title: Qubes OS
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Qubes is a security-oriented, open-source operating system for personal
-  computers.
+  Qubes is a security-oriented, free and open-source operating system for
+  personal computers that allows you to securely compartmentalize your digital
+  life.
 #baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "https://www.qubes-os.org" # the base hostname & protocol for your site
 twitter_username: QubesOS
@@ -16,7 +17,7 @@ project_repo_wiki: "/qubes-wiki"
 project_repo_artwork: "/qubes-artwork"
 
 # Tor Mirror
-project_url_tor: "http://qubesosmamapaxpa.onion"
+#project_url_tor: "http://qubesosmamapaxpa.onion"
 
 # Build settings
 markdown: kramdown
@@ -42,6 +43,8 @@ allowed_categories:
   - announcements
   - releases
   - articles
+  - security
+  - talks
 
 default_author: "Qubes OS"
 default_category: "announcements"

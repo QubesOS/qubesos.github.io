@@ -59,7 +59,7 @@ $(document).ready(function() {
       allowFullScreen: "true",
       initialVideo: "dD0_gq_ugw8",
       start: 0,
-      preferredQuality: "h720",
+      preferredQuality: "hd720",
       showControls: true,
       showRelated: false,
       playsinline: false,
@@ -85,7 +85,7 @@ $(document).ready(function() {
       allowFullScreen: "true",
       initialVideo: "q7mCeYCrQ24",
       start: 0,
-      preferredQuality: "h720",
+      preferredQuality: "hd720",
       showControls: true,
       showRelated: false,
       playsinline: false,
@@ -130,6 +130,37 @@ $(document).ready(function() {
     $(this).prepend('<i class="fa fa-arrow-right"></i> ')
   })
 
+})
+</script>
+{% endif %}
+{% if page.layout == "post" %}
+<script src="{{ "/js/jquery.tubeplayer.min.js" | prepend: site.baseurl }}"></script>
+<script>
+$(document).ready(function() {
+  $("#video").tubeplayer({
+      width: 700,
+      height: 393,
+      allowFullScreen: "true",
+  {% if page.url == "/news/2016/12/17/interview-the-new-screen-savers/" %}
+      initialVideo: "549hjuc7trk",
+      start: 2007,
+  {% endif %}
+      preferredQuality: "hd720",
+      showControls: true,
+      showRelated: false,
+      playsinline: false,
+      autoPlay: false,
+      autoHide: true,
+      theme: "dark",
+      color: "white",
+      showinfo: false,
+      modestbranding: true,
+      annotations: true,
+      loop: 0,
+      protocol: 'https',
+      loadSWFObject: false,
+      iframed: true
+  })
 })
 </script>
 {% endif %}

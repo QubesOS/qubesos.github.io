@@ -115,12 +115,14 @@ guidelines.
    special need for privacy (in which case, use PGP encryption). This increases
    the likelihood that a greater quantity of useful information will be
    available to everyone in the future.
- * Quote selectively. Exclude advertisements in signatures and inline PGP
-   signature blocks. (Quoting the latter interferes with the ability of programs
-   like Enigmail to properly quote replies thereafter). Quote only the parts of
-   a message to which you're replying. If you're genuinely not sure whether some
-   portion of the body of your interlocutor's message should be included, it's
-   fine to err on the side of quoting more.
+ * Quote appropriately. If you're replying to a thread (whether your own or
+   someone else's), you should make sure to quote enough from previous messages
+   in the thread so that people reading your message can understand the context
+   without having to find and read earlier messages from that thread. Each reply
+   should continue the conversation and, ideally, be readable as a conversation
+   in itself. Do not quote advertisements in signatures or inline PGP signature
+   blocks. (Quoting the latter interferes with the ability of programs like
+   Enigmail to properly quote replies thereafter).
  * If you do not speak English, you should feel free to post in your own
    language. However, bear in mind that most members of the list can only read
    English. You may wish to include an automated translation in your message out

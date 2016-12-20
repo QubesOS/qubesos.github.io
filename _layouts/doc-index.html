@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <body>
+      {% include header.html %}
+      <div class="container">
+        <h1 class="more-top add-left">
+          <i class="fa fa-book"></i> {{ page.title }}
+        </h1>
+        <div class="white-box more-bottom page-content">
+        {{ content }}
+        </div>
+        {% include footer.html %}
+      </div>
+  </body>
+</html>

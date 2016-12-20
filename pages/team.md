@@ -29,21 +29,21 @@ redirect_from:
           <a href="/team/#{{team.name | slugify}}"><h4 class="half-bottom">{{team.name}}</h4></a>
           <em class="role half-bottom">{{team.role}}</em>
           {% if team.email %}
-          <a href="mailto:{{team.email}}" class="add-right"><i class="fa fa-envelope"></i> Email</a>
+          <a href="mailto:{{team.email}}" class="add-right"><i class="fa fa-envelope fa-fw"></i> Email</a>
           {% endif %}
           {% if team.website %}
-          <a href="{{team.website}}" class="add-right" target="blank"><i class="fa fa-globe"></i> Website</a>
+          <a href="{{team.website}}" class="add-right" target="blank"><i class="fa fa-globe fa-fw"></i> Website</a>
           {% endif %}
           {% if team.twitter %}
-          <a href="https://twitter.com/{{team.twitter}}" target="blank"><i class="fa fa-twitter"></i> Twitter</a>
+          <a href="https://twitter.com/{{team.twitter}}" target="blank"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
           {% endif %}
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
           {% if team.fingerprint %}
-          <span class="fingerprint" title="{{team.name}}'s PGP Encryption Key Fingerprint">{{team.fingerprint}}</span>
+          <span class="fingerprint" title="{{team.name}}'s PGP Key Fingerprint">{{team.fingerprint}}</span>
           {% endif %}
           {% if team.pgp_key %}
-          <a href="{{team.pgp_key}}"><i class="fa fa-key"></i> Get {{name_array[0]}}'s PGP Encryption Key</a>
+          <a href="{{team.pgp_key}}"><i class="fa fa-lock fa-fw"></i> {{name_array[0]}}'s PGP Key</a>
           {% endif %}
         </div>
       </div>

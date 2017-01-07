@@ -15,6 +15,8 @@
   {% include hcl-cell.html param=param rowspan=rowspan %}
   {% assign param=device.iommu %}
   {% include hcl-cell.html param=param rowspan=rowspan %}
+  {% assign param=device.slat %}
+  {% include hcl-cell.html param=param rowspan=rowspan %}
   {% assign param=device.tpm %}
   {% include hcl-cell.html param=param rowspan=rowspan %}
   {% assign version = device.versions[0] %}

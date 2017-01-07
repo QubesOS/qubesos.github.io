@@ -8,6 +8,10 @@
               class="{% if hcl.iommu %}success{% else %}warning{% endif %}">
               {{ hcl.iommu }}
           </td>
+          <td rowspan="{{ rowspan }}"
+              class="{% if hcl.slat %}success{% else %}warning{% endif %}">
+              {{ hcl.slat }}
+          </td>
           <td rowspan="{{ rowspan }}">{{ hcl.kernel }}</td>
           <td rowspan="{{ rowspan }}">{{ hcl.xen }}</td>
           <td rowspan="{{ rowspan }}">{{ hcl.memory }}</td>

@@ -14,20 +14,27 @@ individuals and organizations who find the work we do valuable and who in turn
 rely on Qubes OS for secure computing in their work and personal lives. (Read
 more about our [partners].)
 
-Current and Past Funding Sources
---------------------------------
+We plan to fund continued Qubes OS development through a diverse mix of sources,
+both in terms of the entities providing the funding and the timelines of the
+funding. 
 
-The Qubes OS Project currently receives (or has received) funding from the
-following sources:
+We are seeking new sources of funding and welcome your help in these endeavors. 
+If you or your organization has relevant knowledge, experience, leads, or 
+resources and would like to help us secure the future of Qubes OS, please 
+contact `michael at qubes-os dot org`.
 
-[![itl](/attachment/site/itl.png)][itl]
+Funders
+-------
 
-Invisible Things Lab s.c. (ITL) supported Qubes OS development from the
-beginning of the project in 2010 until the end of 2014. ITL's primary source of
-revenue is security research and development. ITL s.c. is a privately held
-company, registered in Warsaw, Poland, and owned by Joanna Rutkowska and Joanna Gołębiewska.
+2017
+----
 
-[![otf](/attachment/site/OTF-logo.png)][OTF] (read the [announcement])
+[User donations][donate]
+
+2016
+-----
+
+[![otf](/attachment/site/OTF-logo.png)][OTF]
 
 The Open Technology Fund (OTF) is a Unites States government-funded program of [Radio Free Asia](http://www.rfa.org), whose [stated mission is](https://www.opentech.fund/about/program) to "support open technologies and communities that increase free expression, circumvent censorship, and obstruct repressive surveillance as a way to promote human rights and open societies." 
 
@@ -35,18 +42,22 @@ The Open Technology Fund (OTF) is a Unites States government-funded program of [
 
 "Stichting NLnet" (NLnet Foundation in Dutch) is a recognized philathropic non-profit foundation based in the Netherlands, whose [stated mission is](https://nlnet.nl/foundation/) "to promote the exchange of electronic information and all that is related or beneficial to that purpose."
 
-[![btc](/attachment/site/btc.png) Bitcoin donations][donate]
+2015
+------
 
-Future Funding Sources
-----------------------
+[![otf](/attachment/site/OTF-logo.png)][OTF] (read the [announcement])
 
-We plan to fund continued Qubes OS development through a diverse mix of sources,
-both in terms of the entities providing the funding and the timelines of the
-funding. We are currently seeking new sources of funding. We also welcome your
-help in these endeavors. If you or your organization has relevant knowledge,
-experience, leads, or resources and would like to help us secure the future of
-Qubes OS, please contact `michael at qubes-os dot org`.
+The Open Technology Fund (OTF) is a Unites States government-funded program of [Radio Free Asia](http://www.rfa.org), whose [stated mission is](https://www.opentech.fund/about/program) to "support open technologies and communities that increase free expression, circumvent censorship, and obstruct repressive surveillance as a way to promote human rights and open societies." 
 
+2010-2014
+---------
+
+[![itl](/attachment/site/itl.png)][itl]
+
+Invisible Things Lab s.c. (ITL) supported Qubes OS development from the
+beginning of the project in 2010 until the end of 2014. ITL's primary source of
+revenue is security research and development. ITL s.c. is a privately held
+company, registered in Warsaw, Poland, and owned by Joanna Rutkowska and Joanna Gołębiewska.
 
 [FOSS]: https://en.wikipedia.org/wiki/Free_and_open-source_software
 [license]: /doc/license/

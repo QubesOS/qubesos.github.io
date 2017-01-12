@@ -170,13 +170,13 @@ releases:
     testing: no
     latest: no
     aging: no
-    deprecated: no
+    deprecated: yes
     link: qubes-live-usb-alpha
-    testing: The Live USB edition is older than recent 3.1 release and lacks
-             some of its features (and bug fixes). If you want the newest
-             available image, download the 3.1 installation image.  You can
-             install from a USB drive onto a second USB drive without touching
-             your computer's disks and data.
+    deprecated: The Live USB edition is no longer supported or maintained. Users
+                who wish to install Qubes while preserving the contents of their
+                internal drives are instead advised to install the latest stable
+                release on an external drive, such as a USB flash drive or an
+                external SSD or HDD.
     sources:
       mirrors.kernel.org:
         method: HTTPS

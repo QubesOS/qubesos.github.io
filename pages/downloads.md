@@ -147,6 +147,7 @@ redirect_from:
         <li><a href="https://mirrors.kernel.org/qubes/iso/"><i class="fa fa-download fa-fw black-icon"></i> mirrors.kernel.org</a></li>
         <li><a href="http://ftp.halifax.rwth-aachen.de/qubes/iso/"><i class="fa fa-download fa-fw black-icon"></i> ftp.halifax.rwth-aachen.de</a></li>
         <li><a href="https://ftp.qubes-os.org/iso/"><i class="fa fa-download fa-fw black-icon"></i> ftp.qubes-os.org</a></li>
+        <li><a href="http://qubes-mirror.kkkkkkkkkk63ava6.onion/iso/"><i class="fa fa-download fa-fw black-icon"></i> qubes-mirror.kkkkkkkkkk63ava6.onion</a></li>
       </ul>
     </div>
   </div>
@@ -156,6 +157,7 @@ redirect_from:
       <ul class="list-unstyled">
         <li><a href="/doc/supported-versions/"><i class="fa fa-history fa-fw black-icon"></i> Supported Versions</a></li>
         <li><a href="/doc/version-scheme/"><i class="fa fa-code-fork fa-fw black-icon"></i> Version Scheme</a></li>
+        <li><a href="/doc/templates/"><i class="fa fa-clone fa-fw black-icon"></i> Templates</a></li>
         <li><a href="/security/"><i class="fa fa-lock fa-fw black-icon"></i> Security Information</a></li>
       </ul>
     </div>
@@ -166,6 +168,7 @@ redirect_from:
       <ul class="list-unstyled">
         <li><a href="/doc/source-code/"><i class="fa fa-code fa-fw black-icon"></i> Source Code</a></li>
         <li><a href="/doc/license/"><i class="fa fa-file-text-o fa-fw black-icon"></i> Software License</a></li>
+        <li><a href="/doc/coding-style/"><i class="fa fa-terminal fa-fw black-icon"></i> Coding Guidelines</a></li>
         <li><a href="/doc/architecture/"><i class="fa fa-cubes fa-fw black-icon"></i> OS Architecture</a></li>
       </ul>
     </div>

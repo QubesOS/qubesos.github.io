@@ -49,8 +49,10 @@
     margin-left: 0px;
   }
 
-  .page-content-left {
-    border-right: 1px solid $gray-light;
+  @media (min-width: $screen-sm-min) {
+    .page-content-left {
+      border-right: 1px solid $gray-light;
+    }
   }
 
 }

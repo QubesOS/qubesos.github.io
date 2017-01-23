@@ -21,13 +21,20 @@ funding.
 We are seeking new sources of funding and welcome your help in these endeavors. 
 If you or your organization has relevant knowledge, experience, leads, or 
 resources and would like to help us secure the future of Qubes OS, please 
-contact [Michael Carbone].
+[contact us].
 
+Below you can find the funding of the project by year. Within each year, supporters are organizted into funding tiers, with the most funding listed first.
 
 2017
 ----
 
 [Donations][donate]
+
+| Funding/Donation/Supporter tiers | 
+|----  | ---
+| $100,000+ tier | 
+| $10,000+ tier | {list of people or org logos on OC who fit}
+| $1,500+ tier | {list of people or org logos on OC who fit}
 
 2016
 ----
@@ -75,7 +82,7 @@ Gołębiewska.
 [FOSS]: https://en.wikipedia.org/wiki/Free_and_open-source_software
 [license]: /doc/license/
 [partners]: /partners/
-[Michael Carbone]: mailto:michael@qubes-os.org
+[contact us]: mailto:funding@qubes-os.org
 [OTF]: https://www.opentech.fund/project/qubes-os
 [otf-mission]: https://www.opentech.fund/about/program
 [otf-announcement]: http://blog.invisiblethings.org/2015/06/04/otf-funding-announcement.html

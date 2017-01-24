@@ -9,7 +9,7 @@ Qubes OS Project Funding
 
 Qubes OS is [free and open-source software][FOSS] (read about the [license]).
 This means that Qubes OS is not a paid or proprietary product. We do not earn
-any revenue by selling it. Instead, we rely external sources of funding from
+any revenue by selling it. Instead, we rely external sources of funding and [donations][donate] from
 individuals and organizations who find the work we do valuable and who in turn
 rely on Qubes OS for secure computing in their work and personal lives. (Read
 more about our [partners].)
@@ -23,71 +23,48 @@ If you or your organization has relevant knowledge, experience, leads, or
 resources and would like to help us secure the future of Qubes OS, please 
 [contact us].
 
-Below you can find the funding of the project by year. Within each year, supporters are organizted into funding tiers, with the most funding listed first.
+Below you can find the funding of the project by year. 
 
 2017
 ----
 
-[Donations][donate]
-
-| Funding/Donation/Supporter tiers | 
+| Funding tiers | 
 |----  | ---
-| $100,000+ tier | 
-| $10,000+ tier | {list of people or org logos on OC who fit}
-| $1,500+ tier | {list of people or org logos on OC who fit}
+| $100,000+ | 
+| $10,000+ | {list of people or org logos from OC & Bitcoin who fit and would like to be listed}
+| $1,500+ | {list of people or org logos on OC & Bitcoin who fit and would like to be listed}
 
 2016
 ----
 
-[![otf](/attachment/site/OTF-logo.png)][OTF]
-
-The Open Technology Fund (OTF) is a United States government-funded program of
-[Radio Free Asia], whose [stated mission][otf-mission] is to "support open
-technologies and communities that increase free expression, circumvent
-censorship, and obstruct repressive surveillance as a way to promote human
-rights and open societies."
-
-[![nlnet](/attachment/site/nlnet.gif)][nlnet]
-
-Stichting NLnet ("NLnet Foundation" in English) is a recognized philanthropic
-non-profit foundation based in the Netherlands, whose [stated
-mission][nlnet-mission] is "to promote the exchange of electronic information
-and all that is related or beneficial to that purpose."
+| Funding tiers | 
+|----  | ---
+| $250,000+ | [Open Technology Fund]
+| $10,000+ | [NLnet Foundation]
+| $1,500+ | {list of people or orgs on Bitcoin who fit and would like to be listed}
 
 2015
 ----
 
-[![otf](/attachment/site/OTF-logo.png)][OTF]
-
-[2015 OTF funding announcement][otf-announcement]
-
-The Open Technology Fund (OTF) is a United States government-funded program of
-[Radio Free Asia], whose [stated mission][otf-mission] is to "support open
-technologies and communities that increase free expression, circumvent
-censorship, and obstruct repressive surveillance as a way to promote human
-rights and open societies."
+| Funding tiers | 
+|----  | ---
+| $100,000+ | [Open Technology Fund]
+| $10,000+ | {list of people or orgs on Bitcoin who fit and would like to be listed}
+| $1,500+ | {list of people or orgs on Bitcoin who fit and would like to be listed}
 
 2010-2014
 ---------
 
-[![itl](/attachment/site/itl.png)][itl]
+| Funding tiers | 
+|----  | ---
+| $∞ | [Invisible Things Lab]
+| $1,500+ | {list of people or orgs on Bitcoin who fit and would like to be listed}
 
-Invisible Things Lab s.c. (ITL) supported Qubes OS development from the
-beginning of the project in 2010 until the end of 2014. ITL's primary source of
-revenue is security research and development. ITL s.c. is a privately held
-company, registered in Warsaw, Poland, and owned by Joanna Rutkowska and Joanna
-Gołębiewska.
-
-
+[Open Technology Fund]: /funding#open-technology-fund
+[NLnet Foundation]: /funding#nlnet-foundation
+[Invisible Things Lab]: /funding#invisible-things-lab
 [FOSS]: https://en.wikipedia.org/wiki/Free_and_open-source_software
 [license]: /doc/license/
 [partners]: /partners/
 [contact us]: mailto:funding@qubes-os.org
-[OTF]: https://www.opentech.fund/project/qubes-os
-[otf-mission]: https://www.opentech.fund/about/program
-[otf-announcement]: http://blog.invisiblethings.org/2015/06/04/otf-funding-announcement.html
-[Radio Free Asia]: http://www.rfa.org
-[nlnet]: https://nlnet.nl
-[nlnet-mission]: https://nlnet.nl/foundation/
-[itl]: http://invisiblethingslab.com/itl/Welcome.html
 [donate]: /donate/

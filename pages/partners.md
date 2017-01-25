@@ -16,7 +16,8 @@ If your organization is interested in becoming a Qubes Partner, please [contact 
 $500,000+
 ---------
 
-### Invisible Things Lab [![itl](/attachment/site/itl.png)][itl]
+<div id="invisible-things-lab"></div>
+[![itl](/attachment/site/itl.png)][itl]
 
 [Invisible Things Lab][itl] is a privately held company based in Warsaw, Poland, owned by Joanna Rutkowska and Joanna
 Gołębiewska.
@@ -25,7 +26,8 @@ Invisible Things Lab s.c. (ITL) supported Qubes OS development from the
 beginning of the project in 2010 until the end of 2014. ITL's primary source of
 revenue is security research and development. 
 
-### Open Technology Fund [![otf](/attachment/site/OTF-logo.png)][otf]
+<div id="open-technology-fund"></div>
+[![otf](/attachment/site/OTF-logo.png)][otf]
 
 The Open Technology Fund (OTF) is a United States government-funded program of
 [Radio Free Asia], whose [stated mission][otf-mission] is to "support open
@@ -40,13 +42,15 @@ In 2014-2015, the [Open Technology Fund funded][otf-f] the Qubes project to inte
 $10,000+ 
 --------
 
-### Access Now [![accessnow](/attachment/site/accessnow.png)][accessnow]
+<div id="access-now"></div>
+[![accessnow](/attachment/site/accessnow.png)][accessnow]
 
 [Access Now][accessnow] is an international human rights organization whose [stated mission][an-mission] is to "defend and extend the digital rights of users at risk around the world."
 
 Beginning in 2015 Access Now generously agreed to provide staff time to help manage the Qubes OS project.
 
-### NLnet Foundation [![nlnet](/attachment/site/nlnet.gif)][nlnet]
+<div id="nlnet-foundation"></div>
+[![nlnet](/attachment/site/nlnet.gif)][nlnet]
 
 [Stichting NLnet][nlnet] ("NLnet Foundation" in English) is a recognized philanthropic
 non-profit foundation based in the Netherlands, whose [stated

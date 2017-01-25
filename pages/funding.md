@@ -28,37 +28,37 @@ Below you can find the funding of the project by year.
 2017
 ----
 
-| Funding tiers | 
-|----  | ---
-| $100,000+ | 
-| $10,000+ | {list of people or org logos from OC & Bitcoin who fit and would like to be listed}
-| $1,500+ | {list of people or org logos on OC & Bitcoin who fit and would like to be listed}
+| Funding tiers
+| ----------|
+| $100,000+ |
+| $10,000+  |
+| $1,500+   |
 
 2016
 ----
 
-| Funding tiers | 
-|----  | ---
+| Funding tiers
+| --------- |
 | $250,000+ | [Open Technology Fund]
-| $10,000+ | [NLnet Foundation]
-| $1,500+ | {list of people or orgs on Bitcoin who fit and would like to be listed}
+| $10,000+  | [NLnet Foundation]
+| $1,500+   |
 
 2015
 ----
 
-| Funding tiers | 
-|----  | ---
+| Funding tiers
+| --------- |
 | $100,000+ | [Open Technology Fund]
-| $10,000+ | {list of people or orgs on Bitcoin who fit and would like to be listed}
-| $1,500+ | {list of people or orgs on Bitcoin who fit and would like to be listed}
+| $10,000+  |
+| $1,500+   |
 
 2010-2014
 ---------
 
-| Funding tiers | 
-|----  | ---
-| $∞ | [Invisible Things Lab]
-| $1,500+ | {list of people or orgs on Bitcoin who fit and would like to be listed}
+| Funding tiers
+| ------- |
+| $∞      | [Invisible Things Lab]
+| $1,500+ |
 
 [Open Technology Fund]: /funding#open-technology-fund
 [NLnet Foundation]: /funding#nlnet-foundation

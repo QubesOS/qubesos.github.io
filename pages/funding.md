@@ -60,9 +60,9 @@ Below you can find the funding of the project by year.
 | $∞      | [Invisible Things Lab]
 | $1,500+ |
 
-[Open Technology Fund]: /funding#open-technology-fund
-[NLnet Foundation]: /funding#nlnet-foundation
-[Invisible Things Lab]: /funding#invisible-things-lab
+[Open Technology Fund]: /partners/#open-technology-fund
+[NLnet Foundation]: /partners/#nlnet-foundation
+[Invisible Things Lab]: /partners/#invisible-things-lab
 [FOSS]: https://en.wikipedia.org/wiki/Free_and_open-source_software
 [license]: /doc/license/
 [partners]: /partners/

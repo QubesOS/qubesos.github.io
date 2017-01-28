@@ -269,6 +269,64 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
     search for the newsgroup [`gmane.os.qubes.devel`], uncheck the checkbox, and
     click on **OK**. Thunderbrid will automatically remove the newsgroup.
 
+qubes-project
+-----------
+
+### How to use this list
+
+This list is for non-technical discussion and coordination around the
+Qubes OS project.
+
+Examples of topic or question suitable for this list include:
+
+* participation (talk, workshop, etc) at upcoming events
+* project funding applications and strategies
+* FOSS governance discussions 
+* most Github issues tagged "[business]"
+
+### How to subscribe and post
+
+#### Google Groups
+
+You don't have to subscribe in order to post to this list. However, subscribing
+might nonetheless be desirable, as it ensures that your messages will not be
+eaten by the Google Groups spam filter and allows you to receive messages which
+were sent directly to the list.
+
+ * To subscribe to the list, send a blank email to
+   `qubes-project+subscribe@googlegroups.com`.
+   * Note: A Gmail account is *not* required. Any email address will work.
+ * To post a message to the list, address your email to
+   `qubes-project@googlegroups.com`.
+   * Note: You don't have to be subscribed in order to post.
+ * To unsubscribe, send a blank email to
+   `qubes-project+unsubscribe@googlegroups.com`.
+ * This list also has a [Google Groups web interface][qubes-project-web].
+   * Some users prefer to interact with the mailing list through the web
+     interface. This has the advantage that it allows you to search and reply to
+     messages which were sent prior to your subscription to the list. However, a
+     Google account is required in order to post through this interface.
+
+#### Gmane
+
+The mailing list is also available via Gmane, a service that provides mailing
+lists in the form of newsgroups. This makes it possible for you to subscribe
+and read all mails sent to the list without having them all sent to your normal
+mail account.  To use Gmane, you need a newsreader such as Mozilla Thunderbird
+(or Icedove in Debian).
+
+To add Gmane's server to Thunderbird, follow the instructions in
+[Mozilla Thunderbird's documentation for how to add
+newsgroups][thunderbird-newsgroup].
+In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
+
+  * To subscribe to the list, click on **Subscribe...** and search for the
+    newsgroup [`gmane.os.qubes.project`]. Click on the checkbox besides the name
+    and **OK**.
+  * You send and reply to mails the same way you would normally.
+  * To unsubscribe from the list, click on **Subscribe...**
+    search for the newsgroup [`gmane.os.qubes.project`], uncheck the checkbox, and
+    click on **OK**. Thunderbrid will automatically remove the newsgroup.
 
 [qsb]: /doc/security-bulletins/
 [qubes-announce-web]: https://groups.google.com/group/qubes-announce
@@ -284,7 +342,9 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
 [thunderbird-newsgroup]: https://support.mozilla.org/en-US/kb/creating-newsgroup-account
 [qubes-users-web]: https://groups.google.com/group/qubes-users
 [qubes-devel-web]: https://groups.google.com/group/qubes-devel
+[qubes-project-web]: https://groups.google.com/group/qubes-project
 [`gmane.os.qubes.user`]: http://dir.gmane.org/gmane.os.qubes.user
 [`gmane.os.qubes.devel`]: http://dir.gmane.org/gmane.os.qubes.devel
-
+[`gmane.os.qubes.project`]: http://dir.gmane.org/gmane.os.qubes.project
+[business]: https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Abusiness
 

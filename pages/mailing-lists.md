@@ -277,12 +277,12 @@ qubes-project
 This list is for non-technical discussion and coordination around the
 Qubes OS project.
 
-Examples of topic or question suitable for this list include:
+Examples of topics or question suitable for this list include:
 
-* participation (talk, workshop, etc) at upcoming events
-* project funding applications and strategies
+* Participation (talks, workshops, etc.) at upcoming events
+* Project funding applications and strategies
 * FOSS governance discussions 
-* most Github issues tagged "[business]"
+* Most Github issues tagged "[business]"
 
 ### How to subscribe and post
 

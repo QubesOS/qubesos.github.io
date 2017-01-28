@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: Mailing Lists
 permalink: /mailing-lists/
 redirect_from:

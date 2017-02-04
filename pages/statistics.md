@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Statistics
-permalink: /counter/
+permalink: /statistics/
+redirect_from: 
+- /counter/
 ---
 
 <div style="text-align: center; margin-bottom: 3em;">

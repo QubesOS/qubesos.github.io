@@ -89,7 +89,7 @@
     icon: fa-file-text
     url: /research/
   - title: Statistics
-    url: /counter/
+    url: /statistics/
     icon: fa-bar-chart
   - title: Twitter
     url: https://twitter.com/QubesOS

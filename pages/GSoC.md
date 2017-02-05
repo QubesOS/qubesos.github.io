@@ -69,11 +69,11 @@ Other things to think about:
 * After you have written your proposal, you should get it reviewed. Do not rely on the Qubes mentors to do it for you via the web interface, although we will try to comment on every proposal. It is wise to ask a colleague or a developer to critique your proposal. Clarity and completeness are important.
 ```
 
-# Project Ideas
+## Project Ideas
 
 These project ideas were contributed by our developers and may be incomplete. If you are interested in submitting a proposal based on these ideas, you should contact the [qubes-devel mailing list][ml-devel] and associated GitHub issue to learn more about the idea.
 
-## Adding a Proposal
+### Adding a Proposal
 
 **Project**: Something that you're totally excited about
 
@@ -86,7 +86,7 @@ If applicable, links to more information or discussions
 
 **Mentor**: Name and email address.
 
-## Btrfs support for Qubes 4.0
+### Btrfs support for Qubes 4.0
 
 **Project**: Btrfs support for Qubes 4.0
 
@@ -98,7 +98,7 @@ If applicable, links to more information or discussions
 
 **Mentor**:
 
-## Android development in Qubes
+### Android development in Qubes
 
 **Project**: Research running Android in Qubes VM (probably HVM) and connecting it to Android Studio
 
@@ -110,7 +110,7 @@ If applicable, links to more information or discussions
 
 **Mentor**:
 
-## GNOME support in dom0
+### GNOME support in dom0
 
 **Project**: GNOME support in dom0
 
@@ -122,7 +122,7 @@ If applicable, links to more information or discussions
 
 **Mentor**:
 
-## Qubes MIME handlers
+### Qubes MIME handlers
 
 **Project**: Qubes MIME handlers
 
@@ -135,7 +135,7 @@ should be opened in DispVM or locally)
 
 **Mentor**:
 
-## Template manager, new template distribution mechanism
+### Template manager, new template distribution mechanism
 
 **Project**: Template manager, new template distribution mechanism
 
@@ -147,7 +147,7 @@ should be opened in DispVM or locally)
 
 **Mentor**:
 
-## Qubes Live USB
+### Qubes Live USB
 
 **Project**: Revive Qubes Live USB, integrate it with installer
 
@@ -159,7 +159,7 @@ should be opened in DispVM or locally)
 
 **Mentor**:
 
-## Unikernel-based firewallvm with Qubes firewall settings support
+### Unikernel-based firewallvm with Qubes firewall settings support
 
 **Project**: Unikernel based firewallvm with Qubes firewall settings support
 
@@ -171,7 +171,7 @@ should be opened in DispVM or locally)
 
 **Mentor**:
 
-## IPv6 support
+### IPv6 support
 **Project**: IPv6 support
 
 **Brief explanation**: [#718](https://github.com/QubesOS/qubes-issues/issues/718)
@@ -182,7 +182,7 @@ should be opened in DispVM or locally)
 
 **Mentor**:
 
-## Thunderbird extension
+### Thunderbird extension
 **Project**: Thunderbird extension
 
 **Brief explanation**: [#845](https://github.com/QubesOS/qubes-issues/issues/845)
@@ -193,7 +193,7 @@ should be opened in DispVM or locally)
 
 **Mentor**:
 
-## Firefox and Chrome extensions
+### Firefox and Chrome extensions
 **Project**: Firefox and Chrome extensions
 
 **Brief explanation**: 
@@ -207,7 +207,7 @@ should be opened in DispVM or locally)
 
 **Mentor**:
 
-## LogVM(s)
+### LogVM(s)
 
 **Project**: LogVM(s)
 
@@ -219,7 +219,7 @@ should be opened in DispVM or locally)
 
 **Mentor**:
 
-## Opening multiple files in the same DispVM
+### Opening multiple files in the same DispVM
 
 **Project**: Opening multiple files in the same DispVM
 
@@ -231,7 +231,7 @@ should be opened in DispVM or locally)
 
 **Mentor**:
 
-## GUI improvements
+### GUI improvements
 
 **Project**: GUI improvements
 
@@ -248,7 +248,7 @@ should be opened in DispVM or locally)
 
 **Mentor**:
 
-## get GPU passthrough working under Xen for Intel integrated GPUs
+### get GPU passthrough working under Xen for Intel integrated GPUs
 
 **Project**: get GPU passthrough working under Xen for Intel integrated GPUs
 
@@ -260,7 +260,7 @@ should be opened in DispVM or locally)
 
 **Mentor**:
 
-## Xen GPU pass-through
+### Xen GPU pass-through
 **Project**: Xen GPU pass-through (largely independent of Qubes)
 
 **Brief explanation**: [#2618](https://github.com/QubesOS/qubes-issues/issues/2618)
@@ -271,7 +271,7 @@ should be opened in DispVM or locally)
 
 **Mentor**:
 
-## Qubes GUI daemon
+### Qubes GUI daemon
 
 **Project**: Qubes GUI daemon modifications needed for true GUI Domain
 

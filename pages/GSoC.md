@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 title: Google Summer of Code
-permalink: /GSoC/
+permalink: /gsoc/
 ---
 
 2017 Google Summer of Code

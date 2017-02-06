@@ -333,7 +333,7 @@ should be opened in DispVM or locally)
 ### Mitigate focus-stealing attacks
 **Project**: Mitigate focus-stealing attacks
 
-**Brief explanation**: [Focus stealing attacks](https://en.wikipedia.org/wiki/Focus_stealing) have long been an issue in Qubes OS. The Qubes community has long punted the issue due to having higher priority things to work on, and it being viewed as the responsability of the window manager, but nevertheless it remains a serious issue, and an *effective* mitigation would be most welcome. Any student wishing to work on this would need to engage the community in a discussion about the effectiveness of their proposed earlier rather than later.
+**Brief explanation**: [Focus stealing attacks](https://en.wikipedia.org/wiki/Focus_stealing) have long been an issue in Qubes OS. The Qubes community has long punted the issue due to having higher priority things to work on, and it being viewed as the responsability of the window manager, but nevertheless it remains a serious issue, and an *effective* mitigation would be most welcome. Any student wishing to work on this would need to engage the community in a discussion about the effectiveness of their proposed earlier rather than later. [#1166](https://github.com/QubesOS/qubes-issues/issues/1166)
 
 **Expected results**: Working robust focus stealing prevention for Xfce (currently the default Qubes desktop environment) or Gnome (the targeted future Qubes desktop environment).
 

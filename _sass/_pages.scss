@@ -92,3 +92,30 @@
   }
 
 }
+
+.partners {
+  table {
+      display: block;
+      overflow: auto;
+      border-collapse: collapse;
+  }
+  td, th {
+      border: 1px solid #ddd;
+      padding: 12px 24px;
+  }
+  th:nth-child(2) {
+      width: 25%;
+  }
+  th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      background-color: $color-qube-light;
+      color: white;
+  }
+  td:nth-child(1) {
+      font-size: 18px;
+      font-weight: bold;
+      vertical-align: middle;
+  }
+}

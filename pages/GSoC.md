@@ -73,6 +73,7 @@ Other things to think about:
 
 These project ideas were contributed by our developers and may be incomplete. If you are interested in submitting a proposal based on these ideas, you should contact the [qubes-devel mailing list][ml-devel] and associated GitHub issue to learn more about the idea.
 
+```
 ### Adding a Proposal
 
 **Project**: Something that you're totally excited about
@@ -85,6 +86,7 @@ These project ideas were contributed by our developers and may be incomplete. If
 If applicable, links to more information or discussions
 
 **Mentor**: Name and email address.
+```
 
 ### Btrfs support for Qubes 4.0
 
@@ -236,6 +238,7 @@ should be opened in DispVM or locally)
 **Project**: GUI improvements
 
 **Brief explanation**:
+
 * GUI for enabling USB keyboard: [#2329](https://github.com/QubesOS/qubes-issues/issues/2329)
 * GUI for enabling USB passthrough: [#2328](https://github.com/QubesOS/qubes-issues/issues/2328)
 * GUI interface for /etc/qubes/guid.conf: [#2304](https://github.com/QubesOS/qubes-issues/issues/2304)
@@ -281,7 +284,29 @@ should be opened in DispVM or locally)
 
 **Knowledge prerequisite**:
 
-**Mentor**:
+**Mentor**: 
+
+### Whonix IPv6 and nftables support
+**Project**: Whonix IPv6 and nftables support
+
+**Brief explanation**: [T509](https://phabricator.whonix.org/T509)
+
+**Expected results**:
+
+**Knowledge prerequisite**:
+
+**Mentor**: Patrick Schleizer
+
+### Standalone connection wizard for Tor pluggable transports
+**Project**: Standalone connection wizard for Tor pluggable transports
+
+**Brief explanation**: [#1938](https://github.com/QubesOS/qubes-issues/issues/1938)
+
+**Expected results**:
+
+**Knowledge prerequisite**:
+
+**Mentor**: Patrick Schleizer
 
 We adapted some of the language here about GSoC from the [KDE GSoC page](https://community.kde.org/GSoC).
 

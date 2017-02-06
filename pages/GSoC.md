@@ -308,6 +308,40 @@ should be opened in DispVM or locally)
 
 **Mentor**: Patrick Schleizer
 
+### Leverage modern static & dynamic analysis
+**Project**: Leverage modern static & dynamic analysis
+
+**Brief explanation**:
+
+**Expected results**: Stand up tooling to automatically run various tools against the Qubes code base, and address as many found issues as possible.
+
+**Knowledge prerequisite**: Familiarity with various analysis tools & techniques, including but not limited to: valgrind, coverity, clang's sanitizers, guided fuzzing.
+
+**Mentor**: Jean-Philippe Ouellet <jpo@vt.edu>
+
+### Formally analyze how untrusted inputs propagate through the Qubes code base
+**Project**: Formally analyze how untrusted inputs propagate through the Qubes code base
+
+**Brief explanation**: It would be useful to have a rigorous understanding of what code paths are reachable and which state can be affected via input from untrusted domains. Such analysis would likely involve building a model of the system with a combination of taint tracking and static and symbolic analysis.
+
+**Expected results**: A rigorous model of the scope of code paths and state reachable or affectable from other (Xen) domains.
+
+**Knoledge prerequisite**: Frama-C, pytaint, angr, others.
+
+**Mentor**: Jean-Philippe Ouellet <jpo@vt.edu>
+
+### Mitigate focus-stealing attacks
+**Project**: Mitigate focus-stealing attacks
+
+**Brief explanation**: [Focus stealing attacks](https://en.wikipedia.org/wiki/Focus_stealing) have long been an issue in Qubes OS. The Qubes community has long punted the issue due to having higher priority things to work on, and it being viewed as the responsability of the window manager, but nevertheless it remains a serious issue, and an *effective* mitigation would be most welcome. Any student wishing to work on this would need to engage the community in a discussion about the effectiveness of their proposed earlier rather than later.
+
+**Expected results**: Working robust focus stealing prevention for Xfce (currently the default Qubes desktop environment) or Gnome (the targeted future Qubes desktop environment).
+
+**Knoledge prerequisite**: X APIs, Qubes GUI protocol, familiarity with the targeted window manager.
+
+**Mentor**:
+
+
 We adapted some of the language here about GSoC from the [KDE GSoC page](https://community.kde.org/GSoC).
 
 [gsoc]: https://summerofcode.withgoogle.com/

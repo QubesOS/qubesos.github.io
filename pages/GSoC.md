@@ -88,23 +88,14 @@ If applicable, links to more information or discussions
 **Mentor**: Name and email address.
 ```
 
-### Btrfs support for Qubes 4.0
-
-**Project**: Btrfs support for Qubes 4.0
-
-**Brief explanation**: [#2340](https://github.com/QubesOS/qubes-issues/issues/2340)
-
-**Expected results**:
-
-**Knowledge prerequisite**:
-
-**Mentor**:
-
 ### Android development in Qubes
 
 **Project**: Research running Android in Qubes VM (probably HVM) and connecting it to Android Studio
 
-**Brief explanation**: [#2233](https://github.com/QubesOS/qubes-issues/issues/2233)
+**Brief explanation**: The goal is to enable Android development (and testing!)
+on Qubes OS. Currently it's only possible using qemu-emulated Android for ARM.
+Since it's software emulation it's rather slow.
+Details, reference: [#2233](https://github.com/QubesOS/qubes-issues/issues/2233)
 
 **Expected results**:
 
@@ -116,11 +107,35 @@ If applicable, links to more information or discussions
 
 **Project**: GNOME support in dom0
 
-**Brief explanation**: [#1806](https://github.com/QubesOS/qubes-issues/issues/1806)
+**Brief explanation**: Integrating GNOME into Qubes dom0. This include:
+
+ - patching window manager to add colorful borders
+ - removing stuff not needed in dom0 (file manager(s), indexing services etc)
+ - adjusting menu for easy navigation (same applications in different VMs and such problems, dom0-related entries in one place)
+ - More info: [#1806](https://github.com/QubesOS/qubes-issues/issues/1806)
 
 **Expected results**:
 
+ - Review existing support for other desktop environments (KDE, Xfce4, i3, awesome).
+ - Patch window manager to draw colorful borders (we use only server-side
+   decorations), there is already very similar patch in
+   [Cappsule project](https://github.com/cappsule/cappsule-gui).
+ - Configure GNOME to not make use of dom0 user home in visible way (no search
+   in files there, no file manager, etc).
+ - Configure GNOME to not look into external devices plugged in (no auto
+   mounting, device notifications etc).
+ - Package above modifications as rpms, preferably as extra configuration files
+   and/or plugins than overwriting existing files. Exceptions to this rule may
+   apply if no other option.
+ - Adjust comps.xml (in installer-qubes-os repo) to define package group with
+   all required packages.
+ - Document installation procedure.
+
 **Knowledge prerequisite**:
+
+ - GNOME architecture
+ - C language (patching metacity)
+ - Probably also javascript - for modifying GNOME shell extensions
 
 **Mentor**:
 
@@ -133,33 +148,119 @@ should be opened in DispVM or locally)
 
 **Expected results**:
 
+ - Design mechanism for recognising which files should be opened locally and which in Disposable VM. This mechanism should:
+   - Respect default action like "by default open files in Disposable VM" (this
+     may be about files downloaded from the internet, transferred from
+     other VM etc).
+   - Allow setting persistent flag for a file that should be opened in specific
+     way ("locally"); this flag should local to the VM - it shouldn't be possible
+     to preserve (or even fabricate) the flag while transferring the file from/to
+     VM.
+   - See linked ticket for simple ideas.
+ - Implement generic file handler to apply this mechanism; it should work
+   regardless of file type, and if file is chosen to be opened locally, normal
+   (XDG) rules of choosing application should apply.
+ - Setting/unsetting the flag should be easy - like if once file is chosen to
+   be opened locally, it should remember that decision.
+ - Preferably use generic mechanism to integrate it into file managers (XDG
+   standards). If not possible - integrate with Nautilus and Dolphin.
+ - Optionally implement the same for Windows.
+ - Document the mechanism (how the flag is stored, how mechanism is plugged
+   into file managers etc).
+ - Write unit tests and integration tests.
+
 **Knowledge prerequisite**:
 
-**Mentor**:
+ - XDG standards
+ - Bash or Python scripting
+ - Basic knowledge of configuration/extension for file managers
+
+**Mentor**: [Marek Marczykowski-Górecki](/team/)
 
 ### Template manager, new template distribution mechanism
 
 **Project**: Template manager, new template distribution mechanism
 
-**Brief explanation**: [#2064](https://github.com/QubesOS/qubes-issues/issues/2064), [#2534](https://github.com/QubesOS/qubes-issues/issues/2534)
+**Brief explanation**: Template VMs currently are distributed using RPM
+packages. There are multiple problems with that, mostly related to static
+nature of RPM package (what files belong to the package). This means such
+Template VM cannot be renamed, migrated to another storage (like LVM), etc.
+Also we don't want RPM to automatically update template package itself (which
+would override all the user changes there). More details:
+[#2064](https://github.com/QubesOS/qubes-issues/issues/2064),
+[#2534](https://github.com/QubesOS/qubes-issues/issues/2534).
 
 **Expected results**:
 
+ - Design new mechanism for distributing templates (possibly including some
+   package format - either reuse something already existing, or design
+   new one). The mechanism needs to handle:
+   - integrity protection (digital signatures), not parsing any data in dom0
+     prior to signature verification
+   - efficient handling of large sparse files
+   - ability to deploy the template into various storage mechanisms (sparse
+     files, LVM thin volumes etc).
+   - template metadata, templates repository - enable the user to browse
+     available templates (probably should be done in dedicated VM, or Disposable VM)
+ - Implement the above mechanism:
+   - tool to download named template - should perform download operation in
+     some VM (as dom0 have no network access), then transfer the data to dom0,
+     verify its integrity and then create Template VM and feed it's root
+     filesystem image with downloaded data.
+   - tool to browse templates repository - both CLI and GUI (preferably in (py)GTK)
+   - integrate both tools - user should be able to choose some template to be
+     installed from repository browsing tool - see
+     [#1705](https://github.com/QubesOS/qubes-issues/issues/1705) for some idea
+     (this one lack integrity verification, but similar service could
+     be developed with that added)
+ - If new "package" format is developed, add support for it into 
+   [linux-template-builder](https://github.com/QubesOS/qubes-linux-template-builder).
+ - Document the mechanism.
+ - Write unit tests and integration tests.
+
 **Knowledge prerequisite**:
 
-**Mentor**:
+ - Large files (disk images) handling (sparse files, archive formats)
+ - Bash and Python scripting
+ - Data integrity handling - digital signatures (gpg2, gpgv2)
+ - PyGTK
+ - RPM package format, (yum) repository basics
+
+**Mentor**: [Marek Marczykowski-Górecki](/team/)
 
 ### Qubes Live USB
 
 **Project**: Revive Qubes Live USB, integrate it with installer
 
-**Brief explanation**: [#1552](https://github.com/QubesOS/qubes-issues/issues/1552), [#1965](https://github.com/QubesOS/qubes-issues/issues/1965)
+**Brief explanation**: Qubes Live USB is based on Fedora tools to build live
+distributions. But for Qubes we need some adjustments: starting Xen instead of
+Linux kernel, smarter copy-on-write handling (we run there multiple VMs, so a
+lot more data to save) and few more. Additionally in Qubes 3.2 we have
+so many default VMs that default installation does not fit in 16GB image
+(default value) - some subset of those VMs should be chosen. Ideally we'd like
+to have just one image being both live system and installation image. More
+details: [#1552](https://github.com/QubesOS/qubes-issues/issues/1552),
+[#1965](https://github.com/QubesOS/qubes-issues/issues/1965).
 
 **Expected results**:
 
+ - Adjust set of VMs and templates included in live edition.
+ - Update and fix build scripts for recent Qubes OS version.
+ - Update startup script to mount appropriate directories as either
+   copy-on-write (device-mapper snapshot), or tmpfs.
+ - Optimize memory usage: should be possible to run sys-net, sys-firewall, and
+   at least two more VMs on 4GB machine. This include minimizing writes to
+   copy-on-write layer and tmpfs (disable logging etc).
+ - Research option to install the system from live image. If feasible add
+   this option.
+
 **Knowledge prerequisite**:
 
-**Mentor**:
+ - System startup sequence: bootloaders (isolinux, syslinux, grub, UEFI), initramfs, systemd.
+ - Python and Bash scripting
+ - Filesystems and block devices: loop devices, device-mapper, tmpfs, overlayfs, sparse files.
+
+**Mentor**: [Marek Marczykowski-Górecki](/team/)
 
 ### Unikernel-based firewallvm with Qubes firewall settings support
 
@@ -176,62 +277,88 @@ should be opened in DispVM or locally)
 ### IPv6 support
 **Project**: IPv6 support
 
-**Brief explanation**: [#718](https://github.com/QubesOS/qubes-issues/issues/718)
+**Brief explanation**: Add support for native IPv6 in Qubes VMs. This should
+include IPv6 routing (+NAT...), IPv6-aware firewall, DNS configuration, dealing
+with IPv6 being available or not in directly connected network. See
+[#718](https://github.com/QubesOS/qubes-issues/issues/718) for more details.
 
 **Expected results**:
 
-**Knowledge prerequisite**:
-
-**Mentor**:
-
-### Thunderbird extension
-**Project**: Thunderbird extension
-
-**Brief explanation**: [#845](https://github.com/QubesOS/qubes-issues/issues/845)
-
-**Expected results**:
+ - Add IPv6 handling to network configuration scripts in VMs
+ - Add support for IPv6 in Qubes firewall (including CLI/GUI tools to configure it)
+ - Design and implement simple mechanism to propagate information about IPv6
+   being available at all (if necessary). This should be aware of ProxyVMs
+   potentially adding/removing IPv6 support - like VPN, Tor etc.
+ - Add unit tests and integration tests for both configuration scripts and UI
+   enhancements.
+ - Update documentation.
 
 **Knowledge prerequisite**:
 
-**Mentor**:
+ - network protocols, especially IPv6, TCP, DNS, DHCPv6, ICMPv6 (including
+   autoconfiguration)
+ - ip(6)tables, nftables, NAT
+ - Python and Bash scripting
+ - network configuration on Linux: ip tool, configuration files on Debian and
+   Fedora, NetworkManager
 
-### Firefox and Chrome extensions
-**Project**: Firefox and Chrome extensions
+**Mentor**: [Marek Marczykowski-Górecki](/team/)
+
+### Thunderbird, Firefox and Chrome extensions
+**Project**: additional Thunderbird, Firefox and Chrome extensions
 
 **Brief explanation**: 
-* open link in vm
-* open link in dispvm
-* save destination to vm
+
+* browser/mail: open link in vm
+* browser/mail: open link in dispvm
+* browser: save destination to vm
+* mail: add whitelisted senders option (address-based and signing key-based) [#845](https://github.com/QubesOS/qubes-issues/issues/845)
 
 **Expected results**:
 
+ - Extend existing Thunderbird extension to decide on action (where to open/save attachments) based on message sender - recognized as email address, or signing key
+ - Add Firefox extension to open links in Disposable VM / selected VM (right-click option and a default action for not-whitelisted URLs/domains)
+ - The same for Chrome
+ - Add tests for above enhancements
+ - Update user documentation
+
 **Knowledge prerequisite**:
 
-**Mentor**:
+ - writing Thunderbird/Firefox extensions (XUL, javascript)
+ - writing Chrome extensions (javascript)
+
+**Mentor**: [Jean-Philippe Ouellet](mailto:jpo@vt.edu)
 
 ### LogVM(s)
 
 **Project**: LogVM(s)
 
-**Brief explanation**: [#830](https://github.com/QubesOS/qubes-issues/issues/830)
+**Brief explanation**: Qubes AppVMs do not have persistent /var (on purpose).
+It would be useful to send logs generated by various VMs to a dedicated
+log-collecting VM. This way logs will not only survive VM shutdown, but also be
+immune to altering past entries. See
+[#830](https://github.com/QubesOS/qubes-issues/issues/830) for details.
 
 **Expected results**:
 
+ - Design a _simple_ protocol for transferring logs. The less metadata (parsed
+   in log-collecting VM) the better.
+ - Implement log collecting service. Besides logs itself, should save
+   information about logs origin (VM name) and timestamp. The service should
+   _not_ trust sending VM in any of those.
+ - Implement log forwarder compatible with systemd-journald and rsyslog. A
+   mechanism (service/plugin) fetching logs in real time from those and sending
+   to log-collecting VM over qrexec service.
+ - Document the protocol.
+ - Write unit tests and integration tests.
+
 **Knowledge prerequisite**:
 
-**Mentor**:
+ - syslog
+ - systemd
+ - Python/Bash scripting
 
-### Opening multiple files in the same DispVM
-
-**Project**: Opening multiple files in the same DispVM
-
-**Brief explanation**: [#814](https://github.com/QubesOS/qubes-issues/issues/814)
-
-**Expected results**:
-
-**Knowledge prerequisite**:
-
-**Mentor**:
+**Mentor**: [Jean-Philippe Ouellet](mailto:jpo@vt.edu)
 
 ### GUI improvements
 
@@ -247,44 +374,48 @@ should be opened in DispVM or locally)
 
 **Expected results**:
 
+ - Add/enhance GUI tools to configure/do things mentioned in description above.
+   Reasonable subset of those things is acceptable.
+ - Write tests for added elements.
+
 **Knowledge prerequisite**:
 
-**Mentor**:
+ - Python, PyGTK
 
-### get GPU passthrough working under Xen for Intel integrated GPUs
+**Mentor**: [Jean-Philippe Ouellet](mailto:jpo@vt.edu)
 
-**Project**: get GPU passthrough working under Xen for Intel integrated GPUs
+### Xen GPU pass-through for Intel integrated GPUs
+**Project**: Xen GPU pass-through for Intel integrated GPUs (largely independent of Qubes)
 
-**Brief explanation**: [#833](https://github.com/QubesOS/qubes-issues/issues/833)
+**Brief explanation**: This project is prerequisite to full GUI domain support,
+where all desktop environment is running in dedicated VM, isolated from
+dom0. There is already some support for GPU passthrough in Xen, but needs to be
+integrated in to Qubes and probably really make working, even when using qemu
+in stubdomain. GUI domain should be a HVM domain (not PV).
+This should be done without compromising Qubes security features, especially:
+using VT-d for protection against DMA attacks, using stubdomain for sandboxing
+qemu process (if needed) - qemu running in dom0 is not acceptable.  More
+details in [#2618](https://github.com/QubesOS/qubes-issues/issues/2618).
 
 **Expected results**:
 
-**Knowledge prerequisite**:
-
-**Mentor**:
-
-### Xen GPU pass-through
-**Project**: Xen GPU pass-through (largely independent of Qubes)
-
-**Brief explanation**: [#2618](https://github.com/QubesOS/qubes-issues/issues/2618)
-
-**Expected results**:
+ - Ability to start a VM with GPU connected. VM should be able to handle video
+   output (both laptop internal display, and external monitors if apply). That
+   VM also should be able to use hardware acceleration.
+ - This project may require patching any/all of Xen hypervisor, Libvirt, Qemu,
+   Linux. In such a case, patches should be submitted to appropriate upstream
+   project.
+ - It's ok to focus on a specific, relatively new Intel-based system with Intel
+   integrated GPU.
 
 **Knowledge prerequisite**:
 
-**Mentor**:
+ - C language
+ - Kernel/hypervisor debugging
+ - Basics of x86_64 architecture, PCIe devices handling (DMA, MMIO, interrupts), IOMMU (aka VT-d)
+ - Xen hypervisor architecture
 
-### Qubes GUI daemon
-
-**Project**: Qubes GUI daemon modifications needed for true GUI Domain
-
-**Brief explanation**: [#2619](https://github.com/QubesOS/qubes-issues/issues/2619)
-
-**Expected results**:
-
-**Knowledge prerequisite**:
-
-**Mentor**: 
+**Mentor**: [Marek Marczykowski-Górecki](/team/)
 
 ### Whonix IPv6 and nftables support
 **Project**: Whonix IPv6 and nftables support

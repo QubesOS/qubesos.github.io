@@ -271,9 +271,13 @@ details: [#1552](https://github.com/QubesOS/qubes-issues/issues/1552),
 
 **Expected results**: A firewall implemented as a unikernel which supports all the networking-related functionality as the default sys-firewall VM, including configuration via Qubes Manager. Other duties currently assigned to sys-firewall such as the update proxy may need to be appropriately migrated first.
 
-**Knowledge prerequisite**: [OCaml](https://ocaml.org/) + [MirageOS](https://mirage.io/) or other unikernel framework, Xen network stack, Qubes networking model & firewall semantics.
+**Knowledge prerequisite**:
 
-**Mentor**: Possibly Thomas Leonard? Other appropriately knowledgeable community member?
+- [OCaml](https://ocaml.org/) + [MirageOS](https://mirage.io/) or other unikernel framework,
+- Xen network stack,
+- Qubes networking model & firewall semantics.
+
+**Mentor**: [Thomas Leonard](mailto:talex5@gmail.com), [Marek Marczykowski-Górecki](/team/)
 
 ### IPv6 support
 **Project**: IPv6 support

@@ -2,6 +2,7 @@
 layout: sidebar
 title: Google Summer of Code
 permalink: /gsoc/
+redirect_from: /GSoC/
 ---
 
 2017 Google Summer of Code

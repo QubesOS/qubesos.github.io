@@ -11,7 +11,7 @@ permalink: /GSoC/
 
 Thank you for your interest in participating in the [Google Summer of Code program][gsoc] with the [Qubes OS team][team]. You can read more about the Google Summer of Code program at the [official website][gsoc] and the [official FAQ][gsoc-faq].
 
-Being accepted as a Google Summer of Code student is quite competitive. Students wishing to participate in the Summer of Code must be aware that you will be required to produce code for Qubes OS in 3 months. Your mentors, Qubes developers, will dedicate a portion of their time towards mentoring you. Therefore, we seek candidates who are committed to helping Qubes long-term and are willing to do quality work and be proactive in communicating with your mentor.
+Being accepted as a Google Summer of Code student is quite competitive. Students wishing to participate in the Summer of Code must be aware that you will be required to produce code for Qubes OS for 3 months. Your mentors, Qubes developers, will dedicate a portion of their time towards mentoring you. Therefore, we seek candidates who are committed to helping Qubes long-term and are willing to do quality work and be proactive in communicating with your mentor.
 
 You don't have to be a proven developer -- in fact, this whole program is meant to facilitate joining Qubes and other free and open source communities. The Qubes community maintains information about [contributing to Qubes development][contributing] and [how to send patches][patches]. In order to contribute code to the Qubes project, you must be able to [sign your code][code-signing].
 
@@ -22,7 +22,7 @@ You should start learning the components that you plan on working on before the 
 - [ ] Join the [qubes-devel list][ml-devel] and introduce yourself, and meet your fellow developers
 - [ ] Read [Google's instructions for participating][gsoc-participate] and the [GSoC Student Manual][gsoc-student]
 - [ ] Take a look at the list of ideas below
-- [ ] Come up with project that you are interested in
+- [ ] Come up with a project that you are interested in
 - [ ] Read the Student Proposal guidelines below
 - [ ] Write a first draft proposal and send it to the qubes-devel mailing list for review
 - [ ] Submit proposal using [Google's web interface][gsoc-submit] ahead of the deadline (this requires a Google Account!)

@@ -39,6 +39,12 @@ Instances of abusive, harassing, or otherwise unacceptable behavior may be repor
 
 Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
 
+## A note on trust
+
+Expect all contributions to be reviewed with some amount of healthy adversarial skepticism, regardless of your perceived standing in the community.
+This is a security project, and allowing ourselves to get complacent while reviewing code simply because it comes from a well-known party would not be in the best interest of the project.
+Please try not to get offended if you perceive your contributions as being met with distrust -- we are most definitely thankful and appreciative of your efforts, but must also remain vigilant in order to ensure continued quality and safeguard against potential sabotage.
+
 ## Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant, version 1.4](http://contributor-covenant.org/version/1/4) and the [Rust Code of Conduct](https://www.rust-lang.org/en-US/conduct.html).

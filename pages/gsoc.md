@@ -494,6 +494,38 @@ for more information and qubes-specific background.
 
 **Mentor**:
 
+### Audio support for Qubes Windows Tools
+**Project**: Audio support for Qubes Windows Tools
+
+**Brief explanation**: Add audio support for Windows HVMs via Qubes Windows Tools.
+
+**Expected results**: Windows HVMs should have an audio device that supports playback and recording.
+
+**Knowledge prerequisite**: Familiarity with Windows API, possibly familiarity with Windows audio stack on the driver level.
+
+**Mentor**: [Rafał Wojdyła](/team/)
+
+### Improve Windows GUI agent performance and stability
+**Project**: Improve Windows GUI agent performance and stability
+
+**Brief explanation**: Previous profiling has shown that the Windows GUI agent uses significant portion of VM's CPU time for mouse input simulation. This can be improved, as well as agent's stability in some cases (desktop/user switching, logon/logoff, domain-joined VMs, multiple monitors). Seamless GUI experience can be significantly improved, but that may require changes in the Qubes video driver.
+
+**Expected results**: Reduction of agent's CPU usage, improved stability.
+
+**Knowledge prerequisite**: Familiarity with Windows API, especially the windowing stack. Familiarity with profiling and debugging tools for Windows.
+
+**Mentor**: [Rafał Wojdyła](/team/)
+
+### Gui agent for Windows 8/10
+**Project**: Gui agent for Windows 8/10
+
+**Brief explanation**: Add support for Windows 8+ to the Qubes GUI agent and video driver. Starting from Windows 8, Microsoft requires all video drivers to conform to the WDDM display driver model which is incompatible with the current Qubes video driver. Unfortunately the WDDM model is much more complex than the old XPDM one and officially *requires* a physical GPU device (which may be emulated). Some progress has been made to create a full WDDM driver that *doesn't* require a GPU device, but the driver isn't working correctly yet. Alternatively, WDDM model supports display-only drivers which are much simpler but don't have access to system video memory and rendering surfaces (a key feature that would simplify seamless GUI mode).
+
+**Expected results**: Working display-only WDDM video driver or significant progress towards making the full WDDM driver work correctly.
+
+**Knowledge prerequisite**: Familiarity with Windows API, familiarity with the core Windows WDM driver model. Ideally familiarity with the WDDM display driver model.
+
+**Mentor**: [Rafał Wojdyła](/team/)
 
 We adapted some of the language here about GSoC from the [KDE GSoC page](https://community.kde.org/GSoC).
 

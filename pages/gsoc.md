@@ -20,14 +20,14 @@ You should start learning the components that you plan on working on before the 
 
 ### Overview of Steps
 
-- [ ] Join the [qubes-devel list][ml-devel] and introduce yourself, and meet your fellow developers
-- [ ] Read [Google's instructions for participating][gsoc-participate] and the [GSoC Student Manual][gsoc-student]
-- [ ] Take a look at the list of ideas below
-- [ ] Come up with a project that you are interested in
-- [ ] Read the Student Proposal guidelines below
-- [ ] Write a first draft proposal and send it to the qubes-devel mailing list for review
-- [ ] Submit proposal using [Google's web interface][gsoc-submit] ahead of the deadline (this requires a Google Account!)
-- [ ] Submit proof of enrollment well ahead of the deadline
+- Join the [qubes-devel list][ml-devel] and introduce yourself, and meet your fellow developers
+- Read [Google's instructions for participating][gsoc-participate] and the [GSoC Student Manual][gsoc-student]
+- Take a look at the list of ideas below
+- Come up with a project that you are interested in
+- Read the Student Proposal guidelines below
+- Write a first draft proposal and send it to the qubes-devel mailing list for review
+- Submit proposal using [Google's web interface][gsoc-submit] ahead of the deadline (this requires a Google Account!)
+- Submit proof of enrollment well ahead of the deadline
 
 Coming up with an interesting idea that you can realistically achieve in the time available to you (one summer) is probably the most difficult part. We strongly recommend getting involved in advance of the beginning of GSoC, and we will look favorably on applications from students who have already started to act like free and open source developers.
 

@@ -453,7 +453,7 @@ details in [#2618](https://github.com/QubesOS/qubes-issues/issues/2618).
 
 **Knowledge prerequisite**: Familiarity with various analysis tools & techniques, including but not limited to: valgrind, coverity, clang's sanitizers, guided fuzzing.
 
-**Mentor**: Jean-Philippe Ouellet <jpo@vt.edu>
+**Mentor**: [Jean-Philippe Ouellet](mailto:jpo@vt.edu)
 
 ### Formally analyze how untrusted inputs propagate through the Qubes code base
 **Project**: Formally analyze how untrusted inputs propagate through the Qubes code base
@@ -464,7 +464,7 @@ details in [#2618](https://github.com/QubesOS/qubes-issues/issues/2618).
 
 **Knoledge prerequisite**: Frama-C, pytaint, angr, others.
 
-**Mentor**: Jean-Philippe Ouellet <jpo@vt.edu>
+**Mentor**: [Jean-Philippe Ouellet](mailto:jpo@vt.edu)
 
 ### Mitigate focus-stealing attacks
 **Project**: Mitigate focus-stealing attacks

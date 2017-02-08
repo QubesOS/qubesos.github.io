@@ -11,6 +11,7 @@ The Qubes OS project creates a reasonably secure OS. In the interest of fosterin
 ## Our Standards
 
 Examples of behavior that contributes to creating a positive environment include:
+
 - Using welcoming and inclusive language
 - Being respectful of differing viewpoints and experiences
 - Gracefully accepting constructive criticism
@@ -18,6 +19,7 @@ Examples of behavior that contributes to creating a positive environment include
 - Showing empathy towards other community members
 
 Examples of unacceptable behavior by participants include:
+
 - The use of sexualized language or imagery and unwelcome sexual attention or advances
 - Trolling, insulting/derogatory comments, and personal or political attacks
 - Reinforcing stereotypical models for illustration of non-technical users (e.g. our mothers/grandmothers, etc.)

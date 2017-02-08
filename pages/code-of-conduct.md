@@ -27,6 +27,8 @@ Examples of unacceptable behavior by participants include:
 - Publishing others' private information, such as a physical or electronic address, without explicit permission
 - Other conduct which could reasonably be considered inappropriate in a professional setting
 
+(Please also see our [mailing list discussion guidelines](https://www.qubes-os.org/mailing-lists/#discussion-list-guidelines).)
+
 ## Our Responsibilities
 
 Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior. This action can include removing, editing, or rejecting comments, commits, code, wiki edits, issues, and other contributions, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.

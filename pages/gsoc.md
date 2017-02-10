@@ -527,6 +527,26 @@ for more information and qubes-specific background.
 
 **Mentor**: [Rafał Wojdyła](/team/)
 
+### Make Anti Evil Maid resistant against shoulder surfing and video surveillance
+
+**Project**: Observing the user during early boot should not be sufficient to defeat the protection offered by Anti Evil Maid.
+
+**Brief explanation**:
+
+1. Implement optional support for time-based one-time-password seed secrets. Instead of verifying a static text or picture (which the attacker can record and replay later on a compromised system), the user would verify an ephemeral six-digit code displayed on another device, e.g. a smartphone running any Google Authenticator compatible code generator app.
+
+2. Implement optional support for storing a passphrase-encrypted LUKS disk decryption key on a secondary AEM device. The attacker would then have to seize this device in order to decrypt the user's data; just recording the passphrase as it is entered would no longer be enough.
+
+**Expected results**: AEM package updates implementing both features, with fallback support in case the user does not have their smartphone or secondary AEM device at hand. Good UX and documentation for enrolling or upgrading users.
+
+**Knowledge prerequisite**:
+
+- Bash scripting
+- The AEM threat model
+- GRUB2, dracut, systemd, LUKS
+
+**Mentor**: [Rusty Bird](mailto:rustybird@openmailbox.org)
+
 We adapted some of the language here about GSoC from the [KDE GSoC page](https://community.kde.org/GSoC).
 
 [gsoc]: https://summerofcode.withgoogle.com/

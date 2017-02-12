@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: intro
 title: An Introduction to Qubes OS
 permalink: /intro/
 redirect_from:

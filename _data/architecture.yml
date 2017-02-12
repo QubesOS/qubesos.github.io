@@ -6,6 +6,7 @@
     url: /intro/
   - title: Video Tours
     url: /video-tours/
+    icon: fa-play-circle
   - title: From the Experts
     url: /experts/
     icon: fa-play-circle

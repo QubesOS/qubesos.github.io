@@ -89,57 +89,6 @@ If applicable, links to more information or discussions
 **Mentor**: Name and email address.
 ```
 
-### Android development in Qubes
-
-**Project**: Research running Android in Qubes VM (probably HVM) and connecting it to Android Studio
-
-**Brief explanation**: The goal is to enable Android development (and testing!)
-on Qubes OS. Currently it's only possible using qemu-emulated Android for ARM.
-Since it's software emulation it's rather slow.
-Details, reference: [#2233](https://github.com/QubesOS/qubes-issues/issues/2233)
-
-**Expected results**:
-
-**Knowledge prerequisite**:
-
-**Mentor**:
-
-### GNOME support in dom0
-
-**Project**: GNOME support in dom0
-
-**Brief explanation**: Integrating GNOME into Qubes dom0. This include:
-
- - patching window manager to add colorful borders
- - removing stuff not needed in dom0 (file manager(s), indexing services etc)
- - adjusting menu for easy navigation (same applications in different VMs and such problems, dom0-related entries in one place)
- - More info: [#1806](https://github.com/QubesOS/qubes-issues/issues/1806)
-
-**Expected results**:
-
- - Review existing support for other desktop environments (KDE, Xfce4, i3, awesome).
- - Patch window manager to draw colorful borders (we use only server-side
-   decorations), there is already very similar patch in
-   [Cappsule project](https://github.com/cappsule/cappsule-gui).
- - Configure GNOME to not make use of dom0 user home in visible way (no search
-   in files there, no file manager, etc).
- - Configure GNOME to not look into external devices plugged in (no auto
-   mounting, device notifications etc).
- - Package above modifications as rpms, preferably as extra configuration files
-   and/or plugins than overwriting existing files. Exceptions to this rule may
-   apply if no other option.
- - Adjust comps.xml (in installer-qubes-os repo) to define package group with
-   all required packages.
- - Document installation procedure.
-
-**Knowledge prerequisite**:
-
- - GNOME architecture
- - C language (patching metacity)
- - Probably also javascript - for modifying GNOME shell extensions
-
-**Mentor**:
-
 ### Qubes MIME handlers
 
 **Project**: Qubes MIME handlers
@@ -427,22 +376,31 @@ details in [#2618](https://github.com/QubesOS/qubes-issues/issues/2618).
 
 **Brief explanation**: [T509](https://phabricator.whonix.org/T509)
 
-**Expected results**:
+**Expected results**: 
 
-**Knowledge prerequisite**:
+- Work at upstream Tor: An older version of https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxy page was the origin of Whonix. Update that page for nftables / IPv6 support without mentioning Whonix. Then discuss that on the tor-talk mailing list for wider input. - https://trac.torproject.org/projects/tor/ticket/21397
+- implement corridor feature request add IPv6 support / port to nftables - https://github.com/rustybird/corridor/issues/39
+- port whonix-gw-firewall to nftables
+- port whonix-ws-firewall to nftables
+- make connections to IPv6 Tor relays work
+- make connections to IPv6 destinations work
 
-**Mentor**: Patrick Schleizer
+**Knowledge prerequisite**: 
+
+**Mentor**: [Patrick Schleizer](/team/)
 
 ### Standalone connection wizard for Tor pluggable transports
 **Project**: Standalone connection wizard for Tor pluggable transports
 
-**Brief explanation**: [#1938](https://github.com/QubesOS/qubes-issues/issues/1938)
+**Brief explanation**: [#1938](https://github.com/QubesOS/qubes-issues/issues/1938), https://www.whonix.org/blog/connection-bridge-wizard, https://github.com/Whonix/anon-connection-wizard
 
-**Expected results**:
+**Expected results**: 
+
+Users are presented with a GUI where they can select different bridges to use to connect to Tor if it is censored in their country/region, just like with the Tor Browser.
 
 **Knowledge prerequisite**:
 
-**Mentor**: Patrick Schleizer
+**Mentor**: [Patrick Schleizer](/team/)
 
 ### Leverage modern static & dynamic analysis
 **Project**: Leverage modern static & dynamic analysis
@@ -465,34 +423,6 @@ details in [#2618](https://github.com/QubesOS/qubes-issues/issues/2618).
 **Knoledge prerequisite**: Frama-C, pytaint, angr, others.
 
 **Mentor**: [Jean-Philippe Ouellet](mailto:jpo@vt.edu)
-
-### Mitigate focus-stealing attacks
-**Project**: Mitigate focus-stealing attacks
-
-**Brief explanation**: [Focus stealing attacks](https://en.wikipedia.org/wiki/Focus_stealing) have long been an issue in Qubes OS. The Qubes community has long punted the issue due to having higher priority things to work on, and it being viewed as the responsability of the window manager, but nevertheless it remains a serious issue, and an *effective* mitigation would be most welcome. Any student wishing to work on this would need to engage the community in a discussion about the effectiveness of their proposed earlier rather than later. [#1166](https://github.com/QubesOS/qubes-issues/issues/1166)
-
-**Expected results**: Working robust focus stealing prevention for Xfce (currently the default Qubes desktop environment) or Gnome (the targeted future Qubes desktop environment).
-
-**Knoledge prerequisite**: X APIs, Qubes GUI protocol, familiarity with the targeted window manager.
-
-**Mentor**:
-
-### Progress towards reproducible builds
-**Project**: Progress towards reproducible builds
-
-**Brief explanation**: A long-term goal is to be able to build the entire OS and installation media in a completely bit-wise deterministic manner, but there are many baby steps to be taken along that path. See:
-
-- "[Security challenges for the Qubes build process](https://www.qubes-os.org/news/2016/05/30/build-security/)"
-- [This mailing list post](https://groups.google.com/d/msg/qubes-devel/gq-wb9wTQV8/mdliS4P2BQAJ)
-- and [reproducible-builds.org](https://reproducible-builds.org/)
-
-for more information and qubes-specific background.
-
-**Expected results**: Significant progress towards making the Qubes build process deterministic. This would likely involve cooperation with and hacking on several upstream build tools to eliminate sources of variability.
-
-**Knoledge prerequisite**: qubes-builder [[1]](https://www.qubes-os.org/doc/qubes-builder/) [[2]](https://www.qubes-os.org/doc/qubes-builder-details/) [[3]](https://github.com/QubesOS/qubes-builder/tree/master/doc), and efficient at introspecting complex systems: comfortable with tracing and debugging tools, ability to quickly identify and locate issues within a large codebase (upstream build tools), etc.
-
-**Mentor**:
 
 ### Audio support for Qubes Windows Tools
 **Project**: Audio support for Qubes Windows Tools
@@ -546,6 +476,85 @@ for more information and qubes-specific background.
 - GRUB2, dracut, systemd, LUKS
 
 **Mentor**: [Rusty Bird](mailto:rustybird@openmailbox.org)
+
+### GNOME support in dom0
+
+**Project**: GNOME support in dom0
+
+**Brief explanation**: Integrating GNOME into Qubes dom0. This include:
+
+ - patching window manager to add colorful borders
+ - removing stuff not needed in dom0 (file manager(s), indexing services etc)
+ - adjusting menu for easy navigation (same applications in different VMs and such problems, dom0-related entries in one place)
+ - More info: [#1806](https://github.com/QubesOS/qubes-issues/issues/1806)
+
+**Expected results**:
+
+ - Review existing support for other desktop environments (KDE, Xfce4, i3, awesome).
+ - Patch window manager to draw colorful borders (we use only server-side
+   decorations), there is already very similar patch in
+   [Cappsule project](https://github.com/cappsule/cappsule-gui).
+ - Configure GNOME to not make use of dom0 user home in visible way (no search
+   in files there, no file manager, etc).
+ - Configure GNOME to not look into external devices plugged in (no auto
+   mounting, device notifications etc).
+ - Package above modifications as rpms, preferably as extra configuration files
+   and/or plugins than overwriting existing files. Exceptions to this rule may
+   apply if no other option.
+ - Adjust comps.xml (in installer-qubes-os repo) to define package group with
+   all required packages.
+ - Document installation procedure.
+
+**Knowledge prerequisite**:
+
+ - GNOME architecture
+ - C language (patching metacity)
+ - Probably also javascript - for modifying GNOME shell extensions
+
+**Mentor**: [Marek Marczykowski-Górecki](/team/)
+
+### Mitigate focus-stealing attacks
+**Project**: Mitigate focus-stealing attacks
+
+**Brief explanation**: [Focus stealing attacks](https://en.wikipedia.org/wiki/Focus_stealing) have long been an issue in Qubes OS. The Qubes community has long punted the issue due to having higher priority things to work on, and it being viewed as the responsability of the window manager, but nevertheless it remains a serious issue, and an *effective* mitigation would be most welcome. Any student wishing to work on this would need to engage the community in a discussion about the effectiveness of their proposed earlier rather than later. [#1166](https://github.com/QubesOS/qubes-issues/issues/1166)
+
+**Expected results**: Working robust focus stealing prevention for Xfce (currently the default Qubes desktop environment) or Gnome (the targeted future Qubes desktop environment).
+
+**Knoledge prerequisite**: X APIs, Qubes GUI protocol, familiarity with the targeted window manager.
+
+**Mentor**:
+
+### Progress towards reproducible builds
+**Project**: Progress towards reproducible builds
+
+**Brief explanation**: A long-term goal is to be able to build the entire OS and installation media in a completely bit-wise deterministic manner, but there are many baby steps to be taken along that path. See:
+
+- "[Security challenges for the Qubes build process](https://www.qubes-os.org/news/2016/05/30/build-security/)"
+- [This mailing list post](https://groups.google.com/d/msg/qubes-devel/gq-wb9wTQV8/mdliS4P2BQAJ)
+- and [reproducible-builds.org](https://reproducible-builds.org/)
+
+for more information and qubes-specific background.
+
+**Expected results**: Significant progress towards making the Qubes build process deterministic. This would likely involve cooperation with and hacking on several upstream build tools to eliminate sources of variability.
+
+**Knoledge prerequisite**: qubes-builder [[1]](https://www.qubes-os.org/doc/qubes-builder/) [[2]](https://www.qubes-os.org/doc/qubes-builder-details/) [[3]](https://github.com/QubesOS/qubes-builder/tree/master/doc), and efficient at introspecting complex systems: comfortable with tracing and debugging tools, ability to quickly identify and locate issues within a large codebase (upstream build tools), etc.
+
+**Mentor**:
+
+### Android development in Qubes
+
+**Project**: Research running Android in Qubes VM (probably HVM) and connecting it to Android Studio
+
+**Brief explanation**: The goal is to enable Android development (and testing!)
+on Qubes OS. Currently it's only possible using qemu-emulated Android for ARM.
+Since it's software emulation it's rather slow.
+Details, reference: [#2233](https://github.com/QubesOS/qubes-issues/issues/2233)
+
+**Expected results**:
+
+**Knowledge prerequisite**:
+
+**Mentor**:
 
 We adapted some of the language here about GSoC from the [KDE GSoC page](https://community.kde.org/GSoC).
 

@@ -31,8 +31,8 @@ Below you can find the funding of the project by year.
 | Funding tiers
 | ----------|
 | $100,000+ |
+| $50,000+  |
 | $10,000+  |
-| $1,500+   |
 
 2016
 ----
@@ -40,8 +40,8 @@ Below you can find the funding of the project by year.
 | Funding tiers
 | --------- |
 | $250,000+ | [Open Technology Fund]
+| $50,000+  |
 | $10,000+  | [NLnet Foundation]
-| $1,500+   |
 
 2015
 ----
@@ -49,16 +49,17 @@ Below you can find the funding of the project by year.
 | Funding tiers
 | --------- |
 | $100,000+ | [Open Technology Fund]
+| $50,000+  |
 | $10,000+  |
-| $1,500+   |
 
 2010-2014
 ---------
 
 | Funding tiers
-| ------- |
-| $∞      | [Invisible Things Lab]
-| $1,500+ |
+| --------- |
+| $∞        | [Invisible Things Lab]
+| $50,000+  |
+| $10,000+  |
 
 [Open Technology Fund]: /partners/#open-technology-fund
 [NLnet Foundation]: /partners/#nlnet-foundation

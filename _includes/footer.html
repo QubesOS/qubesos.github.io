@@ -106,32 +106,6 @@ $(document).ready(function() {
       onSeek: function(time){}
   })
 
-  var tourVideo2 = $("#player2").tubeplayer({
-      width: 700,
-      height: 393,
-      allowFullScreen: "true",
-      initialVideo: "fiXuYI3G0SE",
-      start: 0,
-      preferredQuality: "hd720",
-      showControls: true,
-      showRelated: false,
-      playsinline: false,
-      autoPlay: false,
-      autoHide: true,
-      theme: "dark",
-      color: "white",
-      showinfo: false,
-      modestbranding: true,
-      annotations: true,
-      loop: 0,
-      protocol: 'https',
-      loadSWFObject: false,
-      iframed: true,
-      onPlayerUnstarted: function(){ console.log('onPlayerUnstarted must be loaded...') },
-      onPlayerCued: function(){ console.log('onPlayerCued must ready...') },
-      onSeek: function(time){}
-  })
-
   $('.player0-seek').on('click', function(e) {
     e.preventDefault()
     //console.log('Jump to: ' + $(this).attr('href'))
@@ -151,18 +125,6 @@ $(document).ready(function() {
     tourVideo1.tubeplayer("play", $(this).attr('href'))
 
     $.each($('#player1-menu li'), function() {
-      $(this).find('i.fa').remove()
-    })
-
-    $(this).prepend('<i class="fa fa-arrow-right"></i> ')
-  })
-
-  $('.player2-play').on('click', function(e) {
-    e.preventDefault()
-    //console.log('Jump to: ' + $(this).attr('href'))
-    tourVideo2.tubeplayer("play", $(this).attr('href'))
-
-    $.each($('#player2-menu li'), function() {
       $(this).find('i.fa').remove()
     })
 

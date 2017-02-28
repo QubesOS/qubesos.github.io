@@ -96,7 +96,7 @@ guidelines.
    including many who post to the lists anonymously. (Given the integration of
    Qubes with [Whonix], we understand better than most the complexities of
    privacy and anonymity, and we know that many users have no other choice but
-   to post anonymously.)
+   to post anonymously.) You can read our project's [Code of Conduct][coc] for more information.
 
 ### Specific rules and notes ###
 
@@ -347,4 +347,4 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
 [`gmane.os.qubes.devel`]: http://dir.gmane.org/gmane.os.qubes.devel
 [`gmane.os.qubes.project`]: http://dir.gmane.org/gmane.os.qubes.project
 [business]: https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Abusiness
-
+[coc]: /code-of-conduct/

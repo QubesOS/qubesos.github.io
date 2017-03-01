@@ -10,7 +10,7 @@ redirect_from: /GSoC/
 
 ## Information for Students
 
-Thank you for your interest in participating in the [Google Summer of Code program][gsoc] with the [Qubes OS team][team]. You can read more about the Google Summer of Code program at the [official website][gsoc] and the [official FAQ][gsoc-faq].
+Thank you for your interest in participating in the [Google Summer of Code program][gsoc-qubes] with the [Qubes OS team][team]. You can read more about the Google Summer of Code program at the [official website][gsoc] and the [official FAQ][gsoc-faq].
 
 Being accepted as a Google Summer of Code student is quite competitive. Students wishing to participate in the Summer of Code must be aware that you will be required to produce code for Qubes OS for 3 months. Your mentors, Qubes developers, will dedicate a portion of their time towards mentoring you. Therefore, we seek candidates who are committed to helping Qubes long-term and are willing to do quality work and be proactive in communicating with your mentor.
 
@@ -556,8 +556,11 @@ Details, reference: [#2233](https://github.com/QubesOS/qubes-issues/issues/2233)
 
 **Mentor**:
 
+----
+
 We adapted some of the language here about GSoC from the [KDE GSoC page](https://community.kde.org/GSoC).
 
+[gsoc-qubes]: https://summerofcode.withgoogle.com/organizations/6239659689508864/
 [gsoc]: https://summerofcode.withgoogle.com/
 [team]: https://www.qubes-os.org/team/
 [gsoc-faq]: https://developers.google.com/open-source/gsoc/faq

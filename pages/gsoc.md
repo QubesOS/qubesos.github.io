@@ -23,13 +23,15 @@ You should start learning the components that you plan on working on before the 
 - Join the [qubes-devel list][ml-devel] and introduce yourself, and meet your fellow developers
 - Read [Google's instructions for participating][gsoc-participate] and the [GSoC Student Manual][gsoc-student]
 - Take a look at the list of ideas below
-- Come up with a project that you are interested in
+- Come up with a project that you are interested in (and feel free to propose your own! Don't feel limited by the list below.)
 - Read the Student Proposal guidelines below
 - Write a first draft proposal and send it to the qubes-devel mailing list for review
 - Submit proposal using [Google's web interface][gsoc-submit] ahead of the deadline (this requires a Google Account!)
 - Submit proof of enrollment well ahead of the deadline
 
 Coming up with an interesting idea that you can realistically achieve in the time available to you (one summer) is probably the most difficult part. We strongly recommend getting involved in advance of the beginning of GSoC, and we will look favorably on applications from students who have already started to act like free and open source developers.
+
+Before the summer starts, there are some preparatory tasks which are highly encouraged. First, if you aren't already, definitely start using Qubes as your primary OS as soon as possible! Also, it is encouraged that you become familiar and comfortable with the Qubes development workflow sooner than later. A good way to do this (and also a great way to stand out as an awesome applicant and make us want to accept you!) might be to pick up some issues from [qubes-issues][qubes-issues] (our issue-tracking repo) and submit some patches addressing them. Some suitable issues might be those with tags ["help wanted" and "P: minor"][qubes-issues-suggested] (although more significant things are also welcome, of course). Doing this will get you some practice with [qubes-builder][qubes-builder], our code-signing policies, and some familiarity with our code base in general so you are ready to hit the ground running come summer.
 
 ### Student proposal guidelines
 
@@ -573,3 +575,6 @@ We adapted some of the language here about GSoC from the [KDE GSoC page](https:/
 [how-to-gsoc]: http://teom.org/blog/kde/how-to-write-a-kick-ass-proposal-for-google-summer-of-code/
 [gsoc-submit]: https://summerofcode.withgoogle.com/
 [mailing-lists]: https://www.qubes-os.org/mailing-lists/
+[qubes-issues]: https://github.com/QubesOS/qubes-issues/issues
+[qubes-issues-suggested]: https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22P%3A%20minor%22%20label%3A%22help%20wanted%22
+[qubes-builder]: https://www.qubes-os.org/doc/qubes-builder/

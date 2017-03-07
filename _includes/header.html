@@ -8,15 +8,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="page-link" href="{{ "/" | prepend: site.baseurl }}">
-        <img src="{{ "/attachment/icons/128x128/apps/qubes-logo-icon.png" | prepend: site.baseurl }}" width="44" height="44" alt="Qubes OS Project">
+      <a class="page-link" href="{{ "/" }}">
+        <img src="{{ "/attachment/icons/128x128/apps/qubes-logo-icon.png" }}" width="44" height="44" alt="Qubes OS Project">
         <span><strong>Qubes</strong> OS</span>
       </a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav nav-justified">
         {% for section in site.data.architecture %}
-        <li><a href="{{ section.url | prepend: site.baseurl | presend: site.url }}">{{ section.title }}</a></li>
+        <li><a href="{{ section.url }}">{{ section.title }}</a></li>
         {% endfor %}
       </ul>
     </div><!--/.nav-collapse -->

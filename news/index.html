@@ -9,7 +9,7 @@ redirect_from: /en/news/
 {% for post in site.posts %}
   <li>
     <h2 class="post-title remove-top remove-bottom">
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+      <a class="post-link" href="{{ post.url }}">
         {{ post.title }}
         {% if post.redirect_to %}
         <i class="fa fa-external-link"></i>

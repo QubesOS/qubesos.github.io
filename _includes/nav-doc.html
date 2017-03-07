@@ -5,7 +5,7 @@
 
   {% for p in site.doc %}
     {% if p.url == item_url %}
-      <a class="page-link" href="{{ p.url | prepend: site.baseurl | prepend: site.url }}">{{ p.title }}</a>
+      <a class="page-link" href="{{ p.url }}">{{ p.title }}</a>
     {% endif %}
   {% endfor %}
 {% endfor %}

@@ -158,7 +158,7 @@ redirect_from:
       <ul class="list-unstyled remove-bottom">
         {% for post in site.posts limit:5 %}
         <li class="list-links">
-          <a class="black-link" href="{{ post.url | prepend: site.baseurl }}">
+          <a class="black-link" href="{{ post.url }}">
             {{ post.title }}
             <span class="detail">
               {% for category in post.categories %}{% if site.allowed_categories contains category %}

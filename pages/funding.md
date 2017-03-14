@@ -43,7 +43,7 @@ Below you can find the funding of the project by year.
 | $50,000+  |
 | $10,000+  | [NLnet Foundation]
 
-2015 derp
+2015
 ----
 
 | Funding tiers

@@ -52,7 +52,7 @@ Below you can find the funding of the project by year.
 | $50,000+  |
 | $10,000+  |
 
-2010–2014t
+2010–2014
 ---------
 
 | Funding tiers

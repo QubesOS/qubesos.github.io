@@ -48,7 +48,7 @@ Below you can find the funding of the project by year.
 
 | Funding tiers
 | --------- |
-| $100,000+ | [Open Technologysadsdasasdasd Fund]
+| $100,000+ | [Open Technology Fund]
 | $50,000+  |
 | $10,000+  |
 

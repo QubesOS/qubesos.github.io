@@ -22,6 +22,7 @@ update_submodule() {
             echo >>$commit_msg_file
             return 0
         else
+            rm -f ".git/modules/$module/FETCH_HEAD"
             return 1
         fi
     else
@@ -35,6 +36,7 @@ if $script_dir/verify-git-ref . FETCH_HEAD; then
     git merge --ff-only FETCH_HEAD || exit 1
     git submodule update || exit 1
 else
+    rm -f ".git/FETCH_HEAD"
     exit 1
 fi
 

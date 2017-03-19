@@ -66,10 +66,10 @@ overhead.
 
 [funding]: /funding/
 [Qubes Partners page]: /partners/
-[Qubes Security Pack]: /doc/security-pack/
+[Qubes Security Pack]: /security/pack/
 [fund]: https://github.com/QubesOS/qubes-secpack/tree/master/fund
 [announcement]: /news/2016/07/13/qubes-distributed-fund/
-[verify]: /doc/security-pack/#how-to-obtain-verify-and-read
+[verify]: /security/pack/#how-to-obtain-verify-and-read
 [blockexplorer.com]: https://blockexplorer.com/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
 [blockchain.info]: https://blockchain.info/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
 [Open Collective]: https://opencollective.com/qubes-os

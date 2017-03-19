@@ -328,7 +328,7 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
     search for the newsgroup [`gmane.os.qubes.project`], uncheck the checkbox, and
     click on **OK**. Thunderbrid will automatically remove the newsgroup.
 
-[qsb]: /doc/security-bulletins/
+[qsb]: /security/bulletins/
 [qubes-announce-web]: https://groups.google.com/group/qubes-announce
 [top-post]: https://en.wikipedia.org/wiki/Posting_style
 [roadmap]: https://github.com/QubesOS/qubes-issues/milestones

@@ -22,7 +22,7 @@
   - title: OS Architecture
     url: /doc/architecture/
     icon: fa-cubes
-  - title: Security Information
+  - title: Security Center
     url: /security/
 
 - title: Downloads
@@ -36,7 +36,7 @@
   - title: Installation Guide
     url: /doc/installation-guide/
   - title: Verifying Signatures
-    url: /doc/verifying-signatures/
+    url: /security/verifying-signatures/
   - title: Supported Versions
     url: /doc/supported-versions/
   - title: Version Scheme

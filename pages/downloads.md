@@ -23,7 +23,7 @@ redirect_from:
       <h3>Installing Qubes Securely</h3>
       <ul class="list-unstyled">
         <li><a href="/doc/installation-guide/"><i class="fa fa-book fa-fw black-icon"></i> Installation Guide</a></li>
-        <li><a href="/doc/verifying-signatures/"><i class="fa fa-lock fa-fw black-icon"></i> How and Why to Verify Signatures</a></li>
+        <li><a href="/security/verifying-signatures/"><i class="fa fa-lock fa-fw black-icon"></i> How and Why to Verify Signatures</a></li>
         <li><a href="/doc/install-security/"><i class="fa fa-lightbulb-o fa-fw black-icon"></i> Installation Security Considerations</a></li>
       </ul>
     </div>
@@ -73,7 +73,7 @@ redirect_from:
           <tr>
             <th>Download</th>
             <th>Verify
-              <a class="fa fa-question-circle" href="/doc/verifying-signatures/"
+              <a class="fa fa-question-circle" href="/security/verifying-signatures/"
                  title="How do I verify my download?"></a></th>
             <th>File</th>
             <th>Size</th>

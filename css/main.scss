@@ -142,3 +142,8 @@ article th {
     background-color: $color-qube-light;
     color: white;
 }
+article tr.center {
+    th {
+        text-align: center;
+    }
+}

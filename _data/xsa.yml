@@ -1,1050 +1,1259 @@
 - xsa: 1
+  date: 2011-03-14
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 2
+  date: 2011-05-09
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 3
+  date: 2011-05-12
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 4
+  date: 2011-09-02
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 5
+  date: 2011-08-12
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 6
+  date: 2012-02-02
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 7
+  date: 2012-06-12
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 8
+  date: 2012-06-12
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 9
+  date: 2012-06-12
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 10
+  date: 2012-07-26
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 11
+  date: 2012-08-08
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 12
+  date: 2012-09-05
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 13
+  date: 2012-09-05
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 14
+  date: 2012-09-05
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 15
+  date: 2012-09-05
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 16
+  date: 2012-09-05
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 17
+  date: 2012-09-05
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 18
+  date: 2012-09-05
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 19
+  date: 2012-09-06
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 20
+  date: 2012-11-13
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 21
+  date: 2012-11-13
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 22
+  date: 2012-11-13
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 23
+  date: 2012-11-13
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 24
+  date: 2012-11-13
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 25
+  date: 2012-11-13
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 26
+  date: 2012-12-03
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 27
+  date: 2012-12-03
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 28
+  date: 2012-12-03
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 29
+  date: 2012-12-03
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 30
+  date: 2012-12-03
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 31
+  date: 2012-12-03
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 32
+  date: 2012-12-03
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 33
+  date: 2013-01-08
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 34
+  date: 2013-01-22
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 35
+  date: 2013-01-22
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 36
+  date: 2013-02-05
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 37
+  date: 2013-01-04
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 38
+  date: 2013-02-05
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 39
+  date: 2013-02-05
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 40
+  date: 2013-01-16
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 41
+  date: 2013-01-16
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 42
+  date: 2013-02-12
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 43
+  date: 2013-02-05
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 44
+  date: 2013-04-18
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 46
+  date: 2013-05-02
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 47
+  date: 2013-04-18
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 48
+  date: 2013-04-04
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 49
+  date: 2013-04-15
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 50
+  date: 2013-05-02
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 51
+  date: 2013-04-18
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 52
+  date: 2013-05-06
   affected: yes
   qsb: 007-2013
   mitigation: 
 
 - xsa: 53
+  date: 2013-06-03
   affected: yes
   qsb: 007-2013
   mitigation: 
 
 - xsa: 54
+  date: 2013-06-03
   affected: yes
   qsb: 007-2013
   mitigation: 
 
 - xsa: 55
+  date: 2013-06-03
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 56
+  date: 2013-06-03
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 57
+  date: 2013-05-17
   affected: yes
   qsb: 007-2013
   mitigation: 
 
 - xsa: 58
+  date: 2013-06-20
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 59
+  date: 2013-06-26
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 60
+  date: 2013-08-20
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 61
+  date: 2013-07-19
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 62
+  date: 2013-09-10
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 63
+  date: 2013-09-24
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 64
+  date: 2013-09-30
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 65
+  date: 2013-09-30
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 66
+  date: 2013-10-02
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 67
+  date: 2013-09-30
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 68
+  date: 2013-10-10
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 69
+  date: 2013-10-10
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 70
+  date: 2013-10-10
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 71
+  date: 2013-10-10
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 72
+  date: 2013-10-10
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 73
+  date: 2013-10-29
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 74
+  date: 2013-11-01
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 75
+  date: 2013-11-26
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 76
+  date: 2013-11-08
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 77
+  date: 2013-11-26
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 78
+  date: 2013-12-10
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 79
+  date: 2013-11-20
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 80
+  date: 2013-11-27
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 81
+  date: 2013-12-10
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 82
+  date: 2013-11-27
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 83
+  date: 2013-12-02
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 84
+  date: 2014-01-23
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 85
+  date: 2014-02-06
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 86
+  date: 2014-02-06
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 87
+  date: 2014-02-06
   affected: yes
   qsb: 010-2014
   mitigation: 
 
 - xsa: 88
+  date: 2014-01-23
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 89
+  date: 2014-02-12
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 90
+  date: 2014-03-25
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 91
+  date: 2014-03-24
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 92
+  date: 2014-04-30
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 93
+  date: 2014-04-29
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 94
+  date: 2014-04-22
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 95
+  date: 2014-04-23
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 96
+  date: 2014-05-14
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 97
+  date: 2014-06-03
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 98
+  date: 2014-08-12
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 99
+  date: 2014-06-04
   affected: no
   qsb: 
   mitigation: 
 
-
 - xsa: 100
+  date: 2014-06-17
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 101
+  date: 2014-06-17
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 102
+  date: 2014-06-25
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 103
+  date: 2014-08-12
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 104
+  date: 2014-08-12
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 105
+  date: 2014-09-23
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 106
+  date: 2014-09-23
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 107
+  date: 2014-09-23
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 108
+  date: 2014-09-09
   affected: yes
   qsb: 012-2014
   mitigation: 
 
 - xsa: 109
+  date: 2014-10-01
   affected: yes
   qsb: 015-2015
   mitigation: 
 
 - xsa: 110
+  date: 2014-11-18
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 111
+  date: 2014-11-18
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 112
+  date: 2014-11-27
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 113
+  date: 2014-11-27
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 114
+  date: 2014-11-20
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 115
+  date: 2014-12-08
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 116
+  date: 2015-01-06
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 117
+  date: 2015-02-12
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 118
+  date: 2015-01-29
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 119
+  date: 2015-03-12
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 120
+  date: 2015-03-10
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 121
+  date: 2015-03-05
   affected: yes
   qsb: 016-2015
   mitigation: 
 
 - xsa: 122
+  date: 2015-03-05
   affected: yes
   qsb: 016-2015
   mitigation: 
 
 - xsa: 123
+  date: 2015-03-10
   affected: yes
   qsb: 018-2015
   mitigation: 
 
 - xsa: 124
+  date: 2015-03-10
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 125
+  date: 2015-03-31
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 126
+  date: 2015-03-31
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 127
+  date: 2015-03-31
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 128
+  date: 2015-06-02
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 129
+  date: 2015-06-02
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 130
+  date: 2015-06-02
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 131
+  date: 2015-06-02
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 132
+  date: 2015-04-20
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 133
+  date: 2015-05-13
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 134
+  date: 2015-06-11
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 135
+  date: 2015-06-10
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 136
+  date: 2015-06-11
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 137
+  date: 2015-07-07
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 138
+  date: 2015-07-27
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 139
+  date: 2015-08-03
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 140
+  date: 2015-08-03
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 141
+  date: 2015-09-01
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 142
+  date: 2015-09-22
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 143
+  date: 2015-10-14
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 144
+  date: 2015-10-14
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 145
+  date: 2015-10-29
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 146
+  date: 2015-10-29
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 147
+  date: 2015-10-29
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 148
+  date: 2015-10-29
   affected: yes
   qsb: 022-2015
   mitigation: 
 
 - xsa: 149
+  date: 2015-10-29
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 150
+  date: 2015-10-29
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 151
+  date: 2015-10-29
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 152
+  date: 2015-10-29
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 153
+  date: 2015-10-29
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 154
+  date: 2016-02-17
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 155
+  date: 2015-12-17
   affected: yes
   qsb: 023-2015
   mitigation: 
 
 - xsa: 156
+  date: 2015-11-10
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 157
+  date: 2015-12-17
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 158
+  date: 2015-12-08
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 159
+  date: 2015-12-08
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 160
+  date: 2015-12-08
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 161
+  date: 2015-11-25
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 162
+  date: 2015-11-30
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 163
+  date: 2015-11-24
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 164
+  date: 2015-12-17
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 165
+  date: 2015-12-17
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 166
+  date: 2015-12-17
   affected: yes
   qsb: 023-2015
   mitigation: 
 
 - xsa: 167
+  date: 2016-01-20
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 168
+  date: 2016-01-20
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 169
+  date: 2015-12-21
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 170
+  date: 2016-02-17
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 171
+  date: 2016-03-16
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 172
+  date: 2016-03-24
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 173
+  date: 2016-04-18
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 174
+  date: 2016-04-14
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 175
+  date: 2016-06-02
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 176
+  date: 2016-05-17
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 177
+  date: 2016-05-24
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 178
+  date: 2016-06-02
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 179
+  date: 2016-05-09
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 180
+  date: 2016-05-23
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 181
+  date: 2016-06-03
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 182
+  date: 2016-07-26
   affected: yes
   qsb: 024-2016
   mitigation: 
 
 - xsa: 183
+  date: 2016-07-26
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 184
+  date: 2016-07-27
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 185
+  date: 2016-09-08
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 186
+  date: 2016-09-08
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 187
+  date: 2016-09-08
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 188
+  date: 2016-09-08
   affected: yes
   qsb: 025-2016
   mitigation: 
 
 - xsa: 189
+  date: 2016-09-21
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 190
+  date: 2016-10-04
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 191
+  date: 2016-11-22
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 192
+  date: 2016-11-22
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 193
+  date: 2016-11-22
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 194
+  date: 2016-11-22
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 195
+  date: 2016-11-22
   affected: yes
   qsb: 027-2016
   mitigation: 
 
 - xsa: 196
+  date: 2016-11-22
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 197
+  date: 2016-11-22
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 198
+  date: 2016-11-22
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 199
+  date: 2016-12-06
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 200
+  date: 2016-12-13
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 201
+  date: 2016-11-29
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 202
+  date: 2016-12-21
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 203
+  date: 2016-12-21
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 204
+  date: 2016-12-19
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 205
+  date: 2017-02-13
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 206
+  date: 2017-03-28
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 207
+  date: 2017-02-15
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 208
+  date: 2017-02-10
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 209
+  date: 2017-02-21
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 210
+  date: 2017-02-23
   affected: no
   qsb: 
   mitigation: 
 
 - xsa: 211
+  date: 2017-03-14
   affected: no
   qsb: 
   mitigation: 

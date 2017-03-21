@@ -465,6 +465,7 @@
   affected: no
   qsb: 
   mitigation: 
+  unused: yes
 
 - xsa: 80
   date: 2013-11-27
@@ -477,6 +478,7 @@
   affected: no
   qsb: 
   mitigation: 
+  unused: yes
 
 - xsa: 82
   date: 2013-11-27
@@ -849,12 +851,14 @@
   affected: no
   qsb: 
   mitigation: 
+  unused: yes
 
 - xsa: 144
   date: 2015-10-14
   affected: no
   qsb: 
   mitigation: 
+  unused: yes
 
 - xsa: 145
   date: 2015-10-29
@@ -1053,6 +1057,7 @@
   affected: no
   qsb: 
   mitigation: 
+  unused: yes
 
 - xsa: 178
   date: 2016-06-02
@@ -1125,6 +1130,7 @@
   affected: no
   qsb: 
   mitigation: 
+  unused: yes
 
 - xsa: 190
   date: 2016-10-04
@@ -1221,6 +1227,7 @@
   affected: no
   qsb: 
   mitigation: 
+  unused: yes
 
 - xsa: 206
   date: 2017-03-28

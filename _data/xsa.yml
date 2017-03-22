@@ -36,8 +36,8 @@
 
 - xsa: 7
   date: 2012-06-12
-  affected: no
-  qsb: 
+  affected: yes
+  qsb: 002-2012
   mitigation: 
 
 - xsa: 8

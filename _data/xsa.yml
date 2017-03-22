@@ -1229,12 +1229,6 @@
   mitigation: 
   unused: yes
 
-- xsa: 206
-  date: 2017-03-28
-  affected: no
-  qsb: 
-  mitigation: 
-
 - xsa: 207
   date: 2017-02-15
   affected: no

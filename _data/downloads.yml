@@ -88,8 +88,8 @@ releases:
   Qubes Release 3.1:
     testing: no
     latest: no
-    aging: yes
-    deprecated: no
+    aging: no
+    deprecated: yes
     sources:
       mirrors.kernel.org:
         method: HTTPS

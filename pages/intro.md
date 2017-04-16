@@ -44,16 +44,18 @@ Aren't antivirus programs and firewalls enough?
 Unfortunately, conventional security approaches like antivirus programs
 and (software and/or hardware) firewalls are no longer enough to keep out
 sophisticated attackers. For example, nowadays it's common for malware
-creators to check to see if their malware is recognized by any popular
+creators to check to see if their malware is recognized by any signature-based
 antivirus programs. If it's recognized, they scramble their code until it's
 no longer recognizable by the antivirus programs, then send it out. The
-best antivirus programs will subsequently get updated once the antivirus
+best of these programs will subsequently get updated once the antivirus
 programmers discover the new threat, but this usually occurs at least a
 few days after the new attacks start to appear in the wild. By then, it's
-typically too late for those who have already been compromised. In addition,
-bugs are inevitably discovered in the common software we all use (such as
-our web browsers), and no antivirus program or firewall can prevent all of
-these bugs from being exploited.
+too late for those who have already been compromised. More advanced antivirus
+software may perform better in this regard, but it's still limited to a
+detection-based approach. New zero-day vulnerabilities are constantly being
+discovered in the common software we all use, such as our web browsers, and no
+antivirus program or firewall can prevent all of these vulnerabilities from
+being exploited.
 
 
 How does Qubes OS provide security?

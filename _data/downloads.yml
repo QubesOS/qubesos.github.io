@@ -11,7 +11,7 @@ releases:
     aging: no
     deprecated: no
     sources:
-      mirrors.kernel.org:
+      - name: mirrors.kernel.org
         method: HTTPS
         type: ISO
         filename: Qubes-R3.2-x86_64.iso
@@ -21,7 +21,7 @@ releases:
           hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-x86_64.iso.DIGESTS
           sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      ftp.halifax.rwth-aachen.de:
+      - name: ftp.halifax.rwth-aachen.de
         method: HTTP
         type: ISO
         filename: Qubes-R3.2-x86_64.iso
@@ -31,7 +31,7 @@ releases:
           hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.2-x86_64.iso.DIGESTS
           sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.2-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      ftp.qubes-os.org:
+      - name: ftp.qubes-os.org
         method: HTTPS
         type: ISO
         filename: Qubes-R3.2-x86_64.iso
@@ -41,7 +41,7 @@ releases:
           hash: https://ftp.qubes-os.org/iso/Qubes-R3.2-x86_64.iso.DIGESTS
           sig: https://ftp.qubes-os.org/iso/Qubes-R3.2-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      'mirrors.kernel.org ':
+      - name: mirrors.kernel.org
         method: BitTorrent
         type: Torrent
         filename: Qubes-R3.2-x86_64.torrent
@@ -51,7 +51,7 @@ releases:
           hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-x86_64.iso.DIGESTS
           sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.2-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      'ftp.halifax.rwth-aachen.de ':
+      - name: ftp.halifax.rwth-aachen.de
         method: BitTorrent
         type: Torrent
         filename: Qubes-R3.2-x86_64.torrent
@@ -61,7 +61,7 @@ releases:
           hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.2-x86_64.iso.DIGESTS
           sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.2-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      'ftp.qubes-os.org ':
+      - name: ftp.qubes-os.org
         method: BitTorrent
         type: Torrent
         filename: Qubes-R3.2-x86_64.torrent
@@ -91,7 +91,7 @@ releases:
     aging: no
     deprecated: yes
     sources:
-      mirrors.kernel.org:
+      - name: mirrors.kernel.org
         method: HTTPS
         type: ISO
         filename: Qubes-R3.1-x86_64.iso
@@ -101,7 +101,7 @@ releases:
           hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso.DIGESTS
           sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      ftp.halifax.rwth-aachen.de:
+      - name: ftp.halifax.rwth-aachen.de
         method: HTTP
         type: ISO
         filename: Qubes-R3.1-x86_64.iso
@@ -111,7 +111,7 @@ releases:
           hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.1-x86_64.iso.DIGESTS
           sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.1-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      ftp.qubes-os.org:
+      - name: ftp.qubes-os.org
         method: HTTPS
         type: ISO
         filename: Qubes-R3.1-x86_64.iso
@@ -121,7 +121,7 @@ releases:
           hash: https://ftp.qubes-os.org/iso/Qubes-R3.1-x86_64.iso.DIGESTS
           sig: https://ftp.qubes-os.org/iso/Qubes-R3.1-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      'mirrors.kernel.org ':
+      - name: mirrors.kernel.org
         method: BitTorrent
         type: Torrent
         filename: Qubes-R3.1-x86_64.iso.torrent
@@ -131,7 +131,7 @@ releases:
           hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso.DIGESTS
           sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      'ftp.halifax.rwth-aachen.de ':
+      - name: ftp.halifax.rwth-aachen.de
         method: BitTorrent
         type: Torrent
         filename: Qubes-R3.1-x86_64.iso.torrent
@@ -141,7 +141,7 @@ releases:
           hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.1-x86_64.iso.DIGESTS
           sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.1-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      'ftp.qubes-os.org ':
+      - name: ftp.qubes-os.org
         method: BitTorrent
         type: Torrent
         filename: Qubes-R3.1-x86_64.iso.torrent
@@ -178,7 +178,7 @@ releases:
                 release on an external drive, such as a USB flash drive or an
                 external SSD or HDD.
     sources:
-      mirrors.kernel.org:
+      - name: mirrors.kernel.org
         method: HTTPS
         type: ISO
         filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
@@ -187,7 +187,7 @@ releases:
         verifiers:
           sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.1-alpha1.1-x86_64-LIVE.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      ftp.halifax.rwth-aachen.de:
+      - name: ftp.halifax.rwth-aachen.de
         method: HTTP
         type: ISO
         filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
@@ -197,7 +197,7 @@ releases:
           hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.1-alpha1.1-x86_64.iso.DIGESTS
           sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.1-alpha1.1-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      ftp.qubes-os.org:
+      - name: ftp.qubes-os.org
         method: HTTPS
         type: ISO
         filename: Qubes-R3.1-alpha1.1-x86_64-LIVE.iso
@@ -216,7 +216,7 @@ releases:
     aging: no
     deprecated: yes
     sources:
-      mirrors.kernel.org:
+      - name: mirrors.kernel.org
         method: HTTPS
         type: ISO
         filename: Qubes-R3.0-x86_64-DVD.iso
@@ -226,7 +226,7 @@ releases:
           hash: https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso.DIGESTS
           sig: https://mirrors.kernel.org/qubes/iso/Qubes-R3.0-x86_64-DVD.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      ftp.halifax.rwth-aachen.de:
+      - name: ftp.halifax.rwth-aachen.de
         method: HTTP
         type: ISO
         filename: Qubes-R3.0-x86_64-DVD.iso
@@ -236,7 +236,7 @@ releases:
           hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.0-x86_64-DVD.iso.DIGESTS
           sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.0-x86_64-DVD.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
-      ftp.qubes-os.org:
+      - name: ftp.qubes-os.org
         method: HTTPS
         type: ISO
         filename: Qubes-R3.0-x86_64-DVD.iso
@@ -267,7 +267,7 @@ releases:
     aging: no
     deprecated: yes
     sources:
-      mirrors.kernel.org:
+      - name: mirrors.kernel.org
         method: HTTPS
         type: ISO
         filename: Qubes-R2-x86_64-DVD.iso
@@ -277,7 +277,7 @@ releases:
           hash: https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso.DIGESTS
           sig: https://mirrors.kernel.org/qubes/iso/Qubes-R2-x86_64-DVD.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-2-signing-key.asc
-      ftp.halifax.rwth-aachen.de:
+      - name: ftp.halifax.rwth-aachen.de
         method: HTTP
         type: ISO
         filename: Qubes-R2-x86_64-DVD.iso
@@ -287,7 +287,7 @@ releases:
           hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R2-x86_64-DVD.iso.DIGESTS
           sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R2-x86_64-DVD.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-2-signing-key.asc
-      ftp.qubes-os.org:
+      - name: ftp.qubes-os.org
         method: HTTPS
         type: ISO
         filename: Qubes-R2-x86_64-DVD.iso
@@ -311,7 +311,7 @@ releases:
     aging: no
     deprecated: yes
     sources:
-      mirrors.kernel.org:
+      - name: mirrors.kernel.org
         method: HTTPS
         type: ISO
         filename: Qubes-R1-x86_64-DVD.iso
@@ -321,7 +321,7 @@ releases:
           hash: https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso.DIGESTS
           sig: https://mirrors.kernel.org/qubes/iso/Qubes-R1-x86_64-DVD.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-1-signing-key.asc
-      ftp.halifax.rwth-aachen.de:
+      - name: ftp.halifax.rwth-aachen.de
         method: HTTP
         type: ISO
         filename: Qubes-R1-x86_64-DVD.iso
@@ -331,7 +331,7 @@ releases:
           hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R1-x86_64-DVD.iso.DIGESTS
           sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R1-x86_64-DVD.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-1-signing-key.asc
-      ftp.qubes-os.org:
+      - name: ftp.qubes-os.org
         method: HTTPS
         type: ISO
         filename: Qubes-R1-x86_64-DVD.iso

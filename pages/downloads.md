@@ -81,10 +81,8 @@ redirect_from:
           </tr>
         </thead>
         <tbody>
-          {% for sourcedata in release.sources %}
-          {% assign source_name = sourcedata[0] %}
-          {% assign source = sourcedata[1] %}
-            {% if source_name contains "mirrors.kernel.org" %}
+          {% for source in release.sources %}
+            {% if source.name == "mirrors.kernel.org" %}
             <tr>
               <td>
                 <a class="btn btn-primary btn-block" href="{{ source.url }}">
@@ -109,7 +107,7 @@ redirect_from:
                 <samp>{{ source.size }}</samp>
               </td>
               <td>
-                <a href="https://{{ source_name }}/"><i class="fa fa-linux fa-fw black-icon"></i><samp> {{ source_name }}</samp></a>
+                <a href="https://{{ source.name }}/"><i class="fa fa-linux fa-fw black-icon"></i><samp> {{ source.name }}</samp></a>
               </td>
             </tr>
             {% endif %}

@@ -14,27 +14,6 @@ redirect_from:
 Qubes Mailing Lists
 ===================
 
-qubes-announce
---------------
-
-This is a read-only list for those who wish to receive only very important,
-infrequent messages. Only the core Qubes team can post to this list, and only
-[Qubes Security Bulletins (QSBs)][qsb] and new Qubes OS releases are announced
-here.
-
-### How to subscribe
-
-#### Google Groups
-
- * To subscribe to the list, send a blank email to
-   `qubes-announce+subscribe@googlegroups.com`.
-   * Note: A Gmail account is *not* required. Any email address will work.
- * To unsubscribe, send a blank email to
-   `qubes-announce+unsubscribe@googlegroups.com`.
- * This list can also be browsed via an optional [Google Groups web
-   interface][qubes-announce-web].
-
-
 Discussion list guidelines
 --------------------------
 
@@ -208,6 +187,27 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
   * To unsubscribe from the list, click on **Subscribe...**
     search for the newsgroup [`gmane.os.qubes.user`], uncheck the checkbox, and
     click on **OK**. Thunderbrid will automatically remove the newsgroup.
+
+
+qubes-announce
+--------------
+
+This is a read-only list for those who wish to receive only very important,
+infrequent messages. Only the core Qubes team can post to this list, and only
+[Qubes Security Bulletins (QSBs)][qsb] and new Qubes OS releases are announced
+here.
+
+### How to subscribe
+
+#### Google Groups
+
+ * To subscribe to the list, send a blank email to
+   `qubes-announce+subscribe@googlegroups.com`.
+   * Note: A Gmail account is *not* required. Any email address will work.
+ * To unsubscribe, send a blank email to
+   `qubes-announce+unsubscribe@googlegroups.com`.
+ * This list can also be browsed via an optional [Google Groups web
+   interface][qubes-announce-web].
 
 
 qubes-devel

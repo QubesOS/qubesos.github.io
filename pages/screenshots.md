@@ -11,6 +11,12 @@ redirect_from:
 Select Qubes OS Screenshots
 ===========================
 
+[![r32-xfce-desktop.png](/attachment/wiki/QubesScreenshots/r32-xfce-desktop.png)](/attachment/wiki/QubesScreenshots/r32-xfce-desktop.png)
+
+Beginning with Qubes 3.2, the default desktop environment is Xfce4.
+
+* * * * *
+
 [![r2b2-kde-start-menu.png](/attachment/wiki/QubesScreenshots/r2b2-kde-start-menu.png)](/attachment/wiki/QubesScreenshots/r2b2-kde-start-menu.png)
 
 Starting applications from different domains (AppVMs) is very easy.

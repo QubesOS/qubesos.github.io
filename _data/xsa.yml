@@ -1271,3 +1271,15 @@
   qsb: 029-2017
   mitigation: 
 
+- xsa: 213
+  date: 2017-05-02
+  affected: yes
+  qsb: 030-2017
+  mitigation: 
+
+- xsa: 214
+  date: 2017-05-02
+  affected: yes
+  qsb: 030-2017
+  mitigation: 
+

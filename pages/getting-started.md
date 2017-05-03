@@ -120,7 +120,7 @@ It's a good idea to start out with the three qubes created automatically by the 
 Then, if and when you start to feel that some activity just doesn't fit into any of your existing qubes, or you want to partition some part of your life, you can easily create a new qube for it. 
 You'll also be able to easily copy any files you need to the newly created qube, as explained [here](/doc/copying-files/).
 
-More paranoid people might find it worthwhile to read [this article](http://theinvisiblethings.blogspot.com/2011/03/partitioning-my-digital-life-into.html), which describes how one of the Qubes authors partitions her digital life into security domains.
+More paranoid people might find it worthwhile to read [this article](https://theinvisiblethings.blogspot.com/2011/03/partitioning-my-digital-life-into.html), which describes how one of the Qubes authors partitions her digital life into security domains.
 
 Running an application Full Screen
 ----------------------------------

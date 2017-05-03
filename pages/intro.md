@@ -222,11 +222,11 @@ technical details have been omitted here for the sake of presentation.
 [Template]: /doc/templates/
 [Qubes-Whonix]: /doc/whonix/
 [Whonix]: https://www.whonix.org/
-[Tor]: https://torproject.org/
+[Tor]: https://www.torproject.org/
 [Anti Evil Maid]: /doc/anti-evil-maid/
 [Tails]: https://tails.boum.org/
-[Xen]: http://www.xenproject.org
-[paper-compart]: http://www.invisiblethingslab.com/resources/2014/Software_compartmentalization_vs_physical_separation.pdf
+[Xen]: https://www.xenproject.org
+[paper-compart]: https://invisiblethingslab.com/resources/2014/Software_compartmentalization_vs_physical_separation.pdf
 [doc]: /doc/
 [user-faq]: /doc/user-faq/
 [system-doc]: /doc/system-doc/

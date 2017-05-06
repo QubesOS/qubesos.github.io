@@ -1,11 +1,9 @@
 language: ruby
-rvm: 
+dist: trusty
+rvm:
  - 2.1
-install: gem install github-pages html-proofer
-script: jekyll build && htmlproofer ./_site --disable-external --checks-to-ignore ImageCheck --file-ignore ./_site/video-tours/index.html --url-ignore /qubes-issues/
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+install: true
+script: ./_utils/travis.sh
 notifications:
   email:
     recipients:

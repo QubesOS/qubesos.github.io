@@ -143,6 +143,7 @@ redirect_from:
       <h3 id="mirrors">Download Mirrors</h3>
       <ul class="list-unstyled">
         <li><a href="https://mirrors.kernel.org/qubes/iso/"><i class="fa fa-download fa-fw black-icon"></i> mirrors.kernel.org</a></li>
+        <li><a href="https://archive.org/download/QubesOS"><i class="fa fa-download fa-fw black-icon"></i> archive.org</a></li>
         <li><a href="http://ftp.halifax.rwth-aachen.de/qubes/iso/"><i class="fa fa-download fa-fw black-icon"></i> ftp.halifax.rwth-aachen.de</a></li>
         <li><a href="https://ftp.qubes-os.org/iso/"><i class="fa fa-download fa-fw black-icon"></i> ftp.qubes-os.org</a></li>
         <li><a href="http://ftp.qubesos4rrrrz6n4.onion/iso/"><i class="fa fa-download fa-fw black-icon"></i> ftp.qubesos4rrrrz6n4.onion</a></li>

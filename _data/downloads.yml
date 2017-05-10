@@ -7,7 +7,13 @@
 releases:
   Qubes Release 3.2:
     testing: no
-    latest: yes
+    latest: This is the latest stable Qubes OS release. We recommend this
+            release for all new and existing users.<br>
+            Please note that 3.2 will be supported for one full year after the
+            release of 4.0 (instead of <a href="/doc/supported-versions/">the
+            usual six months</a>). See
+            <a href="/news/2016/09/02/4-0-minimum-requirements-3-2-extended-support/">
+            here</a> for details.
     aging: no
     deprecated: no
     sources:

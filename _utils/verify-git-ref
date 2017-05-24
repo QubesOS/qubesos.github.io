@@ -20,7 +20,7 @@ verify_tag() {
 	temp_name=`mktemp -d sig-verify.XXXXXX`
 	git cat-file tag $1 | sed "/$sig_header/,//d"  > $temp_name/content
 	git cat-file tag $1 | sed -n "/$sig_header/,//p" > $temp_name/content.asc
-	gpg --verify --status-fd=1 $temp_name/content.asc 2>/dev/null|grep -q '^\[GNUPG:\] TRUST_\(FULLY\|ULTIMATE\)$'
+	gpg2 --verify --status-fd=1 $temp_name/content.asc 2>/dev/null|grep -q '^\[GNUPG:\] TRUST_\(FULLY\|ULTIMATE\)$'
 	ret=$?
 	rm -r $temp_name
 	return $ret

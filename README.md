@@ -176,8 +176,8 @@ Please carefully read these guidelines before submitting a pull request.
 
 
 [qubes]: https://github.com/QubesOS
-[intro]: https://www.qubes-os.org/doc/doc-guidelines/
-[Documentation Guidelines]: 
+[intro]: https://www.qubes-os.org/intro/
+[Documentation Guidelines]: https://www.qubes-os.org/doc/doc-guidelines/
 [Jekyll]: https://jekyllrb.com/
 [Jekyll Documentation]: http://jekyllrb.com/docs/
 [FontAwesome]: http://fontawesome.io

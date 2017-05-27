@@ -153,38 +153,7 @@ Done!
 
         exit
 
-
-Contributions
--------------
-
-Contributions which improve the content of this repo are welcome. To contribute,
-please [fork and clone][gh-fork] this repo, make your changes, then either
-[submit a pull request][gh-pull] or [send a patch][patch] to the `qubes-devel`
-[mailing list][lists]. If you have a GitHub account (free), you can simply
-browse this repository and edit the files here. The GitHub interface will
-automatically guide you through the [fork and pull request process][gh-fork].
-
-#### Adding Normal Pages
-
-To add normal pages such as [Getting Started](https://qubes-os.org/getting-started) or [Donate](https://qubes-os.org/donate/), do the following:
-
-1. Create a file `your-new-page.md` or `.html`
-2. Place this inside of the `pages/` directory
-3. Copy a header section from another page and edit corresponding values
-4. Add this page to `_data/architecture.yml` file so that your page shows up in the footer navigation
-5. Pick an icon that matches thematically with your page :)
-
-#### Adding Blog Posts
-
-1. Copy the template file `_drafts/2015-12-06-a-template-daft.md` to something like `2015-12-08-your-new-post.md`
-2. This can be a `.html` file as well
-3. Place this inside of the `_drafts/` directory
-3. To see drafts, add the `--drafts` flag when you run Jekyll such as `jekyll s -V --drafts`
-4. Edit the template file you just created
-5. Make sure to add "categories" to it
-6. When you are ready to publish your post, put your file inside of the `_posts/` directory
-
-#### Dependencies & Third Party Docs
+### Dependencies & Third Party Docs ###
 
 - [Jekyll Documentation] - template rendering engine
 - [Bootstrap 3] - styling and CSS structure
@@ -192,34 +161,23 @@ To add normal pages such as [Getting Started](https://qubes-os.org/getting-start
 - [jQuery 1.7] - javascript helper library
 - [jQuery ToC MD Generator] - renders header menu on documentation section
 
-Markdown Conventions
---------------------
+[Documentation Guidelines]
+--------------------------
 
-Much of the site is written in Markdown. When making contributions to these
-areas, please observe the following style conventions, where appropriate:
+Our [Documentation Guidelines] include:
+ - How to Report Issues
+ - How to Contribute
+ - Contribution Suggestions
+ - Style Guidelines
+ - Markdown Conventions
+ - Git Conventions
 
- * Use spaces instead of tabs.
- * Hard wrap Markdown lines at 80 characters.
- * Hard wrap Git commit message lines at 72 characters.
-   * This leaves exactly four spaces on each side of the commit message when
-   viewed in the default `git log` format.)
- * If appropriate, make numerals in numbered lists match between Markdown
-   source and HTML output.
-   * In the event that a user is required to read the Markdown source
-   directly, this will make it easier to follow, e.g., numbered steps in a
-   set of instructions.
- * Use hanging indentations  
-   where appropriate.
- * Use underline headings (`=====` and `-----`) if possible. If this is not
-   possible, use Atx-style headings on both the left and right sides
-   (`### H3 ###`).
- * Use `[reference-style][ref]` links.  
-
-`[ref]: http://daringfireball.net/projects/markdown/syntax#link`
+Please carefully read these guidelines before submitting a pull request.
 
 
 [qubes]: https://github.com/QubesOS
-[intro]: https://www.qubes-os.org/intro/
+[intro]: https://www.qubes-os.org/doc/doc-guidelines/
+[Documentation Guidelines]: 
 [Jekyll]: https://jekyllrb.com/
 [Jekyll Documentation]: http://jekyllrb.com/docs/
 [FontAwesome]: http://fontawesome.io

@@ -153,16 +153,8 @@ Done!
 
         exit
 
-### Dependencies & Third Party Docs ###
-
-- [Jekyll Documentation] - template rendering engine
-- [Bootstrap 3] - styling and CSS structure
-- [FontAwesome] - the icon font throughout the site
-- [jQuery 1.7] - javascript helper library
-- [jQuery ToC MD Generator] - renders header menu on documentation section
-
-[Documentation Guidelines]
---------------------------
+Documentation Guidelines
+------------------------
 
 Our [Documentation Guidelines] include:
  - How to Report Issues
@@ -173,6 +165,14 @@ Our [Documentation Guidelines] include:
  - Git Conventions
 
 Please carefully read these guidelines before submitting a pull request.
+
+### Dependencies & Third Party Docs ###
+
+- [Jekyll Documentation] - template rendering engine
+- [Bootstrap 3] - styling and CSS structure
+- [FontAwesome] - the icon font throughout the site
+- [jQuery 1.7] - javascript helper library
+- [jQuery ToC MD Generator] - renders header menu on documentation section
 
 
 [qubes]: https://github.com/QubesOS

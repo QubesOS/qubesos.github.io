@@ -15,8 +15,8 @@ redirect_from:
       <h3>Choosing Your Hardware</h3>
       <ul class="list-unstyled">
         <li><a href="/doc/system-requirements/"><i class="fa fa-server fa-fw black-icon"></i> System Requirements</a></li>
+        <li><a href="/doc/hardware/"><i class="fa fa-laptop fa-fw black-icon"></i> General Hardware Information</a></li>
         <li><a href="/hcl/"><i class="fa fa-desktop fa-fw black-icon"></i> Hardware Compatibility List</a></li>
-        <li><a href="/doc/certified-laptops"><i class="fa fa-laptop fa-fw black-icon"></i> Qubes-Certified Laptops</a></li>
       </ul>
     </div>
     <div class="col-lg-4 col-md-4">

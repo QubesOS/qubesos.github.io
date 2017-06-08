@@ -31,7 +31,9 @@
   sub-pages:
   - title: System Requirements
     url: /doc/system-requirements/
-  - title: Compatible Hardware
+  - title: Hardware Information
+    url: /hardware/
+  - title: Compatibility List
     url: /hcl/
   - title: Installation Guide
     url: /doc/installation-guide/
@@ -124,9 +126,6 @@
   - title: Partners
     url: /partners/
     icon: fa-globe
-  - title: Hardware Certification
-    url: /hardware-certification/
-    icon: fa-laptop
 
 - title: Donate
   url: /donate/

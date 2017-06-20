@@ -1289,3 +1289,57 @@
   qsb: 030-2017
   mitigation: 
 
+- xsa: 216
+  date: 2017-06-20
+  affected: yes
+  qsb: 031-2017
+  mitigation: 
+
+- xsa: 217
+  date: 2017-06-20
+  affected: yes
+  qsb: 031-2017
+  mitigation: 
+
+- xsa: 218
+  date: 2017-06-20
+  affected: yes
+  qsb: 031-2017
+  mitigation: 
+
+- xsa: 219
+  date: 2017-06-20
+  affected: yes
+  qsb: 031-2017
+  mitigation: 
+
+- xsa: 220
+  date: 2017-06-20
+  affected: no
+  qsb: 031-2017
+  mitigation: 
+
+- xsa: 221
+  date: 2017-06-20
+  affected: yes
+  qsb: 031-2017
+  mitigation: 
+
+- xsa: 222
+  date: 2017-06-20
+  affected: yes
+  qsb: 031-2017
+  mitigation: 
+
+- xsa: 223
+  date: 2017-06-20
+  affected: yes
+  qsb: 031-2017
+  mitigation: 
+
+- xsa: 224
+  date: 2017-06-20
+  affected: yes
+  qsb: 031-2017
+  mitigation: 
+

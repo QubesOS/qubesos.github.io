@@ -15,7 +15,7 @@ What is Qubes OS?
 
 Qubes OS is a security-oriented operating system (OS). The OS is the software
 that runs all the other programs on a computer. Some examples of popular
-OSes are Microsoft Windows, Mac OS X, Android, and iOS. Qubes is free and
+OSes are Microsoft Windows, Mac OS X, GNU/Linux, Android, and iOS. Qubes is free and
 open-source software (FOSS). This means that everyone is free to use, copy,
 and change the software in any way. It also means that the source code is
 openly available so others can contribute to and audit it.

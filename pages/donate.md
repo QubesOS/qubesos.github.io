@@ -22,6 +22,7 @@ sustained [funding], please visit the [Qubes Partners page].
 
 Bitcoin donations have zero administrative overhead for us, which means 100% of
 your donation goes towards supporting Qubes development!
+(Please note that we do not currently accept donations in other cryptocurrencies.)
 
 #### Donation Address:
 

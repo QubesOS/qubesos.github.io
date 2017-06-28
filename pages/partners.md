@@ -8,7 +8,7 @@ redirect_from: /en/partners/
 Qubes Partners
 ==============
 
-This page is dedicated to recogizing the organizations, companies, and
+This page is dedicated to recognizing the organizations, companies, and
 individuals who have contributed support to the development of Qubes OS. The
 Qubes Project is grateful for their support! If your organization is interested
 in becoming a Qubes Partner, please [contact us]. You can also read more about

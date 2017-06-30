@@ -6,9 +6,10 @@ redirect_from: /en/partners/
 ---
 
 Our Partners
-==============
+============
 
-The Qubes Project relies greatly on the generous support of the organizations, companies, and individuals who have become Qubes Partners. Each year, we seek new sources of significant funding to support our ongoing efforts.
+The Qubes Project relies greatly on the generous support of the organizations, companies, and individuals who have become Qubes Partners.
+Each year, we seek new sources of significant funding to support our ongoing efforts.
 
 Please [contact us][contact] if you or your organization is interested in becoming a Qubes Partner.
 
@@ -22,13 +23,14 @@ Please [contact us][contact] if you or your organization is interested in becomi
 - **$10,000+** [NLnet Foundation](#nlnet-foundation)
 
 ### 2015
-- **$100,000+** [Open Technology Fund](#open-technology-fund)    
+- **$100,000+** [Open Technology Fund](#open-technology-fund)
 
 ### 2014 and earlier
 - **$∞** [Invisible Things Lab](#invisible-things-lab)
 
 ## Our Partners
-We would like to recognize the following Qubes Partners. We are grateful for their support!
+We would like to recognize the following Qubes Partners.
+We are grateful for their support!
 
 <table class="partners" border="0">
   <tbody>

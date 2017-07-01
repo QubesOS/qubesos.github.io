@@ -31,8 +31,8 @@
   sub-pages:
   - title: System Requirements
     url: /doc/system-requirements/
-  - title: Hardware Information
-    url: /doc/hardware/
+  - title: Certified Hardware
+    url: /doc/certified-hardware/
   - title: Compatibility List
     url: /hcl/
   - title: Installation Guide

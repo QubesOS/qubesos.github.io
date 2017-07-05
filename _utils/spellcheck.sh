@@ -92,12 +92,51 @@ diff_two() {
     grep '^-' < "${cmp}.plusminus" > "${cmp}.minus" || :
 }
 
+
+ansi() { cc=$1; shift; printf "\x1b[${cc}m%s\x1b[0m\n" "$*" ; }
+red() { ansi 31 "$@" ; }
+green() { ansi 32 "$@" ; }
+
 show() {
     local ref=$1
     while read -d $'\n' suspect; do
         ( cd "$d/${ref}.checkout" && \
           find -type f -exec grep --color=always -rHnwF "$suspect" {} + )
     done
+}
+
+diff_report() {
+    local old=$1
+    local new=$2
+    local plus=${d}/${old}..${new}.plus
+    local minus=${d}/${old}..${new}.minus
+
+    diff_two "$old" "$new"
+
+    echo "Spelling report for ${old:0:8}..${new:0:8}:"
+    echo
+    if [ -s "$plus" ]; then
+        red 'The following new unknown spellings were introduced:'
+        sed 's/^/    /' < "$plus"
+    else
+        green 'No new unique misspellings were introduced.'
+    fi
+
+    if [ -s "$minus" ]; then
+        echo
+        echo 'In addition, the following suspicious spellings were eliminated:'
+        sed 's/^/    /' < "$minus"
+    fi
+
+    if [ -s "$plus" ]; then
+        echo
+        echo 'The introduced suspects in context are:'
+        echo
+        sed 's/^+//' < "$plus" | show "$new"
+        echo
+        echo 'If these are false-positives, simply commit as is and they will'
+        echo 'be ignored in the future.'
+    fi
 }
 
 
@@ -128,28 +167,7 @@ case $# in
     exit 2
 esac
 
-diff_two "$old" "$new"
-
-ansi() { cc=$1; shift; printf "\x1b[${cc}m%s\x1b[0m\n" "$*" ; }
-red() { ansi 31 "$@" ; }
-green() { ansi 32 "$@" ; }
-
-plus=${d}/${old}..${new}.plus
-minus=${d}/${old}..${new}.minus
-
-echo "Spelling report for ${old:0:8}..${new:0:8}:"
-echo
-if [ -s "$plus" ]; then
-    red 'The following new unknown spellings were introduced:'
-    sed 's/^/	/' < "$plus"
-else
-    green 'No new unique misspellings were introduced.'
-fi
-if [ -s "$minus" ]; then
-    echo
-    echo 'In addition, the following suspicious spellings were eliminated:'
-    sed 's/^/	/' < "$minus"
-fi
+diff_report "$old" "$new"
 
 # exit 0 if no new unknown unique spellings were introduced, 1 otherwise
 ! test -s "$plus"

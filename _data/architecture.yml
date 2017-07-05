@@ -131,10 +131,8 @@
   url: /donate/
   icon: fa-heart
   sub-pages:
-  - title: Bitcoin
-    url: /donate/#bitcoin
-  - title: Credit Card
-    url: /donate/#credit-card
+  - title: How to donate
+    url: /donate/
   - title: Funding
     url: /funding/
     icon: fa-money

@@ -87,7 +87,7 @@ Visit our [introduction page to Qubes][intro page] or watch a [video overview of
 [contact]: mailto:funding@qubes-os.org
 [Qubes Security Pack]: /doc/security-pack/
 [fund]: https://github.com/QubesOS/qubes-secpack/tree/master/fund
-[verify]: /doc/security-pack/#how-to-obtain-verify-and-read
+[verify]: /security/pack/#how-to-obtain-verify-and-read
 [blockexplorer.com]: https://blockexplorer.com/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
 [blockchain.info]: https://blockchain.info/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
 [announcement]: /news/2016/07/13/qubes-distributed-fund/

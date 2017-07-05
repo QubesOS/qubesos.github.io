@@ -17,7 +17,7 @@ We accept monetary donations via Bitcoin and credit card in the following three 
 Donating with Bitcoin ensures that 100% of your money supports Qubes development because we do not incur any administrative costs.
 With credit card donations, [we lose roughly 14%][open-collective-faq] to administrative costs.
 
-+ **Donate to Our Bitcoin Address:** 3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq ([read more about verifying our Bitcoin address](#verify-address))
++ **Donate to Our Bitcoin Address:** 3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq ([read more about verifying our Bitcoin address](#how-do-i-verify-your-bitcoin-address))
 + **Donate with Credit Card:** [visit our Open Collective page][Open Collective]
 
 ### 2. Join Our Sustaining Supporters
@@ -66,7 +66,7 @@ Donations to the Qubes project are not tax deductible.
 We prefer monetary contributions which allow us greater flexibility.
 However, if you or your organization has relevant knowledge, experience, leads, or resources and would like to help us secure the future of Qubes OS, don’t hesitate to [contact us][contact].
 
-### <a name="verify-address"></a>How Do I Verify Your Bitcoin Address?
+### How Do I Verify Your Bitcoin Address?
 The donation address can be verified via the [Qubes Security Pack][Qubes Security Pack], specifically in the [fund directory][fund].
 We provide [detailed instructions for verifying the digital signatures][verify].
 You can also view the address on [blockexplorer.com][blockexplorer.com] and [blockchain.info][blockchain.info].
@@ -84,7 +84,6 @@ Visit our [introduction page to Qubes][intro page] or watch a [video overview of
 [stripe]: https://stripe.com
 
 [open-collective-faq]: https://opencollective.com/faq
-[verify address]: #
 [Open Collective]: https://opencollective.com/qubes-os
 [Open Collective donate]: https://opencollective.com/qubes-os#support
 [Qubes Partners page]: /partners/

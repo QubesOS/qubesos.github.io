@@ -3,7 +3,11 @@
 set -e
 set -o pipefail
 
-v() { [ -n "$VERBOSE" ] && echo "$@" ; }
+v() {
+    if [ -n "$VERBOSE" ]; then
+        echo "$@"
+    fi
+}
 
 if command -v hunspell > /dev/null; then
     check_words() { hunspell -l; }
@@ -81,8 +85,7 @@ diff_two() {
     check_one "$old"
     check_one "$new"
     [ -e "${cmp}.plusminus" ] && { v "Using cached diff"; return; }
-    diff -urd "$d"/{"${old}","${new}"}.suspects.tree > "${cmp}.diff.tree" || :
-    diff -ur  "$d"/{"${old}","${new}"}.suspects.flat > "${cmp}.diff.flat" || :
+    diff -u "$d"/{"${old}","${new}"}.suspects.flat > "${cmp}.diff.flat" || :
     grep -v '^\( \|@\|+++\|---\)' < "${cmp}.diff.flat" | LC_ALL=C sort \
       > "${cmp}.plusminus" || :
     grep '^+' < "${cmp}.plusminus" > "${cmp}.plus" || :
@@ -149,4 +152,4 @@ if [ -s "$minus" ]; then
 fi
 
 # exit 0 if no new unknown unique spellings were introduced, 1 otherwise
-test -s "$plus"
+! test -s "$plus"

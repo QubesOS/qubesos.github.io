@@ -88,11 +88,11 @@ check_one() {
     v "Checking out $ref..."
     mkdir -p "$checkout"
     cp -pr .git "$checkout"
-    git -C "$checkout" checkout --force "$ref"
-    git -C "$checkout" submodule update --checkout --recursive --force
+    git -q -C "$checkout" checkout --force "$ref"
+    git -q -C "$checkout" submodule update --checkout --recursive --force
 
     v "Building $ref..."
-    ( cd "$checkout" && make > /dev/null )
+    ( cd "$checkout" && make >/dev/null 2>&1 )
     find_suspects "$checkout/_site" "$tree"
     find "$tree" -type f -exec cat {} + | sort -u > "$flat"
 }

@@ -69,9 +69,28 @@ check_one() {
     [ -d "$checkout" ] && { v "Using cached $ref"; return; }
     local tree="${d}/${ref}.suspects.tree"
     local flat="${d}/${ref}.suspects.flat"
+
+    # We want to make a duplicate of the repo without requiring re-cloning it
+    # over the network. Perhaps the commits we want to test are not pushed to
+    # the remote. This is particularly a problem with submodules, which (when
+    # cloned) reset their url to the upstream remote rather than the
+    # superproject origin. There are several options:
+    # - hackily fix up the submodule urls post-clone
+    # - potentially use git-worktree(1), but the BUGS section of the man page
+    #   (at least in 2.7.4) says:
+    #      Multiple checkout in general is still experimental, and the support
+    #      for submodules is incomplete. It is NOT recommended to make multiple
+    #      checkouts of a superproject.
+    # - copy the whole .git dir, which is very much overkill especially when
+    #   used on a local repo (as opposed to CI) which may carry more objects,
+    #   but seems to be the least fragile way I've found so far.
+
     v "Checking out $ref..."
     mkdir -p "$checkout"
-    git --work-tree="$checkout" checkout "$ref" -- .
+    cp -pr .git "$checkout"
+    git -C "$checkout" checkout --force "$ref"
+    git -C "$checkout" submodule update --checkout --recursive --force
+
     v "Building $ref..."
     ( cd "$checkout" && make > /dev/null )
     find_suspects "$checkout/_site" "$tree"

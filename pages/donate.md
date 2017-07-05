@@ -80,9 +80,6 @@ Its architecture is built to enable you to define and visualize different securi
 
 Visit our [introduction page to Qubes][intro page] or watch a [video overview of the system][video page] to learn more.
 
-[Bitcoin donations]: #bitcoin
-[stripe]: https://stripe.com
-
 [open-collective-faq]: https://opencollective.com/faq
 [Open Collective]: https://opencollective.com/qubes-os
 [Open Collective donate]: https://opencollective.com/qubes-os#support

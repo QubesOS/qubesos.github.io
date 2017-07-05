@@ -1,12 +1,10 @@
-JEKYLLOPTS = --verbose --trace
-
 all:
-	bundle exec jekyll build $(JEKYLLOPTS)
+	bundle exec jekyll build
 
 clean:
 	$(RM) -r _site
 
 serve:
-	bundle exec jekyll serve --watch $(JEKYLLOPTS)
+	bundle exec jekyll serve --watch
 
 .PHONY: all clean serve

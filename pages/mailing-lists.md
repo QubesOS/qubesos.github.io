@@ -172,8 +172,7 @@ were sent directly to the list.
 The mailing list is also available via Gmane, a service that provides mailing
 lists in the form of newsgroups. This makes it possible for you to subscribe
 and read all mails sent to the list without having them all sent to your normal
-mail account.  To use Gmane, you need a newsreader such as Mozilla Thunderbird
-(or Icedove in Debian).
+mail account.  To use Gmane, you need a newsreader such as Mozilla Thunderbird.
 
 To add Gmane's server to Thunderbird, follow the instructions in
 [Mozilla Thunderbird's documentation for how to add
@@ -186,7 +185,7 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
   * You send and reply to mails the same way you would normally.
   * To unsubscribe from the list, click on **Subscribe...**
     search for the newsgroup [`gmane.os.qubes.user`], uncheck the checkbox, and
-    click on **OK**. Thunderbrid will automatically remove the newsgroup.
+    click on **OK**. Thunderbird will automatically remove the newsgroup.
 
 
 qubes-announce
@@ -253,8 +252,7 @@ You must be subscribed in order to post to this list.
 The mailing list is also available via Gmane, a service that provides mailing
 lists in the form of newsgroups. This makes it possible for you to subscribe
 and read all mails sent to the list without having them all sent to your normal
-mail account.  To use Gmane, you need a newsreader such as Mozilla Thunderbird
-(or Icedove in Debian).
+mail account.  To use Gmane, you need a newsreader such as Mozilla Thunderbird.
 
 To add Gmane's server to Thunderbird, follow the instructions in
 [Mozilla Thunderbird's documentation for how to add
@@ -267,7 +265,7 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
   * You send and reply to mails the same way you would normally.
   * To unsubscribe from the list, click on **Subscribe...**
     search for the newsgroup [`gmane.os.qubes.devel`], uncheck the checkbox, and
-    click on **OK**. Thunderbrid will automatically remove the newsgroup.
+    click on **OK**. Thunderbird will automatically remove the newsgroup.
 
 qubes-project
 -----------
@@ -312,8 +310,7 @@ were sent directly to the list.
 The mailing list is also available via Gmane, a service that provides mailing
 lists in the form of newsgroups. This makes it possible for you to subscribe
 and read all mails sent to the list without having them all sent to your normal
-mail account.  To use Gmane, you need a newsreader such as Mozilla Thunderbird
-(or Icedove in Debian).
+mail account.  To use Gmane, you need a newsreader such as Mozilla Thunderbird.
 
 To add Gmane's server to Thunderbird, follow the instructions in
 [Mozilla Thunderbird's documentation for how to add
@@ -326,7 +323,7 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
   * You send and reply to mails the same way you would normally.
   * To unsubscribe from the list, click on **Subscribe...**
     search for the newsgroup [`gmane.os.qubes.project`], uncheck the checkbox, and
-    click on **OK**. Thunderbrid will automatically remove the newsgroup.
+    click on **OK**. Thunderbird will automatically remove the newsgroup.
 
 [qsb]: /security/bulletins/
 [qubes-announce-web]: https://groups.google.com/group/qubes-announce

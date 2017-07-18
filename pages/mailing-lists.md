@@ -279,7 +279,7 @@ Examples of topics or question suitable for this list include:
 
 * Participation (talks, workshops, etc.) at upcoming events
 * Project funding applications and strategies
-* FOSS governance discussions 
+* FOSS governance discussions
 * Most Github issues tagged "[business]"
 
 ### How to subscribe and post
@@ -325,6 +325,41 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
     search for the newsgroup [`gmane.os.qubes.project`], uncheck the checkbox, and
     click on **OK**. Thunderbird will automatically remove the newsgroup.
 
+    qubes-translation
+    -----------
+
+    ### How to use this list
+
+    This list is primarily intended for people who are interested in translating
+    Qubes, especially the documentation. Moreover, it shall provide an easy access
+    for translators and other helpers who don't have or don't want a Github account.
+
+     * Questions about the translation workflow.
+     * Questions about transifex, the translation platform.
+     * Discussion about implementation and coordination.
+
+    ### How to subscribe and post
+
+    #### Google Groups
+
+    You must be subscribed in order to post to this list.
+
+     * To subscribe to the list, send a blank email to
+       `qubes-translation+subscribe@googlegroups.com`.
+       * Note: A Gmail account is *not* required. Any email address will work.
+     * To post a message to the list, address your email to
+       `qubes-translation@googlegroups.com`.
+       * Note: You must be subscribed in order to post. If your post does not
+         appear, please allow time for moderation to occur.
+     * To unsubscribe, send a blank email to
+       `qubes-translation+unsubscribe@googlegroups.com`.
+     * This list has a [Google Groups web interface][qubes-translation-web].
+       * Some users prefer to interact with the mailing list through the web
+         interface. This has the advantage that it allows you to search and reply to
+         messages which were sent prior to your subscription to the list. However, a
+         Google account is required in order to post through this interface.
+
+
 [qsb]: /security/bulletins/
 [qubes-announce-web]: https://groups.google.com/group/qubes-announce
 [top-post]: https://en.wikipedia.org/wiki/Posting_style
@@ -339,6 +374,7 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
 [thunderbird-newsgroup]: https://support.mozilla.org/en-US/kb/creating-newsgroup-account
 [qubes-users-web]: https://groups.google.com/group/qubes-users
 [qubes-devel-web]: https://groups.google.com/group/qubes-devel
+[qubes-translation-web]: https://groups.google.com/group/qubes-translation
 [qubes-project-web]: https://groups.google.com/group/qubes-project
 [`gmane.os.qubes.user`]: http://dir.gmane.org/gmane.os.qubes.user
 [`gmane.os.qubes.devel`]: http://dir.gmane.org/gmane.os.qubes.devel

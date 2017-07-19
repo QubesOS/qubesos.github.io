@@ -325,40 +325,40 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
     search for the newsgroup [`gmane.os.qubes.project`], uncheck the checkbox, and
     click on **OK**. Thunderbird will automatically remove the newsgroup.
 
-    qubes-translation
-    -----------
 
-    ### How to use this list
+qubes-translation
+-----------
 
-    This list is primarily intended for people who are interested in translating
-    Qubes, especially the documentation. Moreover, it shall provide an easy access
-    for translators and other helpers who don't have or don't want a Github account.
+### How to use this list
 
-     * Questions about the translation workflow.
-     * Questions about transifex, the translation platform.
-     * Discussion about implementation and coordination.
+This list is for discussion around the localization and translation of Qubes OS, 
+its documentation, and the website. 
 
-    ### How to subscribe and post
+Examples of topics or question suitable for this list include:
 
-    #### Google Groups
+ * Questions about or issues with [Transifex], the translation platform we use
+ * Who is managing localization for a given language
+ * Most Github issues tagged "[localization]"
 
-    You must be subscribed in order to post to this list.
+### How to subscribe and post
 
-     * To subscribe to the list, send a blank email to
-       `qubes-translation+subscribe@googlegroups.com`.
-       * Note: A Gmail account is *not* required. Any email address will work.
-     * To post a message to the list, address your email to
-       `qubes-translation@googlegroups.com`.
-       * Note: You must be subscribed in order to post. If your post does not
-         appear, please allow time for moderation to occur.
-     * To unsubscribe, send a blank email to
-       `qubes-translation+unsubscribe@googlegroups.com`.
-     * This list has a [Google Groups web interface][qubes-translation-web].
-       * Some users prefer to interact with the mailing list through the web
-         interface. This has the advantage that it allows you to search and reply to
-         messages which were sent prior to your subscription to the list. However, a
-         Google account is required in order to post through this interface.
+#### Google Groups
 
+You must be subscribed in order to post to this list.
+
+ * To subscribe to the list, send a blank email to
+   `qubes-translation+subscribe@googlegroups.com`.
+   * Note: A Gmail account is *not* required. Any email address will work.
+ * To post a message to the list, address your email to
+   `qubes-translation@googlegroups.com`.
+   * Note: You don't have to be subscribed in order to post.
+ * To unsubscribe, send a blank email to
+   `qubes-translation+unsubscribe@googlegroups.com`.
+ * This list also has a [Google Groups web interface][qubes-translation-web].
+   * Some users prefer to interact with the mailing list through the web
+     interface. This has the advantage that it allows you to search and reply to
+     messages which were sent prior to your subscription to the list. However, a
+     Google account is required in order to post through this interface.
 
 [qsb]: /security/bulletins/
 [qubes-announce-web]: https://groups.google.com/group/qubes-announce
@@ -380,4 +380,6 @@ In the fourth step replace `news.mozilla.org` with `news.gmane.org`.
 [`gmane.os.qubes.devel`]: http://dir.gmane.org/gmane.os.qubes.devel
 [`gmane.os.qubes.project`]: http://dir.gmane.org/gmane.os.qubes.project
 [business]: https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Abusiness
+[localization]: https://github.com/QubesOS/qubes-issues/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Alocalization
 [coc]: /code-of-conduct/
+[Transifex]: https://www.transifex.com/otf/qubes/

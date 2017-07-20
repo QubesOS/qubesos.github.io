@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <body>
+      {% include header.html %}
+      <div class="container">
+        <h1 class="more-top add-left">
+          <i class="fa fa-book"></i>
+            {% assign doc_segments = page.relative_path | split: '/' %}
+            {% for section in site.data.doc %}
+            {% for topic in section.topics %}
+            {% if doc_segments contains topic.folder %}
+              {{section.category}}
+        </h1>
+        <div class="alert alert-danger" role="alert">
+          <i class="fa fa-exclamation-triangle"></i>
+          <b>Caution:</b>
+          This page is an unverified translation.
+          The Qubes OS Project cannot evaluate the accuracy of translations into languages that our team cannot read.
+        </div>
+        <div class="more-bottom white-box page-content">
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 page-content-left">
+              <article id="doc-content" class="post-content">
+                {{ content }}
+              </article>
+            <br>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 text-center">
+              <div class="heading-label">
+                <h5 class="remove-bottom">{{topic.title}}</h5>
+              {% endif %}
+              {% endfor %}
+              {% endfor %}
+              </div>
+              <div id="page-toc"></div>
+              <hr>
+              <div class="page-source">
+                <a href="/doc/"
+                   class="btn btn-primary btn-block"
+                   title="Back to Documentation">
+                  <span class="fa fa-chevron-left"></span> Back to Documentation
+                </a><br>
+                <a href="{{ site.project_repo_path }}/qubes-doc/blob/master{{ page.relative_path | remove_first: '_doc' }}"
+                   class="page-source-link btn btn-default btn-block"
+                   title="View page source"
+                   target="_blank">
+                  <span class="fa fa-code"></span> View Page Source
+                </a><br>
+                <a href="{{ site.project_repo_path }}/qubes-doc/edit/master{{ page.relative_path | remove_first: '_doc' }}"
+                   class="page-source-link btn btn-default btn-block"
+                   title="Edit this page"
+                   target="_blank">
+                  <span class="fa fa-code-fork"></span> Edit This Page
+                </a><br>
+                <a href="/doc/doc-guidelines/"
+                   class="page-source-link btn btn-default btn-block"
+                   title="How to Contribute"
+                   target="_blank">
+                  <span class="fa fa-pencil"></span> How to Contribute
+                </a>
+                <div id="page-toc"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% include footer.html %}
+        <script src="/js/jquery.toc.js"></script>
+        <script>
+        $(document).ready(function() {
+          $('#doc-content').toc({
+            renderIn: '#page-toc',
+            anchorPrefix: 'tocAnchor-', // the default prefix used for generated TOC elements IDs
+            showAlways: true, //Show TOC also if only one H1 is present on page, the TOC is never show if no H1s are found on page
+            saveShowStatus: false, // Save the collapse status using a cookie (see dependecies for further details)
+            contentsText: 'Contents', // The label text shown for Content, you can localize passing another string
+            hideText: 'hide', // The label text shown for hide button, you can localize passing another string
+            showText: 'hide' // The label text shown for show button, you can localize passing another string
+          })
+        })
+        </script>
+      </div>
+  </body>
+</html>

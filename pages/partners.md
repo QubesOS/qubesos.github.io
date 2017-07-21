@@ -41,8 +41,8 @@ We are grateful for their support!
         </a>
       </td>
       <td>
-        <h3>Invisible Things Lab</h3><a href="http://invisiblethingslab.com/itl/Welcome.html">
-        <p>Invisible Things Lab s.c. (ITL)</a> is a privately held company based in Warsaw, Poland, owned by Joanna Rutkowska and Joanna Gołębiewska. ITL supported Qubes OS development from the beginning of the project in 2010 through 2014. The company’s primary source of revenue is security research and development.</p>
+        <h3>Invisible Things Lab</h3>
+        <p><a href="http://invisiblethingslab.com/itl/Welcome.html">Invisible Things Lab s.c. (ITL)</a> is a privately held company based in Warsaw, Poland, owned by Joanna Rutkowska and Joanna Gołębiewska. ITL supported Qubes OS development from the beginning of the project in 2010 through 2014. The company’s primary source of revenue is security research and development.</p>
       </td>
     </tr>
     <tr id="open-technology-fund">

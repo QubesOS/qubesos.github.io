@@ -50,9 +50,28 @@ git -C "$sub_path" fetch --update-shallow ${TRAVIS_BUILD_DIR} HEAD
 git -C "$sub_path" checkout FETCH_HEAD
 bundle exec jekyll build
 
+all_ok=true
+
 if [ -d ~/old_site ]; then
     echo diffing
     diff -ur ~/old_site ./_site || true
+
+    echo
+    echo "Spelling report for $TRAVIS_COMMIT_RANGE:"
+    echo
+    _utils/spellcheck.sh ~/old_site _site || all_ok=false
+    echo
 fi
 
-htmlproofer ./_site --disable-external --checks-to-ignore ImageCheck --file-ignore ./_site/video-tours/index.html --url-ignore "/qubes-issues/"
+htmlproofer ./_site \
+  --disable-external \
+  --checks-to-ignore ImageCheck \
+  --file-ignore ./_site/video-tours/index.html \
+  --url-ignore "/qubes-issues/" || all_ok=false
+
+if $all_ok; then
+    echo 'All checks passed!'
+else
+    echo 'Some checked failed. See above.'
+    exit 1
+fi

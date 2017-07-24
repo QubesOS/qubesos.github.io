@@ -136,8 +136,17 @@ usage() {
     exit 2
 }
 
-d=$(mktemp -d)
-trap 'rm -rf "$d"' EXIT
+# Allow specifying someplace to save the intermediate state,
+# otherwise put it in a temp dir and remove it on exit
+if [ -n "$SPELLCHECK_WORKDIR" ]; then
+    d="$SPELLCHECK_WORKDIR"
+    rm -rf "$d"
+    mkdir -p "$d"
+else
+    d=$(mktemp -d)
+    trap 'rm -rf "$d"' EXIT
+fi
+v "Using $d as work dir"
 
 repo="$(dirname "$(dirname "$(readlink -f "$0")")")"
 

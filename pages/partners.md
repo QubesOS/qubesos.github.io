@@ -2,7 +2,9 @@
 layout: default
 title: Qubes Partners
 permalink: /partners/
-redirect_from: /en/partners/
+redirect_from:
+ - /en/partners/
+ - /funding/
 ---
 
 Our Partners

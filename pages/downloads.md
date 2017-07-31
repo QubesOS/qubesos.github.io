@@ -47,6 +47,11 @@ redirect_from:
       {% assign latest = release.latest | default: false %}
       {% assign aging = release.aging | default: false %}
       {% assign deprecated = release.deprecated | default: false %}
+      {% if release_name == "Qubes Release 4.0-rc1 (release candidate)" %}
+        {% assign preferred_mirror = "ftp.qubes-os.org" %}
+      {% else %}
+        {% assign preferred_mirror = "mirrors.kernel.org" %}
+      {% endif %}
       <h3 class="more-bottom" id="{{ release.link }}">{{ release_name }}</h3>
       {% if testing %}
       <div class="alert alert-info" role="alert">
@@ -82,7 +87,7 @@ redirect_from:
         </thead>
         <tbody>
           {% for source in release.sources %}
-            {% if source.name == "mirrors.kernel.org" %}
+            {% if source.name == preferred_mirror %}
             <tr>
               <td>
                 <a class="btn btn-primary btn-block" href="{{ source.url }}">

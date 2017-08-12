@@ -57,7 +57,10 @@ With the help of our community, we hope to eventually build a nonprofit organiza
 ### How is My Donation Used?
 Your donation pays directly for individual developers who have been hired to work on the open source edition of Qubes.
 
-We regret that we cannot implement requested features based on funding (if everybody were to decide, then nothing would get implemented).
+### Do Donors Get Personalized Support or Special Feature Requests?
+We regret that we cannot provide personalized support to donors or implement specific features based on donations.
+In both cases, the reason is that our resources are limited.
+If we were to allocate these limited resources to providing support to individual donors and implemented their requested features, we wouldn't have enough resources left over to make timely progress on our core projects, and the long-term sustainability of Qubes would suffer.
 
 ### Is My Donation Tax Deductible?
 Donations to the Qubes project are not tax deductible.

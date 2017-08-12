@@ -106,13 +106,24 @@ redirect_from:
                 {% endfor %}
               </td>
               <td>
-                <samp>{{ source.filename }}</samp>
+                <small><samp>{{ source.filename }}</samp></small>
               </td>
               <td>
-                <samp>{{ source.size }}</samp>
+                <small><samp>{{ source.size }}</samp></small>
               </td>
               <td>
-                <a href="https://{{ source.name }}/"><i class="fa fa-linux fa-fw black-icon"></i><samp> {{ source.name }}</samp></a>
+                <div class="d-inline">
+                  <a href="https://{{ source.name }}/">
+                    {% if source.name == "mirrors.kernel.org" %}
+                    <i class="fa fa-linux fa-fw black-icon"></i>
+                    {% elsif source.name == "ftp.qubes-os.org" %}
+                    <i class="fa fa-cubes fa-fw black-icon"></i>
+                    {% else %}
+                    <i class="fa fa-cloud-download fa-fw black-icon"></i>
+                    {% endif %}
+                    <samp>{{ source.name }}</samp>
+                  </a>
+                </div>
               </td>
             </tr>
             {% endif %}
@@ -162,6 +173,7 @@ redirect_from:
         <li><a href="/doc/supported-versions/"><i class="fa fa-history fa-fw black-icon"></i> Supported Versions</a></li>
         <li><a href="/doc/version-scheme/"><i class="fa fa-code-fork fa-fw black-icon"></i> Version Scheme</a></li>
         <li><a href="/doc/templates/"><i class="fa fa-clone fa-fw black-icon"></i> Templates</a></li>
+        <li><a href="/doc/system-requirements/"><i class="fa fa-server fa-fw black-icon"></i> System Requirements</a></li>
         <li><a href="/security/"><i class="fa fa-lock fa-fw black-icon"></i> Security Information</a></li>
       </ul>
     </div>
@@ -173,6 +185,7 @@ redirect_from:
         <li><a href="/doc/source-code/"><i class="fa fa-code fa-fw black-icon"></i> Source Code</a></li>
         <li><a href="/doc/license/"><i class="fa fa-file-text-o fa-fw black-icon"></i> Software License</a></li>
         <li><a href="/doc/coding-style/"><i class="fa fa-terminal fa-fw black-icon"></i> Coding Guidelines</a></li>
+        <li><a href="/doc/#developer-documentation"><i class="fa fa-book fa-fw black-icon"></i> Developer Documentation</a></li>
         <li><a href="/doc/architecture/"><i class="fa fa-cubes fa-fw black-icon"></i> OS Architecture</a></li>
       </ul>
     </div>

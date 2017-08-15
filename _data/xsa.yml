@@ -1349,3 +1349,33 @@
   qsb: 
   mitigation: 
 
+- xsa: 226
+  date: 2017-08-15
+  affected: yes
+  qsb: 032-2017
+  mitigation: 
+
+- xsa: 227
+  date: 2017-08-15
+  affected: yes
+  qsb: 032-2017
+  mitigation: 
+
+- xsa: 228
+  date: 2017-08-15
+  affected: yes
+  qsb: 032-2017
+  mitigation: 
+
+- xsa: 229
+  date: 2017-08-15
+  affected: yes
+  qsb: 032-2017
+  mitigation: 
+
+- xsa: 230
+  date: 2017-08-15
+  affected: yes
+  qsb: 032-2017
+  mitigation: 
+

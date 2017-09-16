@@ -18,17 +18,26 @@ Please [contact us][contact] if you or your organization is interested in becomi
 ## Funding by Year
 
 ### 2017
-- We are seeking funders in all tiers for 2017.
+- **$250,000+** : [Invisible Things Lab]
+- **$50,000+** : [Mullvad]
+- **$10,000+** : [zby]
 
 ### 2016
-- **$250,000+** [Open Technology Fund](#open-technology-fund)
-- **$10,000+** [NLnet Foundation](#nlnet-foundation)
+- **$250,000+** : [Open Technology Fund], [Invisible Things Lab]
+- **$10,000+** : [NLnet Foundation]
 
 ### 2015
-- **$100,000+** [Open Technology Fund](#open-technology-fund)
+- **$100,000+** : [Open Technology Fund]
 
 ### 2014 and earlier
-- **$∞** [Invisible Things Lab](#invisible-things-lab)
+- **$∞** : [Invisible Things Lab]
+
+[Mullvad]: #mullvad
+[zby]: #zby
+[NLnet Foundation]: #nlnet-foundation
+[Open Technology Fund]: #open-technology-fund
+[Invisible Things Lab]: #invisible-things-lab
+[contact]: mailto:funding@qubes-os.org
 
 ## Our Partners
 We would like to recognize the following Qubes Partners.
@@ -44,7 +53,30 @@ We are grateful for their support!
       </td>
       <td>
         <h3>Invisible Things Lab</h3>
-        <p><a href="http://invisiblethingslab.com/itl/Welcome.html">Invisible Things Lab s.c. (ITL)</a> is a privately held company based in Warsaw, Poland, owned by Joanna Rutkowska and Joanna Gołębiewska. ITL supported Qubes OS development from the beginning of the project in 2010 through 2014. The company’s primary source of revenue is security research and development.</p>
+        <p><a href="http://invisiblethingslab.com/itl/Welcome.html">Invisible Things Lab s.c. (ITL)</a> is a privately held company based in Warsaw, Poland, owned by Joanna Rutkowska and Joanna Gołębiewska.
+        ITL has supported Qubes OS development from the beginning of the project in 2010 to the present.
+        The company’s primary source of revenue is security research and development.</p>
+      </td>
+    </tr>
+    <tr id="mullvad">
+      <td>
+        <a href="https://www.mullvad.net/">
+          <img src="/attachment/site/mullvad-logo.png">
+        </a>
+      </td>
+      <td>
+        <h3>Mullvad</h3>
+        <p><a href="https://www.mullvad.net/">Mullvad</a> is a VPN service that keeps users' online activity, identity, and location private.
+        With a fundamental belief in privacy as a universal right, Mullvad's ultimate goal is to make Internet censorship and mass surveillance ineffective.</p>
+        <p>The Mullvad team has relied on Qubes in its day-to-day operations since early 2015.
+        To support its continued development, Mullvad made a generous donation to Qubes in 2017.</p>
+      </td>
+    </tr>
+    <tr id="zby">
+      <td><h2>zby</h2></td>
+      <td>
+        <h3>zby</h3>
+        <p><b>zby</b> is angel investor looking for early stage startups in the IT security area.</p>
       </td>
     </tr>
     <tr id="open-technology-fund">
@@ -53,15 +85,12 @@ We are grateful for their support!
           <img src="/attachment/site/OTF-logo.png">
         </a>
       </td>
+
       <td>
         <h3>Open Technology Fund</h3>
-        <p><a href="https://www.opentechfund.org/">Open Technology Fund (OTF)</a>
-        is a United States government-funded program of
-        <a href="http://www.rfa.org">Radio Free Asia</a>, whose stated mission is
-        to "support open technologies and communities that increase free
-        expression, circumvent censorship, and obstruct repressive surveillance
-        as a way to promote human rights and open societies."</p>
-        <p><a href="https://blog.invisiblethings.org/2015/06/04/otf-funding-announcement.html">OTF has funded a number of improvements to Qubes</a>, including better accessibility and user experience, integration of Whonix, and improved hardware compatibility. Visit the <a href="https://www.opentech.fund/project/qubes-os">Qubes funding page on OTF’s website</a> for more information.</p>
+        <p><a href="https://www.opentechfund.org/">Open Technology Fund (OTF)</a> is a United States government-funded program of <a href="http://www.rfa.org">Radio Free Asia</a>, whose stated mission is to "support open technologies and communities that increase free expression, circumvent censorship, and obstruct repressive surveillance as a way to promote human rights and open societies."</p>
+        <p><a href="https://blog.invisiblethings.org/2015/06/04/otf-funding-announcement.html">OTF has funded a number of improvements to Qubes</a>, including better accessibility and user experience, integration of Whonix, and improved hardware compatibility.
+        Visit the <a href="https://www.opentech.fund/project/qubes-os">Qubes funding page on OTF’s website</a> for more information.</p>
       </td>
     </tr>
     <tr id="access-now">
@@ -72,7 +101,8 @@ We are grateful for their support!
       </td>
       <td>
         <h3>Access Now</h3>
-        <p><a href="https://www.accessnow.org/">Access Now</a> is an international human rights organization whose stated mission is to “defend and extend the digital rights of users at risk around the world.” Beginning in 2015, Access Now generously agreed to provide staff time to help manage the Qubes OS project.</p>
+        <p><a href="https://www.accessnow.org/">Access Now</a> is an international human rights organization whose stated mission is to “defend and extend the digital rights of users at risk around the world.”
+        Beginning in 2015, Access Now generously agreed to provide staff time to help manage the Qubes OS project.</p>
       </td>
     </tr>
     <tr id="nlnet-foundation">
@@ -90,4 +120,3 @@ We are grateful for their support!
   </tbody>
 </table>
 
-[contact]: mailto:funding@qubes-os.org

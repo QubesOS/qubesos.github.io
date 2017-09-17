@@ -13,24 +13,37 @@
     {% endif %}
   </title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
- <!-- LD+JSON schema --> 
+  <!-- LD+JSON schema --> 
   <script type='application/ld+json'> 
-{
-  "@context": "http://www.schema.org",
-  "@type": "WebSite",
-  "name": "Qubes OS",
-  "url": "https://www.qubes-os.org/"
-}
-   </script>
+  {
+    "@context": "http://www.schema.org",
+    "@type": "WebSite",
+    "name": "Qubes OS",
+    "url": "https://www.qubes-os.org/"
+  }
+  </script>
 
-<!-- Open Graph data -->
-<meta property="og:title" content="Qubes OS" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.qubes-os.org/" />
-<meta property="og:image" content="https://www.qubes-os.org/attachment/icons/qubes-logo-icon-name-slogan-fb.png" />
-<meta property="og:description" content="Qubes OS is a security-oriented, open-source operating system for personal computers. It uses virtualization to implement security by compartmentalization and supports both Linux and Windows virtual environments." /> 
-<meta property="og:site_name" content="Qubes OS" />
-<meta property="fb:admins" content="andrewdavidwong.adw" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.qubes-os.org{{ page.url }}">
+  <meta property="og:title" content="{{ page.title }}">
+  {% if page.author %}
+  <meta property="og:article:author" content="{{ page.author }}">
+  {% endif %}
+  <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
+  <meta property="og:image" content="https://www.qubes-os.org/attachment/icons/qubes-logo-icon-name-slogan-fb.png">
+  <meta property="og:site_name" content="Qubes OS">
+  <meta property="fb:admins" content="andrewdavidwong.adw">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@QubesOS">
+  <meta name="twitter:title" content="{{ page.title }}">
+  {% if page.author %}
+  <meta name="twitter:creator" content="{{ page.author }}">
+  {% endif %}
+  <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
+  <meta name="twitter:image" content="https://www.qubes-os.org/attachment/icons/qubes-logo-icon-name-slogan-fb.png">
 
   <!-- Qubes - Bootstrap Theme -->
   <link rel="stylesheet" href="/css/main.css">

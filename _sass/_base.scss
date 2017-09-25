@@ -156,7 +156,6 @@ blockquote {
  */
 pre,
 code {
-    font-size: 14px;
     border: 1px solid $gray;
     border-radius: $border-radius-base;
     background-color: $color-code-bg;
@@ -164,10 +163,10 @@ code {
 }
 
 code {
-    padding-top: 2px;
-    padding-right: 5px;
-    padding-bottom: 1px;
-    padding-left: 5px;
+    padding-top: 0.3em;
+    padding-right: 0.5em;
+    padding-bottom: 0.1em;
+    padding-left: 0.5em;
 }
 
 pre {

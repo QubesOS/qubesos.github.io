@@ -113,6 +113,11 @@
   role: Minor various cleanups and miscs.
   type: community
 
+- name: Frédéric Epitre
+  email: frederic.epitre@orange.fr
+  role: CentOS and Fedora 26 templates
+  type: community
+
 - name: Davíð Steinn Geirsson
   email: david@dsg.is
   role: Initial Debian template integration

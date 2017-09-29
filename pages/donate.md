@@ -11,7 +11,7 @@ redirect_from:
 # Donate to Qubes – Your Support Counts!
 
 ## Ways to Donate
-We accept monetary donations via Bitcoin and credit card in the following three ways:
+We accept monetary donations via Bitcoin and credit card in the following three ways
 
 ### 1. Give a One-Time Donation
 Donating with Bitcoin ensures that 100% of your money supports Qubes development because we do not incur any administrative costs.

@@ -107,84 +107,118 @@
   email: abb@gremwell.com
   role: PVUSB support
   type: community
+  pgp_key: 
+  fingerprint: 
 
 - name: Bruce A Downs
   email: bruceadowns@gmail.com
   role: Minor various cleanups and miscs.
   type: community
+  pgp_key: 
+  fingerprint: 
 
 - name: Frédéric Pierret
   email: frederic.epitre@orange.fr
   role: CentOS and Fedora 26 templates
   type: community
+  pgp_key: 
+  fingerprint: 
 
 - name: Davíð Steinn Geirsson
   email: david@dsg.is
   role: Initial Debian template integration
   type: community
+  pgp_key: 
+  fingerprint: 
 
 - name: Agnieszka Kostrzewa
   email: a.kostrzewa@alx.pl
   role: Documentation, Qubes Manager
   type: community
+  pgp_key: 
+  fingerprint: 
 
 - name: Timo Juhani Lindfors
   email: timo.lindfors@iki.fi
   role: Minor core cleanups
   type: community
+  pgp_key: 
+  fingerprint: 
 
 - name: Victor Lopez
   email: gallando@gmail.com`
   role: Misc. minor fixes
   type: community
+  pgp_key: 
+  fingerprint: 
 
 - name: Abel Luck
   email: abel@outcomedubious.im
   role: Developed TorVM
   type: community
+  pgp_key: 
+  fingerprint: 
 
 - name: Olivier Médoc
   email: o_medoc@yahoo.fr
   role: Core and GUI fixes, template builder generalization
   type: community
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xD85EE12F967851CCF433515A2043E7ACC1833B9C
+  fingerprint: D85E E12F 9678 51CC F433  515A 2043 E7AC C183 3B9C
 
 - name: Jason Mehring
   email: nrgaway@gmail.com
   role: Debian templates improvements, Whonix integration
   type: community
+  pgp_key: 
+  fingerprint: 
 
 - name: Brennan Novak
   email: hi@brennannovak.com
   role: Web design, art, documentation, and minor UX contributions
   type: community
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x01AEEADB9EED1B5B4280E5B6C4CAA23B0F8C68B2
+  fingerprint: 01AE EADB 9EED 1B5B 4280  E5B6 C4CA A23B 0F8C 68B2
 
 - name: Hakisho Nukama
   email: nukama@gmail.com
   role: Documentation & website maintainer
   type: community
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x3FCF9A1111350DE9FA9C3DD06E7A27B909DAFB92
+  fingerprint: 3FCF 9A11 1135 0DE9 FA9C  3DD0 6E7A 27B9 09DA FB92
 
 - name: Vincent Penquerc'h
   email: vincent.penquerch@collabora.co.uk
   role: Code review, misc. fixes
   type: community
+  pgp_key: 
+  fingerprint: 
 
 - name: Andrew Sorensen
   email: andrew@localcoast.net
   role: Misc. backup subsystem fixes
   type: community
+  pgp_key: 
+  fingerprint: 
 
 - name: Tomasz Sterna
   email: tomek@xiaoka.com
   role: Installer & GUI
   type: community
+  pgp_key: 
+  fingerprint: 
 
 - name: Radoslaw Szkodzinski
   email: astralstorm@gmail.com
   role: Minor GUI build fixes
   type: community
+  pgp_key: 
+  fingerprint: 
 
 - name: László Zrubecz
   email: mail@zrubi.hu
   role: HCL page maintenance, HCL scripts
   type: community
+  pgp_key: http://download.zrubi.hu/8F0E7BC6.asc
+  fingerprint: 9AF3 388A 533E 73AD 1107  7E55 617D 7048 8F0E 7BC6
 

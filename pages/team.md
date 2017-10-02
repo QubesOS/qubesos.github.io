@@ -95,31 +95,23 @@ redirect_from:
     this thriving community. The community's discussions take place primarily on
     the <a href="/doc/mailing-lists/">Qubes mailing lists</a>.</p>
   </div>
-  {% assign community_total = 0 %}
   {% for team in site.data.team %}
     {% if team.type == "community" %}
-      {% assign community_total = community_total | plus:1 %}
+    {% assign name_array = team.name | split:" " %}
+    <div class="row team">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        {% include team-simple.html %}
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+        {% if team.fingerprint %}
+        <span class="fingerprint" title="{{team.name}}'s PGP Key Fingerprint">{{team.fingerprint}}</span>
+        {% endif %}
+        {% if team.pgp_key %}
+        <a href="{{team.pgp_key}}"><i class="fa fa-lock fa-fw"></i> {{name_array[0]}}'s PGP Key</a>
+        {% endif %}
+      </div>
+    </div>
     {% endif %}
   {% endfor %}
-  {% assign community_half = community_total | divided_by:2 %}
-  {% assign community_shown = 0 %}
-  <div class="row team">
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    {% for team in site.data.team %}
-      {% if team.type == "community" %}
-        {% if community_shown < community_half %}
-          {% include team-simple.html %}
-        {% elsif community_shown == community_half %}
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          {% include team-simple.html %}
-        {% else %}
-          {% include team-simple.html %}
-        {% endif %}
-      {% assign community_shown = community_shown | plus:1 %}
-      {% endif %}
-    {% endfor %}
-    </div>
-  </div>
 </div>
 

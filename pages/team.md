@@ -10,7 +10,7 @@ redirect_from:
 
 <div id="team-core" class="white-box page-content more-bottom">
   <div class="col-lg-12 col-md-12 col-sm-12">
-    <h2 class="text-center more-bottom">Core Team</h2>
+    <h2 id="core-team" class="text-center more-bottom">Core Team</h2>
   </div>
   {% for team in site.data.team %}
     {% if team.type == "core" %}
@@ -55,7 +55,7 @@ redirect_from:
 </div>
 <div class="white-box page-content more-bottom">
   <div class="col-lg-12 col-md-12 col-sm-12">
-    <h2 class="text-center more-bottom">Emeritus</h2>
+    <h2 id="emeritus" class="text-center more-bottom">Emeritus</h2>
     <p>Emeriti are honorary members of the Qubes team who previously
     contributed to the project in a central way but who are no longer
     currently active.</p>
@@ -89,7 +89,7 @@ redirect_from:
 </div>
 <div class="white-box page-content more-bottom">
   <div class="col-lg-12 col-md-12 col-sm-12">
-    <h2 class="text-center more-bottom">Community Contributors</h2>
+    <h2 id="community-contributors" class="text-center more-bottom">Community Contributors</h2>
     <p>Qubes would not be where it is today without the input of the many users,
     testers, and developers of all skill levels who have come together to form
     this thriving community. The community's discussions take place primarily on

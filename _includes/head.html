@@ -31,7 +31,11 @@
   <meta property="article:author" content="{{ page.author }}">
   {% endif %}
   <meta property="og:description" content="{{ page.content | strip_html | xml_escape | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip | truncate: 200 }}">
+  {% if page.image %}
+  <meta property="og:image" content="https://www.qubes-os.org{{ page.image }}">
+  {% else %}
   <meta property="og:image" content="https://www.qubes-os.org/attachment/icons/qubes-logo-icon-name-slogan-fb.png">
+  {% endif %}
   {% if page.date %}
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
   {% endif %}
@@ -52,7 +56,11 @@
   <meta name="twitter:creator" content="{{ page.author }}">
   {% endif %}
   <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip | truncate: 200 }}">
+  {% if page.image %}
+  <meta name="twitter:image" content="https://www.qubes-os.org{{ page.image }}">
+  {% else %}
   <meta name="twitter:image" content="https://www.qubes-os.org/attachment/icons/qubes-logo-icon-name-slogan-twitter.png">
+  {% endif %}
 
   <!-- Qubes - Bootstrap Theme -->
   <link rel="stylesheet" href="/css/main.css">

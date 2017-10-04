@@ -138,6 +138,13 @@
   pgp_key: 
   fingerprint: 
 
+- name: Holger Levsen
+  email: holger@layer-acht.org
+  role: IRC community ambassador
+  type: community
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xB8BF54137B09D35CF026FE9D091AB856069AAA1C
+  fingerprint: B8BF 5413 7B09 D35C F026 FE9D 091A B856 069A AA1C
+
 - name: Timo Juhani Lindfors
   email: timo.lindfors@iki.fi
   role: Minor core cleanups

@@ -121,8 +121,8 @@
   email: frederic.epitre@orange.fr
   role: CentOS and Fedora 26 templates
   type: community
-  pgp_key: 
-  fingerprint: 
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xC7A3BA7D2DDAF042C77CA4D21DABC232BE02201E
+  fingerprint: C7A3 BA7D 2DDA F042 C77C  A4D2 1DAB C232 BE02 201E
 
 - name: Davíð Steinn Geirsson
   email: david@dsg.is

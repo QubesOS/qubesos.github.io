@@ -79,13 +79,31 @@ We are grateful for their support!
         <p><b>zby</b> is angel investor looking for early stage startups in the IT security area.</p>
       </td>
     </tr>
+    <tr id="whonix">
+      <td>
+        <a href="https://www.whonix.org/">
+          <img src="/attachment/site/whonix-tor.svg">
+        </a>
+      </td>
+      <td>
+        <h3>Whonix</h3>
+        <p><a href="https://www.whonix.org/">Whonix</a> is a desktop operating system designed for advanced security and privacy.
+        Whonix mitigates the threat of common attack vectors while maintaining usability.
+        Online anonymity is realized via fail-safe, automatic, and desktop-wide use of the Tor network.
+        A heavily reconfigured Debian base is run inside multiple virtual machines, providing a substantial layer of protection from malware and IP address leaks.
+        Commonly used applications are pre-installed and safely pre-configured for immediate use.
+        The user is not jeopardized by installing additional applications or personalizing the desktop.
+        Whonix is under active development and is the only operating system designed to be run inside a VM and paired with Tor.
+        The developers of Qubes and Whonix are cooperating.
+        While Whonix is an independent Linux distribution, it has been integrated into Qubes OS as a system called <a href="/doc/whonix/">Qubes-Whonix</a>.</p>
+      </td>
+    </tr>
     <tr id="open-technology-fund">
       <td>
         <a href="https://www.opentechfund.org/">
           <img src="/attachment/site/OTF-logo.png">
         </a>
       </td>
-
       <td>
         <h3>Open Technology Fund</h3>
         <p><a href="https://www.opentechfund.org/">Open Technology Fund (OTF)</a> is a United States government-funded program of <a href="http://www.rfa.org">Radio Free Asia</a>, whose stated mission is to "support open technologies and communities that increase free expression, circumvent censorship, and obstruct repressive surveillance as a way to promote human rights and open societies."</p>

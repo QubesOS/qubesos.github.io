@@ -89,7 +89,7 @@ $color-black:						#000000;
 //** Background color for `<body>`.
 $body-bg:               #f5f5f5 !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-base !default;
+$text-color:            $color-black !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;

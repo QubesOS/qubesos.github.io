@@ -104,7 +104,7 @@ releases:
         url: https://mirrors.kernel.org/qubes/iso/Qubes-R4.0-rc2-x86_64.iso
         verifiers:
           hash: https://mirrors.kernel.org/qubes/iso/Qubes-R4.0-rc2-x86_64.iso.DIGESTS
-          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R4.0-rc2-x86_64.iso.iso.asc
+          sig: https://mirrors.kernel.org/qubes/iso/Qubes-R4.0-rc2-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-4-signing-key.asc
       - name: ftp.halifax.rwth-aachen.de
         method: HTTP

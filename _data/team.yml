@@ -110,9 +110,23 @@
   pgp_key: 
   fingerprint: 
 
+- name: Blacklight
+  email: blacklight447@protonmail.com
+  role: Localization Team co-leader
+  type: community
+  pgp_key: 
+  fingerprint: 
+
 - name: Bruce A Downs
   email: bruceadowns@gmail.com
   role: Minor various cleanups and miscs.
+  type: community
+  pgp_key: 
+  fingerprint: 
+
+- name: Desobediente Civil
+  email: desci@riseup.net
+  role: Localization Team co-leader, core and documentation contributions
   type: community
   pgp_key: 
   fingerprint: 
@@ -127,6 +141,13 @@
 - name: Davíð Steinn Geirsson
   email: david@dsg.is
   role: Initial Debian template integration
+  type: community
+  pgp_key: 
+  fingerprint: 
+
+- name: Tobias Killer
+  email: tokidev@posteo.de
+  role: Localization Team co-leader
   type: community
   pgp_key: 
   fingerprint: 

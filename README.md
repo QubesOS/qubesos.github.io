@@ -98,9 +98,30 @@ content:
    version of `qubes-hcl-report`)
  * `qubes-posts` (news and blog posts)
 
+Docker Compose Instructions
+---------------------------
 
-Instructions
-------------
+1. Install the [Docker Engine] and [Docker Compose].
+
+2. Start the Docker daemon, e.g.:
+
+        $ sudo systemctl start docker
+
+3. Clone this repo, including all submodules, and enter it:
+
+        $ git clone --recursive https://github.com/QubesOS/qubesos.github.io.git
+        $ cd qubesos.github.io/
+
+4. Start and run the website:
+
+        $ sudo docker-compose up
+
+5. Open your browser and navigate to:
+
+        http://127.0.0.1:4000/
+
+Fedora Instructions
+-------------------
 
 1. Install dependencies:
 
@@ -123,7 +144,7 @@ Instructions
 
         $ bundle exec jekyll serve
 
-6. Open your browser, and navigate to:
+6. Open your browser and navigate to:
 
         http://127.0.0.1:4000/
 
@@ -180,6 +201,8 @@ Please carefully read these guidelines before submitting a pull request.
 [Documentation Guidelines]: https://www.qubes-os.org/doc/doc-guidelines/
 [Jekyll]: https://jekyllrb.com/
 [Jekyll Documentation]: http://jekyllrb.com/docs/
+[Docker Engine]: https://docs.docker.com/engine/installation/
+[Docker Compose]: https://docs.docker.com/compose/install/
 [FontAwesome]: http://fontawesome.io
 [Bootstrap 3]: http://getbootstrap.com
 [jQuery 1.7]: http://api.jquery.com

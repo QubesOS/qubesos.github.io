@@ -1,10 +1,7 @@
 all:
-	bundle exec jekyll build
+	docker-compose up
 
 clean:
 	$(RM) -r _site
 
-serve:
-	bundle exec jekyll serve --watch
-
-.PHONY: all clean serve
+.PHONY: all clean

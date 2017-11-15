@@ -114,14 +114,14 @@ Docker Compose Instructions
 
 4. Start and run the website:
 
-        $ sudo docker-compose up
+        $ sudo make
 
 5. Open your browser and navigate to:
 
         http://127.0.0.1:4000/
 
-Fedora Instructions
--------------------
+Jekyll on Fedora Instructions
+-----------------------------
 
 1. Install dependencies:
 
@@ -147,8 +147,6 @@ Fedora Instructions
 6. Open your browser and navigate to:
 
         http://127.0.0.1:4000/
-
-Done!
 
 ### Notes ###
 

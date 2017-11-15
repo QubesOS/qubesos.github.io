@@ -1,5 +1,5 @@
 all:
-	docker-compose up
+	$(RM) Gemfile && docker-compose up
 
 clean:
 	$(RM) -r _site

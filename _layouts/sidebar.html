@@ -5,17 +5,21 @@
       {% include header.html %}
       <div class="container">
         <h1 class="more-top add-left">
-        {% for section in site.data.architecture %}
-          {% if section.url == page.permalink %}
-          <i class="fa {{section.icon}}"></i>
-          {% else %}
-          {% for sub in section.sub-pages %}
-          {% if sub.url == page.permalink %}
-          <i class="fa {{sub.icon}}"></i>
-          {% endif %}
+        {% if page.icon %}
+        <i class="fa {{page.icon}}"></i>
+        {% else %}
+          {% for section in site.data.architecture %}
+            {% if section.url == page.permalink %}
+            <i class="fa {{section.icon}}"></i>
+            {% else %}
+            {% for sub in section.sub-pages %}
+            {% if sub.url == page.permalink %}
+            <i class="fa {{sub.icon}}"></i>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
           {% endfor %}
-          {% endif %}
-        {% endfor %}
+        {% endif %}
         {{ page.title }}
         </h1>
         <div class="more-bottom white-box page-content">

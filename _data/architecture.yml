@@ -4,6 +4,8 @@
   sub-pages:
   - title: What is Qubes OS?
     url: /intro/
+  - title: FAQ
+    url: /faq/
   - title: Video Tours
     url: /video-tours/
     icon: fa-play-circle
@@ -15,10 +17,6 @@
     icon: fa-picture-o
   - title: Getting Started
     url: /getting-started/
-  - title: User FAQ
-    url: /doc/user-faq/
-  - title: Developer FAQ
-    url: /doc/devel-faq/
   - title: OS Architecture
     url: /doc/architecture/
     icon: fa-cubes

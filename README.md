@@ -98,8 +98,10 @@ content:
    version of `qubes-hcl-report`)
  * `qubes-posts` (news and blog posts)
 
-Docker Compose Instructions
----------------------------
+Instructions
+------------
+
+### Docker Compose ###
 
 1. Install the [Docker Engine] and [Docker Compose].
 
@@ -120,8 +122,7 @@ Docker Compose Instructions
 
         http://127.0.0.1:4000/
 
-Jekyll on Fedora Instructions
------------------------------
+### Jekyll on Fedora ###
 
 1. Install dependencies:
 

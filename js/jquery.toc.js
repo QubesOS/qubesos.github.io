@@ -13,7 +13,7 @@
  *   http://www.gnu.org/licenses/gpl.html
  */
 (function($) {
-    var toggleHTML = '<div id="toctitle"><h2>%1</h2> <span class="toctoggle">[<a id="toctogglelink" class="internal" href="#">%2</a>]</span></div>';
+    var toggleHTML = '<div id="toctitle"><h2>Contents</h2> <span class="toctoggle">[<a id="toctogglelink" class="internal" href="#">hide</a>]</span></div>';
     var tocContainerHTML = '<div id="toc-container"><table class="toc" id="toc"><tbody><tr><td>%1<ul>%2</ul></td></tr></tbody></table></div>';
 
     function createLevelHTML(anchorId, tocLevel, tocSection, tocNumber, tocText, tocInner) {
@@ -28,25 +28,15 @@
             .replace('%3', link);
     }
 
-    function checkMaxHead($root) {
-        if ($root.find('h1').length > 0) {
-            return ['h1', 'h2'];
-        } else {
-            return ['h2', 'h3'];
-        }
-    }
-
     $.fn.toc = function(settings) {
         var config = {
             renderIn: 'self',
             anchorPrefix: 'tocAnchor-',
             showAlways: false,
-            minItemsToShowToc: 2,
             saveShowStatus: true,
             contentsText: 'Contents',
             hideText: 'hide',
-            showText: 'show',
-            showCollapsed: false};
+            showText: 'show'};
 
         if (settings) {
             $.extend(config, settings);
@@ -59,18 +49,17 @@
 
         var tocContainer = $(this);
 
-        var heads = checkMaxHead(tocContainer);
-        var firstHead = heads[0];
-        var secondHead = heads[1];
-
-        tocContainer.find(firstHead).each(function() {
+        tocContainer.find('h1').each(function() {
             var levelHTML = '';
             var innerSection = 0;
             var h1 = $(this);
 
-            h1.nextUntil(firstHead).filter(secondHead).each(function() {
+            h1.nextUntil('h1').filter('h2').each(function() {
                 ++innerSection;
                 var anchorId = config.anchorPrefix + tocLevel + '-' + tocSection + '-' +  + innerSection;
+                if ($(this).attr('id')) {
+                    anchorId = $(this).attr('id');
+                }
                 $(this).attr('id', anchorId);
                 levelHTML += createLevelHTML(anchorId,
                     tocLevel + 1,
@@ -82,6 +71,9 @@
                 levelHTML = '<ul>' + levelHTML + '</ul>\n';
             }
             var anchorId = config.anchorPrefix + tocLevel + '-' + tocSection;
+            if (h1.attr('id')) {
+                anchorId = h1.attr('id');
+            }
             h1.attr('id', anchorId);
             tocHTML += createLevelHTML(anchorId,
                 tocLevel,
@@ -94,11 +86,8 @@
             ++itemNumber;
         });
 
-        // for convenience itemNumber starts from 1
-        // so we decrement it to obtain the index count
-        var tocIndexCount = itemNumber - 1;
-
-        var show = config.showAlways ? true : config.minItemsToShowToc <= tocIndexCount;
+        var hasOnlyOneTocItem = tocLevel == 1 && tocSection <= 2;
+        var show = config.showAlways ? true : !hasOnlyOneTocItem;
 
         // check if cookie plugin is present otherwise doesn't try to save
         if (config.saveShowStatus && typeof($.cookie) == "undefined") {
@@ -147,10 +136,6 @@
                 ul.hide();
                 $('#toctogglelink').text(config.showText);
                 $('#toc').addClass('tochidden');
-            }
-
-            if (config.showCollapsed) {
-                $('#toctogglelink').click();
             }
         }
         return this;

@@ -6,26 +6,26 @@
     url: /intro/
   - title: FAQ
     url: /faq/
+    icon: fa-question-circle
   - title: Video Tours
     url: /video-tours/
     icon: fa-play-circle
   - title: From the Experts
     url: /experts/
-    icon: fa-play-circle
   - title: Screenshots
     url: /screenshots/
     icon: fa-picture-o
   - title: Getting Started
     url: /getting-started/
+    icon: fa-cubes
   - title: OS Architecture
     url: /doc/architecture/
-    icon: fa-cubes
   - title: Security Center
     url: /security/
 
 - title: Downloads
   url: /downloads/
-  icon: fa-cube
+  icon: fa-download
   sub-pages:
   - title: System Requirements
     url: /doc/system-requirements/

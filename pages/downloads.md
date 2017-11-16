@@ -15,8 +15,8 @@ redirect_from:
       <h3>Choosing Your Hardware</h3>
       <ul class="list-unstyled">
         <li><a href="/doc/system-requirements/"><i class="fa fa-server fa-fw black-icon"></i> System Requirements</a></li>
-        <li><a href="/doc/hardware/"><i class="fa fa-laptop fa-fw black-icon"></i> General Hardware Information</a></li>
-        <li><a href="/hcl/"><i class="fa fa-desktop fa-fw black-icon"></i> Hardware Compatibility List</a></li>
+        <li><a href="/doc/hardware/"><i class="fa fa-floppy-o fa-fw black-icon"></i> General Hardware Information</a></li>
+        <li><a href="/hcl/"><i class="fa fa-laptop fa-fw black-icon"></i> Hardware Compatibility List</a></li>
       </ul>
     </div>
     <div class="col-lg-4 col-md-4">
@@ -82,7 +82,7 @@ redirect_from:
                  title="How do I verify my download?"></a></th>
             <th>File</th>
             <th>Size</th>
-            <th>Source <a class="pull-right" href="#mirrors"><i class="fa fa-download black-icon"></i> Mirrors</a></th>
+            <th>Source <a class="pull-right" href="#mirrors" title="View all download mirrors"><i class="fa fa-cloud-download"></i> All Mirrors</a></th>
           </tr>
         </thead>
         <tbody>
@@ -158,12 +158,12 @@ redirect_from:
     <div class="white-box more-bottom page-content">
       <h3 id="mirrors">Download Mirrors</h3>
       <ul class="list-unstyled">
-        <li><a href="https://mirrors.kernel.org/qubes/iso/"><i class="fa fa-download fa-fw black-icon"></i> mirrors.kernel.org</a></li>
-        <li><a href="https://archive.org/download/QubesOS"><i class="fa fa-download fa-fw black-icon"></i> archive.org</a></li>
-        <li><a href="http://ftp.halifax.rwth-aachen.de/qubes/iso/"><i class="fa fa-download fa-fw black-icon"></i> ftp.halifax.rwth-aachen.de</a></li>
-        <li><a href="https://mirrors.dotsrc.org/qubes/"><i class="fa fa-download fa-fw black-icon"></i> mirrors.dotsrc.org</a></li>
-        <li><a href="https://ftp.qubes-os.org/iso/"><i class="fa fa-download fa-fw black-icon"></i> ftp.qubes-os.org</a></li>
-        <li><a href="http://ftp.qubesos4rrrrz6n4.onion/iso/"><i class="fa fa-download fa-fw black-icon"></i> ftp.qubesos4rrrrz6n4.onion</a></li>
+        <li><a href="https://mirrors.kernel.org/qubes/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirrors.kernel.org</a></li>
+        <li><a href="https://archive.org/download/QubesOS"><i class="fa fa-cloud-download fa-fw black-icon"></i> archive.org</a></li>
+        <li><a href="http://ftp.halifax.rwth-aachen.de/qubes/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.halifax.rwth-aachen.de</a></li>
+        <li><a href="https://mirrors.dotsrc.org/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirrors.dotsrc.org</a></li>
+        <li><a href="https://ftp.qubes-os.org/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.qubes-os.org</a></li>
+        <li><a href="http://ftp.qubesos4rrrrz6n4.onion/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.qubesos4rrrrz6n4.onion</a></li>
         <li><a href="/downloads/mirrors/#instructions-for-mirror-operators"><i class="fa fa-cloud fa-fw black-icon"></i> Contribute a mirror!</a></li>
       </ul>
     </div>

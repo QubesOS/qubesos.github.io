@@ -119,9 +119,6 @@
   - title: Join the Team
     url: /join/
     icon: fa-thumbs-o-up
-  - title: Partners
-    url: /partners/
-    icon: fa-globe
 
 - title: Donate
   url: /donate/
@@ -131,7 +128,7 @@
     url: /donate/
   - title: Partners
     url: /partners/
-    icon: fa-money
+    icon: fa-globe
   - title: Contributing
     url: /doc/contributing/
 

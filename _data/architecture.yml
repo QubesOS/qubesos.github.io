@@ -129,8 +129,8 @@
   sub-pages:
   - title: How to donate
     url: /donate/
-  - title: Funding
-    url: /funding/
+  - title: Partners
+    url: /partners/
     icon: fa-money
   - title: Contributing
     url: /doc/contributing/

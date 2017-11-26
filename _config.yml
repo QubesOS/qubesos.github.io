@@ -22,7 +22,7 @@ relative_permalinks: false
 permalink: /news/:year/:month/:day/:title/
 excerpt_separator: ""
 
-plugins:
+plugins_dir:
   - jekyll-redirect-from
 
 collections:

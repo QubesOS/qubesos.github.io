@@ -92,6 +92,8 @@
   - title: Statistics
     url: /statistics/
     icon: fa-bar-chart
+  - title: GitHub
+    url: https://github.com/QubesOS
   - title: Twitter
     url: https://twitter.com/QubesOS
   - title: Reddit

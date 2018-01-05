@@ -15,7 +15,7 @@ cd "$(dirname "$0")/.."
 #     true in your environment. This is useful for increasing the speed of
 #     your Continuous Integration builds.
 export NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-gem install github-pages html-proofer
+gem install github-pages html-proofer json
 
 repo_owner=${TRAVIS_REPO_SLUG%%/*}
 repo_name=${TRAVIS_REPO_SLUG#*/}

@@ -159,6 +159,13 @@
   pgp_key: 
   fingerprint: 
 
+- name: Chris Laprise
+  email: tasket@posteo.net
+  role: Core and Qubes Manager features and fixes, docs, project liason, HCL maintainer, VPN tools
+  type: community
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xBEE220C5356E764A73EB4AB31DC4D106F07F1886
+  fingerprint: BEE2 20C5 356E 764A 73EB  4AB3 1DC4 D106 F07F 1886
+
 - name: Holger Levsen
   email: holger@layer-acht.org
   role: IRC community ambassador

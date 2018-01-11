@@ -1511,3 +1511,9 @@
   qsb: 
   mitigation: 
 
+- xsa: 254
+  date: 2018-01-03
+  affected: yes
+  qsb: 037-2018
+  mitigation: 
+

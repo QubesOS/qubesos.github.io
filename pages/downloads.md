@@ -3,8 +3,6 @@ layout: boxless
 title: Download Qubes OS
 permalink: /downloads/
 redirect_from:
-- /doc/releases/
-- /en/doc/releases/
 - /doc/QubesDownloads/
 - /wiki/QubesDownloads/
 ---

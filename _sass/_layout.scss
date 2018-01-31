@@ -49,6 +49,15 @@
     margin-left: 0px;
   }
 
+  ul,
+  ol,
+  ol ul,
+  ul ol,
+  ul ul,
+  ol ol {
+    margin-bottom: 25px;
+  }
+
   @media (min-width: $screen-sm-min) {
     .page-content-left {
       border-right: 1px solid $gray-light;

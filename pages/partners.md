@@ -45,7 +45,7 @@ We are grateful for their support!
 
 <table class="partners" border="0">
   <tbody>
-    <tr>
+    <tr id="invisible-things-lab">
       <td>
         <a href="http://invisiblethingslab.com/itl/Welcome.html">
           <img src="/attachment/site/itl.png">
@@ -58,7 +58,7 @@ We are grateful for their support!
         The company’s primary source of revenue is security research and development.</p>
       </td>
     </tr>
-    <tr>
+    <tr id="mullvad">
       <td>
         <a href="https://www.mullvad.net/">
           <img src="/attachment/site/mullvad-logo.png">
@@ -72,14 +72,14 @@ We are grateful for their support!
         To support its continued development, Mullvad made a generous donation to Qubes in 2017.</p>
       </td>
     </tr>
-    <tr>
+    <tr id="zby">
       <td><h2>zby</h2></td>
       <td>
         <h3>zby</h3>
         <p><b>zby</b> is angel investor looking for early stage startups in the IT security area.</p>
       </td>
     </tr>
-    <tr>
+    <tr id="whonix">
       <td>
         <a href="https://www.whonix.org/">
           <img src="/attachment/site/whonix-tor.svg">
@@ -98,7 +98,7 @@ We are grateful for their support!
         While Whonix is an independent Linux distribution, it has been integrated into Qubes OS as a system called <a href="/doc/whonix/">Qubes-Whonix</a>.</p>
       </td>
     </tr>
-    <tr>
+    <tr id="open-technology-fund">
       <td>
         <a href="https://www.opentechfund.org/">
           <img src="/attachment/site/OTF-logo.png">
@@ -111,7 +111,7 @@ We are grateful for their support!
         Visit the <a href="https://www.opentech.fund/project/qubes-os">Qubes funding page on OTF’s website</a> for more information.</p>
       </td>
     </tr>
-    <tr>
+    <tr id="access-now">
       <td>
         <a href="https://www.accessnow.org/">
           <img src="/attachment/site/accessnow.png">
@@ -123,7 +123,7 @@ We are grateful for their support!
         Beginning in 2015, Access Now generously agreed to provide staff time to help manage the Qubes OS project.</p>
       </td>
     </tr>
-    <tr>
+    <tr id="nlnet-foundation">
       <td>
         <a href="https://nlnet.nl">
           <img src="/attachment/site/nlnet.gif">

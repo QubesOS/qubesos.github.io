@@ -45,7 +45,11 @@
 
 #team-core {
   .team {
-    padding-bottom: $padding-large-vertical * 4;
+    padding-top: $padding-large-vertical * 2;
+    padding-bottom: $padding-large-vertical * 2;
+  }
+  .team:first-child {
+    padding-top: 0px;
   }
   .team:last-child {
     padding-bottom: 0px;

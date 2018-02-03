@@ -14,19 +14,19 @@ redirect_from:
   </div>
   {% for team in site.data.team %}
     {% if team.type == "core" %}
-      <div class="row team team-core">
+      <div class="row team team-core" id="{{team.name | slugify}}">
         <div class="col-lg-2 col-md-2 col-sm-5 col-xs-12 text-center">
-        <div class="picture more-bottom">
-          {% if team.picture %}
-          <a href="/team/#{{team.name | slugify}}"><img src="/attachment/site/{{team.picture}}" title="Picture of {{team.name}}"></a>
-          {% else %}
-          <i class="fa fa-user"></i>
-          {% endif %}
+          <div class="picture more-bottom">
+            {% if team.picture %}
+            <a href="/team/#{{team.name | slugify}}"><img src="/attachment/site/{{team.picture}}" title="Picture of {{team.name}}"></a>
+            {% else %}
+            <i class="fa fa-user"></i>
+            {% endif %}
+          </div>
         </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-7 col-xs-12" id="{{team.name | slugify}}">
+        <div class="col-lg-4 col-md-4 col-sm-7 col-xs-12">
           {% assign name_array = team.name | split:" " %}
-          <h4 class="half-bottom">{{team.name}}</h4>
+          <h4 class="half-bottom" data-anchor-id="{{team.name | slugify}}">{{team.name}}</h4>
           <em class="role half-bottom">{{team.role}}</em>
           {% if team.email %}
           <a href="mailto:{{team.email}}" class="add-right"><i class="fa fa-envelope fa-fw"></i> Email</a>

@@ -24,9 +24,9 @@ redirect_from:
           {% endif %}
         </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-7 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-7 col-xs-12" id="{{team.name | slugify}}">
           {% assign name_array = team.name | split:" " %}
-          <a href="/team/#{{team.name | slugify}}"><h4 class="half-bottom">{{team.name}}</h4></a>
+          <h4 class="half-bottom">{{team.name}}</h4>
           <em class="role half-bottom">{{team.role}}</em>
           {% if team.email %}
           <a href="mailto:{{team.email}}" class="add-right"><i class="fa fa-envelope fa-fw"></i> Email</a>

@@ -13,7 +13,27 @@ categories:
     name: Application-level Security
   - slug: compartmentalization-isolation
     name: Compartmentalization, Isolation, and Separation
+  - slug: qubes
+    name: The Qubes Architecture
 papers:
+  - title: "Qubes Air: Generalizing the Qubes Architecture"
+    url: https://www.qubes-os.org/news/2018/01/22/qubes-air/
+    date: January 2018
+    author: Joanna Rutkowska
+    category: qubes
+
+  - title: Introducing the Next Generation Qubes Core Stack
+    url: https://www.qubes-os.org/news/2017/10/03/core3/
+    date: October 2017
+    author: Joanna Rutkowska
+    category: qubes
+
+  - title: Introducing the Qubes Admin API
+    url: https://www.qubes-os.org/news/2017/06/27/qubes-admin-api/
+    date: June 2017
+    author: Joanna Rutkowska
+    category: qubes
+
   - title: Thoughts on the "physically secure" ORWL computer
     url: https://blog.invisiblethings.org/2016/09/03/thoughts-about-orwl.html
     date: September 2016
@@ -91,6 +111,12 @@ papers:
     date: April 2010
     author: Joanna Rutkowska
     category: software-attacks-devices
+
+  - title: Qubes OS Architecture Spec v0.3
+    url: https://www.qubes-os.org/attachment/wiki/QubesArchitecture/arch-spec-0.3.pdf
+    date: January 2010
+    author: Joanna Rutkowska and Rafal Wojtczuk
+    category: qubes
 
   - title: Another Way to Circumvent Intel® Trusted Execution Technology
     url: https://invisiblethingslab.com/resources/misc09/Another%20TXT%20Attack.pdf

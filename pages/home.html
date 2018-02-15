@@ -49,7 +49,7 @@ redirect_from:
   <!-- Experts -->
   <div class="row">
     <div class="col-lg-12 col-md-12">
-      <h2 class="text-center"><i class="fa fa-thumbs-o-up"></i> What the experts are saying</h2>
+      <h2 class="text-center"><i class="fa fa-quote-left"></i> What the experts are saying</h2>
     </div>
   </div>
 
@@ -153,23 +153,23 @@ redirect_from:
     </div>
   </div>
   <div class="col-lg-6 col-md-6 more-bottom">
-    <h2 class="text-center"><i class="fa fa-bullhorn"></i> Announcements</h2>
+    <h2 class="text-center"><i class="fa fa-bullhorn"></i> News &amp; Announcements</h2>
     <div class="white-box">
       <ul class="list-unstyled remove-bottom">
         {% for post in site.posts limit:5 %}
         <li class="list-links">
           <a class="black-link" href="{{ post.url }}">
             {{ post.title }}
-            <span class="detail">
+            <span class="detail"> Posted in
               {% for category in post.categories %}{% if site.allowed_categories contains category %}
-              <strong>{{ category | capitalize }}</strong>
+              <strong>{{ category }}</strong>
               {% endif %}{% endfor %} on {{ post.date | date: "%b %-d, %Y" }}
             </span>
           </a>
         </li>
         {% endfor %}
         <li class="list-links-normal">
-          <a href="/news/" class="btn btn-sm btn-primary">More Articles &amp; Announcements</a>
+          <a href="/news/" class="btn btn-sm btn-primary">More News &amp; Announcements</a>
         </li>
       </ul>
     </div>

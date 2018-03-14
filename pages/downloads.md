@@ -111,7 +111,7 @@ redirect_from:
               </td>
               <td>
                 <div class="d-inline">
-                  <a href="https://{{ source.name }}/">
+                  <a href="https://www.{{ source.name }}/">
                     {% if source.name == "kernel.org" %}
                     <i class="fa fa-linux fa-fw black-icon"></i>
                     {% elsif source.name == "qubes-os.org" %}

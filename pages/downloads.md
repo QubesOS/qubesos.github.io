@@ -46,9 +46,9 @@ redirect_from:
       {% assign aging = release.aging | default: false %}
       {% assign deprecated = release.deprecated | default: false %}
       {% if release_name == "Qubes Release 4.0-rc5 (release candidate)" %}
-        {% assign preferred_mirror = "ftp.qubes-os.org" %}
+        {% assign preferred_mirror = "qubes-os.org" %}
       {% else %}
-        {% assign preferred_mirror = "mirrors.kernel.org" %}
+        {% assign preferred_mirror = "kernel.org" %}
       {% endif %}
       <h3 class="more-bottom" id="{{ release.link }}">{{ release_name }}</h3>
       {% if testing %}
@@ -112,9 +112,9 @@ redirect_from:
               <td>
                 <div class="d-inline">
                   <a href="https://{{ source.name }}/">
-                    {% if source.name == "mirrors.kernel.org" %}
+                    {% if source.name == "kernel.org" %}
                     <i class="fa fa-linux fa-fw black-icon"></i>
-                    {% elsif source.name == "ftp.qubes-os.org" %}
+                    {% elsif source.name == "qubes-os.org" %}
                     <i class="fa fa-cubes fa-fw black-icon"></i>
                     {% else %}
                     <i class="fa fa-cloud-download fa-fw black-icon"></i>
@@ -156,7 +156,7 @@ redirect_from:
     <div class="white-box more-bottom page-content">
       <h3 id="mirrors">Download Mirrors</h3>
       <ul class="list-unstyled">
-        <li><a href="https://mirrors.kernel.org/qubes/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirrors.kernel.org</a></li>
+        <li><a href="https://mirrors.edge.kernel.org/qubes/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirrors.edge.kernel.org</a></li>
         <li><a href="http://ftp.halifax.rwth-aachen.de/qubes/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.halifax.rwth-aachen.de</a></li>
         <li><a href="https://mirrors.dotsrc.org/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirrors.dotsrc.org</a></li>
         <li><a href="https://ftp.qubes-os.org/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.qubes-os.org</a></li>

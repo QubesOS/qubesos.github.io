@@ -45,7 +45,7 @@ redirect_from:
       {% assign latest = release.latest | default: false %}
       {% assign aging = release.aging | default: false %}
       {% assign deprecated = release.deprecated | default: false %}
-      {% if release_name == "Qubes Release 4.0" %}
+      {% if release_name == "xxQubes Release 4.0" %}
         {% assign preferred_mirror = "qubes-os.org" %}
       {% else %}
         {% assign preferred_mirror = "kernel.org" %}

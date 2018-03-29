@@ -103,6 +103,13 @@
 
 # Community
 
+- name: awokd
+  email: awokd@danwin1210.me
+  role: Release documentation coordinator
+  type: community
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x535D4B50D471AEFF755A517111AB48E690421F3E
+  fingerprint: 535D 4B50 D471 AEFF 755A  5171 11AB 48E6 9042 1F3E
+
 - name: Alexandre Bezroutchko
   email: abb@gremwell.com
   role: PVUSB support

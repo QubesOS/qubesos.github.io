@@ -12,7 +12,14 @@
       {{ site.title }}
     {% endif %}
   </title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.layout == 'doc' or 'post' or 'security' or 'sidebar' %}
+  <meta name="description"
+        content="{{ page.content | strip_html | newline_to_br |
+                    replace: '<br />', ' ' | normalize_whitespace |
+                    truncate: 290 }}">
+  {% else %}
+  <meta name="description" content="{{ site.description | strip }}">
+  {% endif %}
   <!-- LD+JSON schema --> 
   <script type='application/ld+json'> 
   {
@@ -30,7 +37,14 @@
   {% if page.author %}
   <meta property="article:author" content="{{ page.author }}">
   {% endif %}
-  <meta property="og:description" content="{{ page.content | strip_html | xml_escape | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip | truncate: 200 }}">
+  {% if page.layout == 'doc' or 'post' or 'security' or 'sidebar' %}
+  <meta property="og:description"
+        content="{{ page.content | strip_html | newline_to_br |
+                    replace: '<br />', ' ' | normalize_whitespace |
+                    truncate: 290 }}">
+  {% else %}
+  <meta property="og:description" content="{{ site.description | strip }}">
+  {% endif %}
   {% if page.image %}
   <meta property="og:image" content="https://www.qubes-os.org{{ page.image }}">
   {% else %}
@@ -55,7 +69,14 @@
   {% if page.author %}
   <meta name="twitter:creator" content="{{ page.author }}">
   {% endif %}
-  <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip | truncate: 200 }}">
+  {% if page.layout == 'doc' or 'post' or 'security' or 'sidebar' %}
+  <meta property="twitter:description"
+        content="{{ page.content | strip_html | newline_to_br |
+                    replace: '<br />', ' ' | normalize_whitespace |
+                    truncate: 290 }}">
+  {% else %}
+  <meta property="twitter:description" content="{{ site.description | strip }}">
+  {% endif %}
   {% if page.image %}
   <meta name="twitter:image" content="https://www.qubes-os.org{{ page.image }}">
   {% else %}

@@ -12,7 +12,10 @@
       {{ site.title }}
     {% endif %}
   </title>
-  {% if page.layout == 'doc' or 'post' or 'security' or 'sidebar' %}
+  {% if page.layout == 'doc' or
+        page.layout == 'post' or
+        page.layout == 'security' or
+        page.layout == 'sidebar' %}
   <meta name="description"
         content="{{ page.content | strip_html | newline_to_br |
                     replace: '<br />', ' ' | normalize_whitespace |
@@ -37,7 +40,10 @@
   {% if page.author %}
   <meta property="article:author" content="{{ page.author }}">
   {% endif %}
-  {% if page.layout == 'doc' or 'post' or 'security' or 'sidebar' %}
+  {% if page.layout == 'doc' or
+        page.layout == 'post' or
+        page.layout == 'security' or
+        page.layout == 'sidebar' %}
   <meta property="og:description"
         content="{{ page.content | strip_html | newline_to_br |
                     replace: '<br />', ' ' | normalize_whitespace |
@@ -69,7 +75,10 @@
   {% if page.author %}
   <meta name="twitter:creator" content="{{ page.author }}">
   {% endif %}
-  {% if page.layout == 'doc' or 'post' or 'security' or 'sidebar' %}
+  {% if page.layout == 'doc' or
+        page.layout == 'post' or
+        page.layout == 'security' or
+        page.layout == 'sidebar' %}
   <meta property="twitter:description"
         content="{{ page.content | strip_html | newline_to_br |
                     replace: '<br />', ' ' | normalize_whitespace |

@@ -159,6 +159,7 @@ redirect_from:
         <li><a href="https://archive.org/download/QubesOS"><i class="fa fa-cloud-download fa-fw black-icon"></i> archive.org</a></li>
         <li><a href="https://mirrors.ukfast.co.uk/sites/qubes-os.org/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ukfast.co.uk</a></li>
         <li><a href="https://mirror.hackingand.coffee/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> hackingand.coffee</a></li>
+        <li><a href="https://ftp.acc.umu.se/mirror/qubes-os.org/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.acc.umu.se</a></li>
         <li><a href="/downloads/mirrors/#instructions-for-mirror-operators"><i class="fa fa-cloud fa-fw black-icon"></i> Contribute a mirror!</a></li>
       </ul>
     </div>

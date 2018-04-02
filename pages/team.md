@@ -93,7 +93,7 @@ redirect_from:
     <p>Qubes would not be where it is today without the input of the many users,
     testers, and developers of all skill levels who have come together to form
     this thriving community. The community's discussions take place primarily on
-    the <a href="/doc/mailing-lists/">Qubes mailing lists</a>.</p>
+    the <a href="/support/">Qubes mailing lists</a>.</p>
   </div>
   {% for team in site.data.team %}
     {% if team.type == "community" %}

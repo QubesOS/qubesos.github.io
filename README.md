@@ -209,4 +209,4 @@ Please carefully read these guidelines before submitting a pull request.
 [gh-fork]: https://guides.github.com/activities/forking/
 [gh-pull]: https://help.github.com/articles/using-pull-requests/
 [patch]: https://www.qubes-os.org/doc/source-code/#sending-a-patch
-[lists]: https://www.qubes-os.org/doc/mailing-lists/
+

@@ -18,6 +18,9 @@
   - title: Getting Started
     url: /getting-started/
     icon: fa-cubes
+  - title: Help and Support
+    url: /support/
+    icon: fa-life-ring
   - title: OS Architecture
     url: /doc/architecture/
   - title: Security Center
@@ -115,9 +118,6 @@
     url: mailto:press@qubes-os.org
   - title: Business Inquiries
     url: mailto:business@qubes-os.org
-  - title: Mailing Lists
-    url: /mailing-lists/
-    icon: fa-envelope-o
   - title: Join the Team
     url: /join/
     icon: fa-thumbs-o-up

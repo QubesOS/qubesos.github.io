@@ -28,9 +28,9 @@ redirect_from:
     <div class="col-lg-4 col-md-4">
       <h3>Help and Support</h3>
       <ul class="list-unstyled">
+        <li><a href="/support/"><i class="fa fa-life-ring fa-fw black-icon"></i> Help and Support</a></li>
+        <li><a href="/doc/#troubleshooting"><i class="fa fa-file-text-o fa-fw black-icon"></i> Troubleshooting Guides</a></li>
         <li><a href="/doc/reporting-bugs/"><i class="fa fa-bug fa-fw black-icon"></i> Report a Bug</a></li>
-        <li><a href="/doc/#troubleshooting"><i class="fa fa-life-ring fa-fw black-icon"></i> Troubleshooting Guides</a></li>
-        <li><a href="/mailing-lists/"><i class="fa fa-envelope fa-fw black-icon"></i> Get Help on the Mailing Lists</a></li>
       </ul>
     </div>
   </div>

@@ -89,6 +89,14 @@
   pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0xE4ACC9278A646816
   fingerprint: AA27 B2CE F3A6 8BD1 4669  0713 E4AC C927 8A64 6816
 
+- name: Frédéric Pierret
+  email: frederic.epitre@orange.fr
+  role: General packaging, CentOS and Fedora templates maintainer
+  type: core
+  picture: team-frederic.jpg
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xC7A3BA7D2DDAF042C77CA4D21DABC232BE02201E
+  fingerprint: C7A3 BA7D 2DDA F042 C77C  A4D2 1DAB C232 BE02 201E
+
 # Emeritus
 
 - name: Rafal Wojtczuk
@@ -137,13 +145,6 @@
   type: community
   pgp_key: 
   fingerprint: 
-
-- name: Frédéric Pierret
-  email: frederic.epitre@orange.fr
-  role: CentOS and Fedora 26 templates
-  type: community
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xC7A3BA7D2DDAF042C77CA4D21DABC232BE02201E
-  fingerprint: C7A3 BA7D 2DDA F042 C77C  A4D2 1DAB C232 BE02 201E
 
 - name: Davíð Steinn Geirsson
   email: david@dsg.is

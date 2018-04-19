@@ -12,22 +12,22 @@
   type: core
   picture: team-marek.png
   email: marmarek@invisiblethingslab.com
-  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0xDB8FD31CCAD7D72C
-  fingerprint: 86BA 6E93 318F BA44 6642 A90A DB8F D31C CAD7 D72C
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x86BA6E93318FBA446642A90ADB8FD31CCAD7D72C
+  fingerprint: 86BA 6E93 318F BA44 6642  A90A DB8F D31C CAD7 D72C
 
 - name: Wojtek Porczyk
   role: Python, Linux, infra
   type: core
   picture: team-woju.jpg
   email: woju@invisiblethingslab.com
-  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0xBF6BD932103A2351
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x68ED1515FA6BD2D105EA1624BF6BD932103A2351
   fingerprint: 68ED 1515 FA6B D2D1 05EA  1624 BF6B D932 103A 2351
 
 - name: Rafał Wojdyła
   role: Main developer for Qubes Windows Tools
   type: core
   email: omeg@invisiblethingslab.com
-  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0x045A13284C85173A
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x3AC87FA304E459D0DF0821A1045A13284C85173A
   fingerprint: 3AC8 7FA3 04E4 59D0 DF08  21A1 045A 1328 4C85 173A
 
 - name: Michael Carbone
@@ -36,22 +36,23 @@
   picture: team-michael.jpg
   email: michael@qubes-os.org
   fingerprint: D3D8 BEBF ECE8 91AC 46A7  30DE 63FC 4D26 84A7 33B4
-  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0x63FC4D2684A733B4
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xD3D8BEBFECE891AC46A730DE63FC4D2684A733B4
   twitter: wandermfc
 
 - name: Joanna Gołębiewska
   role: Coordination, accounting, and operations
   type: core
   email: asia@invisiblethingslab.com
-  fingerprint: 8C8F F70B 60A4 726F F451 7D96 67F4 097B AF59 B942
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x8C8FF70B60A4726FF4517D9667F4097BAF59B942
+  fingerprint: 8C8F F70B 60A4 726F F451  7D96 67F4 097B AF59 B942
 
 - name: Patrick Schleizer
   role: Whonix, Tor, and Debian integration
   type: core
   picture: team-patrick.jpg
   email: patrick@qubes-os.org
-  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0x8D66066A2EEACCDA
-  fingerprint: 916B 8D99 C38E AF5E 8ADC 7A2A 8D66 066A 2EEA CCDA
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
+  fingerprint: 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
   website: https://www.whonix.org
 
 - name: Andrew David Wong
@@ -70,7 +71,7 @@
   picture: team-kalkin.jpg
   email: bahtiar@gadimov.de
   pgp_key: https://bahtiar.gadimov.de/kalkin-public-key.gpg
-  fingerprint: 9F4D 813F 582E 0392 1ECD 6F7B 4C71 9092 C0E7 3330 
+  fingerprint: 9F4D 813F 582E 0392 1ECD  6F7B 4C71 9092 C0E7 3330
   website: https://bahtiar.gadimov.de/
   twitter: _kalkin
 
@@ -78,7 +79,7 @@
   role: Debian template maintainer
   type: core
   email: unman@thirdeyesecurity.org
-  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0x0C6D15D5E0A9816E
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xC6E2533D976E4B29A82B79CB0C6D15D5E0A9816E
   fingerprint: C6E2 533D 976E 4B29 A82B  79CB 0C6D 15D5 E0A9 816E
 
 - name: Simon Gaiser (aka HW42)
@@ -86,7 +87,7 @@
   type: core
   picture: team-simon.jpg
   email: hw42@ipsumj.de
-  pgp_key: https://pgp.mit.edu/pks/lookup?op=get&search=0xE4ACC9278A646816
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xAA27B2CEF3A68BD146690713E4ACC9278A646816
   fingerprint: AA27 B2CE F3A6 8BD1 4669  0713 E4AC C927 8A64 6816
 
 - name: Frédéric Pierret
@@ -195,7 +196,7 @@
   role: IRC community ambassador
   type: community
   pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xB8BF54137B09D35CF026FE9D091AB856069AAA1C
-  fingerprint: B8BF 5413 7B09 D35C F026 FE9D 091A B856 069A AA1C
+  fingerprint: B8BF 5413 7B09 D35C F026  FE9D 091A B856 069A AA1C
 
 - name: Timo Juhani Lindfors
   email: timo.lindfors@iki.fi

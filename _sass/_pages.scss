@@ -86,6 +86,10 @@
     color: $gray-dark;
   }
 
+  .link {
+    white-space: nowrap;
+  }
+
   .fingerprint {
     display: block;
     background-color: $gray-lighter;

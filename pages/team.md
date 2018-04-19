@@ -29,13 +29,16 @@ redirect_from:
           <h4 class="half-bottom" data-anchor-id="{{team.name | slugify}}">{{team.name}}</h4>
           <em class="role half-bottom">{{team.role}}</em>
           {% if team.email %}
-          <a href="mailto:{{team.email}}" class="add-right"><i class="fa fa-envelope fa-fw"></i> Email</a>
+          <a href="mailto:{{team.email}}" class="link add-right"><i class="fa fa-envelope fa-fw black-icon"></i>Email</a>
           {% endif %}
           {% if team.website %}
-          <a href="{{team.website}}" class="add-right" target="blank"><i class="fa fa-globe fa-fw"></i> Website</a>
+          <a href="{{team.website}}" class="link add-right" target="blank"><i class="fa fa-globe fa-fw black-icon"></i>Website</a>
+          {% endif %}
+          {% if team.github %}
+          <a href="https://github.com/{{team.github}}" class="link add-right" target="blank"><i class="fa fa-github fa-fw black-icon"></i>GitHub</a>
           {% endif %}
           {% if team.twitter %}
-          <a href="https://twitter.com/{{team.twitter}}" target="blank"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
+          <a href="https://twitter.com/{{team.twitter}}" class="link" target="blank"><i class="fa fa-twitter fa-fw"></i>Twitter</a>
           {% endif %}
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
@@ -43,14 +46,14 @@ redirect_from:
           <span class="fingerprint" title="{{team.name}}'s PGP Key Fingerprint">{{team.fingerprint}}</span>
           {% endif %}
           {% if team.pgp_key %}
-          <a href="{{team.pgp_key}}"><i class="fa fa-lock fa-fw"></i> {{name_array[0]}}'s PGP Key</a>
+          <a href="{{team.pgp_key}}"><i class="fa fa-lock fa-fw black-icon"></i>{{name_array[0]}}'s PGP Key</a>
           {% endif %}
         </div>
       </div>
     {% endif %}
   {% endfor %}
   <div class="text-center more-bottom">
-    <a href="/join/" class="btn btn-primary"><i class="fa fa-user-plus fa-fw white-icon"></i> Join the team!</a>
+    <a href="/join/" class="btn btn-primary"><i class="fa fa-user-plus fa-fw white-icon"></i>Join the team!</a>
   </div>
 </div>
 <div class="white-box page-content more-bottom">
@@ -107,7 +110,7 @@ redirect_from:
         <span class="fingerprint" title="{{team.name}}'s PGP Key Fingerprint">{{team.fingerprint}}</span>
         {% endif %}
         {% if team.pgp_key %}
-        <a href="{{team.pgp_key}}"><i class="fa fa-lock fa-fw"></i> {{name_array[0]}}'s PGP Key</a>
+        <a href="{{team.pgp_key}}"><i class="fa fa-lock fa-fw black-icon"></i>{{name_array[0]}}'s PGP Key</a>
         {% endif %}
       </div>
     </div>

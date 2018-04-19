@@ -97,6 +97,22 @@
   pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xC7A3BA7D2DDAF042C77CA4D21DABC232BE02201E
   fingerprint: C7A3 BA7D 2DDA F042 C77C  A4D2 1DAB C232 BE02 201E
 
+- name: Marta Marczykowska-Górecka
+  email: marmarta@invisiblethingslab.com
+  role: Qubes Manager, Linux desktop, and core development
+  type: core
+  picture: team-marta.jpg
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x7D22413EF3DB07612CF738087D779BFA6C806F69
+  fingerprint: 7D22 413E F3DB 0761 2CF7  3808 7D77 9BFA 6C80 6F69
+
+- name: Michał Chiliński
+  email: mich@invisiblethingslab.com
+  role: Chief Operations Officer, Invisible Things Lab
+  type: core
+  picture: team-michal.jpg
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x6B527FE563085B7A34B96C2F8F903F3E5662199B
+  fingerprint: 6B52 7FE5 6308 5B7A 34B9  6C2F 8F90 3F3E 5662 199B
+
 # Emeritus
 
 - name: Rafal Wojtczuk

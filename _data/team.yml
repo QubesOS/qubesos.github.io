@@ -5,6 +5,7 @@
   pgp_key: https://blog.invisiblethings.org/keys/
   fingerprint: ED72 7C30 6E76 6BC8 5E62 1AA6 5FA6 C3E4 D9AF BB99
   website: https://blog.invisiblethings.org
+  github: rootkovska
   twitter: rootkovska
 
 - name: Marek Marczykowski-Górecki
@@ -14,6 +15,7 @@
   email: marmarek@invisiblethingslab.com
   pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x86BA6E93318FBA446642A90ADB8FD31CCAD7D72C
   fingerprint: 86BA 6E93 318F BA44 6642  A90A DB8F D31C CAD7 D72C
+  github: marmarek
 
 - name: Wojtek Porczyk
   role: Python, Linux, infra
@@ -22,6 +24,7 @@
   email: woju@invisiblethingslab.com
   pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x68ED1515FA6BD2D105EA1624BF6BD932103A2351
   fingerprint: 68ED 1515 FA6B D2D1 05EA  1624 BF6B D932 103A 2351
+  github: woju
 
 - name: Rafał Wojdyła
   role: Main developer for Qubes Windows Tools
@@ -29,6 +32,7 @@
   email: omeg@invisiblethingslab.com
   pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x3AC87FA304E459D0DF0821A1045A13284C85173A
   fingerprint: 3AC8 7FA3 04E4 59D0 DF08  21A1 045A 1328 4C85 173A
+  github: omeg
 
 - name: Michael Carbone
   role: Project management and funding
@@ -37,6 +41,7 @@
   email: michael@qubes-os.org
   fingerprint: D3D8 BEBF ECE8 91AC 46A7  30DE 63FC 4D26 84A7 33B4
   pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xD3D8BEBFECE891AC46A730DE63FC4D2684A733B4
+  github: mfc
   twitter: wandermfc
 
 - name: Joanna Gołębiewska
@@ -54,6 +59,7 @@
   pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
   fingerprint: 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
   website: https://www.whonix.org
+  github: adrelanos
 
 - name: Andrew David Wong
   role: Community manager; documentation and website maintainer
@@ -63,6 +69,7 @@
   pgp_key: https://andrewdavidwong.com/adw.asc
   fingerprint: BBAF 910D 1BC9 DDF4 1043  629F BC21 1FCE E9C5 4C53
   website: https://andrewdavidwong.com/
+  github: andrewdavidwong
   twitter: andrewdavidwong
 
 - name: Bahtiar `kalkin-` Gadimov
@@ -73,6 +80,7 @@
   pgp_key: https://bahtiar.gadimov.de/kalkin-public-key.gpg
   fingerprint: 9F4D 813F 582E 0392 1ECD  6F7B 4C71 9092 C0E7 3330
   website: https://bahtiar.gadimov.de/
+  github: kalkin
   twitter: _kalkin
 
 - name: unman   
@@ -81,6 +89,7 @@
   email: unman@thirdeyesecurity.org
   pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xC6E2533D976E4B29A82B79CB0C6D15D5E0A9816E
   fingerprint: C6E2 533D 976E 4B29 A82B  79CB 0C6D 15D5 E0A9 816E
+  github: unman
 
 - name: Simon Gaiser (aka HW42)
   role: Software developer; Linux, misc.
@@ -89,6 +98,7 @@
   email: hw42@ipsumj.de
   pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xAA27B2CEF3A68BD146690713E4ACC9278A646816
   fingerprint: AA27 B2CE F3A6 8BD1 4669  0713 E4AC C927 8A64 6816
+  github: HW42
 
 - name: Frédéric Pierret
   email: frederic.epitre@orange.fr
@@ -97,6 +107,7 @@
   picture: team-frederic.jpg
   pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xC7A3BA7D2DDAF042C77CA4D21DABC232BE02201E
   fingerprint: C7A3 BA7D 2DDA F042 C77C  A4D2 1DAB C232 BE02 201E
+  github: fepitre
 
 - name: Marta Marczykowska-Górecka
   email: marmarta@invisiblethingslab.com
@@ -105,6 +116,7 @@
   picture: team-marta.jpg
   pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x7D22413EF3DB07612CF738087D779BFA6C806F69
   fingerprint: 7D22 413E F3DB 0761 2CF7  3808 7D77 9BFA 6C80 6F69
+  github: marta
 
 - name: Michał Chiliński
   email: mich@invisiblethingslab.com
@@ -113,6 +125,7 @@
   picture: team-michal.jpg
   pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x6B527FE563085B7A34B96C2F8F903F3E5662199B
   fingerprint: 6B52 7FE5 6308 5B7A 34B9  6C2F 8F90 3F3E 5662 199B
+  github: MiCh
 
 # Emeritus
 

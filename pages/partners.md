@@ -17,6 +17,9 @@ Please [contact us][contact] if you or your organization is interested in becomi
 
 ## Funding by Year
 
+### 2018
+- **$10,000+** : [Boris]
+
 ### 2017
 - **$250,000+** : [Invisible Things Lab]
 - **$50,000+** : [Mullvad]
@@ -33,6 +36,7 @@ Please [contact us][contact] if you or your organization is interested in becomi
 - **$∞** : [Invisible Things Lab]
 
 [Mullvad]: #mullvad
+[Boris]: #boris
 [zby]: #zby
 [NLnet Foundation]: #nlnet-foundation
 [Open Technology Fund]: #open-technology-fund
@@ -72,11 +76,18 @@ We are grateful for their support!
         To support its continued development, Mullvad made a generous donation to Qubes in 2017.</p>
       </td>
     </tr>
+    <tr id="boris">
+      <td><h2>Boris</h2></td>
+      <td>
+        <h3 data-anchor-id="boris">Boris</h3>
+        <p><b>Boris</b> is a Qubes OS user who is thankful for the hard work put in by the Qubes team and who wants to set a positive example that encourages others to donate to this worthwhile project.</p>
+      </td>
+    </tr>
     <tr id="zby">
       <td><h2>zby</h2></td>
       <td>
         <h3 data-anchor-id="zby">zby</h3>
-        <p><b>zby</b> is angel investor looking for early stage startups in the IT security area.</p>
+        <p><b>zby</b> is an angel investor looking for early stage startups in the IT security area.</p>
       </td>
     </tr>
     <tr id="whonix">

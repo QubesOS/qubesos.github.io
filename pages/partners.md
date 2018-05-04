@@ -18,6 +18,7 @@ Please [contact us][contact] if you or your organization is interested in becomi
 ## Funding by Year
 
 ### 2018
+- **$250,000+** : [Invisible Things Lab]
 - **$10,000+** : [Boris]
 
 ### 2017

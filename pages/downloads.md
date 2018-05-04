@@ -154,12 +154,15 @@ redirect_from:
         <li><a href="https://mirrors.edge.kernel.org/qubes/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirrors.edge.kernel.org</a></li>
         <li><a href="http://ftp.halifax.rwth-aachen.de/qubes/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.halifax.rwth-aachen.de</a></li>
         <li><a href="https://mirrors.dotsrc.org/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirrors.dotsrc.org</a></li>
-        <li><a href="https://ftp.qubes-os.org/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.qubes-os.org</a></li>
-        <li><a href="http://ftp.qubesos4rrrrz6n4.onion/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.qubesos4rrrrz6n4.onion</a></li>
-        <li><a href="https://archive.org/download/QubesOS"><i class="fa fa-cloud-download fa-fw black-icon"></i> archive.org</a></li>
         <li><a href="https://mirrors.ukfast.co.uk/sites/qubes-os.org/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ukfast.co.uk</a></li>
         <li><a href="https://mirror.hackingand.coffee/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> hackingand.coffee</a></li>
         <li><a href="https://ftp.acc.umu.se/mirror/qubes-os.org/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.acc.umu.se</a></li>
+        <li><a href="http://mirror.linux.pizza/qubes-os.org/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirror.linux.pizza</a></li>
+        <li><a href="http://lxpizzamm6twgep2.onion/"><i class="fa fa-cloud-download fa-fw black-icon"></i> lxpizzamm6twgep2.onion</a></li>
+        <li><a href="https://archive.org/download/QubesOS"><i class="fa fa-cloud-download fa-fw black-icon"></i> archive.org</a></li>
+        <li><a href="https://ftp.qubes-os.org/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.qubes-os.org</a></li>
+        <li><a href="http://ftp.qubesos4rrrrz6n4.onion/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.qubesos4rrrrz6n4.onion</a></li>
+        <li><a href="http://ftp.sik5nlgfc5qylnnsr57qrbm64zbdx6t4lreyhpon3ychmxmiem7tioad.onion/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.sik5nlgf...em7tioad.onion</a></li>
         <li><a href="/downloads/mirrors/#instructions-for-mirror-operators"><i class="fa fa-cloud fa-fw black-icon"></i> Contribute a mirror!</a></li>
       </ul>
     </div>

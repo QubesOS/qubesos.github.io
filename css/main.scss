@@ -107,6 +107,24 @@ $on-laptop-wide:   1150px;
 				"toc",
         "docs";
 
+// Global small screen fix
+@media (max-width: $screen-sm-min) {
+    .container {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      padding: 5px;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+}
+
 // Custom - Icon Colors
 .black-icon         {color: #000000;}
 .fa-twitter         {color: #00aced;}
@@ -147,3 +165,4 @@ article tr.center {
         text-align: center;
     }
 }
+

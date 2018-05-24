@@ -19,7 +19,7 @@ Please [contact us][contact] if you or your organization is interested in becomi
 
 ### 2018
 - **$250,000+** : [Invisible Things Lab]
-- **$10,000+** : [Boris]
+- **$10,000+** : [Freedom of the Press Foundation], [Boris]
 
 ### 2017
 - **$250,000+** : [Invisible Things Lab]
@@ -36,6 +36,7 @@ Please [contact us][contact] if you or your organization is interested in becomi
 ### 2014 and earlier
 - **$∞** : [Invisible Things Lab]
 
+[Freedom of the Press Foundation]: #freedom-of-the-press-foundation
 [Mullvad]: #mullvad
 [Boris]: #boris
 [zby]: #zby
@@ -61,6 +62,19 @@ We are grateful for their support!
         <p><a href="https://invisiblethingslab.com/">Invisible Things Lab s.c. (ITL)</a> is a privately held company based in Warsaw, Poland, owned by Joanna Rutkowska and Joanna Gołębiewska.
         ITL has supported Qubes OS development from the beginning of the project in 2010 to the present.
         The company’s primary source of revenue is security research and development.</p>
+      </td>
+    </tr>
+    <tr id="freedom-of-the-press-foundation">
+      <td>
+        <a href="https://freedom.press/">
+          <img src="/attachment/site/fpf-logo.svg">
+        </a>
+      </td>
+      <td>
+        <h3 data-anchor-id="freedom-of-the-press-foundation">Freedom of the Press Foundation</h3>
+        <p><a href="https://freedom.press/">Freedom of the Press Foundation (FPF)</a> is a nonprofit organization dedicated to supporting and defending public interest journalism.
+        It leads the development of <a href="https://securedrop.org/">SecureDrop</a>, an open source whistleblower submission platform used by more than 50 media organizations around the world to securely accept documents from anonymous sources.
+        FPF uses Qubes OS in the development of an integrated <a href="https://github.com/freedomofpress/securedrop-workstation">SecureDrop Workstation</a>.</p>
       </td>
     </tr>
     <tr id="mullvad">

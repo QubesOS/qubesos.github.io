@@ -260,6 +260,13 @@
   pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x3FCF9A1111350DE9FA9C3DD06E7A27B909DAFB92
   fingerprint: 3FCF 9A11 1135 0DE9 FA9C  3DD0 6E7A 27B9 09DA FB92
 
+- name: Jean-Philippe Ouellet
+  email: jpo@vt.edu
+  role: General development
+  type: community
+  pgp_key: 
+  fingerprint: 
+
 - name: Vincent Penquerc'h
   email: vincent.penquerch@collabora.co.uk
   role: Code review, misc. fixes

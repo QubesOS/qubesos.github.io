@@ -21,10 +21,12 @@
   - title: Help and Support
     url: /support/
     icon: fa-life-ring
-  - title: OS Architecture
-    url: /doc/architecture/
+  - title: Code of Conduct
+    url: /code-of-conduct/
   - title: Security Center
     url: /security/
+  - title: OS Architecture
+    url: /doc/architecture/
 
 - title: Downloads
   url: /downloads/

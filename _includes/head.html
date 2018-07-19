@@ -117,4 +117,28 @@
   <meta name="apple-mobile-web-app-title" content="Qubes OS">
   <meta name="application-name" content="Qubes OS">
   <meta name="theme-color" content="#ffffff">
+
+  <!-- Cookie Consent -->
+  <link rel="stylesheet" type="text/css" href="/css/cookieconsent.min.css" />
+  <script src="/js/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#3874D8"
+      },
+      "button": {
+        "background": "#fff",
+        "text": "#3874D8"
+      }
+    },
+    "theme": "classic",
+    "content": {
+      "message" : "This website uses cookies. By proceeding, you agree to our <a class='cc' target='_blank' href='/privacy/'>Privacy Policy</a> and <a class='cc' target='_blank' href='/terms/'>Terms of Use</a>.",
+      "link" : "(What are cookies?)"
+    }
+  })});
+  </script>
+
 </head>

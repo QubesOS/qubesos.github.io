@@ -264,8 +264,8 @@
   email: jpo@vt.edu
   role: General development
   type: community
-  pgp_key: 
-  fingerprint: 
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xC37B75A11DC7C9CC6CD5B7A9AFE6E6A3D6EE7AD6
+  fingerprint: C37B 75A1 1DC7 C9CC 6CD5  B7A9 AFE6 E6A3 D6EE 7AD6
 
 - name: Vincent Penquerc'h
   email: vincent.penquerch@collabora.co.uk

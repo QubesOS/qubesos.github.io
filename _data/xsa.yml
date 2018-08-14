@@ -1595,6 +1595,36 @@
   qsb: 041-2018
   mitigation: 
 
+- xsa: 268
+  date: 2018-08-14
+  affected: no
+  qsb: 
+  mitigation: 
+
+- xsa: 269
+  date: 2018-08-14
+  affected: no
+  qsb: 
+  mitigation: 
+
+- xsa: 270
+  date: 2018-08-14
+  affected: yes
+  qsb: 042-2018
+  mitigation: 
+
+- xsa: 271
+  date: 2018-08-14
+  affected: no
+  qsb: 
+  mitigation: 
+
+- xsa: 272
+  date: 2018-08-14
+  affected: no
+  qsb: 
+  mitigation: 
+
 - xsa: 274
   date: 2018-07-25
   affected: no

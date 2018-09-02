@@ -1627,9 +1627,8 @@
 
 - xsa: 273
   date: 2018-08-14
-  affected: tba
-  tba: https://groups.google.com/d/msg/qubes-users/Isn_hko7tQs/PcqIuUleEQAJ
-  qsb: 
+  affected: yes
+  qsb: 043-2018
   mitigation: 
 
 - xsa: 274

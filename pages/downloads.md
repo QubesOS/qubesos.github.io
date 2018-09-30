@@ -34,6 +34,16 @@ redirect_from:
       </ul>
     </div>
   </div>
+  <hr class="more-bottom">
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <h3>Qubes OS is made possible by your donations!</h3>
+      <p>As a free and open-source software project, we rely on donations from users like you in order to keep running.
+      Your contributions directly support the developers who work hard every day to improve your security.
+      Please consider making a donation today.</p>
+      <a class="btn btn-lg btn-primary" href="/donate/">Donate</a>
+    </div>
+  </div>
 </div>
 <div class="white-box more-bottom page-content">
   <div class="row">

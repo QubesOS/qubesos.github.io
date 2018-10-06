@@ -55,7 +55,7 @@ redirect_from:
       {% assign latest = release.latest | default: false %}
       {% assign aging = release.aging | default: false %}
       {% assign deprecated = release.deprecated | default: false %}
-      <h3 class="more-bottom" id="{{ release.link }}">{{ release_name }}</h3>
+      <h3 class="more-bottom" id="{{ release_name | slugify }}">{{ release_name }}</h3>
       {% if testing %}
       <div class="alert alert-info" role="alert">
         <i class="fa fa-question-circle"></i>{% if testing != true %} {{ testing }}{% else %} This is a <a href="/doc/testing/">testing release</a>. Please help us improve it by <a href="/doc/reporting-bugs/">reporting any bugs you encounter</a>. For important work, we recommend the latest stable release.{% endif %}

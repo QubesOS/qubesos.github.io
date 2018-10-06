@@ -99,7 +99,7 @@ releases:
         method: HTTPS
         type: ISO
         filename: Qubes-R3.2.1-rc1-x86_64.iso
-        size: 5.0 GiB
+        size: 5.0 GiB (5,205,131,264 bytes)
         url: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R3.2.1-rc1-x86_64.iso
         verifiers:
           hash: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R3.2.1-rc1-x86_64.iso.DIGESTS
@@ -110,7 +110,7 @@ releases:
         method: HTTP
         type: ISO
         filename: Qubes-R3.2.1-rc1-x86_64.iso
-        size: 5.0 GiB
+        size: 5.0 GiB (5,205,131,264 bytes)
         url: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.2.1-rc1-x86_64.iso
         verifiers:
           hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.2.1-rc1-x86_64.iso.DIGESTS
@@ -121,7 +121,7 @@ releases:
         method: HTTPS
         type: ISO
         filename: Qubes-R3.2.1-rc1-x86_64.iso
-        size: 5.0 GiB
+        size: 5.0 GiB (5,205,131,264 bytes)
         url: https://ftp.qubes-os.org/iso/Qubes-R3.2.1-rc1-x86_64.iso
         verifiers:
           hash: https://ftp.qubes-os.org/iso/Qubes-R3.2.1-rc1-x86_64.iso.DIGESTS

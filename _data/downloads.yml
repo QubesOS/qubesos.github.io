@@ -92,6 +92,7 @@ releases:
       - Release Notes
   Qubes Release 3.2.1-rc1:
     testing: yes
+    latest: no
     deprecated: no
     sources:
       - name: kernel.org
@@ -176,6 +177,8 @@ releases:
       - Release Notes
   Qubes Release 3.2:
     testing: no
+    latest: no
+    aging: yes
     aging: This is an old, <a href="/doc/supported-versions/">extended
            support</a> release. For the best Qubes OS experience, we suggest
            upgrading to the latest stable release.
@@ -353,7 +356,6 @@ releases:
     latest: no
     aging: no
     deprecated: yes
-    link: qubes-live-usb-alpha
     deprecated: The Live USB edition is no longer supported or maintained. Users
                 who wish to install Qubes while preserving the contents of their
                 internal drives are instead advised to install the latest stable

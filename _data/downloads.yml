@@ -90,6 +90,90 @@ releases:
     featured_docs:
       get:
       - Release Notes
+  Qubes Release 3.2.1-rc1:
+    testing: yes
+    deprecated: no
+    sources:
+      - name: kernel.org
+        display: yes
+        method: HTTPS
+        type: ISO
+        filename: Qubes-R3.2.1-rc1-x86_64.iso
+        size: 5.0 GiB
+        url: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R3.2.1-rc1-x86_64.iso
+        verifiers:
+          hash: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R3.2.1-rc1-x86_64.iso.DIGESTS
+          sig: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R3.2.1-rc1-x86_64.iso.asc
+          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+      - name: halifax.rwth-aachen.de
+        display: no
+        method: HTTP
+        type: ISO
+        filename: Qubes-R3.2.1-rc1-x86_64.iso
+        size: 5.0 GiB
+        url: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.2.1-rc1-x86_64.iso
+        verifiers:
+          hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.2.1-rc1-x86_64.iso.DIGESTS
+          sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.2.1-rc1-x86_64.iso.asc
+          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+      - name: qubes-os.org
+        display: no
+        method: HTTPS
+        type: ISO
+        filename: Qubes-R3.2.1-rc1-x86_64.iso
+        size: 5.0 GiB
+        url: https://ftp.qubes-os.org/iso/Qubes-R3.2.1-rc1-x86_64.iso
+        verifiers:
+          hash: https://ftp.qubes-os.org/iso/Qubes-R3.2.1-rc1-x86_64.iso.DIGESTS
+          sig: https://ftp.qubes-os.org/iso/Qubes-R3.2.1-rc1-x86_64.iso.asc
+          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+      - name: kernel.org
+        display: yes
+        method: BitTorrent
+        type: Torrent
+        filename: Qubes-R3.2.1-rc1-x86_64.torrent
+        size: 99.9 kB (99,863 bytes)
+        url: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R3.2.1-rc1-x86_64.torrent
+        verifiers:
+          hash: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R3.2.1-rc1-x86_64.iso.DIGESTS
+          sig: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R3.2.1-rc1-x86_64.iso.asc
+          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+      - name: halifax.rwth-aachen.de
+        display: no
+        method: BitTorrent
+        type: Torrent
+        filename: Qubes-R3.2.1-rc1-x86_64.torrent
+        size: 99.9 kB (99,863 bytes)
+        url: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.2.1-rc1-x86_64.torrent
+        verifiers:
+          hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.2.1-rc1-x86_64.iso.DIGESTS
+          sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R3.2.1-rc1-x86_64.iso.asc
+          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+      - name: qubes-os.org
+        display: no
+        method: BitTorrent
+        type: Torrent
+        filename: Qubes-R3.2.1-rc1-x86_64.torrent
+        size: 99.9 kB (99,863 bytes)
+        url: https://ftp.qubes-os.org/iso/Qubes-R3.2.1-rc1-x86_64.torrent
+        verifiers:
+          hash: https://ftp.qubes-os.org/iso/Qubes-R3.2.1-rc1-x86_64.iso.DIGESTS
+          sig: https://ftp.qubes-os.org/iso/Qubes-R3.2.1-rc1-x86_64.iso.asc
+          key: https://keys.qubes-os.org/keys/qubes-release-3-signing-key.asc
+    docs:
+      Installation Guide:
+        featured: yes
+        url: /doc/installation-guide/
+      Release Notes:
+        url: /doc/releases/3.2/release-notes/
+      Release Schedule:
+        url: /doc/releases/3.2/schedule/
+      Upgrading to Qubes R3.2:
+        url: /doc/releases/3.2/release-notes/#upgrading
+    featured_docs:
+      get:
+      - Upgrading to Qubes R3.2
+      - Release Notes
   Qubes Release 3.2:
     testing: no
     aging: This is an old, <a href="/doc/supported-versions/">extended

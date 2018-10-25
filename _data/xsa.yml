@@ -1637,3 +1637,9 @@
   qsb: 
   mitigation: 
 
+- xsa: 278
+  date: 2018-10-24
+  affected: no
+  qsb: 
+  mitigation: 
+

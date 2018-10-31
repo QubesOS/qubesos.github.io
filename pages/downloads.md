@@ -173,6 +173,7 @@ redirect_from:
         <li><a href="https://quantum-mirror.hu/mirrors/pub/qubes"><i class="fa fa-cloud-download fa-fw black-icon"></i> quantum-mirror.hu</a></li>
         <li><a href="https://ftp.cc.uoc.gr/mirrors/linux/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.cc.uoc.gr</a></li>
         <li><a href="http://ftp.icm.edu.pl/pub/os/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.icm.edu.pl</a></li>
+        <li><a href="https://mirrors.dgplug.org/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirrors.dgplug.org</a></li>
         <li><a href="http://lxpizzamm6twgep2.onion/"><i class="fa fa-cloud-download fa-fw black-icon"></i> lxpizzamm6twgep2.onion</a></li>
         <li><a href="https://archive.org/download/QubesOS"><i class="fa fa-cloud-download fa-fw black-icon"></i> archive.org</a></li>
         <li><a href="https://ftp.qubes-os.org/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.qubes-os.org</a></li>

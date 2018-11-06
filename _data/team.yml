@@ -1,15 +1,5 @@
-- name: Joanna Rutkowska
-  role: Founder, architecture & security, developer emeritus
-  type: core
-  picture: team-joanna.jpg
-  pgp_key: https://blog.invisiblethings.org/keys/
-  fingerprint: ED72 7C30 6E76 6BC8 5E62 1AA6 5FA6 C3E4 D9AF BB99
-  website: https://blog.invisiblethings.org
-  github: rootkovska
-  twitter: rootkovska
-
 - name: Marek Marczykowski-Górecki
-  role: Lead engineer; everything Xen / Linux related
+  role: Project lead; everything Xen / Linux related
   type: core
   picture: team-marek.png
   email: marmarek@invisiblethingslab.com
@@ -128,6 +118,16 @@
   github: MiCh
 
 # Emeritus
+
+- name: Joanna Rutkowska
+  role: Founder, architecture & security, developer emeritus
+  type: core
+  picture: team-joanna.jpg
+  pgp_key: https://blog.invisiblethings.org/keys/
+  fingerprint: ED72 7C30 6E76 6BC8 5E62 1AA6 5FA6 C3E4 D9AF BB99
+  website: https://blog.invisiblethings.org
+  github: rootkovska
+  twitter: rootkovska
 
 - name: Rafal Wojtczuk
   role: Architecture & system-level stuff

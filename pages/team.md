@@ -63,32 +63,24 @@ redirect_from:
     contributed to the project in a central way but who are no longer
     currently active.</p>
   </div>
-  {% assign emeritus_total = 0 %}
   {% for team in site.data.team %}
     {% if team.type == "emeritus" %}
-      {% assign emeritus_total = emeritus_total | plus:1 %}
+    {% assign name_array = team.name | split:" " %}
+    <div class="row team">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        {% include team-simple.html %}
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+        {% if team.fingerprint %}
+        <span class="fingerprint" title="{{team.name}}'s PGP Key Fingerprint">{{team.fingerprint}}</span>
+        {% endif %}
+        {% if team.pgp_key %}
+        <a href="{{team.pgp_key}}"><i class="fa fa-lock fa-fw black-icon"></i>{{name_array[0]}}'s PGP Key</a>
+        {% endif %}
+      </div>
+    </div>
     {% endif %}
   {% endfor %}
-  {% assign emeritus_half = emeritus_total | divided_by:2 %}
-  {% assign emeritus_shown = 0 %}
-  <div class="row team">
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-    {% for team in site.data.team %}
-      {% if team.type == "emeritus" %}
-        {% if emeritus_shown < emeritus_half %}
-          {% include team-simple.html %}
-        {% elsif emeritus_shown == emeritus_half %}
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          {% include team-simple.html %}
-        {% else %}
-          {% include team-simple.html %}
-        {% endif %}
-      {% assign emeritus_shown = emeritus_shown | plus:1 %}
-      {% endif %}
-    {% endfor %}
-    </div>
-  </div>
 </div>
 <div class="white-box page-content more-bottom">
   <div class="col-lg-12 col-md-12 col-sm-12">

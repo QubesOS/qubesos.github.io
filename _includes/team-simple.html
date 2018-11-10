@@ -1,5 +1,7 @@
 <p id="{{team.name | slugify}}">
   <a href="/team/#{{team.name | slugify}}" class="black-link">{{team.name}}</a>
   <em>{{team.role}}</em><br>
+  {% if team.email %}
   <a href="mailto:{{team.email}}"><i class="fa fa-envelope"></i> Email</a>
+  {% endif %}
 </p>

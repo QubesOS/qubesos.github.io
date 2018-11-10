@@ -120,8 +120,8 @@
 # Emeritus
 
 - name: Joanna Rutkowska
-  role: Founder, architecture & security, developer emeritus
-  type: core
+  role: Founder and advisor (formerly architecture, security, and development)
+  type: emeritus
   picture: team-joanna.jpg
   pgp_key: https://blog.invisiblethings.org/keys/
   fingerprint: ED72 7C30 6E76 6BC8 5E62 1AA6 5FA6 C3E4 D9AF BB99

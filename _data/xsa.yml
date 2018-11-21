@@ -1637,10 +1637,40 @@
   qsb: 
   mitigation: 
 
+- xsa: 275
+  date: 2018-11-20
+  affected: yes
+  qsb: 044-2018
+  mitigation: 
+
+- xsa: 276
+  date: 2018-11-20
+  affected: no
+  qsb: 
+  mitigation: 
+
+- xsa: 277
+  date: 2018-11-20
+  affected: no
+  qsb: 
+  mitigation: 
+
 - xsa: 278
   date: 2018-10-24
   affected: no
   qsb: 
+  mitigation: 
+
+- xsa: 279
+  date: 2018-11-20
+  affected: no
+  qsb: 
+  mitigation: 
+
+- xsa: 280
+  date: 2018-11-20
+  affected: yes
+  qsb: 044-2018
   mitigation: 
 
 - xsa: 282

@@ -67,7 +67,8 @@
   }
 
   @media (max-width: $screen-md-min) {
-    .page-source-side {
+    .page-source-side,
+    .doc-index-buttons {
       display: none;
     }
   }
@@ -76,6 +77,20 @@
     .page-source-bottom,
     .contents-title {
       display: none;
+    }
+  }
+
+  @media (max-width: $screen-md-min) {
+    .button-heading {
+      text-align: left;
+      float: left;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .button-heading {
+      text-align: right;
+      float: right;
     }
   }
 

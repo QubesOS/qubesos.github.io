@@ -54,9 +54,28 @@
     margin-bottom: 25px;
   }
 
-  @media (min-width: $screen-sm-min) {
+  @media (min-width: $screen-md-min) {
     .page-content-left {
       border-right: 1px solid $gray-light;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .page-content-right {
+      border-left: 1px solid $gray-light;
+    }
+  }
+
+  @media (max-width: $screen-md-min) {
+    .page-source-side {
+      display: none;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .page-source-bottom,
+    .contents-title {
+      display: none;
     }
   }
 

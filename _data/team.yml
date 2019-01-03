@@ -91,12 +91,12 @@
   github: HW42
 
 - name: Frédéric Pierret
-  email: frederic.epitre@orange.fr
+  email: frederic.pierret@qubes-os.org
   role: General packaging, CentOS and Fedora templates maintainer
   type: core
   picture: team-frederic.jpg
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xC7A3BA7D2DDAF042C77CA4D21DABC232BE02201E
-  fingerprint: C7A3 BA7D 2DDA F042 C77C  A4D2 1DAB C232 BE02 201E
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x9FA64B92F95E706BF28E2CA6484010B5CDC576E2
+  fingerprint: 9FA6 4B92 F95E 706B F28E  2CA6 4840 10B5 CDC5 76E2
   github: fepitre
 
 - name: Marta Marczykowska-Górecka

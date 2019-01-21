@@ -58,45 +58,32 @@
     .page-content-left {
       border-right: 1px solid $gray-light;
     }
-  }
-
-  @media (min-width: $screen-md-min) {
     .page-content-right {
       border-left: 1px solid $gray-light;
     }
-  }
-
-  @media (max-width: $screen-md-min) {
-    .page-source-side,
-    .doc-index-buttons {
-      display: none;
-    }
-  }
-
-  @media (min-width: $screen-md-min) {
     .page-source-bottom,
-    .contents-title {
+    .toc-button-spacer,
+    #toc-button {
       display: none;
     }
-  }
-
-  @media (max-width: $screen-md-min) {
-    .button-heading {
-      text-align: left;
-      float: left;
-    }
-  }
-
-  @media (min-width: $screen-md-min) {
     .button-heading {
       text-align: right;
       float: right;
     }
   }
 
+  @media (max-width: $screen-md-min) {
+    .page-source-side {
+      display: none;
+    }
+    .page-source-bottom {
+      padding-top: 14px;
+      border-top: 1px solid $gray-light;
+    }
+    .button-heading {
+      text-align: left;
+      float: left;
+    }
+  }
 }
 
-
-@media screen and (max-width: $on-palm) {
-
-}

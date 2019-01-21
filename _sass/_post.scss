@@ -8,6 +8,12 @@
 
 .post-meta {
   color: $gray-darker;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $gray-light;
+}
+
+.news-list {
+  border-bottom: 0;
 }
 
 .post-title {
@@ -15,6 +21,7 @@
   font-family: $base-font-family;
   letter-spacing: 0px;
   line-height: 1.5;
+  border-bottom: 0;
 
   a.post-link {
     font-size: 24px;

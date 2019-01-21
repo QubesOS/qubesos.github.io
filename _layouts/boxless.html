@@ -4,7 +4,7 @@
     <body>
       {% include header.html %}
       <div class="container">
-        <h1 class="more-top add-left">
+        <h1 class="more-top add-left outer-heading">
         {% for section in site.data.architecture %}
           {% if section.url == page.permalink %}
           <i class="fa {{section.icon}}"></i>

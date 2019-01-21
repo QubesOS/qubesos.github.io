@@ -92,14 +92,14 @@ We are grateful for their support!
       </td>
     </tr>
     <tr id="boris">
-      <td><h2>Boris</h2></td>
+      <td><h2 class="outer-heading">Boris</h2></td>
       <td>
         <h3 data-anchor-id="boris">Boris</h3>
         <p><b>Boris</b> is a Qubes OS user who is thankful for the hard work put in by the Qubes team and who wants to set a positive example that encourages others to donate to this worthwhile project.</p>
       </td>
     </tr>
     <tr id="zby">
-      <td><h2>zby</h2></td>
+      <td><h2 class="outer-heading">zby</h2></td>
       <td>
         <h3 data-anchor-id="zby">zby</h3>
         <p><b>zby</b> is an angel investor looking for early stage startups in the IT security area.</p>

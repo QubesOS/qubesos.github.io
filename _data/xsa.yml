@@ -1679,3 +1679,9 @@
   qsb: 
   mitigation: 
 
+- xsa: 289
+  date: 2019-01-21
+  affected: no
+  qsb: 
+  mitigation: 
+

@@ -106,7 +106,6 @@
   - title: Facebook
     url: https://www.facebook.com/QubesOS
 
-
 - title: Team
   url: /team/
   icon: fa-users
@@ -120,9 +119,6 @@
     url: mailto:press@qubes-os.org
   - title: Business Inquiries
     url: mailto:business@qubes-os.org
-  - title: Join the Team
-    url: /join/
-    icon: fa-thumbs-o-up
 
 - title: Donate
   url: /donate/

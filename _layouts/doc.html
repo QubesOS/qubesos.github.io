@@ -4,17 +4,19 @@
     <body>
       {% include header.html %}
       <div class="container">
-        <h1 class="more-top add-left outer-heading">
-          <i class="fa fa-book"></i>
-            {% assign doc_segments = page.relative_path | split: '/' %}
-            {% for section in site.data.doc %}
-            {% for topic in section.topics %}
-            {% if doc_segments contains topic.folder %}
-              {{section.category}}
-            {% endif %}
-            {% endfor %}
-            {% endfor %}
-        </h1>
+        {% assign doc_segments = page.relative_path | split: '/' %}
+        {% for section in site.data.doc %}
+        {% for topic in section.topics %}
+        {% if doc_segments contains topic.folder %}
+        <a href="/doc/#{{ section.category | slugify }}">
+          <h1 class="more-top add-left outer-heading">
+            <i class="fa fa-book"></i>
+              {{ section.category }}
+          </h1>
+        </a>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
         {% include doc-content.html %}
       </div>
   </body>

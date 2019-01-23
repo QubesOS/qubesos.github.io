@@ -28,8 +28,6 @@
  */
  .white-box {
    background: $color-white;
-   border: 1px solid $gray-light;
-   border-radius: 10px;
    padding: 5px;
 
    @media (min-width: $screen-sm-min) {
@@ -53,7 +51,6 @@ a.black-link {
     display: block;
     font-size: 14px;
     color: $gray-dark;
-    text-transform: capitalize;
   }
 }
 

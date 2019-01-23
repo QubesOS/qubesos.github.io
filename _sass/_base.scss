@@ -56,6 +56,15 @@ ul, ol, dl, figure,
  h1.outer-heading,
  h2.outer-heading {
   border-bottom: 0;
+
+  a.heading-link {
+   padding: 0 0 10px;
+   margin: 0 0 25px;
+   font-weight: 200;
+   font-family: $ostrich;
+   color: $gray-base;
+   letter-spacing: 1px;
+  }
 }
 
  h1 i,

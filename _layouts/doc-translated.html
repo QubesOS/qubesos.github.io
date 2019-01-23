@@ -8,12 +8,12 @@
         {% for section in site.data.doc %}
         {% for topic in section.topics %}
         {% if doc_segments contains topic.folder %}
-        <a href="/doc/#{{ section.category | slugify }}">
-          <h1 class="more-top add-left outer-heading">
+        <h1 class="more-top add-left outer-heading">
+          <a href="/doc/#{{ section.category | slugify }}" class="heading-link">
             <i class="fa fa-book"></i>
               {{ section.category }}
-          </h1>
-        </a>
+          </a>
+        </h1>
         {% endif %}
         {% endfor %}
         {% endfor %}

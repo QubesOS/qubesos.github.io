@@ -7,7 +7,7 @@
         <div class="row more-top">
           <div class="col-lg-6 col-md-6">
             <h1 class="add-left outer-heading">
-              <a href="/news/">
+              <a href="/news/" class="black-link">
                 <i class="fa fa-newspaper-o"></i> News
               </a>
               <a href="/news/categories/" class="btn btn-default more-left half-top"><i class="fa fa-tag" aria-hidden="true"></i> News by Category</a>
@@ -30,7 +30,7 @@
               <header class="post-header">
                 <h1 class="post-title remove-bottom">{{ page.title }}</h1>
                 <p class="post-meta">
-                  {{ page.date | date: "%b %-d, %Y" }}
+                  {{ page.date | date: "%Y-%m-%d" }}
                   by <strong>
                   {% assign author_team = false %}
                   {% for member in site.data.team %}

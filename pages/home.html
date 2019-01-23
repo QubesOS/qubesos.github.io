@@ -162,7 +162,7 @@ redirect_from:
             {{ post.title }}
             {% for category in post.categories %}
             {% if site.allowed_categories contains category %}
-              <span class="detail"> Posted in <a href="/news/categories/#{{ category | slugify }}">{{ category }}</a> on {{ post.date | date: "%Y-%m-%d" }}</span>
+              <span class="detail"> Posted in {{ category | capitalize }} on {{ post.date | date: "%Y-%m-%d" }}</span>
             {% endif %}
             {% endfor %}
           </a>

@@ -65,12 +65,6 @@
    urls:
    - url: https://mirrors.ukfast.co.uk/sites/qubes-os.org/
 
- - organization: The Linux Kernel Archives
-   org_url: https://www.kernel.org/
-   location: United States
-   urls:
-   - url: https://mirrors.edge.kernel.org/qubes/iso/
-
  - organization: GigeNET
    org_url: https://www.gigenet.com/
    location: United States
@@ -88,6 +82,12 @@
    location: United States
    urls:
    - url: https://archive.org/download/QubesOS
+
+ - organization: The Linux Kernel Archives
+   org_url: https://www.kernel.org/
+   location: Distributed
+   urls:
+   - url: https://mirrors.edge.kernel.org/qubes/iso/
 
  - organization: The Qubes OS Project
    org_url: https://www.qubes-os.org/

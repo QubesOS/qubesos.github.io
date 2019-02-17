@@ -157,30 +157,37 @@ redirect_from:
   </div>
 </div>
 <div class="row">
+  <div class="col-lg-12 col-md-12">
+    <div class="white-box more-bottom page-content">
+      <article>
+        <h3 id="mirrors">Download Mirrors</h3>
+        <table>
+          <tr>
+            <th>Organization</th>
+            <th>Location</th>
+            <th>URL</th>
+          </tr>
+        {% for mirror in site.data.mirrors %}
+          <tr id="{{ mirror.organization | slugify }}">
+            <td><a href="{{ mirror.org_url }}">{{ mirror.organization }}</a></td>
+            <td>{{ mirror.location }}</td>
+            <td>{% for url in mirror.urls %}<a href="{{ url.url }}">{{ url.url | truncate: 76 }}</a><br>{% endfor %}</td>
+          </tr>
+        {% endfor %}
+        </table>
+        <a href="/downloads/mirrors/#instructions-for-mirror-operators"><i class="fa fa-cloud fa-fw black-icon"></i> How to contribute a download mirror</a>
+      </article>
+    </div>
+  </div>
+</div>
+<div class="row">
   <div class="col-lg-4 col-md-4">
     <div class="white-box more-bottom page-content">
-      <h3 id="mirrors">Download Mirrors</h3>
+      <h3 id="versions">Security Information</h3>
       <ul class="list-unstyled">
-        <li><a href="https://mirrors.edge.kernel.org/qubes/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirrors.edge.kernel.org</a></li>
-        <li><a href="http://ftp.halifax.rwth-aachen.de/qubes/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.halifax.rwth-aachen.de</a></li>
-        <li><a href="https://mirrors.dotsrc.org/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirrors.dotsrc.org</a></li>
-        <li><a href="https://mirrors.ukfast.co.uk/sites/qubes-os.org/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ukfast.co.uk</a></li>
-        <li><a href="https://mirror.hackingand.coffee/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> hackingand.coffee</a></li>
-        <li><a href="https://ftp.acc.umu.se/mirror/qubes-os.org/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.acc.umu.se</a></li>
-        <li><a href="http://mirror.linux.pizza/qubes-os.org/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirror.linux.pizza</a></li>
-        <li><a href="https://mirror.cryptoworld.is/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirror.cryptoworld.is</a></li>
-        <li><a href="https://mirrors.gigenet.com/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirrors.gigenet.com</a></li>
-        <li><a href="https://quantum-mirror.hu/mirrors/pub/qubes"><i class="fa fa-cloud-download fa-fw black-icon"></i> quantum-mirror.hu</a></li>
-        <li><a href="https://ftp.cc.uoc.gr/mirrors/linux/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.cc.uoc.gr</a></li>
-        <li><a href="http://ftp.icm.edu.pl/pub/os/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.icm.edu.pl</a></li>
-        <li><a href="https://mirrors.dgplug.org/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirrors.dgplug.org</a></li>
-        <li><a href="https://mirror.library.ucy.ac.cy/linux/qubes/"><i class="fa fa-cloud-download fa-fw black-icon"></i> mirror.library.ucy.ac.cy</a></li>
-        <li><a href="http://lxpizzamm6twgep2.onion/"><i class="fa fa-cloud-download fa-fw black-icon"></i> lxpizzamm6twgep2.onion</a></li>
-        <li><a href="https://archive.org/download/QubesOS"><i class="fa fa-cloud-download fa-fw black-icon"></i> archive.org</a></li>
-        <li><a href="https://ftp.qubes-os.org/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.qubes-os.org</a></li>
-        <li><a href="http://ftp.qubesos4rrrrz6n4.onion/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.qubesos4rrrrz6n4.onion</a></li>
-        <li><a href="http://ftp.sik5nlgfc5qylnnsr57qrbm64zbdx6t4lreyhpon3ychmxmiem7tioad.onion/iso/"><i class="fa fa-cloud-download fa-fw black-icon"></i> ftp.sik5nlgf...em7tioad.onion</a></li>
-        <li><a href="/downloads/mirrors/#instructions-for-mirror-operators"><i class="fa fa-cloud fa-fw black-icon"></i> Contribute a mirror!</a></li>
+        <li><a href="/security/"><i class="fa fa-lock fa-fw black-icon"></i> Security Center</a></li>
+        <li><a href="/security/pack/"><i class="fa fa-folder fa-fw black-icon"></i> Security Pack</a></li>
+        <li><a href="/doc/security-guidelines/"><i class="fa fa-tasks fa-fw black-icon"></i> Security Guidelines</a></li>
       </ul>
     </div>
   </div>
@@ -189,10 +196,8 @@ redirect_from:
       <h3 id="versions">Version Information</h3>
       <ul class="list-unstyled">
         <li><a href="/doc/supported-versions/"><i class="fa fa-history fa-fw black-icon"></i> Supported Versions</a></li>
-        <li><a href="/doc/version-scheme/"><i class="fa fa-code-fork fa-fw black-icon"></i> Version Scheme</a></li>
         <li><a href="/doc/templates/"><i class="fa fa-clone fa-fw black-icon"></i> Templates</a></li>
-        <li><a href="/doc/system-requirements/"><i class="fa fa-server fa-fw black-icon"></i> System Requirements</a></li>
-        <li><a href="/security/"><i class="fa fa-lock fa-fw black-icon"></i> Security Information</a></li>
+        <li><a href="/doc/version-scheme/"><i class="fa fa-code-fork fa-fw black-icon"></i> Version Scheme</a></li>
       </ul>
     </div>
   </div>
@@ -201,10 +206,8 @@ redirect_from:
       <h3 id="source-code">Source Code</h3>
       <ul class="list-unstyled">
         <li><a href="/doc/source-code/"><i class="fa fa-code fa-fw black-icon"></i> Source Code</a></li>
-        <li><a href="/doc/license/"><i class="fa fa-file-text-o fa-fw black-icon"></i> Software License</a></li>
         <li><a href="/doc/coding-style/"><i class="fa fa-terminal fa-fw black-icon"></i> Coding Guidelines</a></li>
-        <li><a href="/doc/#developer-documentation"><i class="fa fa-book fa-fw black-icon"></i> Developer Documentation</a></li>
-        <li><a href="/doc/architecture/"><i class="fa fa-cubes fa-fw black-icon"></i> OS Architecture</a></li>
+        <li><a href="/doc/license/"><i class="fa fa-file-text-o fa-fw black-icon"></i> Software License</a></li>
       </ul>
     </div>
   </div>

@@ -1,0 +1,99 @@
+ - organization: University of Cyprus, Library
+   org_url: http://library.ucy.ac.cy
+   location: Cyprus
+   urls:
+   - url: https://mirror.library.ucy.ac.cy/linux/qubes/
+
+ - organization: dotsrc.org
+   org_url: https://dotsrc.org/
+   location: Denmark
+   urls:
+   - url: https://mirrors.dotsrc.org/qubes/
+
+ - organization: Crypto World
+   org_url: https://cryptoworld.is/
+   location: Iceland
+   urls:
+   - url: https://mirror.cryptoworld.is/qubes/
+
+ - organization: Linux Users' Group of Durgapur
+   org_url: https://dgplug.org/
+   location: India
+   urls:
+   - url: https://mirrors.dgplug.org/qubes/
+
+ - organization: RWTH Aachen University
+   org_url: https://www.halifax.rwth-aachen.de
+   location: Germany
+   urls:
+   - url: http://ftp.halifax.rwth-aachen.de/qubes/iso/
+
+ - organization: University of Crete Computer Center
+   org_url: http://cc.uoc.gr/
+   location: Greece
+   urls:
+   - url: https://ftp.cc.uoc.gr/mirrors/linux/qubes/
+
+ - organization: Quantum Mirror
+   org_url: https://quantum-mirror.hu/
+   location: Hungary
+   urls:
+   - url: https://quantum-mirror.hu/mirrors/pub/qubes
+
+ - organization: ICM, University of Warsaw
+   org_url: http://icm.edu.pl
+   location: Poland
+   urls:
+   - url: http://ftp.icm.edu.pl/pub/os/qubes/
+
+ - organization: ACC, Umeå University
+   org_url: http://www.acc.umu.se/
+   location: Sweden
+   urls:
+   - url: https://ftp.acc.umu.se/mirror/qubes-os.org/
+
+ - organization: LinuxPizza
+   org_url: https://linux.pizza/
+   location: Sweden
+   urls:
+   - url: http://mirror.linux.pizza/qubes-os.org/
+   - url: http://lxpizzamm6twgep2.onion/
+
+ - organization: UKFast
+   org_url: https://www.ukfast.co.uk/
+   location: United Kingdom
+   urls:
+   - url: https://mirrors.ukfast.co.uk/sites/qubes-os.org/
+
+ - organization: The Linux Kernel Archives
+   org_url: https://www.kernel.org/
+   location: United States
+   urls:
+   - url: https://mirrors.edge.kernel.org/qubes/iso/
+
+ - organization: GigeNET
+   org_url: https://www.gigenet.com/
+   location: United States
+   urls:
+   - url: https://mirrors.gigenet.com/qubes/
+
+ - organization: Hacking & Coffee
+   org_url: https://hackingand.coffee/
+   location: United States
+   urls:
+   - url: https://mirror.hackingand.coffee/qubes/
+
+ - organization: Internet Archive
+   org_url: https://archive.org/
+   location: United States
+   urls:
+   - url: https://archive.org/download/QubesOS
+
+ - organization: The Qubes OS Project
+   org_url: https://www.qubes-os.org/
+   location: Distributed
+   urls:
+   - url: https://ftp.qubes-os.org/iso/
+   - url: http://ftp.qubesos4rrrrz6n4.onion/iso/
+   - url: http://ftp.sik5nlgfc5qylnnsr57qrbm64zbdx6t4lreyhpon3ychmxmiem7tioad.onion/iso/
+

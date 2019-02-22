@@ -1,0 +1,188 @@
+- qsb: "001"
+  title: "Gui daemon bug, Intel VT-d escape on non-IR hardware"
+  date: 2011-05-12
+
+- qsb: "002"
+  title: "Intel SYSRET bug"
+  date: 2012-06-12
+
+- qsb: "003"
+  title: "Xen hypervisor bugs: XSA 13, others with DoS potential"
+  date: 2012-09-11
+
+- qsb: "004"
+  title: "Qubes firewall misconfiguration: ipv6 allowed"
+  date: 2012-09-28
+
+- qsb: "005"
+  title: "Xen hypervisor bugs: XSA 29, others with DoS potential"
+  date: 2012-12-04
+
+- qsb: "006"
+  title: "Xen hypervisor bugs: XSA 50, others with DoS potential"
+  date: 2013-05-07
+
+- qsb: "007"
+  title: "Xen hypervisor bugs: XSA 57 potential escalation, also XSA 52-54 with potential leaks"
+  date: 2013-06-21
+
+- qsb: "008"
+  title: "Xen hypervisor bugs: XSA 45,58 potential DoS"
+  date: 2013-06-26
+
+- qsb: "009"
+  title: "Qubes qvm-open-in-[d]vm environment inter-VM leak"
+  date: 2014-01-09
+
+- qsb: "010"
+  title: "Qubes pulseaudio & vchan bugs, Xen XSA 87"
+  date: 2014-02-06
+
+- qsb: "011"
+  title: "Qubes clipboard inter-VM leak"
+  date: 2014-09-10
+
+- qsb: "012"
+  title: "Memory leak in Xen hypervisor via RDMSR emulation bug (XSA 108)"
+  date: 2014-10-01
+
+- qsb: "013"
+  title: "Qubes Clipboard Timing Attacks and Qubes Core Python API Inconsistency"
+  date: 2015-01-05
+
+- qsb: "014"
+  title: "Race condition in Qubes Inter-VM File-Copy Mechanism"
+  date: 2015-01-20
+
+- qsb: "015"
+  title: "Critical Xen Hypervisor Vulnerability (XSA 109)"
+  date: 2015-01-21
+
+- qsb: "016"
+  title: "Xen Hypervisor Information Leaks Vulnerabilities (XSA 121 & 122)"
+  date: 2015-03-05
+
+- qsb: "017"
+  title: "Xen DoS from malicious driver domains or devices (XSA 120 & 124)"
+  date: 2015-03-10
+
+- qsb: "018"
+  title: "Xen Hypervisor Instruction Emulation Bug (XSA 123)"
+  date: 2015-03-10
+
+- qsb: "019"
+  title: "Anti Evil Maid bypass through unusual LUKS header"
+  date: 2015-07-13
+
+- qsb: "020"
+  title: "Fedora os-prober considered harmful"
+  date: 2015-07-27
+
+- qsb: "021"
+  title: "Anti Evil Maid bypass through filesystem ID collision"
+  date: 2015-07-27
+
+- qsb: "022"
+  title: "Critical Xen bug in PV memory virtualization code (XSA 148)"
+  date: 2015-10-29
+
+- qsb: "023"
+  title: "Race condition bugs in Xen code (XSA-155 and XSA-166), other Xen bugs"
+  date: 2015-12-17
+
+- qsb: "024"
+  title: "Critical Xen bug in PV memory virtualization code (XSA 182)"
+  date: 2016-07-26
+
+- qsb: "025"
+  title: "Xen bug in event channel handling code (XSA 188)"
+  date: 2016-09-08
+
+- qsb: "026"
+  title: "Colored window border handling bug in Qubes GUI daemon"
+  date: 2016-09-19
+
+- qsb: "027"
+  title: "Xen 64-bit bit test instruction emulation broken (XSA 195)"
+  date: 2016-11-22
+
+- qsb: "028"
+  title: "Debian update mechanism vulnerability"
+  date: 2016-12-19
+
+- qsb: "029"
+  title: "Critical Xen bug in PV memory virtualization code (XSA-212)"
+  date: 2017-04-04
+
+- qsb: "030"
+  title: "Critical Xen bugs related to PV memory virtualization (XSA-213, XSA-214)"
+  date: 2017-05-02
+
+- qsb: "031"
+  title: "Xen hypervisor vulnerabilities with unresearched impact (XSA 216-224)"
+  date: 2017-06-20
+
+- qsb: "032"
+  title: "Xen hypervisor and Linux kernel vulnerabilities (XSA-226 through XSA-230)"
+  date: 2017-08-15
+
+- qsb: "033"
+  title: "Xen hypervisor (XSA-231 through XSA-234)"
+  date: 2017-09-12
+
+- qsb: "034"
+  title: "GUI issue and Xen vulnerabilities (XSA-237 through XSA-244)"
+  date: 2017-10-12
+
+- qsb: "035"
+  title: "Xen hypervisor issue related to grant tables (XSA-236)"
+  date: 2017-10-24
+
+- qsb: "036"
+  title: "Xen hypervisor issue in populate-on-demand code (XSA-247)"
+  date: 2017-11-28
+
+- qsb: "037"
+  title: "Information leaks due to processor speculative execution bugs"
+  date: 2018-01-11
+
+- qsb: "038"
+  title: "Qrexec policy bypass and possible information leak"
+  date: 2018-02-20
+
+- qsb: "039"
+  title: "Xen vulnerability (XSA-260) and GUI daemon issue"
+  date: 2018-05-08
+
+- qsb: "040"
+  title: "Information leaks due to processor speculative store bypass (XSA-263)"
+  date: 2018-05-24
+
+- qsb: "041"
+  title: "Speculative register leakage from lazy FPU context switching (XSA-267)"
+  date: 2018-06-13
+
+- qsb: "042"
+  title: "Linux netback driver OOB access in hash handling (XSA-270)"
+  date: 2018-08-14
+
+- qsb: "043"
+  title: "L1 Terminal Fault speculative side channel (XSA-273)"
+  date: 2018-09-02
+
+- qsb: "044"
+  title: "Multiple Xen vulnerabilities (XSA-275, XSA-280)"
+  date: 2018-11-20
+
+- qsb: "045"
+  title: "Insecure default Salt configuration"
+  date: 2018-12-03
+
+- qsb: "046"
+  title: "APT update mechanism vulnerability"
+  date: 2019-01-23
+
+- qsb: "047"
+  title: "Insecure default DisposableVM networking configuration"
+  date: 2019-02-19
+

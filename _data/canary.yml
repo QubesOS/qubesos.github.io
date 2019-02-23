@@ -1,0 +1,54 @@
+- canary: "001"
+  date: 2015-01-05
+
+- canary: "002"
+  date: 2015-03-05
+
+- canary: "003"
+  date: 2015-06-03
+
+- canary: "004"
+  date: 2015-08-06
+
+- canary: "005"
+  date: 2015-10-01
+
+- canary: "006"
+  date: 2016-01-13
+
+- canary: "007"
+  date: 2016-04-08
+
+- canary: "008"
+  date: 2016-06-10
+
+- canary: "009"
+  date: 2016-09-09
+
+- canary: "010"
+  date: 2016-12-13
+
+- canary: "011"
+  date: 2017-03-07
+
+- canary: "012"
+  date: 2017-06-02
+
+- canary: "013"
+  date: 2017-09-12
+
+- canary: "014"
+  date: 2017-12-10
+
+- canary: "015"
+  date: 2018-03-14
+
+- canary: "016"
+  date: 2018-06-14
+
+- canary: "017"
+  date: 2018-10-15
+
+- canary: "018"
+  date: 2019-01-08
+

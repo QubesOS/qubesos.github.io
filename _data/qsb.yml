@@ -186,3 +186,7 @@
   title: "Insecure default DisposableVM networking configuration"
   date: 2019-02-19
 
+- qsb: "048"
+  title: "Multiple Xen vulnerabilities"
+  date: 2019-03-05
+

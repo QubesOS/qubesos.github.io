@@ -93,11 +93,8 @@ releases:
   Qubes Release 3.2.1:
     testing: no
     latest: no
-    aging: yes
-    aging: This is an old, <a href="/doc/supported-versions/">extended
-           support</a> release. For the best Qubes OS experience, we suggest
-           upgrading to the latest stable release.
-    deprecated: no
+    aging: no
+    deprecated: yes
     sources:
       - name: kernel.org
         display: yes

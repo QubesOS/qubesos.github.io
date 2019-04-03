@@ -151,6 +151,8 @@ Instructions
 
 ### Notes ###
 
+ * Here is the state of [`qubesos.github.io`][web-3.2] and
+   [`qubes-doc`][doc-3.2] when [Qubes OS 3.2 reached EOL].
  * To update the submodules, use `git submodule foreach git pull --tags`.
  * For troubleshooting with RubyGems, see: <http://guides.rubygems.org/>
  * For troubleshooting with Jekyll, see: <https://jekyllrb.com/docs/home/>
@@ -209,4 +211,7 @@ Please carefully read these guidelines before submitting a pull request.
 [gh-fork]: https://guides.github.com/activities/forking/
 [gh-pull]: https://help.github.com/articles/using-pull-requests/
 [patch]: https://www.qubes-os.org/doc/source-code/#sending-a-patch
+[web-3.2]: https://github.com/QubesOS/qubesos.github.io/tree/auto_8bc049d3
+[doc-3.2]: https://github.com/QubesOS/qubes-doc/tree/adw_0f285266
+[Qubes OS 3.2 reached EOL]: https://www.qubes-os.org/news/2019/03/28/qubes-3-2-has-reached-eol/
 

@@ -18,7 +18,7 @@ Please [contact us][contact] if you or your organization is interested in becomi
 ## Funding by Year
 
 ### 2019
-- **$250,000+** : [Invisible Things Lab]
+- **$100,000+** : [Invisible Things Lab]
 
 ### 2018
 - **$250,000+** : [Invisible Things Lab]

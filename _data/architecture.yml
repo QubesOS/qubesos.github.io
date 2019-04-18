@@ -87,8 +87,6 @@
     url: /news/categories/#announcements
   - title: Articles
     url: /news/categories/#articles
-  - title: Press
-    url: /news/categories/#press
   - title: Talks
     url: /news/categories/#talks
   - title: Research
@@ -105,6 +103,8 @@
     url: https://www.reddit.com/r/Qubes/
   - title: Facebook
     url: https://www.facebook.com/QubesOS
+  - title: LinkedIn
+    url: https://www.linkedin.com/company/qubes-os/
 
 - title: Team
   url: /team/

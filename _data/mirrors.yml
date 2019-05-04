@@ -1,3 +1,9 @@
+ - organization: Tsinghua University TUNA Association
+   org_url: https://tuna.moe/
+   location: China
+   urls:
+   - url: https://mirrors.tuna.tsinghua.edu.cn/qubesos/
+
  - organization: University of Cyprus, Library
    org_url: http://library.ucy.ac.cy
    location: Cyprus

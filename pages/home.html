@@ -123,29 +123,38 @@ redirect_from:
     <h2 class="text-center outer-heading"><i class="fa fa-newspaper-o"></i> Media &amp; Press</h2>    
     <div class="white-box">
       <div class="featured-quotes">
-          <a href="https://motherboard.vice.com/read/finally-a-reasonably-secure-operating-system-qubes-r3" target="_blank">
+          <a href="https://www.vice.com/en_us/article/kbz43x/finally-a-reasonably-secure-operating-system-qubes-r3" target="_blank">
             <img src="attachment/site/motherboard-logo.png" class="logo">
             <blockquote>
-              "Finally, a 'Reasonably-Secure' Operating System: Qubes R3"
+              "The world's most secure operating system assumes you've been owned."
               <footer>by J.M. Porup</footer>
             </blockquote>
           </a>
       </div>
       <div class="featured-quotes">
-          <a href="https://www.economist.com/blogs/babbage/2014/03/computer-security" target="_blank">
+          <a href="https://www.economist.com/babbage/2014/03/28/a-digital-fortress" target="_blank">
             <img src="attachment/site/the-economist-logo.png" class="logo">
             <blockquote>
-              "For those willing to put in the effort, Qubes is more secure than almost any other operating system available today"
+              "For those willing to put in the effort, Qubes is more secure than almost any other operating system available today."
               <footer>by J. M. P.</footer>
             </blockquote>
           </a>
       </div>
       <div class="featured-quotes">
-          <a href="https://www.wired.com/2014/11/protection-from-hackers" target="_blank">
+          <a href="https://www.wired.com/2014/11/protection-from-hackers/" target="_blank">
             <img src="attachment/site/wired-magazine-logo.png" class="logo">
             <blockquote>
               "So Rutkowska flipped the game, this time in favor of the defenders."
               <footer>by Andy Greenberg</footer>
+            </blockquote>
+          </a>
+      </div>
+      <div class="featured-quotes">
+          <a href="https://www.hostingadvice.com/blog/qubes-offers-security-by-compartmentalization/" target="_blank">
+            <img src="attachment/site/hosting-advice-logo.png" class="logo">
+            <blockquote>
+              "Qubes embodies the new frontier of operating systems, where security and usability take the front seat."
+              <footer>by Christine Preusler</footer>
             </blockquote>
           </a>
       </div>
@@ -156,7 +165,7 @@ redirect_from:
     <h2 class="text-center outer-heading"><i class="fa fa-bullhorn"></i> News &amp; Announcements</h2>
     <div class="white-box">
       <ul class="list-unstyled remove-bottom">
-        {% for post in site.posts limit:5 %}
+        {% for post in site.posts limit:7 %}
         <li class="list-links">
           <a class="black-link" href="{{ post.url }}">
             {{ post.title }}
@@ -217,10 +226,10 @@ redirect_from:
   <!-- Details: Awards / Follow -->
   <div class="row">
     <div class="col-lg-6 col-md-6 more-bottom">
-      <h3 class="text-center"><i class="fa fa-file-text"></i> Recent Research</h3>
+      <h3 class="text-center"><i class="fa fa-file-text"></i> Research</h3>
       <div class="white-box">
       <ul class="list-unstyled remove-bottom">
-        {% for research in site.data.research.papers limit:5 %}
+        {% for research in site.data.research.papers limit:6 %}
         <li class="list-links">
           <a class="black-link" href="{{research.url}}">
             {{research.title}}

@@ -1220,3 +1220,8 @@
   date: 2019-03-05
   affected: no
 
+- xsa: 297
+  date: 2019-05-14
+  affected: yes
+  qsb: 049-2019
+

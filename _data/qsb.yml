@@ -190,3 +190,7 @@
   title: "Multiple Xen vulnerabilities"
   date: 2019-03-05
 
+- qsb: "049"
+  title: "Microarchitectural Data Sampling speculative side channel (XSA-297)"
+  date: 2019-05-15
+

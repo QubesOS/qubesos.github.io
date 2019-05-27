@@ -4,19 +4,7 @@
     <body>
       {% include header.html %}
       <div class="container-fluid">
-        {% assign doc_segments = page.relative_path | split: '/' %}
-        {% for section in site.data.doc %}
-        {% for topic in section.topics %}
-        {% if doc_segments contains topic.folder %}
-        <h1 class="more-top add-left outer-heading">
-          <a href="/doc/#{{ section.category | slugify }}" class="heading-link">
-            <i class="fa fa-book"></i>
-              {{ section.category }}
-          </a>
-        </h1>
-        {% endif %}
-        {% endfor %}
-        {% endfor %}
+        {% include doc-heading.html %}
         <div class="more-bottom white-box page-content">
           <div class="row">
             <div class="col-lg-12 col-md-12 col-xs-12">

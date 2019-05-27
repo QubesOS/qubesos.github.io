@@ -1,4 +1,4 @@
-- title: Intro
+- title: Introduction
   url: /intro/
   icon: fa-flag
   sub-pages:
@@ -53,31 +53,30 @@
   - title: Download Mirrors
     url: /downloads/#mirrors
 
-- title: Docs
+- title: Documentation
   url: /doc/
   icon: fa-book
   sub-pages:
-  - title: The Basics
-    url: /doc/#the-basics
-  - title: Security Information
-    url: /doc/#security-information
-  - title: Choosing Hardware
+  - title: Introduction
+    url: /doc/#introduction
+  - title: Project Security
+    url: /doc/#project-security
+  - title: Choosing Your Hardware
     url: /doc/#choosing-your-hardware
-  - title: Installing Qubes
-    url: /doc/#installing--upgrading-qubes
+  - title: Installing & Upgrading
+    url: /doc/#downloading-installing-and-upgrading-qubes
   - title: Common Tasks
     url: /doc/#common-tasks
   - title: Managing OSes
     url: /doc/#managing-operating-systems-within-qubes
-  - title: Security Guides
-    url: /doc/#security-guides
-  - title: Privacy Guides
-    url: /doc/#privacy-guides
-  - title: Troubleshooting
-    url: /doc/#troubleshooting
+  - title: Security in Qubes
+    url: /doc/#security-in-qubes
+  - title: Advanced Configuration
+    url: /doc/#advanced-configuration
   - title: Developer Docs
     url: /doc/#developer-documentation
-
+  - title: External Docs
+    url: /doc/#external-documentation
 
 - title: News
   url: /news/

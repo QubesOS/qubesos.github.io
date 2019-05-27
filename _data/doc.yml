@@ -1,60 +1,15 @@
+- category: Introduction
+  folder: introduction
+
+- category: Project Security
+  folder: project-security
+
 - category: User Documentation
-  topics:
-
-  - title: User Basics
-    folder: basics_user
-
-  - title: Security Information
-    folder: security-info
-
-  - title: Choosing Your Hardware
-    folder: hardware
-
-  - title: Installing & Upgrading Qubes
-    folder: installing
-
-  - title: Common Tasks
-    folder: common-tasks
-
-  - title: Managing Operating Systems
-    folder: managing-os
-
-  - title: Security Guides
-    folder: security
-
-  - title: Privacy Guides
-    folder: privacy
-
-  - title: Configuration Guides
-    folder: configuration
-
-  - title: Customization Guides
-    folder: customization
-
-  - title: Troubleshooting
-    folder: troubleshooting
-
-  - title: Reference Pages
-    folder: reference
+  folder: user
 
 - category: Developer Documentation
-  topics:
+  folder: developer
 
-  - title: Developer Basics
-    folder: basics_dev
-
-  - title: System
-    folder: system
-
-  - title: Services
-    folder: services
-
-  - title: Debugging
-    folder: debugging
-
-  - title: Building
-    folder: building
-
-  - title: Releases
-    folder: releases
+- category: External Documentation
+  folder: external
 

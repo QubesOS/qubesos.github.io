@@ -1225,3 +1225,7 @@
   affected: yes
   qsb: 049-2019
 
+- xsa: 300
+  date: 2019-07-09
+  affected: no
+

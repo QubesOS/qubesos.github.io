@@ -16,12 +16,6 @@
    urls:
    - url: https://mirrors.dotsrc.org/qubes/
 
- - organization: Crypto World
-   org_url: https://cryptoworld.is/
-   location: Iceland
-   urls:
-   - url: https://mirror.cryptoworld.is/qubes/
-
  - organization: Linux Users' Group of Durgapur
    org_url: https://dgplug.org/
    location: India

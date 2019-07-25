@@ -194,3 +194,8 @@
   title: "Microarchitectural Data Sampling speculative side channel (XSA-297)"
   date: 2019-05-15
 
+- qsb: "050"
+  title: "Reinstalling a TemplateVM does not reset the private volume"
+  date: 2019-07-24
+
+

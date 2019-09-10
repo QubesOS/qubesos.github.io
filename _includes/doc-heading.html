@@ -13,5 +13,10 @@
     {% if page.translated %}
       {% include doc-translated-warning.html %}
     {% endif %}
+    {% if page.approved_release == "R4" %}
+      {% include doc-r4-approved.html %}
+    {% else %}
+      {% include doc-r4-unapproved.html %}
+    {% endif %}
   {% endif %}
 {% endfor %}

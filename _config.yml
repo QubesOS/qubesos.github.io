@@ -29,7 +29,7 @@ plugins:
 collections:
   doc:
     output: true
-    permalink: /doc/:path/
+    permalink: /doc/r4/:title/
   hcl:
     output: false
 

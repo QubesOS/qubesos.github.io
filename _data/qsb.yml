@@ -198,4 +198,7 @@
   title: "Reinstalling a TemplateVM does not reset the private volume"
   date: 2019-07-24
 
+- qsb: "051"
+  title: "Insufficient validation of backup compression filter on restore"
+  date: 2019-09-10
 

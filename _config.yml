@@ -6,6 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   life.
 twitter_username: QubesOS
 github_username:  QubesOS
+
 # Project Settings
 project_url: "https://www.qubes-os.org"
 project_repo_path: "https://github.com/QubesOS"
@@ -29,7 +30,7 @@ plugins:
 collections:
   doc:
     output: true
-    permalink: /doc/r4/:title/
+    permalink: /doc/:path/
   hcl:
     output: false
 

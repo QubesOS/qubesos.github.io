@@ -5,10 +5,10 @@
   folder: project-security
 
 - category: User Documentation
-  folder: user
+  folder: users
 
 - category: Developer Documentation
-  folder: developer
+  folder: developers
 
 - category: External Documentation
   folder: external

@@ -67,7 +67,8 @@ htmlproofer ./_site \
   --disable-external \
   --checks-to-ignore ImageCheck \
   --file-ignore ./_site/video-tours/index.html \
-  --url-ignore "/qubes-issues/" || all_ok=false
+  --url-ignore "/qubes-issues/" || all_ok=false \
+  --only_4xx
 
 if $all_ok; then
     echo 'All checks passed!'

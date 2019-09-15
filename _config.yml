@@ -23,6 +23,8 @@ relative_permalinks: false
 permalink: /news/:year/:month/:day/:title/
 excerpt_separator: ""
 
+include: ['_doc']
+
 plugins:
   - jekyll-redirect-from
   - jekyll-sitemap

@@ -17,7 +17,7 @@ We accept monetary donations via Bitcoin and credit card in the following three 
 Donating with Bitcoin ensures that 100% of your money supports Qubes development because we do not incur any administrative costs.
 With credit card donations, [we lose roughly 14%][open-collective-faq] to administrative costs.
 
-+ **Donate to Our Bitcoin Address:** 3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq ([read more about verifying our Bitcoin address](#how-do-i-verify-your-bitcoin-address))
++ **Donate to Our Bitcoin Address:** `3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq` ([read more about verifying our Bitcoin address](#how-do-i-verify-your-bitcoin-address))
 + **Donate with Credit Card:** [visit our Open Collective page][Open Collective]
 
 ### 2. Join Our Sustaining Supporters
@@ -77,6 +77,10 @@ You can also view the address on [blockexplorer.com][blockexplorer.com] and [blo
 The Qubes Project maintains a [decentralized Bitcoin fund using a multi-signature wallet][announcement].
 This means that no single person is capable of spending these funds.
 
+### Is Qubes merchandise available?
+
+Yes! Please see the [Merchandise] page.
+
 ### What is Qubes?
 Qubes OS is a free and open source operating system that focuses on security and privacy.
 Its architecture is built to enable you to define and visualize different security environments on your computer and control how they interact, helping you to get your work done safely.
@@ -94,5 +98,6 @@ Visit our [introduction page to Qubes][intro page] or watch a [video overview of
 [blockexplorer.com]: https://blockexplorer.com/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
 [blockchain.info]: https://blockchain.info/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
 [announcement]: /news/2016/07/13/qubes-distributed-fund/
+[Merchandise]: /merchandise/
 [intro page]: /intro/
 [video page]: /video-tours/

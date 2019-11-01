@@ -1224,12 +1224,38 @@
   date: 2019-06-13
   affected: no
 
+- xsa: 296
+  date: 2019-10-31
+  affected: no
+
 - xsa: 297
   date: 2019-05-14
   affected: yes
   qsb: 049-2019
 
+- xsa: 298
+  date: 2019-10-31
+  affected: no
+
+- xsa: 299
+  date: 2019-10-31
+  affected: yes
+  qsb: 052-2019
+
 - xsa: 300
   date: 2019-07-09
+  affected: no
+
+- xsa: 301
+  date: 2019-10-31
+  affected: no
+
+- xsa: 302
+  date: 2019-10-31
+  affected: yes
+  qsb: 052-2019
+
+- xsa: 303
+  date: 2019-10-31
   affected: no
 

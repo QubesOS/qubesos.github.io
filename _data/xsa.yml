@@ -1263,3 +1263,8 @@
   date: 2019-11-12
   affected: no
 
+- xsa: 305
+  date: 2019-11-12
+  affected: yes
+  qsb: 053-2019
+

@@ -1268,3 +1268,8 @@
   affected: yes
   qsb: 053-2019
 
+- xsa: 306
+  date: 2019-11-26
+  affected: yes
+  qsb: 054-2019
+

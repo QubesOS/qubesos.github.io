@@ -206,3 +206,11 @@
   title: "Xen issues affecting PCI passthrough and PV domains (XSA-299, XSA-302)"
   date: 2019-10-31
 
+- qsb: "053"
+  title: "TSX Asynchronous Abort speculative side channel (XSA-305)"
+  date: 2019-11-13
+
+- qsb: "054"
+  title: "Xen fix for XSA-302 found ineffective in Qubes configuration (XSA-306)"
+  date: 2019-11-26
+

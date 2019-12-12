@@ -214,3 +214,7 @@
   title: "Xen fix for XSA-302 found ineffective in Qubes configuration (XSA-306)"
   date: 2019-11-26
 
+- qsb: "055"
+  title: "Issues with PV type change and handling IOMMU on AMD (XSA-310, XSA-311)"
+  date: 2019-12-11
+

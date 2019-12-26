@@ -218,3 +218,7 @@
   title: "Issues with PV type change and handling IOMMU on AMD (XSA-310, XSA-311)"
   date: 2019-12-11
 
+- qsb: "056"
+  title: "Insufficient anti-spoofing firewall rules"
+  date: 2019-12-25
+

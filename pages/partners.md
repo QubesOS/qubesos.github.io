@@ -17,8 +17,13 @@ Please [contact us][contact] if you or your organization is interested in becomi
 
 ## Funding by Year
 
+### 2020
+- **$100,000+** : [Invisible Things Lab]
+- **$10,000+** : [Freedom of the Press Foundation]
+
 ### 2019
 - **$100,000+** : [Invisible Things Lab]
+- **$50,000+** : [NLnet Foundation]
 
 ### 2018
 - **$250,000+** : [Invisible Things Lab]

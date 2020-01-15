@@ -1295,3 +1295,7 @@
   affected: yes
   qsb: 055-2019
 
+- xsa: 312
+  date: 2020-01-14
+  affected: no
+

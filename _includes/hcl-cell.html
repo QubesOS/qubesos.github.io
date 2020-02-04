@@ -1,8 +1,14 @@
-{% if include.param %}
-  {% assign value = include.param %}
+{% if include.param['status'] %}
+    {% assign value = include.param.message %}
+    {% assign status = include.param.status %}
 {% else %}
-  {% assign value = 'unknown' %}
+  {% if include.param %}
+    {% assign value = include.param %}
+  {% else %}
+    {% assign value = 'unknown' %}
+  {% endif %}
+    {% assign status = value %}
 {% endif %}
-<td{{ include.rowspan }} class="{% include hcl-color.css value=value %} text-center">
+<td{{ include.rowspan }} class="{% include hcl-color.css value=status %} text-center">
   {{ value }}
 </td>

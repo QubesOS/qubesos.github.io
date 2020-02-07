@@ -30,9 +30,8 @@
   picture: team-michael.jpg
   email: michael@qubes-os.org
   fingerprint: D3D8 BEBF ECE8 91AC 46A7  30DE 63FC 4D26 84A7 33B4
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xD3D8BEBFECE891AC46A730DE63FC4D2684A733B4
+  pgp_key: https://keys.openpgp.org/vks/v1/by-fingerprint/D3D8BEBFECE891AC46A730DE63FC4D2684A733B4
   github: mfc
-  twitter: wandermfc
 
 - name: Joanna Gołębiewska
   role: Coordination, accounting, and operations

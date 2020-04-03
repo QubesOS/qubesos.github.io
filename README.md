@@ -10,14 +10,21 @@ a security-oriented, open-source operating system for personal computers. It
 uses virtualization to implement [security by compartmentalization][intro] and
 supports both Linux and Windows virtual environments.
 
+
 Supporters
 ----------
 
-A special thank you to our supporters! Please consider making a [donation] today!
+Is your organization using Qubes? Ask your manager to support us. Your organization's logo will show up on our [Partners page](https://www.qubes-os.org/partners/). [[Become a supporter](https://opencollective.com/qubes-os#supporter)]
 
-<script src="https://opencollective.com/qubes-os/banner.js"></script>
+<object type="image/svg+xml" data="https://opencollective.com/qubes-os/tiers/supporters.svg?avatarHeight=36&width=600"></object>
 
-<noscript><object type="image/svg+xml" data="https://opencollective.com/qubes-os/tiers/supporters.svg?avatarHeight=60&width=600"></object></noscript>
+
+Backers
+-------
+
+Support us with a monthly donation and help us continue our activities. [[Become a backer](https://opencollective.com/qubes-os#backer)]
+
+<object type="image/svg+xml" data="https://opencollective.com/qubes-os/tiers/backers.svg?avatarHeight=36&width=600"></object>
 
 --------------------------------------------------------------------------------
 
@@ -145,7 +152,6 @@ Deprecated Documentation
 
 [qubes]: https://github.com/QubesOS
 [intro]: https://www.qubes-os.org/intro/
-[donation]: https://www.qubes-os.org/donate/
 [Documentation Guidelines]: https://www.qubes-os.org/doc/doc-guidelines/
 [Jekyll]: https://jekyllrb.com/
 [Jekyll Documentation]: http://jekyllrb.com/docs/

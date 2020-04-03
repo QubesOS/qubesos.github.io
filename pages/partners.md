@@ -57,7 +57,7 @@ Please [contact us][contact] if you or your organization is interested in becomi
 We would like to recognize the following Qubes Partners.
 We are grateful for their support!
 
-<table class="partners" border="0">
+<table class="partners more-bottom" border="0">
   <tbody>
     <tr id="invisible-things-lab">
       <td>
@@ -171,4 +171,16 @@ We are grateful for their support!
     </tr>
   </tbody>
 </table>
+
+
+## Supporters
+
+A special thank you to our supporters! Please consider making a [donation] today!
+
+<script src="https://opencollective.com/qubes-os/banner.js"></script>
+
+<noscript><object type="image/svg+xml" data="https://opencollective.com/qubes-os/tiers/supporters.svg?avatarHeight=60&width=600"></object></noscript>
+
+
+[donation]: /donate/
 

@@ -34,6 +34,12 @@
    urls:
    - url: http://ftp.halifax.rwth-aachen.de/qubes/iso/
 
+ - organization: Kolja Sagorski
+   org_url: https://koljasagorski.de/
+   location: Germany
+   urls:
+   - url: https://mirror.koljasagorski.de/qubes/
+
  - organization: University of Crete Computer Center
    org_url: http://cc.uoc.gr/
    location: Greece

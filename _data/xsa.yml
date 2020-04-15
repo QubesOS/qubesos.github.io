@@ -1299,7 +1299,23 @@
   date: 2020-01-14
   affected: no
 
+- xsa: 313
+  date: 2020-04-14
+  affected: no
+
+- xsa: 314
+  date: 2020-04-14
+  affected: no
+
 - xsa: 315
   date: 2020-03-10
+  affected: no
+
+- xsa: 316
+  date: 2020-04-14
+  affected: no
+
+- xsa: 318
+  date: 2020-04-14
   affected: no
 

@@ -11,7 +11,7 @@ Qubes merchandise is available from multiple third-party retailers:
  - [CypherMarket]
  - [Redbubble]
 
-Please note that these are unofficial initiatives started by our fans.
+Please note that these are unofficial initiatives started by Qubes OS users.
 The Qubes OS Project is not responsible for the type, quality, price, appearance, shipping, or any other aspect of the merchandise being sold by these third-party organizations.
 We have been told that some or all of the profit from merchandise sales will be [donated] to the Qubes OS Project, and we are grateful for this.
 However, in most cases, we have no way of verifying that this is the case.

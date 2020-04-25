@@ -96,7 +96,7 @@ We are grateful for their support!
         <p><a href="https://www.mullvad.net/">Mullvad</a> is a VPN service that keeps users' online activity, identity, and location private.
         With a fundamental belief in privacy as a universal right, Mullvad's ultimate goal is to make Internet censorship and mass surveillance ineffective.</p>
         <p>The Mullvad team has relied on Qubes in its day-to-day operations since early 2015.
-        To support its continued development, Mullvad made a generous donation to Qubes in 2017.</p>
+        To support its continued development, Mullvad made a generous donation to Qubes in 2017 and 2020.</p>
       </td>
     </tr>
     <tr id="boris">

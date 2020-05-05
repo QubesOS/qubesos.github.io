@@ -100,10 +100,10 @@ We are grateful for their support!
         To support its continued development, Mullvad made a generous donation to Qubes in 2017.</p>
       </td>
     </tr>
-      <tr id="Piston">
+      <tr id="piston">
       <td><h2 class="outer-heading">Piston</h2></td>
       <td>
-        <h3 data-anchor-id="boris">Piston</h3>
+        <h3 data-anchor-id="piston">Piston</h3>
        <p><b>Piston</b> is a Qubes OS user who is passionate about freedom, anonymity, and working toward a world free from oppression. <b>Piston</b> is a strong supporter of free and open-source software, and Qubes OS in particular, as one of the best means for users to keep their personal data private and secure.</p>
       </td>
     </tr>

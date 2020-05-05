@@ -101,7 +101,7 @@ We are grateful for their support!
       </td>
     </tr>
       <tr id="Piston">
-      <td><img src="/attachment/site/partners_piston.png"></td>
+      <td><h2 class="outer-heading">Piston</h2></td>
       <td>
         <h3 data-anchor-id="boris">Piston</h3>
        <p><b>Piston</b> is a Qubes OS user who is passionate about freedom, anonymity, and working toward a world free from oppression. <b>Piston</b> is a strong supporter of free and open-source software, and Qubes OS in particular, as one of the best means for users to keep their personal data private and secure.</p>

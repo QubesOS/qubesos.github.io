@@ -19,7 +19,7 @@ Please [contact us][contact] if you or your organization is interested in becomi
 
 ### 2020
 - **$100,000+** : [Invisible Things Lab]
-- **$10,000+** : [Freedom of the Press Foundation], [Mullvad]
+- **$10,000+** : [Freedom of the Press Foundation], [Mullvad], [Piston]
 
 ### 2019
 - **$100,000+** : [Invisible Things Lab]
@@ -48,6 +48,7 @@ Please [contact us][contact] if you or your organization is interested in becomi
 [Mullvad]: #mullvad
 [Boris]: #boris
 [zby]: #zby
+[Piston]: #piston
 [NLnet Foundation]: #nlnet-foundation
 [Open Technology Fund]: #open-technology-fund
 [Invisible Things Lab]: #invisible-things-lab
@@ -99,13 +100,20 @@ We are grateful for their support!
         To support its continued development, Mullvad made a generous donation to Qubes in 2017 and 2020.</p>
       </td>
     </tr>
+      <tr id="piston">
+      <td><h2 class="outer-heading">Piston</h2></td>
+      <td>
+        <h3 data-anchor-id="piston">Piston</h3>
+       <p><b>Piston</b> is a Qubes OS user who is passionate about freedom, anonymity, and working toward a world free from oppression. <b>Piston</b> is a strong supporter of free and open-source software, and Qubes OS in particular, as one of the best means for users to keep their personal data private and secure.</p>
+      </td>
+    </tr>
     <tr id="boris">
       <td><h2 class="outer-heading">Boris</h2></td>
       <td>
         <h3 data-anchor-id="boris">Boris</h3>
         <p><b>Boris</b> is a Qubes OS user who is thankful for the hard work put in by the Qubes team and who wants to set a positive example that encourages others to donate to this worthwhile project.</p>
       </td>
-    </tr>
+    </tr>   
     <tr id="zby">
       <td><h2 class="outer-heading">zby</h2></td>
       <td>

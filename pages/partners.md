@@ -19,7 +19,7 @@ Please [contact us][contact] if you or your organization is interested in becomi
 
 ### 2020
 - **$100,000+** : [Invisible Things Lab]
-- **$10,000+** : [Freedom of the Press Foundation], [Mullvad], [Piston]
+- **$10,000+** : [Freedom of the Press Foundation], [Mullvad], [Piston], [Latacora]
 
 ### 2019
 - **$100,000+** : [Invisible Things Lab]
@@ -175,6 +175,20 @@ We are grateful for their support!
         <h3 data-anchor-id="nlnet-foundation">NLnet Foundation</h3>
         <p><a href="https://nlnet.nl">NLnet Foundation</a> is a recognized philanthropic nonprofit foundation based in the Netherlands and whose stated mission is "to promote the exchange of electronic information and all that is related or beneficial to that purpose."</p>
         <p>In 2016, the NLnet Foundation provided a grant to the Qubes project to support improvements in automated build processes, Debian template packaging, networking and privacy, and hardware compatibility.</p>
+      </td>
+    </tr>
+  <tr id="latacora">
+      <td>
+        <a href="https://www.latacora.com/">
+          <img src="/attachment/site/latacora.png">
+        </a>
+      </td>
+      <td>
+        <h3 data-anchor-id="access-now">Latacora</h3>
+        <p><a href="https://www.latacora.com/">Latacora</a> Latacora is an alternative to your first security hire. We bootstrap security practices for startups and get you up and running with a broad range of expertise, including cloud security, application security, network security and corporate security.
+
+Latacora uses Qubes extensively to help provide separation between client
+environments.</p>
       </td>
     </tr>
   </tbody>

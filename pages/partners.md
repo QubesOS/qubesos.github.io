@@ -19,7 +19,7 @@ Please [contact us][contact] if you or your organization is interested in becomi
 
 ### 2020
 - **$100,000+** : [Invisible Things Lab]
-- **$10,000+** : [Freedom of the Press Foundation], [Mullvad], [Piston]
+- **$10,000+** : [Freedom of the Press Foundation], [Mullvad], [Piston], [Latacora]
 
 ### 2019
 - **$100,000+** : [Invisible Things Lab]
@@ -49,6 +49,7 @@ Please [contact us][contact] if you or your organization is interested in becomi
 [Boris]: #boris
 [zby]: #zby
 [Piston]: #piston
+[Latacora]: #latacora
 [NLnet Foundation]: #nlnet-foundation
 [Open Technology Fund]: #open-technology-fund
 [Invisible Things Lab]: #invisible-things-lab
@@ -105,6 +106,19 @@ We are grateful for their support!
       <td>
         <h3 data-anchor-id="piston">Piston</h3>
        <p><b>Piston</b> is a Qubes OS user who is passionate about freedom, anonymity, and working toward a world free from oppression. <b>Piston</b> is a strong supporter of free and open-source software, and Qubes OS in particular, as one of the best means for users to keep their personal data private and secure.</p>
+      </td>
+    </tr>
+    </tr>
+      <tr id="latacora">
+      <td>
+        <a href="https://www.latacora.com/">
+          <img src="/attachment/site/latacora-logo.png">
+        </a>
+      </td>
+      <td>
+        <h3 data-anchor-id="latacora">Latacora</h3>
+       <p><b>Latacora</b> is an alternative to your first security hire. We bootstrap security practices for startups and get you up and running with a broad range of expertise, including cloud security, application security, network security and corporate security.</p>
+       <p>Latacora uses Qubes extensively to help provide separation between client environments.</p>
       </td>
     </tr>
     <tr id="boris">

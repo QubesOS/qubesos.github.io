@@ -116,6 +116,15 @@
   fingerprint: 6B52 7FE5 6308 5B7A 34B9  6C2F 8F90 3F3E 5662 199B
   github: MiCh
 
+- name: Nina Eleanor Alter
+  email: ninavizz@gmail.com
+  role: User experience
+  type: core
+  picture: team-nina.jpg
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xA9BC4019D695AF0DD65DF7262CA7C96ADBDFDC5B
+  fingerprint: A9BC 4019 D695 AF0D D65D F726 2CA7 C96A DBDF DC5B
+  github: ninavizz
+
 # Emeritus
 
 - name: Joanna Rutkowska

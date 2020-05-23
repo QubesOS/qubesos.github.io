@@ -18,7 +18,7 @@ Please [contact us][contact] if you or your organization is interested in becomi
 ## Funding by Year
 
 ### 2020
-- **$100,000+** : [Invisible Things Lab]
+- **$100,000+** : [Invisible Things Lab], [Mozilla]
 - **$10,000+** : [Freedom of the Press Foundation], [Mullvad], [Piston], [Latacora]
 
 ### 2019
@@ -53,6 +53,7 @@ Please [contact us][contact] if you or your organization is interested in becomi
 [NLnet Foundation]: #nlnet-foundation
 [Open Technology Fund]: #open-technology-fund
 [Invisible Things Lab]: #invisible-things-lab
+[Mozilla]: #mozilla
 [contact]: mailto:funding@qubes-os.org
 
 ## Our Partners
@@ -72,6 +73,18 @@ We are grateful for their support!
         <p><a href="https://invisiblethingslab.com/">Invisible Things Lab (ITL)</a> is a privately held company based in Berlin, Germany.
         ITL has supported Qubes OS development from the beginning of the project in 2010 to the present.
         The company’s primary source of revenue is security research and development.</p>
+      </td>
+    </tr>
+    <tr id="mozilla">
+      <td>
+        <a href="https://mozilla.org/">
+          <img src="/attachment/site/mozilla-logo-bw-rgb.png">
+        </a>
+      </td>
+      <td>
+        <h3 data-anchor-id="mozilla">Mozilla</h3>
+        <p><a href="https://mozilla.org/">Mozilla</a>'s mission is to ensure the Internet is a global public resource, open and accessible to all. An Internet that truly puts people first, where individuals can shape their own experience and are empowered, safe and independent.</p>
+        <p>At Mozilla, we're a global community of technologists, thinkers and builders working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
       </td>
     </tr>
     <tr id="freedom-of-the-press-foundation">

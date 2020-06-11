@@ -1319,3 +1319,7 @@
   date: 2020-04-14
   affected: no
 
+- xsa: 320
+  date: 2020-06-09
+  affected: yes
+  qsb: 057-2020

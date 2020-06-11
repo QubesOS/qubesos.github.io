@@ -222,3 +222,7 @@
   title: "Insufficient anti-spoofing firewall rules"
   date: 2019-12-25
 
+- qsb: "057"
+  title: "Special Register Buffer speculative side channel (XSA-320)"
+  date: 2020-06-11
+

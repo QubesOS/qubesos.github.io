@@ -1,3 +1,10 @@
+ - organization: eScience Center, Nanjing University
+   org_url: https://sci.nju.edu.cn/
+   location: China
+   urls:
+   - url: https://mirrors.nju.edu.cn/qubes/
+   - url: rsync://mirrors.nju.edu.cn/qubes/
+
  - organization: Tsinghua University TUNA Association
    org_url: https://tuna.moe/
    location: China

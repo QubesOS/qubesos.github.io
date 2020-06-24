@@ -43,7 +43,7 @@ If you are a Qubes OS user or support our cause, help us expand our community by
 ## FAQs on Donating
 
 ### Why Should I Donate?
-Qubes OS is free and open-source software - this means we do not earn any revenue by selling it.
+Qubes OS is free and open-source software --- this means we do not earn any revenue by selling it.
 Instead, we rely on your financial support. If you rely on Qubes for secure computing in your work or personal life, or see the value in our efforts, then please donate.
 
 Qubes OS is one of the few operating systems that places the security of its users above all else. [Here is what security and privacy experts say about the project][experts]. A project like this requires a wide spectrum of expertise. In order to both retain and expand our core team, we deeply appreciate donations from supporters like you.
@@ -124,4 +124,5 @@ Visit our [introduction page to Qubes][intro page] or watch a [video overview of
 [intro page]: /intro/
 [video page]: /video-tours/
 [Center for the Cultivation of Technology]: https://techcultivation.org
-[experts]: /experts
+[experts]: /experts/
+

@@ -16,14 +16,6 @@
   fingerprint: 68ED 1515 FA6B D2D1 05EA  1624 BF6B D932 103A 2351
   github: woju
 
-- name: Rafał Wojdyła
-  role: Main developer for Qubes Windows Tools
-  type: core
-  email: omeg@invisiblethingslab.com
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x3AC87FA304E459D0DF0821A1045A13284C85173A
-  fingerprint: 3AC8 7FA3 04E4 59D0 DF08  21A1 045A 1328 4C85 173A
-  github: omeg
-
 - name: Michael Carbone
   role: Project management and funding
   type: core
@@ -40,16 +32,6 @@
   pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x8C8FF70B60A4726FF4517D9667F4097BAF59B942
   fingerprint: 8C8F F70B 60A4 726F F451  7D96 67F4 097B AF59 B942
 
-- name: Patrick Schleizer
-  role: Whonix, Tor, and Debian integration
-  type: core
-  picture: team-patrick.jpg
-  email: patrick@qubes-os.org
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
-  fingerprint: 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
-  website: https://www.whonix.org
-  github: adrelanos
-
 - name: Andrew David Wong
   role: Community manager; documentation and website maintainer
   type: core
@@ -60,17 +42,6 @@
   website: https://andrewdavidwong.com/
   github: andrewdavidwong
   twitter: andrewdavidwong
-
-- name: Bahtiar `kalkin-` Gadimov
-  role: Linux / Python development
-  type: core
-  picture: team-kalkin.jpg
-  email: bahtiar@gadimov.de
-  pgp_key: https://bahtiar.gadimov.de/kalkin-public-key.gpg
-  fingerprint: 9F4D 813F 582E 0392 1ECD  6F7B 4C71 9092 C0E7 3330
-  website: https://bahtiar.gadimov.de/
-  github: kalkin
-  twitter: _kalkin
 
 - name: unman   
   role: Debian template maintainer
@@ -146,6 +117,14 @@
   role: Qubes Windows Tools
   type: emeritus
   email: alex@invisiblethingslab.com
+
+- name: Rafał Wojdyła
+  role: Main developer for Qubes Windows Tools
+  type: emeritus
+  email: omeg@invisiblethingslab.com
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x3AC87FA304E459D0DF0821A1045A13284C85173A
+  fingerprint: 3AC8 7FA3 04E4 59D0 DF08  21A1 045A 1328 4C85 173A
+  github: omeg
 
 # Community
 
@@ -281,6 +260,16 @@
   type: community
   pgp_key: 
   fingerprint: 
+
+- name: Patrick Schleizer
+  role: Whonix, Tor, and Debian integration
+  type: community
+  picture: team-patrick.jpg
+  email: patrick@qubes-os.org
+  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
+  fingerprint: 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
+  website: https://www.whonix.org
+  github: adrelanos
 
 - name: Andrew Sorensen
   email: andrew@localcoast.net

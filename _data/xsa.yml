@@ -1315,11 +1315,32 @@
   date: 2020-04-14
   affected: no
 
+- xsa: 317
+  date: 2020-07-07
+  affected: no
+
 - xsa: 318
   date: 2020-04-14
+  affected: no
+
+- xsa: 319
+  date: 2020-07-07
   affected: no
 
 - xsa: 320
   date: 2020-06-09
   affected: yes
   qsb: 057-2020
+
+- xsa: 321
+  date: 2020-07-07
+  affected: yes
+  qsb: 058-2020
+
+- xsa: 327
+  date: 2020-07-07
+  affected: no
+
+- xsa: 328
+  date: 2020-07-07
+  affected: no

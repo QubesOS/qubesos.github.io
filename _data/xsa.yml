@@ -1344,3 +1344,7 @@
 - xsa: 328
   date: 2020-07-07
   affected: no
+
+- xsa: 329
+  date: 2020-07-16
+  affected: no

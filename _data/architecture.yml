@@ -86,8 +86,6 @@
     url: /news/categories/#announcements
   - title: Articles
     url: /news/categories/#articles
-  - title: Talks
-    url: /news/categories/#talks
   - title: Research
     icon: fa-file-text
     url: /research/
@@ -96,6 +94,8 @@
     icon: fa-bar-chart
   - title: GitHub
     url: https://github.com/QubesOS
+  - title: Qubes Community Forum
+    url: https://qubes-os.discourse.group/
   - title: Twitter
     url: https://twitter.com/QubesOS
   - title: Reddit

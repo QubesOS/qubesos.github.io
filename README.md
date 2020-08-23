@@ -101,13 +101,13 @@ content:
 Instructions
 ------------
 
-### Docker Compose ###
+### Podman Compose ###
 
-1. Install the [Docker Engine] and [Docker Compose].
+1. Install `podman` and `podman-compose`.
 
-2. Start the Docker daemon, e.g.:
+2. Start the Podman daemon, e.g.:
 
-        $ sudo systemctl start docker
+        $ sudo systemctl start podman
 
 3. Clone this repo, including all submodules, and enter it:
 
@@ -119,33 +119,6 @@ Instructions
         $ sudo make
 
 5. Open your browser and navigate to:
-
-        http://127.0.0.1:4000/
-
-### Jekyll on Fedora ###
-
-1. Install dependencies:
-
-        $ sudo dnf install redhat-rpm-config ruby ruby-devel zlib-devel nodejs
-
-2. Clone this repo, including all submodules, and enter it:
-
-        $ git clone --recursive https://github.com/QubesOS/qubesos.github.io.git
-        $ cd qubesos.github.io/
-
-3. Update RubyGems:
-
-        $ sudo gem update --system
-
-4. Install required Gems:
-
-        $ gem install jekyll bundler github-pages
-
-5. Serve the website:
-
-        $ bundle exec jekyll serve
-
-6. Open your browser and navigate to:
 
         http://127.0.0.1:4000/
 
@@ -213,8 +186,6 @@ Deprecated Documentation
 [Documentation Guidelines]: https://www.qubes-os.org/doc/doc-guidelines/
 [Jekyll]: https://jekyllrb.com/
 [Jekyll Documentation]: http://jekyllrb.com/docs/
-[Docker Engine]: https://docs.docker.com/engine/installation/
-[Docker Compose]: https://docs.docker.com/compose/install/
 [FontAwesome]: http://fontawesome.io
 [Bootstrap 3]: http://getbootstrap.com
 [jQuery 1.7]: http://api.jquery.com

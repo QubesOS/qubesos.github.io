@@ -11,10 +11,12 @@ uses virtualization to implement [security by compartmentalization][intro] and
 supports both Linux and Windows virtual environments.
 
 
-Backers
--------
+Your support counts!
+--------------------
 
-Support us with a monthly donation and help us continue our activities. [[Become a backer](https://opencollective.com/qubes-os#backer)]
+Qubes OS is free and open-source software. If you rely on Qubes for secure
+computing in your work or personal life, or see the value in our efforts, please
+consider making a [donation](https://www.qubes-os.org/donate/) today.
 
 <a href="https://opencollective.com/qubes-os/backer/0/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/0/avatar.svg"></a>
 <a href="https://opencollective.com/qubes-os/backer/1/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/1/avatar.svg"></a>
@@ -41,48 +43,6 @@ Support us with a monthly donation and help us continue our activities. [[Become
 <a href="https://opencollective.com/qubes-os/backer/22/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/22/avatar.svg"></a>
 <a href="https://opencollective.com/qubes-os/backer/23/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/23/avatar.svg"></a>
 <a href="https://opencollective.com/qubes-os/backer/24/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/24/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/backer/25/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/25/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/backer/26/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/26/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/backer/27/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/27/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/backer/28/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/28/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/backer/29/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/29/avatar.svg"></a>
-
-
-Supporters
-----------
-
-Is your organization using Qubes? Ask your manager to support us. Your organization's logo will show up on our [Partners page](https://www.qubes-os.org/partners/). [[Become a supporter](https://opencollective.com/qubes-os#supporter)]
-
-<a href="https://opencollective.com/qubes-os/supporter/0/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/0/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/1/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/1/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/2/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/2/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/3/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/3/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/4/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/4/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/5/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/5/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/6/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/6/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/7/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/7/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/8/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/8/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/9/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/9/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/10/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/10/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/11/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/11/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/12/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/12/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/13/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/13/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/14/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/14/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/15/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/15/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/16/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/16/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/17/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/17/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/18/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/18/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/19/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/19/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/20/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/20/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/21/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/21/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/22/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/22/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/23/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/23/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/24/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/24/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/25/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/25/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/26/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/26/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/27/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/27/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/28/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/28/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/supporter/29/website" target="_blank"><img src="https://opencollective.com/qubes-os/supporter/29/avatar.svg"></a>
 
 --------------------------------------------------------------------------------
 

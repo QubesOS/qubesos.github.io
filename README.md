@@ -42,7 +42,6 @@ consider making a [donation](https://www.qubes-os.org/donate/) today.
 <a href="https://opencollective.com/qubes-os/backer/21/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/21/avatar.svg"></a>
 <a href="https://opencollective.com/qubes-os/backer/22/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/22/avatar.svg"></a>
 <a href="https://opencollective.com/qubes-os/backer/23/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/23/avatar.svg"></a>
-<a href="https://opencollective.com/qubes-os/backer/24/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/24/avatar.svg"></a>
 
 --------------------------------------------------------------------------------
 

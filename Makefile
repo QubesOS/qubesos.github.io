@@ -1,5 +1,5 @@
 all:
-	mv Gemfile _Gemfile && docker-compose up && mv _Gemfile Gemfile
+	mv Gemfile _Gemfile && podman-compose up && mv _Gemfile Gemfile
 
 clean:
 	$(RM) -r _site

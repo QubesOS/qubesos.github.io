@@ -1348,3 +1348,7 @@
 - xsa: 329
   date: 2020-07-16
   affected: no
+
+- xsa: 335
+  date: 2020-08-24
+  affected: no

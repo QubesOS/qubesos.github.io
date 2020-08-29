@@ -110,12 +110,15 @@ $on-laptop-wide:   1150px;
 // Global small screen fix
 @media (max-width: $screen-sm-min) {
     .container {
-      padding: 0;
-      margin: 0;
+      padding: 0 !important;
+      margin: 0 !important;
+      max-width: 100% !important;
+      overflow-x: hidden !important;
     }
 
     body {
-      padding: 5px;
+      padding: 0 !important;
+      overflow-x: hidden !important;
     }
 
     .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {

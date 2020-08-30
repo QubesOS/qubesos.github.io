@@ -111,7 +111,7 @@ $on-laptop-wide:   1150px;
 @media (max-width: $screen-sm-min) {
     .container {
       padding: 0 !important;
-      margin: 0 !important;
+      margin: 0 5% !important;
       max-width: 100% !important;
       overflow-x: hidden !important;
     }

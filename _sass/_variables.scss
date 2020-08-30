@@ -87,7 +87,7 @@ $color-black:						#000000;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #f5f5f5 !default;
+$body-bg:               $color-white !default;
 //** Global text color on `<body>`.
 $text-color:            $color-black !default;
 

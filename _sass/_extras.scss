@@ -22,19 +22,21 @@
   }
 }
 
-
 /**
  * White boxes
  */
- .white-box {
-   background: $color-white;
-   padding: 5px;
+.white-box {
+  padding-top: 35px;
+  border-top: 1px solid $gray-light;
+}
 
-   @media (min-width: $screen-sm-min) {
-     padding: 25px;
-   }
- }
-
+/**
+ * Footer Search
+ */
+.footer-search {
+  padding-bottom: 35px;
+  border-bottom: 1px solid $gray-light;
+}
 
 /**
  * Black Links
@@ -62,8 +64,6 @@ a.black-link:hover {
   }
 }
 
-
-
 /**
  * Lists
  */
@@ -87,8 +87,6 @@ li.list-links-normal {
   // Offers same to non-styled links
   padding: ($spacing-unit / 2);
 }
-
-
 
 /**
  * Headings

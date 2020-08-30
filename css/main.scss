@@ -128,7 +128,7 @@ $on-laptop-wide:   1150px;
     }
 }
 
-// Custom - Icon Colors
+// Custom - Icons
 .black-icon         {color: #000000;}
 .fa-twitter         {color: #00aced;}
 .fa-twitter-square  {color: #00aced;}
@@ -138,6 +138,12 @@ $on-laptop-wide:   1150px;
 .fa-facebook-square {color: #3b5998;}
 .fa-stack-exchange  {color: #3399ff;}
 .fa-rss-square      {color: #f26f22;}
+.social-icons {
+  a {
+    padding: 20px;
+    margin: 0 1.9rem;
+  }
+}
 
 // Custom - Article Tables
 article table {

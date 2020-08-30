@@ -221,7 +221,7 @@ redirect_from:
         {% endif %}
         {% endfor %}
         <li>
-          <a href="Help and Support">
+          <a href="/support/" title="Help and Support">
             <i class="fa fa-fw fa-life-ring black-icon"></i> Help and Support
           </a>
         </li>

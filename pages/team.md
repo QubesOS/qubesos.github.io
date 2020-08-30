@@ -52,9 +52,11 @@ redirect_from:
       </div>
     {% endif %}
   {% endfor %}
+  <!-- Hidden when not actively hiring
   <div class="text-center more-bottom">
     <a href="/join/" class="btn btn-primary"><i class="fa fa-user-plus fa-fw white-icon"></i>Join the team!</a>
   </div>
+  -->
 </div>
 <div class="white-box page-content more-bottom">
   <div class="col-lg-12 col-md-12 col-sm-12">

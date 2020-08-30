@@ -103,13 +103,13 @@
 
  - organization: The Linux Kernel Archives
    org_url: https://www.kernel.org/
-   location: Distributed
+   location: (Distributed)
    urls:
    - url: https://mirrors.edge.kernel.org/qubes/iso/
 
  - organization: The Qubes OS Project
    org_url: https://www.qubes-os.org/
-   location: Distributed
+   location: (Distributed)
    urls:
    - url: https://ftp.qubes-os.org/iso/
    - url: http://iso.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion

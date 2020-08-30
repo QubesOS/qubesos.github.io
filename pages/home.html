@@ -32,27 +32,15 @@ redirect_from:
       </div>
     </div>
     <div class="clearfix"></div>
-    <div class="row more-top">
-      <div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2">
-        <a class="black-link" href="/intro/">What is Qubes OS?</a>
-      </div>
-      <div class="col-lg-4 col-md-4">
-        <a class="black-link" href="/video-tours/"><i class="fa fa-play-circle"></i> Watch a Video Tour</a>
-      </div>
-    </div>
-    <div class="clearfix"></div>
   </div>
 </div>
-
 <div class="home-content container">
-
   <!-- Experts -->
   <div class="row">
     <div class="col-lg-12 col-md-12">
       <h2 class="text-center outer-heading"><i class="fa fa-quote-left"></i> What the experts are saying</h2>
     </div>
   </div>
-
   <div class="white-box more-bottom">
     <div class="row featured-quotes">
       <div class="col-lg-1 col-md-1 text-center">
@@ -116,13 +104,13 @@ redirect_from:
       </div>
     </div>
   </div>
-
+  <hr>
   <!-- News -->
   <div class="row">
-  <div class="col-lg-6 col-md-6 more-bottom">
-    <h2 class="text-center outer-heading"><i class="fa fa-newspaper-o"></i> Media &amp; Press</h2>    
-    <div class="white-box">
-      <div class="featured-quotes">
+    <div class="col-lg-6 col-md-6 more-bottom">
+      <h2 class="text-center outer-heading"><i class="fa fa-newspaper-o"></i> Media &amp; Press</h2>    
+      <div class="white-box">
+        <div class="featured-quotes">
           <a href="https://www.vice.com/en_us/article/kbz43x/finally-a-reasonably-secure-operating-system-qubes-r3" target="_blank">
             <img src="attachment/site/motherboard-logo.png" class="logo">
             <blockquote>
@@ -130,8 +118,8 @@ redirect_from:
               <footer>by J.M. Porup</footer>
             </blockquote>
           </a>
-      </div>
-      <div class="featured-quotes">
+        </div>
+        <div class="featured-quotes">
           <a href="https://www.economist.com/babbage/2014/03/28/a-digital-fortress" target="_blank">
             <img src="attachment/site/the-economist-logo.png" class="logo">
             <blockquote>
@@ -139,8 +127,8 @@ redirect_from:
               <footer>by J. M. P.</footer>
             </blockquote>
           </a>
-      </div>
-      <div class="featured-quotes">
+        </div>
+        <div class="featured-quotes">
           <a href="https://www.wired.com/2014/11/protection-from-hackers/" target="_blank">
             <img src="attachment/site/wired-magazine-logo.png" class="logo">
             <blockquote>
@@ -148,50 +136,40 @@ redirect_from:
               <footer>by Andy Greenberg</footer>
             </blockquote>
           </a>
+        </div>
+        <a href="/news/" class="btn btn-sm btn-primary">More Media &amp; Press</a>
       </div>
-      <div class="featured-quotes">
-          <a href="https://www.hostingadvice.com/blog/qubes-offers-security-by-compartmentalization/" target="_blank">
-            <img src="attachment/site/hosting-advice-logo.png" class="logo">
-            <blockquote>
-              "Qubes embodies the new frontier of operating systems, where security and usability take the front seat."
-              <footer>by Christine Preusler</footer>
-            </blockquote>
-          </a>
+    </div>
+    <div class="col-lg-6 col-md-6 more-bottom">
+      <h2 class="text-center outer-heading"><i class="fa fa-bullhorn"></i> News &amp; Announcements</h2>
+      <div class="white-box">
+        <ul class="list-unstyled remove-bottom">
+          {% for post in site.posts limit:7 %}
+          <li class="list-links">
+            <a class="black-link" href="{{ post.url }}">
+              {{ post.title }}
+              {% for category in post.categories %}
+              {% if site.allowed_categories contains category %}
+                <span class="detail"> Posted in {{ category | capitalize }} on {{ post.date | date: "%Y-%m-%d" }}</span>
+              {% endif %}
+              {% endfor %}
+            </a>
+          </li>
+          {% endfor %}
+          <li class="list-links-normal">
+            <a href="/news/" class="btn btn-sm btn-primary">More News &amp; Announcements</a>
+          </li>
+        </ul>
       </div>
-      <a href="/news/" class="btn btn-sm btn-primary">More Media &amp; Press</a>
     </div>
   </div>
-  <div class="col-lg-6 col-md-6 more-bottom">
-    <h2 class="text-center outer-heading"><i class="fa fa-bullhorn"></i> News &amp; Announcements</h2>
-    <div class="white-box">
-      <ul class="list-unstyled remove-bottom">
-        {% for post in site.posts limit:7 %}
-        <li class="list-links">
-          <a class="black-link" href="{{ post.url }}">
-            {{ post.title }}
-            {% for category in post.categories %}
-            {% if site.allowed_categories contains category %}
-              <span class="detail"> Posted in {{ category | capitalize }} on {{ post.date | date: "%Y-%m-%d" }}</span>
-            {% endif %}
-            {% endfor %}
-          </a>
-        </li>
-        {% endfor %}
-        <li class="list-links-normal">
-          <a href="/news/" class="btn btn-sm btn-primary">More News &amp; Announcements</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
+  <hr>
   <!-- Technology -->
   <div class="row">
     <div class="col-lg-12 col-md-12">
       <h2 class="text-center outer-heading"><i class="fa fa-cogs"></i> What's Inside of Qubes?</h2>
     </div>
   </div>
-
   <div class="white-box more-bottom">
     <div class="row">
       <div class="col-lg-6 col-md-6 text-center">
@@ -222,7 +200,7 @@ redirect_from:
     </div>
     <div class="clearfix"></div>
   </div>
-
+  <hr>
   <!-- Details: Awards / Follow -->
   <div class="row">
     <div class="col-lg-6 col-md-6 more-bottom">
@@ -275,7 +253,7 @@ redirect_from:
       </div>
     </div>
   </div>
-
+  <hr>
   <!-- Details: Get Involved -->
   <div class="row">
     <div class="col-lg-12 col-md-12">

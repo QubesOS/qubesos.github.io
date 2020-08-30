@@ -1,77 +1,57 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
-    <body>
-      {% include header.html %}
-      <div class="container">
-        <div class="row more-top">
-          <div class="col-lg-7 col-md-7">
-            <h1 class="add-left outer-heading">
-              <a href="/news/" class="heading-link">
-                <i class="fa fa-newspaper-o"></i> News
-              </a>
-              <a href="/news/categories/" class="btn btn-default more-left half-top"><i class="fa fa-tag" aria-hidden="true"></i> News by Category</a>
-            </h1>
-          </div>
-          <div class="col-lg-5 col-md-5 button-heading">
-            <h1 class="outer-heading">
-              <a title="GitHub" href="https://github.com/QubesOS" class="fa fa-github-square black-icon" aria-hidden="true"></a>
-              <a title="Twitter" href="https://twitter.com/QubesOS" class="fa fa-twitter-square" aria-hidden="true"></a>
-              <a title="Reddit" href="https://www.reddit.com/r/Qubes/" class="fa fa-reddit-square" aria-hidden="true"></a>
-              <a title="Facebook" href="https://www.facebook.com/QubesOS" class="fa fa-facebook-square" aria-hidden="true"></a>
-              <a title="LinkedIn" href="https://www.linkedin.com/company/qubes-os/" class="fa fa-linkedin-square" aria-hidden="true"></a>
-              <a title="Subscribe via RSS" href="/feed.xml" class="fa fa-rss-square more-right" aria-hidden="true"></a>
-              <a title="Qubes OS Userbase Statistics" href="/statistics/" class="fa fa-bar-chart black-icon" aria-hidden="true"></a>
-            </h1>
-          </div>
-        </div>
-        <div class="more-bottom white-box page-content">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xs-10">
-              <header class="post-header">
-                <h1 class="post-title remove-bottom">{{ page.title }}</h1>
-                <p class="post-meta">
-                  {{ page.date | date: "%Y-%m-%d" }}
-                  by <strong>
-                  {% assign author_team = false %}
-                  {% for member in site.data.team %}
-                    {% if page.author == member.name %}
-                      {% assign author_team = true %}
-                    {% endif %}
-                  {% endfor %}
-                  {% if page.author %}
-                    {% if author_team %}
-                      <a href="/team/#{{ page.author | slugify }}">{{ page.author }}</a>
-                    {% else %}
-                      {{ page.author }}
-                    {% endif %}
-                  {% else %}
-                    {{ site.default_author }}
-                  {% endif %}
-                  </strong>
-                  {% if page.meta %}{{ page.meta }}{% endif %}
-                  in <strong>
-                  {% if page.categories.first %}
-                    {% for category in page.categories %}
-                      <a href="/news/categories/#{{ category | slugify }}">{{ category | capitalize }}</a>{% if forloop.index < forloop.length %},{% endif %}
-                    {% endfor %}
-                  {% else %}
-                    <a href="/news/categories/#{{ site.default_category | slugify }}">{{ site.default_category | capitalize }}</a>
-                  {% endif %}
-                  </strong>
-                </p>
-              </header>
-              <article class="post-content">
-                {{ content }}
-              </article>
-            </div>
-          </div>
-        </div>
-        {% include footer.html %}
-        <script src="/js/anchor.min.js"></script>
-        <script>
-          anchors.add();
-        </script>
+{% include head.html %}
+<body>
+{% include header.html %}
+<div class="container">
+  {% include news-heading.html %}
+  <div class="more-bottom white-box page-content">
+    <div class="row">
+      <div class="col-lg-12">
+        <header class="post-header">
+          <h1 class="post-title remove-bottom">{{ page.title }}</h1>
+          <p class="post-meta">
+            {{ page.date | date: "%Y-%m-%d" }}
+            by <strong>
+            {% assign author_team = false %}
+            {% for member in site.data.team %}
+              {% if page.author == member.name %}
+                {% assign author_team = true %}
+              {% endif %}
+            {% endfor %}
+            {% if page.author %}
+              {% if author_team %}
+                <a href="/team/#{{ page.author | slugify }}">{{ page.author }}</a>
+              {% else %}
+                <a href="/team/">{{ page.author }}</a>
+              {% endif %}
+            {% else %}
+              <a href="/team/">{{ site.default_author }}</a>
+            {% endif %}
+            </strong>
+            {% if page.meta %}{{ page.meta }}{% endif %}
+            in <strong>
+            {% if page.categories.first %}
+              {% for category in page.categories %}
+                <a href="/news/categories/#{{ category | slugify }}">{{ category | capitalize }}</a>{% if forloop.index < forloop.length %},{% endif %}
+              {% endfor %}
+            {% else %}
+              <a href="/news/categories/#{{ site.default_category | slugify }}">{{ site.default_category | capitalize }}</a>
+            {% endif %}
+            </strong>
+          </p>
+        </header>
+        <article class="post-content">
+          {{ content }}
+        </article>
       </div>
-  </body>
+    </div>
+  </div>
+  {% include footer.html %}
+  <script src="/js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</div>
+</body>
 </html>

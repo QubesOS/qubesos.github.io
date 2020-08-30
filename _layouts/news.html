@@ -1,40 +1,20 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
-    <body>
-      {% include header.html %}
-      <div class="container">
-        <div class="row more-top">
-          <div class="col-lg-7 col-md-7">
-            <h1 class="add-left outer-heading">
-              <a href="/news/" class="heading-link">
-                <i class="fa fa-newspaper-o"></i> News
-              </a>
-              <a href="/news/categories/" class="btn btn-default more-left half-top"><i class="fa fa-tag" aria-hidden="true"></i> News by Category</a>
-            </h1>
-          </div>
-          <div class="col-lg-5 col-md-5 button-heading">
-            <h1 class="outer-heading">
-              <a title="GitHub" href="https://github.com/QubesOS" class="fa fa-github-square black-icon" aria-hidden="true"></a>
-              <a title="Twitter" href="https://twitter.com/QubesOS" class="fa fa-twitter-square" aria-hidden="true"></a>
-              <a title="Reddit" href="https://www.reddit.com/r/Qubes/" class="fa fa-reddit-square" aria-hidden="true"></a>
-              <a title="Facebook" href="https://www.facebook.com/QubesOS" class="fa fa-facebook-square" aria-hidden="true"></a>
-              <a title="LinkedIn" href="https://www.linkedin.com/company/qubes-os/" class="fa fa-linkedin-square" aria-hidden="true"></a>
-              <a title="Subscribe via RSS" href="/feed.xml" class="fa fa-rss-square more-right" aria-hidden="true"></a>
-              <a title="Qubes OS Userbase Statistics" href="/statistics/" class="fa fa-bar-chart black-icon" aria-hidden="true"></a>
-            </h1>
-          </div>
-        </div>
-        <div class="more-bottom white-box page-content">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-xs-12">
-              <article class="post-content">
-                {{ content }}
-              </article>
-            </div>
-          </div>
-        </div>
-        {% include footer.html %}
+{% include head.html %}
+<body>
+{% include header.html %}
+<div class="container">
+  {% include news-heading.html %}
+  <div class="more-bottom white-box page-content">
+    <div class="row">
+      <div class="col-lg-12">
+        <article class="post-content">
+          {{ content }}
+        </article>
       </div>
-  </body>
+    </div>
+  </div>
+  {% include footer.html %}
+</div>
+</body>
 </html>

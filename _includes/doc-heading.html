@@ -1,17 +1,25 @@
-{% assign doc_segments = page.relative_path | split: '/' %}
-{% for section in site.data.doc %}
-  {% if doc_segments contains section.folder %}
-    <h1 class="more-top add-left outer-heading">
-      <a href="/doc/#{{ section.category | slugify }}" class="heading-link">
-        <i class="fa fa-book"></i>
-          {{ section.category }}
-      </a>
-    </h1>
-    {% if section.category == "External Documentation" %}
-      {% include doc-external-warning.html %}
+{% if page.permalink == "/doc/" %}
+  <h1 class="more-top add-left outer-heading">
+    <a href="/doc/" class="heading-link">
+      <i class="fa fa-book"></i> Documentation
+    </a>
+  </h1>
+{% else %}
+  {% assign doc_segments = page.relative_path | split: '/' %}
+  {% for section in site.data.doc %}
+    {% if doc_segments contains section.folder %}
+      <h1 class="more-top add-left outer-heading">
+        <a href="/doc/#{{ section.category | slugify }}" class="heading-link">
+          <i class="fa fa-book"></i>
+            {{ section.category }}
+        </a>
+      </h1>
+      {% if section.category == "External Documentation" %}
+        {% include doc-external-warning.html %}
+      {% endif %}
+      {% if page.translated %}
+        {% include doc-translated-warning.html %}
+      {% endif %}
     {% endif %}
-    {% if page.translated %}
-      {% include doc-translated-warning.html %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
+  {% endfor %}
+{% endif %}

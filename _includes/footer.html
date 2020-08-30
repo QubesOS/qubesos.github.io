@@ -1,8 +1,10 @@
 <footer>
-  <div class="white-box more-bottom">
+<div class="white-box more-bottom">
   <div class="row footer-search">
     <div class="col-lg-3 col-md-3 text-center">
-      <h4 class="remove-bottom"><i class="fa fa-search"></i> Search Qubes-OS.org</h4>
+      <h4 class="remove-bottom">
+        <i class="fa fa-search"></i> Search qubes-os.org
+      </h4>
     </div>
     <div class="col-lg-9 col-md-9 text-left">
       <form action="https://duckduckgo.com/" method="get">
@@ -12,39 +14,52 @@
           <span class="input-group-btn">
             <button class="btn btn-primary" type="submit">Go!</button>
           </span>
-        </div><!-- /input-group -->
+        </div>
       </form>
     </div>
   </div>
+</div>
+<div class="row footer-nav">
+  {% for section in site.data.architecture %}
+  <div class="col-lg-2 col-md-2">
+    <a href="{{section.url}}">
+      <h5 class="text-left add-bottom">
+        {{section.title}}
+        {% if section.title == "Donate" %}
+          <i class="fa fa-heart"></i>
+        {% endif %}
+      </h5>
+    </a>
+    <ul class="list-unstyled">
+      {% for sub in section.sub-pages %}
+      <li><a href="{{sub.url}}">{{sub.title}}</a></li>
+      {% endfor %}
+    </ul>
   </div>
-  <div class="row footer-nav">
-    {% for section in site.data.architecture %}
-    <div class="col-lg-2 col-md-2">
-      <a href="{{section.url}}"><h5 class="text-left add-bottom">{{section.title}} {% if section.title == "Donate" %}<i class="fa fa-heart"></i>{% endif %}</h5></a>
-      <ul class="list-unstyled">
-        {% for sub in section.sub-pages %}
-        <li><a href="{{sub.url}}">{{sub.title}}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endfor %}
+  {% endfor %}
+</div>
+<div class="row footer-nav text-center more-top add-bottom">
+  <div class="footer-logo more-bottom">
+    <a href="/">
+      <img src="/attachment/icons/logo-outline-small.svg" alt="Qubes">
+      <strong>Qubes</strong> OS
+    </a>
   </div>
-  <div class="row footer-nav text-center more-top add-bottom">
-    <div class="footer-logo more-bottom">
-      <a href="/"><img src="/attachment/icons/logo-outline-small.svg" alt="Qubes"><strong>Qubes</strong> OS</a>
-    </div>
-    <p>
-      &#169; <script type="text/javascript">
-               document.write(new Date().getFullYear());
-             </script><noscript>2020</noscript> The Qubes OS Project and others<br>
-      <a href="https://github.com/QubesOS/qubesos.github.io">Website Source Code</a> |
-      <a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion">Tor Onion Service</a> |
-      <a href="/doc/reporting-bugs/">Report a Problem</a> |
-      <a href="/privacy/">Privacy Policy</a> |
-      <a href="/terms/">Terms of Use</a> |
-      <a href="/sitemap.xml">Sitemap</a>
-    </p>
-  </div>
+  <p>
+    &#169;
+    <script type="text/javascript">
+      document.write(new Date().getFullYear());
+    </script>
+    <noscript>2020</noscript>
+    The Qubes OS Project and others<br>
+    <a href="https://github.com/QubesOS/qubesos.github.io">Website Source Code</a> |
+    <a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion">Tor Onion Service</a> |
+    <a href="/doc/reporting-bugs/">Report a Problem</a> |
+    <a href="/privacy/">Privacy Policy</a> |
+    <a href="/terms/">Terms of Use</a> |
+    <a href="/sitemap.xml">Sitemap</a>
+  </p>
+</div>
 </footer>
 
 <script src="/js/jquery-2.2.2.min.js"></script>

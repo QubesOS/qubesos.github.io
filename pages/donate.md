@@ -8,6 +8,8 @@ redirect_from:
 - /wiki/Donations/
 ---
 
+Your donation directly supports the continued development of Qubes OS.
+
 ## Ways to donate
 
 We accept monetary donations via Bitcoin and credit card in the following three ways:

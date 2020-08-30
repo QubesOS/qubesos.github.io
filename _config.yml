@@ -41,5 +41,5 @@ allowed_categories:
   - security
   - talks
 
-default_author: "Qubes OS"
+default_author: "The Qubes OS Team"
 default_category: "announcements"

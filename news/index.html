@@ -17,7 +17,7 @@ redirect_from: /en/news/
       </a>
     </h2>
     <p class="post-meta news-list">
-      {{ post.date | date: "%b %-d, %Y" }}
+      {{ post.date | date: "%Y-%m-%d" }}
       by <strong>
       {% assign author_team = false %}
       {% for member in site.data.team %}
@@ -29,10 +29,10 @@ redirect_from: /en/news/
         {% if author_team %}
           <a href="/team/#{{ post.author | slugify }}">{{ post.author }}</a>
         {% else %}
-          {{ post.author }}
+          <a href="/team/">{{ post.author }}</a>
         {% endif %}
       {% else %}
-        {{ site.default_author }}
+        <a href="/team/">{{ site.default_author }}</a>
       {% endif %}
       </strong>
       in <strong>

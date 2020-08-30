@@ -39,9 +39,8 @@
   email: adw@qubes-os.org
   pgp_key: https://andrewdavidwong.com/adw.asc
   fingerprint: BBAF 910D 1BC9 DDF4 1043  629F BC21 1FCE E9C5 4C53
-  website: https://andrewdavidwong.com/
   github: andrewdavidwong
-  twitter: andrewdavidwong
+  website: https://andrewdavidwong.com/
 
 - name: unman   
   role: Debian template maintainer

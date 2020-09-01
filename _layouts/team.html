@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
-    <body>
-      {% include header.html %}
-      <div class="container">
-        <div class="row more-top more-bottom">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <h1 class="add-left outer-heading">
-              <a href="/team/" class="heading-link">
-                <i class="fa fa-users" aria-hidden="true"></i> Team
-              </a>
-            </h1>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-            <ul class="list-unstyled">
-              <li><a href="/security/" class="black-link"><i class="fa fa-lock fa-fw"></i> Report a security issue</a></li>
-              <li><a href="/doc/reporting-bugs/" class="black-link"><i class="fa fa-bug fa-fw"></i> Report a bug</a></li>
-              <li><a href="/support/" class="black-link"><i class="fa fa-life-ring fa-fw"></i> Help and support</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-            <ul class="list-unstyled">
-              <li><a href="mailto:press@qubes-os.org" class="black-link"><i class="fa fa-newspaper-o fa-fw"></i> Press inquiries</a></li>
-              <li><a href="mailto:business@qubes-os.org" class="black-link"><i class="fa fa-briefcase fa-fw"></i> Business inquiries</a></li>
-              <li><a href="/partners/" class="black-link"><i class="fa fa-globe fa-fw"></i> Qubes Partners</a></li>
-            </ul>
-          </div>
-        </div>
-        {{ content }}
-        {% include footer.html %}
-      </div>
-  </body>
+{% include head.html %}
+<body>
+{% include header.html %}
+<div class="container">
+  <div class="row more-top more-bottom">
+    <div class="col-xs-12 col-sm-4">
+      <h1 class="add-left outer-heading">
+        <a href="/team/" class="heading-link">
+          <i class="fa fa-users" aria-hidden="true"></i> Team
+        </a>
+      </h1>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-3">
+      <ul class="list-unstyled">
+        <li><a href="/security/" class="black-link"><i class="fa fa-lock fa-fw"></i> Report a security issue</a></li>
+        <li><a href="/doc/reporting-bugs/" class="black-link"><i class="fa fa-bug fa-fw"></i> Report a bug</a></li>
+        <li><a href="/support/" class="black-link"><i class="fa fa-life-ring fa-fw"></i> Help and support</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-3">
+      <ul class="list-unstyled">
+        <li><a href="mailto:press@qubes-os.org" class="black-link"><i class="fa fa-newspaper-o fa-fw"></i> Press inquiries</a></li>
+        <li><a href="mailto:business@qubes-os.org" class="black-link"><i class="fa fa-briefcase fa-fw"></i> Business inquiries</a></li>
+        <li><a href="/partners/" class="black-link"><i class="fa fa-globe fa-fw"></i> Qubes Partners</a></li>
+      </ul>
+    </div>
+  </div>
+  {{ content }}
+  {% include footer.html %}
+</div>
+</body>
 </html>

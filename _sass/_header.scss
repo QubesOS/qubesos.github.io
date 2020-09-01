@@ -16,6 +16,10 @@
   background-color: $body-bg;
   border-bottom: 1px solid $gray-light;
 
+  .container {
+    height: 340px;
+  }
+
   a.page-link {
     display: inline-block;
     margin-right: 10px;
@@ -122,12 +126,12 @@
       left: 0px;
       padding: 0px 5px;
       background-color: $color-white;
-      border-bottom: 1px solid $gray-light;
 
       ul > li > a {
         color: $gray-base;
         padding: 10px 5px;
         letter-spacing: 1px;
+        background-color: $gray-lighter;
 
         &:hover,
         &:focus {

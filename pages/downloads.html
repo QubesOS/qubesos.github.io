@@ -9,65 +9,65 @@ redirect_from:
 
 <div class="more-bottom page-content">
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-12 col-sm-4">
       <h3>Choosing Your Hardware</h3>
       <ul class="list-unstyled">
         <li>
-          <a href="/doc/system-requirements/">
+          <a href="/doc/system-requirements/" class="black-link">
             <i class="fa fa-server fa-fw black-icon"></i> System Requirements
           </a>
         </li>
         <li>
-          <a href="/doc/certified-hardware/">
+          <a href="/doc/certified-hardware/" class="black-link">
             <i class="fa fa-floppy-o fa-fw black-icon"></i> Certified Hardware
           </a>
         </li>
         <li>
-          <a href="/hcl/">
+          <a href="/hcl/" class="black-link">
             <i class="fa fa-laptop fa-fw black-icon"></i> Hardware Compatibility
               List
           </a>
         </li>
       </ul>
     </div>
-    <div class="col-lg-4">
+    <div class="col-12 col-sm-4">
       <h3>Installing Qubes Securely</h3>
       <ul class="list-unstyled">
         <li>
-          <a href="/doc/installation-guide/">
+          <a href="/doc/installation-guide/" class="black-link">
             <i class="fa fa-book fa-fw black-icon"></i> Installation Guide
           </a>
         </li>
         <li>
-          <a href="/security/verifying-signatures/">
+          <a href="/security/verifying-signatures/" class="black-link">
             <i class="fa fa-lock fa-fw black-icon"></i> How and Why to Verify
               Signatures
           </a>
         </li>
         <li>
-          <a href="/doc/install-security/">
+          <a href="/doc/install-security/" class="black-link">
             <i class="fa fa-lightbulb-o fa-fw black-icon"></i> Installation
               Security Considerations
           </a>
         </li>
       </ul>
     </div>
-    <div class="col-lg-4">
+    <div class="col-12 col-sm-4">
       <h3>Help and Support</h3>
       <ul class="list-unstyled">
         <li>
-          <a href="/support/">
+          <a href="/support/" class="black-link">
             <i class="fa fa-life-ring fa-fw black-icon"></i> Help and Support
           </a>
         </li>
         <li>
-          <a href="/doc/#troubleshooting">
+          <a href="/doc/#troubleshooting" class="black-link">
             <i class="fa fa-file-text-o fa-fw black-icon"></i> Troubleshooting
               Guides
           </a>
         </li>
         <li>
-          <a href="/doc/reporting-bugs/">
+          <a href="/doc/reporting-bugs/" class="black-link">
             <i class="fa fa-bug fa-fw black-icon"></i> Report a Bug
           </a>
         </li>
@@ -76,7 +76,7 @@ redirect_from:
   </div>
   <hr class="more-bottom">
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-12">
       <h3>Qubes OS is made possible by your donations!</h3>
       <p>
         As a free and open-source software project, we rely on donations from
@@ -91,7 +91,7 @@ redirect_from:
 <div class="white-box more-bottom page-content">
   {% for releasex in site.data.downloads.releases %}
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-12">
       {% assign release_name = releasex[0] %}
       {% assign release = releasex[1] %}
       {% assign testing = release.testing | default: false %}
@@ -154,7 +154,7 @@ redirect_from:
   <div class="row download-content">
     {% for source in release.sources %}
     {% if source.display %}
-    <div class="col-lg-4 add-bottom">
+    <div class="col-lg-4 col-sm-6 col-xs-12 add-bottom">
       <a class="btn btn-primary btn-block" href="{{ source.url }}"
          title="{{ release_name }} {{ source.type }}: {{ source.size }}">
         <i class="fa fa-fw fa-download"></i>
@@ -181,16 +181,16 @@ redirect_from:
     </div>
     {% endif %}
     {% endfor %}
-    <div class="col-lg-4">
+    <div class="col-12 col-sm-6 col-lg-4">
       <ul class="list-unstyled">
         <li>
-          <a href="#mirrors" title="View all download mirrors">
+          <a href="#mirrors" class="black-link" title="View all download mirrors">
             <i class="fa fa-fw fa-cloud-download black-icon"></i>
             All Download Mirrors
           </a>
         </li>
         <li>
-          <a href="/security/verifying-signatures/">
+          <a href="/security/verifying-signatures/" class="black-link">
             <i class="fa fa-fw fa-question-circle black-icon"></i>
             How to Verify Downloads
           </a>
@@ -200,33 +200,33 @@ redirect_from:
         {% assign doc = docdata[1] %}
         {% if doc_name == "Installation Guide" %}
         <li>
-          <a href="{{ doc.url }}">
+          <a href="{{ doc.url }}" class="black-link" title="Installation Guide">
             <i class="fa fa-fw fa-book black-icon"></i> {{ doc_name }}
           </a>
         </li>
         {% endif %}
         {% if doc_name == "Release Notes" %}
         <li>
-          <a href="{{ doc.url }}">
+          <a href="{{ doc.url }}" class="black-link" title="Release Notes">
             <i class="fa fa-fw fa-file-text-o black-icon"></i> {{ doc_name }}
           </a>
         </li>
         {% endif %}
         {% if doc_name == "Release Schedule" %}
         <li>
-          <a href="{{ doc.url }}">
+          <a href="{{ doc.url }}" class="black-link" title="Release Schedule">
             <i class="fa fa-fw fa-calendar black-icon"></i> {{ doc_name }}
           </a>
         </li>
         {% endif %}
         {% endfor %}
         <li>
-          <a href="/support/" title="Help and Support">
+          <a href="/support/" class="black-link" title="Help and Support">
             <i class="fa fa-fw fa-life-ring black-icon"></i> Help and Support
           </a>
         </li>
         <li>
-          <a href="/doc/source-code/">
+          <a href="/doc/source-code/" class="black-link" title="Source Code">
             <i class="fa fa-fw fa-code black-icon"></i> Source Code
           </a>
         </li>
@@ -237,7 +237,7 @@ redirect_from:
   {% endfor %}
 </div>
 <div class="row">
-  <div class="col-lg-12 col-md-12">
+  <div class="col-12">
     <div class="more-bottom page-content">
       <article>
         <h3 id="mirrors">Download Mirrors</h3>
@@ -266,7 +266,8 @@ redirect_from:
           </tr>
           {% endfor %}
         </table>
-        <a href="/downloads/mirrors/#instructions-for-mirror-operators">
+        <a href="/downloads/mirrors/#instructions-for-mirror-operators"
+           class="black-link">
           <i class="fa fa-cloud fa-fw black-icon"></i>
           How to contribute a download mirror
         </a>
@@ -276,61 +277,65 @@ redirect_from:
 </div>
 <div class="white-box more-bottom page-content">
   <div class="row">
-    <div class="col-lg-4 col-md-4">
+    <div class="col-12 col-sm-4">
       <h3 id="versions">Security Information</h3>
       <ul class="list-unstyled">
         <li>
-          <a href="/security/">
+          <a href="/security/" class="black-link" title="Security Center">
             <i class="fa fa-lock fa-fw black-icon"></i> Security Center
           </a>
         </li>
         <li>
-          <a href="/security/pack/">
+          <a href="/security/pack/" class="black-link" title="Security Pack">
             <i class="fa fa-folder fa-fw black-icon"></i> Security Pack
           </a>
         </li>
         <li>
-          <a href="/doc/security-guidelines/">
+          <a href="/doc/security-guidelines/" class="black-link"
+             title="Security Guidelines">
             <i class="fa fa-tasks fa-fw black-icon"></i> Security Guidelines
           </a>
         </li>
       </ul>
     </div>
-    <div class="col-lg-4 col-md-4">
+    <div class="col-12 col-sm-4">
       <h3 id="versions">Version Information</h3>
       <ul class="list-unstyled">
         <li>
-          <a href="/doc/supported-versions/">
+          <a href="/doc/supported-versions/" class="black-link"
+             title="Supported Versions">
             <i class="fa fa-history fa-fw black-icon"></i> Supported Versions
           </a>
         </li>
         <li>
-          <a href="/doc/templates/">
+          <a href="/doc/templates/" class="black-link" title="Templates">
             <i class="fa fa-clone fa-fw black-icon"></i> Templates
           </a>
         </li>
         <li>
-          <a href="/doc/version-scheme/">
+          <a href="/doc/version-scheme/" class="black-link"
+             title="Version Scheme">
             <i class="fa fa-code-fork fa-fw black-icon"></i> Version Scheme
           </a>
         </li>
       </ul>
     </div>
-    <div class="col-lg-4 col-md-4">
+    <div class="col-12 col-sm-4">
       <h3 id="source-code">Source Code</h3>
       <ul class="list-unstyled">
         <li>
-          <a href="/doc/source-code/">
+          <a href="/doc/source-code/" class="black-link" title="Source Code">
             <i class="fa fa-code fa-fw black-icon"></i> Source Code
           </a>
         </li>
         <li>
-          <a href="/doc/coding-style/">
+          <a href="/doc/coding-style/" class="black-link"
+             title="Coding Guidelines">
             <i class="fa fa-terminal fa-fw black-icon"></i> Coding Guidelines
           </a>
         </li>
         <li>
-          <a href="/doc/license/">
+          <a href="/doc/license/" class="black-link" title="Software License">
             <i class="fa fa-file-text-o fa-fw black-icon"></i> Software License
           </a>
         </li>

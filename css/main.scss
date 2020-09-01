@@ -109,18 +109,18 @@ $on-laptop-wide:   1150px;
 
 // Global small screen fix
 @media (max-width: $container-sm) {
-    .container {
-      padding: 0 8% !important;
-      margin: 0 !important;
-      max-width: 100% !important;
-      overflow-x: hidden !important;
-    }
 
     body {
       padding: 0 !important;
       margin: 0 !important;
       max-width: 100% !important;
       overflow-x: hidden !important;
+      > .container {
+        padding: 0 8% !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+      }
     }
 
     .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {

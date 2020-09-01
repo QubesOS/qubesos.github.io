@@ -146,8 +146,8 @@ redirect_from:
         <ul class="list-unstyled remove-bottom">
           {% for post in site.posts limit:7 %}
           <li class="list-links">
-            <a class="black-link" href="{{ post.url }}">
-              {{ post.title }}
+            <a class="black-link headline" href="{{ post.url }}">
+                {{ post.title }}
               {% for category in post.categories %}
               {% if site.allowed_categories contains category %}
                 <span class="detail"> Posted in {{ category | capitalize }} on {{ post.date | date: "%Y-%m-%d" }}</span>
@@ -209,7 +209,7 @@ redirect_from:
       <ul class="list-unstyled remove-bottom">
         {% for research in site.data.research.papers limit:6 %}
         <li class="list-links">
-          <a class="black-link" href="{{research.url}}">
+          <a class="black-link headline" href="{{research.url}}">
             {{research.title}}
             <span class="detail"><strong>{{research.author}}</strong>, {{research.date}}</span>
           </a>

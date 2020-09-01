@@ -1,7 +1,17 @@
-<p id="{{team.name | slugify}}">
-  <a href="/team/#{{team.name | slugify}}" class="black-link">{{team.name}}</a>
-  <em>{{team.role}}</em><br>
-  {% if team.email %}
-  <a href="mailto:{{team.email}}"><i class="fa fa-envelope"></i> Email</a>
+<div id="{{team.name | slugify}}" class="team-info">
+  <a href="/team/#{{team.name | slugify}}" class="black-link headline">
+    {{team.name}}
+  </a>
+  <em class="role">{{team.role}}</em>
+  {% if team.fingerprint %}
+  <a href="http://keys.gnupg.net/pks/lookup?search=0x{{ team.fingerprint | remove: ' ' }}&fingerprint=on&exact=on&op=get&options=mr"
+     title="Download PGP public key" class="black-link add-right">
+    <i class="fa fa-fw fa-lock"></i>PGP Key
+  </a>
   {% endif %}
-</p>
+  {% if team.email %}
+  <a href="mailto:{{team.email}}" class="black-link">
+    <i class="fa fa-fw fa-envelope"></i>Email
+  </a>
+  {% endif %}
+</div>

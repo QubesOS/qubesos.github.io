@@ -8,62 +8,82 @@ redirect_from:
 - /wiki/QubesDevelopers/
 ---
 
-<div id="team-core" class="white-box page-content more-bottom">
+<div id="team-core" class="white-box page-content">
   <div class="col-lg-12 col-md-12 col-sm-12">
     <h2 id="core-team" class="text-center more-bottom">Core Team</h2>
   </div>
   {% for team in site.data.team %}
     {% if team.type == "core" %}
-      <div class="row team team-core" id="{{team.name | slugify}}">
-        <div class="col-lg-2 col-md-2 col-sm-5 col-xs-12 text-center">
-          <div class="picture more-bottom">
+      <div class="row team team-core" id="{{ team.name | slugify }}">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 text-center add-bottom">
+          <div class="picture">
             {% if team.picture %}
-            <a href="/team/#{{team.name | slugify}}"><img src="/attachment/site/{{team.picture}}" title="Picture of {{team.name}}"></a>
+            <a href="/team/#{{ team.name | slugify }}">
+              <img src="/attachment/site/{{team.picture}}"
+                   title="Picture of {{ team.name }}">
+            </a>
             {% else %}
             <i class="fa fa-user"></i>
             {% endif %}
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-7 col-xs-12">
+        <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 team-info">
           {% assign name_array = team.name | split:" " %}
-          <h4 class="half-bottom" data-anchor-id="{{team.name | slugify}}">{{team.name}}</h4>
-          <em class="role half-bottom">{{team.role}}</em>
-          {% if team.email %}
-          <a href="mailto:{{team.email}}" class="link add-right"><i class="fa fa-envelope fa-fw black-icon"></i>Email</a>
+          <a href="/team/#{{ team.name | slugify }}">
+          <h4 class="remove-bottom">
+            {{ team.name }}
+          </h4>
+          </a>
+          <em class="role half-bottom">{{ team.role }}</em>
+          {% if team.fingerprint %}
+          <a href="http://keys.gnupg.net/pks/lookup?search=0x{{ team.fingerprint | remove: ' ' }}&fingerprint=on&exact=on&op=get&options=mr"
+             title="Download PGP public key" class="black-link add-right">
+            <i class="fa fa-fw fa-lock"></i>PGP Key
+          </a>
           {% endif %}
-          {% if team.website %}
-          <a href="{{team.website}}" class="link add-right" target="blank"><i class="fa fa-globe fa-fw black-icon"></i>Website</a>
+          {% if team.email %}
+          <a href="mailto:{{team.email}}" class="black-link add-right"
+             title="Email">
+            <i class="fa fa-fw fa-envelope"></i>Email
+          </a>
           {% endif %}
           {% if team.github %}
-          <a href="https://github.com/{{team.github}}" class="link add-right" target="blank"><i class="fa fa-github fa-fw black-icon"></i>GitHub</a>
+          <a href="https://github.com/{{team.github}}" target="blank"
+             class="black-link add-right" title="GitHub">
+            <i class="fa fa-fw fa-github"></i>GitHub
+          </a>
           {% endif %}
-          {% if team.twitter %}
-          <a href="https://twitter.com/{{team.twitter}}" class="link" target="blank"><i class="fa fa-twitter fa-fw"></i>Twitter</a>
-          {% endif %}
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
-          {% if team.fingerprint %}
-          <span class="fingerprint" title="{{team.name}}'s PGP Key Fingerprint">{{team.fingerprint}}</span>
-          {% endif %}
-          {% if team.pgp_key %}
-          <a href="{{team.pgp_key}}"><i class="fa fa-lock fa-fw black-icon"></i>{{name_array[0]}}'s PGP Key</a>
+          {% if team.website %}
+          <a href="{{team.website}}" target="blank" class="black-link"
+             title="Website">
+            <i class="fa fa-fw fa-globe add-left"></i>Website
+          </a>
           {% endif %}
         </div>
+        {% if team.fingerprint %}
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 more-bottom fingerprint"
+             title="{{ team.name }}'s PGP fingerprint">
+          {{ team.fingerprint }}
+        </div>
+        {% endif %}
       </div>
     {% endif %}
   {% endfor %}
   <!-- Hidden when not actively hiring
   <div class="text-center more-bottom">
-    <a href="/join/" class="btn btn-primary"><i class="fa fa-user-plus fa-fw white-icon"></i>Join the team!</a>
+    <a href="/join/" class="btn btn-primary">
+      <i class="fa fa-user-plus fa-fw white-icon"></i>Join the team!
+    </a>
   </div>
   -->
 </div>
-<div class="white-box page-content more-bottom">
-  <div class="col-lg-12 col-md-12 col-sm-12">
+<div class="page-content more-bottom">
+  <div class="col-lg-12">
     <h2 id="emeritus" class="text-center more-bottom">Emeritus</h2>
-    <p>Emeriti are honorary members of the Qubes team who previously
-    contributed to the project in a central way but who are no longer
-    currently active.</p>
+    <p>
+      Emeriti are honorary members of the Qubes team who previously contributed
+      to the project in a central way but who are no longer currently active.
+    </p>
   </div>
   {% for team in site.data.team %}
     {% if team.type == "emeritus" %}
@@ -72,25 +92,26 @@ redirect_from:
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
         {% include team-simple.html %}
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
-        {% if team.fingerprint %}
-        <span class="fingerprint" title="{{team.name}}'s PGP Key Fingerprint">{{team.fingerprint}}</span>
-        {% endif %}
-        {% if team.pgp_key %}
-        <a href="{{team.pgp_key}}"><i class="fa fa-lock fa-fw black-icon"></i>{{name_array[0]}}'s PGP Key</a>
-        {% endif %}
+      {% if team.fingerprint %}
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 more-bottom fingerprint">
+        {{ team.fingerprint }}
       </div>
+      {% endif %}
     </div>
     {% endif %}
   {% endfor %}
 </div>
-<div class="white-box page-content more-bottom">
-  <div class="col-lg-12 col-md-12 col-sm-12">
-    <h2 id="community-contributors" class="text-center more-bottom">Community Contributors</h2>
-    <p>Qubes would not be where it is today without the input of the many users,
-    testers, and developers of all skill levels who have come together to form
-    this thriving community. The community's discussions take place primarily on
-    the <a href="/support/">Qubes mailing lists</a>.</p>
+<div class="page-content more-bottom">
+  <div class="col-lg-12">
+    <h2 id="community-contributors" class="text-center more-bottom">
+      Community Contributors
+    </h2>
+    <p>
+      Qubes would not be where it is today without the input of the many users,
+      testers, and developers of all skill levels who have come together to form
+      this thriving community. The community's discussions take place primarily
+      on the <a href="/support/">Qubes mailing lists and forum</a>.
+    </p>
   </div>
   {% for team in site.data.team %}
     {% if team.type == "community" %}
@@ -99,14 +120,11 @@ redirect_from:
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
         {% include team-simple.html %}
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
-        {% if team.fingerprint %}
-        <span class="fingerprint" title="{{team.name}}'s PGP Key Fingerprint">{{team.fingerprint}}</span>
-        {% endif %}
-        {% if team.pgp_key %}
-        <a href="{{team.pgp_key}}"><i class="fa fa-lock fa-fw black-icon"></i>{{name_array[0]}}'s PGP Key</a>
-        {% endif %}
+      {% if team.fingerprint %}
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 fingerprint">
+        {{ team.fingerprint }}
       </div>
+      {% endif %}
     </div>
     {% endif %}
   {% endfor %}

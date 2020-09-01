@@ -3,7 +3,6 @@
   type: core
   picture: team-marek.png
   email: marmarek@invisiblethingslab.com
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x86BA6E93318FBA446642A90ADB8FD31CCAD7D72C
   fingerprint: 86BA 6E93 318F BA44 6642  A90A DB8F D31C CAD7 D72C
   github: marmarek
 
@@ -12,7 +11,6 @@
   type: core
   picture: team-woju.jpg
   email: woju@invisiblethingslab.com
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x68ED1515FA6BD2D105EA1624BF6BD932103A2351
   fingerprint: 68ED 1515 FA6B D2D1 05EA  1624 BF6B D932 103A 2351
   github: woju
 
@@ -22,14 +20,12 @@
   picture: team-michael.jpg
   email: michael@qubes-os.org
   fingerprint: D3D8 BEBF ECE8 91AC 46A7  30DE 63FC 4D26 84A7 33B4
-  pgp_key: https://keys.openpgp.org/vks/v1/by-fingerprint/D3D8BEBFECE891AC46A730DE63FC4D2684A733B4
   github: mfc
 
 - name: Joanna Gołębiewska
   role: Coordination, accounting, and operations
   type: core
   email: asia@invisiblethingslab.com
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x8C8FF70B60A4726FF4517D9667F4097BAF59B942
   fingerprint: 8C8F F70B 60A4 726F F451  7D96 67F4 097B AF59 B942
 
 - name: Andrew David Wong
@@ -37,7 +33,6 @@
   type: core
   picture: team-andrew.jpg
   email: adw@qubes-os.org
-  pgp_key: https://andrewdavidwong.com/adw.asc
   fingerprint: BBAF 910D 1BC9 DDF4 1043  629F BC21 1FCE E9C5 4C53
   github: andrewdavidwong
   website: https://andrewdavidwong.com/
@@ -46,7 +41,6 @@
   role: Debian template maintainer
   type: core
   email: unman@thirdeyesecurity.org
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xC6E2533D976E4B29A82B79CB0C6D15D5E0A9816E
   fingerprint: C6E2 533D 976E 4B29 A82B  79CB 0C6D 15D5 E0A9 816E
   github: unman
 
@@ -55,7 +49,6 @@
   type: core
   picture: team-simon.jpg
   email: hw42@ipsumj.de
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xAA27B2CEF3A68BD146690713E4ACC9278A646816
   fingerprint: AA27 B2CE F3A6 8BD1 4669  0713 E4AC C927 8A64 6816
   github: HW42
 
@@ -64,7 +57,6 @@
   role: General packaging, CentOS and Fedora templates maintainer
   type: core
   picture: team-frederic.jpg
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x9FA64B92F95E706BF28E2CA6484010B5CDC576E2
   fingerprint: 9FA6 4B92 F95E 706B F28E  2CA6 4840 10B5 CDC5 76E2
   github: fepitre
 
@@ -73,7 +65,6 @@
   role: Qubes Manager, Linux desktop, and core development
   type: core
   picture: team-marta.jpg
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x7D22413EF3DB07612CF738087D779BFA6C806F69
   fingerprint: 7D22 413E F3DB 0761 2CF7  3808 7D77 9BFA 6C80 6F69
   github: marta
 
@@ -82,7 +73,6 @@
   role: Chief Operations Officer, Invisible Things Lab
   type: core
   picture: team-michal.jpg
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x6B527FE563085B7A34B96C2F8F903F3E5662199B
   fingerprint: 6B52 7FE5 6308 5B7A 34B9  6C2F 8F90 3F3E 5662 199B
   github: MiCh
 
@@ -91,7 +81,6 @@
   role: User experience
   type: core
   picture: team-nina.jpg
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xA9BC4019D695AF0DD65DF7262CA7C96ADBDFDC5B
   fingerprint: A9BC 4019 D695 AF0D D65D F726 2CA7 C96A DBDF DC5B
   github: ninavizz
 
@@ -101,7 +90,6 @@
   role: Founder and advisor (formerly architecture, security, and development)
   type: emeritus
   picture: team-joanna.jpg
-  pgp_key: https://blog.invisiblethings.org/keys/
   fingerprint: ED72 7C30 6E76 6BC8 5E62 1AA6 5FA6 C3E4 D9AF BB99
   website: https://blog.invisiblethings.org
   github: rootkovska
@@ -121,7 +109,6 @@
   role: Main developer for Qubes Windows Tools
   type: emeritus
   email: omeg@invisiblethingslab.com
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x3AC87FA304E459D0DF0821A1045A13284C85173A
   fingerprint: 3AC8 7FA3 04E4 59D0 DF08  21A1 045A 1328 4C85 173A
   github: omeg
 
@@ -131,133 +118,114 @@
   email: awokd@danwin1210.me
   role: Release documentation coordinator
   type: community
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x535D4B50D471AEFF755A517111AB48E690421F3E
   fingerprint: 535D 4B50 D471 AEFF 755A  5171 11AB 48E6 9042 1F3E
 
 - name: Alexandre Bezroutchko
   email: abb@gremwell.com
   role: PVUSB support
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: Blacklight
   email: blacklight447@protonmail.com
   role: Localization Team co-leader
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: Bruce A Downs
   email: bruceadowns@gmail.com
   role: Minor various cleanups and miscs.
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: Desobediente Civil
   email: desci@riseup.net
   role: Localization Team co-leader, core and documentation contributions
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: Davíð Steinn Geirsson
   email: david@dsg.is
   role: Initial Debian template integration
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: Tobias Killer
   email: tokidev@posteo.de
   role: Localization Team co-leader
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: Agnieszka Kostrzewa
   email: a.kostrzewa@alx.pl
   role: Documentation, Qubes Manager
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: Chris Laprise
   email: tasket@posteo.net
   role: Core and Qubes Manager features and fixes, docs, project liason, HCL maintainer, VPN tools
   type: community
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xBEE220C5356E764A73EB4AB31DC4D106F07F1886
   fingerprint: BEE2 20C5 356E 764A 73EB  4AB3 1DC4 D106 F07F 1886
 
 - name: Holger Levsen
   email: holger@layer-acht.org
   role: IRC community ambassador
   type: community
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xB8BF54137B09D35CF026FE9D091AB856069AAA1C
   fingerprint: B8BF 5413 7B09 D35C F026  FE9D 091A B856 069A AA1C
 
 - name: Timo Juhani Lindfors
   email: timo.lindfors@iki.fi
   role: Minor core cleanups
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: Victor Lopez
   email: gallando@gmail.com`
   role: Misc. minor fixes
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: Abel Luck
   email: abel@outcomedubious.im
   role: Developed TorVM
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: Olivier Médoc
   email: o_medoc@yahoo.fr
   role: Core and GUI fixes, template builder generalization
   type: community
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xD85EE12F967851CCF433515A2043E7ACC1833B9C
   fingerprint: D85E E12F 9678 51CC F433  515A 2043 E7AC C183 3B9C
 
 - name: Jason Mehring
   email: nrgaway@gmail.com
   role: Debian templates improvements, Whonix integration
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: Brennan Novak
   email: hi@brennannovak.com
   role: Web design, art, documentation, and minor UX contributions
   type: community
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x01AEEADB9EED1B5B4280E5B6C4CAA23B0F8C68B2
   fingerprint: 01AE EADB 9EED 1B5B 4280  E5B6 C4CA A23B 0F8C 68B2
 
 - name: Hakisho Nukama
   email: nukama@gmail.com
   role: Documentation & website maintainer
   type: community
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x3FCF9A1111350DE9FA9C3DD06E7A27B909DAFB92
   fingerprint: 3FCF 9A11 1135 0DE9 FA9C  3DD0 6E7A 27B9 09DA FB92
 
 - name: Jean-Philippe Ouellet
   email: jpo@vt.edu
   role: General development
   type: community
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0xC37B75A11DC7C9CC6CD5B7A9AFE6E6A3D6EE7AD6
   fingerprint: C37B 75A1 1DC7 C9CC 6CD5  B7A9 AFE6 E6A3 D6EE 7AD6
 
 - name: Vincent Penquerc'h
   email: vincent.penquerch@collabora.co.uk
   role: Code review, misc. fixes
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: Patrick Schleizer
@@ -265,7 +233,6 @@
   type: community
   picture: team-patrick.jpg
   email: patrick@qubes-os.org
-  pgp_key: https://sks-keyservers.net/pks/lookup?op=get&search=0x916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
   fingerprint: 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
   website: https://www.whonix.org
   github: adrelanos
@@ -274,27 +241,23 @@
   email: andrew@localcoast.net
   role: Misc. backup subsystem fixes
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: Tomasz Sterna
   email: tomek@xiaoka.com
   role: Installer & GUI
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: Radoslaw Szkodzinski
   email: astralstorm@gmail.com
   role: Minor GUI build fixes
   type: community
-  pgp_key: 
   fingerprint: 
 
 - name: László Zrubecz
   email: mail@zrubi.hu
   role: HCL page maintenance, HCL scripts
   type: community
-  pgp_key: http://download.zrubi.hu/8F0E7BC6.asc
   fingerprint: 9AF3 388A 533E 73AD 1107  7E55 617D 7048 8F0E 7BC6
 

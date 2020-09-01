@@ -46,7 +46,6 @@ a.black-link {
   width: 100%;
   height: 100%;
   color: $gray-base;
-  font-size: 18px;
   font-weight: bold;
 
   span.detail {
@@ -95,6 +94,10 @@ li.list-links-normal {
   background: $gray-lighter;
   border-radius: $base-radius;
   padding: ($spacing-unit / 2);
+}
+
+.headline {
+  font-size: 18px;
 }
 
 

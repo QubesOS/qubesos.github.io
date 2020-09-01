@@ -1,0 +1,19 @@
+<h2 class="text-center outer-heading">
+  Recent News
+</h2>
+<div class="white-box">
+  <ul class="list-unstyled remove-bottom">
+    {% for post in site.posts limit:7 %}
+    <li class="list-links">
+      <a class="black-link headline" href="{{ post.url }}">
+        {{ post.title }}
+        {% for category in post.categories %}
+        {% if site.allowed_categories contains category %}
+          <span class="detail"> Posted in {{ category | capitalize }} on {{ post.date | date: "%Y-%m-%d" }}</span>
+        {% endif %}
+        {% endfor %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

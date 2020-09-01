@@ -58,10 +58,12 @@
     .page-content-left {
       border-right: 1px solid $gray-light;
     }
-    .page-content-right {
+    .page-content-right,
+    .news-widget-side {
       border-left: 1px solid $gray-light;
     }
     .page-source-bottom,
+    .news-widget-bottom,
     .toc-button-spacer,
     #toc-button {
       display: none;
@@ -73,10 +75,12 @@
   }
 
   @media (max-width: $screen-md-min) {
-    .page-source-side {
+    .page-source-side,
+    .news-widget-side {
       display: none;
     }
-    .page-source-bottom {
+    .page-source-bottom,
+    .news-widget-bottom {
       padding-top: 14px;
       border-top: 1px solid $gray-light;
     }

@@ -108,16 +108,18 @@ $on-laptop-wide:   1150px;
         "docs";
 
 // Global small screen fix
-@media (max-width: $screen-sm-min) {
+@media (max-width: $container-sm) {
     .container {
-      padding: 0 !important;
-      margin: 0 5% !important;
+      padding: 0 8% !important;
+      margin: 0 !important;
       max-width: 100% !important;
       overflow-x: hidden !important;
     }
 
     body {
       padding: 0 !important;
+      margin: 0 !important;
+      max-width: 100% !important;
       overflow-x: hidden !important;
     }
 
@@ -175,7 +177,7 @@ article tr.center {
     }
 }
 
-// Custom - Side Bar
+// Custom - Buttons
 .page-source-side,
 .download-content {
   .btn {

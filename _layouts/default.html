@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
-    <body>
-      {% include header.html %}
-      <div class="container">
-        <h1 class="more-top add-left outer-heading">
-          <a href="{{ page.permalink }}" class="heading-link">
-          {% for section in site.data.architecture %}
-            {% if section.url == page.permalink %}
-            <i class="fa {{ section.icon }}"></i>
-            {% else %}
-            {% for sub in section.sub-pages %}
-            {% if sub.url == page.permalink %}
-            <i class="fa {{ sub.icon }}"></i>
-            {% endif %}
-            {% endfor %}
-            {% endif %}
-          {% endfor %}
-          {{ page.title }}
-          </a>
-        </h1>
-        <div class="white-box more-bottom page-content">
-        {{ content }}
-        </div>
-        {% include footer.html %}
-        <script src="/js/anchor.min.js"></script>
-        <script>
-          anchors.add();
-        </script>
-      </div>
-  </body>
+{% include head.html %}
+<body>
+{% include header.html %}
+<div class="container">
+  <h1 class="more-top add-left outer-heading">
+    <a href="{{ page.permalink }}" class="heading-link">
+    {% for section in site.data.architecture %}
+      {% if section.url == page.permalink %}
+      <i class="fa {{ section.icon }}"></i>
+      {% else %}
+      {% for sub in section.sub-pages %}
+      {% if sub.url == page.permalink %}
+      <i class="fa {{ sub.icon }}"></i>
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+    {% endfor %}
+    {{ page.title }}
+    </a>
+  </h1>
+  <div class="white-box more-bottom page-content">
+    {{ content }}
+  </div>
+  {% include footer.html %}
+  <script src="/js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</div>
+</body>
 </html>

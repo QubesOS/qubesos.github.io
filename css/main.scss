@@ -185,3 +185,9 @@ article tr.center {
   }
 }
 
+// Custom - Sticky external documentation warning
+.alert-sticky {
+  position: sticky;
+  z-index: 1;
+  top: 10px;
+}

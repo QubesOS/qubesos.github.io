@@ -61,7 +61,7 @@
     url: /doc/#introduction
   - title: Project Security
     url: /doc/#project-security
-  - title: Choosing Your Hardware
+  - title: Choosing Hardware
     url: /doc/#choosing-your-hardware
   - title: Installing & Upgrading
     url: /doc/#downloading-installing-and-upgrading-qubes
@@ -71,7 +71,7 @@
     url: /doc/#managing-operating-systems-within-qubes
   - title: Security in Qubes
     url: /doc/#security-in-qubes
-  - title: Advanced Configuration
+  - title: Advanced Config
     url: /doc/#advanced-configuration
   - title: Developer Docs
     url: /doc/#developer-documentation

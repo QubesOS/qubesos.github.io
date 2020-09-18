@@ -160,17 +160,20 @@ redirect_from:
     {% for verifier in source.verifiers %}
     {% if verifier[0] == "hash" %}
     <a class="btn btn-default btn-block" href="{{ verifier[1] }}"
-       title="Cryptographic hash values for {{ release_name }}">
+       title="Cryptographic hash values for {{ release_name }}.
+       Right-click → Save link as...">
       <i class="fa fa-fw fa-download"></i>Cryptographic hash values
     </a>
     {% elsif verifier[0] == "sig" %}
     <a class="btn btn-default btn-block" href="{{ verifier[1] }}"
-       title="Detached PGP signature file for {{ release_name }}">
+       title="Detached PGP signature file for {{ release_name }}
+       Right-click → Save link as...">
       <i class="fa fa-fw fa-download"></i>Detached PGP signature
     </a>
     {% elsif verifier[0] == "key" %}
     <a class="btn btn-default btn-block" href="{{ verifier[1] }}"
-       title="PGP Release Signing Key for {{ release_name }}">
+       title="PGP Release Signing Key for {{ release_name }}
+       Right-click → Save link as...">
       <i class="fa fa-fw fa-download"></i>Qubes Release Signing Key
     </a>
     {% endif %}

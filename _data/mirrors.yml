@@ -23,6 +23,12 @@
    urls:
    - url: https://mirrors.dotsrc.org/qubes/
 
+ - organization: Hosthink
+   org_url: https://www.hosthink.net/
+   location: Finland
+   urls:
+   - url: https://mirror-2.hosthink.net/qubes
+
  - organization: Universal Layer
    org_url: https://ulayer.net/
    location: Finland

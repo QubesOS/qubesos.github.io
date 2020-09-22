@@ -1349,6 +1349,55 @@
   date: 2020-07-16
   affected: no
 
+- xsa: 333
+  date: 2020-09-22
+  affected: no
+
+- xsa: 334
+  date: 2020-09-22
+  affected: no
+
 - xsa: 335
   date: 2020-08-24
   affected: no
+
+- xsa: 336
+  date: 2020-09-22
+  affected: no
+
+- xsa: 337
+  date: 2020-09-22
+  affected: yes
+  qsb: 059-2020
+
+- xsa: 338
+  date: 2020-09-22
+  affected: no
+
+- xsa: 339
+  date: 2020-09-22
+  affected: no
+
+- xsa: 340
+  date: 2020-09-22
+  affected: yes
+  qsb: 059-2020
+
+- xsa: 341
+  date: 2020-09-08
+  affected: no
+  unused: yes
+
+- xsa: 342
+  date: 2020-09-22
+  affected: no
+
+- xsa: 343
+  date: 2020-09-22
+  affected: yes
+  qsb: 059-2020
+
+- xsa: 344
+  date: 2020-09-22
+  affected: no
+

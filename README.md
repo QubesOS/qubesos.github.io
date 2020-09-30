@@ -14,7 +14,7 @@ supports both Linux and Windows virtual environments.
 Your support counts!
 --------------------
 
-Qubes OS is free and open-source software. If you rely on Qubes for secure
+Qubes OS is a free and open-source software. If you rely on Qubes for secure
 computing in your work or personal life, or see the value in our efforts, please
 consider making a [donation](https://www.qubes-os.org/donate/) today.
 
@@ -130,7 +130,7 @@ Deprecated Documentation
 ------------------------
 
  - [qubes-os.org-3.2-EOL.zip] contains the state of the Qubes website when
-   [Qubes OS 3.2 reached EOL]. All you need to browse it is a web browser.
+   [Qubes OS 3.2 reached EOL]. All you need to browse is a web browser.
  - Here is the state of this repo and all submodules when [Qubes OS 3.2 reached
    EOL]:
    - https://github.com/QubesOS/qubesos.github.io/tree/3.2-EOL

@@ -57,7 +57,7 @@ content:
    version of `qubes-hcl-report`)
  - `qubes-posts` (news and blog posts)
 
-Instructions
+Important Instructions
 ------------
 
 ### Podman Compose ###
@@ -81,7 +81,7 @@ Instructions
 
         http://127.0.0.1:4000/
 
-### Notes ###
+### Important Notes ###
 
  - To update the submodules, use `git submodule foreach git pull --tags`.
  - For troubleshooting with RubyGems, see: <http://guides.rubygems.org/>
@@ -105,7 +105,7 @@ Instructions
 
         exit
 
-Documentation Guidelines
+All Documentation Guidelines
 ------------------------
 
 Our [Documentation Guidelines] include:

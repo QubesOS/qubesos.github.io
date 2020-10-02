@@ -45,7 +45,7 @@ consider making a [donation](https://www.qubes-os.org/donate/) today.
 
 --------------------------------------------------------------------------------
 
-Contents
+*Contents
 --------
 
 This repository consists of a [Jekyll] site and several Git submodules for
@@ -57,10 +57,10 @@ content:
    version of `qubes-hcl-report`)
  - `qubes-posts` (news and blog posts)
 
-Instructions
+*steps for podman compose
 ------------
 
-### Podman Compose ###
+* Podman Compose *
 
 1. Install `podman` and `podman-compose`.
 
@@ -81,7 +81,7 @@ Instructions
 
         http://127.0.0.1:4000/
 
-### Notes ###
+* Notes *
 
  - To update the submodules, use `git submodule foreach git pull --tags`.
  - For troubleshooting with RubyGems, see: <http://guides.rubygems.org/>
@@ -105,7 +105,7 @@ Instructions
 
         exit
 
-Documentation Guidelines
+*Documentation Guidelines*
 ------------------------
 
 Our [Documentation Guidelines] include:
@@ -118,7 +118,7 @@ Our [Documentation Guidelines] include:
 
 Please carefully read these guidelines before submitting a pull request.
 
-### Dependencies & Third Party Docs ###
+*Dependencies & Third Party Docs *
 
  - [Jekyll Documentation] - template rendering engine
  - [Bootstrap 3] - styling and CSS structure

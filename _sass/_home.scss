@@ -35,6 +35,9 @@ div.home-banner {
     padding-top: $spacing-unit;
     width: 400px;
     margin: 0px auto;
+    small {
+      color: #dbe8ff;
+    }
   }
 }
 

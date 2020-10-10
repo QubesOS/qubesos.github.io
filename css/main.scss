@@ -191,3 +191,17 @@ article tr.center {
   z-index: 1;
   top: 10px;
 }
+
+// Custom - Nina's "Donate" button colors
+#nav-button-donate {
+  a {
+    color: #3874d8;
+    background-color: #dbe8ff;
+    &:hover,
+    &:focus,
+    &.active {
+      color: #ffffff;
+      background-color: #3874d8;
+    }
+  }
+}

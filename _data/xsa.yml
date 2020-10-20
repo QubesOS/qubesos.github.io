@@ -1185,6 +1185,10 @@
   affected: yes
   qsb: 048-2019
 
+- xsa: 286
+  date: 2020-10-20
+  affected: no
+
 - xsa: 287
   date: 2019-03-05
   affected: yes
@@ -1349,6 +1353,14 @@
   date: 2020-07-16
   affected: no
 
+- xsa: 331
+  date: 2020-10-20
+  affected: no
+
+- xsa: 332
+  date: 2020-10-20
+  affected: no
+
 - xsa: 333
   date: 2020-09-22
   affected: no
@@ -1401,3 +1413,16 @@
   date: 2020-09-22
   affected: no
 
+- xsa: 345
+  date: 2020-10-20
+  affected: no
+
+- xsa: 346
+  date: 2020-10-20
+  affected: yes
+  qsb: 060-2020
+
+- xsa: 347
+  date: 2020-10-20
+  affected: yes
+  qsb: 060-2020

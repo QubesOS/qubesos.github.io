@@ -233,4 +233,7 @@
 - qsb: "059"
   title: "Multiple Xen issues (XSA-337, XSA-340, XSA-343)"
   date: 2020-09-22
-  
+
+- qsb: "060"
+  title: "Multiple Xen issues (XSA-345, XSA-346, XSA-347)"
+  date: 2020-10-20

@@ -237,3 +237,7 @@
 - qsb: "060"
   title: "Multiple Xen issues (XSA-345, XSA-346, XSA-347)"
   date: 2020-10-20
+
+- qsb: "061"
+  title: "Information leak via power sidechannel (XSA-351)"
+  date: 2020-11-10

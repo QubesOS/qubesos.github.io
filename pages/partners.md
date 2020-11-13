@@ -200,7 +200,7 @@ We are grateful for their support!
       <td>
         <h3 data-anchor-id="nlnet-foundation">NLnet Foundation</h3>
         <p><a href="https://nlnet.nl">NLnet Foundation</a> is a recognized philanthropic nonprofit foundation based in the Netherlands and whose stated mission is "to promote the exchange of electronic information and all that is related or beneficial to that purpose."</p>
-        <p>In 2019, the NLnet Foundation [provided a grant](https://nlnet.nl/project/QubesAccessible/) to improve the usability of Qubes OS by: (1) reviewing and integrating already existing community-created usability improvements, (2) implementing a localization strategy for the OS and its documentation, and (3) creating a holistic approach for improved accessibility.</p>
+        <p>In 2019, the NLnet Foundation <a href="https://nlnet.nl/project/QubesAccessible/">provided a grant</a> to improve the usability of Qubes OS by: (1) reviewing and integrating already existing community-created usability improvements, (2) implementing a localization strategy for the OS and its documentation, and (3) creating a holistic approach for improved accessibility.</p>
         <p>In 2016, the NLnet Foundation provided a grant to the Qubes project to support improvements in automated build processes, Debian template packaging, networking and privacy, and hardware compatibility.</p>
       </td>
     </tr>

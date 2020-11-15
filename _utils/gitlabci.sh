@@ -4,6 +4,10 @@ set -x
 set -e
 set -o pipefail
 
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
+export PATH=$HOME/bin:$PATH
+
 is_pr() {
     # 1: Gitlab as primary instance of QubesOS
     # 2: Github to GitlabCI (@fepitre's tools)

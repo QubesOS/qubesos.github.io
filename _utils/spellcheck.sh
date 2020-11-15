@@ -16,15 +16,6 @@ vtime() {
     fi
 }
 
-if command -v hunspell > /dev/null; then
-    check_words() { hunspell -l; }
-elif command -v aspell > /dev/null; then
-    check_words() { aspell | grep '^[#&]' | cut -d' ' -f2; }
-else
-    echo "${0##*/}: No spell checker installed. Need hunspell or aspell." >&2
-    exit 1
-fi
-
 extract_words() {
     pandoc -tjson "$@" | jq -r '
     # will be builtin in a future version of jq. is already in master
@@ -148,6 +139,22 @@ else
 fi
 v "Using $d as work dir"
 
+if command -v hunspell > /dev/null; then
+    # convert en_US dictionary to UTF-8
+    dict_dir="$d/dict"
+    mkdir -p "$dict_dir"
+    dict=$(hunspell -D 2>&1 | grep '/en_US$')
+    cp -r "$dict".* "$dict_dir/"
+    sed -i 's/^SET ISO8859-1/SET UTF-8/' $dict_dir/en_US.aff
+    check_words() { hunspell -l -d "$dict_dir/en_US"; }
+elif command -v aspell > /dev/null; then
+    check_words() { aspell | grep '^[#&]' | cut -d' ' -f2; }
+else
+    echo "${0##*/}: No spell checker installed. Need hunspell or aspell." >&2
+    exit 1
+fi
+
+
 repo="$(dirname "$(dirname "$(readlink -f "$0")")")"
 
 case $# in
@@ -156,14 +163,14 @@ case $# in
         echo "${0##*/}: zero-argument form requires a built site in _site" >&2
         usage
     fi
-    vtime check_site "$repo/_site" "$d"
+    vtime check_site "$repo/_site" "$d/work"
     v
     show_in_src "$repo" < "$d/suspects.flat"
     ;;
 1)
-    vtime check_site "$1" "$d"
+    vtime check_site "$1" "$d/work"
     v
-    show_in_src "$repo" < "$d/suspects.flat"
+    show_in_src "$repo" < "$d/work/suspects.flat"
     ;;
 2)
     vtime check_site "$1" "$d/old"

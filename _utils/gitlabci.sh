@@ -4,6 +4,8 @@ set -x
 set -e
 set -o pipefail
 
+echo -e "section_start:$(date +%s):prepare[collapsed=true]\r\e[0KSetup"
+
 export LC_ALL=C.UTF-8
 export LANG=C.UTF-8
 export PATH=$HOME/bin:$PATH
@@ -44,8 +46,10 @@ done
 
 git submodule update --init --recursive
 
+echo -e "section_end:$(date +%s):prepare\r\e[0K"
+
 if is_pr; then
-    echo "building original site to compare"
+    echo -e "section_start:$(date +%s):build_orig\r\e[0KBuilding original site to compare"
     # exact value doesn't matter, but needs to be the same as in the other call
     # below
     echo 'time: 2020-01-01 00:00:00 +0100' >> _config.yml
@@ -54,8 +58,10 @@ if is_pr; then
 
     echo moving old site
     mv _site ~/old_site
+    echo -e "section_end:$(date +%s):build_orig\r\e[0K"
 fi
 
+echo -e "section_start:$(date +%s):build_current\r\e[0KBuilding site"
 if [ "$repo_name" != "qubesos.github.io" ]; then
     sub_name=$(git config --file .gitmodules --list | grep -m1 -F -- "$repo_name" | cut -d. -f2)
     sub_path=$(git config --file .gitmodules --get -- "submodule.${sub_name}.path")
@@ -69,11 +75,14 @@ echo 'time: 2020-01-01 00:00:00 +0100' >> _config.yml
 bundle exec jekyll build
 git checkout _config.yml
 
+echo -e "section_end:$(date +%s):build_current\r\e[0K"
+
 all_ok=true
 
 if [ -d ~/old_site ]; then
-    echo diffing
+    echo -e "section_start:$(date +%s):diff\r\e[0Kdiffing"
     diff -ur ~/old_site ./_site || true
+    echo -e "section_end:$(date +%s):diff\r\e[0K"
 
     echo
     echo "Spelling report for $CI_COMMIT_SHA:"

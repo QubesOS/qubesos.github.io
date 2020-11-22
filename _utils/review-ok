@@ -1,0 +1,43 @@
+#!/bin/bash
+  
+if [ -z "$1" ]; then
+    echo "usage: $0 origin/pr/NUMBER [message]" >&2
+    exit 2
+fi
+
+GNUPG=${GNUPG:-gpg}
+
+rev="$1"
+extra_msg="$2"
+
+sha=$(git rev-parse "$rev")
+
+num=${rev##*/}
+
+token=$(grep _token ~/.config/hub|cut -f 2 -d :)
+
+repo=$(git config remote.origin.url|
+        sed -e 's#[^:]*://[^/]*/##;s#git@github.com:##')
+repo=${repo%.git}
+
+review_msg="Approved as of $sha"
+if [ -n "$extra_msg" ]; then
+    review_msg="$extra_msg
+$review_msg"
+fi
+review_msg='```\n
+'"$(echo "$review_msg" | $GNUPG --clearsign|sed -e 's:$:\\n:')"'
+```'
+
+curl -o /dev/null -f -d @- -H "Authorization: token $token" https://api.github.com/repos/$repo/pulls/$num/reviews <<EOF
+{ "commit_id": "$sha",
+    "body": "$review_msg",
+    "event": "APPROVE",
+    "comments": []
+}
+EOF
+if [ $? -ne 0 ]; then
+    echo fail
+else
+    echo ok
+fi

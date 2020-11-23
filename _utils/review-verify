@@ -30,7 +30,7 @@ curl -sf https://api.github.com/repos/$repo/pulls/$num/reviews | jq -r '.[-1].bo
 approved_sha=
 
 # verify signed review
-$GNUPG --verify --output="$tmpdir/verified" --status-fd=3 3>"$tmpdir/gpg-status" <"$tmpdir/unverified" 2>/dev/null
+$GNUPG --verify --output "$tmpdir/verified" --status-fd 3 3>"$tmpdir/gpg-status" <"$tmpdir/unverified" 2>/dev/null
 if [ $(grep -c "^\[GNUPG:\] NEWSIG" "$tmpdir/gpg-status") -eq 1 ] && \
        grep -q '^\[GNUPG:\] TRUST_\(FULLY\|ULTIMATE\)' "$tmpdir/gpg-status"; then
     # verified

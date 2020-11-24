@@ -241,3 +241,7 @@
 - qsb: "061"
   title: "Information leak via power sidechannel (XSA-351)"
   date: 2020-11-10
+
+- qsb: "062"
+  title: "Stack corruption from XSA-346 change (XSA-355)"
+  date: 2020-11-24

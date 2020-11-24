@@ -1431,3 +1431,9 @@
   date: 2020-11-10
   affected: yes
   qsb: 061-2020
+
+- xsa: 355
+  date: 2020-11-24
+  affected: yes
+  qsb: 062-2020
+

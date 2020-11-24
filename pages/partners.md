@@ -166,6 +166,17 @@ We are grateful for their support!
         While Whonix is an independent Linux distribution, it has been integrated into Qubes OS as a system called <a href="/doc/whonix/">Qubes-Whonix</a>.</p>
       </td>
     </tr>
+    <tr id="fosshost">
+      <td>
+        <a href="https://fosshost.org/">
+          <img src="/attachment/site/fosshost-logo.png">
+        </a>
+      </td>
+      <td>
+        <h3 data-anchor-id="fosshost">Fosshost</h3>
+        <p><a href="https://fosshost.org/">Fosshost.org</a> is a non-profit organisation that provides hosting services to the open source community. Many projects benefit from their services including GNOME, KDE, Debian and FSFE.</p>
+      </td>
+    </tr>
     <tr id="open-technology-fund">
       <td>
         <a href="https://www.opentechfund.org/">

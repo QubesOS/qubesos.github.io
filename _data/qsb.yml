@@ -245,3 +245,7 @@
 - qsb: "062"
   title: "Stack corruption from XSA-346 change (XSA-355)"
   date: 2020-11-24
+
+- qsb: "063"
+  title: "Multiple Xen issues (XSA-115, XSA-325, XSA-350)"
+  date: 2020-12-15

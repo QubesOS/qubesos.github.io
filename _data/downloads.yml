@@ -306,7 +306,7 @@ releases:
         type: Torrent
         filename: Qubes-R3.1-x86_64.iso.torrent
         size: 95.6 kB (95,639 bytes)
-        url: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R3.1-x86_64.torrent
+        url: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso.torrent
         verifiers:
           hash: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso.DIGESTS
           sig: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R3.1-x86_64.iso.asc

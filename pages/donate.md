@@ -119,7 +119,7 @@ However, if you or your organization has relevant knowledge, experience, leads, 
 
 The donation address can be verified via the [Qubes Security Pack][Qubes Security Pack], specifically in the [fund directory][fund].
 We provide [detailed instructions for verifying the digital signatures][verify].
-You can also view the address on [blockexplorer.com] and [blockchain.info].
+You can also view the address on [blockchain.info].
 
 The Qubes Project maintains a [decentralized Bitcoin fund using a multi-signature wallet][announcement].
 This means that no single person is capable of spending these funds.
@@ -150,7 +150,6 @@ Visit our [introduction page to Qubes][intro page] or watch a [video overview of
 [Qubes Security Pack]: /doc/security-pack/
 [fund]: https://github.com/QubesOS/qubes-secpack/tree/master/fund
 [verify]: /security/pack/#how-to-obtain-verify-and-read
-[blockexplorer.com]: https://blockexplorer.com/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
 [blockchain.info]: https://blockchain.info/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
 [announcement]: /news/2016/07/13/qubes-distributed-fund/
 [Merchandise]: /merchandise/

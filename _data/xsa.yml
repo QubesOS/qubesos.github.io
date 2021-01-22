@@ -1495,3 +1495,7 @@
 - xsa: 359
   date: 2020-12-15
   affected: no
+
+- xsa: 360
+  date: 2021-01-21
+  affected: no

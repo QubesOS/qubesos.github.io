@@ -71,6 +71,14 @@
    urls:
    - url: http://ftp.icm.edu.pl/pub/os/qubes/
 
+ - organization: krmir NPO
+   org_url: https://krmir.org/
+   location: South Korea
+   urls:
+   - url: https://mirror.krmir.org/qubes
+   - url: ftp://mirror.krmir.org/qubes
+   - url: rsync://mirror.krmir.org/qubes
+
  - organization: ACC, Umeå University
    org_url: http://www.acc.umu.se/
    location: Sweden

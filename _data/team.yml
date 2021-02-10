@@ -54,7 +54,7 @@
 
 - name: Frédéric Pierret
   email: frederic.pierret@qubes-os.org
-  role: General packaging; Fedora, Debian, CentOS, Gentoo templates maintainer; contrib packages maintainer
+  role: General packaging; Fedora, Debian, CentOS, and Gentoo template maintainer; contributed package maintainer
   type: core
   picture: team-frederic.jpg
   fingerprint: 9FA6 4B92 F95E 706B F28E  2CA6 4840 10B5 CDC5 76E2

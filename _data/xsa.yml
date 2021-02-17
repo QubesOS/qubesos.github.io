@@ -1499,3 +1499,24 @@
 - xsa: 360
   date: 2021-01-21
   affected: no
+
+- xsa: 361
+  date: 2021-02-16
+  affected: no
+
+- xsa: 362
+  date: 2021-02-16
+  affected: no
+
+- xsa: 363
+  date: 2021-02-16
+  affected: no
+
+- xsa: 364
+  date: 2021-02-16
+  affected: no
+
+- xsa: 365
+  date: 2021-02-16
+  affected: yes
+  qsb: 064-2021

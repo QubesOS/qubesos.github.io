@@ -249,3 +249,7 @@
 - qsb: "063"
   title: "Multiple Xen issues (XSA-115, XSA-325, XSA-350)"
   date: 2020-12-15
+
+- qsb: "064"
+  title: "Linux: error handling issues in blkback's grant mapping (XSA-365)"
+  date: 2021-02-16

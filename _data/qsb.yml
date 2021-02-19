@@ -253,3 +253,7 @@
 - qsb: "064"
   title: "Linux: error handling issues in blkback's grant mapping (XSA-365)"
   date: 2021-02-16
+
+- qsb: "065"
+  title: "missed flush in XSA-321 backport (XSA-366)"
+  date: 2021-02-18

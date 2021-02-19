@@ -1520,3 +1520,8 @@
   date: 2021-02-16
   affected: yes
   qsb: 064-2021
+
+- xsa: 366
+  date: 2021-02-18
+  affected: yes
+  qsb: 065-2021

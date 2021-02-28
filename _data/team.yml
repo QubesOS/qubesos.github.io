@@ -84,6 +84,14 @@
   fingerprint: A9BC 4019 D695 AF0D D65D F726 2CA7 C96A DBDF DC5B
   github: ninavizz
 
+- name: Demi Marie Obenour
+  email: demi@invisiblethingslab.com
+  role: "Software developer: Rust, Python, package management, GUI, and storage"
+  type: core
+  picture: team-demi.jpg
+  fingerprint: 7687 4D9F 1336 BA22 5907 1C71 B288 B55F FF9C 22C1
+  github: DemiMarie
+
 # Emeritus
 
 - name: Joanna Rutkowska
@@ -260,4 +268,3 @@
   role: HCL page maintenance, HCL scripts
   type: community
   fingerprint: 9AF3 388A 533E 73AD 1107  7E55 617D 7048 8F0E 7BC6
-

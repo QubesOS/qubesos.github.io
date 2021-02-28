@@ -86,7 +86,7 @@
 
 - name: Demi Marie Obenour
   email: demi@invisiblethingslab.com
-  role: Software developer: Rust, Python, package management, GUI, and storage
+  role: "Software developer: Rust, Python, package management, GUI, and storage"
   type: core
   picture: team-demi.jpg
   fingerprint: 7687 4D9F 1336 BA22 5907 1C71 B288 B55F FF9C 22C1

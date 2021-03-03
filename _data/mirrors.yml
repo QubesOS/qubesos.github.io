@@ -29,12 +29,6 @@
    urls:
    - url: https://mirror-2.hosthink.net/qubes
 
- - organization: Universal Layer
-   org_url: https://ulayer.net/
-   location: Finland
-   urls:
-   - url: https://mirrors.ulayer.net/qubes
-
  - organization: Linux Users' Group of Durgapur
    org_url: https://dgplug.org/
    location: India

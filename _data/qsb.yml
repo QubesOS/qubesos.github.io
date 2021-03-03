@@ -255,5 +255,9 @@
   date: 2021-02-16
 
 - qsb: "065"
-  title: "missed flush in XSA-321 backport (XSA-366)"
+  title: "Missed flush in XSA-321 backport (XSA-366)"
   date: 2021-02-18
+
+- qsb: "066"
+  title: "XML injection through libvirt domain configuration"
+  date: 2021-03-03

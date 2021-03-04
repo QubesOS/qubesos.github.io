@@ -1,5 +1,16 @@
+{% if page.lang == nil or page.lang == "en" %}
+    {% assign iincludes = site.data.includes %}
+{% else %}
+    {% assign iincludes = site.data.translation[page.lang].includes %}
+    {% if iincludes == nil or iincludes.size == 0 %}
+        {% assign iincludes = site.data.includes %}
+    {% endif %}
+{% endif %}
+
+{% assign news = iincludes | where_exp: "item", "item.section == 'news-heading'" | first %}
+
 <h2 class="text-center outer-heading">
-  Recent News
+  {{ news.title }}
 </h2>
 <div class="white-box">
   <ul class="list-unstyled remove-bottom">

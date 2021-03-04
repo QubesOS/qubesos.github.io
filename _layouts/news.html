@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
-<body>
-{% include header.html %}
-<div class="container">
-  {% include news-heading.html %}
-  <div class="more-bottom white-box page-content">
-    <div class="row">
-      <div class="col-lg-12">
-        <article class="post-content">
-          {{ content }}
-        </article>
-      </div>
-    </div>
+<html>
+  {% include head.html %}
+    <body>
+      {% include header.html %}
+      <div class="container">
+      {% include news-heading.html %}
+
+        <div class="more-bottom white-box page-content">
+          <div class="row">
+            <div class="col-lg-12">
+              <article class="post-content">
+                {% assign perm_last_part = page.url | split: '/' | last | lstrip %}
+                {% if perm_last_part == "news"  %}
+                  {% include news.html %}
+                {% endif %}
+                {% if perm_last_part == "categories"  %}
+                  {% include catnews.html %}
+                {% endif %}
+
+                {{ content }}
+              </article>
+            </div>
+          </div>
   </div>
   {% include footer.html %}
 </div>

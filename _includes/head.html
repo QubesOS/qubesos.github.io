@@ -2,7 +2,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="onion-location" content="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion{{ page.url | replace:'index.html','' }}" />
 
   <title>
     {% if page.title and page.title != site.title and page.layout != 'home' %}
@@ -13,6 +12,9 @@
       {{ site.title }}
     {% endif %}
   </title>
+  {% unless page.lang == "en" %}
+    {% include doc-translated-warning.html %}
+  {% endunless %}
   {% if page.layout == 'doc' or
         page.layout == 'post' or
         page.layout == 'security' or

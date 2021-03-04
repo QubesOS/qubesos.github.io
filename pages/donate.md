@@ -1,11 +1,13 @@
 ---
+lang: en
 layout: default
-title: Donate to Qubes
 permalink: /donate/
 redirect_from:
 - /en/donate/
 - /doc/Donations/
 - /wiki/Donations/
+ref: 5
+title: Donate to Qubes
 ---
 
 Your donation directly supports the continued development of Qubes OS.
@@ -38,19 +40,17 @@ Thank you!
 
 Are you an organization, company, or individual who believes in our vision and wants to make an impact on our efforts? [Become a Qubes Partner][Qubes Partners page] by giving a significant financial contribution.
 
-
 ## Help us spread the word
 
 If you are a Qubes OS user or support our cause, help us expand our community by introducing Qubes to your circle, including:
 
- - Privacy advocates
- - IT companies
- - Individuals who value and appreciate privacy in general
- - Bitcoin companies
- - Sysadmins and other professionals who work with security
+- Privacy advocates
+- IT companies
+- Individuals who value and appreciate privacy in general
+- Bitcoin companies
+- Sysadmins and other professionals who work with security
 
 There are also [many more ways to contribute][contributing]!
-
 
 ## FAQs on donating
 
@@ -134,13 +134,11 @@ Qubes OS is a free and open source operating system that focuses on security and
 Its architecture is built to enable you to define and visualize different security environments on your computer and control how they interact, helping you to get your work done safely.
 Visit our [introduction page to Qubes][intro page] or watch a [video overview of the system][video page] to learn more.
 
-
 ## Thank you!
 
 <script src="https://opencollective.com/qubes-os/banner.js"></script>
 
 <noscript><object type="image/svg+xml" data="https://opencollective.com/qubes-os/tiers/supporters.svg?avatarHeight=60&width=600"></object></noscript>
-
 
 [open-collective-faq]: https://opencollective.com/faq
 [Open Collective]: https://opencollective.com/qubes-os

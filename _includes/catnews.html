@@ -1,8 +1,13 @@
----
-layout: news
-title: News Categories
-permalink: /news/categories/
----
+{% if page.lang == nil or page.lang == "en" %}
+        {% assign inc = site.data.includes %}
+{% else %}
+        {% assign inc = site.data.translation[page.lang].includes %}
+        {% if inc == nil or iinc.size == 0 %}
+                {% assign inc = site.data.includes %}
+        {% endif %}
+{% endif %}
+
+{% assign cat = inc | where_exp: "item", "item.section == 'catnews'" | first %}
 
 {% assign raw_categories = "" %}
   {% for post in site.posts %}
@@ -22,9 +27,9 @@ permalink: /news/categories/
     {% endif %}
   {% endfor %}
 
-<h1>News by Category</h1>
+<h1>{{ cat.htmlsections[0].title }}</h1>
 <p>
-  <a href="/news/"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back to main News page</a>
+<a href="{{ cat.htmlsections[1].url }}"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>{{ cat.htmlsections[1].title }}</a>
 </p>
 {% for category in categories %}
 <a href="#{{ category | slugify }}" class="btn btn-sm btn-primary"><i class="fa fa-tag" aria-hidden="true"></i> {{ category | capitalize }}</a>
@@ -39,3 +44,4 @@ permalink: /news/categories/
   {% endfor %}
 </ul>
 {% endfor %}
+

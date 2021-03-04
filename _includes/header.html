@@ -8,7 +8,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    {% assign langmenu = true %}
+    <!-- disable language switcher for now -->
+    {% assign langmenu = false %}
     {% if page.layout == nil or page.collection == 'posts' %}
       <!-- no translation for news -->
       {% assign langmenu = false %}
@@ -34,6 +35,7 @@
           {% endfor %}
         </div>
       </div>
+    {% endif %}
       <a class="page-link" href="/">
         <img src="/attachment/icons/128x128/apps/qubes-logo-icon.png" width="44" height="44" alt="Qubes OS Project">
         <span><strong>Qubes</strong> OS</span>
@@ -41,11 +43,12 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav nav-justified">
-        {% for section in site.data.architecture %}
+        {% for section in archies %}
         <li id="nav-button-{{ section.title | slugify }}">
           <a href="{{ section.url }}">{{ section.title }}</a>
         </li>
         {% endfor %}
+        {% if langmenu %}
         <li id="nav-button-lang-switch">
           <div class="langdropdown langdropdown-lg">
             <label class="langdropbtn-lg" for="langdropdown-toggle-lg"><img src="/attachment/icons/icons8-translation-64.png" width="24" height="24"></label>
@@ -57,8 +60,8 @@
             </div>
           </div>
         </li>
+        {% endif %}
       </ul>
-    {% endif %}
     </div><!--/.nav-collapse -->
   </div>
 </nav>

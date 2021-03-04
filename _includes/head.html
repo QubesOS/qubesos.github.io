@@ -12,7 +12,7 @@
       {{ site.title }}
     {% endif %}
   </title>
-  {% unless page.lang == "en" %}
+  {% unless page.lang == "en" or page.lang == nil %}
     {% include doc-translated-warning.html %}
   {% endunless %}
   {% if page.layout == 'doc' or

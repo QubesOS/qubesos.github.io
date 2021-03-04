@@ -109,7 +109,7 @@
 {% assign old = ls.releases | where_exp: "item", "item.r_version == 'old'" | first %}
 {% assign depr = ls.releases | where_exp: "item", "item.r_version == 'deprecated'" | first %}
 
-<div class="more-bottom">
+<hr class="more-bottom">
 {% for releasex in site.data.downloads.releases %}
   <div class="row">
     <div class="col-xs-12">
@@ -128,7 +128,7 @@
       {% if testing != true %}
         {{ testing }}
       {% else %}
-        {% for s in testing.snippets %}
+        {% for s in test.snippets %}
           {% if s.url != nil %}
             <a href="{{ s.url }}">{{ s.snippet }}</a>
           {% else %}
@@ -184,8 +184,6 @@
       {% endif %}
       </div>
    </div>
-{% endfor %}
-</div>
 
 
 {% assign code = down | where_exp: "item", "item.htmlsection == 'source-code'" | first %}
@@ -281,8 +279,8 @@
     </ul>
   </div>
 </div>
-
 <hr class="more-bottom">
+{% endfor %}
 
 {% assign dm = down | where_exp: "item", "item.htmlsection == 'download-mirrors'" | first %}
 

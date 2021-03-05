@@ -1525,3 +1525,11 @@
   date: 2021-02-18
   affected: yes
   qsb: 065-2021
+
+- xsa: 367
+  date: 2021-03-04
+  affected: no
+
+- xsa: 369
+  date: 2021-03-04
+  affected: no

@@ -82,9 +82,9 @@ echo -e "section_end:$(date +%s):build_current\r\e[0K"
 all_ok=true
 
 if [ -d ~/old_site ]; then
-    echo -e "section_start:$(date +%s):diff\r\e[0Kdiffing"
-    diff -ur ~/old_site ./_site || true
-    echo -e "section_end:$(date +%s):diff\r\e[0K"
+    #echo -e "section_start:$(date +%s):diff\r\e[0Kdiffing"
+    #diff -ur ~/old_site ./_site || true
+    #echo -e "section_end:$(date +%s):diff\r\e[0K"
 
     echo
     echo "Spelling report for $CI_COMMIT_SHA:"

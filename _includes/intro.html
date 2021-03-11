@@ -1,0 +1,27 @@
+<div class="more-bottom white-box page-content">
+{% if page.lang == nil or page.lang == "en" %}
+        {% assign iincludes = site.data.includes %}
+{% else %}
+        {% assign iincludes = site.data.translation[page.lang].includes %}
+        {% if iincludes == nil or iincludes.size == 0 %}
+                {% assign iincludes = site.data.includes %}
+        {% endif %}
+{% endif %}
+
+{% assign intros = iincludes | where_exp: "item", "item.section == 'intro'" | first %}
+
+{% assign vid = intros.links | where_exp: "item", "item.id == 1" | first %}
+{% assign scrn = intros.links | where_exp: "item", "item.id == 2" | first %}
+
+        <div class="row more-top">
+          <div class="col-lg-7 col-md-8 col-sm-9 col-xs-9">
+            <h1 class="outer-heading">
+              <i class="fa fa-flag"></i>
+              {{ page.title }}
+            </h1>
+          </div>
+          <div class="col-lg-5 col-md-4 col-sm-3 col-xs-3 text-right">
+            <a title="{{ vid.text }}" href="{{ vid.url }}" class="btn btn-primary"><i class="fa fa-play-circle fa-fw" aria-hidden="true"></i> {{ vid.text }}</a>
+            <a title="{{ scrn.text }}" href="{{ scrn.url }}" class="btn btn-primary"><i class="fa fa-photo fa-fw" aria-hidden="true"></i>{{ scrn.text }}</a>
+          </div>
+        </div>

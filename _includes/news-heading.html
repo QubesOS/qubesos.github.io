@@ -1,18 +1,33 @@
+{% if page.lang == nil or page.lang == "en" %}
+    {% assign iincludes = site.data.includes %}
+{% else %}
+    {% assign iincludes = site.data.translation[page.lang].includes %}
+    {% if iincludes == nil or iincludes.size == 0 %}
+        {% assign iincludes = site.data.includes %}
+    {% endif %}
+{% endif %}
+
+{% assign news = iincludes | where_exp: "item", "item.section == 'news-heading'" | first %}
+
+{% assign n = news.links | where_exp: "item", "item.id == 1" | first %}
+{% assign nc = news.links | where_exp: "item", "item.id == 2" | first %}
+{% assign s = news.links | where_exp: "item", "item.id == 3" | first %}
+
 <div class="row more-top">
   <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
     <h1 class="add-left outer-heading">
-      <a href="/news/" class="heading-link">
-        <i class="fa fa-newspaper-o"></i> News
+      <a href="{{ n.url }}" class="heading-link">
+        <i class="fa fa-newspaper-o"></i> {{ n.text }}
       </a>
     </h1>
   </div>
   <div class="col-lg-5 col-md-4 col-sm-5 col-xs-12">
     <h1 class="outer-heading">
-      <a href="/news/categories/" class="btn btn-default">
-        <i class="fa fa-fw fa-tag" aria-hidden="true"></i>Categories
+      <a href="{{ nc.url }}" class="btn btn-default">
+        <i class="fa fa-fw fa-tag" aria-hidden="true"></i>{{ nc.text }}
       </a>
-      <a href="/statistics/" class="btn btn-default">
-        <i class="fa fa-fw fa-bar-chart" aria-hidden="true"></i>Statistics
+      <a href="{{ s.url }}" class="btn btn-default">
+        <i class="fa fa-fw fa-bar-chart" aria-hidden="true"></i>{{ s.text }}
       </a>
     </h1>
   </div>
@@ -27,3 +42,4 @@
     </h1>
   </div>
 </div>
+

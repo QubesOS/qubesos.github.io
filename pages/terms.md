@@ -1,18 +1,19 @@
 ---
+lang: en
 layout: default
-title: Terms of Use
 permalink: /terms/
 redirect_from:
 - /en/terms/
 - /doc/terms/
 - /wiki/terms/
+ref: 9
+title: Terms of Use
 ---
 
 Terms of Use
 ============
 
 Revised: 2018-07-18
-
 
 Terms
 -----
@@ -27,11 +28,11 @@ The following services ("Services") are made available by the Qubes OS Project,
 Invisible Things Lab, and/or the members of either organization ("us", "we", or
 "our"):
 
- - The Qubes OS web site available at <https://www.qubes-os.org/>
- - The Qubes OS repositories available at <https://github.com/QubesOS>
- - The Qubes OS issue tracker available at <https://github.com/QubesOS/qubes-issues/issues>
- - The Qubes OS mailing lists described at <https://www.qubes-os.org/support/>
- - Emails, announcements, social media posts, and other forms of written or
+- The Qubes OS web site available at <https://www.qubes-os.org/>
+- The Qubes OS repositories available at <https://github.com/QubesOS>
+- The Qubes OS issue tracker available at <https://github.com/QubesOS/qubes-issues/issues>
+- The Qubes OS mailing lists described at <https://www.qubes-os.org/support/>
+- Emails, announcements, social media posts, and other forms of written or
    verbal communication from us pertaining to the Qubes OS Project.
 
 All of the software, code, documentation, notices, instructions, advice,
@@ -43,7 +44,6 @@ that you are responsible for compliance with any applicable local laws. If you
 do not agree with any of these Terms, you are prohibited from accessing and
 using both the Services and the Content. The Content is protected by applicable
 copyright and trademark law.
-
 
 Disclaimers and Limitations of Liability
 ----------------------------------------
@@ -80,7 +80,6 @@ LIKELY RESULTS, OR RELIABILITY OF THE SERVICES OR THE CONTENT. USE OF THE
 SERVICES AND/OR THE CONTENT IS AT THE RECIPIENT'S OWN RISK. YOU ASSUME TOTAL
 RESPONSIBILITY FOR YOUR USE OF THE SERVICES AND THE CONTENT.
 
-
 Accuracy of the Content
 -----------------------
 
@@ -88,7 +87,6 @@ The Content could include technical, typographical, or photographic errors. We
 do not warrant that any of the Content is accurate, complete, or current. We may
 make changes to the Content at any time without notice. However, we do not make
 any commitment to update the Content.
-
 
 Links
 -----
@@ -109,7 +107,6 @@ such linked web sites or services is at your own risk.
 We strongly advise you to read the terms and conditions and privacy policies of
 all third-party web sites or services you visit or use.
 
-
 Modifications
 -------------
 
@@ -118,4 +115,3 @@ at any time without notice. By accessing or using the Services or the Content
 after such a revision or replacement of the Terms has occurred, you agree to be
 bound by the revised, then-current Terms. If you do not agree to the new Terms,
 you are prohibited from using the Services and the Content.
-

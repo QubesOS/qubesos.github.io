@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+  {% include header.html %}
+  <div class="container">
+    {% include doc-heading.html %}
+
+    <div class="more-bottom white-box page-content">
+    {% if page.lang == nil or page.lang == "en" %}
+      {% assign doc_content = site.data.includes %}
+      {% assign lang = "" %}
+      {% assign indexed = site.data.index %}
+    {% else %}
+      {% assign lang = "/" | append: page.lang %}
+      {% assign doc_content = site.data.translation[page.lang].includes %}
+      {% if doc_content == nil or doc_content.size == 0 %}
+        {% assign doc_content = site.data.includes %}
+      {% endif %}
+      {% assign indexed = site.data.translation[page.lang].index %}
+      {% if indexed == nil or indexed.size == 0 %}
+        {% assign indexed = site.data.index %}
+      {% endif %}
+    {% endif %}
+
+    {% assign docs = doc_content | where_exp: "item", "item.section == 'doc-content'" | first %}
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="page-source-side remove-bottom">
+            <h3 class="remove-bottom">Contents</h3>
+          </div>
+          <a id="toc-button" data-toggle="collapse" href="#page-toc" class="btn btn-primary btn-block" role="button"> Contents </a>
+          <div id="page-toc" class="collapse in"></div>
+          <div class="page-source-side">
+            {% include doc-widget.html %}
+          </div>
+        </div>
+        <div class="toc-button-spacer more-bottom"></div>
+        <div class="col-xs-12 col-md-9 page-content-right">
+          <article id="doc-content" class="post-content">
+            <!-- BEGIN CONTENT-->
+            {% assign ind = indexed | where_exp: "item", "item.topic == nil" %}
+            <!-- this is needed to assure building the correct id of the link when there is a translation -->
+            {% assign index_english = site.data.index | where_exp: "item", "item.topic == nil" %}
+            {% assign topic = indexed | where_exp: "item", "item.topic != nil" | first %}
+            <h1 id="qubes-os-documentation">{{ topic.topic }}</h1>
+            <p> {{ topic.subtopic }}</p>
+            {% assign english_count = 0 %}
+
+            {% for item in ind %}
+              {% assign item_en = index_english[english_count] %}
+              {% assign english_count = english_count | plus: 1 %}
+
+              <a id="{{ item_en.title | downcase | replace: " ", "-" | replace: ",", ""}}"></a>
+              <h2 id="{{ item.title | downcase | replace: " ", "-" | replace: ",",""}}">{{ item.title }}</h2>
+              {% if item.subtitle %}
+                <p> {{ item.subtitle }} </p>
+              {% endif %}
+              {% assign subpages = item.sub-pages | where_exp: "item", "item.title == nil" %}
+              {% assign subpages2 = item.sub-pages | where_exp: "item", "item.title != nil" %}
+              {% assign subsubpages_en = item_en.sub-pages | where_exp: "item", "item.title != nil" %}
+              <ul>
+                {% for sub in subpages %}
+                <li> <a href="{{ sub.url }}">{{ sub.text }}</a></li>
+                {% endfor %}
+
+                {% assign sub_count = 0 %}
+                {% for sub2 in subpages2 %}
+                  {% assign sub_o2 = subsubpages_en[sub_count] %}
+                  {% assign sub_count = sub_count | plus: 1 %}
+
+                  {% if sub2.url == nil %}
+                    <a id="{{ sub_o2.title | downcase | replace: " ", "-" | replace: ",", "" }}"></a>
+                    <h3 id="{{ sub2.title | downcase | replace: " ", "-" | replace: ",","" }}">{{ sub2.title }}</h3>
+                  {% else %}
+                    <ul>
+                      <li><a href="{{ sub2.url }}">{{ sub2.title }}</a></li>
+                    </ul>
+                  {% endif %}
+                  {% assign subpages3 = sub2.sub-pages  %}
+                  <ul>
+                    {% for sub3 in subpages3 %}
+                      <li> <a href="{{ sub3.url }}">{{ sub3.text }}</a></li>
+                    {% endfor %}
+                  </ul>
+                {% endfor %}
+              </ul>
+            {% endfor %}
+            <!-- END CONTENT-->
+          </article>
+          <br>
+        </div>
+      </div>
+      <div class="page-source-bottom">
+        {% include doc-widget.html %}
+      </div>
+    </div>
+    {% include footer.html %}
+    <script src="/js/jquery.toc.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#doc-content').toc({
+        renderIn: '#page-toc',
+        anchorPrefix: 'tocAnchor-', // the default prefix used for generated TOC elements IDs
+        showAlways: true, //Show TOC also if only one H1 is present on page, the TOC is never show if no H1s are found on page
+        saveShowStatus: false, // Save the collapse status using a cookie (see dependecies for further details)
+        contentsText: 'Contents', // The label text shown for Content, you can localize passing another string
+        hideText: 'hide', // The label text shown for hide button, you can localize passing another string
+        showText: 'show' // The label text shown for show button, you can localize passing another string
+      })
+    })
+    </script>
+    <script src="/js/anchor.min.js"></script>
+    <script>
+      anchors.add();
+    </script>
+  </div>
+</body>
+</html>

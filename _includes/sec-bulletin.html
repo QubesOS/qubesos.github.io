@@ -1,0 +1,27 @@
+{% if page.lang == nil or page.lang == "en" %}
+    {% assign inc = site.data.includes %}
+{% else %}
+    {% assign inc = site.data.translation[page.lang].includes %}
+    {% if inc == nil or inc.size == 0 %}
+        {% assign inc = site.data.includes %}
+    {% endif %}
+{% endif %}
+
+{% assign sec = inc | where_exp: "item", "item.section == 'security-bulletins'" | first %}
+  <table>
+  <tr>
+    <th title="Anchor Link"><span class="fa fa-link"></span></th>
+      {% for item in sec.htmlsections[0].columns %}
+      <th>{{ item.title }}</th>
+      {% endfor %}
+  </tr>
+
+{% for qsb in site.data.qsb reversed %}
+  <tr id="{{ qsb.qsb }}">
+    <td><a href="#{{ qsb.qsb }}" class="fa fa-link black-icon" title="Anchor link to QSB row: QSB #{{ qsb.qsb }}"></a></td>
+    <td>{{ qsb.date }}</td>
+    <td><a href="https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-{{ qsb.qsb }}-{{ qsb.date | date: '%Y' }}.txt">QSB #{{ qsb.qsb }}: {{ qsb.title | truncate: 68 }}</a></td>
+  </tr>
+{% endfor %}
+</table>
+

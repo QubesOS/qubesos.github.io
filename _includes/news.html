@@ -1,0 +1,73 @@
+{% if page.lang == nil or page.lang == "en" %}
+  {% assign inc = site.data.includes %}
+  {% assign lang = "" %}
+{% else %}
+  {% assign lang = "/" | append: page.lang %}
+  {% assign inc = site.data.translation[page.lang].includes %}
+  {% if inc == nil or inc.size == 0 %}
+    {% assign inc = site.data.includes %}
+  {% endif %}
+{% endif %}
+
+{% assign news = inc | where_exp: "item", "item.section == 'news'" | first  %}
+
+{% assign team_link = lang | append: "/team/" %}
+{% assign t = site.pages | concat: site.qubes-translated | where:'permalink', team_link %}
+{% if t.size == 0 %}
+        {% assign team_link = "/team/" %}
+{% endif %}
+
+{% assign nsc_link = lang | append: "/news/categories/" %}
+{% assign nsc = site.posts | where:'permalink', nsc_link %}
+{% if nsc.size == 0 %}
+        {% assign nsc_link =  "/news/categories/" %}
+{% endif %}
+
+<ul class="list-unstyled remove-bottom">
+{% for post in site.posts %}
+  <li>
+    <h2 class="post-title remove-top remove-bottom">
+      <a class="post-link" href="{{ post.url }}">
+        {{ post.title }}
+        {% if post.redirect_to %}
+        <i class="fa fa-external-link"></i>
+        {% endif %}
+      </a>
+    </h2>
+    <p class="post-meta news-list">
+      {{ post.date | date: "%b %-d, %Y" }}
+      by <strong>
+      {% assign author_team = false %}
+      {% for member in site.data.team %}
+        {% if post.author == member.name %}
+          {% assign author_team = true %}
+        {% endif %}
+      {% endfor %}
+      {% if post.author %}
+        {% if author_team %}
+          <a href="{{ team_link }}#{{ post.author | slugify }}">{{ post.author }}</a>
+        {% else %}
+          <a href="{{ team_link }}">{{ post.author }}</a>
+        {% endif %}
+      {% else %}
+         <a href="{{ team_link }}">{{ site.default_author }}</a>
+      {% endif %}
+      </strong>
+      in <strong>
+      {% if post.categories.first %}
+        {% for category in post.categories %}
+          <a href="{{ nsc_link }}#{{ category | slugify }}">{{ category | capitalize }}</a>{% if forloop.index < forloop.length %},{% endif %}
+        {% endfor %}
+      {% else %}
+        <a href="{{ nsc_link }}#{{ site.default_category | slugify }}">{{ site.default_category | capitalize }}</a>
+      {% endif %}
+      </strong>
+    </p>
+    {% if post.download_url %}
+    <a href="{{ post.download_url }}" class="btn btn-info btn-sm"><i class="fa fa-download"></i> {{news.htmlsections[0].title}}</a>
+    {% endif %}
+    {% if forloop.index < forloop.length %}<hr>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+

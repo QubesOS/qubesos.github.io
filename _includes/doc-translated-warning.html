@@ -1,5 +1,15 @@
+{% if page.lang == nil or page.lang == "en" %}
+    {% assign msgs = site.data.includes %}
+{% else %}
+    {% assign msgs = site.data.translation[page.lang].includes %}
+    {% if msgs == nil or msgs.size == 0 %}
+          {% assign msgs = site.data.includes %}
+    {% endif %}
+{% endif %}
+
+{% assign translated = msgs | where_exp: "item", "item.section == 'doc-translated'" | first %}
+
 <div class="alert alert-warning" role="alert">
   <i class="fa fa-exclamation-circle"></i>
-  This page is an unverified translation.
-  The Qubes OS Project cannot evaluate the accuracy of translations into languages that our team cannot read.
+  {{ translated.text }}
 </div>

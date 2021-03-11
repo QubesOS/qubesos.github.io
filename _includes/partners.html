@@ -1,0 +1,66 @@
+{% if page.lang == nil or page.lang == "en" %}
+    {% assign partners = site.data.partners %}
+{% else %}
+    {% assign partners = site.data.translation[page.lang].partners %}
+    {% if partners == nil or partners.size == 0 %}
+        {% assign partners = site.data.partners %}
+    {% endif %}
+{% endif %}
+
+<table class="partners more-bottom" border="0">
+  <tbody>
+{% for p in partners %}
+{% for partner in p.partners %}
+{% assign  pars = partner.paragraph %}
+{% if partner.url %}
+        <tr id="{{ partner.id }}">
+      <td>
+        <a href="{{ partner.url }}">
+          <img src="{{ partner.img }}">
+        </a>
+      </td>
+      <td>
+        <h3 data-anchor-id="{{ partner.id }}">{{ partner.title }}</h3>
+        {% for p in pars %}
+          <p>
+          {% for s in p.snippets %}
+            {% if s.url != nil %}
+              <a href="{{ s.url }}">{{ s.snippet }}</a>
+            {% else %}
+              {{ s.snippet }}
+            {% endif %}
+          {% endfor %}
+          </p>
+        {% endfor %}
+      </td>
+    </tr>
+{% else %}
+    <tr id="{{ partner.id }}">
+      <td><h2 class="outer-heading">{{ partner.title }}</h2></td>
+      <td>
+        <h3 data-anchor-id="{{ partner.id }}">{{ partner.title }}</h3>
+        {% for p in pars %}
+        <p>
+        {% for s in p.snippets %}
+        {% if s.url != nil %}
+          <a href="{{ s.url }}">{{ s.snippet }}</a>
+        {% elsif s.bold %}
+          <b>{{ s.snippet }}</b>
+        {% else %}
+          {{ s.snippet }}
+        {% endif %}
+        {% endfor %}
+        </p>
+        {% endfor %}
+      </td>
+    </tr>
+{% endif %}
+{% endfor %}
+{% endfor %}
+  </tbody>
+</table>
+
+<script src="https://opencollective.com/qubes-os/banner.js"></script>
+
+<noscript><object type="image/svg+xml" data="https://opencollective.com/qubes-os/tiers/supporters.svg?avatarHeight=60&width=600"></object></noscript>
+

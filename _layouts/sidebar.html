@@ -6,17 +6,25 @@
       <div class="container">
         <h1 class="more-top add-left outer-heading">
         {% if page.icon %}
-        <i class="fa {{page.icon}}"></i>
+        <i class="fa {{ page.icon }}"></i>
         {% else %}
-          {% for section in site.data.architecture %}
+        {% if page.lang == nil or page.lang == "en" %}
+          {% assign archies = site.data.architecture %}
+        {% else %}
+          {% assign archies = site.data.translation[page.lang].architecture %}
+          {% if archies == nil or archies.size == 0 %}
+            {% assign archies = site.data.architecture %}
+          {% endif %}
+        {% endif %}
+          {% for section in archies %}
             {% if section.url == page.permalink %}
-            <i class="fa {{section.icon}}"></i>
+              <i class="fa {{ section.icon }}"></i>
             {% else %}
-            {% for sub in section.sub-pages %}
-            {% if sub.url == page.permalink %}
-            <i class="fa {{sub.icon}}"></i>
-            {% endif %}
-            {% endfor %}
+              {% for sub in section.sub-pages %}
+                {% if sub.url == page.permalink %}
+                  <i class="fa {{ sub.icon }}"></i>
+                {% endif %}
+              {% endfor %}
             {% endif %}
           {% endfor %}
         {% endif %}

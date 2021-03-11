@@ -1,0 +1,45 @@
+- title: Style Guide
+- htmlsection: fonts
+  title: Fonts
+  paragraph: Currently Qubes OS is using the following fonts for our website, branding, and other public facing (non-OS) materials. The OS itself uses what is normal for a user’s desktop environment of choice.
+  snippets:
+    - snippet: Custom Qubes Font
+    - snippet: "Family:"
+
+- htmlsection: colors
+  title: Colors
+  paragraph:
+    - snippets:
+      - snippet: The following
+      - snippet: grayscale
+      - snippet: colors are currently used on the Qubes website and documentation, and they will eventually match colors within the OS itself.
+    - snippets:
+      - snippet: The following
+      - snippet: colors
+      - snippet: are currently being used on the Qubes website and documentation, and they will eventually match the colors within the OS itself!
+
+- htmlsection: icons
+  title: Icons
+  paragraph:
+    - snippets:
+      - snippet: Currently, all the icons on the Qubes-OS.org website are generated using
+      - snippet: FontAwesome.
+        url: http://fortawesome.github.io/Font-Awesome/
+    - snippets: As more custom work is done to generate icons for the operating system itself, they will be added here!
+
+- htmlsection: logos
+  title: Logos
+  paragraph:
+    - snippets:
+      - snippet: The following is a collection of various sizes and versions of the Qubes logo used both in the OS itself and on our website.
+      - snippet: The artwork is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+      - snippet: The code is licensed under GNU GPLv2.
+      - snippet: GPLv2 and the source code can be
+      - snippet: downloaded here.
+        url: https://github.com/QubesOS/qubes-artwork
+  rows:
+    - row: Image
+    - row: Size
+    - row: Format
+    - row: Download
+      text: this image

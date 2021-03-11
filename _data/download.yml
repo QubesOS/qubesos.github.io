@@ -1,0 +1,134 @@
+- htmlsection: hardware
+  title: Choosing Your Hardware
+  links:
+    - url: /doc/system-requirements/
+      text: System Requirements
+      id: 1
+    - url: /doc/certified-hardware/
+      text: Certified Hardware
+      id: 2
+    - url: /hcl/
+      text: Hardware Compatibility List
+      id: 3
+
+- htmlsection: sec
+  title: Installing Qubes Securely
+  links:
+    - url: /doc/installation-guide/
+      text: Installation Guide
+      id: 1
+    - url: /security/verifying-signatures/
+      text: Verifying Signatures
+      id: 2
+    - url: /doc/install-security/
+      text: Installation Security
+      id: 3
+
+- htmlsection: help
+  title: Help and Support
+  links:
+    - url: /support/
+      text: Help and Support
+      id: 1
+    - url: /doc/#troubleshooting
+      text: Troubleshooting Guides
+      id: 2
+    - url: /doc/reporting-bugs/
+      text: Report a Bug
+      id: 3
+
+- htmlsection: sec-info
+  title: Security Information
+  links:
+    - url: /security/
+      text: Security Center
+      id: 1
+    - url: /security/pack/
+      text: Security Pack
+      id: 2
+    - url: /doc/security-guidelines/
+      text: Security Guidelines
+      id: 3
+
+- htmlsection: version-info
+  title: Version Information
+  links:
+    - url: /doc/supported-versions/
+      text: Supported Versions
+      id: 1
+    - url: /doc/templates/
+      text: Templates
+      id: 2
+    - url: /doc/version-scheme/
+      text: Version Scheme
+      id: 3
+
+- htmlsection: source-code
+  title: Source Code
+  links:
+    - url: /doc/source-code/
+      text: Source Code
+      id: 1
+    - url: /doc/coding-style/
+      text: Coding Guidelines
+      id: 2
+    - url: /doc/license/
+      text: Software License
+      id: 3
+
+- htmlsection: download-mirrors
+  title: Download Mirrors
+  table:
+    - column: Organization
+    - column: Location
+    - column: URL
+  links:
+    - url: /downloads/mirrors/#instructions-for-mirror-operators
+      text: How to contribute a download mirror
+
+- htmlsection: donation
+  title: Qubes OS is made possible by your donations!
+  paragraph: As a free and open-source software project, we rely on donations from users like you in order to keep running. Your contributions directly support the developers who work hard every day to improve your security. Please consider making a donation today.
+  url: /donate/
+  text: Donate
+
+- htmlsection: survey
+  title: We want to learn from you!
+  paragraph: The Qubes team is running our first ever survey of new, prospective, and longtime users. Our goal is to ensure Qubes OS meets the needs of the community by gathering responses to common questions about what the community seeks from Qubes OS. Surveys are 100% anonymous (no IP or timestamp information collected) and hosted on a server we own and operate. 5-10 minutes is all it should take.
+  url: https://survey.qubes-os.org/index.php?r=survey/index&sid=791682&lang=en
+  text: Begin Survey
+
+- htmlsection: loop-releases
+  releases:
+    - r_version: testing
+      snippets:
+        - snippet: This is a testing release.
+          url: /doc/testing/
+        - snippet: Please help us improve it by reporting any bugs you encounter.
+          url: /doc/reporting-bugs/
+        - snippet: For important work, we recommend the latest stable release.
+    - r_version: stable
+      snippets:
+        - snippet: This is the latest stable Qubes OS release. We recommend this release for all new and existing users.
+    - r_version: old
+      snippets:
+        - snippet: This is an old, supported release.
+          url: /doc/supported-versions/
+        - snippet: For the best Qubes OS experience, we suggest upgrading to the latest stable release.
+    - r_version: deprecated
+      snippets:
+        - snippet: This is an old, unsupported release.
+          url: /doc/supported-versions/
+        - snippet: We strongly recommend upgrading to a supported release in order to receive the latest security updates.
+
+- htmlsection: download-content
+  links:
+    - text: Cryptographic hash values
+    - text: Detached PGP signature
+    - text: Qubes Release Signing Key
+    - text: How to Verify Downloads
+      url: /security/verifying-signatures/
+    - text: All download mirrors
+      url: #mirrors
+      hover: View all download mirrors
+

@@ -1,6 +1,18 @@
 <div id="{{team.name | slugify}}" class="team-info">
-  <a href="/team/#{{team.name | slugify}}" class="black-link headline">
-    {{team.name}}
+{% if page.lang == nil or page.lang == "en" %}
+  {% assign lang = "" %}
+{% else %}
+  {% assign lang = "/" | append: page.lang %}
+{% endif %}
+
+{% assign team_link = lang | append: "/team/" %}
+{% assign t = site.pages | concat: site.qubes-translated | where:'permalink', team_link %}
+{% if t.size == 0 %}
+  {% assign team_link =  "/team/" %}
+{% endif %}
+
+  <a href="{{ team_link }}#{{ team.name | slugify }}" class="black-link headline">
+    {{ team.name }}
   </a>
   <em class="role">{{team.role}}</em>
   {% if team.fingerprint %}

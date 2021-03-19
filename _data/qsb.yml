@@ -261,3 +261,7 @@
 - qsb: "066"
   title: "XML injection through libvirt domain configuration"
   date: 2021-03-03
+
+- qsb: "067"
+  title: "Multiple RPM vulnerabilities"
+  date: 2021-03-19

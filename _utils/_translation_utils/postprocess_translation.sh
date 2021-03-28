@@ -5,7 +5,7 @@
 # where $3 is a file dumped by postprocess_translation.py 
 # this script exists because is easier to correctly process html code with sed. python messes it up.
 # example of evoking the script:
-# bash _utils/_translation_utils/test.sh de _qubes-translated/de/ _utils/translated_hrefs_urls.txt
+# bash _utils/_translation_utils/test.sh de _translated/de/ _utils/translated_hrefs_urls.txt
 
 
 pattern="href=\"\/"

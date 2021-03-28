@@ -17,7 +17,7 @@
         {% assign langmenu = false %}
       {% endif %}
       {% if langmenu %}
-        {% assign posts = site.pages | concat: site.doc | concat: site.qubes-translated | where:'ref', page.ref | sort: 'lang' %}
+        {% assign posts = site.pages | concat: site.doc | concat: site.translated | where:'ref', page.ref | sort: 'lang' %}
         <div class="langdropdown langdropdown-sm">
           <label class="langdropbtn-sm" for="langdropdown-toggle-sm"><img src="/attachment/icons/icons8-translation-64.png" width="24" height="24"></label>
           <input type="checkbox" id="langdropdown-toggle-sm">

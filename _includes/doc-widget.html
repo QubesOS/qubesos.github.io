@@ -6,8 +6,8 @@
   {% assign master_edit =  site.project_repo_path | append: "/qubes-doc/edit/master" | append: page.relative_path | remove_first: '_doc'  %}
   {% assign master_blob =  site.project_repo_path | append: "/qubes-doc/blob/master" | append: page.relative_path | remove_first: '_doc'  %}
 {% else %}
-  {% assign master_edit =  site.project_repo_path | append: "/qubes-translated/edit/master" | append: page.relative_path | remove_first: '_qubes-translated'  %}
-  {% assign master_blob =  site.project_repo_path | append: "/qubes-translated/blob/master" | append: page.relative_path| remove_first: '_qubes-translated'  %}
+  {% assign master_edit =  site.project_repo_path | append: "/qubes-translated/edit/master" | append: page.relative_path | remove_first: '_translated'  %}
+  {% assign master_blob =  site.project_repo_path | append: "/qubes-translated/blob/master" | append: page.relative_path| remove_first: '_translated'  %}
 {% endif %}
 <!-- Button links -->
 {% for item in docs.links %}

@@ -10,3 +10,6 @@
 [submodule "_hcl"]
 	path = _hcl
 	url = https://github.com/QubesOS/qubes-hcl
+[submodule "_translated"]
+	path = _translated
+	url = https://github.com/QubesOS/qubes-translated

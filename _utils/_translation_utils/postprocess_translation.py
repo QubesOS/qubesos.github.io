@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # adds language pattern in permalink line and all found relative links in the current open file recursively from a given root dir
-# evoke like: python _utils/postprocess_translation.py de _qubes-translated/de/ _utils/tx-mapping _utils/translated_hrefs_urls.txt --yml
+# evoke like: python _utils/postprocess_translation.py de _translated/de/ _utils/tx-mapping _utils/translated_hrefs_urls.txt --yml
 #param1 is the language in short form
 #param2 is the root translated dir 
 #param3 is current transifex mapping between original and translated files in the format: 
@@ -386,7 +386,7 @@ def main(translated_dir, lang, yml, mapping, href_filename):
 
 if __name__ == '__main__':
 
-    # python _utils/postprocess_translation.py de _qubes-translated/de/ _utils/tx-mapping _utils/translated_hrefs_urls.txt --yml
+    # python _utils/postprocess_translation.py de _translated/de/ _utils/tx-mapping _utils/translated_hrefs_urls.txt --yml
     parser = ArgumentParser()
     # for which language should we do this
     parser.add_argument("language")

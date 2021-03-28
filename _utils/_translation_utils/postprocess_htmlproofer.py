@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 '''
 python _utils/_translation_utils/postprocess_htmlproofer.py <LANG> <OUTPUT_FROM_HTMLPROOFER> <TRANSLATED_DIRECTORY>
-invoke: python _utils/_translation_utils/postprocess_htmlproofer.py de /tmp/html.output _qubes-translated/de/
+invoke: python _utils/_translation_utils/postprocess_htmlproofer.py de /tmp/html.output _translated/de/
 <LANG>[de]: translation language 
 <OUTPUT_FROM_HTMLPROOFER>[/tmp/html.output]: output from htmlproofer 
-<TRANSLATED_DIRECTORY>[_qubes-translated/de/]: the directory with the downloaded translated files from transifex 
+<TRANSLATED_DIRECTORY>[_translated/de/]: the directory with the downloaded translated files from transifex
 '''
 from frontmatter import Post, load, dump
 import yaml
@@ -242,7 +242,7 @@ def process_yml(translated, errorlinks):
         logger.debug('do nothing for file: %s. it is OK.' % e.filename)
 
 if __name__ == '__main__':
-    # python _utils/_translation_utils/postprocess_htmlproofer.py de /tmp/html.output _qubes-translated/de/    
+    # python _utils/_translation_utils/postprocess_htmlproofer.py de /tmp/html.output _translated/de/
     parser = ArgumentParser()
     # for which language should we do this
     parser.add_argument("language")

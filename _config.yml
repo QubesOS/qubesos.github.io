@@ -30,7 +30,7 @@ collections:
     output: true
   hcl:
     output: false
-  qubes-translated:
+  translated:
     output: true
 
 

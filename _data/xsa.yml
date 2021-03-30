@@ -1537,3 +1537,7 @@
 - xsa: 369
   date: 2021-03-04
   affected: no
+
+- xsa: 371
+  date: 2021-03-30
+  affected: no

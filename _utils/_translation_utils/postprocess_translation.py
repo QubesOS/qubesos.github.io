@@ -15,7 +15,7 @@ from yaml import dump as ydump
 import frontmatter
 from io import open as iopen
 from os.path import isfile, isdir
-from os import linesep, walk
+from os import linesep, walk, environ
 from re import findall
 from sys import exit
 from argparse import ArgumentParser
@@ -47,12 +47,15 @@ URL_KEY = 'url'
 # md frontmatterkeys:
 PERMALINK_KEY = 'permalink'
 REDIRECT_KEY = 'redirect_from'
+REDIRECT_TO = 'redirect_to'
 LANG_KEY = 'lang'
 TRANSLATED_KEY = 'translated'
 LAYOUT_KEY = 'layout'
 SLASH = '/'
 MD_URL_SPLIT_PATTERNS = ['/)','/#']
 TRANSLATED_LANGS = ['de']
+if 'TRANSLATED_LANGS' in environ:
+    TRANSLATED_LANGS = environ['TRANSLATED_LANGS'].split()
 #EXCLUDE_FILES = ['download.md' ]
 
 
@@ -107,6 +110,9 @@ def process_markdown(source_file, translated_file, permalinks, lang):
             mdt = frontmatter.load(t)
             if mds.get(PERMALINK_KEY) != None:
                 mdt[PERMALINK_KEY] = SLASH + lang + mds.get(PERMALINK_KEY)
+            elif PERMALINK_KEY in mdt:
+                # if missing in source, remove from translated too
+                del mdt[PERMALINK_KEY]
     
             if mds.get(REDIRECT_KEY) != None:
                 redirects = mds.get(REDIRECT_KEY)
@@ -124,11 +130,25 @@ def process_markdown(source_file, translated_file, permalinks, lang):
                 if mdt.get(PERMALINK_KEY) != None and mdt[PERMALINK_KEY] in mdt[REDIRECT_KEY]:
                     mdt[REDIRECT_KEY].remove(mdt[PERMALINK_KEY])
 
-                tmp = list(set(mdt[REDIRECT_KEY]))
+                tmp = sorted(set(mdt[REDIRECT_KEY]))
                 mdt[REDIRECT_KEY] = tmp
+            elif REDIRECT_KEY in mdt:
+                # if missing in source, remove from translated too
+                del mdt[REDIRECT_KEY]
 
             if mds.get(LAYOUT_KEY) != None:
                 mdt[LAYOUT_KEY] = mds[LAYOUT_KEY]
+
+            if mds.get(REDIRECT_TO) != None:
+                redirect = mds.get(REDIRECT_TO)
+                if isinstance(redirect, list):
+                    redirect = redirect[0]
+                if redirect.startswith('/') and not redirect.startswith(SLASH + lang + SLASH) and not redirect.startswith(news):
+                    mdt[REDIRECT_TO] = SLASH + lang + redirect
+                else:
+                    mdt[REDIRECT_TO] = redirect
+            elif REDIRECT_TO in mdt:
+                del mdt[REDIRECT_TO]
 
             mdt[LANG_KEY] = lang
             # TODO we do not need the translated key anymore

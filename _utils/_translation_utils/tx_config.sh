@@ -2,17 +2,18 @@
 # to be run from the git root
 #to incoporate them back, no need
 
+set -e
+
 # add ref & lang attributes to newly created files
 python3 _utils/_translation_utils/prepare_for_translation.py en _doc/ _utils/_translation_utils/COUNTER.txt
 
 # because there is apparently a feature in tx config that doe snot update an existing configuration, every time everythin will be done from scratch:
 # delete current tx configuration
 
-mv .tx/config /tmp/tx_config_old
+mv .tx/config /tmp/tx_config_old || :
 
 #init a tx configuration
 tx init --skipsetup
-
 
 # map the files with tx config
 tx config mapping-bulk -p qubes --source-language en --type GITHUBMARKDOWN -f '.md' -d --source-file-dir _doc -i _dev --expression '_translated/<lang>/_doc/{filepath}/{filename}{extension}' --execute
@@ -45,4 +46,4 @@ echo "############# Please pay attention to the changes made to the current tx c
 echo "############# Do you have to delete some resources on transifex manually? ###########"
 echo "############# left is the current, on the right is the old tx config ################"
 echo "#####################################################################################"
-diff .tx/config /tmp/tx_config_old --color
+diff /tmp/tx_config_old .tx/config --color || :

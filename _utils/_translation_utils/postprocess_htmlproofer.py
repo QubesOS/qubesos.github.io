@@ -12,7 +12,7 @@ from io import open as iopen
 from re import search
 from sys import exit
 import sys
-from os import linesep, walk
+from os import linesep, walk, environ
 from argparse import ArgumentParser
 from os.path import isfile, isdir
 from json import loads, dumps
@@ -24,6 +24,8 @@ SLASH = '/'
 PERMALINK_KEY = 'permalink'
 REDIRECT_KEY = 'redirect_from'
 TRANSLATED_LANGS = ['de']
+if 'TRANSLATED_LANGS' in environ:
+    TRANSLATED_LANGS = environ['TRANSLATED_LANGS'].split()
 URL_KEY = 'url'
 
 
@@ -96,7 +98,7 @@ def process_markdown(translated_file, internal_links):
                         lines.append(to_replace)
                         continue
 
-                if "[" and "](" in line and ")" in line:
+                if "[" in line and "](" in line and ")" in line:
                     count = line.count('](')
                     tmp = line 
                     val = 0

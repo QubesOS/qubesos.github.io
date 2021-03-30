@@ -176,7 +176,7 @@ def insert_ids_to_gfm_file(line_to_id_map, gfm_lines)
     result = gfm_lines[0..-1]
     n = result.length
     line_to_id_map.each do |key, value|
-        str_to_insert = '<a id="' + value + '"></a>'
+        str_to_insert = '<a id="' + value + '"></a>' + "\n"
         line = result[key]
         if !line.nil? and line.start_with?('#')
             if key + 1 >= n

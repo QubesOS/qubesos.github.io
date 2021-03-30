@@ -61,7 +61,7 @@ def main(root_dir, lang, counter):
                     if not isinstance(redirects, str):
                         md[REDIRECT_KEY].remove(md[PERMALINK_KEY])
                 if md.get(LANG_KEY) == None:
-                    md[LANG_KEY] = "en"
+                    md[LANG_KEY] = lang
                 if md.get(REF_KEY) == None:
                     md[REF_KEY] = counter
                     counter += 1
@@ -97,11 +97,11 @@ def main(root_dir, lang, counter):
                     redirects = md.get(REDIRECT_KEY)
                     if not isinstance(redirects, str):
                         md[REDIRECT_KEY].remove(md[PERMALINK_KEY])
-                #if md.get(LANG_KEY) == None:
-                #    md[LANG_KEY] = "en"
-                #if md.get(REF_KEY) == None:
-                #    md[REF_KEY] = counter
-                #    counter += 1
+                if md.get(LANG_KEY) == None:
+                    md[LANG_KEY] = "en"
+                if md.get(REF_KEY) == None:
+                    md[REF_KEY] = counter
+                    counter += 1
 
             with iopen(file_path, 'wb') as replaced:
                 dump(md, replaced)

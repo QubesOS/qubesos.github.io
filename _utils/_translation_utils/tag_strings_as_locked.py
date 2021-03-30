@@ -12,6 +12,7 @@ from frontmatter import Post, load
 from certifi import where
 from io import BytesIO
 from io import open as iopen
+from os import environ
 from os.path import isfile
 from re import match
 import sys
@@ -338,8 +339,6 @@ if __name__ == '__main__':
     parser.add_argument("tx_resourcenamesfile")
     # provide the file from tx configuration containing only the original source filenames 
     parser.add_argument("tx_sourcesnamesfile")
-    # provide the developer api transifex token for auth 
-    parser.add_argument("tx_api_token")
     # whether or not to write debug json files
     parser.add_argument("--debug", action='store_true')
     # whether or not to tag file by a file
@@ -371,8 +370,11 @@ if __name__ == '__main__':
     if manual:
         manual_break()
 
+    if 'TX_TOKEN' not in environ:
+        parser.error('TX_TOKEN variable not set')
+    tx_api_token = environ['TX_TOKEN']
     perms_and_redirects = get_all_original_permalinks_and_redirects(args.tx_sourcesnamesfile)
-    hash_and_tags_mapping = create_hash_and_tags_mapping(tx_resources, args.tx_api_token, args.debug, perms_and_redirects, manual)
+    hash_and_tags_mapping = create_hash_and_tags_mapping(tx_resources, tx_api_token, args.debug, perms_and_redirects, manual)
 
     if args.debug:
         logger.debug("------------------------------------------------")
@@ -390,7 +392,7 @@ if __name__ == '__main__':
         logger.debug("------------------------------------------------")
         logger.debug("------------------------------------------------")
 
-    tag_strings_as_locked(hash_and_tags_mapping, args.tx_api_token, args.debug)
+    tag_strings_as_locked(hash_and_tags_mapping, tx_api_token, args.debug)
 
 
 

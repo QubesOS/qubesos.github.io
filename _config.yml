@@ -21,6 +21,11 @@ relative_permalinks: false
 permalink: /news/:year/:month/:day/:title/
 excerpt_separator: ""
 
+# enabled languages
+# remember to create symlinks in _data/translation too
+languages:
+- en
+
 plugins:
   - jekyll-redirect-from
   - jekyll-sitemap

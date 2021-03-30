@@ -10,8 +10,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <!-- Disable language switcher for now -->
-      {% assign langmenu = false %}
+      <!-- Disable language switcher if there is only one language -->
+      {% if site.languages.size > 1 %}
+        {% assign langmenu = true %}
+      {% else %}
+        {% assign langmenu = false %}
+      {% endif %}
       {% if page.layout == nil or page.collection == 'posts' %}
         <!-- No translation for news -->
         {% assign langmenu = false %}
@@ -23,7 +27,9 @@
           <input type="checkbox" id="langdropdown-toggle-sm">
           <div class="langdropdown-content" id="langdropdown-dd-sm">
             {% for post in posts %}
-              <a class="c1" href="{{ post.url }}">{{ post.lang }}</a>
+              {% if site.languages contains post.lang %}
+                <a class="c1" href="{{ post.url }}">{{ post.lang }}</a>
+              {% endif %}
             {% endfor %}
           </div>
         </div>

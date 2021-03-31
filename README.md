@@ -126,6 +126,68 @@ Please carefully read these guidelines before submitting a pull request.
  - [jQuery 1.7](http://api.jquery.com) - javascript helper library
  - [jQuery ToC MD Generator](https://github.com/dafi/tocmd-generator) - renders header menu on documentation section
 
+Translation
+------------
+
+Documentation translation is done using Transifex platform: https://www.transifex.com/otf/qubes/
+The `_translated` directory should not be modified manually. Any manual change
+there **will be overriden** with the content downloaded from Transifex.
+
+The `qubes-translated` repository is not signed and generally should not be
+considered trusted for sensitive tasks. But the specific commit referenced from
+this repository is validated to not interfere with English website.
+
+### Transifex integration details ###
+
+Most of the integration is automated. It is split into few parts:
+
+1. `_utils/transifex-push` script takes the source (English) content and
+   uploads to Transifex. The platform merges existing translations to the new
+   files, so unchanged parts that were translated before remain translated.
+   Transifex configuration is created from scratch here, to correctly handle
+   new/removed files.
+
+2. `_utils/transifex-pull` pulls translated content and places into
+   `_translated` submodule. Then a set of scripts in
+   `_utils/_translation_utils` perform various post processing steps,
+   including:
+   - validate syntax of retrieved files (if frontmatter is still correctly set etc)
+   - modify frontmatter settings (`permalink`, `lang`, `redirect_from` etc) to
+     match the page language
+   - adjust all internal links to point at pages in the same language
+   - run htmlproofer to verify if no broken links were introduced
+
+   At the end, the script commit and push the new content to qubes-translated
+   repository.
+
+3. `_utils/update-translated` fetches new version of qubes-translated repo (its
+   master branch), verifies if any page doesn't try to subvert English version,
+   and if all is fine, makes a commit and push updated submodule (similar to
+   `_utils/update-submodules` script).
+
+The points 1 and 2 are running in Gitlab CI environment, without access to any
+signing key and with push access only to qubes-translated repository. The third
+point is running in a more trusted environment, with access to signing key and
+push access to the main repository.
+
+### Language switcher ###
+
+The top level `_config.yml` file contains list of languages to be enabled. If
+there is more than one (`en`), each page will have a language switch menu in
+the top right corner. Only languages listed in `_config.yml` are visible in the
+switcher, but there may be more available (accessing them require manually
+changing language code in the URL).
+
+Each markdown file in the repo has `lang` and `ref` attributes (in its
+frontmatter). `lang` attribute contains the language of this file
+(should always be `en` outside of qubes-translated repository) and `ref`
+contains a unique identifier of that page. Language switcher logic uses the
+`ref` attribute to find all translations of given page. This allows translated
+page to have different page name in URL, although we do not do this right now.
+
+`lang` and `ref` attributes are added with
+`_utils/_translation_utils/prepare_for_translation.py` script.
+
 Deprecated Documentation
 ------------------------
 

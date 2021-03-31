@@ -25,6 +25,9 @@ excerpt_separator: ""
 # remember to create symlinks in _data/translation too
 languages:
 - en
+- de
+- fr
+- es
 
 plugins:
   - jekyll-redirect-from

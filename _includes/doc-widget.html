@@ -5,9 +5,14 @@
 {% if page.lang == nil or page.lang == "en" %}
   {% assign master_edit =  site.project_repo_path | append: "/qubes-doc/edit/master" | append: page.relative_path | remove_first: '_doc'  %}
   {% assign master_blob =  site.project_repo_path | append: "/qubes-doc/blob/master" | append: page.relative_path | remove_first: '_doc'  %}
+  {% assign pagelang = "" %}
+  {% assign transifexresource = page.relative_path | replace: '_doc/', 'doc/' | remove: ".md" | replace: "/", "_" %}
 {% else %}
   {% assign master_edit =  site.project_repo_path | append: "/qubes-translated/edit/master" | append: page.relative_path | remove_first: '_translated'  %}
-  {% assign master_blob =  site.project_repo_path | append: "/qubes-translated/blob/master" | append: page.relative_path| remove_first: '_translated'  %}
+  {% assign master_blob =  site.project_repo_path | append: "/qubes-translated/blob/master" | append: page.relative_path | remove_first: '_translated'  %}
+  {% assign pagelang = page.lang %}
+  {% assign prefix = "_translated/" | append: pagelang | append: '/' %}
+  {% assign transifexresource = page.relative_path | remove_first: prefix | replace: '_doc/', 'doc/' | remove: ".md" | replace: "/", "_" %}
 {% endif %}
 <!-- Button links -->
 {% for item in docs.links %}
@@ -20,6 +25,8 @@
     {% assign a_href = master_blob %}
   {% elsif item.icon == "fa-code-fork" %}
     {% assign a_href = master_edit %}
+  {% elsif item.icon == "fa-language" %}
+    {% assign a_href = "https://www.transifex.com/otf/qubes/translate/#" | append: pagelang | append: "/" | append: transifexresource %}
   {% else %}
     {% assign a_href = item.url %}
   {% endif %}

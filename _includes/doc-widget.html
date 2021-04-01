@@ -24,6 +24,10 @@
   {% if item.icon == "fa-code" %}
     {% assign a_href = master_blob %}
   {% elsif item.icon == "fa-code-fork" %}
+    {% if lang != "" %}
+      <!-- skip "Edit This Page" button on translated pages, link to Transifex only -->
+      {% continue %}
+    {% endif %}
     {% assign a_href = master_edit %}
   {% elsif item.icon == "fa-language" %}
     {% assign a_href = "https://www.transifex.com/otf/qubes/translate/#" | append: pagelang | append: "/" | append: transifexresource %}

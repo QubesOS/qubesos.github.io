@@ -1,0 +1,58 @@
+#!/bin/bash
+  
+if [ -z "$1" ]; then
+    echo "usage: $0 origin/pr/NUMBER" >&2
+    exit 2
+fi
+
+set -eu
+
+GNUPG=${GNUPG:-gpg}
+
+rev="$1"
+
+sha=$(git rev-parse "$rev")
+
+num=${rev##*/}
+
+token=$(grep _token ~/.config/hub|cut -f 2 -d :)
+
+repo=$(git config remote.origin.url|
+        sed -e 's#[^:]*://[^/]*/##;s#git@github.com:##')
+repo=${repo%.git}
+
+tmpdir=$(mktemp -d)
+trap 'rm -rf -- "$tmpdir"' EXIT
+
+# get latest review text
+curl -sf https://api.github.com/repos/$repo/pulls/$num/reviews | jq -r '.[-1].body' > "$tmpdir/unverified"
+
+approved_sha=
+
+# verify signed review
+$GNUPG --verify --output "$tmpdir/verified" --status-fd 3 3>"$tmpdir/gpg-status" <"$tmpdir/unverified" 2>/dev/null
+if [ $(grep -c "^\[GNUPG:\] NEWSIG" "$tmpdir/gpg-status") -eq 1 ] && \
+       grep -q '^\[GNUPG:\] TRUST_\(FULLY\|ULTIMATE\)' "$tmpdir/gpg-status"; then
+    # verified
+    approved_sha=$(grep -o "^Approved as of [a-z0-9]\+" "$tmpdir/verified")
+    approved_sha=${approved_sha#Approved as of }
+else
+    echo "Signature verification failed"
+    exit 1
+fi
+
+if [ -z "$approved_sha" ]; then
+    echo "No 'Approved as of ...' message"
+    exit 1
+fi
+
+# print who approved
+grep '^\[GNUPG:\] GOODSIG ' "$tmpdir/gpg-status"
+
+if [ "$approved_sha" = "$sha" ]; then
+    echo "$approved_sha $(tput setaf 2)approved and matches$(tput sgr0) $rev"
+    exit 0
+else
+    echo "$rev approved as of $approved_sha but currently at $sha"
+    exit 1
+fi

@@ -409,6 +409,8 @@
         url: https://groups.google.com/group/qubes-devel/msg/4ca950ab6d7cd11a
       - text: Adding Bridge Support to the NetVM (EXPERIMENTAL)
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/network-bridge-support.md
+      - text: Screen Sharing
+        url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/screen-share.md
       - text: Enabling TRIM for SSD disks
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/disk-trim.md
       - text: Configuring a Network Printer

@@ -84,7 +84,7 @@
 
 - name: Marta Marczykowska-Górecka
   email: marmarta@invisiblethingslab.com
-  role: Qubes Manager, Linux desktop, and core development
+  role: Qubes Manager, Linux desktop, core development, and user research
   type: core
   picture: team-marta.jpg
   fingerprint: 7D22 413E F3DB 0761 2CF7  3808 7D77 9BFA 6C80 6F69
@@ -99,11 +99,11 @@
   github: MiCh
 
 - name: Nina Eleanor Alter
-  email: ninavizz@gmail.com
-  role: User experience
+  email: nina@research.qubes-os.org
+  role: Design and user research
   type: core
   picture: team-nina.jpg
-  fingerprint: A9BC 4019 D695 AF0D D65D F726 2CA7 C96A DBDF DC5B
+  fingerprint: 97A2 5336 1A54 C66F E1DF  515B 0812 46AC 3393 E74F
   github: ninavizz
 
 - name: Demi Marie Obenour
@@ -111,7 +111,7 @@
   role: "Software developer: Rust, Python, package management, GUI, and storage"
   type: core
   picture: team-demi.jpg
-  fingerprint: 7687 4D9F 1336 BA22 5907 1C71 B288 B55F FF9C 22C1
+  fingerprint: 7687 4D9F 1336 BA22 5907  1C71 B288 B55F FF9C 22C1
   github: DemiMarie
 
 # Emeritus

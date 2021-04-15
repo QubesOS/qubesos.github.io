@@ -39,16 +39,24 @@
       <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 text-center add-bottom">
         <i class="fa {{ team.icon }} fa-4x"></i>
       </div>
-      <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12">
+      <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 team-info">
         <a href="{{ team_link }}#{{ team.name | slugify }}">
           <h4 class="remove-bottom">
             {{ team.name }}
           </h4>
         </a>
-        <a href="mailto:{{ team.email }}" class="black-link">{{ team.email }}</a>
+        <p class="half-bottom">
+          <a href="mailto:{{ team.email }}" class="black-link">{{ team.email }}</a>
+        </p>
+        {% if team.fingerprint %}
+        <a href="http://keys.gnupg.net/pks/lookup?search=0x{{ team.fingerprint | remove: ' ' }}&fingerprint=on&exact=on&op=get&options=mr"
+           title="Download PGP public key" class="black-link">
+          <i class="fa fa-fw fa-lock"></i>PGP Key
+        </a>
+        {% endif %}
       </div>
       {% if team.fingerprint %}
-      <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 remove-top more-bottom fingerprint"
+      <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 more-bottom fingerprint"
            title="{{ team.name }} account's PGP fingerprint">
         {{ team.fingerprint }}
       </div>

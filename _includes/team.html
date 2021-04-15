@@ -9,6 +9,7 @@
         {% endif %}
 {% endif %}
 
+{% assign inquiries = teamed | where_exp: "item", "item.htmlsection == 'inquiries'" | first %}
 {% assign coreteam = teamed | where_exp: "item", "item.htmlsection == 'core-team'" | first %}
 {% assign joined = teamed | where_exp: "item", "item.htmlsection == 'join'" | first %}
 {% assign emeritus = teamed | where_exp: "item", "item.htmlsection == 'emeritus'" | first %}
@@ -22,10 +23,46 @@
 {% endif %}
 <!-- previous content -->
 
+<div class="page-content more-bottom">
+  <div class="col-lg-12">
+    <a href="{{ team_link }}#inquiries">
+      <h2 id="inquiries" class="text-center more-bottom">{{ inquiries.title }}</h2>
+    </a>
+    <p>
+      {{ inquiries.text }}
+    </p>
+  </div>
+  {% for team in site.data.team %}
+    {% if team.type == "inquiries" %}
+    {% assign name_array = team.name | split:" " %}
+    <div class="row team" id="{{ team.name | slugify }}">
+      <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 text-center add-bottom">
+        <i class="fa {{ team.icon }} fa-4x"></i>
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12">
+        <a href="{{ team_link }}#{{ team.name | slugify }}">
+          <h4 class="remove-bottom">
+            {{ team.name }}
+          </h4>
+        </a>
+        <a href="mailto:{{ team.email }}" class="black-link">{{ team.email }}</a>
+      </div>
+      {% if team.fingerprint %}
+      <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 remove-top more-bottom fingerprint"
+           title="{{ team.name }} account's PGP fingerprint">
+        {{ team.fingerprint }}
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
 
-<div id="team-core" class="white-box page-content ">
-  <div class="col-lg-12 col-md-12 col-sm-12">
-    <h2 id="core-team" class="text-center more-bottom"> {{ coreteam.title }}</h2>
+<div id="team-core" class="page-content more-bottom">
+  <div class="col-lg-12">
+    <a href="{{ team_link }}#core-team">
+      <h2 id="core-team" class="text-center more-bottom"> {{ coreteam.title }}</h2>
+    </a>
   </div>
 
     {% for team in site.data.team %}
@@ -34,7 +71,7 @@
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 text-center add-bottom">
           <div class="picture">
             {% if team.picture %}
-            <a href="{{ team_link }}/#{{ team.name | slugify }}">
+            <a href="{{ team_link }}#{{ team.name | slugify }}">
               <img src="/attachment/site/{{team.picture}}"
                    title="Picture of {{ team.name }}">
             </a>
@@ -45,7 +82,7 @@
         </div>
         <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 team-info">
           {% assign name_array = team.name | split:" " %}
-          <a href="{{ team_link }}/#{{ team.name | slugify }}">
+          <a href="{{ team_link }}#{{ team.name | slugify }}">
           <h4 class="remove-bottom">
             {{ team.name }}
           </h4>
@@ -95,7 +132,9 @@
 
 <div class="page-content more-bottom">
   <div class="col-lg-12">
-    <h2 id="emeritus" class="text-center more-bottom">{{ emeritus.title }}</h2>
+    <a href="{{ team_link }}#emeritus">
+      <h2 id="emeritus" class="text-center more-bottom">{{ emeritus.title }}</h2>
+    </a>
     <p>
       {{ emeritus.text }}
     </p>
@@ -119,12 +158,12 @@
 
 <div class="page-content more-bottom">
   <div class="col-lg-12">
-      <h2 id="community-contributors" class="text-center more-bottom">
-        {{ community.title }}
-      </h2>
-      <p>
-        {{ community.text }} <a href="{{ support_link }}"> {{ community.mail }}</a>.
-      </p>
+    <a href="{{ team_link }}#community-contributors">
+      <h2 id="community-contributors" class="text-center more-bottom">{{ community.title }}</h2>
+    </a>
+    <p>
+      {{ community.text }} <a href="{{ support_link }}"> {{ community.mail }}</a>.
+    </p>
   </div>
   {% for team in site.data.team %}
     {% if team.type == "community" %}
@@ -136,9 +175,6 @@
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
         {% if team.fingerprint %}
         <span class="fingerprint" title="{{team.name}}'s PGP Key Fingerprint">{{team.fingerprint}}</span>
-        {% endif %}
-        {% if team.pgp_key %}
-        <a href="{{team.pgp_key}}"><i class="fa fa-lock fa-fw black-icon"></i>{{name_array[0]}}'s PGP Key</a>
         {% endif %}
       </div>
     </div>

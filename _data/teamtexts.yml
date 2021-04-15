@@ -17,12 +17,10 @@
   cert:
   - text: Request hardware certification
     url: /hardware-certification/
-  biz:
-  - text: Business inquiries
-  press:
-  - text: Press inquiries
 
-
+- htmlsection: inquiries
+  title: Inquiries
+  email: Email
 
 - htmlsection: core-team
   title: Core Team

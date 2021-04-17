@@ -34,6 +34,9 @@
 
 - htmlsection: community
   title: Community Contributors
-  text: Qubes would not be where it is today without the input of the many users, testers, and developers of all skill levels who have come together to form this thriving community. The community's discussions take place primarily on the <a href="/support/">Qubes mailing lists and forum</a>
+  text: Qubes would not be where it is today without the input of the many users, testers, and developers of all skill levels who have come together to form this thriving community. The community's discussions take place primarily on the 
+  links:
+  - text: Qubes mailing lists and forum
+    url: /support/
 
 

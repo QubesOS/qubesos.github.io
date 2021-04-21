@@ -1,3 +1,9 @@
+ - organization: Foundation for Applied Privacy
+   org_url: https://applied-privacy.net/
+   location: Austria
+   urls:
+   - url: https://qubesos-mirror.applied-privacy.net/
+
  - organization: eScience Center, Nanjing University
    org_url: https://sci.nju.edu.cn/
    location: China

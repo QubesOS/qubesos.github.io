@@ -1,0 +1,42 @@
+- htmlsection: upperlinks
+  security:
+  - text: Report a security issue
+    url: /security/
+  bug:
+  - text: Report a bug
+    url: /doc/reporting-bugs/
+  help:
+  - text: Get help and support
+    url: /support/
+  join:
+  - text: Join the team
+    url: /join/
+  partner:
+  - text: Qubes Partners
+    url: /partners/
+  cert:
+  - text: Request hardware certification
+    url: /hardware-certification/
+
+- htmlsection: inquiries
+  title: Inquiries
+  email: Email
+
+- htmlsection: core-team
+  title: Core Team
+  picture: Picture of
+  email: Email
+  website: Website
+
+- htmlsection: emeritus
+  title: Emeritus
+  text: Emeriti are honorary members of the Qubes team who previously contributed to the project in a central way but who are no longer currently active.
+
+- htmlsection: community
+  title: Community Contributors
+  text: Qubes would not be where it is today without the input of the many users, testers, and developers of all skill levels who have come together to form this thriving community. The community's discussions take place primarily on the 
+  link:
+  - text: Qubes mailing lists and forum
+    url: /support/
+
+

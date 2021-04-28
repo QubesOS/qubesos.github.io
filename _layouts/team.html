@@ -1,34 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
-<body>
-{% include header.html %}
-<div class="container">
-  <div class="row more-top more-bottom">
-    <div class="col-xs-12 col-sm-4">
-      <h1 class="add-left outer-heading">
-        <a href="/team/" class="heading-link">
-          <i class="fa fa-users" aria-hidden="true"></i> Team
-        </a>
-      </h1>
-    </div>
-    <div class="col-xs-12 col-sm-4 col-md-3">
-      <ul class="list-unstyled">
-        <li><a href="/security/" class="black-link"><i class="fa fa-lock fa-fw"></i> Report a security issue</a></li>
-        <li><a href="/doc/reporting-bugs/" class="black-link"><i class="fa fa-bug fa-fw"></i> Report a bug</a></li>
-        <li><a href="/support/" class="black-link"><i class="fa fa-life-ring fa-fw"></i> Help and support</a></li>
-      </ul>
-    </div>
-    <div class="col-xs-12 col-sm-4 col-md-3">
-      <ul class="list-unstyled">
-        <li><a href="mailto:press@qubes-os.org" class="black-link"><i class="fa fa-newspaper-o fa-fw"></i> Press inquiries</a></li>
-        <li><a href="mailto:business@qubes-os.org" class="black-link"><i class="fa fa-briefcase fa-fw"></i> Business inquiries</a></li>
-        <li><a href="/partners/" class="black-link"><i class="fa fa-globe fa-fw"></i> Qubes Partners</a></li>
-      </ul>
-    </div>
-  </div>
-  {{ content }}
-  {% include footer.html %}
-</div>
+<html>
+  {% include head.html %}
+    <body>
+      {% include header.html %}
+
+{% if page.lang == nil or page.lang == "en" %}
+        {% assign teamed = site.data.teamtexts %}
+        {% assign lang = "" %}
+{% else %}
+        {% assign lang = "/" | append: page.lang %}
+        {% assign teamed = site.data.translation[page.lang].teamtexts %}
+        {% if teamed == nil or teamed.size == 0 %}
+                {% assign teamed = site.data.teamtexts %}
+        {% endif %}
+{% endif %}
+
+{% assign upperlinks = teamed | where_exp: "item", "item.htmlsection == 'upperlinks'" | first  %}
+
+{% assign team_link = lang | append: "/team/" %}
+{% assign teams = site.pages | concat: site.qubes-translated | where:'permalink', team_link %}
+{% if teams.size == 0 %}
+       {% assign team_link = "/team/" %}
+{% endif %}
+
+    <div class="container">
+        <div class="row more-top more-bottom">
+          <div class="col-xs-12 col-sm-4">
+            <h1 class="add-left outer-heading">
+               <a href="{{ team_link }}" class="heading-link">
+              <i class="fa fa-users" aria-hidden="true"></i>
+              {{ page.title }}
+            </h1>
+          </div>
+          <div class="col-lg-3 col-md-3 add-left">
+            <ul class="list-unstyled">
+              <li><a href="{{ upperlinks.security[0].url }}" class="black-link"><i class="fa fa-lock fa-fw black-icon"></i> {{ upperlinks.security[0].text }}</a></li>
+              <li><a href="{{ upperlinks.bug[0].url }}" class="black-link"><i class="fa fa-bug fa-fw black-icon"></i> {{ upperlinks.bug[0].text }}</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <ul class="list-unstyled">
+              <li><a href="{{ upperlinks.partner[0].url }}" class="black-link"><i class="fa fa-globe fa-fw"></i> {{ upperlinks.partner[0].text }}</a></li>
+              <li><a href="{{ upperlinks.help[0].url }}" class="black-link"><i class="fa fa-life-ring fa-fw black-icon"></i> {{ upperlinks.help[0].text }}</a></li>
+            </ul>
+           </div>
+        </div>
+
+
+        {% include team.html %}
+
+        {{ content }}
+
+        {% include footer.html %}
+ </div>
 </body>
 </html>

@@ -1,0 +1,122 @@
+{% if page.lang == nil or page.lang == "en" %}
+        {% assign style = site.data.style_guide_content %}
+{% else %}
+        {% assign style = site.data.translation[page.lang].style_guide_content %}
+        {% if style == nil or style.size == 0 %}
+                {% assign style = site.data.style_guide_content %}
+        {% endif %}
+{% endif %}
+
+{% assign fonts = style | where_exp: "item", "item.htmlsection == 'fonts'" | first %}
+{% assign colors = style | where_exp: "item", "item.htmlsection == 'colors'" | first %}
+{% assign icons = style | where_exp: "item", "item.htmlsection == 'icons'" | first %}
+{% assign logos = style | where_exp: "item", "item.htmlsection == 'logos'" | first %}
+
+<h1 id="style-guide">{{ style[0].title }}</h1>
+
+<h2 id="fonts"> {{ fonts.title }}</h2>
+
+<p>{{ fonts.paragraph }}</p>
+
+<div class="styleguide">
+{% for font in site.data.styleguide.fonts %}
+  <div class="row">
+  <div class="col-lg-6 col-md-6 focus">
+      <div class="font {{font.class}}"> {{ fonts.snippets[0].snippet }}</div>
+  </div>
+  <div class="col-lg-6 col-md-6">
+      <strong>{{ fonts.snippets[1].snippet }}</strong> {{font.family}}<br>
+  </div>
+  </div>
+{% endfor %}
+</div>
+
+<hr />
+
+<h2 id="colors">{{ colors.title }}</h2>
+
+{% assign  snippet = colors.paragraph[0].snippets %}
+<p>{{ snippet[0].snippet }} <strong>{{ snippet[1].snippet }}</strong> {{ snippet[2].snippet }}</p>
+
+
+<div class="styleguide">
+{% for color in site.data.styleguide.colors %}
+  {% if color.type == "grayscale" %}
+  <div class="swatch more-bottom more-right">
+    <div class="color add-bottom bg-{{color.class}}"></div>
+    <strong class="add-bottom">{{color.name}}</strong>
+    <code>#{{color.hex | downcase}}</code>
+  </div>
+  {% endif %}
+{% endfor %}
+</div>
+
+{% assign  snippet = colors.paragraph[1].snippets %}
+<p>{{ snippet[0].snippet }} <strong>{{ snippet[1].snippet }}</strong> {{ snippet[2].snippet }}</p>
+
+
+<div class="styleguide">
+{% for color in site.data.styleguide.colors %}
+  {% if color.type == "colors" %}
+  <div class="swatch more-bottom more-right">
+    <div class="color add-bottom bg-{{color.class}}"></div>
+    <strong class="add-bottom">{{color.name}}</strong>
+    <code>#{{color.hex | downcase}}</code>
+  </div>
+  {% endif %}
+{% endfor %}
+</div>
+
+<hr />
+<h2 id="icons">{{ icons.title }}</h2>
+
+{% assign  snippet = icons.paragraph[0].snippets %}
+<p>
+{% for s in snippet %}
+   {% if s.url != nil %}
+     <a href="{{ s.url }}">{{ s.snippet }}</a>
+   {% else %}
+     {{ s.snippet }}
+   {% endif %}
+{% endfor %}
+.</p>
+
+<p><em>{{ icons.paragraph[1].snippets }}</em></p>
+
+<hr />
+
+<h2 id="logos">{{ logos.title }}</h2>
+
+{% assign snippet = logos.paragraph[0].snippets %}
+<p>
+{% for s in snippet %}
+   {% if s.url != nil %}
+     <a href="{{ s.url }}">{{ s.snippet }}</a>
+   {% else %}
+     {{ s.snippet }}
+   {% endif %}
+{% endfor %}
+.</p>
+
+
+<div class="styleguide">
+{% for logo in site.data.styleguide.logos %}
+  {% for version in logo.versions %}
+  <div class="row more-bottom">
+    <div class="col-lg-4 col-md-4">
+      <div class="focus">
+        <img class="logo" src="{{version.path}}{{logo.image}}">
+      </div>
+    </div>
+    <div class="col-lg-8 col-md-8">
+      <p>
+      <strong>{{ logos.rows[0].row }}:</strong> {{logo.image}}<br>
+        <strong>{{ logos.rows[1].row }}:</strong> {{version.size}}<br>
+        <strong>{{ logos.rows[2].row }}:</strong> {{version.format}}<br>
+        <strong>{{ logos.rows[3].row }}:</strong> <a href="{{version.path}}{{logo.image}}" >{{ logos.rows[3].text }}</a>
+      </p>
+    </div>
+  </div>
+  {% endfor %}
+{% endfor %}
+</div>

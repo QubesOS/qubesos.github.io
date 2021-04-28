@@ -461,8 +461,9 @@
   affected: no
 
 - xsa: 115
-  date: 2014-12-08
-  affected: no
+  date: 2020-12-15
+  affected: yes
+  qsb: 063-2020
 
 - xsa: 116
   date: 2015-01-06
@@ -1341,6 +1342,23 @@
   affected: yes
   qsb: 058-2020
 
+- xsa: 322
+  date: 2020-12-15
+  affected: no
+
+- xsa: 323
+  date: 2020-12-15
+  affected: no
+
+- xsa: 324
+  date: 2020-12-15
+  affected: no
+
+- xsa: 325
+  date: 2020-12-15
+  affected: yes
+  qsb: 063-2020
+
 - xsa: 327
   date: 2020-07-07
   affected: no
@@ -1351,6 +1369,10 @@
 
 - xsa: 329
   date: 2020-07-16
+  affected: no
+
+- xsa: 330
+  date: 2020-12-15
   affected: no
 
 - xsa: 331
@@ -1427,7 +1449,95 @@
   affected: yes
   qsb: 060-2020
 
+- xsa: 348
+  date: 2020-12-15
+  affected: no
+
+- xsa: 349
+  date: 2020-12-15
+  affected: no
+
+- xsa: 350
+  date: 2020-12-15
+  affected: yes
+  qsb: 063-2020
+
 - xsa: 351
   date: 2020-11-10
   affected: yes
   qsb: 061-2020
+
+- xsa: 352
+  date: 2020-12-15
+  affected: no
+
+- xsa: 353
+  date: 2020-12-15
+  affected: no
+
+- xsa: 354
+  date: 2020-12-15
+  affected: no
+
+- xsa: 355
+  date: 2020-11-24
+  affected: yes
+  qsb: 062-2020
+
+- xsa: 356
+  date: 2020-12-15
+  affected: no
+
+- xsa: 358
+  date: 2020-12-15
+  affected: no
+
+- xsa: 359
+  date: 2020-12-15
+  affected: no
+
+- xsa: 360
+  date: 2021-01-21
+  affected: no
+
+- xsa: 361
+  date: 2021-02-16
+  affected: no
+
+- xsa: 362
+  date: 2021-02-16
+  affected: no
+
+- xsa: 363
+  date: 2021-02-16
+  affected: no
+
+- xsa: 364
+  date: 2021-02-16
+  affected: no
+
+- xsa: 365
+  date: 2021-02-16
+  affected: yes
+  qsb: 064-2021
+
+- xsa: 366
+  date: 2021-02-18
+  affected: yes
+  qsb: 065-2021
+
+- xsa: 367
+  date: 2021-03-04
+  affected: no
+
+- xsa: 368
+  date: 2021-03-18
+  affected: no
+
+- xsa: 369
+  date: 2021-03-04
+  affected: no
+
+- xsa: 371
+  date: 2021-03-30
+  affected: no

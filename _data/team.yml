@@ -1,3 +1,25 @@
+# Inquiries
+
+- name: Press
+  icon: fa-newspaper-o
+  type: inquiries
+  email: press@qubes-os.org
+  fingerprint: 
+
+- name: Business
+  icon: fa-briefcase
+  type: inquiries
+  email: business@qubes-os.org
+  fingerprint: 
+
+- name: User Research
+  icon: fa-flask
+  type: inquiries
+  email: team@research.qubes-os.org
+  fingerprint: 4D2E B2FA E2BE 5E8F D785  2DE0 DE1B 6337 FF6C 36F1
+
+# Core
+
 - name: Marek Marczykowski-Górecki
   role: Project lead; everything Xen / Linux related
   type: core
@@ -54,7 +76,7 @@
 
 - name: Frédéric Pierret
   email: frederic.pierret@qubes-os.org
-  role: General packaging, CentOS and Fedora templates maintainer
+  role: General packaging; Fedora, Debian, CentOS, and Gentoo template maintainer; contributed package maintainer
   type: core
   picture: team-frederic.jpg
   fingerprint: 9FA6 4B92 F95E 706B F28E  2CA6 4840 10B5 CDC5 76E2
@@ -62,7 +84,7 @@
 
 - name: Marta Marczykowska-Górecka
   email: marmarta@invisiblethingslab.com
-  role: Qubes Manager, Linux desktop, and core development
+  role: Qubes Manager, Linux desktop, core development, and user research
   type: core
   picture: team-marta.jpg
   fingerprint: 7D22 413E F3DB 0761 2CF7  3808 7D77 9BFA 6C80 6F69
@@ -77,12 +99,20 @@
   github: MiCh
 
 - name: Nina Eleanor Alter
-  email: ninavizz@gmail.com
-  role: User experience
+  email: nina@research.qubes-os.org
+  role: Design and user research
   type: core
   picture: team-nina.jpg
-  fingerprint: A9BC 4019 D695 AF0D D65D F726 2CA7 C96A DBDF DC5B
+  fingerprint: 97A2 5336 1A54 C66F E1DF  515B 0812 46AC 3393 E74F
   github: ninavizz
+
+- name: Demi Marie Obenour
+  email: demi@invisiblethingslab.com
+  role: "Software developer: Rust, Python, package management, GUI, and storage"
+  type: core
+  picture: team-demi.jpg
+  fingerprint: 7687 4D9F 1336 BA22 5907  1C71 B288 B55F FF9C 22C1
+  github: DemiMarie
 
 # Emeritus
 
@@ -260,4 +290,3 @@
   role: HCL page maintenance, HCL scripts
   type: community
   fingerprint: 9AF3 388A 533E 73AD 1107  7E55 617D 7048 8F0E 7BC6
-

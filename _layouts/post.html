@@ -1,47 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 {% include head.html %}
 <body>
 {% include header.html %}
-<div class="container">
-  {% include news-heading.html %}
-  <div class="more-bottom white-box page-content">
-    <div class="row">
-      <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
-        <header class="post-header">
-          <h1 class="post-title remove-bottom">{{ page.title }}</h1>
-          <p class="post-meta">
-            {{ page.date | date: "%Y-%m-%d" }}
-            by <strong>
-            {% assign author_team = false %}
-            {% for member in site.data.team %}
-              {% if page.author == member.name %}
-                {% assign author_team = true %}
-              {% endif %}
-            {% endfor %}
-            {% if page.author %}
+    <div class="container">
+    {% include news-heading.html %}
+
+    {% if page.lang == nil or page.lang == "en" %}
+        {% assign lang = "" %}
+    {% else %}
+        {% assign lang = "/" | append: page.lang %}
+    {% endif %}
+
+    {% assign team_link = lang | append: "/team/" %}
+    {% assign t = site.pages | concat: site.doc | concat: site.qubes-translated | where:'permalink', team_link %}
+    {% if t.size == 0 %}
+           {% assign team_link = "/team/" %}
+    {% endif %}
+        <div class="more-bottom white-box page-content">
+          <div class="row">
+            <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
+              <header class="post-header">
+                <h1 class="post-title remove-bottom">{{ page.title }}</h1>
+                <p class="post-meta">
+                  {{ page.date | date: "%Y-%m-%d" }}
+                  by <strong>
+                  {% assign author_team = false %}
+                  {% for member in site.data.team %}
+                    {% if page.author == member.name %}
+                      {% assign author_team = true %}
+                    {% endif %}
+                  {% endfor %}
+                {% if page.author %}
               {% if author_team %}
-                <a href="/team/#{{ page.author | slugify }}">{{ page.author }}</a>
-              {% else %}
-                <a href="/team/">{{ page.author }}</a>
-              {% endif %}
-            {% else %}
-              <a href="/team/">{{ site.default_author }}</a>
-            {% endif %}
-            </strong>
-            {% if page.meta %}{{ page.meta }}{% endif %}
-            in <strong>
-            {% if page.categories.first %}
-              {% for category in page.categories %}
-                <a href="/news/categories/#{{ category | slugify }}">{{ category | capitalize }}</a>{% if forloop.index < forloop.length %},{% endif %}
-              {% endfor %}
-            {% else %}
-              <a href="/news/categories/#{{ site.default_category | slugify }}">{{ site.default_category | capitalize }}</a>
-            {% endif %}
-            </strong>
-          </p>
-        </header>
-        <article class="post-content">
+                <a href="{{ team_link }}#{{ page.author | slugify }}">{{ page.author }}</a>
+                    {% else %}
+                     <a href="{{ team_link }}">{{ page.author }}</a>
+                {% endif %}
+                  {% else %}
+                    <a href="{{ team_link }}">{{ site.default_author }}</a>
+                  {% endif %}
+                  </strong>
+                  {% if page.meta %}{{ page.meta }}{% endif %}
+                  in <strong>
+                  {% if page.categories.first %}
+                    {% for category in page.categories %}
+                      <a href="{{ nc.url }}#{{ category | slugify }}">{{ category | capitalize }}</a>{% if forloop.index < forloop.length %},{% endif %}
+                    {% endfor %}
+                  {% else %}
+                    <a href="{{ nc.url }}#{{ site.default_category | slugify }}">{{ site.default_category | capitalize }}</a>
+                  {% endif %}
+                  </strong>
+                </p>
+              </header>
+              <article class="post-content">
           {{ content }}
         </article>
       </div>

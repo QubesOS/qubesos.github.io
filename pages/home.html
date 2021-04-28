@@ -1,4 +1,5 @@
 ---
+lang: en
 layout: home
 title: "Qubes OS: A reasonably secure operating system"
 permalink: /
@@ -7,6 +8,7 @@ redirect_from:
 - /wiki/WikiStart/
 - /trac/
 - /trac/WikiStart/
+ref: 7
 ---
 
 <!-- Featured Content -->
@@ -26,7 +28,7 @@ redirect_from:
         <div class="home-big-button">
           <a class="btn btn-lg btn-primary btn-block" href="/downloads/" role="button">
             Download &amp; Install<br>
-            <small>Version 4.0.3</small>
+            <small>Version 4.0.4</small>
           </a>
         </div>
       </div>
@@ -45,7 +47,7 @@ redirect_from:
     <div class="row featured-quotes">
       <div class="col-lg-1 col-md-1 text-center">
         <a class="avatar" href="https://twitter.com/Snowden/status/781493632293605376" target="_blank">
-          <img src="attachment/site/expert-edward-snowden.jpg">
+          <img src="/attachment/site/expert-edward-snowden.jpg">
         </a>
       </div>
       <div class="col-lg-5 col-md-5">
@@ -58,7 +60,7 @@ redirect_from:
       </div>
       <div class="col-lg-1 col-md-1 text-center">
         <a class="avatar" href="https://twitter.com/hashbreaker/status/577206817475850240" target="_blank">
-          <img src="attachment/site/expert-daniel-j-bernstein.jpg">
+          <img src="/attachment/site/expert-daniel-j-bernstein.jpg">
         </a>
       </div>
       <div class="col-lg-5 col-md-5">
@@ -73,7 +75,7 @@ redirect_from:
     <div class="row featured-quotes">
       <div class="col-lg-1 col-md-1 text-center">
         <a class="avatar" href="https://twitter.com/micahflee/status/577998730340622337" target="_blank">
-          <img src="attachment/site/expert-micah-lee.jpg">
+          <img src="/attachment/site/expert-micah-lee.jpg">
         </a>
       </div>
       <div class="col-lg-5 col-md-5">
@@ -112,7 +114,7 @@ redirect_from:
       <div class="white-box">
         <div class="featured-quotes">
           <a href="https://www.vice.com/en_us/article/kbz43x/finally-a-reasonably-secure-operating-system-qubes-r3" target="_blank">
-            <img src="attachment/site/motherboard-logo.png" class="logo">
+            <img src="/attachment/site/motherboard-logo.png" class="logo">
             <blockquote>
               "The world's most secure operating system assumes you've been owned."
               <footer>by J.M. Porup</footer>
@@ -121,7 +123,7 @@ redirect_from:
         </div>
         <div class="featured-quotes">
           <a href="https://www.economist.com/babbage/2014/03/28/a-digital-fortress" target="_blank">
-            <img src="attachment/site/the-economist-logo.png" class="logo">
+            <img src="/attachment/site/the-economist-logo.png" class="logo">
             <blockquote>
               "For those willing to put in the effort, Qubes is more secure than almost any other operating system available today."
               <footer>by J. M. P.</footer>
@@ -130,7 +132,7 @@ redirect_from:
         </div>
         <div class="featured-quotes">
           <a href="https://www.wired.com/2014/11/protection-from-hackers/" target="_blank">
-            <img src="attachment/site/wired-magazine-logo.png" class="logo">
+            <img src="/attachment/site/wired-magazine-logo.png" class="logo">
             <blockquote>
               "So Rutkowska flipped the game, this time in favor of the defenders."
               <footer>by Andy Greenberg</footer>
@@ -144,18 +146,7 @@ redirect_from:
       <h2 class="text-center outer-heading"><i class="fa fa-bullhorn"></i> News &amp; Announcements</h2>
       <div class="white-box">
         <ul class="list-unstyled remove-bottom">
-          {% for post in site.posts limit:7 %}
-          <li class="list-links">
-            <a class="black-link headline" href="{{ post.url }}">
-                {{ post.title }}
-              {% for category in post.categories %}
-              {% if site.allowed_categories contains category %}
-                <span class="detail"> Posted in {{ category | capitalize }} on {{ post.date | date: "%Y-%m-%d" }}</span>
-              {% endif %}
-              {% endfor %}
-            </a>
-          </li>
-          {% endfor %}
+              {% include home-news.html %}
           <li class="list-links-normal">
             <a href="/news/" class="btn btn-sm btn-primary">More News &amp; Announcements</a>
           </li>
@@ -173,7 +164,7 @@ redirect_from:
   <div class="white-box more-bottom">
     <div class="row">
       <div class="col-lg-6 col-md-6 text-center">
-        <img src="attachment/site/xen-logo.svg" class="add-top">
+        <img src="/attachment/site/xen-logo.svg" class="add-top">
       </div>
       <div class="col-lg-6 col-md-6">
         <h3 class="text-center add-bottom">Secure Compartmentalization</h3>
@@ -182,7 +173,7 @@ redirect_from:
     </div>
     <div class="row">
       <div class="col-lg-6 col-md-6 text-center">
-        <img src="attachment/site/OS-logos.svg" class="add-top">
+        <img src="/attachment/site/OS-logos.svg" class="add-top">
       </div>
       <div class="col-lg-6 col-md-6">
         <h3 class="text-center add-bottom">Operating System Freedom</h3>
@@ -191,7 +182,7 @@ redirect_from:
     </div>
     <div class="row">
       <div class="col-lg-6 col-md-6 text-center">
-        <img src="attachment/site/whonix-tor.svg" class="add-top">
+        <img src="/attachment/site/whonix-tor.svg" class="add-top">
       </div>
       <div class="col-lg-6 col-md-6">
         <h3 class="text-center add-bottom">Serious Privacy</h3>
@@ -207,14 +198,7 @@ redirect_from:
       <h3 class="text-center"><i class="fa fa-file-text"></i> Research</h3>
       <div class="white-box">
       <ul class="list-unstyled remove-bottom">
-        {% for research in site.data.research.papers limit:6 %}
-        <li class="list-links">
-          <a class="black-link headline" href="{{research.url}}">
-            {{research.title}}
-            <span class="detail"><strong>{{research.author}}</strong>, {{research.date}}</span>
-          </a>
-        </li>
-        {% endfor %}
+          {% include home-research.html %}
         <li class="list-links-normal">
           <a href="/research/" class="btn btn-sm btn-primary">Read More Research</a>
         </li>
@@ -227,25 +211,25 @@ redirect_from:
       <ul class="list-unstyled remove-bottom">
       <li class="list-links text-center">
         <a href="https://nlnet.nl/" target="_blank">
-          <img src="attachment/site/nlnet.gif" class="featured-logo center-block">
+          <img src="/attachment/site/nlnet.gif" class="featured-logo center-block">
           <span>2016</span>
         </a>
       </li>
       <li class="list-links text-center">
         <a href="https://www.opentech.fund/project/qubes-os" target="_blank">
-          <img src="attachment/site/OTF-logo.png" class="featured-logo center-block">
+          <img src="/attachment/site/OTF-logo.png" class="featured-logo center-block">
           <span>2015 and 2016</span>
         </a>
       </li>
       <li class="list-links text-center">
         <a href="https://www.accessnow.org/blog/2014/02/13/endpoint-security-prize-finalists-announced" target="_blank">
-          <img src="attachment/site/access-innovation-prize.jpg" class="featured-logo center-block">
+          <img src="/attachment/site/access-innovation-prize.jpg" class="featured-logo center-block">
           <span>2014 Finalist for Endpoint Security</span>
         </a>
       </li>
       <li class="list-links text-center">
         <a href="/partners/">
-          <img src="attachment/site/partners-shake.svg" class="center-block">
+          <img src="/attachment/site/partners-shake.svg" class="center-block">
           <span>We would love for you to fund or partner with us</span>
         </a>
       </li>

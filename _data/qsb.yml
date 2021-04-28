@@ -241,3 +241,27 @@
 - qsb: "061"
   title: "Information leak via power sidechannel (XSA-351)"
   date: 2020-11-10
+
+- qsb: "062"
+  title: "Stack corruption from XSA-346 change (XSA-355)"
+  date: 2020-11-24
+
+- qsb: "063"
+  title: "Multiple Xen issues (XSA-115, XSA-325, XSA-350)"
+  date: 2020-12-15
+
+- qsb: "064"
+  title: "Linux: error handling issues in blkback's grant mapping (XSA-365)"
+  date: 2021-02-16
+
+- qsb: "065"
+  title: "Missed flush in XSA-321 backport (XSA-366)"
+  date: 2021-02-18
+
+- qsb: "066"
+  title: "XML injection through libvirt domain configuration"
+  date: 2021-03-03
+
+- qsb: "067"
+  title: "Multiple RPM vulnerabilities"
+  date: 2021-03-19

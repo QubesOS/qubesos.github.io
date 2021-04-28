@@ -2,7 +2,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="onion-location" content="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion{{ page.url | replace:'index.html','' }}" />
 
   <title>
     {% if page.title and page.title != site.title and page.layout != 'home' %}
@@ -13,6 +12,9 @@
       {{ site.title }}
     {% endif %}
   </title>
+  {% unless page.lang == "en" or page.lang == nil %}
+    {% include doc-translated-warning.html %}
+  {% endunless %}
   {% if page.layout == 'doc' or
         page.layout == 'post' or
         page.layout == 'security' or
@@ -103,7 +105,10 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  <link href="/css/font-awesome.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link href="/fontawesome/css/all.css" rel="stylesheet">
+  <link href="/fontawesome/css/v4-shims.css" rel="stylesheet">
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' }}">
   <link rel="icon" type="image/x-icon" href="/attachment/icons/512x512/apps/qubes-logo-icon.png">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - Feed" href="/feed.xml" />

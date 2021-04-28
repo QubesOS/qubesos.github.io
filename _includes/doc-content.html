@@ -1,10 +1,22 @@
+
 <div class="more-bottom white-box page-content">
+{% if page.lang == nil or page.lang == "en" %}
+        {% assign doc_content = site.data.includes %}
+{% else %}
+        {% assign doc_content = site.data.translation[page.lang].includes %}
+        {% if doc_content == nil or doc_content.size == 0 %}
+                {% assign doc_content = site.data.includes %}
+        {% endif %}
+{% endif %}
+
+{% assign docs = doc_content | where_exp: "item", "item.section == 'doc-content'" | first %}
+
   <div class="row">
     <div class="col-md-3">
       <div class="page-source-side remove-bottom">
-        <h3 class="remove-bottom">Contents</h3>
+        <h3 class="remove-bottom">{{ docs.text }}</h3>
       </div>
-      <a id="toc-button" data-toggle="collapse" href="#page-toc" class="btn btn-primary btn-block" role="button">Contents</a>
+      <a id="toc-button" data-toggle="collapse" href="#page-toc" class="btn btn-primary btn-block" role="button">{{ docs.text }}</a>
       <div id="page-toc" class="collapse in"></div>
       <div class="page-source-side">
       {% include doc-widget.html %}
@@ -13,7 +25,24 @@
     <div class="toc-button-spacer more-bottom"></div>
     <div class="col-xs-12 col-md-9 page-content-right">
       <article id="doc-content" class="post-content">
+
         {{ content }}
+
+        <!-- Here below the content will be added an _include only in the case the current page has a permalink ending with the specific word -->
+        {% assign perm_last_part = page.url | split: '/' | last | lstrip %}
+        {% if perm_last_part == "bulletins"  %}
+             {% include sec-bulletin.html %}
+        {% endif %}
+        {% if perm_last_part == "canaries"  %}
+             {% include sec-canaries.html %}
+        {% endif %}
+        {% if perm_last_part == "xsa"  %}
+             {% include xsa.html %}
+        {% endif %}
+        {% if perm_last_part == "style-guide" %}
+             {% include style-guide.html %}
+        {% endif %}
+
       </article>
     <br>
     </div>

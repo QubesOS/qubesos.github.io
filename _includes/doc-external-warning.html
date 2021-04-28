@@ -1,6 +1,16 @@
+{% if page.lang == nil or page.lang == "en" %}
+        {% assign msgs = site.data.includes %}
+{% else %}
+        {% assign msgs = site.data.translation[page.lang].includes %}
+        {% if msgs == nil or msgs.size == 0 %}
+                {% assign msgs = site.data.includes %}
+        {% endif %}
+{% endif %}
+
+{% assign external = msgs | where_exp: "item", "item.section == 'doc-external'" | first %}
+
+
 <div class="alert alert-sticky alert-warning" role="alert">
   <i class="fa fa-exclamation-circle"></i>
-  This is unofficial, third-party documentation.
-  The Qubes OS Project cannot guarantee the accuracy of this page.
-  Please exercise caution.
+  {{ external.text }}
 </div>

@@ -4,5 +4,3 @@ include:
 
 build:website:
   extends: .website
-  script:
-    - ./_utils/gitlabci.sh

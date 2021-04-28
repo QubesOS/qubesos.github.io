@@ -1,11 +1,13 @@
 ---
+lang: en
 layout: default
-title: Donate to Qubes
 permalink: /donate/
 redirect_from:
 - /en/donate/
 - /doc/Donations/
 - /wiki/Donations/
+ref: 5
+title: Donate to Qubes
 ---
 
 Your donation directly supports the continued development of Qubes OS.
@@ -38,19 +40,17 @@ Thank you!
 
 Are you an organization, company, or individual who believes in our vision and wants to make an impact on our efforts? [Become a Qubes Partner][Qubes Partners page] by giving a significant financial contribution.
 
-
 ## Help us spread the word
 
 If you are a Qubes OS user or support our cause, help us expand our community by introducing Qubes to your circle, including:
 
- - Privacy advocates
- - IT companies
- - Individuals who value and appreciate privacy in general
- - Bitcoin companies
- - Sysadmins and other professionals who work with security
+- Privacy advocates
+- IT companies
+- Individuals who value and appreciate privacy in general
+- Bitcoin companies
+- Sysadmins and other professionals who work with security
 
 There are also [many more ways to contribute][contributing]!
-
 
 ## FAQs on donating
 
@@ -119,7 +119,7 @@ However, if you or your organization has relevant knowledge, experience, leads, 
 
 The donation address can be verified via the [Qubes Security Pack][Qubes Security Pack], specifically in the [fund directory][fund].
 We provide [detailed instructions for verifying the digital signatures][verify].
-You can also view the address on [blockexplorer.com] and [blockchain.info].
+You can also view the address on [blockchain.info].
 
 The Qubes Project maintains a [decentralized Bitcoin fund using a multi-signature wallet][announcement].
 This means that no single person is capable of spending these funds.
@@ -134,13 +134,11 @@ Qubes OS is a free and open source operating system that focuses on security and
 Its architecture is built to enable you to define and visualize different security environments on your computer and control how they interact, helping you to get your work done safely.
 Visit our [introduction page to Qubes][intro page] or watch a [video overview of the system][video page] to learn more.
 
-
 ## Thank you!
 
 <script src="https://opencollective.com/qubes-os/banner.js"></script>
 
 <noscript><object type="image/svg+xml" data="https://opencollective.com/qubes-os/tiers/supporters.svg?avatarHeight=60&width=600"></object></noscript>
-
 
 [open-collective-faq]: https://opencollective.com/faq
 [Open Collective]: https://opencollective.com/qubes-os
@@ -150,7 +148,6 @@ Visit our [introduction page to Qubes][intro page] or watch a [video overview of
 [Qubes Security Pack]: /doc/security-pack/
 [fund]: https://github.com/QubesOS/qubes-secpack/tree/master/fund
 [verify]: /security/pack/#how-to-obtain-verify-and-read
-[blockexplorer.com]: https://blockexplorer.com/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
 [blockchain.info]: https://blockchain.info/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
 [announcement]: /news/2016/07/13/qubes-distributed-fund/
 [Merchandise]: /merchandise/

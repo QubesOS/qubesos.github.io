@@ -114,10 +114,14 @@
     icon: fa-lock
   - title: Report a Bug
     url: /doc/reporting-bugs/
-  - title: Press Inquiries
-    url: mailto:press@qubes-os.org
-  - title: Business Inquiries
-    url: mailto:business@qubes-os.org
+  - title: Inquiries
+    url: /team/#inquiries
+  - title: Core Team
+    url: /team/#core-team
+  - title: Emeritus
+    url: /team/#emeritus
+  - title: Community Contributors
+    url: /team/#community-contributors
 
 - title: Donate
   url: /donate/

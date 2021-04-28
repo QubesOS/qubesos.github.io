@@ -1,3 +1,9 @@
+ - organization: Foundation for Applied Privacy
+   org_url: https://applied-privacy.net/
+   location: Austria
+   urls:
+   - url: https://qubesos-mirror.applied-privacy.net/
+
  - organization: eScience Center, Nanjing University
    org_url: https://sci.nju.edu.cn/
    location: China
@@ -28,12 +34,6 @@
    location: Finland
    urls:
    - url: https://mirror-2.hosthink.net/qubes
-
- - organization: Universal Layer
-   org_url: https://ulayer.net/
-   location: Finland
-   urls:
-   - url: https://mirrors.ulayer.net/qubes
 
  - organization: Linux Users' Group of Durgapur
    org_url: https://dgplug.org/
@@ -70,6 +70,14 @@
    location: Poland
    urls:
    - url: http://ftp.icm.edu.pl/pub/os/qubes/
+
+ - organization: krmir NPO
+   org_url: https://krmir.org/
+   location: South Korea
+   urls:
+   - url: https://mirror.krmir.org/qubes
+   - url: ftp://mirror.krmir.org/qubes
+   - url: rsync://mirror.krmir.org/qubes
 
  - organization: ACC, Umeå University
    org_url: http://www.acc.umu.se/

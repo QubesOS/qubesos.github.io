@@ -5,9 +5,9 @@ Qubes OS Official Website
 
 Canonical URL: https://www.qubes-os.org
 
-This is the main repository for the [Qubes OS Project][qubes] website. Qubes is
+This is the main repository for the [Qubes OS Project](https://github.com/QubesOS) website. Qubes is
 a security-oriented, open-source operating system for personal computers. It
-uses virtualization to implement [security by compartmentalization][intro] and
+uses virtualization to implement [security by compartmentalization](https://www.qubes-os.org/intro/) and
 supports both Linux and Windows virtual environments.
 
 
@@ -48,7 +48,7 @@ consider making a [donation](https://www.qubes-os.org/donate/) today.
 Contents
 --------
 
-This repository consists of a [Jekyll] site and several Git submodules for
+This repository consists of a [Jekyll](https://jekyllrb.com/) site and several Git submodules for
 content:
 
  - `qubes-doc` (official documentation)
@@ -108,7 +108,7 @@ Instructions
 Documentation Guidelines
 ------------------------
 
-Our [Documentation Guidelines] include:
+Our [Documentation Guidelines](https://www.qubes-os.org/doc/doc-guidelines/) include:
  - How to Report Issues
  - How to Contribute
  - Contribution Suggestions
@@ -120,38 +120,22 @@ Please carefully read these guidelines before submitting a pull request.
 
 ### Dependencies & Third Party Docs ###
 
- - [Jekyll Documentation] - template rendering engine
- - [Bootstrap 3] - styling and CSS structure
- - [FontAwesome] - the icon font throughout the site
- - [jQuery 1.7] - javascript helper library
- - [jQuery ToC MD Generator] - renders header menu on documentation section
+ - [Jekyll Documentation](http://jekyllrb.com/docs/) - template rendering engine
+ - [Bootstrap 3](http://getbootstrap.com) - styling and CSS structure
+ - [FontAwesome](http://fontawesome.io) - the icon font throughout the site
+ - [jQuery 1.7](http://api.jquery.com) - javascript helper library
+ - [jQuery ToC MD Generator](https://github.com/dafi/tocmd-generator) - renders header menu on documentation section
 
 Deprecated Documentation
 ------------------------
 
- - [qubes-os.org-3.2-EOL.zip] contains the state of the Qubes website when
-   [Qubes OS 3.2 reached EOL]. All you need to browse it is a web browser.
+ - [qubes-os.org-3.2-EOL.zip](https://github.com/QubesOS/qubesos.github.io/releases/download/3.2-EOL/qubes-os.org-3.2-EOL.zip) contains the state of the Qubes website when
+   [Qubes OS 3.2 reached EOL](https://www.qubes-os.org/news/2019/03/28/qubes-3-2-has-reached-eol/). All you need to browse it is a web browser.
  - Here is the state of this repo and all submodules when [Qubes OS 3.2 reached
-   EOL]:
+   EOL](https://www.qubes-os.org/news/2019/03/28/qubes-3-2-has-reached-eol/):
    - https://github.com/QubesOS/qubesos.github.io/tree/3.2-EOL
    - https://github.com/QubesOS/qubes-doc/tree/3.2-EOL
    - https://github.com/QubesOS/qubes-hcl/tree/3.2-EOL
    - https://github.com/QubesOS/qubes-posts/tree/3.2-EOL
    - https://github.com/QubesOS/qubes-attachment/tree/3.2-EOL
-
-
-[qubes]: https://github.com/QubesOS
-[intro]: https://www.qubes-os.org/intro/
-[Documentation Guidelines]: https://www.qubes-os.org/doc/doc-guidelines/
-[Jekyll]: https://jekyllrb.com/
-[Jekyll Documentation]: http://jekyllrb.com/docs/
-[FontAwesome]: http://fontawesome.io
-[Bootstrap 3]: http://getbootstrap.com
-[jQuery 1.7]: http://api.jquery.com
-[jQuery ToC MD Generator]: https://github.com/dafi/tocmd-generator
-[gh-fork]: https://guides.github.com/activities/forking/
-[gh-pull]: https://help.github.com/articles/using-pull-requests/
-[patch]: https://www.qubes-os.org/doc/source-code/#sending-a-patch
-[qubes-os.org-3.2-EOL.zip]: https://github.com/QubesOS/qubesos.github.io/releases/download/3.2-EOL/qubes-os.org-3.2-EOL.zip
-[Qubes OS 3.2 reached EOL]: https://www.qubes-os.org/news/2019/03/28/qubes-3-2-has-reached-eol/
 

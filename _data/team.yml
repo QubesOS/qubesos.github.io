@@ -278,6 +278,12 @@
   fingerprint: 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
   website: https://www.whonix.org
   github: adrelanos
+  
+- name: Sven Semmler
+  email: Sven@SvenSemmler.org
+  role: HCL maintainer
+  type: community
+  fingerprint: D7CA F2DB 658D 89BC 08D6 A7AA DA6E 167B 8F54 1FB6
 
 - name: Andrew Sorensen
   email: andrew@localcoast.net

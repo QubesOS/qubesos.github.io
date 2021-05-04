@@ -9,7 +9,7 @@
 
 {% assign docs = doc_content | where_exp: "item", "item.section == 'doc-widget'" | first %}
 
-{% if lang == "" %}
+{% if page.lang == nil or page.lang == "en" %}
   {% assign master_edit =  site.project_repo_path | append: "/qubes-doc/edit/master" | append: page.relative_path | remove_first: '_doc'  %}
   {% assign master_blob =  site.project_repo_path | append: "/qubes-doc/blob/master" | append: page.relative_path | remove_first: '_doc'  %}
 {% else %}

@@ -23,7 +23,7 @@ With credit card donations, [we lose roughly 14%](https://opencollective.com/faq
 
 **<i class="fa fa-2x fa-fw black-icon fa-bitcoin"></i> Bitcoin:** `3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq` ([How to verify our Bitcoin address](#how-do-i-verify-your-bitcoin-address))
 
-**[<i class="fa fa-2x fa-fw black-icon fa-credit-card"></i> Credit card via Open Collective](https://opencollective.com/qubes-os)**
+**[<i class="fa fa-2x fa-fw black-icon fa-credit-card"></i> Credit card or PayPal via Open Collective](https://opencollective.com/qubes-os)**
 
 **[<i class="fa fa-2x fa-fw black-icon fa-bank"></i> Tax-deductible EU bank transfer](#how-can-i-donate-via-eu-bank-transfer)**
 

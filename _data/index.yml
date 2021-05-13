@@ -368,7 +368,7 @@
       - text: Split dm-crypt
         url: https://github.com/rustybird/qubes-split-dm-crypt
       - text: Split SSH
-        url: https://kushaldas.in/posts/using-split-ssh-in-qubesos-4-0.html
+        url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/split-ssh.md
       - text: Using OnlyKey with Qubes OS
         url: https://docs.crp.to/qubes.html
 

@@ -73,7 +73,7 @@ With the help of our community, we hope to eventually build a nonprofit organiza
 
 ### How is my donation used?
 
-Your donation pays directly for individual developers who have been hired to work on the open source edition of Qubes.
+Your donation keeps the Qubes OS Project going, paying primarily for the open-source developers who build Qubes OS itself, as well as secondary expenses, such as infrastructure, needed to support their work and our community.
 
 ### Do donors get personalized support or special feature requests?
 

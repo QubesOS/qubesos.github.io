@@ -265,3 +265,7 @@
 - qsb: "067"
   title: "Multiple RPM vulnerabilities"
   date: 2021-03-19
+
+- qsb: "068"
+  title: "Disconnecting a video output can cause XScreenSaver to crash"
+  date: 2021-06-04

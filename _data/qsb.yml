@@ -269,3 +269,7 @@
 - qsb: "068"
   title: "Disconnecting a video output can cause XScreenSaver to crash"
   date: 2021-06-04
+
+- qsb: "069"
+  title: "Multiple Xen and Intel issues"
+  date: 2021-06-08

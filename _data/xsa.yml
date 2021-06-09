@@ -1545,3 +1545,27 @@
 - xsa: 371
   date: 2021-03-30
   affected: no
+
+- xsa: 372
+  date: 2021-06-08
+  affected: no
+
+- xsa: 373
+  date: 2021-06-08
+  affected: yes
+  qsb: 069-2021
+
+- xsa: 374
+  date: 2021-06-08
+  affected: yes
+  qsb: 069-2021
+
+- xsa: 375
+  date: 2021-06-08
+  affected: yes
+  qsb: 069-2021
+
+- xsa: 377
+  date: 2021-06-08
+  affected: yes
+  qsb: 069-2021

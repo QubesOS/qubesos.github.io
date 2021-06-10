@@ -76,6 +76,7 @@ git -C "$sub_path" checkout FETCH_HEAD
 echo 'time: 2020-01-01 00:00:00 +0100' >> _config.yml
 bundle exec jekyll build
 git checkout _config.yml
+cp -f robots-staging.txt _site/robots.txt
 
 echo -e "section_end:$(date +%s):build_current\r\e[0K"
 

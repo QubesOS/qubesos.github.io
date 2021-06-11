@@ -119,7 +119,7 @@ However, if you or your organization has relevant knowledge, experience, leads, 
 
 ### How do I verify your Bitcoin address?
 
-The donation address can be verified via the [Qubes Security Pack](/doc/security/pack/), specifically in the [fund directory](https://github.com/QubesOS/qubes-secpack/tree/master/fund).
+The donation address can be verified via the [Qubes Security Pack](/security/pack/), specifically in the [fund directory](https://github.com/QubesOS/qubes-secpack/tree/master/fund).
 We provide [detailed instructions for verifying the digital signatures](/security/pack/#how-to-obtain-verify-and-read).
 You can also view the address on [blockchain.info](https://blockchain.info/address/3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq).
 
@@ -128,7 +128,7 @@ This means that no single person is capable of spending these funds.
 
 ### How do I verify your Monero address?
 
-The donation address can be verified via the [Qubes Security Pack](/doc/security/pack/), specifically in the [fund directory](https://github.com/QubesOS/qubes-secpack/tree/master/fund).
+The donation address can be verified via the [Qubes Security Pack](/security/pack/), specifically in the [fund directory](https://github.com/QubesOS/qubes-secpack/tree/master/fund).
 We provide [detailed instructions for verifying the digital signatures](/security/pack/#how-to-obtain-verify-and-read).
 
 ### Is Qubes merchandise available?

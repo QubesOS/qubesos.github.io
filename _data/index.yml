@@ -150,6 +150,8 @@
         text: Salt Management Stack
       - url: /doc/disposablevm-customization/
         text: DisposableVM Customization
+      - url: /doc/installing-contributed-packages/
+        text: Installing contributed packages
       - url: /doc/bind-dirs/
         text: Making Any File Persistent Using `bind-dirs`
       - url: /doc/gui-configuration/

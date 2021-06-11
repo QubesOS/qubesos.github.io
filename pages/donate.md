@@ -21,7 +21,9 @@ We accept monetary donations via Bitcoin and credit card in the following three 
 Donating with Bitcoin ensures that 100% of your money supports Qubes development because we do not incur any administrative costs.
 With credit card donations, [we lose roughly 14%](https://opencollective.com/faq) to administrative costs.
 
-**<i class="fa fa-2x fa-fw black-icon fa-bitcoin"></i> Bitcoin:** `3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq` ([How to verify our Bitcoin address](#how-do-i-verify-your-bitcoin-address))
+**<i class="fa fa-2x fa-fw black-icon fa-bitcoin"></i> Bitcoin (BTC):** `3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq` ([How to verify our Bitcoin address](#how-do-i-verify-your-bitcoin-address))
+
+**<i class="fab fa-2x fa-fw black-icon fa-monero"></i> Monero (XMR):** `46PrVgXBdD4cps3SVkHoCDZvMfFdG5q4ej5DYKpuKpTnjiL7pv6KGv7dPh4DPijCGqTbxLDPqZJkobd9SttMiauoP1CQU4y` ([How to verify our Monero address](#how-do-i-verify-your-monero-address))
 
 **[<i class="fa fa-2x fa-fw black-icon fa-credit-card"></i> Credit card or PayPal via Open Collective](https://opencollective.com/qubes-os)**
 
@@ -123,6 +125,11 @@ You can also view the address on [blockchain.info](https://blockchain.info/addre
 
 The Qubes Project maintains a [decentralized Bitcoin fund using a multi-signature wallet](/news/2016/07/13/qubes-distributed-fund/).
 This means that no single person is capable of spending these funds.
+
+### How do I verify your Monero address?
+
+The donation address can be verified via the [Qubes Security Pack][Qubes Security Pack], specifically in the [fund directory][fund].
+We provide [detailed instructions for verifying the digital signatures][verify].
 
 ### Is Qubes merchandise available?
 

@@ -128,8 +128,8 @@ This means that no single person is capable of spending these funds.
 
 ### How do I verify your Monero address?
 
-The donation address can be verified via the [Qubes Security Pack][Qubes Security Pack], specifically in the [fund directory][fund].
-We provide [detailed instructions for verifying the digital signatures][verify].
+The donation address can be verified via the [Qubes Security Pack](/doc/security-pack/), specifically in the [fund directory](https://github.com/QubesOS/qubes-secpack/tree/master/fund).
+We provide [detailed instructions for verifying the digital signatures](/security/pack/#how-to-obtain-verify-and-read).
 
 ### Is Qubes merchandise available?
 

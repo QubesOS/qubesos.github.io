@@ -273,6 +273,8 @@
         text: Storage Pools
       - url: /doc/audio-virtualization/
         text: Audio virtualization
+      - url: /doc/template-manager/
+        text: Template Manager
 
   - title: Services
     sub-pages:

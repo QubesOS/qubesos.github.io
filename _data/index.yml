@@ -27,7 +27,7 @@
     - url: /faq/#general--security
       text: Security FAQ
     - url: /security/pack/
-      text: Qubes Security Pack (`qubes-secpack`)
+      text: Qubes Security Pack (qubes-secpack)
     - url: /security/bulletins/
       text: Qubes Security Bulletins (QSBs)
     - url: /security/canaries/
@@ -153,7 +153,7 @@
       - url: /doc/installing-contributed-packages/
         text: Installing contributed packages
       - url: /doc/bind-dirs/
-        text: Making Any File Persistent Using `bind-dirs`
+        text: Making Any File Persistent Using bind-dirs
       - url: /doc/gui-configuration/
         text: GUI Configuration
       - url: /doc/resize-disk-image/

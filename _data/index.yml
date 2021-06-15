@@ -27,11 +27,11 @@
     - url: /faq/#general--security
       text: Security FAQ
     - url: /security/pack/
-      text: Security Pack
+      text: Qubes Security Pack (`qubes-secpack`)
     - url: /security/bulletins/
-      text: Security Bulletins
+      text: Qubes Security Bulletins (QSBs)
     - url: /security/canaries/
-      text: Canaries
+      text: Qubes Canaries
     - url: /security/xsa/
       text: Xen Security Advisory (XSA) Tracker
     - url: /security/verifying-signatures/
@@ -253,6 +253,8 @@
     sub-pages:
       - url: /doc/architecture/
         text: Qubes OS Architecture Overview
+      - url: /doc/security-design-goals/
+        text: Security design goals
       - url: /doc/security-critical-code/
         text: Security-critical Code in Qubes OS
       - text: Qubes Core Admin

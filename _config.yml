@@ -1,6 +1,6 @@
 # Site settings
 title: Qubes OS
-description: > # this means to ignore newlines until "baseurl:"
+description: > # this means to ignore newlines
   Qubes is a security-oriented, free and open-source operating system for
   personal computers that allows you to securely compartmentalize your digital
   life.
@@ -10,7 +10,6 @@ github_username:  QubesOS
 project_url: "https://www.qubes-os.org"
 project_repo_path: "https://github.com/QubesOS"
 project_repo_site: "/qubesos.github.io"
-project_repo_wiki: "/qubes-wiki"
 project_repo_artwork: "/qubes-artwork"
 
 # Build settings

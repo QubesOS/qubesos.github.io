@@ -20,6 +20,10 @@ This page informs you of our policies regarding the collection, use, and disclos
 
 We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from [Terms](https://www.qubes-os.org/terms/)
 
+## GitHub and GitHub Pages
+
+The Service is hosted by [GitHub Pages](https://pages.github.com/), which is owned and operated by [GitHub](https://github.com/). We have no knowledge of or control over GitHub Pages' infrastructure or privacy practices beyond the information and controls provided to us through by GitHub as a user of GitHub Pages and other GitHub services. Please see the [GitHub Privacy Statement](https://docs.github.com/en/github/site-policy/github-privacy-statement) for further details. In particular, please see the [GitHub Pages section](https://docs.github.com/en/github/site-policy/github-privacy-statement#github-pages). Please also see GitHub's [Global Privacy Practices](https://docs.github.com/en/github/site-policy/global-privacy-practices).
+
 ## Information Collection And Use
 
 We collect several different types of information for various purposes to provide and improve our Service to you.

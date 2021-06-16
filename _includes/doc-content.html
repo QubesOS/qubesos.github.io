@@ -26,11 +26,13 @@
     <div class="col-xs-12 col-md-9 page-content-right">
       <article id="doc-content" class="post-content">
 
+        <h1>{{ page.path | split: '/' | last | replace: '-',' ' | remove: '.md' | capitalize }}</h1>
+
         {{ content }}
 
         <!-- Here below the content will be added an _include only in the case the current page has a permalink ending with the specific word -->
         {% assign perm_last_part = page.url | split: '/' | last | lstrip %}
-        {% if perm_last_part == "bulletins"  %}
+        {% if perm_last_part == "security-bulletins"  %}
              {% include sec-bulletin.html %}
         {% endif %}
         {% if perm_last_part == "canaries"  %}

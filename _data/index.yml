@@ -5,39 +5,23 @@
   category: introduction
   sub-pages:
     - url: /intro/
-      text: What is Qubes OS?
     - url: /video-tours/
-      text: Video Tours
     - url: /screenshots/
-      text: Screenshots
-    - url: /faq/#users
-      text: User FAQ
+    - url: /faq/
     - url: /doc/reporting-bugs/
-      text: Reporting Bugs and Other Issues
     - url: /support/
-      text: Help, Support, Mailing Lists, and Forum
     - url: /doc/contributing/
-      text: How to Contribute
 
 - title: Project Security
   category: project-security
   sub-pages:
     - url: /security/
-      text: Security Center
-    - url: /faq/#general--security
-      text: Security FAQ
     - url: /security/pack/
-      text: Qubes Security Pack (qubes-secpack)
     - url: /security/bulletins/
-      text: Qubes Security Bulletins (QSBs)
     - url: /security/canaries/
-      text: Qubes Canaries
     - url: /security/xsa/
-      text: Xen Security Advisory (XSA) Tracker
     - url: /security/verifying-signatures/
-      text: Verifying Signatures
-    - text: Qubes PGP Keys
-      url: https://keys.qubes-os.org/keys/
+    - url: /security/pgp-keys/
 
 - title: User Documentation
   subtitle: Core documentation for Qubes users.
@@ -46,172 +30,93 @@
   - title: Choosing Your Hardware
     sub-pages:
       - url: /doc/system-requirements/
-        text: System Requirements
       - url: /doc/certified-hardware/
-        text: Certified Hardware
       - url: /hcl/
-        text: Hardware Compatibility List (HCL)
       - url: /doc/hardware-testing/
-        text: Hardware Testing
   - title: Downloading, Installing, and Upgrading Qubes
     sub-pages:
-      - url: /downloads/
-        text: Downloads
+      - url: /doc/downloads/
       - url: /doc/installation-guide/
-        text: Installation Guide
       - url: /doc/upgrade/
-        text: Upgrade Guides
       - url: /doc/supported-versions/
-        text: Supported Versions
       - url: /doc/version-scheme/
-        text: Version Scheme
       - url: /doc/testing/
-        text: Testing New Releases and Updates
   - title: Common Tasks
     sub-pages:
-      - url: /getting-started/
-        text: Getting Started
+      - url: /doc/getting-started/
       - url: /doc/copy-paste/
-        text: Copying and Pasting Text Between Domains
       - url: /doc/copying-files/
-        text: Copying and Moving Files Between Domains
       - url: /doc/copy-from-dom0/
-        text: Copying from (and to) Dom0
       - url: /doc/updating-qubes-os/
-        text: Updating Qubes OS
       - url: /doc/software-update-dom0/
-        text: Installing and Updating Software in Dom0
       - url: /doc/software-update-domu/
-        text: Installing and Updating Software in DomUs
       - url: /doc/backup-restore/
-        text: Backup, Restoration, and Migration
       - url: /doc/volume-backup-revert/
-        text: Volume Backup and Revert
       - url: /doc/disposablevm/
-        text: DisposableVMs
       - url: /doc/block-devices/
-        text: Block (or Storage) Devices
       - url: /doc/usb-devices/
-        text: USB Devices
       - url: /doc/pci-devices/
-        text: PCI Devices
       - url: /doc/device-handling/
-        text: Device Handling
       - url: /doc/optical-discs/
-        text: Optical Discs
       - url: /doc/full-screen-mode/
-        text: Fullscreen Mode
   - title: Managing Operating Systems within Qubes
     sub-pages:
       - url: /doc/templates/
-        text: TemplateVMs
       - url: /doc/templates/fedora/
-        text: Fedora
       - url: /doc/templates/debian/
-        text: Debian
       - url: /doc/templates/minimal/
-        text: Minimal TemplateVMs
       - url: /doc/windows/
-        text: Windows
       - url: /doc/standalone-and-hvm/
-        text: StandaloneVMs and HVMs
   - title: Security in Qubes
     sub-pages:
       - url: /doc/firewall/
-        text: Qubes Firewall
       - url: /doc/data-leaks/
-        text: Understanding and Preventing Data Leaks
       - url: /doc/vm-sudo/
-        text: Passwordless Root Access in VMs
       - url: /doc/device-handling-security/
-        text: Device Handling Security
       - url: /doc/anti-evil-maid/
-        text: Anti Evil Maid
       - url: /doc/split-gpg/
-        text: Split GPG
       - url: /doc/u2f-proxy/
-        text: U2F Proxy
       - url: /doc/yubi-key/
-        text: YubiKey
 
   - title: Advanced Configuration
     sub-pages:
       - url: /doc/config-files/
-        text: Configuration Files
       - url: /doc/secondary-storage/
-        text: Storing AppVMs on Secondary Drives
       - url: /doc/rpc-policy/
-        text: RPC Policies
       - url: /doc/usb-qubes/
-        text: USB Qubes
-      - url: /doc/managing-vm-kernel/
-        text: Managing VM Kernels
+      - url: /doc/managing-vm-kernels/
       - url: /doc/salt/
-        text: Salt Management Stack
       - url: /doc/disposablevm-customization/
-        text: DisposableVM Customization
       - url: /doc/installing-contributed-packages/
-        text: Installing contributed packages
       - url: /doc/bind-dirs/
-        text: Making Any File Persistent Using bind-dirs
       - url: /doc/gui-configuration/
-        text: GUI Configuration
       - url: /doc/resize-disk-image/
-        text: Resizing Disk Images
-      - url: /doc/newer-hardware-troubleshooting/
-        text: Troubleshooting Newer Hardware
       - url: /doc/mount-from-other-os/
-        text: Mounting and Decrypting Qubes Partitions from Outside Qubes
       - url: /doc/kde/
-        text: KDE
       - url: /doc/i3/
-        text: i3 Window Manager
       - url: /doc/awesome/
-        text: awesome Window Manager
 
   - title: Troubleshooting
     sub-pages:
-      - url: /doc/installation-troubleshooting
-        text: Installation Troubleshooting
+      - url: /doc/installation-troubleshooting/
+      - url: /doc/hardware-troubleshooting/
       - url: /doc/uefi-troubleshooting/
-        text: UEFI Troubleshooting
-      - text: Suspend/Resume Troubleshooting
-        url: /doc/suspend-resume-troubleshooting/
-      - text: Application Shortcut Troubleshooting
-        url: /doc/managing-appvm-shortcuts/
-      - text: VM Troubleshooting
-        url: /doc/vm-troubleshooting/
-      - text: HVM Troubleshooting
-        url: /doc/hvm-troubleshooting/
-      - text: Disk Troubleshooting
-        url: /doc/disk-troubleshooting/
-      - text: PCI Troubleshooting
-        url: /doc/pci-troubleshooting/
-      - text: USB Troubleshooting
-        url: /doc/usb-troubleshooting/
-      - text: GUI Troubleshooting
-        url: /doc/gui-troubleshooting/
-      - text: Media Troubleshooting
-        url: /doc/media-troubleshooting/
-      - text: Firewall Troubleshooting
-        url: /doc/firewall/#firewall-troubleshooting
-      - text: VPN Troubleshooting
-        url: /doc/vpn-troubleshooting/
-      - text: Update Troubleshooting
-        url: /doc/update-troubleshooting/
+      - url: /doc/suspend-resume-troubleshooting/
+      - url: /doc/app-menu-shortcut-troubleshooting/
+      - url: /doc/vm-troubleshooting/
+      - url: /doc/hvm-troubleshooting/
+      - url: /doc/disk-troubleshooting/
+      - url: /doc/pci-troubleshooting/
+      - url: /doc/usb-troubleshooting/
+      - url: /doc/gui-troubleshooting/
+      - url: /doc/media-troubleshooting/
+      - url: /doc/vpn-troubleshooting/
+      - url: /doc/update-troubleshooting/
 
   - title: Reference Pages
     sub-pages:
       - url: /doc/tools/
-        text: Command-line Tools
       - url: /doc/glossary/
-        text: Glossary
-      - url: /doc/qubes-service/
-        text: Qubes Service Framework
-      - url: /doc/qrexec/
-        text: Command Execution in VMs (and Qubes RPC)
-      - text: Deprecated Documentation
-        url: https://github.com/QubesOS/qubesos.github.io#deprecated-documentation
 
 - title: Developer Documentation
   subtitle: Core documentation for Qubes developers and advanced users.
@@ -219,116 +124,71 @@
   sub-pages:
   - title: General
     sub-pages:
-      - url: /faq/#developers
-        text: Developer FAQ
+      - url: /faq/
       - url: /doc/package-contributions/
-        text: Package Contributions
       - url: /doc/doc-guidelines/
-        text: Documentation Guidelines
-      - text: Community-Developed Feature Tracker
-        url: /qubes-issues/
+      - url: /qubes-issues/
       - url: /gsoc/
-        text: Google Summer of Code
       - url: /gsod/
-        text: Google Season of Docs
       - url: /doc/devel-books/
-        text: Books for Developers
       - url: /doc/style-guide/
-        text: Style Guide
       - url: /doc/usability-ux/
-        text: Usability & UX
 
   - title: Code
     sub-pages:
       - url: /doc/source-code/
-        text: Source Code
       - url: /doc/license/
-        text: Software License
       - url: /doc/coding-style/
-        text: Coding Guidelines
       - url: /doc/code-signing/
-        text: Code Signing
 
   - title: System
     sub-pages:
       - url: /doc/architecture/
-        text: Qubes OS Architecture Overview
       - url: /doc/security-design-goals/
-        text: Security design goals
       - url: /doc/security-critical-code/
-        text: Security-critical Code in Qubes OS
-      - text: Qubes Core Admin
-        url: https://dev.qubes-os.org/projects/core-admin/en/latest/
-      - text: Qubes Core Admin Client
-        url: https://dev.qubes-os.org/projects/core-admin-client/en/latest/
-      - text: Qubes Admin API
-        url: /news/2017/06/27/qubes-admin-api/
-      - text: Qubes Core Stack
-        url: /news/2017/10/03/core3/
+      - url: /doc/qubes-core-admin/
+      - url: /doc/qubes-core-admin-client/
+      - url: /doc/qubes-admin-api/
+      - url: /doc/qubes-core-stack/
       - url: /doc/gui/
-        text: Qubes GUI virtualization protocol
       - url: /doc/networking/
-        text: Networking in Qubes
       - url: /doc/template-implementation/
-        text: Implementation of template sharing and updating
       - url: /doc/storage-pools/
-        text: Storage Pools
       - url: /doc/audio-virtualization/
-        text: Audio virtualization
 
   - title: Services
     sub-pages:
       - url: /doc/qfilecopy/
-        text: Inter-domain file copying
       - url: /doc/qmemman/
-        text: Dynamic memory management in Qubes
       - url: /doc/dvm-impl/
-        text: Implementation of DisposableVMs
       - url: /doc/dom0-secure-updates/
-        text: Dom0 secure update mechanism
       - url: /doc/qrexec/
-        text: "Qrexec: secure communication across domains"
       - url: /doc/qrexec-internals/
-        text: "Qrexec: Qubes RPC internals"
       - url: /doc/qrexec-socket-services/
-        text: "Qrexec: Socket-based services"
+      - url: /doc/qubes-service/
 
   - title: Debugging
     sub-pages:
       - url: /doc/profiling/
-        text: Profiling python code
       - url: /doc/test-bench/
-        text: Test environment in separate machine for automatic tests
       - url: /doc/automated-tests/
-        text: Automated tests
       - url: /doc/vm-interface/
-        text: VM-dom0 internal configuration interface
       - url: /doc/windows-debugging/
-        text: Debugging Windows VMs
       - url: /doc/safe-remote-ttys/
-        text: Safe Remote Dom0 Terminals
       - url: /doc/mount-lvm-image/
-        text: Mount LVM Image
 
   - title: Building
     sub-pages:
       - url: /doc/qubes-builder/
-        text: Building Qubes
       - url: /doc/development-workflow/
-        text: Development Workflow
       - url: /doc/qubes-iso-building/
-        text: Building Qubes OS ISO
-      - url: https://github.com/QubesOS/qubes-template-configs
-        text: Qubes Template Configuration Files
+      - url: /doc/qubes-template-configs/
 
   - title: Releases
     sub-pages:
       - url: /doc/releases/notes/
-        text: Release notes
       - url: /doc/releases/schedules/
-        text: Release schedules
       - url: /doc/releases/todo/
-        text: Release checklist
 
 - title: External Documentation
   subtitle: Unofficial, third-party documentation from the Qubes community and others.
@@ -430,7 +290,6 @@
       - text: How to install an Nvidia driver in dom0
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/install-nvidia-driver.md
 
-
   - title: Customization Guides
     sub-pages:
       - text: Customizing Fedora minimal templates
@@ -473,6 +332,3 @@
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/building/building-whonix-template.md
       - text: How to compile kernels for dom0
         url: https://groups.google.com/d/topic/qubes-users/yBeUJPwKwHM/discussion
-
-
-

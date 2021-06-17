@@ -1,6 +1,7 @@
 - topic: Qubes OS Documentation
   subtopic: Welcome to the Qubes OS documentation!
   metatopic: Documentation
+
 - title: Introduction
   category: introduction
   sub-pages:
@@ -27,13 +28,15 @@
   subtitle: Core documentation for Qubes users.
   category: user
   sub-pages:
+
   - title: Choosing Your Hardware
     sub-pages:
       - url: /doc/system-requirements/
       - url: /doc/certified-hardware/
       - url: /hcl/
       - url: /doc/hardware-testing/
-  - title: Downloading, Installing, and Upgrading Qubes
+
+  - title: Downloading, Installing, and Upgrading
     sub-pages:
       - url: /doc/downloads/
       - url: /doc/installation-guide/
@@ -41,64 +44,36 @@
       - url: /doc/supported-versions/
       - url: /doc/version-scheme/
       - url: /doc/testing/
-  - title: Common Tasks
+
+  - title: How-to Guides
     sub-pages:
-      - url: /doc/getting-started/
-      - url: /doc/copy-paste/
-      - url: /doc/copying-files/
-      - url: /doc/copy-from-dom0/
-      - url: /doc/updating-qubes-os/
-      - url: /doc/software-update-dom0/
-      - url: /doc/software-update-domu/
-      - url: /doc/backup-restore/
-      - url: /doc/volume-backup-revert/
-      - url: /doc/disposablevm/
-      - url: /doc/block-devices/
-      - url: /doc/usb-devices/
-      - url: /doc/pci-devices/
-      - url: /doc/device-handling/
-      - url: /doc/optical-discs/
-      - url: /doc/full-screen-mode/
-  - title: Managing Operating Systems within Qubes
+      - url: /doc/how-to-get-started/
+      - url: /doc/how-to-update/
+      - url: /doc/how-to-back-up-restore-and-migrate/
+      - url: /doc/how-to-copy-and-paste-text/
+      - url: /doc/how-to-copy-and-move-files/
+      - url: /doc/how-to-copy-from-dom0/
+      - url: /doc/how-to-install-software/
+      - url: /doc/how-to-use-disposablevms/
+      - url: /doc/how-to-enter-fullscreen-mode/
+      - url: /doc/how-to-use-devices/
+      - url: /doc/how-to-use-block-storage-devices/
+      - url: /doc/how-to-use-usb-devices/
+      - url: /doc/how-to-use-pci-devices/
+      - url: /doc/how-to-use-optical-discs/
+
+  - title: Templates
     sub-pages:
       - url: /doc/templates/
       - url: /doc/templates/fedora/
       - url: /doc/templates/debian/
       - url: /doc/templates/minimal/
-      - url: /doc/windows/
-      - url: /doc/standalone-and-hvm/
-  - title: Security in Qubes
-    sub-pages:
-      - url: /doc/firewall/
-      - url: /doc/data-leaks/
-      - url: /doc/vm-sudo/
-      - url: /doc/device-handling-security/
-      - url: /doc/anti-evil-maid/
-      - url: /doc/split-gpg/
-      - url: /doc/u2f-proxy/
-      - url: /doc/yubi-key/
-
-  - title: Advanced Configuration
-    sub-pages:
-      - url: /doc/config-files/
-      - url: /doc/secondary-storage/
-      - url: /doc/rpc-policy/
-      - url: /doc/usb-qubes/
-      - url: /doc/managing-vm-kernels/
-      - url: /doc/salt/
-      - url: /doc/disposablevm-customization/
-      - url: /doc/installing-contributed-packages/
-      - url: /doc/bind-dirs/
-      - url: /doc/gui-configuration/
-      - url: /doc/resize-disk-image/
-      - url: /doc/mount-from-other-os/
-      - url: /doc/kde/
-      - url: /doc/i3/
-      - url: /doc/awesome/
+      - url: /doc/templates/xfce/
 
   - title: Troubleshooting
     sub-pages:
       - url: /doc/installation-troubleshooting/
+      - url: /doc/update-troubleshooting/
       - url: /doc/hardware-troubleshooting/
       - url: /doc/uefi-troubleshooting/
       - url: /doc/suspend-resume-troubleshooting/
@@ -111,7 +86,40 @@
       - url: /doc/gui-troubleshooting/
       - url: /doc/media-troubleshooting/
       - url: /doc/vpn-troubleshooting/
-      - url: /doc/update-troubleshooting/
+
+  - title: Security in Qubes
+    sub-pages:
+      - url: /doc/firewall/
+      - url: /doc/data-leaks/
+      - url: /doc/vm-sudo/
+      - url: /doc/device-handling-security/
+      - url: /doc/anti-evil-maid/
+      - url: /doc/split-gpg/
+      - url: /doc/u2f-proxy/
+      - url: /doc/yubikey/
+
+  - title: Advanced Topics
+    sub-pages:
+      - url: /doc/how-to-install-software-in-dom0/
+      - url: /doc/volume-backup-revert/
+      - url: /doc/standalone-and-hvm/
+      - url: /doc/windows/
+      - url: /doc/config-files/
+      - url: /doc/secondary-storage/
+      - url: /doc/rpc-policy/
+      - url: /doc/usb-qubes/
+      - url: /doc/managing-vm-kernels/
+      - url: /doc/salt/
+      - url: /doc/disposablevm-customization/
+      - url: /doc/installing-contributed-packages/
+      - url: /doc/bind-dirs/
+      - url: /doc/gui-configuration/
+      - url: /doc/resize-disk-image/
+      - url: /doc/qubes-service/
+      - url: /doc/mount-from-other-os/
+      - url: /doc/kde/
+      - url: /doc/i3/
+      - url: /doc/awesome/
 
   - title: Reference Pages
     sub-pages:
@@ -122,17 +130,18 @@
   subtitle: Core documentation for Qubes developers and advanced users.
   category: developer
   sub-pages:
+
   - title: General
     sub-pages:
       - url: /faq/
       - url: /doc/package-contributions/
       - url: /doc/doc-guidelines/
-      - url: /qubes-issues/
       - url: /gsoc/
       - url: /gsod/
-      - url: /doc/devel-books/
-      - url: /doc/style-guide/
       - url: /doc/usability-ux/
+      - url: /doc/style-guide/
+      - url: /research/
+      - url: /doc/devel-books/
 
   - title: Code
     sub-pages:
@@ -165,13 +174,12 @@
       - url: /doc/qrexec/
       - url: /doc/qrexec-internals/
       - url: /doc/qrexec-socket-services/
-      - url: /doc/qubes-service/
 
   - title: Debugging
     sub-pages:
-      - url: /doc/profiling/
       - url: /doc/test-bench/
       - url: /doc/automated-tests/
+      - url: /doc/profiling/
       - url: /doc/vm-interface/
       - url: /doc/windows-debugging/
       - url: /doc/safe-remote-ttys/
@@ -198,6 +206,7 @@
     url: https://github.com/Qubes-Community/Contents/tree/master/docs
   category: external
   sub-pages:
+
   - title: Operating System Guides
     sub-pages:
       - text: "Template: Ubuntu"

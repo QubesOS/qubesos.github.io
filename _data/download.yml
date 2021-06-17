@@ -78,6 +78,7 @@
 
 - htmlsection: download-mirrors
   title: Download Mirrors
+  text: Please note that the Qubes OS Project has no control over third-party download mirrors.
   table:
     - column: Organization
     - column: Location

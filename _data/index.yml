@@ -36,7 +36,7 @@
       - url: /hcl/
       - url: /doc/hardware-testing/
 
-  - title: Downloading, Installing, and Upgrading
+  - title: Downloading, Installing, and Upgrading Qubes
     sub-pages:
       - url: /doc/downloads/
       - url: /doc/installation-guide/

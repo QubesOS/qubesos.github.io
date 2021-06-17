@@ -65,14 +65,14 @@
     url: /doc/#choosing-your-hardware
   - title: Installing & Upgrading
     url: /doc/#downloading-installing-and-upgrading-qubes
-  - title: Common Tasks
-    url: /doc/#common-tasks
-  - title: Managing OSes
-    url: /doc/#managing-operating-systems-within-qubes
+  - title: How-to Guides
+    url: /doc/#how-to-guides
+  - title: Templates
+    url: /doc/#templates
+  - title: Troubleshooting
+    url: /doc/#troubleshooting
   - title: Security in Qubes
     url: /doc/#security-in-qubes
-  - title: Advanced Config
-    url: /doc/#advanced-configuration
   - title: Developer Docs
     url: /doc/#developer-documentation
   - title: External Docs

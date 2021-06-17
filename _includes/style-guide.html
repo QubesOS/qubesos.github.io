@@ -12,8 +12,6 @@
 {% assign icons = style | where_exp: "item", "item.htmlsection == 'icons'" | first %}
 {% assign logos = style | where_exp: "item", "item.htmlsection == 'logos'" | first %}
 
-<h1 id="style-guide">{{ style[0].title }}</h1>
-
 <h2 id="fonts"> {{ fonts.title }}</h2>
 
 <p>{{ fonts.paragraph }}</p>

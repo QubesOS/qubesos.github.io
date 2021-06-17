@@ -7,14 +7,21 @@ redirect_from:
 - /doc/privacy/
 - /wiki/privacy/
 ref: 3
-title: Privacy Policy
+title: Website Privacy Policy
 ---
 
-# Privacy Policy
+<div class="alert alert-info" role="alert">
+  <i class="fa fa-info-circle"></i>
+  <b>Note:</b> This page is a standard, boilerplate website privacy policy, which all websites are required to have for legal reasons. If you're interested in the privacy of Qubes OS, or other digital privacy topics, such as Whonix and Tor, then this is <b>not</b> the page you're looking for. Please see <a href="/faq/#how-does-qubes-os-provide-privacy">FAQ: How does Qubes OS provide privacy?</a>
+  <br><br>
+  On the other hand, if you <em>are</em> interested in our website's privacy policy, then you've come to the right place! The short version is that we try to respect your privacy as much as possible. We absolutely do not sell any user data. This is just a static site generated with Jekyll and hosted from GitHub Pages. We try to use as little JavaScript as possible. We host all resources locally (no third-party CDNs) so that you only have to connect to one domain. The site should be easy to browse using Tor Browser and with scripts blocked. We also have an <a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">onion service</a>. We even go out of our way to make it easy to download <a href="https://github.com/QubesOS/qubesos.github.io">this website's git repo</a>, including all the website source code, so that you can host this entire site from your own local machine offline or simply enjoy the <a href="https://github.com/QubesOS/qubes-doc">plain-text documentation</a> from the comfort of your terminal. Obviously, we don't use any ads or trackers, but this is still a public website, so man-in-the-middle attacks and such are always a possibility. Please be careful. See <a href="/faq/#should-i-trust-this-website">FAQ: Should I trust this website?</a>
+</div>
+
+# Website Privacy Policy
 
 Effective date: 2018-07-26
 
-The Qubes OS Project ("us", "we", or "our") operates the [https://www.qubes-os.org/](https://www.qubes-os.org/) website (the "Service").
+The Qubes OS Project ("us", "we", or "our") operates the <https://www.qubes-os.org/> website (the "Service"). This Privacy Policy applies only to the <https://www.qubes-os.org/> website (the "Service"). It does NOT apply to the Qubes OS operating system.
 
 This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. This Privacy Policy for The Qubes OS Project is powered by [PrivacyPolicies.com](https://privacypolicies.com/free-privacy-policy-generator/)
 

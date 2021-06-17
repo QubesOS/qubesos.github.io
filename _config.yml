@@ -28,7 +28,6 @@ plugins:
 collections:
   doc:
     output: true
-    permalink: /doc/:path/
   hcl:
     output: false
   qubes-translated:

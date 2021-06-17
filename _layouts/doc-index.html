@@ -61,10 +61,12 @@
               {% assign subpages2 = item.sub-pages | where_exp: "item", "item.title != nil" %}
               {% assign subsubpages_en = item_en.sub-pages | where_exp: "item", "item.title != nil" %}
               <ul>
-                {% for sub in subpages %}
-                <li> <a href="{{ sub.url }}">{{ sub.text }}</a></li>
-                {% endfor %}
-
+              {% for sub in subpages %}{% for page in site.doc %}{% if page.url == sub.url %}
+                <li><a href="{{ sub.url }}">{{ page.title }}</a></li>
+              {% endif %}{% endfor %}{% endfor %}
+              {% for sub in subpages %}{% if item.category == 'external' %}
+                <li><a href="{{ sub.url }}">{{ sub.text }}</a></li>
+              {% endif %}{% endfor %}
                 {% assign sub_count = 0 %}
                 {% for sub2 in subpages2 %}
                   {% assign sub_o2 = subsubpages_en[sub_count] %}
@@ -80,9 +82,12 @@
                   {% endif %}
                   {% assign subpages3 = sub2.sub-pages  %}
                   <ul>
-                    {% for sub3 in subpages3 %}
-                      <li> <a href="{{ sub3.url }}">{{ sub3.text }}</a></li>
-                    {% endfor %}
+                  {% for sub3 in subpages3 %}{% for page in site.doc %}{% if page.url == sub3.url %}
+                    <li><a href="{{ sub3.url }}">{{ page.title }}</a></li>
+                  {% endif %}{% endfor %}{% endfor %}
+                  {% for sub3 in subpages3 %}{% if item.category == 'external' %}
+                    <li><a href="{{ sub3.url }}">{{ sub3.text }}</a></li>
+                  {% endif %}{% endfor %}
                   </ul>
                 {% endfor %}
               </ul>

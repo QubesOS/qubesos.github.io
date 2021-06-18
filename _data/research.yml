@@ -113,7 +113,7 @@ papers:
     category: software-attacks-devices
 
   - title: Qubes OS Architecture Spec v0.3
-    url: https://www.qubes-os.org/attachment/wiki/QubesArchitecture/arch-spec-0.3.pdf
+    url: https://www.qubes-os.org/attachment/doc/arch-spec-0.3.pdf
     date: January 2010
     author: Joanna Rutkowska and Rafal Wojtczuk
     category: qubes

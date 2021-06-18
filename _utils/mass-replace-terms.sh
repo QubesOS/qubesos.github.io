@@ -56,3 +56,7 @@ find . -type f -name "*.md" | xargs -i@ sed -i 's/\. standalone/\. Standalone/g'
 find . -type f -name "*.md" | xargs -i@ sed -i 's/\. \[standalone/\. \[Standalone/g' @
 find . -type f -name "*.md" | xargs -i@ sed -i 's/#standalonevm/#standalone/g' @
 find . -type f -name "*.md" | xargs -i@ sed -i 's/--class standalone/--class StandaloneVM/g' @
+
+find . -type f -name "*.md" | xargs -i@ sed -i 's#/doc/disposables/#/doc/how-to-use-disposables/#g' @
+find . -type f -name "*.md" | xargs -i@ sed -i 's#/doc/standalone-and-HVM/#/doc/standalones-and-HVM/#g' @
+find . -type f -name "*.md" | xargs -i@ sed -i 's/#updating-software-in-templates/#instructions/g' @

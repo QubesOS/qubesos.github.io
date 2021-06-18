@@ -54,7 +54,7 @@
       - url: /doc/how-to-copy-and-move-files/
       - url: /doc/how-to-copy-from-dom0/
       - url: /doc/how-to-install-software/
-      - url: /doc/how-to-use-disposablevms/
+      - url: /doc/how-to-use-disposables/
       - url: /doc/how-to-enter-fullscreen-mode/
       - url: /doc/how-to-use-devices/
       - url: /doc/how-to-use-block-storage-devices/
@@ -102,7 +102,7 @@
     sub-pages:
       - url: /doc/how-to-install-software-in-dom0/
       - url: /doc/volume-backup-revert/
-      - url: /doc/standalone-and-hvm/
+      - url: /doc/standalones-and-hvm/
       - url: /doc/windows/
       - url: /doc/config-files/
       - url: /doc/secondary-storage/
@@ -110,7 +110,7 @@
       - url: /doc/usb-qubes/
       - url: /doc/managing-vm-kernels/
       - url: /doc/salt/
-      - url: /doc/disposablevm-customization/
+      - url: /doc/disposable-customization/
       - url: /doc/installing-contributed-packages/
       - url: /doc/bind-dirs/
       - url: /doc/gui-configuration/

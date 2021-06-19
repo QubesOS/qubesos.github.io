@@ -52,6 +52,10 @@
 - section: doc-translated
   text: This page is an unverified full translation or translation currently in progress. The Qubes OS Project cannot evaluate the accuracy of translations into languages that our team cannot read.
 
+- section: doc-advanced
+  prompt: 'Caution:'
+  text: This page is intended for advanced users.
+
 - section: doc-content
   text: Contents
 

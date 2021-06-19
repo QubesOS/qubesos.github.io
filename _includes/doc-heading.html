@@ -38,7 +38,9 @@
       </a>
     </h1>
     {% if section.category == "external" %}
-      {% include doc-external-warning.html %}
+      {% include doc-warning-external.html %}
+    {% elsif doc_segments contains 'advanced-topics' %}
+      {% include doc-warning-advanced.html %}
     {% endif %}
   {% endif %}
 {% endfor %}

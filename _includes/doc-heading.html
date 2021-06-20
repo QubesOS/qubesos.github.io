@@ -37,11 +37,6 @@
           {{ section.category | replace: "-", " "}}
       </a>
     </h1>
-    {% if section.category == "external" %}
-      {% include doc-warning-external.html %}
-    {% elsif doc_segments contains 'advanced-topics' or page.advanced %}
-      {% include doc-warning-advanced.html %}
-    {% endif %}
   {% endif %}
 {% endfor %}
 

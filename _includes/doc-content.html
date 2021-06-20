@@ -28,9 +28,9 @@
 
         {% assign doc_segments = page.relative_path | split: '/' %}
         {% if section.category == "external" %}
-          {% include doc-warning-external.html %}
+          {% include doc-alert-external.html %}
         {% elsif doc_segments contains 'advanced-topics' or page.advanced %}
-          {% include doc-warning-advanced.html %}
+          {% include doc-alert-advanced.html %}
         {% endif %}
 
         <h1>{{ page.title }}</h1>

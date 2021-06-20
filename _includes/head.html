@@ -13,7 +13,7 @@
     {% endif %}
   </title>
   {% unless page.lang == "en" or page.lang == nil %}
-    {% include doc-warning-translated.html %}
+    {% include doc-alert-translated.html %}
   {% endunless %}
   {% if page.layout == 'doc' or
         page.layout == 'post' or

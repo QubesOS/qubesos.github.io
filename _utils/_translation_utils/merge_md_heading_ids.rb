@@ -94,9 +94,20 @@ end
 
 
 
-def try_create_id(gfm_lines, line_number, this_line, next_line, rendered_html_lines, placeholder)
+def try_get_headline_column_and_line(gfm_lines, line_number, placeholder)
     # save headline
     saved_headline = gfm_lines[line_number]
+
+    this_line = gfm_lines[line_number].to_s
+    if this_line.eql? ""
+        return nil
+    end
+
+    if line_number < gfm_lines.length - 1
+        next_line = gfm_lines[line_number + 1].to_s
+    else
+        next_line = ""
+    end
 
     hl = nil
 
@@ -113,11 +124,7 @@ def try_create_id(gfm_lines, line_number, this_line, next_line, rendered_html_li
     # revert headline
     gfm_lines[line_number] = saved_headline
 
-    if hl == nil
-        return nil
-    end
-
-    return extract_headline_id(rendered_html_lines, hl.l, hl.c)
+    return hl
 end
 
 
@@ -147,8 +154,8 @@ end
 
 
 
-def create_line_to_id_map(gfm_lines)
-    result = {}
+def create_id_list(gfm_lines)
+    result = []
     gfm_lines2 = gfm_lines[0..-1]
     rendered_html_lines = render(gfm_lines)
 
@@ -156,15 +163,11 @@ def create_line_to_id_map(gfm_lines)
 
     # line-by-line: assume a headline
     n = gfm_lines2.length
-    for i in 0..(n - 1)
-        this_line = gfm_lines2[i]
-        next_line = ''
-        if i < n - 1
-            next_line = gfm_lines2[i + 1]
-        end
-        hid = try_create_id(gfm_lines2, i, this_line, next_line, rendered_html_lines, placeholder)
-        if hid != nil
-            result[i] = hid
+    for line_number in 0..(n - 1)
+        hl = try_get_headline_column_and_line(gfm_lines2, line_number, placeholder)
+        if hl != nil
+            hid = extract_headline_id(rendered_html_lines, hl.l, hl.c)
+            result = result + [hid]
         end
     end
     return result
@@ -172,22 +175,44 @@ end
 
 
 
-def insert_ids_to_gfm_file(line_to_id_map, gfm_lines)
+def is_a_headline(gfm_lines, line_number, placeholder)
+    return try_get_headline_column_and_line(gfm_lines, line_number, placeholder) != nil
+end
+
+
+
+def insert_ids_into_gfm_file(id_list, gfm_lines)
     result = gfm_lines[0..-1]
+    if id_list.length == 0
+        return result
+    end
     n = result.length
-    line_to_id_map.each do |key, value|
-        str_to_insert = '<a id="' + value + '"></a>' + "\n"
-        line = result[key]
-        if !line.nil? and line.start_with?('#')
-            if key + 1 >= n
-                result = result + ['']
+    rendered_html_lines = render(gfm_lines)
+    placeholder = generate_unique_placeholder(rendered_html_lines)
+    id_index = 0
+
+    for line_number in 0..(gfm_lines.length - 1)
+        if is_a_headline(gfm_lines, line_number, placeholder)
+            id = id_list[id_index]
+            if id != nil
+                str_to_insert = '<a id="' + id + '"></a>' + "\n"
+                line = result[line_number]
+                if !line.nil? and line.start_with?('#')
+                    if line_number + 1 >= n
+                        result = result + ['']
+                    end
+                    result[line_number + 1] = str_to_insert.to_s + result[line_number + 1].to_s
+                else
+                    if line_number + 2 >= n
+                        result = result + ['']
+                    end
+                    result[line_number + 2] = str_to_insert.to_s + result[line_number + 2].to_s
+                end
             end
-            result[key + 1] = str_to_insert.to_s + result[key + 1].to_s
-        else
-            if key + 2 >= n
-                result = result + ['']
+            id_index += 1
+            if id_index >= id_list.length
+                break
             end
-            result[key + 2] = str_to_insert.to_s + result[key + 2].to_s
         end
     end
     return result
@@ -216,11 +241,11 @@ def merge_ids_in_gfm_files(orig_gfm_lines, trl_gfm_lines)
     # get body from orig
     orig_body = orig_gfm_lines[orig_end..-1]
 
-    # create line-to-id map
-    orig_line_to_id_map = create_line_to_id_map(orig_body)
+    # create id list
+    orig_id_list = create_id_list(orig_body)
 
     # insert ids
-    preresult = insert_ids_to_gfm_file(orig_line_to_id_map, trl_body)
+    preresult = insert_ids_into_gfm_file(orig_id_list, trl_body)
 
     # create translated document with adapted body
     result_trl_gfm = trl_yaml_front_matter.join + preresult.join
@@ -300,5 +325,11 @@ end
 
 if __FILE__ == $0
     main()
+
+    # --- for debugging
+    # orig_gfm_lines = read_file(ARGV[0])
+    # trl_gfm_lines = read_file(ARGV[1])
+    # result = merge_ids_in_gfm_files(orig_gfm_lines, trl_gfm_lines)
+    # write_file(result, '/dev/stdout')
 end
 

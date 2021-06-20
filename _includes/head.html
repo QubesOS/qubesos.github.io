@@ -78,10 +78,7 @@
   {% if page.author %}
   <meta name="twitter:creator" content="{{ page.author }}">
   {% endif %}
-  {% if page.layout == 'doc' or
-        page.layout == 'post' or
-        page.layout == 'security' or
-        page.layout == 'sidebar' %}
+  {% if page.layout == 'doc' or page.layout == 'post' %}
   <meta property="twitter:description"
         content="{{ page.content | strip_html | newline_to_br |
                     replace: '<br />', ' ' | normalize_whitespace |

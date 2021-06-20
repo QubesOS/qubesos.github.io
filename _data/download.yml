@@ -130,6 +130,6 @@
     - text: How to Verify Downloads
       url: /security/verifying-signatures/
     - text: All download mirrors
-      url: #mirrors
+      url: '#mirrors'
       hover: View all download mirrors
 

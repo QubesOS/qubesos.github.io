@@ -29,13 +29,18 @@
 
 {% for section in ind %}
   {% if doc_segments contains section.category %}
-  <!-- TODO please rename the documenation subfolders according to the index.yml file and its categories in _data folder, thank  you, fuck -->
-    {% assign s = section.title | slugify %}
     <h1 class="more-top add-left outer-heading">
-        <a href="{{ doc_link }}#{{ s }}" class="heading-link">
-        <i class="fa fa-book"></i>
-          {{ section.category | replace: "-", " "}}
+      <a href="{{ doc_link }}#{{ section.title | slugify }}" class="heading-link">
+        <i class="fa fa-book"></i>{{ section.title }}
       </a>
+      {% for subsection in section.sub-pages %}
+        {% if doc_segments contains subsection.subcategory %}
+          /
+          <a href="{{ doc_link }}#{{ subsection.title | slugify }}" class="heading-link">
+            {{ subsection.title }}
+          </a>
+        {% endif %}
+      {% endfor %}
     </h1>
   {% endif %}
 {% endfor %}

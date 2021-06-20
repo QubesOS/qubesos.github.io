@@ -30,6 +30,7 @@
   sub-pages:
 
   - title: Choosing Your Hardware
+    subcategory: hardware
     sub-pages:
       - url: /doc/system-requirements/
       - url: /doc/certified-hardware/
@@ -37,6 +38,7 @@
       - url: /doc/hardware-testing/
 
   - title: Downloading, Installing, and Upgrading Qubes
+    subcategory: downloading-installing-upgrading
     sub-pages:
       - url: /doc/downloads/
       - url: /doc/installation-guide/
@@ -46,6 +48,7 @@
       - url: /doc/testing/
 
   - title: How-to Guides
+    subcategory: how-to-guides
     sub-pages:
       - url: /doc/how-to-get-started/
       - url: /doc/how-to-update/
@@ -63,6 +66,7 @@
       - url: /doc/how-to-use-optical-discs/
 
   - title: Templates
+    subcategory: templates
     sub-pages:
       - url: /doc/templates/
       - url: /doc/templates/fedora/
@@ -71,6 +75,7 @@
       - url: /doc/templates/xfce/
 
   - title: Troubleshooting
+    subcategory: troubleshooting
     sub-pages:
       - url: /doc/installation-troubleshooting/
       - url: /doc/update-troubleshooting/
@@ -88,6 +93,7 @@
       - url: /doc/vpn-troubleshooting/
 
   - title: Security in Qubes
+    subcategory: security-in-qubes
     sub-pages:
       - url: /doc/firewall/
       - url: /doc/data-leaks/
@@ -99,6 +105,7 @@
       - url: /doc/yubikey/
 
   - title: Advanced Topics
+    subcategory: advanced-topics
     sub-pages:
       - url: /doc/how-to-install-software-in-dom0/
       - url: /doc/volume-backup-revert/
@@ -121,7 +128,8 @@
       - url: /doc/i3/
       - url: /doc/awesome/
 
-  - title: Reference Pages
+  - title: Reference
+    subcategory: reference
     sub-pages:
       - url: /doc/tools/
       - url: /doc/glossary/
@@ -132,6 +140,7 @@
   sub-pages:
 
   - title: General
+    subcategory: general
     sub-pages:
       - url: /faq/
       - url: /doc/package-contributions/
@@ -144,6 +153,7 @@
       - url: /doc/devel-books/
 
   - title: Code
+    subcategory: code
     sub-pages:
       - url: /doc/source-code/
       - url: /doc/license/
@@ -151,6 +161,7 @@
       - url: /doc/code-signing/
 
   - title: System
+    subcategory: system
     sub-pages:
       - url: /doc/architecture/
       - url: /doc/security-design-goals/
@@ -166,6 +177,7 @@
       - url: /doc/audio-virtualization/
 
   - title: Services
+    subcategory: services
     sub-pages:
       - url: /doc/qfilecopy/
       - url: /doc/qmemman/
@@ -176,6 +188,7 @@
       - url: /doc/qrexec-socket-services/
 
   - title: Debugging
+    subcategory: debugging
     sub-pages:
       - url: /doc/test-bench/
       - url: /doc/automated-tests/
@@ -186,6 +199,7 @@
       - url: /doc/mount-lvm-image/
 
   - title: Building
+    subcategory: building
     sub-pages:
       - url: /doc/qubes-builder/
       - url: /doc/development-workflow/
@@ -193,6 +207,7 @@
       - url: /doc/qubes-template-configs/
 
   - title: Releases
+    subcategory: releases
     sub-pages:
       - url: /doc/releases/notes/
       - url: /doc/releases/schedules/

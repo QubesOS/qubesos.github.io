@@ -72,6 +72,12 @@
       text-align: right;
       float: right;
     }
+    .sidebar {
+      position: -webkit-sticky;
+      position: sticky;
+      z-index: 1;
+      top: 10px;
+    }
   }
 
   @media (max-width: $screen-md-min) {

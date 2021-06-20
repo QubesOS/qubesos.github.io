@@ -187,8 +187,7 @@ article tr.center {
 }
 
 // Custom - Sticky elements
-.alert-sticky,
-.sidebar {
+.alert-sticky {
   position: -webkit-sticky;
   position: sticky;
   z-index: 1;

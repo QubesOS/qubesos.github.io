@@ -108,7 +108,7 @@
     sub-pages:
       - url: /doc/how-to-install-software-in-dom0/
       - url: /doc/volume-backup-revert/
-      - url: /doc/standalones-and-hvm/
+      - url: /doc/standalones-and-hvms/
       - url: /doc/windows/
       - url: /doc/config-files/
       - url: /doc/secondary-storage/

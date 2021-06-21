@@ -33,7 +33,7 @@
     - url: /doc/#troubleshooting
       text: Troubleshooting Guides
       id: 2
-    - url: /doc/reporting-bugs/
+    - url: /doc/issue-tracking/
       text: Report a Bug
       id: 3
 
@@ -106,7 +106,7 @@
         - snippet: This is a testing release.
           url: /doc/testing/
         - snippet: Please help us improve it by reporting any bugs you encounter.
-          url: /doc/reporting-bugs/
+          url: /doc/issue-tracking/
         - snippet: For important work, we recommend the latest stable release.
     - r_version: stable
       snippets:

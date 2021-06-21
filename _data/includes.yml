@@ -14,7 +14,7 @@
     - url: /security/
       text: Report a Security Issue
       icon: fa-lock
-    - url: /doc/reporting-bugs/
+    - url: /doc/issue-tracking/
       text: Report a Bug
       icon: fa-bug
     - url: /support/
@@ -76,7 +76,7 @@
     - url: http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion
       text: Tor Onion Service
       id: 2
-    - url: /doc/reporting-bugs/
+    - url: /doc/issue-tracking/
       text: Report a Problem
       id: 3
     - url: /privacy/

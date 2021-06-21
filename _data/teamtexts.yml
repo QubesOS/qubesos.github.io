@@ -4,7 +4,7 @@
     url: /security/
   bug:
   - text: Report a bug
-    url: /doc/reporting-bugs/
+    url: /doc/issue-tracking/
   help:
   - text: Get help and support
     url: /support/

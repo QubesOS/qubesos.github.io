@@ -103,4 +103,4 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 
 ## Contact Us
 
-If you have any questions about this Privacy Policy, please [contact us](https://www.qubes-os.org/doc/reporting-bugs/)
+If you have any questions about this Privacy Policy, please [contact us](https://www.qubes-os.org/doc/issue-tracking/)

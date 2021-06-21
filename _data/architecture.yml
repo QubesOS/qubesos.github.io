@@ -113,7 +113,7 @@
     url: /security/
     icon: fa-lock
   - title: Report a Bug
-    url: /doc/reporting-bugs/
+    url: /doc/issue-tracking/
   - title: Inquiries
     url: /team/#inquiries
   - title: Core Team

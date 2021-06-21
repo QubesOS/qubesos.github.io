@@ -1,5 +1,15 @@
 <!DOCTYPE html>
-<html>
+{% if page.lang == nil %}
+  {% assign pagelang = "en" %}
+{% else %}
+  {% assign pagelang = page.lang %}
+{% endif %}
+{% if pagelang == "ar" or pagelang == "arc" or pagelang == "dv" or pagelang == "fa" or pagelang == "ha" or pagelang == "he" or pagelang == "khw" or pagelang == "ks" or pagelang == "ku" or pagelang == "ps" or pagelang == "ur" or pagelang == "yi" %}
+  {% assign textdir = "rtl" %}
+{% else %}
+  {% assign textdir = "ltr" %}
+{% endif %}
+<html lang="{{ pagelang }}" dir="{{ textdir }}">
   {% include head.html %}
     <body>
       {% include header.html %}

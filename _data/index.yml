@@ -44,7 +44,6 @@
       - url: /doc/installation-guide/
       - url: /doc/upgrade/
       - url: /doc/supported-versions/
-      - url: /doc/version-scheme/
       - url: /doc/testing/
 
   - title: How-to Guides
@@ -126,7 +125,7 @@
       - url: /doc/mount-from-other-os/
       - url: /doc/kde/
       - url: /doc/i3/
-      - url: /doc/awesome/
+      - url: /doc/awesomewm/
 
   - title: Reference
     subcategory: reference
@@ -212,6 +211,7 @@
       - url: /doc/releases/notes/
       - url: /doc/releases/schedules/
       - url: /doc/releases/todo/
+      - url: /doc/version-scheme/
 
 - title: External Documentation
   subtitle: Unofficial, third-party documentation from the Qubes community and others.

@@ -10,6 +10,8 @@ echo "============================ post processing step 1 ======================
 #read b
 bash _utils/_translation_utils/prepare_tx_config_postprocess.sh .tx/config /tmp/tx-mapping
 
+echo "============================ remove obsolete files ======================================="
+python3 _utils/_translation_utils/remove_obsolete_files.py "$1" "$2" /tmp/tx-mapping
 
 echo "============================ post processing step 2 ======================================"
 #read b

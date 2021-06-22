@@ -1,11 +1,11 @@
 {% if page.lang == nil or page.lang == "en" %}
-    {% assign down = site.data.download %}
+    {% assign down = site.data.downloads-page %}
     {% assign lang = "" %}
 {% else %}
     {% assign lang = "/" | append: page.lang %}
-    {% assign down = site.data.translation[page.lang].download %}
+    {% assign down = site.data.translation[page.lang].downloads-page %}
     {% if down == nil or down.size == 0 %}
-        {% assign down = site.data.download %}
+        {% assign down = site.data.downloads-page %}
     {% endif %}
 {% endif %}
 

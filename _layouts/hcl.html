@@ -1,41 +1,39 @@
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body>
-    {% include header.html %}
-    <div class="container-fluid">
-      <h1 class="more-top add-left outer-heading">
-        {% assign page_icon = "fa-page" %}
-        {% if page.lang == nil or page.lang == "en" %}
-          {% assign archies = site.data.architecture %}
-        {% else %}
-          {% assign archies = site.data.translation[page.lang].architecture %}
-          {% if archies == nil or archies.size == 0 %}
-            {% assign archies = site.data.architecture %}
-          {% endif %}
-        {% endif %}
-        {% for section in archies %}
-          {% if section.url == page.permalink %}
-            {% assign page_icon = section.icon %}
-          {% else %}
-            {% for sub in section.sub-pages %}
-              {% if sub.url == page.permalink %}
-                {% assign page_icon = sub.icon %}
-              {% endif %}
-            {% endfor %}
+{% include head.html %}
+<body>
+{% include header.html %}
+<div class="container-fluid">
+  <h1 class="more-top add-left outer-heading">
+    {% assign page_icon = "fa-page" %}
+    {% if page.lang == nil or page.lang == "en" %}
+      {% assign archies = site.data.architecture %}
+    {% else %}
+      {% assign archies = site.data.translation[page.lang].architecture %}
+      {% if archies == nil or archies.size == 0 %}
+        {% assign archies = site.data.architecture %}
+      {% endif %}
+    {% endif %}
+    {% for section in archies %}
+      {% if section.url == page.permalink %}
+        {% assign page_icon = section.icon %}
+      {% else %}
+        {% for sub in section.sub-pages %}
+          {% if sub.url == page.permalink %}
+            {% assign page_icon = sub.icon %}
           {% endif %}
         {% endfor %}
-        <i class="fa {{ page_icon }}"></i> {{ page.title }}
-      </h1>
-      <div class="white-box more-bottom">
-        {{ content }}
-        {% include hcl.html %}
-      </div>
-      {% include footer.html %}
-      <script src="/js/anchor.min.js"></script>
-      <script>
-        anchors.add();
-      </script>
-    </div>
-  </body>
+      {% endif %}
+    {% endfor %}
+    <i class="fa {{ page_icon }}"></i> {{ page.title }}
+  </h1>
+  <div class="white-box more-bottom">
+    {{ content }}
+    {% include hcl.html %}
+  </div>
+  {% include footer.html %}
+  <script src="/js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</div>
+</body>
 </html>

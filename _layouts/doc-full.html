@@ -1,24 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
-    <body>
-      {% include header.html %}
-      <div class="container-fluid">
-        {% include doc-heading.html %}
-        <div class="more-bottom white-box page-content">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-xs-12">
-              <article id="doc-content" class="post-content">
-                {{ content }}
-              </article>
-            </div>
-          </div>
-        </div>
-        {% include footer.html %}
-        <script src="/js/anchor.min.js"></script>
-        <script>
-          anchors.add();
-        </script>
+{% include head.html %}
+<body>
+{% include header.html %}
+<div class="container-fluid">
+  {% include doc-heading.html %}
+  <div class="more-bottom white-box page-content">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-12">
+        <article id="doc-content" class="post-content">
+          {{ content }}
+        </article>
       </div>
-  </body>
+    </div>
+  </div>
+  {% include footer.html %}
+  <script src="/js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</div>
+</body>
 </html>

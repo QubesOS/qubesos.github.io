@@ -1,9 +1,9 @@
 {% if page.lang == nil or page.lang == "en" %}
-        {% assign style = site.data.style_guide_content %}
+        {% assign style = site.data.styleguide-page %}
 {% else %}
-        {% assign style = site.data.translation[page.lang].style_guide_content %}
+        {% assign style = site.data.translation[page.lang].styleguide-page %}
         {% if style == nil or style.size == 0 %}
-                {% assign style = site.data.style_guide_content %}
+                {% assign style = site.data.styleguide-page %}
         {% endif %}
 {% endif %}
 

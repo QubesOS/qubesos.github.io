@@ -1,59 +1,44 @@
-<!DOCTYPE html>
-{% if page.lang == nil %}
-  {% assign pagelang = "en" %}
-{% else %}
-  {% assign pagelang = page.lang %}
-{% endif %}
-{% if pagelang == "ar" or pagelang == "arc" or pagelang == "dv" or pagelang == "fa" or pagelang == "ha" or pagelang == "he" or pagelang == "khw" or pagelang == "ks" or pagelang == "ku" or pagelang == "ps" or pagelang == "ur" or pagelang == "yi" %}
-  {% assign textdir = "rtl" %}
-{% else %}
-  {% assign textdir = "ltr" %}
-{% endif %}
-<html lang="{{ pagelang }}" dir="{{ textdir }}">
 {% include head.html %}
 <body>
 {% include header.html %}
 <div class="container">
-    <h1 class="more-top add-left outer-heading">
+  <h1 class="more-top add-left outer-heading">
     <a href="{{ page.permalink }}" class="heading-link">
-    {% if page.lang == nil or page.lang == "en" %}
+      {% if page.lang == nil or page.lang == "en" %}
         {% assign archies = site.data.architecture %}
-    {% else %}
+      {% else %}
         {% assign archies = site.data.translation[page.lang].architecture %}
         {% if archies == nil or archies.size == 0 %}
-            {% assign archies = site.data.architecture %}
+          {% assign archies = site.data.architecture %}
         {% endif %}
-    {% endif %}
-
-    {% for section in archies %}
-       {% if section.url == page.permalink %}
+      {% endif %}
+      {% for section in archies %}
+        {% if section.url == page.permalink %}
           <i class="fa {{ section.icon }}"></i>
-       {% else %}
+        {% else %}
           {% for sub in section.sub-pages %}
-          {% if sub.url == page.permalink %}
-          <i class="fa {{ sub.icon }}"></i>
-          {% endif %}
+            {% if sub.url == page.permalink %}
+              <i class="fa {{ sub.icon }}"></i>
+            {% endif %}
           {% endfor %}
         {% endif %}
-    {% endfor %}
-        {{ page.title }}
+      {% endfor %}
+      {{ page.title }}
     </a>
-    </h1>
-    <div class="white-box more-bottom page-content">
-         {{ content }}
-
-         <!-- add specific includes according to the last permalink -->
-         {% assign last_perm = page.url | split: '/' | last | lstrip %}
-         {% if last_perm == "research"  %}
-             {% include research.html %}
-         {% endif %}
-
-    </div>
-    {% include footer.html %}
-    <script src="/js/anchor.min.js"></script>
-    <script>
-       anchors.add();
-    </script>
+  </h1>
+  <div class="white-box more-bottom page-content">
+    {{ content }}
+    <!-- add specific includes according to the last permalink -->
+    {% assign last_perm = page.url | split: '/' | last | lstrip %}
+    {% if last_perm == "research"  %}
+      {% include research.html %}
+    {% endif %}
+  </div>
+  {% include footer.html %}
+  <script src="/js/anchor.min.js"></script>
+  <script>
+     anchors.add();
+  </script>
 </div>
 </body>
 </html>

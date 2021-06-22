@@ -1,80 +1,70 @@
-<!DOCTYPE html>
-{% if page.lang == nil %}
-  {% assign pagelang = "en" %}
-{% else %}
-  {% assign pagelang = page.lang %}
-{% endif %}
-{% if pagelang == "ar" or pagelang == "arc" or pagelang == "dv" or pagelang == "fa" or pagelang == "ha" or pagelang == "he" or pagelang == "khw" or pagelang == "ks" or pagelang == "ku" or pagelang == "ps" or pagelang == "ur" or pagelang == "yi" %}
-  {% assign textdir = "rtl" %}
-{% else %}
-  {% assign textdir = "ltr" %}
-{% endif %}
-<html lang="{{ pagelang }}" dir="{{ textdir }}">
 {% include head.html %}
 <body>
 {% include header.html %}
-    <div class="container">
-    {% include news-heading.html %}
-
-    {% if page.lang == nil or page.lang == "en" %}
-        {% assign lang = "" %}
-    {% else %}
-        {% assign lang = "/" | append: page.lang %}
-    {% endif %}
-
-    {% assign team_link = lang | append: "/team/" %}
-    {% assign t = site.pages | concat: site.doc | concat: site.qubes-translated | where:'permalink', team_link %}
-    {% if t.size == 0 %}
-           {% assign team_link = "/team/" %}
-    {% endif %}
-        <div class="more-bottom white-box page-content">
-          <div class="row">
-            <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
-              <header class="post-header">
-                <h1 class="post-title remove-bottom">{{ page.title }}</h1>
-                <p class="post-meta">
-                  {{ page.date | date: "%Y-%m-%d" }}
-                  by <strong>
-                  {% assign author_team = false %}
-                  {% for member in site.data.team %}
-                    {% if page.author == member.name %}
-                      {% assign author_team = true %}
-                    {% endif %}
-                  {% endfor %}
-                {% if page.author %}
+<div class="container">
+{% include news-heading.html %}
+{% if page.lang == nil or page.lang == "en" %}
+  {% assign lang = "" %}
+{% else %}
+  {% assign lang = "/" | append: page.lang %}
+{% endif %}
+{% assign team_link = lang | append: "/team/" %}
+{% assign t = site.pages | concat: site.doc | concat: site.qubes-translated | where:'permalink', team_link %}
+{% if t.size == 0 %}
+  {% assign team_link = "/team/" %}
+{% endif %}
+  <div class="more-bottom white-box page-content">
+    <div class="row">
+      <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
+        <header class="post-header">
+          <h1 class="post-title remove-bottom">{{ page.title }}</h1>
+          <p class="post-meta">
+            {{ page.date | date: "%Y-%m-%d" }}
+            by
+            <strong>
+            {% assign author_team = false %}
+            {% for member in site.data.team %}
+              {% if page.author == member.name %}
+                {% assign author_team = true %}
+              {% endif %}
+            {% endfor %}
+            {% if page.author %}
               {% if author_team %}
                 <a href="{{ team_link }}#{{ page.author | slugify }}">{{ page.author }}</a>
-                    {% else %}
-                     <a href="{{ team_link }}">{{ page.author }}</a>
-                {% endif %}
-                  {% else %}
-                    <a href="{{ team_link }}">{{ site.default_author }}</a>
-                  {% endif %}
-                  </strong>
-                  {% if page.meta %}{{ page.meta }}{% endif %}
-                  in <strong>
-                  {% if page.categories.first %}
-                    {% for category in page.categories %}
-                      <a href="{{ nc.url }}#{{ category | slugify }}">{{ category | capitalize }}</a>{% if forloop.index < forloop.length %},{% endif %}
-                    {% endfor %}
-                  {% else %}
-                    <a href="{{ nc.url }}#{{ site.default_category | slugify }}">{{ site.default_category | capitalize }}</a>
-                  {% endif %}
-                  </strong>
-                </p>
-              </header>
-              <article class="post-content">
+              {% else %}
+                <a href="{{ team_link }}">{{ page.author }}</a>
+              {% endif %}
+            {% else %}
+              <a href="{{ team_link }}">{{ site.default_author }}</a>
+            {% endif %}
+            </strong>
+            {% if page.meta %}
+              {{ page.meta }}
+            {% endif %}
+            in
+            <strong>
+            {% if page.categories.first %}
+              {% for category in page.categories %}
+                <a href="{{ nc.url }}#{{ category | slugify }}">{{ category | capitalize }}</a>{% if forloop.index < forloop.length %},{% endif %}
+              {% endfor %}
+            {% else %}
+              <a href="{{ nc.url }}#{{ site.default_category | slugify }}">{{ site.default_category | capitalize }}</a>
+            {% endif %}
+            </strong>
+          </p>
+        </header>
+        <article class="post-content">
           {{ content }}
         </article>
       </div>
       <div class="news-widget-side col-lg-4 col-md-3 col-sm-12 col-xs-12">
-      {% include news-widget.html %}
+        {% include news-widget.html %}
       </div>
     </div>
     <div class="news-widget-bottom more-top">
       <div class="row">
         <div class="col-lg-12">
-        {% include news-widget.html %}
+          {% include news-widget.html %}
         </div>
       </div>
     </div>

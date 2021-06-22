@@ -1,28 +1,25 @@
+<!-- Localization -->
 {% if page.lang == nil or page.lang == "en" %}
-        {% assign teamed = site.data.teamtexts %}
-                {% assign lang = "" %}
+  {% assign teamed = site.data.team-page %}
+  {% assign lang = "" %}
 {% else %}
-                {% assign lang = "/" | append: page.lang %}
-        {% assign teamed = site.data.translation[page.lang].teamtexts %}
-        {% if teamed == nil or teamed.size == 0 %}
-                {% assign teamed = site.data.teamtexts %}
-        {% endif %}
+  {% assign lang = "/" | append: page.lang %}
+  {% assign teamed = site.data.translation[page.lang].team-page %}
+  {% if teamed == nil or teamed.size == 0 %}
+    {% assign teamed = site.data.team-page %}
+  {% endif %}
 {% endif %}
-
 {% assign inquiries = teamed | where_exp: "item", "item.htmlsection == 'inquiries'" | first %}
 {% assign coreteam = teamed | where_exp: "item", "item.htmlsection == 'core-team'" | first %}
 {% assign joined = teamed | where_exp: "item", "item.htmlsection == 'join'" | first %}
 {% assign emeritus = teamed | where_exp: "item", "item.htmlsection == 'emeritus'" | first %}
 {% assign community = teamed | where_exp: "item", "item.htmlsection == 'community'" | first %}
-
-
 {% assign team_link = lang | append: "/team/" %}
 {% assign teams = site.pages | concat: site.qubes-translated | where:'permalink', team_link %}
 {% if teams.size == 0 %}
-       {% assign team_link = "/team/" %}
+  {% assign team_link = "/team/" %}
 {% endif %}
-<!-- previous content -->
-
+<!-- Inquiries -->
 <div class="page-content more-bottom">
   <div class="col-lg-12">
     <a href="{{ team_link }}#inquiries">
@@ -34,110 +31,92 @@
   </div>
   {% for team in site.data.team %}
     {% if team.type == "inquiries" %}
-    {% assign name_array = team.name | split:" " %}
-    <div class="row team" id="{{ team.name | slugify }}">
-      <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 text-center add-bottom">
-        <i class="fa {{ team.icon }} fa-4x"></i>
-      </div>
-      <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 team-info">
-        <a href="{{ team_link }}#{{ team.name | slugify }}">
-          <h4 class="remove-bottom">
-            {{ team.name }}
-          </h4>
-        </a>
-        <p class="half-bottom">
-          <a href="mailto:{{ team.email }}" class="black-link">{{ team.email }}</a>
-        </p>
+      {% assign name_array = team.name | split:" " %}
+      <div class="row team" id="{{ team.name | slugify }}">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 text-center add-bottom">
+          <i class="fa {{ team.icon }} fa-4x"></i>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 team-info">
+          <a href="{{ team_link }}#{{ team.name | slugify }}"><h4 class="remove-bottom">{{ team.name }}</h4></a>
+          <p class="half-bottom"><a href="mailto:{{ team.email }}" class="black-link">{{ team.email }}</a></p>
+          {% if team.fingerprint %}
+            <a href="http://keys.gnupg.net/pks/lookup?search=0x{{ team.fingerprint | remove: ' ' }}&fingerprint=on&exact=on&op=get&options=mr" title="Download PGP public key" class="black-link">
+              <i class="fa fa-fw fa-lock"></i>PGP Key
+            </a>
+          {% endif %}
+        </div>
         {% if team.fingerprint %}
-        <a href="http://keys.gnupg.net/pks/lookup?search=0x{{ team.fingerprint | remove: ' ' }}&fingerprint=on&exact=on&op=get&options=mr"
-           title="Download PGP public key" class="black-link">
-          <i class="fa fa-fw fa-lock"></i>PGP Key
-        </a>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 more-bottom fingerprint" title="{{ team.name }} account's PGP fingerprint">
+            {{ team.fingerprint }}
+          </div>
         {% endif %}
       </div>
-      {% if team.fingerprint %}
-      <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 more-bottom fingerprint"
-           title="{{ team.name }} account's PGP fingerprint">
-        {{ team.fingerprint }}
-      </div>
-      {% endif %}
-    </div>
     {% endif %}
   {% endfor %}
 </div>
-
+<!-- Core team -->
 <div id="team-core" class="page-content more-bottom">
   <div class="col-lg-12">
     <a href="{{ team_link }}#core-team">
       <h2 id="core-team" class="text-center more-bottom"> {{ coreteam.title }}</h2>
     </a>
   </div>
-
-    {% for team in site.data.team %}
+  {% for team in site.data.team %}
     {% if team.type == "core" %}
       <div class="row team team-core" id="{{ team.name | slugify }}">
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 text-center add-bottom">
           <div class="picture">
             {% if team.picture %}
-            <a href="{{ team_link }}#{{ team.name | slugify }}">
-              <img src="/attachment/site/{{team.picture}}"
-                   title="Picture of {{ team.name }}">
-            </a>
+              <a href="{{ team_link }}#{{ team.name | slugify }}">
+                <img src="/attachment/site/{{team.picture}}" title="Picture of {{ team.name }}">
+              </a>
             {% else %}
-            <i class="fa fa-user"></i>
+              <i class="fa fa-user"></i>
             {% endif %}
           </div>
         </div>
         <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 team-info">
           {% assign name_array = team.name | split:" " %}
           <a href="{{ team_link }}#{{ team.name | slugify }}">
-          <h4 class="remove-bottom">
-            {{ team.name }}
-          </h4>
+            <h4 class="remove-bottom">{{ team.name }}</h4>
           </a>
           <em class="role half-bottom">{{ team.role }}</em>
           {% if team.fingerprint %}
-          <a href="http://keys.gnupg.net/pks/lookup?search=0x{{ team.fingerprint | remove: ' ' }}&fingerprint=on&exact=on&op=get&options=mr"
-             title="Download PGP public key" class="black-link add-right">
-            <i class="fa fa-fw fa-lock"></i>PGP Key
-          </a>
+            <a href="http://keys.gnupg.net/pks/lookup?search=0x{{ team.fingerprint | remove: ' ' }}&fingerprint=on&exact=on&op=get&options=mr" title="Download PGP public key" class="black-link add-right">
+              <i class="fa fa-fw fa-lock"></i>PGP Key
+            </a>
           {% endif %}
           {% if team.email %}
-          <a href="mailto:{{team.email}}" class="black-link add-right"
-            title="{{ coreteam.email }}">
-            <i class="fa fa-fw fa-envelope"></i>{{ coreteam.email }}
-          </a>
+            <a href="mailto:{{team.email}}" class="black-link add-right" title="{{ coreteam.email }}">
+              <i class="fa fa-fw fa-envelope"></i>{{ coreteam.email }}
+            </a>
           {% endif %}
           {% if team.github %}
-          <a href="https://github.com/{{team.github}}" target="blank"
-             class="black-link add-right" title="GitHub">
-            <i class="fa fa-fw fa-github"></i>GitHub
-          </a>
+            <a href="https://github.com/{{team.github}}" target="blank" class="black-link add-right" title="GitHub">
+              <i class="fa fa-fw fa-github"></i>GitHub
+            </a>
           {% endif %}
           {% if team.website %}
-          <a href="{{team.website}}" target="blank" class="black-link"
-            title="{{ coreteam.website }}">
-            <i class="fa fa-fw fa-globe"></i>{{ coreteam.website }}
-          </a>
+            <a href="{{team.website}}" target="blank" class="black-link" title="{{ coreteam.website }}">
+              <i class="fa fa-fw fa-globe"></i>{{ coreteam.website }}
+            </a>
           {% endif %}
         </div>
         {% if team.fingerprint %}
-        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 more-bottom fingerprint"
-             title="{{ team.name }}'s PGP fingerprint">
-          {{ team.fingerprint }}
-        </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 more-bottom fingerprint" title="{{ team.name }}'s PGP fingerprint">
+            {{ team.fingerprint }}
+          </div>
         {% endif %}
       </div>
     {% endif %}
   {% endfor %}
-
-<!-- Hidden when not actively hiring
+  <!-- Hidden when not actively hiring
   <div class="text-center more-bottom">
-      <a href="{{ joined.url}}" class="btn btn-primary"><i class="fa fa-user-plus fa-fw white-icon"></i>{{ joined.title }}</a>
+    <a href="{{ joined.url}}" class="btn btn-primary"><i class="fa fa-user-plus fa-fw white-icon"></i>{{ joined.title }}</a>
   </div>
--->
+  -->
 </div>
-
+<!-- Emeritus -->
 <div class="page-content more-bottom">
   <div class="col-lg-12">
     <a href="{{ team_link }}#emeritus">
@@ -149,21 +128,21 @@
   </div>
   {% for team in site.data.team %}
     {% if team.type == "emeritus" %}
-    {% assign name_array = team.name | split:" " %}
-    <div class="row team">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        {% include team-simple.html %}
+      {% assign name_array = team.name | split:" " %}
+      <div class="row team">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          {% include team-simple.html %}
+        </div>
+        {% if team.fingerprint %}
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 more-bottom fingerprint">
+            {{ team.fingerprint }}
+          </div>
+        {% endif %}
       </div>
-      {% if team.fingerprint %}
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 more-bottom fingerprint">
-        {{ team.fingerprint }}
-      </div>
-      {% endif %}
-    </div>
     {% endif %}
   {% endfor %}
 </div>
-
+<!-- Community -->
 <div class="page-content more-bottom">
   <div class="col-lg-12">
     <a href="{{ team_link }}#community-contributors">
@@ -175,17 +154,17 @@
   </div>
   {% for team in site.data.team %}
     {% if team.type == "community" %}
-    {% assign name_array = team.name | split:" " %}
-    <div class="row team">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        {% include team-simple.html %}
+      {% assign name_array = team.name | split:" " %}
+      <div class="row team">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          {% include team-simple.html %}
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+          {% if team.fingerprint %}
+            <span class="fingerprint" title="{{team.name}}'s PGP Key Fingerprint">{{team.fingerprint}}</span>
+          {% endif %}
+        </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
-        {% if team.fingerprint %}
-        <span class="fingerprint" title="{{team.name}}'s PGP Key Fingerprint">{{team.fingerprint}}</span>
-        {% endif %}
-      </div>
-    </div>
     {% endif %}
   {% endfor %}
 </div>

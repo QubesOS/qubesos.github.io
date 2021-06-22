@@ -1,51 +1,43 @@
-        {% assign rowspan = hcl.versions | size %}
-        <tr class=grid">
-          <td rowspan="{{ rowspan }}">{{ hcl.model }}</td>
-          <td data-hvm="{{hcl.hvm}}" rowspan="{{ rowspan }}" class="{% if hcl.hvm %}success{% else %}warning{% endif %}">
-            {{ hcl.hvm }}
-          </td>
-          <td rowspan="{{ rowspan }}"
-              class="{% if hcl.iommu %}success{% else %}warning{% endif %}">
-              {{ hcl.iommu }}
-          </td>
-          <td rowspan="{{ rowspan }}"
-              class="{% if hcl.slat %}success{% else %}warning{% endif %}">
-              {{ hcl.slat }}
-          </td>
-          <td rowspan="{{ rowspan }}">{{ hcl.kernel }}</td>
-          <td rowspan="{{ rowspan }}">{{ hcl.xen }}</td>
-          <td rowspan="{{ rowspan }}">{{ hcl.memory }}</td>
-          <td rowspan="{{ rowspan }}">{{ hcl.cpu }}</td>
-          <td rowspan="{{ rowspan }}">{{ hcl.credit }}</td>
-        {% case hcl.versions[0].works %}
-        {% when true %}
-          {% assign background = 'success' %}
-        {% when 'maybe' %}
-          {% assign background = 'warning' %}
-        {% else %}
-          {% assign background = 'danger' %}
-        {% endcase %}
-            <td class="{{ background }}">{{ hcl.versions[0].qubes }}</td>
-            <td class="{{ background }}">{{ hcl.versions[0].xen }}</td>
-            <td class="{{ background }}">{{ hcl.versions[0].kernel }}</td>
-            <td class="{{ background }}">{{ hcl.versions[0].remark }}</td>
-            <td class="{{ background }}">{{ hcl.versions[0].credit }}</td>
-        </tr>
-        {% assign range = rowspan | minus:1 %}
-        {% for i in (1..range) %}
-          {% case hcl.versions[i].works %}
-          {% when true %}
-              {% assign background = 'success' %}
-          {% when 'maybe' %}
-              {% assign background = 'warning' %}
-          {% else %}
-              {% assign background = 'danger' %}
-          {% endcase %}
-          <tr>
-              <td class="{{ background }}">{{ hcl.versions[i].qubes }}</td>
-              <td class="{{ background }}">{{ hcl.versions[i].xen }}</td>
-              <td class="{{ background }}">{{ hcl.versions[i].kernel }}</td>
-              <td class="{{ background }}">{{ hcl.versions[i].remark }}</td>
-              <td class="{{ background }}">{{ hcl.versions[i].credit }}</td>
-          </tr>
-        {% endfor %}
+{% assign rowspan = hcl.versions | size %}
+<tr class=grid">
+  <td rowspan="{{ rowspan }}">{{ hcl.model }}</td>
+  <td data-hvm="{{hcl.hvm}}" rowspan="{{ rowspan }}" class="{% if hcl.hvm %}success{% else %}warning{% endif %}">{{ hcl.hvm }}</td>
+  <td rowspan="{{ rowspan }}" class="{% if hcl.iommu %}success{% else %}warning{% endif %}">{{ hcl.iommu }}</td>
+  <td rowspan="{{ rowspan }}" class="{% if hcl.slat %}success{% else %}warning{% endif %}">{{ hcl.slat }}</td>
+  <td rowspan="{{ rowspan }}">{{ hcl.kernel }}</td>
+  <td rowspan="{{ rowspan }}">{{ hcl.xen }}</td>
+  <td rowspan="{{ rowspan }}">{{ hcl.memory }}</td>
+  <td rowspan="{{ rowspan }}">{{ hcl.cpu }}</td>
+  <td rowspan="{{ rowspan }}">{{ hcl.credit }}</td>
+  {% case hcl.versions[0].works %}
+  {% when true %}
+    {% assign background = 'success' %}
+  {% when 'maybe' %}
+    {% assign background = 'warning' %}
+  {% else %}
+    {% assign background = 'danger' %}
+  {% endcase %}
+  <td class="{{ background }}">{{ hcl.versions[0].qubes }}</td>
+  <td class="{{ background }}">{{ hcl.versions[0].xen }}</td>
+  <td class="{{ background }}">{{ hcl.versions[0].kernel }}</td>
+  <td class="{{ background }}">{{ hcl.versions[0].remark }}</td>
+  <td class="{{ background }}">{{ hcl.versions[0].credit }}</td>
+</tr>
+{% assign range = rowspan | minus:1 %}
+{% for i in (1..range) %}
+  {% case hcl.versions[i].works %}
+  {% when true %}
+    {% assign background = 'success' %}
+  {% when 'maybe' %}
+    {% assign background = 'warning' %}
+  {% else %}
+    {% assign background = 'danger' %}
+  {% endcase %}
+  <tr>
+    <td class="{{ background }}">{{ hcl.versions[i].qubes }}</td>
+    <td class="{{ background }}">{{ hcl.versions[i].xen }}</td>
+    <td class="{{ background }}">{{ hcl.versions[i].kernel }}</td>
+    <td class="{{ background }}">{{ hcl.versions[i].remark }}</td>
+    <td class="{{ background }}">{{ hcl.versions[i].credit }}</td>
+  </tr>
+{% endfor %}

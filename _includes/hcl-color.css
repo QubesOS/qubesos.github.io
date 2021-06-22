@@ -1,10 +1,10 @@
 {% case include.value %}
 {% when 'yes' %}
-    success
+  success
 {% when 'partial' %}
-    warning
+  warning
 {% when 'no' %}
-    danger
+  danger
 {% else %}
-    info
+  info
 {% endcase %}

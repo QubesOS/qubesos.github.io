@@ -1,81 +1,39 @@
-
-<div class="more-bottom white-box page-content">
+<!-- Localization -->
 {% if page.lang == nil or page.lang == "en" %}
-        {% assign doc_content = site.data.includes %}
+  {% assign doc_content = site.data.includes %}
 {% else %}
-        {% assign doc_content = site.data.translation[page.lang].includes %}
-        {% if doc_content == nil or doc_content.size == 0 %}
-                {% assign doc_content = site.data.includes %}
-        {% endif %}
+  {% assign doc_content = site.data.translation[page.lang].includes %}
+  {% if doc_content == nil or doc_content.size == 0 %}
+    {% assign doc_content = site.data.includes %}
+  {% endif %}
 {% endif %}
-
 {% assign docs = doc_content | where_exp: "item", "item.section == 'doc-content'" | first %}
-
-  <div class="row">
-    <div class="col-md-3 sidebar">
-      <div class="page-source-side remove-bottom">
-        <h3 class="remove-bottom">{{ docs.text }}</h3>
-      </div>
-      <a id="toc-button" data-toggle="collapse" href="#page-toc" class="btn btn-primary btn-block" role="button">{{ docs.text }}</a>
-      <div id="page-toc" class="collapse in"></div>
-      <div class="page-source-side">
-      {% include doc-widget.html %}
-      </div>
-    </div>
-    <div class="toc-button-spacer more-bottom"></div>
-    <div class="col-xs-12 col-md-9 page-content-right">
-      <article id="doc-content" class="post-content">
-
-        {% assign doc_segments = page.relative_path | split: '/' %}
-        {% if section.category == "external" %}
-          {% include doc-alert-external.html %}
-        {% elsif doc_segments contains 'advanced-topics' or page.advanced %}
-          {% include doc-alert-advanced.html %}
-        {% endif %}
-
-        <h1>{{ page.title }}</h1>
-
-        {{ content }}
-
-        <!-- Here below the content will be added an _include only in the case the current page has a permalink ending with the specific word -->
-        {% assign perm_last_part = page.url | split: '/' | last | lstrip %}
-        {% if perm_last_part == "bulletins"  %}
-             {% include sec-bulletin.html %}
-        {% endif %}
-        {% if perm_last_part == "canaries"  %}
-             {% include sec-canaries.html %}
-        {% endif %}
-        {% if perm_last_part == "xsa"  %}
-             {% include xsa.html %}
-        {% endif %}
-        {% if perm_last_part == "style-guide" %}
-             {% include style-guide.html %}
-        {% endif %}
-
-      </article>
-    <br>
-    </div>
-  </div>
-  <div class="page-source-bottom">
-  {% include doc-widget.html %}
-  </div>
-</div>
-{% include footer.html %}
-<script src="/js/jquery.toc.js"></script>
-<script>
-$(document).ready(function() {
-  $('#doc-content').toc({
-    renderIn: '#page-toc',
-    anchorPrefix: 'tocAnchor-', // the default prefix used for generated TOC elements IDs
-    showAlways: true, //Show TOC also if only one H1 is present on page, the TOC is never show if no H1s are found on page
-    saveShowStatus: false, // Save the collapse status using a cookie (see dependecies for further details)
-    contentsText: 'Contents', // The label text shown for Content, you can localize passing another string
-    hideText: 'hide', // The label text shown for hide button, you can localize passing another string
-    showText: 'show' // The label text shown for show button, you can localize passing another string
-  })
-})
-</script>
-<script src="/js/anchor.min.js"></script>
-<script>
-  anchors.add();
-</script>
+<!-- Opening HTML for doc content -->
+{% include doc-sidebar-start.html %}
+<!-- BEGIN CONTENT -->
+{% assign doc_segments = page.relative_path | split: '/' %}
+{% if section.category == "external" %}
+  {% include doc-alert-external.html %}
+{% elsif doc_segments contains 'advanced-topics' or page.advanced %}
+  {% include doc-alert-advanced.html %}
+{% endif %}
+<h1>{{ page.title }}</h1>
+{{ content }}
+<!-- Check whether the current page's permalink ends in a specific word.
+     If it does, include content specific to that page. -->
+{% assign perm_last_part = page.url | split: '/' | last | lstrip %}
+{% if perm_last_part == "qsb"  %}
+   {% include sec-qsb.html %}
+{% endif %}
+{% if perm_last_part == "canary"  %}
+   {% include sec-canary.html %}
+{% endif %}
+{% if perm_last_part == "xsa"  %}
+   {% include sec-xsa.html %}
+{% endif %}
+{% if perm_last_part == "style-guide" %}
+   {% include style-guide.html %}
+{% endif %}
+<!-- END CONTENT -->
+<!-- Closing HTML for doc content -->
+{% include doc-sidebar-end.html %}

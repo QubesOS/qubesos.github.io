@@ -1,208 +1,113 @@
 <footer>
+<!-- Localization -->
 {% if page.lang == nil or page.lang == "en" %}
-        {% assign inc = site.data.includes %}
-        {% assign archies = site.data.architecture %}
-        {% assign lang = "/" %}
+  {% assign include = site.data.includes %}
+  {% assign entry = site.data.architecture %}
+  {% assign lang = "/" %}
 {% else %}
-        {% assign inc = site.data.translation[page.lang].includes %}
-        {% if inc == nil or inc.size == 0 %}
-                {% assign inc = site.data.includes %}
-        {% endif %}
-        {% assign archies = site.data.translation[page.lang].architecture %}
-        {% if archies == nil or archies.size == 0 %}
-                {% assign archies = site.data.architecture %}
-        {% endif %}
-        {% assign lang = "/" | append: page.lang %}
+  {% assign include = site.data.translation[page.lang].includes %}
+  {% if include == nil or inc.size == 0 %}
+    {% assign include = site.data.includes %}
+  {% endif %}
+  {% assign entry = site.data.translation[page.lang].architecture %}
+  {% if entry == nil or entry.size == 0 %}
+    {% assign entry = site.data.architecture %}
+  {% endif %}
+  {% assign lang = "/" | append: page.lang %}
 {% endif %}
-
-{% assign foot = inc | where_exp: "item", "item.section == 'footer'" | first %}
-
+{% assign foot = include | where_exp: "item", "item.section == 'footer'" | first %}
+<!-- Search Bar -->
 <div class="white-box footer-search more-bottom">
   <div class="row">
     <div class="col-lg-3 col-md-3 text-center">
-      <h4 class="remove-bottom">
-        <i class="fa fa-search"></i> {{ foot.search }} qubes-os.org
-      </h4>
+      <h4 class="remove-bottom"><i class="fa fa-search"></i> {{ foot.search }} qubes-os.org</h4>
     </div>
     <div class="col-lg-9 col-md-9 text-left">
       <form action="https://duckduckgo.com/" method="get">
         <div class="input-group">
           <input type="hidden" name="sites" value="https://www.qubes-os.org">
-      <input type="text" class="form-control" name="q" placeholder="{{ foot.ddg }}&hellip;">
+          <input type="text" class="form-control" name="q" placeholder="{{ foot.ddg }}&hellip;">
           <span class="input-group-btn">
-          <button class="btn btn-primary" type="submit">{{ foot.go }}</button>
+            <button class="btn btn-primary" type="submit">{{ foot.go }}</button>
           </span>
         </div>
       </form>
     </div>
   </div>
 </div>
-  <div class="row footer-nav">
-    {% for section in archies %}
-    <div class="col-lg-2 col-md-2">
-      <a href="{{section.url}}">
-        <h5 class="text-left add-bottom">
+<!-- Navigation Links -->
+<div class="row footer-nav">
+  {% for section in entry %}
+  <div class="col-lg-2 col-md-2">
+    <a href="{{section.url}}">
+      <h5 class="text-left add-bottom">
         {{section.title}}
         {% if section.title == "Donate" %}
           <i class="fa fa-heart"></i>
         {% endif %}
-        </h5>
-        </a>
-      <ul class="list-unstyled">
-        {% for sub in section.sub-pages %}
-        <li><a href="{{sub.url}}">{{sub.title}}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endfor %}
+      </h5>
+    </a>
+    <ul class="list-unstyled">
+      {% for sub in section.sub-pages %}
+      <li><a href="{{sub.url}}">{{sub.title}}</a></li>
+      {% endfor %}
+    </ul>
   </div>
-
-{% assign web = foot.links | where_exp: "item", "item.id == 1" | first %}
-{% assign tor = foot.links | where_exp: "item", "item.id == 2" | first %}
-{% assign bug = foot.links | where_exp: "item", "item.id == 3" | first %}
-{% assign priv = foot.links | where_exp: "item", "item.id == 4" | first %}
+  {% endfor %}
+</div>
+<!-- Colophon -->
+{% assign web-source = foot.links | where_exp: "item", "item.id == 1" | first %}
+{% assign onion = foot.links | where_exp: "item", "item.id == 2" | first %}
+{% assign bug-report = foot.links | where_exp: "item", "item.id == 3" | first %}
+{% assign privacy = foot.links | where_exp: "item", "item.id == 4" | first %}
 {% assign terms = foot.links | where_exp: "item", "item.id == 5" | first %}
-{% assign map = foot.links | where_exp: "item", "item.id == 6" | first %}
-
-  <div class="row footer-nav text-center more-top add-bottom">
-    <div class="footer-logo more-bottom">
-      <a href="{{ lang }}">
-                <img src="/attachment/icons/logo-outline-small.svg" alt="Qubes">
-            <strong>Qubes</strong> OS</a>
-    </div>
-    <p>
-      &#169;
-      <script type="text/javascript">
-               document.write(new Date().getFullYear());
-      </script><noscript>2021</noscript> {{ foot.title }}<br>
-      <a href="{{ web.url }}">{{ web.text }}</a> |
-      <a href="{{ tor.url }}">{{ tor.text }}</a> |
-      <a href="{{ bug.url }}">{{ bug.text }}</a> |
-      <a href="{{ priv.url }}">{{ priv.text }}</a> |
-      <a href="{{ terms.url }}">{{ terms.text }}</a> |
-      <a href="{{ map.url }}">{{ map.text }}</a>
-    </p>
+{% assign sitemap = foot.links | where_exp: "item", "item.id == 6" | first %}
+<div class="row footer-nav text-center more-top add-bottom">
+  <div class="footer-logo more-bottom">
+    <a href="{{ lang }}">
+      <img src="/attachment/icons/logo-outline-small.svg" alt="Qubes">
+      <strong>Qubes</strong> OS
+    </a>
   </div>
+  <p>
+    &#169;
+    <script type="text/javascript">
+      document.write(new Date().getFullYear());
+    </script>
+    {{ foot.title }}<br>
+    <a href="{{ web-source.url }}">{{ web-source.text }}</a> |
+    <a href="{{ onion.url }}">{{ onion.text }}</a> |
+    <a href="{{ bug-report.url }}">{{ bug-report.text }}</a> |
+    <a href="{{ privacy.url }}">{{ privacy.text }}</a> |
+    <a href="{{ terms.url }}">{{ terms.text }}</a> |
+    <a href="{{ sitemap.url }}">{{ sitemap.text }}</a>
+  </p>
+</div>
 </footer>
-
+<!-- JavaScript -->
 <script src="/js/jquery-2.2.2.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
-<script src="/js/sorttable.js"></script>
-{% if page.permalink == "/video-tours/" %}
-<script src="/js/jquery.tubeplayer.min.js"></script>
-<script>
-$(document).ready(function() {
-
-  // Uses the jQuery plugin, TubePlayer
-  // https://github.com/nirvanatikku/jQuery-TubePlayer-Plugin/
-  var tourVideo0 = $("#player0").tubeplayer({
-      width: 700,
-      height: 393,
-      allowFullScreen: "true",
-      initialVideo: "dD0_gq_ugw8",
-      start: 0,
-      preferredQuality: "hd720",
-      showControls: true,
-      showRelated: false,
-      playsinline: false,
-      autoPlay: false,
-      autoHide: true,
-      theme: "dark",
-      color: "white",
-      showinfo: false,
-      modestbranding: true,
-      annotations: true,
-      loop: 0,
-      protocol: 'https',
-      loadSWFObject: false,
-      iframed: true,
-      onPlayerUnstarted: function(){ console.log('onPlayerUnstarted must be loaded...') },
-      onPlayerCued: function(){ console.log('onPlayerCued must ready...') },
-      onSeek: function(time){}
-  })
-
-  var tourVideo1 = $("#player1").tubeplayer({
-      width: 700,
-      height: 393,
-      allowFullScreen: "true",
-      initialVideo: "q7mCeYCrQ24",
-      start: 0,
-      preferredQuality: "hd720",
-      showControls: true,
-      showRelated: false,
-      playsinline: false,
-      autoPlay: false,
-      autoHide: true,
-      theme: "dark",
-      color: "white",
-      showinfo: false,
-      modestbranding: true,
-      annotations: true,
-      loop: 0,
-      protocol: 'https',
-      loadSWFObject: false,
-      iframed: true,
-      onPlayerUnstarted: function(){ console.log('onPlayerUnstarted must be loaded...') },
-      onPlayerCued: function(){ console.log('onPlayerCued must ready...') },
-      onSeek: function(time){}
-  })
-
-  $('.player0-seek').on('click', function(e) {
-    e.preventDefault()
-    //console.log('Jump to: ' + $(this).attr('href'))
-    tourVideo0.tubeplayer("seek", $(this).attr('href'))
-    tourVideo0.tubeplayer("play")
-
-    $.each($('#player0-menu li'), function() {
-      $(this).find('i.fa').remove()
-    })
-
-    $(this).prepend('<i class="fa fa-arrow-right"></i> ')
-  })
-
-  $('.player1-play').on('click', function(e) {
-    e.preventDefault()
-    //console.log('Jump to: ' + $(this).attr('href'))
-    tourVideo1.tubeplayer("play", $(this).attr('href'))
-
-    $.each($('#player1-menu li'), function() {
-      $(this).find('i.fa').remove()
-    })
-
-    $(this).prepend('<i class="fa fa-arrow-right"></i> ')
-  })
-
-})
-</script>
+{% if page.permalink == '/hcl/' %}
+  <!-- Make HCL table sortable -->
+  <script src="/js/sorttable.js"></script>
 {% endif %}
-{% if page.layout == "post" %}
-<script src="/js/jquery.tubeplayer.min.js"></script>
-<script>
-$(document).ready(function() {
-  $("#video").tubeplayer({
-      width: 700,
-      height: 393,
-      allowFullScreen: "true",
-  {% if page.url == "/news/2016/12/17/interview-the-new-screen-savers/" %}
-      initialVideo: "549hjuc7trk",
-      start: 2007,
-  {% endif %}
-      preferredQuality: "hd720",
-      showControls: true,
-      showRelated: false,
-      playsinline: false,
-      autoPlay: false,
-      autoHide: true,
-      theme: "dark",
-      color: "white",
-      showinfo: false,
-      modestbranding: true,
-      annotations: true,
-      loop: 0,
-      protocol: 'https',
-      loadSWFObject: false,
-      iframed: true
-  })
-})
-</script>
+{% if page.path contains '_doc/' %}
+  <!-- Doc page table of contents -->
+  <script src="/js/jquery.toc.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#doc-content').toc({
+        renderIn: '#page-toc',
+        anchorPrefix: 'tocAnchor-', // the default prefix used for generated TOC elements IDs
+        showAlways: true, //Show TOC also if only one H1 is present on page, the TOC is never show if no H1s are found on page
+        saveShowStatus: false, // Save the collapse status using a cookie (see dependecies for further details)
+        contentsText: 'Contents', // The label text shown for Content, you can localize passing another string
+        hideText: 'hide', // The label text shown for hide button, you can localize passing another string
+        showText: 'show' // The label text shown for show button, you can localize passing another string
+      })
+    })
+  </script>
 {% endif %}
+<!-- Heading anchor links -->
+<script src="/js/anchor.min.js"></script>
+<script>anchors.add();</script>

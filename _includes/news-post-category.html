@@ -1,0 +1,9 @@
+<strong>
+{% if page.categories.first %}
+  {% for category in page.categories %}
+    <a href="{{ nc.url }}#{{ category | slugify }}">{{ category | capitalize }}</a>{% if forloop.index < forloop.length %},{% endif %}
+  {% endfor %}
+{% else %}
+  <a href="{{ nc.url }}#{{ site.default_category | slugify }}">{{ site.default_category | capitalize }}</a>
+{% endif %}
+</strong>

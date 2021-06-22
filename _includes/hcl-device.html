@@ -6,7 +6,7 @@
     <a href="#{{ device.brand | slugify }}_{{ device.model | slugify }}_{{ device.cpu-short | slugify }}_{{ device.chipset-short | slugify }}_{{ device.gpu-short | slugify }}">
       <strong>{{ device.brand }} {{ device.model }}</strong><br/>
       {% if device.cpu-short != "" or device.chipset-short != "" or device.gpu-short != "" %}
-      <small>{{ device.cpu-short }} {{ device.chipset-short }} {{ device.gpu-short }}</small>
+        <small>{{ device.cpu-short }} {{ device.chipset-short }} {{ device.gpu-short }}</small>
       {% endif %}
     </a>
   </td>

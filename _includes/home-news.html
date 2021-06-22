@@ -1,24 +1,23 @@
+<!-- Localization -->
 {% if page.lang == nil or page.lang == "en" %}
-    {% assign home_content = site.data.includes %}
+  {% assign home_content = site.data.includes %}
 {% else %}
-    {% assign home_content = site.data.translation[page.lang].includes %}
-    {% if home_content == nil or home_content.size == 0 %}
-         {% assign home_content = site.data.includes %}
-    {% endif %}
+  {% assign home_content = site.data.translation[page.lang].includes %}
+  {% if home_content == nil or home_content.size == 0 %}
+    {% assign home_content = site.data.includes %}
+  {% endif %}
 {% endif %}
-
 {% assign n = home_content | where_exp: "item", "item.section == 'home-news'" | first %}
-
+<!-- List posts -->
 {% for post in site.posts limit:7 %}
-          <li class="list-links">
-            <a class="black-link headline" href="{{ post.url }}">
-              {{ post.title }}
-              {% for category in post.categories %}
-                {% if site.allowed_categories contains category %}
-                  <span class="detail"> {{ n.snippets[0].snippet }} {{ category | capitalize }} {{ n.snippets[1].snippet }} {{ post.date | date: "%Y-%m-%d" }}</span>
-                {% endif %}
-              {% endfor %}
-            </a>
-          </li>
+  <li class="list-links">
+    <a class="black-link headline" href="{{ post.url }}">
+      {{ post.title }}
+      {% for category in post.categories %}
+        {% if site.allowed_categories contains category %}
+          <span class="detail"> {{ n.snippets[0].snippet }} {{ category | capitalize }} {{ n.snippets[1].snippet }} {{ post.date | date: "%Y-%m-%d" }}</span>
+        {% endif %}
+      {% endfor %}
+    </a>
+  </li>
 {% endfor %}
-

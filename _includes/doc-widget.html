@@ -1,3 +1,4 @@
+<!-- Localization -->
 {% if page.lang == nil or page.lang == "en" %}
   {% assign doc_content = site.data.includes %}
 {% else %}
@@ -6,9 +7,7 @@
      {% assign doc_content = site.data.includes %}
   {% endif %}
 {% endif %}
-
 {% assign docs = doc_content | where_exp: "item", "item.section == 'doc-widget'" | first %}
-
 {% if page.lang == nil or page.lang == "en" %}
   {% assign master_edit =  site.project_repo_path | append: "/qubes-doc/edit/master" | append: page.relative_path | remove_first: '_doc'  %}
   {% assign master_blob =  site.project_repo_path | append: "/qubes-doc/blob/master" | append: page.relative_path | remove_first: '_doc'  %}
@@ -16,14 +15,13 @@
   {% assign master_edit =  site.project_repo_path | append: "/qubes-translated/edit/master" | append: page.relative_path | remove_first: '_qubes-translated'  %}
   {% assign master_blob =  site.project_repo_path | append: "/qubes-translated/blob/master" | append: page.relative_path| remove_first: '_qubes-translated'  %}
 {% endif %}
-
+<!-- Button links -->
 {% for item in docs.links %}
   {% if item.icon == "fa-book" %}
     {% assign a_class = "btn btn-primary btn-block" %}
   {% else %}
     {% assign a_class = "page-source-link btn btn-default btn-block" %}
   {% endif %}
-
   {% if item.icon == "fa-code" %}
     {% assign a_href = master_blob %}
   {% elsif item.icon == "fa-code-fork" %}
@@ -31,9 +29,7 @@
   {% else %}
     {% assign a_href = item.url %}
   {% endif %}
-  <a href="{{ a_href }}"
-     class="{{ a_class }}"
-     title="{{ item.text }}">
+  <a href="{{ a_href }}" class="{{ a_class }}" title="{{ item.text }}">
     <span class="fa fa-fw {{ item.icon }}"></span> {{ item.text }}
   </a><br>
 {% endfor %}

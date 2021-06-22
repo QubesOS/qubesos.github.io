@@ -1,6 +1,6 @@
-{% include head.html %}
-<body>
-{% include header.html %}
+---
+layout: base
+---
 <div class="container">
   {% include news-heading.html %}
   <div class="more-bottom white-box page-content">
@@ -12,14 +12,11 @@
             {% include news.html %}
           {% endif %}
           {% if perm_last_part == "categories"  %}
-            {% include catnews.html %}
+            {% include news-categories.html %}
           {% endif %}
           {{ content }}
         </article>
       </div>
     </div>
   </div>
-  {% include footer.html %}
 </div>
-</body>
-</html>

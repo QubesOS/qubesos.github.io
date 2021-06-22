@@ -18,8 +18,8 @@
   sub-pages:
     - url: /security/
     - url: /security/pack/
-    - url: /security/bulletins/
-    - url: /security/canaries/
+    - url: /security/qsb/
+    - url: /security/canary/
     - url: /security/xsa/
     - url: /security/verifying-signatures/
     - url: /security/pgp-keys/
@@ -167,7 +167,6 @@
       - url: /doc/security-critical-code/
       - url: /doc/qubes-core-admin/
       - url: /doc/qubes-core-admin-client/
-      - url: /doc/qubes-admin-api/
       - url: /doc/qubes-core-stack/
       - url: /doc/gui/
       - url: /doc/networking/
@@ -185,6 +184,7 @@
       - url: /doc/qrexec/
       - url: /doc/qrexec-internals/
       - url: /doc/qrexec-socket-services/
+      - url: /doc/admin-api/
 
   - title: Debugging
     subcategory: debugging

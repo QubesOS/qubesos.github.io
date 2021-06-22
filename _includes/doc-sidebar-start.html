@@ -1,0 +1,18 @@
+<div class="row">
+  {% if page.layout == 'fullscreen' %}
+    <div class="col-xs-12">
+  {% else %}
+    <div class="col-md-3 sidebar">
+      <div class="page-source-side remove-bottom">
+        <h3 class="remove-bottom">{{ docs.text }}</h3>
+      </div>
+      <a id="toc-button" data-toggle="collapse" href="#page-toc" class="btn btn-primary btn-block" role="button">{{ docs.text }}</a>
+      <div id="page-toc" class="collapse in"></div>
+      <div class="page-source-side">
+        {% include doc-widget.html %}
+      </div>
+    </div>
+    <div class="toc-button-spacer more-bottom"></div>
+    <div class="col-xs-12 col-md-9 page-content-right">
+  {% endif %}
+  <article id="doc-content" class="post-content">

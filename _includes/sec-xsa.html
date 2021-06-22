@@ -13,16 +13,16 @@
 
 <h2 id="statistics">{{statistics.title}}</h2>
 
-{% assign date_first = site.data.xsa.first.date %}
+{% assign date_first = site.data.sec-xsa.first.date %}
 {% assign date_first_epoch = date_first | date: "%s" %}
-{% assign date_last = site.data.xsa.last.date %}
+{% assign date_last = site.data.sec-xsa.last.date %}
 {% assign date_last_epoch = date_last | date: "%s" %}
 {% assign timespan_epoch = date_last_epoch | minus: date_first_epoch %}
 {% assign timespan_human = timespan_epoch | divided_by: 31536000.0 | round: 1 %}
-{% assign xsa_total = site.data.xsa | size | plus: 1.0 %}
+{% assign xsa_total = site.data.sec-xsa | size | plus: 1.0 %}
 {% assign xsa_unused = 0.0 %}
 {% assign xsa_affected = 0.0 %}
-{% for xsa in site.data.xsa %}
+{% for xsa in site.data.sec-xsa %}
   {% if xsa.affected == true %}
     {% assign xsa_affected = xsa_affected | plus: 1.0 %}
   {% endif %}
@@ -48,7 +48,7 @@
     <th title="Xen Security Advisory">{{ tracker.column2 }}</th>
     <th>{{ tracker.column3 }}</th>
   </tr>
-{% for xsa in site.data.xsa reversed %}
+{% for xsa in site.data.sec-xsa reversed %}
   <tr id="{{ xsa.xsa }}">
     <td><a href="#{{ xsa.xsa }}" class="fa fa-link black-icon" title="Anchor link to tracker row: XSA-{{ xsa.xsa }}"></a></td>
     <td>{{ xsa.date }}</td>

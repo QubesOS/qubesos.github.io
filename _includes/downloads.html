@@ -295,7 +295,7 @@
             <th>{{ dm.table[1].column }}</th>
             <th>{{ dm.table[2].column }}</th>
           </tr>
-        {% for mirror in site.data.mirrors %}
+        {% for mirror in site.data.downloads-mirrors %}
           <tr id="{{ mirror.organization | slugify }}">
             <td><a href="{{ mirror.org_url }}">{{ mirror.organization }}</a></td>
             <td>

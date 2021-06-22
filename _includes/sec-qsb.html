@@ -16,7 +16,7 @@
       {% endfor %}
   </tr>
 
-{% for qsb in site.data.qsb reversed %}
+{% for qsb in site.data.sec-qsb reversed %}
   <tr id="{{ qsb.qsb }}">
     <td><a href="#{{ qsb.qsb }}" class="fa fa-link black-icon" title="Anchor link to QSB row: QSB #{{ qsb.qsb }}"></a></td>
     <td>{{ qsb.date }}</td>

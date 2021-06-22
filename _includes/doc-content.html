@@ -40,7 +40,7 @@
         <!-- Here below the content will be added an _include only in the case the current page has a permalink ending with the specific word -->
         {% assign perm_last_part = page.url | split: '/' | last | lstrip %}
         {% if perm_last_part == "bulletins"  %}
-             {% include sec-bulletin.html %}
+             {% include sec-qsb.html %}
         {% endif %}
         {% if perm_last_part == "canaries"  %}
              {% include sec-canary.html %}

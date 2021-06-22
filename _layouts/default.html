@@ -1,18 +1,18 @@
-{% include head.html %}
-<body>
-{% include header.html %}
+---
+layout: base
+---
 <div class="container">
   <h1 class="more-top add-left outer-heading">
     <a href="{{ page.permalink }}" class="heading-link">
       {% if page.lang == nil or page.lang == "en" %}
-        {% assign archies = site.data.architecture %}
+        {% assign entry = site.data.architecture %}
       {% else %}
-        {% assign archies = site.data.translation[page.lang].architecture %}
-        {% if archies == nil or archies.size == 0 %}
-          {% assign archies = site.data.architecture %}
+        {% assign entry = site.data.translation[page.lang].architecture %}
+        {% if entry == nil or entry.size == 0 %}
+          {% assign entry = site.data.architecture %}
         {% endif %}
       {% endif %}
-      {% for section in archies %}
+      {% for section in entry %}
         {% if section.url == page.permalink %}
           <i class="fa {{ section.icon }}"></i>
         {% else %}
@@ -40,5 +40,3 @@
      anchors.add();
   </script>
 </div>
-</body>
-</html>

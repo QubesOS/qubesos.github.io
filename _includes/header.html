@@ -34,7 +34,12 @@
           </div>
         </div>
       {% endif %}
-      <a class="page-link" href="/">
+      {% if page.lang == nil or page.lang == "" or page.lang == "en" %}
+        {% assign linktohome = "/" %}
+      {% else %}
+        {% assign linktohome = "/" | append: page.lang | append: "/" %}
+      {% endif %}
+      <a class="page-link" href="{{ linktohome }}">
         <img src="/attachment/icons/128x128/apps/qubes-logo-icon.png" width="44" height="44" alt="Qubes OS Project">
         <span><strong>Qubes</strong> OS</span>
       </a>

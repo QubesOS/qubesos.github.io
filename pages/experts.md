@@ -1,7 +1,8 @@
 ---
 lang: en
-layout: experts
+layout: base
 permalink: /experts/
 ref: 119
 title: Experts
 ---
+{% include experts.html %}

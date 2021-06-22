@@ -46,8 +46,8 @@
     - url: /security/pack/
       text: Security Pack
       id: 2
-    - url: /doc/security-guidelines/
-      text: Security Guidelines
+    - url: /doc/#security-in-qubes
+      text: Security in Qubes
       id: 3
 
 - htmlsection: version-info
@@ -72,8 +72,8 @@
     - url: /doc/coding-style/
       text: Coding Guidelines
       id: 2
-    - url: /doc/license/
-      text: Software License
+    - url: /doc/architecture/
+      text: Architecture
       id: 3
 
 - htmlsection: download-mirrors

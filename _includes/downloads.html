@@ -33,7 +33,7 @@
       </li>
       <li>
        <a href="{{ ch.url }}" class="black-link">
-        <i class="fa fa-floppy-o fa-fw black-icon"></i> {{ ch.text }}
+        <i class="fa fa-clipboard-check fa-fw black-icon"></i> {{ ch.text }}
        </a>
       </li>
       <li>
@@ -53,12 +53,12 @@
       </li>
       <li>
        <a href="{{ vs.url }}" class="black-link">
-        <i class="fa fa-lock fa-fw black-icon"></i> {{ vs.text }}
+        <i class="fa fa-file-contract fa-fw black-icon"></i> {{ vs.text }}
        </a>
       </li>
       <li>
        <a href="{{ isc.url }}" class="black-link">
-        <i class="fa fa-lightbulb-o fa-fw black-icon"></i> {{ isc.text }}
+        <i class="fa fa-lock fa-fw black-icon"></i> {{ isc.text }}
        </a>
       </li>
     </ul>
@@ -73,7 +73,7 @@
       </li>
       <li>
        <a href="{{ tg.url }}" class="black-link">
-        <i class="fa fa-file-text-o fa-fw black-icon"></i> {{ tg.text }}
+        <i class="fa fa-lightbulb-o fa-fw black-icon"></i> {{ tg.text }}
        </a>
       </li>
       <li>
@@ -118,7 +118,7 @@
       <!-- Testing releases -->
       {% if testing %}
         <div class="alert alert-info" role="alert">
-          <i class="add-right fa fa-question-circle"></i>
+          <i class="half-right fa fa-lg fa-question-circle"></i>
           {% if testing != true %}
             {{ testing }}
           {% else %}
@@ -134,7 +134,7 @@
       {% endif %}
       {% if latest %}
         <div class="alert alert-success" role="alert">
-          <i class="add-right fa fa-check-circle"></i>
+          <i class="half-right fa fa-lg fa-check-circle"></i>
           {% if latest != true %}
             {{ latest }}
           {% else %}
@@ -145,7 +145,7 @@
       <!-- Aging releases -->
       {% if aging %}
         <div class="alert alert-warning" role="alert">
-          <i class="add-right fa fa-info-circle"></i>
+          <i class="half-right fa fa-lg fa-info-circle"></i>
           {% if aging != true %}
             {{ aging }}
           {% else %}
@@ -162,7 +162,7 @@
       <!-- Deprecated releases -->
       {% if deprecated %}
         <div class="alert alert-danger" role="alert">
-          <i class="add-right fa fa-exclamation-circle"></i>
+          <i class="half-right fa fa-lg fa-exclamation-circle"></i>
           {% if deprecated != true %}
             {{ deprecated }}
           {% else %}
@@ -216,7 +216,7 @@
       <ul class="list-unstyled">
         <li>
           <a href="{{ downcont.links[3].url }}" class="black-link">
-            <i class="fa fa-fw fa-lock black-icon"></i> {{ downcont.links[3].text }}
+            <i class="fa fa-fw fa-file-contract black-icon"></i> {{ downcont.links[3].text }}
           </a>
         </li>
         {% for docdata in release.docs %}
@@ -318,12 +318,12 @@
       </li>
       <li>
         <a href="{{ sp.url }}" class="black-link" title="{{ sp.text }}">
-          <i class="fa fa-folder fa-fw black-icon"></i> {{ sp.text }}
+          <i class="fa fa-shield fa-fw black-icon"></i> {{ sp.text }}
         </a>
       </li>
       <li>
         <a href="{{ sg.url }}" class="black-link" title="{{ sg.text }}">
-          <i class="fa fa-tasks fa-fw black-icon"></i> {{ sg.text }}
+          <i class="fa fa-cubes fa-fw black-icon"></i> {{ sg.text }}
         </a>
       </li>
     </ul>
@@ -333,7 +333,7 @@
     <ul class="list-unstyled">
       <li>
         <a href="{{ sv.url }}" class="black-link" title="{{ sv.text }}">
-          <i class="fa fa-history fa-fw black-icon"></i> {{ sv.text }}
+          <i class="fa fa-calendar-check-o fa-fw black-icon"></i> {{ sv.text }}
         </a>
       </li>
       <li>
@@ -363,7 +363,7 @@
       </li>
       <li>
         <a href="{{ sl.url }}" class="black-link" title="{{ sl.text }} ">
-          <i class="fa fa-file-text-o fa-fw black-icon"></i> {{ sl.text }}
+          <i class="fa fa-sitemap fa-fw black-icon"></i> {{ sl.text }}
         </a>
       </li>
     </ul>

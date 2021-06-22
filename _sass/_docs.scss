@@ -17,13 +17,13 @@
 
 
 /* Style Guide */
-@mixin styleguide-focus() {
+@mixin style-guide-focus() {
   background-color: $gray-lighter;
   border-radius: $border-radius-base;
   padding: $spacing-unit;
 }
 
-.styleguide {
+.style-guide {
 
   .swatch {
     display: inline-block;

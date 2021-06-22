@@ -1,9 +1,9 @@
 {% if page.lang == nil or page.lang == "en" %}
-        {% assign style = site.data.styleguide-page %}
+        {% assign style = site.data.style-guide-page %}
 {% else %}
-        {% assign style = site.data.translation[page.lang].styleguide-page %}
+        {% assign style = site.data.translation[page.lang].style-guide-page %}
         {% if style == nil or style.size == 0 %}
-                {% assign style = site.data.styleguide-page %}
+                {% assign style = site.data.style-guide-page %}
         {% endif %}
 {% endif %}
 
@@ -16,8 +16,8 @@
 
 <p>{{ fonts.paragraph }}</p>
 
-<div class="styleguide">
-{% for font in site.data.styleguide.fonts %}
+<div class="style-guide">
+{% for font in site.data.style-guide.fonts %}
   <div class="row">
   <div class="col-lg-6 col-md-6 focus">
       <div class="font {{font.class}}"> {{ fonts.snippets[0].snippet }}</div>
@@ -37,8 +37,8 @@
 <p>{{ snippet[0].snippet }} <strong>{{ snippet[1].snippet }}</strong> {{ snippet[2].snippet }}</p>
 
 
-<div class="styleguide">
-{% for color in site.data.styleguide.colors %}
+<div class="style-guide">
+{% for color in site.data.style-guide.colors %}
   {% if color.type == "grayscale" %}
   <div class="swatch more-bottom more-right">
     <div class="color add-bottom bg-{{color.class}}"></div>
@@ -53,8 +53,8 @@
 <p>{{ snippet[0].snippet }} <strong>{{ snippet[1].snippet }}</strong> {{ snippet[2].snippet }}</p>
 
 
-<div class="styleguide">
-{% for color in site.data.styleguide.colors %}
+<div class="style-guide">
+{% for color in site.data.style-guide.colors %}
   {% if color.type == "colors" %}
   <div class="swatch more-bottom more-right">
     <div class="color add-bottom bg-{{color.class}}"></div>
@@ -97,8 +97,8 @@
 .</p>
 
 
-<div class="styleguide">
-{% for logo in site.data.styleguide.logos %}
+<div class="style-guide">
+{% for logo in site.data.style-guide.logos %}
   {% for version in logo.versions %}
   <div class="row more-bottom">
     <div class="col-lg-4 col-md-4">

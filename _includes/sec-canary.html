@@ -17,7 +17,7 @@
       {% endfor %}
   </tr>
 
-{% for canary in site.data.canary reversed %}
+{% for canary in site.data.sec-canary reversed %}
   <tr id="{{ canary.canary }}">
     <td><a href="#{{ canary.canary }}" class="fa fa-link black-icon" title="Anchor link to Qubes Canary row: Qubes Canary #{{ canary.canary }}"></a></td>
     <td>{{ canary.date }}</td>

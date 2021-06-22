@@ -1,6 +1,6 @@
 ---
 lang: en
-layout: default
+layout: site
 permalink: /donate/
 redirect_from:
 - /en/donate/

@@ -1,47 +1,46 @@
+<!-- Localization -->
 {% if page.lang == nil or page.lang == "en" %}
-        {% assign inc = site.data.includes %}
+  {% assign inc = site.data.includes %}
 {% else %}
-        {% assign inc = site.data.translation[page.lang].includes %}
-        {% if inc == nil or iinc.size == 0 %}
-                {% assign inc = site.data.includes %}
-        {% endif %}
+  {% assign inc = site.data.translation[page.lang].includes %}
+  {% if inc == nil or iinc.size == 0 %}
+    {% assign inc = site.data.includes %}
+  {% endif %}
 {% endif %}
-
 {% assign cat = inc | where_exp: "item", "item.section == 'catnews'" | first %}
-
+<!-- Categorize news -->
 {% assign raw_categories = "" %}
-  {% for post in site.posts %}
-    {% assign category_list = post.categories | join:'|' | append:'|' %}
-    {% assign raw_categories = raw_categories | append:category_list %}
-  {% endfor %}
+{% for post in site.posts %}
+  {% assign category_list = post.categories | join:'|' | append:'|' %}
+  {% assign raw_categories = raw_categories | append:category_list %}
+{% endfor %}
 {% assign raw_categories = raw_categories | split:'|' | sort %}
 {% assign categories = "" %}
-  {% for category in raw_categories %}
-    {% if category != "" %}
-      {% if categories == "" %}
-        {% assign categories = category | split:'|' %}
-      {% endif %}
-    {% unless categories contains category %}
-      {% assign categories = categories | join:'|' | append:'|' | append:category | split:'|' %}
-    {% endunless %}
+{% for category in raw_categories %}
+  {% if category != "" %}
+    {% if categories == "" %}
+      {% assign categories = category | split:'|' %}
     {% endif %}
-  {% endfor %}
-
+  {% unless categories contains category %}
+    {% assign categories = categories | join:'|' | append:'|' | append:category | split:'|' %}
+  {% endunless %}
+  {% endif %}
+{% endfor %}
+<!-- Display news by category -->
 <h1>{{ cat.htmlsections[0].title }}</h1>
 <p>
-<a href="{{ cat.htmlsections[1].url }}"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>{{ cat.htmlsections[1].title }}</a>
+  <a href="{{ cat.htmlsections[1].url }}"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>{{ cat.htmlsections[1].title }}</a>
 </p>
 {% for category in categories %}
-<a href="#{{ category | slugify }}" class="btn btn-sm btn-primary"><i class="fa fa-tag" aria-hidden="true"></i> {{ category | capitalize }}</a>
+  <a href="#{{ category | slugify }}" class="btn btn-sm btn-primary"><i class="fa fa-tag" aria-hidden="true"></i> {{ category | capitalize }}</a>
 {% endfor %}
 {% for category in categories %}
-<h2 id="{{ category | slugify }}">{{ category | capitalize }}</h2>
-<ul class="list-unstyled remove-bottom">
-  {% for post in site.posts %}
-    {% if post.categories contains category %}
-    <li><strong>{{ post.date | date: "%Y-%m-%d" }}</strong>&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+  <h2 id="{{ category | slugify }}">{{ category | capitalize }}</h2>
+  <ul class="list-unstyled remove-bottom">
+    {% for post in site.posts %}
+      {% if post.categories contains category %}
+        <li><strong>{{ post.date | date: "%Y-%m-%d" }}</strong>&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 {% endfor %}
-

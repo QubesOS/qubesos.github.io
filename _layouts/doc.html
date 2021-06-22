@@ -1,9 +1,13 @@
-{% include head.html %}
-<body>
-{% include header.html %}
+---
+layout: base
+---
 <div class="container">
   {% include doc-heading.html %}
-  {% include doc-content.html %}
+  <div class="more-bottom white-box page-content">
+    {% if page.permalink == '/doc/' %}
+      {% include doc-index.html %}
+    {% else %}
+      {% include doc-content.html %}
+    {% endif %}
+  </div>
 </div>
-</body>
-</html>

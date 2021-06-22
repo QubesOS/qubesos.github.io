@@ -9,4 +9,3 @@ redirect_from:
 ref: 8
 title: Team
 ---
-

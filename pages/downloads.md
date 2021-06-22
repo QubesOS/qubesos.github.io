@@ -1,6 +1,6 @@
 ---
 lang: en
-layout: downloads
+layout: site
 permalink: /downloads/
 redirect_from:
 - /doc/QubesDownloads/
@@ -8,4 +8,4 @@ redirect_from:
 ref: 2
 title: Download Qubes OS
 ---
-
+{% include downloads.html %}

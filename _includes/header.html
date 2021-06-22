@@ -8,34 +8,34 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    <!-- disable language switcher for now -->
-    {% assign langmenu = false %}
-    {% if page.layout == nil or page.collection == 'posts' %}
-      <!-- no translation for news -->
+      <!-- Disable language switcher for now -->
       {% assign langmenu = false %}
-      {% assign archies = site.data.architecture %}
-    {% else %}
-      {% if page.lang == nil or page.lang == "en" %}
-        {% assign archies = site.data.architecture %}
+      {% if page.layout == nil or page.collection == 'posts' %}
+        <!-- No translation for news -->
+        {% assign langmenu = false %}
+        {% assign entry = site.data.architecture %}
       {% else %}
-        {% assign archies = site.data.translation[page.lang].architecture %}
-        {% if archies == nil or archies.size == 0 %}
-          {% assign archies = site.data.architecture %}
+        {% if page.lang == nil or page.lang == "en" %}
+          {% assign entry = site.data.architecture %}
+        {% else %}
+          {% assign entry = site.data.translation[page.lang].architecture %}
+          {% if entry == nil or entry.size == 0 %}
+            {% assign entry = site.data.architecture %}
+          {% endif %}
         {% endif %}
       {% endif %}
-    {% endif %}
-    {% if langmenu %}
-      {% assign posts = site.pages | concat: site.doc | concat: site.qubes-translated | where:'ref', page.ref | sort: 'lang' %}
-      <div class="langdropdown langdropdown-sm">
-        <label class="langdropbtn-sm" for="langdropdown-toggle-sm"><img src="/attachment/icons/icons8-translation-64.png" width="24" height="24"></label>
-        <input type="checkbox" id="langdropdown-toggle-sm">
-        <div class="langdropdown-content" id="langdropdown-dd-sm">
-          {% for post in posts %}
-          <a class="c1" href="{{ post.url }}">{{ post.lang }}</a>
-          {% endfor %}
+      {% if langmenu %}
+        {% assign posts = site.pages | concat: site.doc | concat: site.qubes-translated | where:'ref', page.ref | sort: 'lang' %}
+        <div class="langdropdown langdropdown-sm">
+          <label class="langdropbtn-sm" for="langdropdown-toggle-sm"><img src="/attachment/icons/icons8-translation-64.png" width="24" height="24"></label>
+          <input type="checkbox" id="langdropdown-toggle-sm">
+          <div class="langdropdown-content" id="langdropdown-dd-sm">
+            {% for post in posts %}
+              <a class="c1" href="{{ post.url }}">{{ post.lang }}</a>
+            {% endfor %}
+          </div>
         </div>
-      </div>
-    {% endif %}
+      {% endif %}
       <a class="page-link" href="/">
         <img src="/attachment/icons/128x128/apps/qubes-logo-icon.png" width="44" height="44" alt="Qubes OS Project">
         <span><strong>Qubes</strong> OS</span>
@@ -43,23 +43,23 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav nav-justified">
-        {% for section in archies %}
-        <li id="nav-button-{{ section.title | slugify }}">
-          <a href="{{ section.url }}">{{ section.title }}</a>
-        </li>
+        {% for section in entry %}
+          <li id="nav-button-{{ section.title | slugify }}">
+            <a href="{{ section.url }}">{{ section.title }}</a>
+          </li>
         {% endfor %}
         {% if langmenu %}
-        <li id="nav-button-lang-switch">
-          <div class="langdropdown langdropdown-lg">
-            <label class="langdropbtn-lg" for="langdropdown-toggle-lg"><img src="/attachment/icons/icons8-translation-64.png" width="24" height="24"></label>
-            <input type="checkbox" id="langdropdown-toggle-lg">
-            <div class="langdropdown-content" id="langdropdown-dd-lg">
-              {% for post in posts %}
-              <a class="c1" href="{{ post.url }}">{{ post.lang }}</a>
-              {% endfor %}
+          <li id="nav-button-lang-switch">
+            <div class="langdropdown langdropdown-lg">
+              <label class="langdropbtn-lg" for="langdropdown-toggle-lg"><img src="/attachment/icons/icons8-translation-64.png" width="24" height="24"></label>
+              <input type="checkbox" id="langdropdown-toggle-lg">
+              <div class="langdropdown-content" id="langdropdown-dd-lg">
+                {% for post in posts %}
+                  <a class="c1" href="{{ post.url }}">{{ post.lang }}</a>
+                {% endfor %}
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
         {% endif %}
       </ul>
     </div><!--/.nav-collapse -->

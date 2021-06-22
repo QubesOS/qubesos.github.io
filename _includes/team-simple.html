@@ -1,29 +1,28 @@
 <div id="{{team.name | slugify}}" class="team-info">
+<!-- Localization -->
 {% if page.lang == nil or page.lang == "en" %}
   {% assign lang = "" %}
 {% else %}
   {% assign lang = "/" | append: page.lang %}
 {% endif %}
-
 {% assign team_link = lang | append: "/team/" %}
 {% assign t = site.pages | concat: site.qubes-translated | where:'permalink', team_link %}
 {% if t.size == 0 %}
   {% assign team_link =  "/team/" %}
 {% endif %}
-
-  <a href="{{ team_link }}#{{ team.name | slugify }}" class="black-link headline">
-    {{ team.name }}
-  </a>
-  <em class="role">{{team.role}}</em>
-  {% if team.fingerprint %}
-  <a href="http://keys.gnupg.net/pks/lookup?search=0x{{ team.fingerprint | remove: ' ' }}&fingerprint=on&exact=on&op=get&options=mr"
-     title="Download PGP public key" class="black-link add-right">
+<!-- Simple team entry -->
+<a href="{{ team_link }}#{{ team.name | slugify }}" class="black-link headline">
+  {{ team.name }}
+</a>
+<em class="role">{{team.role}}</em>
+{% if team.fingerprint %}
+  <a href="http://keys.gnupg.net/pks/lookup?search=0x{{ team.fingerprint | remove: ' ' }}&fingerprint=on&exact=on&op=get&options=mr" title="Download PGP public key" class="black-link add-right">
     <i class="fa fa-fw fa-lock"></i>PGP Key
   </a>
-  {% endif %}
-  {% if team.email %}
+{% endif %}
+{% if team.email %}
   <a href="mailto:{{team.email}}" class="black-link">
     <i class="fa fa-fw fa-envelope"></i>Email
   </a>
-  {% endif %}
+{% endif %}
 </div>

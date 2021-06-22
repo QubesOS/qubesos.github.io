@@ -38,6 +38,7 @@
     url: /doc/certified-hardware/
   - title: Compatibility List
     url: /hcl/
+    icon: fa-power-off
   - title: Installation Guide
     url: /doc/installation-guide/
   - title: Verifying Signatures
@@ -132,8 +133,6 @@
   - title: Partners
     url: /partners/
     icon: fa-globe
-  - title: Merchandise
-    url: /merchandise/
   - title: Contributing
     url: /doc/contributing/
 

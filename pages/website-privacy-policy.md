@@ -1,6 +1,6 @@
 ---
 lang: en
-layout: default
+layout: site
 permalink: /website-privacy-policy/
 ref: 3
 title: Website Privacy Policy

@@ -1,43 +1,7 @@
-{% include head.html %}
-<body>
-{% include header.html %}
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign teamed = site.data.team-page %}
-  {% assign lang = "" %}
-{% else %}
-  {% assign lang = "/" | append: page.lang %}
-  {% assign teamed = site.data.translation[page.lang].team-page %}
-  {% if teamed == nil or teamed.size == 0 %}
-    {% assign teamed = site.data.team-page %}
-  {% endif %}
-{% endif %}
-{% assign upperlinks = teamed | where_exp: "item", "item.htmlsection == 'upperlinks'" | first  %}
-{% assign team_link = lang | append: "/team/" %}
-{% assign teams = site.pages | concat: site.qubes-translated | where:'permalink', team_link %}
-{% if teams.size == 0 %}
-  {% assign team_link = "/team/" %}
-{% endif %}
+---
+layout: base
+---
 <div class="container">
-  <div class="row more-top more-bottom">
-    <div class="col-xs-12 col-sm-4">
-      <h1 class="add-left outer-heading"><a href="{{ team_link }}" class="heading-link"><i class="fa fa-users" aria-hidden="true"></i>{{ page.title }}</a></h1>
-    </div>
-    <div class="col-lg-3 col-md-3 add-left">
-      <ul class="list-unstyled">
-        <li><a href="{{ upperlinks.security[0].url }}" class="black-link"><i class="fa fa-lock fa-fw black-icon"></i> {{ upperlinks.security[0].text }}</a></li>
-        <li><a href="{{ upperlinks.bug[0].url }}" class="black-link"><i class="fa fa-bug fa-fw black-icon"></i> {{ upperlinks.bug[0].text }}</a></li>
-      </ul>
-    </div>
-    <div class="col-xs-12 col-sm-4 col-md-3">
-      <ul class="list-unstyled">
-        <li><a href="{{ upperlinks.partner[0].url }}" class="black-link"><i class="fa fa-globe fa-fw"></i> {{ upperlinks.partner[0].text }}</a></li>
-        <li><a href="{{ upperlinks.help[0].url }}" class="black-link"><i class="fa fa-life-ring fa-fw black-icon"></i> {{ upperlinks.help[0].text }}</a></li>
-      </ul>
-    </div>
-  </div>
+  {% include team-heading.html %}
   {% include team.html %}
-  {{ content }}
-  {% include footer.html %}
 </div>
-</body>
-</html>

@@ -2,13 +2,13 @@
 <body>
 {% include header.html %}
 {% if page.lang == nil or page.lang == "en" %}
-  {% assign teamed = site.data.teamtexts %}
+  {% assign teamed = site.data.team-page %}
   {% assign lang = "" %}
 {% else %}
   {% assign lang = "/" | append: page.lang %}
-  {% assign teamed = site.data.translation[page.lang].teamtexts %}
+  {% assign teamed = site.data.translation[page.lang].team-page %}
   {% if teamed == nil or teamed.size == 0 %}
-    {% assign teamed = site.data.teamtexts %}
+    {% assign teamed = site.data.team-page %}
   {% endif %}
 {% endif %}
 {% assign upperlinks = teamed | where_exp: "item", "item.htmlsection == 'upperlinks'" | first  %}

@@ -3,6 +3,7 @@
   {% assign doc_content = site.data.includes %}
   {% assign lang = "" %}
   {% assign indexed = site.data.doc-index %}
+  {% assign all_docs = site.doc  %}
 {% else %}
   {% assign lang = "/" | append: page.lang %}
   {% assign doc_content = site.data.translation[page.lang].includes %}
@@ -13,6 +14,7 @@
   {% if indexed == nil or indexed.size == 0 %}
     {% assign indexed = site.data.doc-index %}
   {% endif %}
+  {% assign all_docs = site.translated %}
 {% endif %}
 {% assign docs = doc_content | where_exp: "item", "item.section == 'doc-content'" | first %}
 <!-- Opening HTML for doc content -->
@@ -41,7 +43,7 @@
       {% if item.category == 'external' %}
         <li><a href="{{ sub.url }}">{{ sub.text }}</a></li>
       {%- else %}
-        {% for page in site.doc -%}
+        {% for page in all_docs -%}
           {% if page.url == sub.url -%}
             <li><a href="{{ sub.url }}">{{ page.title }}</a></li>
           {%- endif  %}
@@ -66,7 +68,7 @@
           {% if item.category == 'external' %}
             <li><a href="{{ sub3.url }}">{{ sub3.text }}</a></li>
           {%- else %}
-           {% for page in site.doc -%}
+           {% for page in all_docs -%}
              {% if page.url == sub3.url -%}
                <li><a href="{{ sub3.url }}">{{ page.title }}</a></li>
              {%- endif %}

@@ -1,5 +1,5 @@
 <!-- Variables -->
-{% include variables.liquid %}
+{% include variables.html %}
 {% assign n = includes | where_exp: "item", "item.section == 'home-news'" | first %}
 <!-- List posts -->
 {% for post in site.posts limit:7 %}

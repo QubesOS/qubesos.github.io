@@ -1,5 +1,5 @@
 <!-- Variables -->
-{% include variables.liquid %}
+{% include variables.html %}
 {% assign sec = includes | where_exp: "item", "item.section == 'security-canaries'" | first %}
 <!-- Canary list -->
 <table>

@@ -1,5 +1,5 @@
 <!-- Variables -->
-{% include variables.liquid %}
+{% include variables.html %}
 {% assign cat = includes | where_exp: "item", "item.section == 'catnews'" | first %}
 <!-- Categorize news -->
 {% assign raw_categories = "" %}

@@ -1,5 +1,5 @@
 <!-- Variables -->
-{% include variables.liquid %}
+{% include variables.html %}
 {% assign translated = includes | where_exp: "item", "item.section == 'doc-translated'" | first %}
 <!-- Alert -->
 <div class="alert alert-warning" role="alert">

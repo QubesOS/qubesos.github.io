@@ -1,5 +1,5 @@
 <!-- Variables -->
-{% include variables.liquid %}
+{% include variables.html %}
 {% assign docs = includes | where_exp: "item", "item.section == 'doc-content'" | first %}
 <!-- Opening HTML for doc content -->
 {% include doc-sidebar-start.html %}

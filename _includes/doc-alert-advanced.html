@@ -1,5 +1,5 @@
 <!-- Variables -->
-{% include variables.liquid %}
+{% include variables.html %}
 {% assign advanced = includes | where_exp: "item", "item.section == 'doc-advanced'" | first %}
 <!-- Alert -->
 <div class="alert alert-sticky alert-warning" role="alert">

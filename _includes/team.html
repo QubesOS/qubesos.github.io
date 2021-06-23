@@ -1,5 +1,5 @@
 <!-- Variables -->
-{% include variables.liquid %}
+{% include variables.html %}
 {% assign inquiries = team-page | where_exp: "item", "item.htmlsection == 'inquiries'" | first %}
 {% assign coreteam = team-page | where_exp: "item", "item.htmlsection == 'core-team'" | first %}
 {% assign joined = team-page | where_exp: "item", "item.htmlsection == 'join'" | first %}

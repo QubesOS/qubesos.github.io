@@ -1,5 +1,5 @@
 <!-- Variables -->
-{% include variables.liquid %}
+{% include variables.html %}
 {% assign hw = hcl | where_exp: "item", "item.htmlsection == 'hardware'" | first %}
 
 {% assign laptop = hw.links | where_exp: "item", "item.id == 1" | first %}

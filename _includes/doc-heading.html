@@ -1,5 +1,5 @@
 <!-- Variables -->
-{% include variables.liquid %}
+{% include variables.html %}
 <!-- Create heading -->
 {% if page.permalink == doc_link %}
   {% assign meta = doc-index | where_exp: "item", "item.topic != nil" %}

@@ -1,5 +1,5 @@
 <!-- Variables -->
-{% include variables.liquid %}
+{% include variables.html %}
 {% assign news = includes | where_exp: "item", "item.section == 'news'" | first  %}
 <!-- List posts -->
 <ul class="list-unstyled remove-bottom">

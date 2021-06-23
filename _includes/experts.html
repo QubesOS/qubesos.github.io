@@ -1,5 +1,5 @@
 <!-- Variables -->
-{% include variables.liquid %}
+{% include variables.html %}
 {% assign experts = experts | where_exp: "item", "item.experts == nil" | first %}
 <!-- List of quotations from experts -->
 <div class="container">

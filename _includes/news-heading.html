@@ -1,5 +1,5 @@
 <!-- Variables -->
-{% include variables.liquid %}
+{% include variables.html %}
 {% assign news = includes | where_exp: "item", "item.section == 'news-heading'" | first %}
 {% assign n = news.links | where_exp: "item", "item.id == 1" | first %}
 {% assign nc = news.links | where_exp: "item", "item.id == 2" | first %}

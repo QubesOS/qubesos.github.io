@@ -1,5 +1,5 @@
 <!-- Variables -->
-{% include variables.liquid %}
+{% include variables.html %}
 {% assign external = includes | where_exp: "item", "item.section == 'doc-external'" | first %}
 <!-- Alert -->
 <div class="alert alert-sticky alert-warning" role="alert">

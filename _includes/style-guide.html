@@ -1,5 +1,5 @@
 <!-- Variables -->
-{% include variables.liquid %}
+{% include variables.html %}
 {% assign fonts = style-guide-page | where_exp: "item", "item.htmlsection == 'fonts'" | first %}
 {% assign colors = style-guide-page | where_exp: "item", "item.htmlsection == 'colors'" | first %}
 {% assign icons = style-guide-page | where_exp: "item", "item.htmlsection == 'icons'" | first %}

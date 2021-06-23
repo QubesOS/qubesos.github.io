@@ -1,13 +1,7 @@
+<!-- Variables -->
+{% include variables.liquid %}
+{% assign docs = includes  | where_exp: "item", "item.section == 'doc-widget'" | first %}
 <!-- Localization -->
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign doc_content = site.data.includes %}
-{% else %}
-  {% assign doc_content = site.data.translation[page.lang].includes %}
-  {% if doc_content == nil or doc_content.size == 0 %}
-     {% assign doc_content = site.data.includes %}
-  {% endif %}
-{% endif %}
-{% assign docs = doc_content | where_exp: "item", "item.section == 'doc-widget'" | first %}
 {% if page.lang == nil or page.lang == "en" %}
   {% assign master_edit =  site.project_repo_path | append: "/qubes-doc/edit/master" | append: page.relative_path | remove_first: '_doc'  %}
   {% assign master_blob =  site.project_repo_path | append: "/qubes-doc/blob/master" | append: page.relative_path | remove_first: '_doc'  %}

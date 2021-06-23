@@ -1,22 +1,13 @@
-<!-- Localization -->
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign lang = "" %}
-{% else %}
-  {% assign lang = "/" | append: page.lang %}
-{% endif %}
-{% assign team_link = lang | append: "/team/" %}
-{% assign t = site.pages | concat: site.doc | concat: site.qubes-translated | where:'permalink', team_link %}
-{% if t.size == 0 %}
-  {% assign team_link = "/team/" %}
-{% endif %}
-<!-- Post author -->
-<strong>
+<!-- Variables -->
+{% include variables.liquid %}
 {% assign author_team = false %}
 {% for member in site.data.team %}
   {% if page.author == member.name %}
     {% assign author_team = true %}
   {% endif %}
 {% endfor %}
+<!-- Post author -->
+<strong>
 {% if page.author %}
   {% if author_team %}
     <a href="{{ team_link }}#{{ page.author | slugify }}">{{ page.author }}</a>

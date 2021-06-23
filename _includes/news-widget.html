@@ -1,13 +1,6 @@
-<!-- Localization -->
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign iincludes = site.data.includes %}
-{% else %}
-  {% assign iincludes = site.data.translation[page.lang].includes %}
-  {% if iincludes == nil or iincludes.size == 0 %}
-    {% assign iincludes = site.data.includes %}
-  {% endif %}
-{% endif %}
-{% assign news = iincludes | where_exp: "item", "item.section == 'news-heading'" | first %}
+<!-- Variables -->
+{% include variables.liquid %}
+{% assign news = includes | where_exp: "item", "item.section == 'news-heading'" | first %}
 <!-- Recent news widget -->
 <h2 class="text-center outer-heading">
   {{ news.title }}

@@ -1,11 +1,5 @@
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign hcl = site.data.hcl %}
-{% else %}
-  {% assign hcl = site.data.translation[page.lang].hcl %}
-  {% if hcl == nil or hcl.size == 0 %}
-    {% assign hcl = site.data.hcl %}
-  {% endif %}
-{% endif %}
+<!-- Variables -->
+{% include variables.liquid %}
 {% assign hw = hcl | where_exp: "item", "item.htmlsection == 'hardware'" | first %}
 
 {% assign laptop = hw.links | where_exp: "item", "item.id == 1" | first %}

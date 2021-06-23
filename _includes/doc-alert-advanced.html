@@ -1,12 +1,7 @@
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign msgs = site.data.includes %}
-{% else %}
-  {% assign msgs = site.data.translation[page.lang].includes %}
-  {% if msgs == nil or msgs.size == 0 %}
-    {% assign msgs = site.data.includes %}
-  {% endif %}
-{% endif %}
-{% assign advanced = msgs | where_exp: "item", "item.section == 'doc-advanced'" | first %}
+<!-- Variables -->
+{% include variables.liquid %}
+{% assign advanced = includes | where_exp: "item", "item.section == 'doc-advanced'" | first %}
+<!-- Alert -->
 <div class="alert alert-sticky alert-warning" role="alert">
   <i class="fa fa-exclamation-circle"></i>
   <strong>{{ advanced.prompt }}</strong> {{ advanced.text }}

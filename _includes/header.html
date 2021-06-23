@@ -1,3 +1,5 @@
+<!-- Variables -->
+{% include variables.liquid %}
 <!-- Fixed navbar -->
 <nav class="navbar navbar-custom navbar-static-top">
   <div class="container">
@@ -13,16 +15,6 @@
       {% if page.layout == nil or page.collection == 'posts' %}
         <!-- No translation for news -->
         {% assign langmenu = false %}
-        {% assign entry = site.data.architecture %}
-      {% else %}
-        {% if page.lang == nil or page.lang == "en" %}
-          {% assign entry = site.data.architecture %}
-        {% else %}
-          {% assign entry = site.data.translation[page.lang].architecture %}
-          {% if entry == nil or entry.size == 0 %}
-            {% assign entry = site.data.architecture %}
-          {% endif %}
-        {% endif %}
       {% endif %}
       {% if langmenu %}
         {% assign posts = site.pages | concat: site.doc | concat: site.qubes-translated | where:'ref', page.ref | sort: 'lang' %}
@@ -43,7 +35,7 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav nav-justified">
-        {% for section in entry %}
+        {% for section in architecture %}
           <li id="nav-button-{{ section.title | slugify }}">
             <a href="{{ section.url }}">{{ section.title }}</a>
           </li>

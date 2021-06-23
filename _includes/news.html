@@ -1,25 +1,6 @@
-<!-- Localization -->
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign inc = site.data.includes %}
-  {% assign lang = "" %}
-{% else %}
-  {% assign lang = "/" | append: page.lang %}
-  {% assign inc = site.data.translation[page.lang].includes %}
-  {% if inc == nil or inc.size == 0 %}
-    {% assign inc = site.data.includes %}
-  {% endif %}
-{% endif %}
-{% assign news = inc | where_exp: "item", "item.section == 'news'" | first  %}
-{% assign team_link = lang | append: "/team/" %}
-{% assign t = site.pages | concat: site.qubes-translated | where:'permalink', team_link %}
-{% if t.size == 0 %}
-  {% assign team_link = "/team/" %}
-{% endif %}
-{% assign nsc_link = lang | append: "/news/categories/" %}
-{% assign nsc = site.posts | where:'permalink', nsc_link %}
-{% if nsc.size == 0 %}
-  {% assign nsc_link =  "/news/categories/" %}
-{% endif %}
+<!-- Variables -->
+{% include variables.liquid %}
+{% assign news = includes | where_exp: "item", "item.section == 'news'" | first  %}
 <!-- List posts -->
 <ul class="list-unstyled remove-bottom">
   {% for post in site.posts %}
@@ -56,10 +37,10 @@
         <strong>
           {% if post.categories.first %}
             {% for category in post.categories %}
-              <a href="{{ nsc_link }}#{{ category | slugify }}">{{ category | capitalize }}</a>{% if forloop.index < forloop.length %},{% endif %}
+              <a href="{{ news_categories_link }}#{{ category | slugify }}">{{ category | capitalize }}</a>{% if forloop.index < forloop.length %},{% endif %}
             {% endfor %}
           {% else %}
-            <a href="{{ nsc_link }}#{{ site.default_category | slugify }}">{{ site.default_category | capitalize }}</a>
+            <a href="{{ news_categories_link }}#{{ site.default_category | slugify }}">{{ site.default_category | capitalize }}</a>
           {% endif %}
         </strong>
       </p>

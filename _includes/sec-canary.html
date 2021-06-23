@@ -1,18 +1,11 @@
-<!-- Localizatoin -->
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign sec = site.data.includes %}
-{% else %}
-  {% assign sec = site.data.translation[page.lang].includes %}
-  {% if sec == nil or sec.size == 0 %}
-    {% assign sec = site.data.includes %}
-  {% endif %}
-{% endif %}
-{% assign secs = sec | where_exp: "item", "item.section == 'security-canaries'" | first %}
+<!-- Variables -->
+{% include variables.liquid %}
+{% assign sec = includes | where_exp: "item", "item.section == 'security-canaries'" | first %}
 <!-- Canary list -->
 <table>
   <tr>
     <th title="Anchor Link"><span class="fa fa-link"></span></th>
-    {% for item in secs.htmlsections[0].columns %}
+    {% for item in sec.htmlsections[0].columns %}
       <th>{{ item.title }}</th>
     {% endfor %}
   </tr>

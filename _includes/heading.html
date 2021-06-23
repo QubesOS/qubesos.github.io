@@ -1,15 +1,9 @@
+<!-- Variables -->
+{% include variables.liquid %}
 <!-- Creates a standard <h1> heading -->
 <h1 class="more-top outer-heading">
   <a href="{{ page.permalink }}" class="heading-link">
-    {% if page.lang == nil or page.lang == "en" %}
-      {% assign entry = site.data.architecture %}
-    {% else %}
-      {% assign entry = site.data.translation[page.lang].architecture %}
-      {% if entry == nil or entry.size == 0 %}
-        {% assign entry = site.data.architecture %}
-      {% endif %}
-    {% endif %}
-    {% for section in entry %}
+    {% for section in architecture %}
       {% if section.url == page.permalink %}
         <i class="add-left fa {{ section.icon }}"></i>
       {% else %}

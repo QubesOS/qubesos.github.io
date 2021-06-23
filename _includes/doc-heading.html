@@ -1,30 +1,14 @@
-<!-- Localization -->
-{% assign doc_segments = page.relative_path | split: '/' %}
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign indexed = site.data.doc-index %}
-  {% assign lang = "" %}
-{% else %}
-  {% assign lang = "/" | append: page.lang %}
-  {% assign indexed = site.data.translation[page.lang].doc-index %}
-  {% if indexed == nil or indexed.size == 0 %}
-    {% assign indexed = site.data.doc-index %}
-  {% endif %}
-{% endif %}
-{% assign doc_link = lang | append: "/doc/" %}
-{% assign doc_ind = site.doc | concat: site.qubes-translated | where:'permalink', doc_link %}
-{% if doc_ind.size == 0 %}
-  {% assign doc_link = "/doc/" %}
-  {% assign indexed = site.data.doc-index %}
-{% endif %}
+<!-- Variables -->
+{% include variables.liquid %}
 <!-- Create heading -->
 {% if page.permalink == doc_link %}
-  {% assign meta = indexed | where_exp: "item", "item.topic != nil" %}
+  {% assign meta = doc-index | where_exp: "item", "item.topic != nil" %}
   <h1 class="more-top add-left outer-heading">
   <a href="{{ doc_link }}" class="heading-link">
     <i class="fa fa-book"></i> {{ meta[0].metatopic }}</a>
   </h1>
 {% else %}
-  {% assign ind = indexed | where_exp: "item", "item.topic == nil" %}
+  {% assign ind = doc-index | where_exp: "item", "item.topic == nil" %}
   {% for section in ind %}
     <!-- Section heading -->
     {% if doc_segments contains section.category %}

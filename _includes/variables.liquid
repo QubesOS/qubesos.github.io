@@ -8,6 +8,8 @@
   {% assign architecture = site.data.architecture %}
   <!-- Doc index -->
   {% assign doc-index = site.data.doc-index %}
+  <!-- All docs link -->
+  {% assign all_docs = site.doc  %}
   <!-- Downloads page -->
   {% assign downloads-page = site.data.downloads-page %}
   <!-- HCL -->
@@ -38,6 +40,8 @@
     {% assign doc-index = site.data.doc-index %}
     {% assign doc_link = "/doc/" %}
   {% endif %}
+  <!-- All docs link -->
+  {% assign all_docs = site.translated %}
   <!-- Downloads page -->
   {% assign downloads-page = site.data.translation[page.lang].downloads-page %}
   {% if downloads-page == nil or downloads-page.size == 0 %}

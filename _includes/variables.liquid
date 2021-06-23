@@ -31,10 +31,12 @@
   {% if architecture == nil or architecture.size == 0 %}
     {% assign architecture = site.data.architecture %}
   {% endif %}
-  <!-- Doc index -->
+  <!-- Doc index and doc link -->
   {% assign doc-index = site.data.translation[page.lang].doc-index %}
+  {% assign doc_link = lang | append: "/doc/" %}
   {% if doc-index == nil or doc-index.size == 0 %}
     {% assign doc-index = site.data.doc-index %}
+    {% assign doc_link = "/doc/" %}
   {% endif %}
   <!-- Downloads page -->
   {% assign downloads-page = site.data.translation[page.lang].downloads-page %}
@@ -61,12 +63,6 @@
   {% if style-guide-page == nil or style-guide-page.size == 0 %}
     {% assign style-guide-page = site.data.hcl %}
   {% endif %}
-{% endif %}
-<!-- Doc link -->
-{% assign doc_link = lang | append: "/doc/" %}
-{% assign doc_count = site.doc | concat: site.qubes-translated | where:'permalink', doc_link %}
-{% if doc_count.size == 0 %}
-  {% assign doc_link = "/doc/" %}
 {% endif %}
 <!-- Team link -->
 {% assign team_link = lang | append: "/team/" %}

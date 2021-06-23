@@ -53,22 +53,18 @@
   {% if experts == nil or experts.size == 0 %}
     {% assign experts = site.data.experts %}
   {% endif %}
-  <!-- Team page -->
+  <!-- Team page and team link -->
   {% assign team-page = site.data.translation[page.lang].team-page %}
+  {% assign team_link = lang | append: "/team/" %}
   {% if team-page == nil or team-page.size == 0 %}
     {% assign team-page = site.data.team-page %}
+    {% assign team_link = "/team/" %}
   {% endif %}
   <!-- Style guide page -->
   {% assign style-guide-page = site.data.translation[page.lang].style-guide-page %}
   {% if style-guide-page == nil or style-guide-page.size == 0 %}
     {% assign style-guide-page = site.data.hcl %}
   {% endif %}
-{% endif %}
-<!-- Team link -->
-{% assign team_link = lang | append: "/team/" %}
-{% assign team_count = site.pages | concat: site.qubes-translated | where:'permalink', team_link %}
-{% if team_count.size == 0 %}
-  {% assign team_link = "/team/" %}
 {% endif %}
 <!-- News by category link -->
 {% assign news_categories_link = lang | append: "/news/categories/" %}

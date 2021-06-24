@@ -23,6 +23,8 @@ for lang in "$@"; do
     bash _utils/_translation_utils/post_transifex_pull.sh "$lang" _translated/"$lang"
 done
 
+bash _utils/_translation_utils/check_all_langs.sh _translated
+
 # switch to ssh for push
 git -C _translated remote set-url origin git@github.com:QubesOS/qubes-translated
 

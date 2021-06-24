@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 '''
-python _utils/_translation_utils/postprocess_htmlproofer.py <LANG> <OUTPUT_FROM_HTMLPROOFER> <TRANSLATED_DIRECTORY>
+python _utils/_translation_utils/postprocess_htmlproofer.py <OUTPUT_FROM_HTMLPROOFER> <TRANSLATED_DIRECTORY>
 invoke: python _utils/_translation_utils/postprocess_htmlproofer.py de /tmp/html.output _translated/de/
-<LANG>[de]: translation language 
 <OUTPUT_FROM_HTMLPROOFER>[/tmp/html.output]: output from htmlproofer 
 <TRANSLATED_DIRECTORY>[_translated/de/]: the directory with the downloaded translated files from transifex
 '''
@@ -123,12 +122,11 @@ def process_markdown(translated_file, internal_links):
 
 
 
-def get_all_translated_permalinks_and_redirects_to_file_mapping(translated_dir, lang):
+def get_all_translated_permalinks_and_redirects_to_file_mapping(translated_dir):
     """
-    traverse the already updated (via tx pull) root directory with all the translated files for a specific language
-    and get their permalinks and redirects without the specific language
-    translated_dir: root directory with all the translated files for a specific language
-    lang: the specific language
+    traverse the already updated (via tx pull) root directory with all the translated files
+    and get their permalinks and redirects
+    translated_dir: root directory with all the translated files
     return: set holding the translated permalinks and redirects
     """
     mapping = {}
@@ -246,8 +244,6 @@ def process_yml(translated, errorlinks):
 if __name__ == '__main__':
     # python _utils/_translation_utils/postprocess_htmlproofer.py de /tmp/html.output _translated/de/
     parser = ArgumentParser()
-    # for which language should we do this
-    parser.add_argument("language")
     # the file containing the output of htmlproofer
     parser.add_argument("htmlproofer_output")
     # the directory containing the translated (downloaded via tx pull) files
@@ -260,11 +256,6 @@ if __name__ == '__main__':
     if not isdir(args.translated_dir):
         print("please check your translated directory")
         logger.error("please check your translated directory")
-        exit(1)
-
-    if not args.language in TRANSLATED_LANGS:
-        print("language not in the expected translation languages")
-        logger.error("please check your translation language")
         exit(1)
 
     if not isfile(args.htmlproofer_output):
@@ -293,7 +284,7 @@ if __name__ == '__main__':
     logger.debug("------------------------------------------------")
     logger.debug("------------------------------------------------")
 
-    mapping, yml_files = get_all_translated_permalinks_and_redirects_to_file_mapping(args.translated_dir, args.language)
+    mapping, yml_files = get_all_translated_permalinks_and_redirects_to_file_mapping(args.translated_dir)
 
 
     log_debug('mapping ', mapping)

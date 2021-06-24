@@ -55,12 +55,10 @@
   {% if experts == nil or experts.size == 0 %}
     {% assign experts = site.data.experts %}
   {% endif %}
-  <!-- Team page and team link -->
+  <!-- Team page -->
   {% assign team-page = site.data.translation[page.lang].team-page %}
-  {% assign team_link = lang | append: "/team/" %}
   {% if team-page == nil or team-page.size == 0 %}
     {% assign team-page = site.data.team-page %}
-    {% assign team_link = "/team/" %}
   {% endif %}
   <!-- Style guide page -->
   {% assign style-guide-page = site.data.translation[page.lang].style-guide-page %}
@@ -70,6 +68,8 @@
 {% endif %}
 <!-- Doc link -->
 {% assign doc_link = lang | append: "/doc/" %}
+<!-- Team link -->
+{% assign team_link = lang | append: "/team/" %}
 <!-- News by category link -->
 {% assign news_categories_link = lang | append: "/news/categories/" %}
 {% assign news_count = site.posts | where:'permalink', news_categories_link %}

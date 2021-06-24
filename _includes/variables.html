@@ -33,12 +33,10 @@
   {% if architecture == nil or architecture.size == 0 %}
     {% assign architecture = site.data.architecture %}
   {% endif %}
-  <!-- Doc index and doc link -->
+  <!-- Doc index -->
   {% assign doc-index = site.data.translation[page.lang].doc-index %}
-  {% assign doc_link = lang | append: "/doc/" %}
   {% if doc-index == nil or doc-index.size == 0 %}
     {% assign doc-index = site.data.doc-index %}
-    {% assign doc_link = "/doc/" %}
   {% endif %}
   <!-- All docs link -->
   {% assign all_docs = site.translated %}
@@ -70,6 +68,8 @@
     {% assign style-guide-page = site.data.hcl %}
   {% endif %}
 {% endif %}
+<!-- Doc link -->
+{% assign doc_link = lang | append: "/doc/" %}
 <!-- News by category link -->
 {% assign news_categories_link = lang | append: "/news/categories/" %}
 {% assign news_count = site.posts | where:'permalink', news_categories_link %}

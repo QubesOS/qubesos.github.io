@@ -11,14 +11,14 @@
   {% assign ind = doc-index | where_exp: "item", "item.topic == nil" %}
   {% for section in ind %}
     <!-- Section heading -->
-    {% if doc_segments contains section.category %}
+    {% if path_segments contains section.category %}
       <h1 class="more-top add-left outer-heading">
         <a href="{{ doc_link }}#{{ section.title | slugify }}" class="heading-link">
           <i class="fa fa-book"></i>{{ section.title }}
         </a>
         <!-- Breadcrumb heading -->
         {% for subsection in section.sub-pages %}
-          {% if doc_segments contains subsection.subcategory %}
+          {% if path_segments contains subsection.subcategory %}
             /
             <a href="{{ doc_link }}#{{ subsection.title | slugify }}" class="heading-link">
               {{ subsection.title }}

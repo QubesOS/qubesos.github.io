@@ -78,4 +78,6 @@
   {% if news_count.size == 0 %}
     {% assign news_categories_link =  "/news/categories/" %}
   {% endif %}
+  <!-- Path segments -->
+  {% assign path_segments = page.relative_path | split: '/' %}
 {% endif %}

@@ -1,13 +1,6 @@
-<!-- Localization -->
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign inc = site.data.includes %}
-{% else %}
-  {% assign inc = site.data.translation[page.lang].includes %}
-  {% if inc == nil or inc.size == 0 %}
-    {% assign inc = site.data.includes %}
-  {% endif %}
-{% endif %}
-{% assign sec = inc | where_exp: "item", "item.section == 'security-bulletins'" | first %}
+<!-- Variables -->
+{% include variables.html %}
+{% assign sec = includes | where_exp: "item", "item.section == 'security-bulletins'" | first %}
 <!-- QSB list -->
 <table>
   <tr>

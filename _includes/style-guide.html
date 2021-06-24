@@ -1,16 +1,9 @@
-<!--Localization -->
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign style = site.data.style-guide-page %}
-{% else %}
-  {% assign style = site.data.translation[page.lang].style-guide-page %}
-  {% if style == nil or style.size == 0 %}
-    {% assign style = site.data.style-guide-page %}
-  {% endif %}
-{% endif %}
-{% assign fonts = style | where_exp: "item", "item.htmlsection == 'fonts'" | first %}
-{% assign colors = style | where_exp: "item", "item.htmlsection == 'colors'" | first %}
-{% assign icons = style | where_exp: "item", "item.htmlsection == 'icons'" | first %}
-{% assign logos = style | where_exp: "item", "item.htmlsection == 'logos'" | first %}
+<!-- Variables -->
+{% include variables.html %}
+{% assign fonts = style-guide-page | where_exp: "item", "item.htmlsection == 'fonts'" | first %}
+{% assign colors = style-guide-page | where_exp: "item", "item.htmlsection == 'colors'" | first %}
+{% assign icons = style-guide-page | where_exp: "item", "item.htmlsection == 'icons'" | first %}
+{% assign logos = style-guide-page | where_exp: "item", "item.htmlsection == 'logos'" | first %}
 <!-- Style guide -->
 <h2 id="fonts"> {{ fonts.title }}</h2>
 <p>{{ fonts.paragraph }}</p>

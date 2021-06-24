@@ -1,13 +1,6 @@
-<!-- Localization -->
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign inc = site.data.includes %}
-{% else %}
-  {% assign inc = site.data.translation[page.lang].includes %}
-  {% if inc == nil or iinc.size == 0 %}
-    {% assign inc = site.data.includes %}
-  {% endif %}
-{% endif %}
-{% assign cat = inc | where_exp: "item", "item.section == 'catnews'" | first %}
+<!-- Variables -->
+{% include variables.html %}
+{% assign cat = includes | where_exp: "item", "item.section == 'catnews'" | first %}
 <!-- Categorize news -->
 {% assign raw_categories = "" %}
 {% for post in site.posts %}

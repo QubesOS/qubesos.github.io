@@ -1,12 +1,7 @@
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign msgs = site.data.includes %}
-{% else %}
-  {% assign msgs = site.data.translation[page.lang].includes %}
-  {% if msgs == nil or msgs.size == 0 %}
-    {% assign msgs = site.data.includes %}
-  {% endif %}
-{% endif %}
-{% assign translated = msgs | where_exp: "item", "item.section == 'doc-translated'" | first %}
+<!-- Variables -->
+{% include variables.html %}
+{% assign translated = includes | where_exp: "item", "item.section == 'doc-translated'" | first %}
+<!-- Alert -->
 <div class="alert alert-warning" role="alert">
   <i class="fa fa-exclamation-circle"></i>
   {{ translated.text }}

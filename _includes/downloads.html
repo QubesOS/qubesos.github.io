@@ -1,23 +1,14 @@
-<!-- Localization -->
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign down = site.data.downloads-page %}
-  {% assign lang = "" %}
-{% else %}
-  {% assign lang = "/" | append: page.lang %}
-  {% assign down = site.data.translation[page.lang].downloads-page %}
-  {% if down == nil or down.size == 0 %}
-    {% assign down = site.data.downloads-page %}
-  {% endif %}
-{% endif %}
-{% assign hw = down | where_exp: "item", "item.htmlsection == 'hardware'" | first %}
+<!-- Variables -->
+{% include variables.html %}
+{% assign hw = downloads-page | where_exp: "item", "item.htmlsection == 'hardware'" | first %}
 {% assign sr = hw.links | where_exp: "item", "item.id == 1" | first %}
 {% assign ch = hw.links | where_exp: "item", "item.id == 2" | first %}
 {% assign hcl = hw.links | where_exp: "item", "item.id == 3" | first %}
-{% assign sec = down | where_exp: "item", "item.htmlsection == 'sec'" | first %}
+{% assign sec = downloads-page | where_exp: "item", "item.htmlsection == 'sec'" | first %}
 {% assign ig = sec.links | where_exp: "item", "item.id == 1" | first %}
 {% assign vs = sec.links | where_exp: "item", "item.id == 2" | first %}
 {% assign isc = sec.links | where_exp: "item", "item.id == 3" | first %}
-{% assign help = down | where_exp: "item", "item.htmlsection == 'help'" | first %}
+{% assign help = downloads-page | where_exp: "item", "item.htmlsection == 'help'" | first %}
 {% assign hs = help.links | where_exp: "item", "item.id == 1" | first %}
 {% assign tg = help.links | where_exp: "item", "item.id == 2" | first %}
 {% assign rb = help.links | where_exp: "item", "item.id == 3" | first %}
@@ -85,7 +76,7 @@
   </div>
 </div>
 <!-- Showcase -->
-{% assign surv = down | where_exp: "item", "item.htmlsection == 'survey'" | first %}
+{% assign surv = downloads-page | where_exp: "item", "item.htmlsection == 'survey'" | first %}
 <hr class="more-bottom">
 <div class="row">
   <div class="col-xs-12">
@@ -99,7 +90,7 @@
 </div>
 <hr class="more-bottom">
 <!-- Localization -->
-{% assign ls = down | where_exp: "item", "item.htmlsection == 'loop-releases'" | first %}
+{% assign ls = downloads-page | where_exp: "item", "item.htmlsection == 'loop-releases'" | first %}
 {% assign test = ls.releases | where_exp: "item", "item.r_version == 'testing'" | first %}
 {% assign stable = ls.releases | where_exp: "item", "item.r_version == 'stable'" | first %}
 {% assign old = ls.releases | where_exp: "item", "item.r_version == 'old'" | first %}
@@ -179,11 +170,11 @@
     </div>
   </div>
   <!-- Localization -->
-  {% assign code = down | where_exp: "item", "item.htmlsection == 'source-code'" | first %}
+  {% assign code = downloads-page | where_exp: "item", "item.htmlsection == 'source-code'" | first %}
   {% assign scode = code.links | where_exp: "item", "item.id == 1" | first %}
   {% assign cg = code.links | where_exp: "item", "item.id == 2" | first %}
   {% assign sl = code.links | where_exp: "item", "item.id == 3" | first %}
-  {% assign downcont = down | where_exp: "item", "item.htmlsection == 'download-content'" | first %}
+  {% assign downcont = downloads-page | where_exp: "item", "item.htmlsection == 'download-content'" | first %}
   <!-- Verification downloads -->
   <div class="row download-content">
     {% for source in release.sources %}
@@ -265,7 +256,7 @@
   <hr class="more-bottom">
 {% endfor %}
 <!-- Download mirrors -->
-{% assign dm = down | where_exp: "item", "item.htmlsection == 'download-mirrors'" | first %}
+{% assign dm = downloads-page | where_exp: "item", "item.htmlsection == 'download-mirrors'" | first %}
 <div class="row">
   <div class="col-xs-12">
     <article>
@@ -298,11 +289,11 @@
 </div>
 <hr class="more-bottom">
 <!-- Localization -->
-{% assign secinfo = down | where_exp: "item", "item.htmlsection == 'sec-info'" | first %}
+{% assign secinfo = downloads-page | where_exp: "item", "item.htmlsection == 'sec-info'" | first %}
 {% assign sc = secinfo.links | where_exp: "item", "item.id == 1" | first %}
 {% assign sp = secinfo.links | where_exp: "item", "item.id == 2" | first %}
 {% assign sg = secinfo.links | where_exp: "item", "item.id == 3" | first %}
-{% assign ver = down | where_exp: "item", "item.htmlsection == 'version-info'" | first %}
+{% assign ver = downloads-page | where_exp: "item", "item.htmlsection == 'version-info'" | first %}
 {% assign sv = ver.links | where_exp: "item", "item.id == 1" | first %}
 {% assign t = ver.links | where_exp: "item", "item.id == 2" | first %}
 {% assign vs = ver.links | where_exp: "item", "item.id == 3" | first %}

@@ -1,29 +1,13 @@
-<!-- Localization -->
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign doc_content = site.data.includes %}
-  {% assign lang = "" %}
-  {% assign indexed = site.data.doc-index %}
-  {% assign all_docs = site.doc  %}
-{% else %}
-  {% assign lang = "/" | append: page.lang %}
-  {% assign doc_content = site.data.translation[page.lang].includes %}
-  {% if doc_content == nil or doc_content.size == 0 %}
-    {% assign doc_content = site.data.includes %}
-  {% endif %}
-  {% assign indexed = site.data.translation[page.lang].doc-index %}
-  {% if indexed == nil or indexed.size == 0 %}
-    {% assign indexed = site.data.doc-index %}
-  {% endif %}
-  {% assign all_docs = site.translated %}
-{% endif %}
-{% assign docs = doc_content | where_exp: "item", "item.section == 'doc-content'" | first %}
+<!-- Variables -->
+{% include variables.html %}
+{% assign docs = includes | where_exp: "item", "item.section == 'doc-content'" | first %}
 <!-- Opening HTML for doc content -->
 {% include doc-sidebar-start.html %}
 <!-- BEGIN CONTENT-->
-{% assign ind = indexed | where_exp: "item", "item.topic == nil" %}
+{% assign ind = doc-index | where_exp: "item", "item.topic == nil" %}
 <!-- This is needed to assure building the correct ID of the link when there is a translation -->
 {% assign index_english = site.data.doc-index | where_exp: "item", "item.topic == nil" %}
-{% assign topic = indexed | where_exp: "item", "item.topic != nil" | first %}
+{% assign topic = doc-index | where_exp: "item", "item.topic != nil" | first %}
 <h1 id="qubes-os-documentation">{{ topic.topic }}</h1>
 <p> {{ topic.subtopic }}</p>
 {% assign english_count = 0 %}

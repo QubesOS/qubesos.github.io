@@ -1,88 +1,75 @@
+<!-- Variables -->
+{% include variables.html %}
+{% assign foot = includes | where_exp: "item", "item.section == 'footer'" | first %}
+<!-- Footer -->
 <footer>
-<!-- Localization -->
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign include = site.data.includes %}
-  {% assign entry = site.data.architecture %}
-  {% assign lang = "/" %}
-{% else %}
-  {% assign include = site.data.translation[page.lang].includes %}
-  {% if include == nil or inc.size == 0 %}
-    {% assign include = site.data.includes %}
-  {% endif %}
-  {% assign entry = site.data.translation[page.lang].architecture %}
-  {% if entry == nil or entry.size == 0 %}
-    {% assign entry = site.data.architecture %}
-  {% endif %}
-  {% assign lang = "/" | append: page.lang %}
-{% endif %}
-{% assign foot = include | where_exp: "item", "item.section == 'footer'" | first %}
-<!-- Search Bar -->
-<div class="white-box footer-search more-bottom">
-  <div class="row">
-    <div class="col-lg-3 col-md-3 text-center">
-      <h4 class="remove-bottom"><i class="fa fa-search"></i> {{ foot.search }} qubes-os.org</h4>
-    </div>
-    <div class="col-lg-9 col-md-9 text-left">
-      <form action="https://duckduckgo.com/" method="get">
-        <div class="input-group">
-          <input type="hidden" name="sites" value="https://www.qubes-os.org">
-          <input type="text" class="form-control" name="q" placeholder="{{ foot.ddg }}&hellip;">
-          <span class="input-group-btn">
-            <button class="btn btn-primary" type="submit">{{ foot.go }}</button>
-          </span>
-        </div>
-      </form>
+<!-- Search bar -->
+  <div class="white-box footer-search more-bottom">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 text-center">
+        <h4 class="remove-bottom"><i class="fa fa-search"></i> {{ foot.search }} qubes-os.org</h4>
+      </div>
+      <div class="col-lg-9 col-md-9 text-left">
+        <form action="https://duckduckgo.com/" method="get">
+          <div class="input-group">
+            <input type="hidden" name="sites" value="https://www.qubes-os.org">
+            <input type="text" class="form-control" name="q" placeholder="{{ foot.ddg }}&hellip;">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="submit">{{ foot.go }}</button>
+            </span>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-</div>
-<!-- Navigation Links -->
-<div class="row footer-nav">
-  {% for section in entry %}
-  <div class="col-lg-2 col-md-2">
-    <a href="{{section.url}}">
-      <h5 class="text-left add-bottom">
-        {{section.title}}
-        {% if section.title == "Donate" %}
-          <i class="fa fa-heart"></i>
-        {% endif %}
-      </h5>
-    </a>
-    <ul class="list-unstyled">
-      {% for sub in section.sub-pages %}
-      <li><a href="{{sub.url}}">{{sub.title}}</a></li>
-      {% endfor %}
-    </ul>
+  <!-- Navigation links -->
+  <div class="row footer-nav">
+    {% for section in architecture %}
+    <div class="col-lg-2 col-md-2">
+      <a href="{{section.url}}">
+        <h5 class="text-left add-bottom">
+          {{section.title}}
+          {% if section.title == "Donate" %}
+            <i class="fa fa-heart"></i>
+          {% endif %}
+        </h5>
+      </a>
+      <ul class="list-unstyled">
+        {% for sub in section.sub-pages %}
+        <li><a href="{{sub.url}}">{{sub.title}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
-</div>
-<!-- Colophon -->
-{% assign web-source = foot.links | where_exp: "item", "item.id == 1" | first %}
-{% assign onion = foot.links | where_exp: "item", "item.id == 2" | first %}
-{% assign bug-report = foot.links | where_exp: "item", "item.id == 3" | first %}
-{% assign privacy = foot.links | where_exp: "item", "item.id == 4" | first %}
-{% assign terms = foot.links | where_exp: "item", "item.id == 5" | first %}
-{% assign sitemap = foot.links | where_exp: "item", "item.id == 6" | first %}
-<div class="row footer-nav text-center more-top add-bottom">
-  <div class="footer-logo more-bottom">
-    <a href="{{ lang }}">
-      <img src="/attachment/icons/logo-outline-small.svg" alt="Qubes">
-      <strong>Qubes</strong> OS
-    </a>
+  <!-- Colophon -->
+  {% assign web-source = foot.links | where_exp: "item", "item.id == 1" | first %}
+  {% assign onion = foot.links | where_exp: "item", "item.id == 2" | first %}
+  {% assign bug-report = foot.links | where_exp: "item", "item.id == 3" | first %}
+  {% assign privacy = foot.links | where_exp: "item", "item.id == 4" | first %}
+  {% assign terms = foot.links | where_exp: "item", "item.id == 5" | first %}
+  {% assign sitemap = foot.links | where_exp: "item", "item.id == 6" | first %}
+  <div class="row footer-nav text-center more-top add-bottom">
+    <div class="footer-logo more-bottom">
+      <a href="{{ lang }}">
+        <img src="/attachment/icons/logo-outline-small.svg" alt="Qubes">
+        <strong>Qubes</strong> OS
+      </a>
+    </div>
+    <p>
+      &#169;
+      <script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script>
+      {{ foot.title }}<br>
+      <a href="{{ web-source.url }}">{{ web-source.text }}</a> |
+      <a href="{{ onion.url }}">{{ onion.text }}</a> |
+      <a href="{{ bug-report.url }}">{{ bug-report.text }}</a> |
+      <a href="{{ privacy.url }}">{{ privacy.text }}</a> |
+      <a href="{{ terms.url }}">{{ terms.text }}</a> |
+      <a href="{{ sitemap.url }}">{{ sitemap.text }}</a>
+    </p>
   </div>
-  <p>
-    &#169;
-    <script type="text/javascript">
-      document.write(new Date().getFullYear());
-    </script>
-    {{ foot.title }}<br>
-    <a href="{{ web-source.url }}">{{ web-source.text }}</a> |
-    <a href="{{ onion.url }}">{{ onion.text }}</a> |
-    <a href="{{ bug-report.url }}">{{ bug-report.text }}</a> |
-    <a href="{{ privacy.url }}">{{ privacy.text }}</a> |
-    <a href="{{ terms.url }}">{{ terms.text }}</a> |
-    <a href="{{ sitemap.url }}">{{ sitemap.text }}</a>
-  </p>
-</div>
 </footer>
 <!-- JavaScript -->
 <script src="/js/jquery-2.2.2.min.js"></script>

@@ -1,13 +1,6 @@
-<!-- Localization -->
-{% if page.lang == nil or page.lang == "en" %}
-  {% assign iincludes = site.data.includes %}
-{% else %}
-  {% assign iincludes = site.data.translation[page.lang].includes %}
-  {% if iincludes == nil or iincludes.size == 0 %}
-    {% assign iincludes = site.data.includes %}
-  {% endif %}
-{% endif %}
-{% assign news = iincludes | where_exp: "item", "item.section == 'news-heading'" | first %}
+<!-- Variables -->
+{% include variables.html %}
+{% assign news = includes | where_exp: "item", "item.section == 'news-heading'" | first %}
 {% assign n = news.links | where_exp: "item", "item.id == 1" | first %}
 {% assign nc = news.links | where_exp: "item", "item.id == 2" | first %}
 {% assign s = news.links | where_exp: "item", "item.id == 3" | first %}

@@ -80,6 +80,7 @@
       - url: /doc/update-troubleshooting/
       - url: /doc/hardware-troubleshooting/
       - url: /doc/uefi-troubleshooting/
+      - url: /doc/autostart-troubleshooting/
       - url: /doc/suspend-resume-troubleshooting/
       - url: /doc/app-menu-shortcut-troubleshooting/
       - url: /doc/vm-troubleshooting/

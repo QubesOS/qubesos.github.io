@@ -1,0 +1,38 @@
+#!/bin/sh
+
+# Pull translated pages from Transifex
+
+if ! command -v tx; then
+    echo "transifex-client needs to be installed" >&2
+    exit 1
+fi
+
+if [ -z "$TX_TOKEN" ]; then
+    echo "Please set TX_TOKEN variable to Transifex API key" >&2
+    exit 1
+fi
+
+if [ -z "$1" ]; then
+    echo "Usage: $0 <lang> [<lang> ...]"
+fi
+
+set -e
+
+for lang in "$@"; do
+    bash _utils/_translation_utils/tx_pull.sh "$lang"
+    bash _utils/_translation_utils/post_transifex_pull.sh "$lang" _translated/"$lang"
+done
+
+bash _utils/_translation_utils/check_all_langs.sh _translated
+
+# switch to ssh for push
+git -C _translated remote set-url origin git@github.com:QubesOS/qubes-translated
+
+# commit and push
+git -C _translated add .
+
+# if nothing to commit, exit early
+[ -n "$(git -C _translated status --porcelain)" ] || exit 0
+
+git -C _translated commit -m 'Update translated content'
+git -C _translated push origin HEAD:master

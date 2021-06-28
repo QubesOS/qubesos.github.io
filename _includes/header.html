@@ -10,25 +10,37 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <!-- Disable language switcher for now -->
-      {% assign langmenu = false %}
+      <!-- Disable language switcher if there is only one language -->
+      {% if site.languages.size > 1 %}
+        {% assign langmenu = true %}
+      {% else %}
+        {% assign langmenu = false %}
+      {% endif %}
       {% if page.layout == nil or page.collection == 'posts' %}
         <!-- No translation for news -->
         {% assign langmenu = false %}
       {% endif %}
       {% if langmenu %}
-        {% assign posts = site.pages | concat: site.doc | concat: site.qubes-translated | where:'ref', page.ref | sort: 'lang' %}
+        <!-- find this page in other languages -->
+        {% assign page_all_langs = site.pages | concat: site.doc | concat: site.translated | where:'ref', page.ref | sort: 'lang' %}
         <div class="langdropdown langdropdown-sm">
           <label class="langdropbtn-sm" for="langdropdown-toggle-sm"><img src="/attachment/icons/icons8-translation-64.png" width="24" height="24"></label>
           <input type="checkbox" id="langdropdown-toggle-sm">
           <div class="langdropdown-content" id="langdropdown-dd-sm">
-            {% for post in posts %}
-              <a class="c1" href="{{ post.url }}">{{ post.lang }}</a>
+            {% for translated in page_all_langs %}
+              {% if site.languages contains translated.lang %}
+                <a class="c1" href="{{ translated.url }}">{{ translated.lang }}</a>
+              {% endif %}
             {% endfor %}
           </div>
         </div>
       {% endif %}
-      <a class="page-link" href="/">
+      {% if page.lang == nil or page.lang == "" or page.lang == "en" %}
+        {% assign linktohome = "/" %}
+      {% else %}
+        {% assign linktohome = "/" | append: page.lang | append: "/" %}
+      {% endif %}
+      <a class="page-link" href="{{ linktohome }}">
         <img src="/attachment/icons/128x128/apps/qubes-logo-icon.png" width="44" height="44" alt="Qubes OS Project">
         <span><strong>Qubes</strong> OS</span>
       </a>
@@ -46,8 +58,8 @@
               <label class="langdropbtn-lg" for="langdropdown-toggle-lg"><img src="/attachment/icons/icons8-translation-64.png" width="24" height="24"></label>
               <input type="checkbox" id="langdropdown-toggle-lg">
               <div class="langdropdown-content" id="langdropdown-dd-lg">
-                {% for post in posts %}
-                  <a class="c1" href="{{ post.url }}">{{ post.lang }}</a>
+                {% for translated in page_all_langs %}
+                  <a class="c1" href="{{ translated.url }}">{{ translated.lang }}</a>
                 {% endfor %}
               </div>
             </div>

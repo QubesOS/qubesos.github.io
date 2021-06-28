@@ -11,6 +11,8 @@
       icon: fa-code
     - text: Edit This Page
       icon: fa-code-fork
+    - text: Translate This Page
+      icon: fa-language
     - url: /security/
       text: Report a Security Issue
       icon: fa-lock

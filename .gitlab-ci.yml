@@ -2,5 +2,46 @@ include:
   - project: 'QubesOS/qubes-continuous-integration'
     file: '/gitlab-website.yml'
 
+stages:
+ - prepare
+ - build
+
 build:website:
   extends: .website
+
+update-transifex:
+  tags:
+  - docker
+  stage: prepare
+  rules:
+  - if: '$TX_TOKEN && $GITHUB_KEY'
+    when: always
+  - when: never
+  artifacts:
+    expire_in: 7 days
+    when: always
+    paths:
+    - site.tar.gz
+  variables:
+    GIT_SUBMODULE_STRATEGY: normal
+    GIT_AUTHOR_NAME: translation bot
+    GIT_AUTHOR_EMAIL: builder-bot@qubes-os.org
+    GIT_COMMITTER_NAME: translation bot
+    GIT_COMMITTER_EMAIL: builder-bot@qubes-os.org
+    PAGES_REPO_NWO: QubesOS/qubesos.github.io
+    TRANSLATED_LANGS: de fr es
+    LANG: C.UTF-8
+  before_script:
+  - mkdir -p $HOME/.ssh && echo "$GITHUB_KEY" > $HOME/.ssh/id_ed25519 && chmod 700 $HOME/.ssh/id_ed25519
+  - echo "github.com,140.82.121.4 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" >> $HOME/.ssh/known_hosts
+  - export PATH=$PATH:$HOME/bin
+  - sudo dnf install -y python3-pycurl python3-PyYAML python3-jsonschema python3-certifi python3-attrs /usr/bin/bundle rubygem-jekyll rubygem-nokogiri rubygem-concurrent-ruby ruby-devel gcc-c++ transifex-client crudini python3-pycurl python3-pyrsistent
+  - pip install python-frontmatter
+  - export NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - gem install github-pages json html-proofer
+  - git submodule update --init
+  script:
+  - _utils/transifex-push
+  - _utils/transifex-pull $TRANSLATED_LANGS
+  after_script:
+  - tar czf site.tar.gz _site

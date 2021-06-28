@@ -6,7 +6,7 @@
 {% assign emeritus = team-page | where_exp: "item", "item.htmlsection == 'emeritus'" | first %}
 {% assign community = team-page | where_exp: "item", "item.htmlsection == 'community'" | first %}
 {% assign team_link = lang | append: "/team/" %}
-{% assign teams = site.pages | concat: site.qubes-translated | where:'permalink', team_link %}
+{% assign teams = site.pages | concat: site.translated | where:'permalink', team_link %}
 {% if teams.size == 0 %}
   {% assign team_link = "/team/" %}
 {% endif %}

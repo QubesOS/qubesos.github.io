@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -e
+
+tmpbranch="new-$$"
+git -C _translated fetch origin master:"$tmpbranch"
+tmpdir=$(mktemp -d)
+trap 'rm -rf $tmpdir; git -C _translated br -D $tmpbranch' EXIT
+git clone --shared "$PWD/_translated" -b "$tmpbranch" "$tmpdir/translated"
+
+if ! _utils/verify-translated "$tmpdir/translated"; then
+    echo "Translated content did not pass sanity check, not updating" >&2
+    # TODO: consider some louder alert? email? issue on github?
+    exit 1
+fi
+
+git -C _translated merge --ff-only "$tmpbranch"
+git add _translated
+
+git commit -m 'autoupdate: _translated'
+commit_id=$(git show --pretty=format:%H|head -1)
+tag_name=auto_${commit_id:0:8}
+git tag -s -m "Automatic tag for commit $commit_id" "$tag_name"
+git push origin master $tag_name

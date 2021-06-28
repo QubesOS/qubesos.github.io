@@ -1,0 +1,201 @@
+#!/usr/bin/env python3
+
+# Simple verifier for qubes-translated repository content sanity.
+# This script looks at frontmatter of each file mostly checks that:
+# - lang: key is present and matches the directory name
+# - ref: key is present
+# - url-related parameters (redirect_from, permalink) are properly language-scoped
+# - no unexpected entries in the frontmatter are present
+#
+# Besides that, verifies if no unexpected files are present.
+#
+# Usage:
+#  $0 <qubes-translated dir>
+# Supported env variables:
+# - TRANSLATED_LANGS - list of expected languages
+
+import argparse
+import os
+import string
+import yaml
+
+TRANSLATED_LANGS = ['de']
+if 'TRANSLATED_LANGS' in os.environ:
+    TRANSLATED_LANGS = os.environ['TRANSLATED_LANGS'].split()
+
+SAFE_PATH_CHARS = string.ascii_letters + string.digits + '/_-.'
+
+ALLOWED_FRONTMATTER_KEYS = ['title', 'lang', 'ref', 'permalink', 'redirect_from', 'redirect_to', 'layout', 'model']
+
+MANDATORY_FRONTMATTER_KEYS = ['title', 'lang', 'ref', 'layout']
+
+ALLOWED_EXTERNAL_REDIRECT_TARGETS = ['https://github.com/Qubes-Community/Contents/blob/master/']
+
+ALLOWED_LAYOUTS = ['doc', 'doc-index', 'doc-full', 'hcl', 'downloads', 'news', 'team', 'home', 'default', 'experts', 'sidebar']
+
+#TODO: consider allowing some layouts only on some pages (and consider their redirect_from too)
+
+parser = argparse.ArgumentParser()
+parser.add_argument('directory')
+
+class VerificationError(Exception):
+    def __init__(self, path, msg):
+        safe_name = ''.join(l if l in SAFE_PATH_CHARS else '?' for l in path)
+        super().__init__('{}: {}'.format(path, msg))
+
+def verify_readme(path):
+    with open(path) as f:
+        readme_text = f.read()
+
+    if '---' in readme_text:
+        raise VerificationError(path, 'may not contain frontmatter')
+    if '<' in readme_text:
+        raise VerificationError(path, 'may not contain HTML')
+    if '{' in readme_text:
+        raise VerificationError(path, 'may not contain liquid templates')
+
+
+def verify_md_file(lang, path):
+    with open(path) as f:
+        file_content = f.read()
+
+    # there must be frontmatter
+    if not file_content.startswith('---\n'):
+        raise VerificationError(path, 'missing frontmatter')
+
+    # better be more strict - may catch too much (if another separator is
+    # used), but then loading yaml will detect multiple documents
+    frontmatter_text = file_content[4:].split('\n---\n')[0]
+    # there could be _just_ frontmatter too
+    if frontmatter_text.endswith('\n---'):
+        frontmatter_text = frontmatter_text[:-4]
+    try:
+        frontmatter = yaml.safe_load(frontmatter_text)
+    except Exception as e:
+        raise VerificationError(path, 'failed to parse frontmatter: {!s}'.format(e)) from e
+    verify_frontmatter(lang, path, frontmatter)
+
+
+def verify_frontmatter(lang, path, frontmatter):
+    # double check if all entries were verified
+    verified = []
+
+    url_prefix = '/{}/'.format(lang)
+    if any(key not in ALLOWED_FRONTMATTER_KEYS for key in frontmatter):
+        raise VerificationError(path, 'unexpected frontmatter key')
+
+    for key in MANDATORY_FRONTMATTER_KEYS:
+        if key not in frontmatter:
+            raise VerificationError(path, key + ' missing in frontmatter')
+
+    if lang != frontmatter['lang']:
+        raise VerificationError(path, 'lang mismatch')
+
+    verified.append('lang')
+
+    if not isinstance(frontmatter['ref'], int):
+        raise VerificationError(path, 'invalid ref format')
+
+    verified.append('ref')
+
+    if 'permalink' in frontmatter:
+        if not frontmatter['permalink'].startswith(url_prefix):
+            raise VerificationError(path, 'invalid permalink')
+
+        verified.append('permalink')
+
+    if 'redirect_from' in frontmatter:
+        if isinstance(frontmatter['redirect_from'], str):
+            redirect_from = [frontmatter['redirect_from']]
+        elif isinstance(frontmatter['redirect_from'], list):
+            redirect_from = frontmatter['redirect_from']
+        else:
+            raise VerificationError(path, 'invalid redirect_from format')
+
+        for url in redirect_from:
+            if '/..' in url:
+                raise VerificationError(path, '.. in url')
+            if not url.startswith(url_prefix):
+                raise VerificationError(path, 'invalid redirect_from')
+
+        verified.append('redirect_from')
+
+    if 'redirect_to' in frontmatter:
+        url = frontmatter['redirect_to']
+        if isinstance(url, list):
+            if len(url) != 1:
+                raise VerificationError(path, 'if redirect_to is a list, must be 1-element')
+            url = url[0]
+        if not isinstance(url, str):
+            raise VerificationError(path, 'invalid redirect_to format')
+        if '/..' in url:
+            raise VerificationError(path, '.. in redirect_to')
+        if not any(url.startswith(prefix) for prefix in ALLOWED_EXTERNAL_REDIRECT_TARGETS + [url_prefix]):
+            raise VerificationError(path, 'forbidden redirect_to target')
+
+        verified.append('redirect_to')
+
+    if frontmatter['layout'] not in ALLOWED_LAYOUTS:
+        raise VerificationError(path, 'forbidden layout')
+
+    verified.append('layout')
+
+    title = frontmatter['title']
+    if not isinstance(title, str):
+        raise VerificationError(path, 'invalid title format')
+
+    # avoid HTML in title
+    if '<' in title or '%' in title:
+        raise VerificationError(path, 'invalid character in title')
+
+    verified.append('title')
+
+    # if 'model' is present, must have 'all' value
+    if 'model' in frontmatter:
+        if frontmatter['model'] != 'all':
+            raise VerificationError(path, 'invalid model value')
+        verified.append('model')
+
+    # intentionally compare lists, not sets, to catch duplicates too
+    if sorted(verified) != sorted(frontmatter):
+        raise VerificationError(path, 'BUG, some frontmatter entries were not verified')
+
+    # all is ok
+
+
+def verify_lang(lang, path):
+    for dirpath, dirnames, filenames in os.walk(path):
+        for filename in filenames:
+            filepath = os.path.join(dirpath, filename)
+            if any(c not in SAFE_PATH_CHARS for c in filename):
+                raise VerificationError(filepath, 'unsafe characters in filename')
+
+            if filename.endswith('.md'):
+                verify_md_file(lang, filepath)
+            elif filename.endswith('.html'):
+                # the frontmatter is expected the same
+                verify_md_file(lang, filepath)
+            elif filename.endswith('.yml'):
+                # those are loaded scoped anyway, so can mess only own language
+                pass
+            else:
+                raise VerificationError(filepath, 'unexpected file type')
+                
+
+
+def main():
+    args = parser.parse_args()
+
+    for lang in os.listdir(args.directory):
+        if lang == '.git':
+            pass
+        elif lang == 'README.md':
+            verify_readme(os.path.join(args.directory, lang))
+        elif lang in TRANSLATED_LANGS:
+            verify_lang(lang, os.path.join(args.directory, lang))
+        else:
+            raise VerificationError(lang, 'unexpected language dir')
+
+
+if __name__ == '__main__':
+    main()

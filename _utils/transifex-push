@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# This script uploads the website source files to Transifex for translation, including all the preparatory work
+
+if ! command -v tx; then
+    echo "transifex-client needs to be installed" >&2
+    exit 1
+fi
+
+if [ -z "$TX_TOKEN" ]; then
+    echo "Please set TX_TOKEN variable to Transifex API key" >&2
+    exit 1
+fi
+
+set -e
+
+# update config
+bash _utils/_translation_utils/tx_config.sh
+
+# push the sources
+tx push -s
+
+# update sources metadata (notranslate tags, locks etc)
+bash _utils/_translation_utils/prepare_tx_config_for_notranslate_tags.sh .tx/config /tmp/tx-resources-names.txt /tmp/tx-sources-filenames.txt
+python3 _utils/_translation_utils/tag_strings_as_locked.py /tmp/tx-resources-names.txt /tmp/tx-sources-filenames.txt --debug
+
+

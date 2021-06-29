@@ -31,9 +31,7 @@
           <a href="{{ team_link }}#{{ team.name | slugify }}"><h4 class="remove-bottom">{{ team.name }}</h4></a>
           <p class="half-bottom"><a href="mailto:{{ team.email }}" class="black-link">{{ team.email }}</a></p>
           {% if team.fingerprint %}
-            <a href="http://keys.gnupg.net/pks/lookup?search=0x{{ team.fingerprint | remove: ' ' }}&fingerprint=on&exact=on&op=get&options=mr" title="Download PGP public key" class="black-link">
-              <i class="fa fa-fw fa-lock"></i>PGP Key
-            </a>
+            {% include team-pgp.html %}
           {% endif %}
         </div>
         {% if team.fingerprint %}
@@ -73,9 +71,7 @@
           </a>
           <em class="role half-bottom">{{ team.role }}</em>
           {% if team.fingerprint %}
-            <a href="http://keys.gnupg.net/pks/lookup?search=0x{{ team.fingerprint | remove: ' ' }}&fingerprint=on&exact=on&op=get&options=mr" title="Download PGP public key" class="black-link add-right">
-              <i class="fa fa-fw fa-lock"></i>PGP Key
-            </a>
+            {% include team-pgp.html %}
           {% endif %}
           {% if team.email %}
             <a href="mailto:{{team.email}}" class="black-link add-right" title="{{ coreteam.email }}">

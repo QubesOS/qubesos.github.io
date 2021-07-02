@@ -103,12 +103,6 @@
   urls:
   - url: https://mirror.hackingand.coffee/qubes/
 
-- organization: Internet Archive
-  org_url: https://archive.org/
-  location: United States
-  urls:
-  - url: https://archive.org/download/QubesOS
-
 - organization: Purdue Linux Users Group
   org_url: https://plug-mirror.rcac.purdue.edu/info.html
   location: United States

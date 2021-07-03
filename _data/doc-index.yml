@@ -5,9 +5,7 @@
 - title: Introduction
   category: introduction
   sub-pages:
-    - url: /intro/
-    - url: /video-tours/
-    - url: /screenshots/
+    - url: /doc/getting-started/
     - url: /faq/
     - url: /doc/issue-tracking/
     - url: /support/
@@ -49,7 +47,6 @@
   - title: How-to Guides
     subcategory: how-to-guides
     sub-pages:
-      - url: /doc/how-to-get-started/
       - url: /doc/how-to-update/
       - url: /doc/how-to-back-up-restore-and-migrate/
       - url: /doc/how-to-copy-and-paste-text/

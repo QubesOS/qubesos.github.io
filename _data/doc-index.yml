@@ -33,7 +33,7 @@
       - url: /doc/supported-versions/
       - url: /doc/testing/
 
-  - title: How-to Guides
+  - title: How-To Guides
     subcategory: how-to-guides
     sub-pages:
       - url: /doc/how-to-update/
@@ -247,7 +247,7 @@
     sub-pages:
       - text: Security Guidelines
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md
-      - text: Using Multi-factor Authentication with Qubes
+      - text: Using Multi-Factor Authentication with Qubes
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/security/multifactor-authentication.md
       - text: How to Set Up a Split Bitcoin Wallet in Qubes
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/security/split-bitcoin.md

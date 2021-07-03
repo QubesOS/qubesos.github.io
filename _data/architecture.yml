@@ -16,7 +16,7 @@
     url: /screenshots/
     icon: fa-picture-o
   - title: Getting Started
-    url: /getting-started/
+    url: /doc/getting-started/
     icon: fa-cubes
   - title: Help and Support
     url: /support/

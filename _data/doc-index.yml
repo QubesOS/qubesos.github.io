@@ -11,17 +11,6 @@
     - url: /support/
     - url: /doc/contributing/
 
-- title: Project Security
-  category: project-security
-  sub-pages:
-    - url: /security/
-    - url: /security/pack/
-    - url: /security/qsb/
-    - url: /security/canary/
-    - url: /security/xsa/
-    - url: /security/verifying-signatures/
-    - url: /security/pgp-keys/
-
 - title: User Documentation
   subtitle: Core documentation for Qubes users.
   category: user
@@ -130,6 +119,17 @@
     sub-pages:
       - url: /doc/tools/
       - url: /doc/glossary/
+
+- title: Project Security
+  category: project-security
+  sub-pages:
+    - url: /security/
+    - url: /security/pack/
+    - url: /security/qsb/
+    - url: /security/canary/
+    - url: /security/xsa/
+    - url: /security/verifying-signatures/
+    - url: /security/pgp-keys/
 
 - title: Developer Documentation
   subtitle: Core documentation for Qubes developers and advanced users.

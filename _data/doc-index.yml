@@ -6,6 +6,7 @@
   category: introduction
   sub-pages:
     - url: /doc/getting-started/
+    - url: /doc/glossary/
     - url: /faq/
     - url: /doc/issue-tracking/
     - url: /support/
@@ -93,6 +94,7 @@
   - title: Advanced Topics
     subcategory: advanced-topics
     sub-pages:
+      - url: /doc/tools/
       - url: /doc/how-to-install-software-in-dom0/
       - url: /doc/volume-backup-revert/
       - url: /doc/standalones-and-hvms/
@@ -113,12 +115,6 @@
       - url: /doc/kde/
       - url: /doc/i3/
       - url: /doc/awesomewm/
-
-  - title: Reference
-    subcategory: reference
-    sub-pages:
-      - url: /doc/tools/
-      - url: /doc/glossary/
 
 - title: Project Security
   category: project-security

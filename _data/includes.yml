@@ -2,24 +2,24 @@
   title: Contents
   links:
     - url: /doc/
-      text: Documentation
+      text: Go to the Table of Contents
       icon: fa-book
-    - url: /doc/doc-guidelines/
-      text: Improve the Docs
-      icon: fa-pencil
+    - url: /support/
+      text: Get Help & Support
+      icon: fa-life-ring
     - text: View Page Source
       icon: fa-code
     - text: Edit This Page
       icon: fa-code-fork
-    - url: /security/
-      text: Report a Security Issue
-      icon: fa-lock
+    - url: /doc/doc-guidelines/
+      text: Improve the Docs
+      icon: fa-pencil
     - url: /doc/issue-tracking/
       text: Report a Bug
       icon: fa-bug
-    - url: /support/
-      text: Help & Support
-      icon: fa-life-ring
+    - url: /security/
+      text: Report a Security Issue
+      icon: fa-lock
     - url: /donate/
       text: Make a Donation
       icon: fa-heart
@@ -76,11 +76,11 @@
     - url: http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion
       text: Tor Onion Service
       id: 2
-    - url: /doc/issue-tracking/
-      text: Report a Problem
-      id: 3
     - url: /privacy/
       text: Privacy Policy
+      id: 3
+    - url: /doc/issue-tracking/
+      text: Report a Problem
       id: 4
     - url: /terms/
       text: Terms of Use

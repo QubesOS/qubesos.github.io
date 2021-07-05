@@ -4,29 +4,29 @@
   sub-pages:
   - title: What is Qubes OS?
     url: /intro/
-  - title: FAQ
-    url: /faq/
-    icon: fa-question-circle
-  - title: Video Tours
-    url: /video-tours/
-    icon: fa-play-circle
-  - title: From the Experts
+  - title: Outside Expert Views
     url: /experts/
-  - title: Screenshots
-    url: /screenshots/
-    icon: fa-picture-o
   - title: Getting Started
     url: /doc/getting-started/
     icon: fa-cubes
+  - title: Video Tours
+    url: /video-tours/
+    icon: fa-play-circle
+  - title: Screenshots
+    url: /screenshots/
+    icon: fa-picture-o
+  - title: FAQ
+    url: /faq/
+    icon: fa-question-circle
   - title: Help and Support
     url: /support/
     icon: fa-life-ring
-  - title: Code of Conduct
-    url: /code-of-conduct/
   - title: Security Center
     url: /security/
   - title: OS Architecture
     url: /doc/architecture/
+  - title: Code of Conduct
+    url: /code-of-conduct/
 
 - title: Downloads
   url: /downloads/
@@ -60,8 +60,6 @@
   sub-pages:
   - title: Introduction
     url: /doc/#introduction
-  - title: Project Security
-    url: /doc/#project-security
   - title: Choosing Hardware
     url: /doc/#choosing-your-hardware
   - title: Installing & Upgrading
@@ -74,6 +72,8 @@
     url: /doc/#troubleshooting
   - title: Security in Qubes
     url: /doc/#security-in-qubes
+  - title: Project Security
+    url: /doc/#project-security
   - title: Developer Docs
     url: /doc/#developer-documentation
   - title: External Docs
@@ -87,12 +87,12 @@
     url: /news/categories/#announcements
   - title: Articles
     url: /news/categories/#articles
+  - title: Userbase Statistics
+    url: /statistics/
+    icon: fa-bar-chart
   - title: Research
     icon: fa-file-text
     url: /research/
-  - title: Statistics
-    url: /statistics/
-    icon: fa-bar-chart
   - title: GitHub
     url: https://github.com/QubesOS
   - title: Qubes Forum
@@ -110,11 +110,11 @@
   url: /team/
   icon: fa-users
   sub-pages:
+  - title: Report a Bug
+    url: /doc/issue-tracking/
   - title: Report a Security Issue
     url: /security/
     icon: fa-lock
-  - title: Report a Bug
-    url: /doc/issue-tracking/
   - title: Inquiries
     url: /team/#inquiries
   - title: Core Team
@@ -128,11 +128,11 @@
   url: /donate/
   icon: fa-heart
   sub-pages:
-  - title: How to donate
+  - title: How to Donate
     url: /donate/
-  - title: Partners
+  - title: Qubes Partners
     url: /partners/
     icon: fa-globe
-  - title: Contributing
+  - title: How to Contribute
     url: /doc/contributing/
 

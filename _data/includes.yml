@@ -1,31 +1,26 @@
 - section: doc-widget
-  title: Contents
+  title: Page Contents
   links:
     - url: /doc/
       text: Table of Contents
       icon: fa-book
-    - url: /support/
-      text: Get Help & Support
-      icon: fa-life-ring
     - url: /doc/glossary/
-      text: Check the Glossary
+      text: Glossary of Terms
       icon: fa-quote-left
-    - text: View Page Source
-      icon: fa-code
-    - text: Edit This Page
-      icon: fa-code-fork
+    - url: /support/
+      text: Help and Support
+      icon: fa-life-ring
+    - text: Page Source on GitHub
+      icon: fa-github
     - url: /doc/doc-guidelines/
-      text: Improve the Docs
+      text: Doc Guidelines
       icon: fa-pencil
     - url: /doc/issue-tracking/
-      text: Report a Bug
+      text: Report Bug
       icon: fa-bug
     - url: /security/
-      text: Report a Security Issue
+      text: Report Security Issue
       icon: fa-lock
-    - url: /donate/
-      text: Make a Donation
-      icon: fa-heart
 
 - section: intro
   links:
@@ -60,7 +55,7 @@
   text: This page is intended for advanced users.
 
 - section: doc-content
-  text: Contents
+  text: Page Contents
 
 - section: home-news
   snippets:

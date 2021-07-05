@@ -2,11 +2,14 @@
   title: Contents
   links:
     - url: /doc/
-      text: Go to the Table of Contents
+      text: Table of Contents
       icon: fa-book
     - url: /support/
       text: Get Help & Support
       icon: fa-life-ring
+    - url: /doc/glossary/
+      text: Check the Glossary
+      icon: fa-quote-left
     - text: View Page Source
       icon: fa-code
     - text: Edit This Page

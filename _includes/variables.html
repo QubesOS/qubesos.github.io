@@ -1,83 +1,83 @@
 <!-- Check if variables need to be updated -->
 {% if architecture == nil or architecture.size == 0 %}
-  <!-- Site-wide variables -->
+<!-- Site-wide variables -->
   {% if page.lang == nil or page.lang == "en" %}
-    <!-- Page language -->
+<!-- Page language -->
     {% assign lang = "" %}
-    <!-- Includes -->
+<!-- Includes -->
     {% assign includes = site.data.includes %}
-    <!-- Architecture -->
+<!-- Architecture -->
     {% assign architecture = site.data.architecture %}
-    <!-- Doc index -->
+<!-- Doc index -->
     {% assign doc-index = site.data.doc-index %}
-    <!-- All docs link -->
+<!-- All docs link -->
     {% assign all_docs = site.doc  %}
-    <!-- Downloads page -->
+<!-- Downloads page -->
     {% assign downloads-page = site.data.downloads-page %}
-    <!-- HCL -->
+<!-- HCL -->
     {% assign hcl = site.data.hcl %}
-    <!-- Experts -->
+<!-- Experts -->
     {% assign experts = site.data.experts %}
-    <!-- Team page -->
+<!-- Team page -->
     {% assign team-page = site.data.team-page %}
-    <!-- Style guide page -->
+<!-- Style guide page -->
     {% assign style-guide-page = site.data.style-guide-page %}
   {% else %}
-    <!-- Page language -->
+<!-- Page language -->
     {% assign lang = "/" | append: page.lang %}
-    <!-- Includes -->
+<!-- Includes -->
     {% assign includes = site.data.translation[page.lang].includes %}
     {% if includes == nil or includes.size == 0 %}
       {% assign includes = site.data.includes %}
     {% endif %}
-    <!-- Architecture -->
+<!-- Architecture -->
     {% assign architecture = site.data.translation[page.lang].architecture %}
     {% if architecture == nil or architecture.size == 0 %}
       {% assign architecture = site.data.architecture %}
     {% endif %}
-    <!-- Doc index -->
+<!-- Doc index -->
     {% assign doc-index = site.data.translation[page.lang].doc-index %}
     {% if doc-index == nil or doc-index.size == 0 %}
       {% assign doc-index = site.data.doc-index %}
     {% endif %}
-    <!-- All docs link -->
+<!-- All docs link -->
     {% assign all_docs = site.translated %}
-    <!-- Downloads page -->
+<!-- Downloads page -->
     {% assign downloads-page = site.data.translation[page.lang].downloads-page %}
     {% if downloads-page == nil or downloads-page.size == 0 %}
       {% assign downloads-page = site.data.downloads-page %}
     {% endif %}
-    <!-- HCL -->
+<!-- HCL -->
     {% assign hcl = site.data.translation[page.lang].hcl %}
     {% if hcl == nil or hcl.size == 0 %}
       {% assign hcl = site.data.hcl %}
     {% endif %}
-    <!-- Experts -->
+<!-- Experts -->
     {% assign experts = site.data.translation[page.lang].experts %}
     {% if experts == nil or experts.size == 0 %}
       {% assign experts = site.data.experts %}
     {% endif %}
-    <!-- Team page -->
+<!-- Team page -->
     {% assign team-page = site.data.translation[page.lang].team-page %}
     {% if team-page == nil or team-page.size == 0 %}
       {% assign team-page = site.data.team-page %}
     {% endif %}
-    <!-- Style guide page -->
+<!-- Style guide page -->
     {% assign style-guide-page = site.data.translation[page.lang].style-guide-page %}
     {% if style-guide-page == nil or style-guide-page.size == 0 %}
       {% assign style-guide-page = site.data.hcl %}
     {% endif %}
   {% endif %}
-  <!-- Doc link -->
+<!-- Doc link -->
   {% assign doc_link = lang | append: "/doc/" %}
-  <!-- Team link -->
+<!-- Team link -->
   {% assign team_link = lang | append: "/team/" %}
-  <!-- News by category link -->
+<!-- News by category link -->
   {% assign news_categories_link = lang | append: "/news/categories/" %}
   {% assign news_count = site.posts | where:'permalink', news_categories_link %}
   {% if news_count.size == 0 %}
     {% assign news_categories_link =  "/news/categories/" %}
   {% endif %}
-  <!-- Path segments -->
+<!-- Path segments -->
   {% assign path_segments = page.relative_path | split: '/' %}
 {% endif %}

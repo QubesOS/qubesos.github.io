@@ -3,24 +3,24 @@
   links:
     - url: /doc/
       text: Table of Contents
-      icon: fa-book
+      icon: fa-list
     - url: /doc/glossary/
       text: Glossary of Terms
-      icon: fa-quote-left
+      icon: fa-book-reader
     - url: /support/
       text: Help and Support
-      icon: fa-life-ring
+      icon: fa-question-circle
     - text: Page Source on GitHub
       icon: fa-github
     - url: /doc/doc-guidelines/
       text: Doc Guidelines
-      icon: fa-pencil
+      icon: fa-file-signature
     - url: /doc/issue-tracking/
       text: Report Bug
       icon: fa-bug
     - url: /security/
       text: Report Security Issue
-      icon: fa-lock
+      icon: fa-shield-alt
 
 - section: intro
   links:

@@ -17,12 +17,12 @@
     icon: fa-picture-o
   - title: FAQ
     url: /faq/
-    icon: fa-question-circle
   - title: Help and Support
     url: /support/
-    icon: fa-life-ring
+    icon: fa-question-circle
   - title: Security Center
     url: /security/
+    icon: fa-shield-alt
   - title: OS Architecture
     url: /doc/architecture/
   - title: Code of Conduct
@@ -114,7 +114,7 @@
     url: /doc/issue-tracking/
   - title: Report a Security Issue
     url: /security/
-    icon: fa-lock
+    icon: fa-shield-alt
   - title: Inquiries
     url: /team/#inquiries
   - title: Core Team

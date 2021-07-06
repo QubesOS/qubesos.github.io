@@ -1,6 +1,6 @@
 ---
 lang: en
-layout: team
+layout: site
 permalink: /team/
 redirect_from:
 - /people/
@@ -9,3 +9,4 @@ redirect_from:
 ref: 8
 title: Team
 ---
+{% include team.html %}

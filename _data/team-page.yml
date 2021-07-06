@@ -1,23 +1,3 @@
-- htmlsection: upperlinks
-  security:
-  - text: Report a security issue
-    url: /security/
-  bug:
-  - text: Report a bug
-    url: /doc/issue-tracking/
-  help:
-  - text: Get help and support
-    url: /support/
-  join:
-  - text: Join the team
-    url: /join/
-  partner:
-  - text: Qubes Partners
-    url: /partners/
-  cert:
-  - text: Request hardware certification
-    url: /hardware-certification/
-
 - htmlsection: inquiries
   title: Inquiries
   email: Email
@@ -38,5 +18,3 @@
   link:
   - text: Qubes mailing lists and forum
     url: /support/
-
-

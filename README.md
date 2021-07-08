@@ -105,18 +105,11 @@ Instructions
 
         exit
 
-Documentation Guidelines
-------------------------
+Documentation
+-------------
 
-Our [Documentation Guidelines](https://www.qubes-os.org/doc/doc-guidelines/) include:
- - How to Report Issues
- - How to Contribute
- - Contribution Suggestions
- - Style Guidelines
- - Markdown Conventions
- - Git Conventions
-
-Please carefully read these guidelines before submitting a pull request.
+To contribute to the documentation, please see [how to edit the
+documentation](https://www.qubes-os.org/doc/how-to-edit-the-documentation).
 
 ### Dependencies & Third Party Docs ###
 

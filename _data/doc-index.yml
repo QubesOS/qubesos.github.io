@@ -141,11 +141,14 @@
     sub-pages:
       - url: /faq/
       - url: /doc/package-contributions/
-      - url: /doc/doc-guidelines/
       - url: /gsoc/
       - url: /gsod/
+      - url: /doc/how-to-edit-the-documentation/
+      - url: /doc/documentation-style-guide/
+      - url: /doc/website-style-guide/
+      - url: /doc/continuous-integration/
       - url: /doc/usability-ux/
-      - url: /doc/style-guide/
+      - url: /doc/visual-style-guide/
       - url: /research/
       - url: /doc/devel-books/
 

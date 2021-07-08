@@ -12,8 +12,8 @@
       icon: fa-question-circle
     - text: Page Source on GitHub
       icon: fa-github
-    - url: /doc/doc-guidelines/
-      text: Doc Guidelines
+    - url: /doc/how-to-edit-the-documentation/
+      text: How to Edit the Docs
       icon: fa-file-signature
     - url: /doc/issue-tracking/
       text: Report Bug

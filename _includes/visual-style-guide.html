@@ -1,14 +1,14 @@
 <!-- Variables -->
 {% include variables.html %}
-{% assign fonts = style-guide-page | where_exp: "item", "item.htmlsection == 'fonts'" | first %}
-{% assign colors = style-guide-page | where_exp: "item", "item.htmlsection == 'colors'" | first %}
-{% assign icons = style-guide-page | where_exp: "item", "item.htmlsection == 'icons'" | first %}
-{% assign logos = style-guide-page | where_exp: "item", "item.htmlsection == 'logos'" | first %}
+{% assign fonts = visual-style-guide-page | where_exp: "item", "item.htmlsection == 'fonts'" | first %}
+{% assign colors = visual-style-guide-page | where_exp: "item", "item.htmlsection == 'colors'" | first %}
+{% assign icons = visual-style-guide-page | where_exp: "item", "item.htmlsection == 'icons'" | first %}
+{% assign logos = visual-style-guide-page | where_exp: "item", "item.htmlsection == 'logos'" | first %}
 <!-- Style guide -->
 <h2 id="fonts"> {{ fonts.title }}</h2>
 <p>{{ fonts.paragraph }}</p>
-<div class="style-guide">
-  {% for font in site.data.style-guide.fonts %}
+<div class="visual-style-guide">
+  {% for font in site.data.visual-style-guide.fonts %}
     <div class="row">
     <div class="col-lg-6 col-md-6 focus">
         <div class="font {{font.class}}"> {{ fonts.snippets[0].snippet }}</div>
@@ -23,8 +23,8 @@
 <h2 id="colors">{{ colors.title }}</h2>
 {% assign  snippet = colors.paragraph[0].snippets %}
 <p>{{ snippet[0].snippet }} <strong>{{ snippet[1].snippet }}</strong> {{ snippet[2].snippet }}</p>
-<div class="style-guide">
-  {% for color in site.data.style-guide.colors %}
+<div class="visual-style-guide">
+  {% for color in site.data.visual-style-guide.colors %}
     {% if color.type == "grayscale" %}
     <div class="swatch more-bottom more-right">
       <div class="color add-bottom bg-{{color.class}}"></div>
@@ -36,8 +36,8 @@
 </div>
 {% assign  snippet = colors.paragraph[1].snippets %}
 <p>{{ snippet[0].snippet }} <strong>{{ snippet[1].snippet }}</strong> {{ snippet[2].snippet }}</p>
-<div class="style-guide">
-  {% for color in site.data.style-guide.colors %}
+<div class="visual-style-guide">
+  {% for color in site.data.visual-style-guide.colors %}
     {% if color.type == "colors" %}
     <div class="swatch more-bottom more-right">
       <div class="color add-bottom bg-{{color.class}}"></div>
@@ -72,8 +72,8 @@
     {% endif %}
   {% endfor %}
 </p>
-<div class="style-guide">
-  {% for logo in site.data.style-guide.logos %}
+<div class="visual-style-guide">
+  {% for logo in site.data.visual-style-guide.logos %}
     {% for version in logo.versions %}
       <div class="row more-bottom">
         <div class="col-lg-4 col-md-4">

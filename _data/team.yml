@@ -21,7 +21,7 @@
 # Core
 
 - name: Marek Marczykowski-Górecki
-  role: Project lead; everything Xen / Linux related
+  role: "Project lead, everything Xen and Linux related"
   type: core
   picture: team-marek.png
   email: marmarek@invisiblethingslab.com
@@ -29,7 +29,7 @@
   github: marmarek
 
 - name: Wojtek Porczyk
-  role: Python, Linux, infra
+  role: "Python, Linux, and infrastructure"
   type: core
   picture: team-woju.jpg
   email: woju@invisiblethingslab.com
@@ -37,7 +37,7 @@
   github: woju
 
 - name: Michael Carbone
-  role: Project management and funding
+  role: "Project management and funding"
   type: core
   picture: team-michael.jpg
   email: michael@qubes-os.org
@@ -45,13 +45,13 @@
   github: mfc
 
 - name: Joanna Gołębiewska
-  role: Coordination, accounting, and operations
+  role: "Coordination, accounting, and operations"
   type: core
   email: asia@invisiblethingslab.com
   fingerprint: 8C8F F70B 60A4 726F F451  7D96 67F4 097B AF59 B942
 
 - name: Andrew David Wong
-  role: Community manager; documentation and website maintainer
+  role: "Community manager, documentation and website maintainer"
   type: core
   picture: team-andrew.jpg
   email: adw@qubes-os.org
@@ -60,14 +60,14 @@
   website: https://andrewdavidwong.com/
 
 - name: unman   
-  role: Debian template maintainer
+  role: "Debian template maintainer"
   type: core
   email: unman@thirdeyesecurity.org
   fingerprint: C6E2 533D 976E 4B29 A82B  79CB 0C6D 15D5 E0A9 816E
   github: unman
 
 - name: Simon Gaiser (aka HW42)
-  role: Software developer; Linux, misc.
+  role: "Software developer: Linux, misc."
   type: core
   picture: team-simon.jpg
   email: hw42@ipsumj.de
@@ -76,7 +76,7 @@
 
 - name: Frédéric Pierret
   email: frederic.pierret@qubes-os.org
-  role: General packaging; Fedora, Debian, CentOS, and Gentoo template maintainer; contributed package maintainer
+  role: "General packaging; Fedora, Debian, CentOS, and Gentoo template maintainer; contributed package maintainer"
   type: core
   picture: team-frederic.jpg
   fingerprint: 9FA6 4B92 F95E 706B F28E  2CA6 4840 10B5 CDC5 76E2
@@ -84,7 +84,7 @@
 
 - name: Marta Marczykowska-Górecka
   email: marmarta@invisiblethingslab.com
-  role: Qubes Manager, Linux desktop, core development, and user research
+  role: "Qubes Manager, Linux desktop, core development, and user research"
   type: core
   picture: team-marta.jpg
   fingerprint: 7D22 413E F3DB 0761 2CF7  3808 7D77 9BFA 6C80 6F69
@@ -92,7 +92,7 @@
 
 - name: Michał Chiliński
   email: mich@invisiblethingslab.com
-  role: Chief Operations Officer, Invisible Things Lab
+  role: "Chief Executive Officer of Invisible Things Lab"
   type: core
   picture: team-michal.jpg
   fingerprint: 6B52 7FE5 6308 5B7A 34B9  6C2F 8F90 3F3E 5662 199B
@@ -100,7 +100,7 @@
 
 - name: Nina Eleanor Alter
   email: nina@research.qubes-os.org
-  role: Design and user research
+  role: "Design and user research"
   type: core
   picture: team-nina.jpg
   fingerprint: 97A2 5336 1A54 C66F E1DF  515B 0812 46AC 3393 E74F
@@ -117,7 +117,7 @@
 # Emeritus
 
 - name: Joanna Rutkowska
-  role: Founder and advisor (formerly architecture, security, and development)
+  role: "Founder and advisor (formerly architecture, security, and development)"
   type: emeritus
   picture: team-joanna.jpg
   fingerprint: ED72 7C30 6E76 6BC8 5E62 1AA6 5FA6 C3E4 D9AF BB99
@@ -126,17 +126,17 @@
   twitter: rootkovska
 
 - name: Rafal Wojtczuk
-  role: Architecture & system-level stuff
+  role: "Architecture and system-level work"
   type: emeritus
   email: rafal@invisiblethingslab.com
 
 - name: Alexander Tereshkin
-  role: Qubes Windows Tools
+  role: "Qubes Windows tools"
   type: emeritus
   email: alex@invisiblethingslab.com
 
 - name: Rafał Wojdyła
-  role: Main developer for Qubes Windows Tools
+  role: "Main developer of Qubes Windows tools"
   type: emeritus
   email: omeg@invisiblethingslab.com
   fingerprint: 3AC8 7FA3 04E4 59D0 DF08  21A1 045A 1328 4C85 173A
@@ -146,132 +146,132 @@
 
 - name: awokd
   email: awokd@danwin1210.me
-  role: Release documentation coordinator
+  role: "Release documentation coordinator"
   type: community
   fingerprint: 535D 4B50 D471 AEFF 755A  5171 11AB 48E6 9042 1F3E
 
 - name: Alexandre Bezroutchko
   email: abb@gremwell.com
-  role: PVUSB support
+  role: "PVUSB support"
   type: community
   fingerprint: 
 
 - name: Blacklight
   email: blacklight447@protonmail.com
-  role: Localization Team co-leader
+  role: "Localization team co-leader"
   type: community
   fingerprint: 
 
 - name: Bruce A Downs
   email: bruceadowns@gmail.com
-  role: Minor various cleanups and miscs.
+  role: "Various minor cleanups and miscellaneous work"
   type: community
   fingerprint: 
 
 - name: deeplow
   email: deeplower@protonmail.com
-  role: Qubes Forum administrator and moderator
+  role: "Qubes Forum administrator and moderator"
   type: community
   fingerprint: 67D7 D67D 6DB1 57ED A320 4AB5 499D 45F7 5259 D8AB
 
 - name: Desobediente Civil
   email: desci@riseup.net
-  role: Localization Team co-leader, core and documentation contributions
+  role: "Localization team co-leader, core and documentation contributor"
   type: community
   fingerprint: 
 
 - name: Davíð Steinn Geirsson
   email: david@dsg.is
-  role: Initial Debian template integration
+  role: "Initial Debian template integration"
   type: community
   fingerprint: 
 
 - name: Tobias Killer
   email: tokidev@posteo.de
-  role: Localization Team co-leader
+  role: "Localization team co-leader"
   type: community
   fingerprint: 
 
 - name: Agnieszka Kostrzewa
   email: a.kostrzewa@alx.pl
-  role: Documentation, Qubes Manager
+  role: "Documentation, Qubes Manager"
   type: community
   fingerprint: 
 
 - name: Chris Laprise
   email: tasket@posteo.net
-  role: Core and Qubes Manager features and fixes, docs, project liason, HCL maintainer, VPN tools
+  role: "Core and Qubes Manager features and fixes, docs, project liason, HCL maintainer, VPN tools"
   type: community
   fingerprint: BEE2 20C5 356E 764A 73EB  4AB3 1DC4 D106 F07F 1886
 
 - name: Holger Levsen
   email: holger@layer-acht.org
-  role: IRC community ambassador
+  role: "IRC community ambassador"
   type: community
   fingerprint: B8BF 5413 7B09 D35C F026  FE9D 091A B856 069A AA1C
 
 - name: Timo Juhani Lindfors
   email: timo.lindfors@iki.fi
-  role: Minor core cleanups
+  role: "Minor core cleanups"
   type: community
   fingerprint: 
 
 - name: Victor Lopez
   email: gallando@gmail.com`
-  role: Misc. minor fixes
+  role: "Misc. minor fixes"
   type: community
   fingerprint: 
 
 - name: Abel Luck
   email: abel@outcomedubious.im
-  role: Developed TorVM
+  role: "Developed TorVM"
   type: community
   fingerprint: 
 
 - name: Olivier Médoc
   email: o_medoc@yahoo.fr
-  role: Core and GUI fixes, template builder generalization
+  role: "Core and GUI fixes, template builder generalization"
   type: community
   fingerprint: D85E E12F 9678 51CC F433  515A 2043 E7AC C183 3B9C
 
 - name: Jason Mehring
   email: nrgaway@gmail.com
-  role: Debian templates improvements, Whonix integration
+  role: "Debian templates improvements, Whonix integration"
   type: community
   fingerprint: 
 
 - name: Simon Newton
   email: theplexus@ctemplar.com
-  role: Qubes Forum moderator
+  role: "Qubes Forum moderator"
   type: community
   fingerprint:
 
 - name: Brennan Novak
   email: hi@brennannovak.com
-  role: Web design, art, documentation, and minor UX contributions
+  role: "Web design, art, documentation, and minor UX contributions"
   type: community
   fingerprint: 01AE EADB 9EED 1B5B 4280  E5B6 C4CA A23B 0F8C 68B2
 
 - name: Hakisho Nukama
   email: nukama@gmail.com
-  role: Documentation & website maintainer
+  role: "Documentation and website maintainer"
   type: community
   fingerprint: 3FCF 9A11 1135 0DE9 FA9C  3DD0 6E7A 27B9 09DA FB92
 
 - name: Jean-Philippe Ouellet
   email: jpo@vt.edu
-  role: General development
+  role: "General development"
   type: community
   fingerprint: C37B 75A1 1DC7 C9CC 6CD5  B7A9 AFE6 E6A3 D6EE 7AD6
 
 - name: Vincent Penquerc'h
   email: vincent.penquerch@collabora.co.uk
-  role: Code review, misc. fixes
+  role: "Code review, misc. fixes"
   type: community
   fingerprint: 
 
 - name: Patrick Schleizer
-  role: Whonix, Tor, and Debian integration
+  role: "Whonix, Tor, and Debian integration"
   type: community
   picture: team-patrick.jpg
   email: patrick@qubes-os.org
@@ -281,30 +281,30 @@
   
 - name: Sven Semmler
   email: Sven@SvenSemmler.org
-  role: HCL maintainer
+  role: "HCL maintainer"
   type: community
   fingerprint: DA59 75C9 ABC4 0C83 3B2F 620B 2A63 2C53 7D74 4BC7
 
 - name: Andrew Sorensen
   email: andrew@localcoast.net
-  role: Misc. backup subsystem fixes
+  role: "Misc. backup subsystem fixes"
   type: community
   fingerprint: 
 
 - name: Tomasz Sterna
   email: tomek@xiaoka.com
-  role: Installer & GUI
+  role: "Installer and GUI contributor"
   type: community
   fingerprint: 
 
 - name: Radoslaw Szkodzinski
   email: astralstorm@gmail.com
-  role: Minor GUI build fixes
+  role: "Minor GUI build fixes"
   type: community
   fingerprint: 
 
 - name: László Zrubecz
   email: mail@zrubi.hu
-  role: HCL page maintenance, HCL scripts
+  role: "HCL page maintenance, HCL scripts"
   type: community
   fingerprint: 9AF3 388A 533E 73AD 1107  7E55 617D 7048 8F0E 7BC6

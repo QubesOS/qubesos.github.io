@@ -1,38 +1,38 @@
 - section: doc-widget
-  title: Page Contents
+  title: Page contents
   links:
     - url: /doc/
-      text: Table of Contents
+      text: Table of contents
       icon: fa-list
     - url: /doc/glossary/
-      text: Glossary of Terms
+      text: Glossary of terms
       icon: fa-book-reader
     - url: /support/
-      text: Help and Support
+      text: Help and support
       icon: fa-question-circle
-    - text: Page Source on GitHub
+    - text: Page source on GitHub
       icon: fa-github
     - url: /doc/how-to-edit-the-documentation/
-      text: How to Edit the Docs
+      text: How to edit the docs
       icon: fa-file-signature
     - url: /doc/issue-tracking/
-      text: Report Bug
+      text: How to report a bug
       icon: fa-bug
     - url: /security/
-      text: Report Security Issue
+      text: Report a security issue
       icon: fa-shield-alt
 
 - section: intro
   links:
     - url: /video-tours/
-      text: Video Tours
+      text: Video tours
       id: 1
     - url: /screenshots/
       text: Screenshots
       id: 2
 
 - section: news-heading
-  title: Recent News
+  title: Recent news
   links:
     - url: /news/
       text: News
@@ -55,7 +55,7 @@
   text: This page is intended for advanced users.
 
 - section: doc-content
-  text: Page Contents
+  text: Page contents
 
 - section: home-news
   snippets:
@@ -69,19 +69,19 @@
   ddg: Using DuckDuckGo
   links:
     - url: https://github.com/QubesOS/qubesos.github.io
-      text: Website Source Code
+      text: Website source code
       id: 1
     - url: http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion
-      text: Tor Onion Service
+      text: Tor onion service
       id: 2
     - url: /privacy/
-      text: Privacy Policy
+      text: Privacy policy
       id: 3
     - url: /doc/issue-tracking/
-      text: Report a Problem
+      text: Report a problem
       id: 4
     - url: /terms/
-      text: Terms of Use
+      text: Terms of use
       id: 5
     - url: /sitemap.xml
       text: Sitemap
@@ -90,9 +90,9 @@
 - section: catnews
   htmlsections:
     - htmlsection: main
-      title: News by Category
+      title: News by category
     - htmlsection: back
-      title: Back to main News page
+      title: Back to main news page
       url: /news/
 
 - section: news
@@ -103,7 +103,7 @@
       title: News
       url: /news/
     - htmlsection: newscategory
-      title: News by Category
+      title: News by category
       url: /news/categories/
 
 - section: security-xsa
@@ -119,7 +119,7 @@
       title: Tracker
       column1: Date
       column2: XSA
-      column3: Is Qubes Affected?
+      column3: Is Qubes affected?
       yes_short: "Yes"
       no_short: "No"
       no_extended: No (unused or withdrawn XSA number)
@@ -130,13 +130,11 @@
     - htmlsection: table
       columns:
         - title: Date
-        - title: Qubes Security Bulletin
+        - title: Qubes security bulletin
 
 - section: security-canaries
   htmlsections:
     - htmlsection: table
       columns:
         - title: Date
-        - title: Qubes Canary
-
-
+        - title: Qubes canary

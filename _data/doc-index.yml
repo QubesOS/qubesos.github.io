@@ -1,6 +1,5 @@
-- topic: Qubes OS Documentation
-  subtopic: Welcome to the Qubes OS documentation!
-  metatopic: Documentation
+- topic: Qubes documentation
+  metatopic: documentation
 
 - title: Introduction
   category: introduction
@@ -11,12 +10,12 @@
     - url: /support/
     - url: /doc/contributing/
 
-- title: User Documentation
+- title: User documentation
   subtitle: Core documentation for Qubes users.
   category: user
   sub-pages:
 
-  - title: Choosing Your Hardware
+  - title: Choosing your hardware
     subcategory: hardware
     sub-pages:
       - url: /doc/system-requirements/
@@ -24,7 +23,7 @@
       - url: /hcl/
       - url: /doc/hardware-testing/
 
-  - title: Downloading, Installing, and Upgrading Qubes
+  - title: Downloading, installing, and upgrading Qubes
     subcategory: downloading-installing-upgrading
     sub-pages:
       - url: /doc/downloads/
@@ -33,7 +32,7 @@
       - url: /doc/supported-versions/
       - url: /doc/testing/
 
-  - title: How-To Guides
+  - title: How-to guides
     subcategory: how-to-guides
     sub-pages:
       - url: /doc/how-to-update/
@@ -90,7 +89,7 @@
       - url: /doc/u2f-proxy/
       - url: /doc/yubikey/
 
-  - title: Advanced Topics
+  - title: Advanced topics
     subcategory: advanced-topics
     sub-pages:
       - url: /doc/how-to-install-software-in-dom0/
@@ -120,7 +119,7 @@
       - url: /doc/tools/
       - url: /doc/glossary/
 
-- title: Project Security
+- title: Project security
   category: project-security
   sub-pages:
     - url: /security/
@@ -131,7 +130,7 @@
     - url: /security/verifying-signatures/
     - url: /security/pgp-keys/
 
-- title: Developer Documentation
+- title: Developer documentation
   subtitle: Core documentation for Qubes developers and advanced users.
   category: developer
   sub-pages:
@@ -214,16 +213,16 @@
       - url: /doc/releases/todo/
       - url: /doc/version-scheme/
 
-- title: External Documentation
+- title: External documentation
   subtitle: Unofficial, third-party documentation from the Qubes community and others.
   snippets:
   - snippet: For more, please see
-  - snippet: Qubes Community Documentation
+  - snippet: Qubes community documentation
     url: https://github.com/Qubes-Community/Contents/tree/master/docs
   category: external
   sub-pages:
 
-  - title: Operating System Guides
+  - title: Operating system guides
     sub-pages:
       - text: "Template: Ubuntu"
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/os/ubuntu.md
@@ -246,7 +245,7 @@
       - text: Creating a NetBSD VM
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/os/netbsd.md
 
-  - title: Security Guides
+  - title: Security guides
     sub-pages:
       - text: Security Guidelines
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md
@@ -261,7 +260,7 @@
       - text: Using OnlyKey with Qubes OS
         url: https://docs.crp.to/qubes.html
 
-  - title: Privacy Guides
+  - title: Privacy guides
     sub-pages:
       - text: Whonix for Privacy & Anonymity
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/privacy/whonix.md
@@ -274,7 +273,7 @@
       - text: Reducing the fingerprint of the text-based web browser w3m
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/w3m.md
 
-  - title: Configuration Guides
+  - title: Configuration guides
     sub-pages:
       - text: Qubes Tips and Tricks
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/tips-and-tricks.md
@@ -315,7 +314,7 @@
       - text: How to install an Nvidia driver in dom0
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/install-nvidia-driver.md
 
-  - title: Customization Guides
+  - title: Customization guides
     sub-pages:
       - text: Customizing Fedora minimal templates
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/customization/fedora-minimal-template-customization.md
@@ -347,7 +346,7 @@
       - text: Tails Troubleshooting
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/troubleshooting/tails-troubleshooting.md
 
-  - title: Building Guides
+  - title: Building guides
     sub-pages:
       - text: Building a TemplateVM based on a new OS (ArchLinux example)
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/building/building-non-fedora-template.md

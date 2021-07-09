@@ -12,7 +12,7 @@
   email: business@qubes-os.org
   fingerprint: 
 
-- name: User Research
+- name: User research
   icon: fa-flask
   type: inquiries
   email: team@research.qubes-os.org

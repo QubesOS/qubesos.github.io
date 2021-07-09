@@ -58,9 +58,15 @@
     .page-content-left {
       border-right: 1px solid $gray-light;
     }
-    .page-content-right,
+    .page-content-right{
+      border-left: 1px solid $gray-light;
+    }
     .news-widget-side {
       border-left: 1px solid $gray-light;
+      position: -webkit-sticky;
+      position: sticky;
+      z-index: 1;
+      top: 10px;
     }
     .page-source-bottom,
     .news-widget-bottom,

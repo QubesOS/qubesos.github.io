@@ -1,101 +1,21 @@
 <!-- Variables -->
 {% include variables.html %}
-{% assign hw = downloads-page | where_exp: "item", "item.htmlsection == 'hardware'" | first %}
-{% assign sr = hw.links | where_exp: "item", "item.id == 1" | first %}
-{% assign ch = hw.links | where_exp: "item", "item.id == 2" | first %}
-{% assign hcl = hw.links | where_exp: "item", "item.id == 3" | first %}
-{% assign sec = downloads-page | where_exp: "item", "item.htmlsection == 'sec'" | first %}
-{% assign ig = sec.links | where_exp: "item", "item.id == 1" | first %}
-{% assign vs = sec.links | where_exp: "item", "item.id == 2" | first %}
-{% assign isc = sec.links | where_exp: "item", "item.id == 3" | first %}
-{% assign help = downloads-page | where_exp: "item", "item.htmlsection == 'help'" | first %}
-{% assign hs = help.links | where_exp: "item", "item.id == 1" | first %}
-{% assign tg = help.links | where_exp: "item", "item.id == 2" | first %}
-{% assign rb = help.links | where_exp: "item", "item.id == 3" | first %}
-<!-- Top row helper links -->
-<div class="row">
-  <div class="col-xs-12 col-sm-4">
-    <h3>{{ hw.title }}</h3>
-    <ul class="list-unstyled">
-      <li>
-       <a href="{{ sr.url }}" class="black-link">
-        <i class="fa fa-server fa-fw black-icon"></i> {{ sr.text }}
-       </a>
-      </li>
-      <li>
-       <a href="{{ ch.url }}" class="black-link">
-        <i class="fa fa-clipboard-check fa-fw black-icon"></i> {{ ch.text }}
-       </a>
-      </li>
-      <li>
-       <a href="{{ hcl.url }}" class="black-link">
-        <i class="fa fa-laptop fa-fw black-icon"></i> {{ hcl.text }}
-       </a>
-      </li>
-    </ul>
-  </div>
-  <div class="col-xs-12 col-sm-4">
-    <h3> {{ sec.title }}</h3>
-    <ul class="list-unstyled">
-      <li>
-       <a href="{{ ig.url }}" class="black-link">
-        <i class="fa fa-book fa-fw black-icon"></i> {{ ig.text }}
-       </a>
-      </li>
-      <li>
-       <a href="{{ vs.url }}" class="black-link">
-        <i class="fa fa-file-contract fa-fw black-icon"></i> {{ vs.text }}
-       </a>
-      </li>
-      <li>
-       <a href="{{ isc.url }}" class="black-link">
-        <i class="fa fa-lock fa-fw black-icon"></i> {{ isc.text }}
-       </a>
-      </li>
-    </ul>
-  </div>
-  <div class="col-xs-12 col-sm-4">
-    <h3>{{ help.title }}</h3>
-    <ul class="list-unstyled">
-      <li>
-       <a href="{{ hs.url }}" class="black-link">
-        <i class="fa fa-question-circle fa-fw black-icon"></i> {{ hs.text }}
-       </a>
-      </li>
-      <li>
-       <a href="{{ tg.url }}" class="black-link">
-        <i class="fa fa-lightbulb-o fa-fw black-icon"></i> {{ tg.text }}
-       </a>
-      </li>
-      <li>
-       <a href="{{ rb.url }}" class="black-link">
-        <i class="fa fa-bug fa-fw black-icon"></i> {{ rb.text }}
-       </a>
-      </li>
-    </ul>
-  </div>
-</div>
 <!-- Showcase -->
 {% assign surv = downloads-page | where_exp: "item", "item.htmlsection == 'survey'" | first %}
-<hr class="more-bottom">
 <div class="row">
   <div class="col-xs-12">
     <h3>{{ surv.title }}</h3>
-    <p>
-      {{ surv.paragraph }}
-    </p>
-    <a class="btn btn-lg btn-primary add-bottom"
-       href="https://survey.qubes-os.org/index.php?r=survey/index&sid=791682&lang=en">{{ surv.text }}</a>
+    <p>{{ surv.paragraph }}</p>
+    <a class="btn btn-lg btn-primary add-bottom" href="https://survey.qubes-os.org/index.php?r=survey/index&sid=791682&lang=en">{{ surv.text }}</a>
   </div>
 </div>
 <hr class="more-bottom">
-<!-- Localization -->
+<!-- Downloads by release -->
 {% assign ls = downloads-page | where_exp: "item", "item.htmlsection == 'loop-releases'" | first %}
 {% assign test = ls.releases | where_exp: "item", "item.r_version == 'testing'" | first %}
 {% assign stable = ls.releases | where_exp: "item", "item.r_version == 'stable'" | first %}
 {% assign old = ls.releases | where_exp: "item", "item.r_version == 'old'" | first %}
 {% assign depr = ls.releases | where_exp: "item", "item.r_version == 'deprecated'" | first %}
-<!-- Downloads by release -->
 {% for releasex in site.data.downloads.releases %}
   <div class="row">
     <div class="col-xs-12">
@@ -169,13 +89,12 @@
       {% endif %}
     </div>
   </div>
-  <!-- Localization -->
+  <!-- Verification downloads -->
   {% assign code = downloads-page | where_exp: "item", "item.htmlsection == 'source-code'" | first %}
   {% assign scode = code.links | where_exp: "item", "item.id == 1" | first %}
   {% assign cg = code.links | where_exp: "item", "item.id == 2" | first %}
   {% assign sl = code.links | where_exp: "item", "item.id == 3" | first %}
   {% assign downcont = downloads-page | where_exp: "item", "item.htmlsection == 'download-content'" | first %}
-  <!-- Verification downloads -->
   <div class="row download-content">
     {% for source in release.sources %}
       {% if source.display %}
@@ -205,51 +124,21 @@
     <!-- Download helper links -->
     <div class="col-xs-12 col-sm-6 col-lg-4">
       <ul class="list-unstyled">
-        <li>
-          <a href="{{ downcont.links[3].url }}" class="black-link">
-            <i class="fa fa-fw fa-file-contract black-icon"></i> {{ downcont.links[3].text }}
-          </a>
-        </li>
-        {% for docdata in release.docs %}
-          {% assign doc_name = docdata[0] %}
-          {% assign doc = docdata[1] %}
-          {% if doc_name == "Installation Guide" %}
-            <li>
-              <a href="{{ lang }}{{ doc.url }}" class="black-link" title="Installation Guide">
-                <i class="fa fa-fw fa-book black-icon"></i> {{ doc_name }}
-              </a>
-            </li>
-          {% endif %}
-          {% if doc_name == "Release Notes" %}
-            <li>
-              <a href="{{ lang }}{{ doc.url }}" class="black-link" title="Release Notes">
-                <i class="fa fa-fw fa-file-text-o black-icon"></i> {{ doc_name }}
-              </a>
-            </li>
-          {% endif %}
-          {% if doc_name == "Release Schedule" %}
-            <li>
-              <a href="{{ lang }}{{ doc.url }}" class="black-link" title="Release Schedule">
-                <i class="fa fa-fw fa-calendar black-icon"></i> {{ doc_name }}
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-        <li>
-          <a href="{{ hs.url }}" class="black-link" title="{{ hs.text }}">
-            <i class="fa fa-fw fa-question-circle black-icon"></i> {{ hs.text }}
-          </a>
-        </li>
-        <li>
-          <a href="{{ downcont.links[4].url }}" class="black-link" title="{{ downcont.links[4].hover }}">
-            <i class="fa fa-fw fa-cloud-download black-icon"></i> {{ downcont.links[4].text }}
-          </a>
-        </li>
-        <li>
-          <a href="{{ scode.url }}" class="black-link" title="{{ scode.text }}">
-            <i class="fa fa-fw fa-code black-icon"></i> {{ scode.text }}
-          </a>
-        </li>
+        <li><a href="{{ downcont.links[3].url }}" class="black-link">{{ downcont.links[3].text }}</a></li>
+          {% for docdata in release.docs %}
+            {% assign doc_name = docdata[0] %}
+            {% assign doc = docdata[1] %}
+            {% if doc_name == "Installation guide" %}
+              <li><a href="{{ lang }}{{ doc.url }}" class="black-link" title="Installation guide">{{ doc_name }}</a></li>
+            {% endif %}
+            {% if doc_name == "Release notes" %}
+              <li><a href="{{ lang }}{{ doc.url }}" class="black-link" title="Release notes">{{ doc_name }}</a></li>
+            {% endif %}
+            {% if doc_name == "Release schedule" %}
+              <li><a href="{{ lang }}{{ doc.url }}" class="black-link" title="Release schedule">{{ doc_name }}</a></li>
+            {% endif %}
+          {% endfor %}
+        <li><a href="{{ downcont.links[4].url }}" class="black-link" title="{{ downcont.links[4].hover }}">{{ downcont.links[4].text }}</a></li>
       </ul>
     </div>
   </div>
@@ -285,78 +174,5 @@
         {{ dm.links[0].text }}
       </a>
     </article>
-  </div>
-</div>
-<hr class="more-bottom">
-<!-- Localization -->
-{% assign secinfo = downloads-page | where_exp: "item", "item.htmlsection == 'sec-info'" | first %}
-{% assign sc = secinfo.links | where_exp: "item", "item.id == 1" | first %}
-{% assign sp = secinfo.links | where_exp: "item", "item.id == 2" | first %}
-{% assign sg = secinfo.links | where_exp: "item", "item.id == 3" | first %}
-{% assign ver = downloads-page | where_exp: "item", "item.htmlsection == 'version-info'" | first %}
-{% assign sv = ver.links | where_exp: "item", "item.id == 1" | first %}
-{% assign t = ver.links | where_exp: "item", "item.id == 2" | first %}
-{% assign vs = ver.links | where_exp: "item", "item.id == 3" | first %}
-<!-- Bottom row helper links -->
-<div class="row">
-  <div class="col-xs-12 col-sm-4">
-    <h3 id="security">{{ secinfo.title }}</h3>
-    <ul class="list-unstyled">
-      <li>
-        <a href="{{ sc.url }}" class="black-link" title="{{ sc.text }}">
-          <i class="fa fa-lock fa-fw black-icon"></i> {{ sc.text }}
-        </a>
-      </li>
-      <li>
-        <a href="{{ sp.url }}" class="black-link" title="{{ sp.text }}">
-          <i class="fa fa-shield fa-fw black-icon"></i> {{ sp.text }}
-        </a>
-      </li>
-      <li>
-        <a href="{{ sg.url }}" class="black-link" title="{{ sg.text }}">
-          <i class="fa fa-cubes fa-fw black-icon"></i> {{ sg.text }}
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="col-xs-12 col-sm-4">
-    <h3 id="versions"> {{ ver.title }}</h3>
-    <ul class="list-unstyled">
-      <li>
-        <a href="{{ sv.url }}" class="black-link" title="{{ sv.text }}">
-          <i class="fa fa-calendar-check-o fa-fw black-icon"></i> {{ sv.text }}
-        </a>
-      </li>
-      <li>
-        <a href="{{ t.url }}" class="black-link" title="{{ t.text }}">
-          <i class="fa fa-clone fa-fw black-icon"></i> {{ t.text }}
-        </a>
-      </li>
-      <li>
-        <a href="{{ vs.url }}" class="black-link" title="{{ vs.text }}">
-          <i class="fa fa-code-fork fa-fw black-icon"></i> {{ vs.text }}
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="col-lg-4 col-md-4">
-    <h3 id="source-code">{{ code.title }}</h3>
-    <ul class="list-unstyled">
-      <li>
-        <a href="{{ scode.url }}" class="black-link" title="{{ scode.text }}">
-          <i class="fa fa-code fa-fw black-icon"></i> {{ scode.text }}
-        </a>
-      </li>
-      <li>
-        <a href="{{ cg.url }}" class="black-link" title="{{ cg.text }}">
-          <i class="fa fa-terminal fa-fw black-icon"></i> {{ cg.text }}
-        </a>
-      </li>
-      <li>
-        <a href="{{ sl.url }}" class="black-link" title="{{ sl.text }} ">
-          <i class="fa fa-sitemap fa-fw black-icon"></i> {{ sl.text }}
-        </a>
-      </li>
-    </ul>
   </div>
 </div>

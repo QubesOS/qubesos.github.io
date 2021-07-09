@@ -1,92 +1,3 @@
-- htmlsection: hardware
-  title: Choosing Your Hardware
-  links:
-    - url: /doc/system-requirements/
-      text: System Requirements
-      id: 1
-    - url: /doc/certified-hardware/
-      text: Certified Hardware
-      id: 2
-    - url: /hcl/
-      text: Hardware Compatibility List
-      id: 3
-
-- htmlsection: sec
-  title: Installing Qubes Securely
-  links:
-    - url: /doc/installation-guide/
-      text: Installation Guide
-      id: 1
-    - url: /security/verifying-signatures/
-      text: Verifying Signatures
-      id: 2
-    - url: /doc/install-security/
-      text: Installation Security
-      id: 3
-
-- htmlsection: help
-  title: Help and Support
-  links:
-    - url: /support/
-      text: Help and Support
-      id: 1
-    - url: /doc/#troubleshooting
-      text: Troubleshooting Guides
-      id: 2
-    - url: /doc/issue-tracking/
-      text: Report a Bug
-      id: 3
-
-- htmlsection: sec-info
-  title: Security Information
-  links:
-    - url: /security/
-      text: Security Center
-      id: 1
-    - url: /security/pack/
-      text: Security Pack
-      id: 2
-    - url: /doc/#security-in-qubes
-      text: Security in Qubes
-      id: 3
-
-- htmlsection: version-info
-  title: Version Information
-  links:
-    - url: /doc/supported-versions/
-      text: Supported Versions
-      id: 1
-    - url: /doc/templates/
-      text: Templates
-      id: 2
-    - url: /doc/version-scheme/
-      text: Version Scheme
-      id: 3
-
-- htmlsection: source-code
-  title: Source Code
-  links:
-    - url: /doc/source-code/
-      text: Source Code
-      id: 1
-    - url: /doc/coding-style/
-      text: Coding Guidelines
-      id: 2
-    - url: /doc/architecture/
-      text: Architecture
-      id: 3
-
-- htmlsection: download-mirrors
-  title: Download Mirrors
-  text: Please note that the Qubes OS Project has no control over third-party download mirrors.
-  table:
-    - column: Organization
-    - column: Location
-    - column: URL
-  links:
-    - url: /downloads/mirrors/#instructions-for-mirror-operators
-      text: How to contribute a download mirror
-
 - htmlsection: donation
   title: Qubes OS is made possible by your donations!
   paragraph: As a free and open-source software project, we rely on donations from users like you in order to keep running. Your contributions directly support the developers who work hard every day to improve your security. Please consider making a donation today.
@@ -97,7 +8,7 @@
   title: We want to learn from you!
   paragraph: The Qubes team is running our first ever survey of new, prospective, and longtime users. Our goal is to ensure Qubes OS meets the needs of the community by gathering responses to common questions about what the community seeks from Qubes OS. Surveys are 100% anonymous (no IP or timestamp information collected) and hosted on a server we own and operate. 5-10 minutes is all it should take.
   url: https://survey.qubes-os.org/index.php?r=survey/index&sid=791682&lang=en
-  text: Begin Survey
+  text: Begin survey
 
 - htmlsection: loop-releases
   releases:
@@ -120,10 +31,20 @@
   links:
     - text: Cryptographic hash values
     - text: Detached PGP signature
-    - text: Qubes Release Signing Key
-    - text: How to Verify Downloads
+    - text: Qubes release signing key
+    - text: How to verify downloads
       url: /security/verifying-signatures/
     - text: All download mirrors
       url: '#mirrors'
       hover: View all download mirrors
 
+- htmlsection: download-mirrors
+  title: Download mirrors
+  text: Please note that the Qubes OS Project has no control over third-party download mirrors.
+  table:
+    - column: Organization
+    - column: Location
+    - column: URL
+  links:
+    - url: /downloads/mirrors/#instructions-for-mirror-operators
+      text: How to contribute a download mirror

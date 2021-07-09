@@ -21,7 +21,7 @@
   {% assign subpages = item.sub-pages | where_exp: "item", "item.title == nil" -%}
   {% assign subpages2 = item.sub-pages | where_exp: "item", "item.title != nil" -%}
   {% assign subsubpages_en = item_en.sub-pages | where_exp: "item", "item.title != nil" -%}
-  <ul>
+  <ul class="list-unstyled">
     {% for sub in subpages -%}
       {% if item.category == 'external' %}
         <li><a href="{{ sub.url }}">{{ sub.text }}</a></li>
@@ -41,12 +41,12 @@
         <a id="{{ sub_o2.title | downcase | replace: " ", "-" | replace: ",", "" }}"></a>
         <h3 id="{{ sub2.title | downcase | replace: " ", "-" | replace: ",","" }}">{{ sub2.title }}</h3>
       {% else %}
-        <ul>
+        <ul class="list-unstyled">
           <li><a href="{{ sub2.url }}">{{ sub2.title }}</a></li>
         </ul>
       {% endif %}
       {% assign subpages3 = sub2.sub-pages -%}
-      <ul>
+      <ul class="list-unstyled">
         {% for sub3 in subpages3 -%}
           {% if item.category == 'external' %}
             <li><a href="{{ sub3.url }}">{{ sub3.text }}</a></li>

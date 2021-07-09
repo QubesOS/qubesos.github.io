@@ -4,12 +4,12 @@
   sub-pages:
   - title: What is Qubes OS?
     url: /intro/
-  - title: Outside Expert Views
+  - title: Outside expert views
     url: /experts/
-  - title: Getting Started
+  - title: Getting started
     url: /doc/getting-started/
     icon: fa-cubes
-  - title: Video Tours
+  - title: Video tours
     url: /video-tours/
     icon: fa-play-circle
   - title: Screenshots
@@ -17,41 +17,41 @@
     icon: fa-picture-o
   - title: FAQ
     url: /faq/
-  - title: Help and Support
+  - title: Help and support
     url: /support/
     icon: fa-question-circle
-  - title: Security Center
+  - title: Security center
     url: /security/
     icon: fa-shield-alt
-  - title: OS Architecture
+  - title: Architecture
     url: /doc/architecture/
-  - title: Code of Conduct
+  - title: Code of conduct
     url: /code-of-conduct/
 
 - title: Downloads
   url: /downloads/
   icon: fa-download
   sub-pages:
-  - title: System Requirements
+  - title: System requirements
     url: /doc/system-requirements/
-  - title: Certified Hardware
+  - title: Certified hardware
     url: /doc/certified-hardware/
-  - title: Compatibility List
+  - title: Compatibility list
     url: /hcl/
     icon: fa-power-off
-  - title: Installation Guide
+  - title: Installation guide
     url: /doc/installation-guide/
-  - title: Verifying Signatures
+  - title: Verifying signatures
     url: /security/verifying-signatures/
-  - title: Supported Versions
+  - title: Supported versions
     url: /doc/supported-versions/
-  - title: Version Scheme
+  - title: Version scheme
     url: /doc/version-scheme/
-  - title: Source Code
+  - title: Source code
     url: /doc/source-code/
-  - title: Software License
+  - title: Software license
     url: /doc/license/
-  - title: Download Mirrors
+  - title: Download mirrors
     url: /downloads/#mirrors
 
 - title: Documentation
@@ -60,11 +60,11 @@
   sub-pages:
   - title: Introduction
     url: /doc/#introduction
-  - title: Choosing Hardware
+  - title: Choosing hardware
     url: /doc/#choosing-your-hardware
-  - title: Installing & Upgrading
+  - title: Installing and upgrading
     url: /doc/#downloading-installing-and-upgrading-qubes
-  - title: How-To Guides
+  - title: How-to guides
     url: /doc/#how-to-guides
   - title: Templates
     url: /doc/#templates
@@ -72,11 +72,11 @@
     url: /doc/#troubleshooting
   - title: Security in Qubes
     url: /doc/#security-in-qubes
-  - title: Project Security
+  - title: Project security
     url: /doc/#project-security
-  - title: Developer Docs
+  - title: Developer docs
     url: /doc/#developer-documentation
-  - title: External Docs
+  - title: External docs
     url: /doc/#external-documentation
 
 - title: News
@@ -87,7 +87,7 @@
     url: /news/categories/#announcements
   - title: Articles
     url: /news/categories/#articles
-  - title: Userbase Statistics
+  - title: Userbase statistics
     url: /statistics/
     icon: fa-bar-chart
   - title: Research
@@ -95,7 +95,7 @@
     url: /research/
   - title: GitHub
     url: https://github.com/QubesOS
-  - title: Qubes Forum
+  - title: Qubes forum
     url: https://forum.qubes-os.org/
   - title: Twitter
     url: https://twitter.com/QubesOS
@@ -110,29 +110,28 @@
   url: /team/
   icon: fa-users
   sub-pages:
-  - title: Report a Bug
+  - title: Report a bug
     url: /doc/issue-tracking/
-  - title: Report a Security Issue
+  - title: Report a security Issue
     url: /security/
     icon: fa-shield-alt
   - title: Inquiries
     url: /team/#inquiries
-  - title: Core Team
+  - title: Core team
     url: /team/#core-team
   - title: Emeritus
     url: /team/#emeritus
-  - title: Community Contributors
+  - title: Community contributors
     url: /team/#community-contributors
 
 - title: Donate
   url: /donate/
   icon: fa-heart
   sub-pages:
-  - title: How to Donate
+  - title: How to donate
     url: /donate/
-  - title: Qubes Partners
+  - title: Qubes partners
     url: /partners/
     icon: fa-globe
-  - title: How to Contribute
+  - title: How to contribute
     url: /doc/contributing/
-

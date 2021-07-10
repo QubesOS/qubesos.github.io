@@ -29,7 +29,7 @@
       - url: /doc/downloads/
       - url: /doc/installation-guide/
       - url: /doc/upgrade/
-      - url: /doc/supported-versions/
+      - url: /doc/supported-releases/
       - url: /doc/testing/
 
   - title: How-to guides

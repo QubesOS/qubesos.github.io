@@ -83,6 +83,7 @@ Instructions
 
 ### Notes ###
 
+ - Podman is not available in Debian-10. You must use a Fedora based machine or Debian-11.
  - To update the submodules, use `git submodule foreach git pull --tags`.
  - For troubleshooting with RubyGems, see: <http://guides.rubygems.org/>
  - For troubleshooting with Jekyll, see: <https://jekyllrb.com/docs/home/>

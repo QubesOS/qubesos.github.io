@@ -1,22 +1,20 @@
 [![Build Status](https://travis-ci.org/QubesOS/qubesos.github.io.svg?branch=master)](https://travis-ci.org/QubesOS/qubesos.github.io)
 
-Qubes OS Official Website
-=========================
+# Qubes OS Official Website
 
 Canonical URL: https://www.qubes-os.org
 
-This is the main repository for the [Qubes OS Project](https://github.com/QubesOS) website. Qubes is
-a security-oriented, open-source operating system for personal computers. It
-uses virtualization to implement [security by compartmentalization](https://www.qubes-os.org/intro/) and
-supports both Linux and Windows virtual environments.
+This is the main repository for the [Qubes OS
+Project](https://github.com/QubesOS) website. Qubes is a security-oriented,
+open-source operating system for personal computers. It uses virtualization to
+implement [security by compartmentalization](https://www.qubes-os.org/intro/)
+and supports both Linux and Windows virtual environments.
 
-
-Your support counts!
---------------------
+## Your support counts!
 
 Qubes OS is free and open-source software. If you rely on Qubes for secure
-computing in your work or personal life, or see the value in our efforts, please
-consider making a [donation](https://www.qubes-os.org/donate/) today.
+computing in your work or personal life, or see the value in our efforts,
+please consider making a [donation](https://www.qubes-os.org/donate/) today.
 
 <a href="https://opencollective.com/qubes-os/backer/0/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/0/avatar.svg"></a>
 <a href="https://opencollective.com/qubes-os/backer/1/website" target="_blank"><img src="https://opencollective.com/qubes-os/backer/1/avatar.svg"></a>
@@ -45,11 +43,10 @@ consider making a [donation](https://www.qubes-os.org/donate/) today.
 
 --------------------------------------------------------------------------------
 
-Contents
---------
+## Contents
 
-This repository consists of a [Jekyll](https://jekyllrb.com/) site and several Git submodules for
-content:
+This repository consists of a [Jekyll](https://jekyllrb.com/) site and several
+Git submodules for content:
 
  - `qubes-doc` (official documentation)
  - `qubes-attachment` (binary files such as images)
@@ -57,10 +54,12 @@ content:
    version of `qubes-hcl-report`)
  - `qubes-posts` (news and blog posts)
 
-Instructions
-------------
+## Instructions
 
-### Podman Compose ###
+### Podman Compose
+
+These instructions have been tested on a Fedora 33 qube. Podman is not
+available in Debian 10. You must use a Fedora-based machine or Debian 11.
 
 1. Install `podman` and `podman-compose`.
 
@@ -81,13 +80,13 @@ Instructions
 
         http://127.0.0.1:4000/
 
-### Notes ###
+### Notes
 
- - Podman is not available in Debian-10. You must use a Fedora based machine or Debian-11.
  - To update the submodules, use `git submodule foreach git pull --tags`.
  - For troubleshooting with RubyGems, see: <http://guides.rubygems.org/>
  - For troubleshooting with Jekyll, see: <https://jekyllrb.com/docs/home/>
- - For troubleshooting with GitHub pages and Jekyll, see: <https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/>
+ - For troubleshooting with GitHub pages and Jekyll, see:
+   <https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/>
  - To run on a Git post-receive hook, use:
 
         GIT_REPO=/usr/home/git/repositories/www.qubes-os.org.git
@@ -106,25 +105,27 @@ Instructions
 
         exit
 
-Documentation
--------------
+## Documentation
 
 To contribute to the documentation, please see [how to edit the
 documentation](https://www.qubes-os.org/doc/how-to-edit-the-documentation).
 
-### Dependencies & Third Party Docs ###
+### Dependencies & Third Party Docs
 
- - [Jekyll Documentation](http://jekyllrb.com/docs/) - template rendering engine
+ - [Jekyll Documentation](http://jekyllrb.com/docs/) - template rendering
+   engine
  - [Bootstrap 3](http://getbootstrap.com) - styling and CSS structure
  - [FontAwesome](http://fontawesome.io) - the icon font throughout the site
  - [jQuery 1.7](http://api.jquery.com) - javascript helper library
- - [jQuery ToC MD Generator](https://github.com/dafi/tocmd-generator) - renders header menu on documentation section
+ - [jQuery ToC MD Generator](https://github.com/dafi/tocmd-generator) - renders
+   header menu on documentation section
 
-Deprecated Documentation
-------------------------
+## Deprecated Documentation
 
- - [qubes-os.org-3.2-EOL.zip](https://github.com/QubesOS/qubesos.github.io/releases/download/3.2-EOL/qubes-os.org-3.2-EOL.zip) contains the state of the Qubes website when
-   [Qubes OS 3.2 reached EOL](https://www.qubes-os.org/news/2019/03/28/qubes-3-2-has-reached-eol/). All you need to browse it is a web browser.
+ - [qubes-os.org-3.2-EOL.zip](https://github.com/QubesOS/qubesos.github.io/releases/download/3.2-EOL/qubes-os.org-3.2-EOL.zip)
+   contains the state of the Qubes website when [Qubes OS 3.2 reached
+   EOL](https://www.qubes-os.org/news/2019/03/28/qubes-3-2-has-reached-eol/).
+   All you need to browse it is a web browser.
  - Here is the state of this repo and all submodules when [Qubes OS 3.2 reached
    EOL](https://www.qubes-os.org/news/2019/03/28/qubes-3-2-has-reached-eol/):
    - https://github.com/QubesOS/qubesos.github.io/tree/3.2-EOL

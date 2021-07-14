@@ -10,17 +10,17 @@
     - url: #hardware-motherboards
       text: Motherboards
       id: 3
-    - url: /doc/hcl/#generating-and-submitting-new-reports
+    - url: /doc/how-to-use-the-hcl/#generating-and-submitting-new-reports
       text: Add Your Device
       id: 4
 
 - htmlsection: info
   title: Information
   links:
-    - url: /doc/hcl/
+    - url: /doc/how-to-use-the-hcl/
       text: What is the Hardware Compatibility List (HCL)?
       id: 1
-    - url: /doc/hcl/#generating-and-submitting-new-reports
+    - url: /doc/how-to-use-the-hcl/#generating-and-submitting-new-reports
       text: How do I Submit a Report?
       id: 2
     - url: /doc/system-requirements/

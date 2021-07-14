@@ -1,13 +1,13 @@
 - htmlsection: hardware
   title: Hardware Type
   links:
-    - url: #hardware-laptops
+    - url: '#hardware-laptops'
       text: Laptop Devices
       id: 1
-    - url: #hardware-desktops
+    - url: '#hardware-desktops'
       text: Desktop, Workstation &amp; Servers
       id: 2
-    - url: #hardware-motherboards
+    - url: '#hardware-motherboards'
       text: Motherboards
       id: 3
     - url: /doc/how-to-use-the-hcl/#generating-and-submitting-new-reports

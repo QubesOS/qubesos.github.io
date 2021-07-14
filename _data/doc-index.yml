@@ -26,7 +26,7 @@
   - title: Downloading, installing, and upgrading Qubes
     subcategory: downloading-installing-upgrading
     sub-pages:
-      - url: /doc/downloads/
+      - url: /downloads/
       - url: /doc/installation-guide/
       - url: /doc/upgrade/
       - url: /doc/supported-releases/

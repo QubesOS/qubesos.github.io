@@ -16,6 +16,12 @@ categories:
   - slug: qubes
     name: The Qubes Architecture
 papers:
+  - title: "Qubes virtual mini-summit 2021"
+    url: https://www.youtube.com/watch?v=y3V_V0Vllas
+    date: August 2021
+    author: 3mdeb and the Qubes team
+    category: qubes
+
   - title: "Qubes Air: Generalizing the Qubes Architecture"
     url: https://www.qubes-os.org/news/2018/01/22/qubes-air/
     date: January 2018

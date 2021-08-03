@@ -17,25 +17,25 @@ categories:
     name: The Qubes Architecture
 papers:
   - title: "Qubes virtual mini-summit 2021"
-    url: https://www.youtube.com/watch?v=y3V_V0Vllas
+    url: /news/2021/07/30/minisummit-agenda/
     date: August 2021
     author: 3mdeb and the Qubes team
     category: qubes
 
   - title: "Qubes Air: Generalizing the Qubes Architecture"
-    url: https://www.qubes-os.org/news/2018/01/22/qubes-air/
+    url: /news/2018/01/22/qubes-air/
     date: January 2018
     author: Joanna Rutkowska
     category: qubes
 
   - title: Introducing the Next Generation Qubes Core Stack
-    url: https://www.qubes-os.org/news/2017/10/03/core3/
+    url: /news/2017/10/03/core3/
     date: October 2017
     author: Joanna Rutkowska
     category: qubes
 
   - title: Introducing the Qubes Admin API
-    url: https://www.qubes-os.org/news/2017/06/27/qubes-admin-api/
+    url: /news/2017/06/27/qubes-admin-api/
     date: June 2017
     author: Joanna Rutkowska
     category: qubes
@@ -119,7 +119,7 @@ papers:
     category: software-attacks-devices
 
   - title: Qubes OS Architecture Spec v0.3
-    url: https://www.qubes-os.org/attachment/doc/arch-spec-0.3.pdf
+    url: /attachment/doc/arch-spec-0.3.pdf
     date: January 2010
     author: Joanna Rutkowska and Rafal Wojtczuk
     category: qubes

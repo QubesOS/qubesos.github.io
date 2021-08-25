@@ -1569,3 +1569,26 @@
   date: 2021-06-08
   affected: yes
   qsb: 069-2021
+
+- xsa: 378
+  date: 2021-08-25
+  affected: yes
+  qsb: 070-2021
+
+- xsa: 379
+  date: 2021-08-25
+  affected: yes
+  qsb: 070-2021
+
+- xsa: 380
+  date: 2021-08-25
+  affected: no
+
+- xsa: 382
+  date: 2021-08-25
+  affected: yes
+  qsb: 070-2021
+
+- xsa: 383
+  date: 2021-08-25
+  affected: no

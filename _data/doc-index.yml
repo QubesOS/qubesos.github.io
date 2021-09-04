@@ -20,8 +20,8 @@
     sub-pages:
       - url: /doc/system-requirements/
       - url: /doc/certified-hardware/
+      - url: /doc/community-recommended-hardware/
       - url: /hcl/
-      - url: /doc/hardware-testing/
 
   - title: Downloading, installing, and upgrading Qubes
     subcategory: downloading-installing-upgrading

@@ -277,3 +277,7 @@
 - qsb: "070"
   title: "Xen issues related to grant tables v2 and IOMMU"
   date: 2021-08-25
+
+- qsb: "071"
+  title: "Fatal options filtering flaw in Split GPG"
+  date: 2021-09-09

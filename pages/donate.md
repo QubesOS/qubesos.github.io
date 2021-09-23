@@ -153,6 +153,8 @@ Visit our [introduction page to Qubes](/intro/) or watch a [video overview of th
 
 ## Thank you!
 
+_**Please note:** This section loads a widget directly from Open Collective. This section does not reflect donations made outside of Open Collective, and the Qubes OS Project has no control over the specific donors featured in this section._
+
 <script src="https://opencollective.com/qubes-os/banner.js"></script>
 
 <noscript><object type="image/svg+xml" data="https://opencollective.com/qubes-os/tiers/supporters.svg?avatarHeight=60&width=600"></object></noscript>

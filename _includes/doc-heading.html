@@ -7,7 +7,7 @@
   <a href="{{ doc_link_4_0 }}" class="heading-link">
     <i class="fa fa-book"></i> {{ meta[0].metatopic }}</a>
   </h1>
-{% elsif %}
+{% elsif page.permalink == doc_link_4_1 %}
   {% assign meta = doc-index-4.1 | where_exp: "item", "item.topic != nil" %}
   <h1 class="more-top add-left outer-heading">
   <a href="{{ doc_link_4_1 }}" class="heading-link">

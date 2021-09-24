@@ -1,16 +1,16 @@
 <!-- Variables -->
 {% include variables.html %}
 <!-- Create heading -->
-{% if page.permalink == doc_link_4.0 %}
+{% if page.permalink == doc_link_4_0 %}
   {% assign meta = doc-index-4.0 | where_exp: "item", "item.topic != nil" %}
   <h1 class="more-top add-left outer-heading">
-  <a href="{{ doc_link_4.0 }}" class="heading-link">
+  <a href="{{ doc_link_4_0 }}" class="heading-link">
     <i class="fa fa-book"></i> {{ meta[0].metatopic }}</a>
   </h1>
 {% elsif %}
   {% assign meta = doc-index-4.1 | where_exp: "item", "item.topic != nil" %}
   <h1 class="more-top add-left outer-heading">
-  <a href="{{ doc_link_4.1 }}" class="heading-link">
+  <a href="{{ doc_link_4_1 }}" class="heading-link">
     <i class="fa fa-book"></i> {{ meta[0].metatopic }}</a>
   </h1>
 {% else %}
@@ -20,14 +20,14 @@
       <!-- Section heading -->
       {% if path_segments contains section.category %}
         <h1 class="more-top add-left outer-heading">
-          <a href="{{ doc_link_4.0 }}#{{ section.title | slugify }}" class="heading-link">
+          <a href="{{ doc_link_4_0 }}#{{ section.title | slugify }}" class="heading-link">
             <i class="fa fa-book"></i>{{ section.title }}
           </a>
           <!-- Breadcrumb heading -->
           {% for subsection in section.sub-pages %}
             {% if path_segments contains subsection.subcategory %}
               /
-              <a href="{{ doc_link_4.0 }}#{{ subsection.title | slugify }}" class="heading-link">
+              <a href="{{ doc_link_4_0 }}#{{ subsection.title | slugify }}" class="heading-link">
                 {{ subsection.title }}
               </a>
             {% endif %}
@@ -41,14 +41,14 @@
       <!-- Section heading -->
       {% if path_segments contains section.category %}
         <h1 class="more-top add-left outer-heading">
-          <a href="{{ doc_link_4.1 }}#{{ section.title | slugify }}" class="heading-link">
+          <a href="{{ doc_link_4_1 }}#{{ section.title | slugify }}" class="heading-link">
             <i class="fa fa-book"></i>{{ section.title }}
           </a>
           <!-- Breadcrumb heading -->
           {% for subsection in section.sub-pages %}
             {% if path_segments contains subsection.subcategory %}
               /
-              <a href="{{ doc_link_4.1 }}#{{ subsection.title | slugify }}" class="heading-link">
+              <a href="{{ doc_link_4_1 }}#{{ subsection.title | slugify }}" class="heading-link">
                 {{ subsection.title }}
               </a>
             {% endif %}

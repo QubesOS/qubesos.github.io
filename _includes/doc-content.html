@@ -6,10 +6,11 @@
 <!-- BEGIN CONTENT -->
 {% if section.category == "external" %}
   {% include doc-alert-external.html %}
+{% elsif path_segments contains 'release-specific' %}
+  {% include doc-alert-review-status.html %}
 {% elsif path_segments contains 'advanced-topics' or page.advanced %}
   {% include doc-alert-advanced.html %}
 {% endif %}
-{% include doc-alert-review-status.html %}
 <h1>{{ page.title }}</h1>
 {{ content }}
 <!-- Check whether the current page's permalink ends in a specific word.

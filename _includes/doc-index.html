@@ -4,10 +4,13 @@
 <!-- Opening HTML for doc content -->
 {% include doc-sidebar-start.html %}
 <!-- BEGIN CONTENT-->
-{% assign ind = doc-index | where_exp: "item", "item.topic == nil" %}
+{% assign ind = doc-index-4.0 | where_exp: "item", "item.topic == nil" %}
+{% assign ind = doc-index-4.1 | where_exp: "item", "item.topic == nil" %}
 <!-- This is needed to assure building the correct ID of the link when there is a translation -->
-{% assign index_english = site.data.doc-index | where_exp: "item", "item.topic == nil" %}
-{% assign topic = doc-index | where_exp: "item", "item.topic != nil" | first %}
+{% assign index_english = site.data.doc-index-4.0 | where_exp: "item", "item.topic == nil" %}
+{% assign topic = doc-index-4.0 | where_exp: "item", "item.topic != nil" | first %}
+{% assign index_english = site.data.doc-index-4.1 | where_exp: "item", "item.topic == nil" %}
+{% assign topic = doc-index-4.1 | where_exp: "item", "item.topic != nil" | first %}
 <h1>{{ topic.topic }}</h1>
 {% assign english_count = 0 %}
 {% for item in ind %}

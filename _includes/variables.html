@@ -9,7 +9,8 @@
 <!-- Architecture -->
     {% assign architecture = site.data.architecture %}
 <!-- Doc index -->
-    {% assign doc-index = site.data.doc-index %}
+    {% assign doc-index-4.0 = site.data.doc-index-4.0 %}
+    {% assign doc-index-4.1 = site.data.doc-index-4.1 %}
 <!-- All docs link -->
     {% assign all_docs = site.doc  %}
 <!-- Downloads page -->
@@ -36,9 +37,13 @@
       {% assign architecture = site.data.architecture %}
     {% endif %}
 <!-- Doc index -->
-    {% assign doc-index = site.data.translation[page.lang].doc-index %}
-    {% if doc-index == nil or doc-index.size == 0 %}
-      {% assign doc-index = site.data.doc-index %}
+    {% assign doc-index-4.0 = site.data.translation[page.lang].doc-index-4.0 %}
+    {% if doc-index-4.0 == nil or doc-index-4.0.size == 0 %}
+      {% assign doc-index-4.0 = site.data.doc-index-4.0 %}
+    {% endif %}
+    {% assign doc-index-4.1 = site.data.translation[page.lang].doc-index-4.1 %}
+    {% if doc-index-4.1 == nil or doc-index-4.1.size == 0 %}
+      {% assign doc-index-4.1 = site.data.doc-index-4.1 %}
     {% endif %}
 <!-- All docs link -->
     {% assign all_docs = site.translated %}
@@ -70,6 +75,8 @@
   {% endif %}
 <!-- Doc link -->
   {% assign doc_link = lang | append: "/doc/" %}
+  {% assign doc_link_4.0 = lang | append: "/doc/4.0/" %}
+  {% assign doc_link_4.1 = lang | append: "/doc/4.1/" %}
 <!-- Team link -->
   {% assign team_link = lang | append: "/team/" %}
 <!-- News by category link -->

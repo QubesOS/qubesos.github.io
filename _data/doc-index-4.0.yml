@@ -1,16 +1,16 @@
 - topic: Table of contents
-  metatopic: documentation
+  metatopic: Qubes 4.0 docs
 
 - title: Introduction
   category: introduction
   sub-pages:
-    - url: /doc/getting-started/
+    - url: /doc/4.0/getting-started/
     - url: /faq/
     - url: /doc/issue-tracking/
     - url: /support/
     - url: /doc/contributing/
 
-- title: User documentation
+- title: Qubes 4.0 user docs
   subtitle: Core documentation for Qubes users.
   category: user
   sub-pages:
@@ -27,7 +27,7 @@
     subcategory: downloading-installing-upgrading
     sub-pages:
       - url: /downloads/
-      - url: /doc/installation-guide/
+      - url: /doc/4.0/installation-guide/
       - url: /doc/upgrade/
       - url: /doc/supported-releases/
       - url: /doc/testing/
@@ -35,89 +35,89 @@
   - title: How-to guides
     subcategory: how-to-guides
     sub-pages:
-      - url: /doc/how-to-update/
-      - url: /doc/how-to-back-up-restore-and-migrate/
-      - url: /doc/how-to-copy-and-paste-text/
-      - url: /doc/how-to-copy-and-move-files/
-      - url: /doc/how-to-copy-from-dom0/
-      - url: /doc/how-to-install-software/
-      - url: /doc/how-to-use-disposables/
-      - url: /doc/how-to-enter-fullscreen-mode/
-      - url: /doc/how-to-use-devices/
-      - url: /doc/how-to-use-block-storage-devices/
-      - url: /doc/how-to-use-usb-devices/
-      - url: /doc/how-to-use-pci-devices/
-      - url: /doc/how-to-use-optical-discs/
+      - url: /doc/4.0/how-to-update/
+      - url: /doc/4.0/how-to-back-up-restore-and-migrate/
+      - url: /doc/4.0/how-to-copy-and-paste-text/
+      - url: /doc/4.0/how-to-copy-and-move-files/
+      - url: /doc/4.0/how-to-copy-from-dom0/
+      - url: /doc/4.0/how-to-install-software/
+      - url: /doc/4.0/how-to-use-disposables/
+      - url: /doc/4.0/how-to-enter-fullscreen-mode/
+      - url: /doc/4.0/how-to-use-devices/
+      - url: /doc/4.0/how-to-use-block-storage-devices/
+      - url: /doc/4.0/how-to-use-usb-devices/
+      - url: /doc/4.0/how-to-use-pci-devices/
+      - url: /doc/4.0/how-to-use-optical-discs/
 
   - title: Templates
     subcategory: templates
     sub-pages:
-      - url: /doc/templates/
-      - url: /doc/templates/fedora/
-      - url: /doc/templates/debian/
-      - url: /doc/templates/minimal/
-      - url: /doc/templates/xfce/
+      - url: /doc/4.0/templates/
+      - url: /doc/4.0/templates/fedora/
+      - url: /doc/4.0/templates/debian/
+      - url: /doc/4.0/templates/minimal/
+      - url: /doc/4.0/templates/xfce/
 
   - title: Troubleshooting
     subcategory: troubleshooting
     sub-pages:
-      - url: /doc/installation-troubleshooting/
-      - url: /doc/update-troubleshooting/
-      - url: /doc/hardware-troubleshooting/
-      - url: /doc/uefi-troubleshooting/
-      - url: /doc/autostart-troubleshooting/
-      - url: /doc/suspend-resume-troubleshooting/
-      - url: /doc/app-menu-shortcut-troubleshooting/
-      - url: /doc/vm-troubleshooting/
-      - url: /doc/hvm-troubleshooting/
-      - url: /doc/disk-troubleshooting/
-      - url: /doc/pci-troubleshooting/
-      - url: /doc/usb-troubleshooting/
-      - url: /doc/gui-troubleshooting/
-      - url: /doc/media-troubleshooting/
-      - url: /doc/vpn-troubleshooting/
+      - url: /doc/4.0/installation-troubleshooting/
+      - url: /doc/4.0/update-troubleshooting/
+      - url: /doc/4.0/hardware-troubleshooting/
+      - url: /doc/4.0/uefi-troubleshooting/
+      - url: /doc/4.0/autostart-troubleshooting/
+      - url: /doc/4.0/suspend-resume-troubleshooting/
+      - url: /doc/4.0/app-menu-shortcut-troubleshooting/
+      - url: /doc/4.0/vm-troubleshooting/
+      - url: /doc/4.0/hvm-troubleshooting/
+      - url: /doc/4.0/disk-troubleshooting/
+      - url: /doc/4.0/pci-troubleshooting/
+      - url: /doc/4.0/usb-troubleshooting/
+      - url: /doc/4.0/gui-troubleshooting/
+      - url: /doc/4.0/media-troubleshooting/
+      - url: /doc/4.0/vpn-troubleshooting/
 
   - title: Security in Qubes
     subcategory: security-in-qubes
     sub-pages:
-      - url: /doc/firewall/
-      - url: /doc/data-leaks/
-      - url: /doc/vm-sudo/
-      - url: /doc/device-handling-security/
-      - url: /doc/anti-evil-maid/
-      - url: /doc/split-gpg/
-      - url: /doc/u2f-proxy/
-      - url: /doc/yubikey/
+      - url: /doc/4.0/firewall/
+      - url: /doc/4.0/data-leaks/
+      - url: /doc/4.0/vm-sudo/
+      - url: /doc/4.0/device-handling-security/
+      - url: /doc/4.0/anti-evil-maid/
+      - url: /doc/4.0/split-gpg/
+      - url: /doc/4.0/u2f-proxy/
+      - url: /doc/4.0/yubikey/
 
   - title: Advanced topics
     subcategory: advanced-topics
     sub-pages:
-      - url: /doc/how-to-install-software-in-dom0/
-      - url: /doc/volume-backup-revert/
-      - url: /doc/standalones-and-hvms/
-      - url: /doc/windows/
-      - url: /doc/config-files/
-      - url: /doc/secondary-storage/
-      - url: /doc/rpc-policy/
-      - url: /doc/usb-qubes/
-      - url: /doc/managing-vm-kernels/
-      - url: /doc/salt/
-      - url: /doc/disposable-customization/
-      - url: /doc/installing-contributed-packages/
-      - url: /doc/bind-dirs/
-      - url: /doc/gui-configuration/
-      - url: /doc/resize-disk-image/
-      - url: /doc/qubes-service/
-      - url: /doc/mount-from-other-os/
-      - url: /doc/kde/
-      - url: /doc/i3/
-      - url: /doc/awesomewm/
+      - url: /doc/4.0/how-to-install-software-in-dom0/
+      - url: /doc/4.0/volume-backup-revert/
+      - url: /doc/4.0/standalones-and-hvms/
+      - url: /doc/4.0/windows/
+      - url: /doc/4.0/config-files/
+      - url: /doc/4.0/secondary-storage/
+      - url: /doc/4.0/rpc-policy/
+      - url: /doc/4.0/usb-qubes/
+      - url: /doc/4.0/managing-vm-kernels/
+      - url: /doc/4.0/salt/
+      - url: /doc/4.0/disposable-customization/
+      - url: /doc/4.0/installing-contributed-packages/
+      - url: /doc/4.0/bind-dirs/
+      - url: /doc/4.0/gui-configuration/
+      - url: /doc/4.0/resize-disk-image/
+      - url: /doc/4.0/qubes-service/
+      - url: /doc/4.0/mount-from-other-os/
+      - url: /doc/4.0/kde/
+      - url: /doc/4.0/i3/
+      - url: /doc/4.0/awesomewm/
 
   - title: Reference
     subcategory: reference
     sub-pages:
-      - url: /doc/tools/
-      - url: /doc/glossary/
+      - url: /doc/4.0/tools/
+      - url: /doc/4.0/glossary/
 
 - title: Project security
   category: project-security
@@ -130,7 +130,7 @@
     - url: /security/verifying-signatures/
     - url: /security/pgp-keys/
 
-- title: Developer documentation
+- title: Qubes 4.0 developer docs
   subtitle: Core documentation for Qubes developers and advanced users.
   category: developer
   sub-pages:
@@ -162,48 +162,48 @@
   - title: System
     subcategory: system
     sub-pages:
-      - url: /doc/architecture/
-      - url: /doc/security-design-goals/
-      - url: /doc/security-critical-code/
-      - url: /doc/qubes-core-admin/
-      - url: /doc/qubes-core-admin-client/
-      - url: /doc/qubes-core-stack/
-      - url: /doc/gui/
-      - url: /doc/networking/
-      - url: /doc/template-implementation/
-      - url: /doc/storage-pools/
-      - url: /doc/audio-virtualization/
+      - url: /doc/4.0/architecture/
+      - url: /doc/4.0/security-design-goals/
+      - url: /doc/4.0/security-critical-code/
+      - url: /doc/4.0/qubes-core-admin/
+      - url: /doc/4.0/qubes-core-admin-client/
+      - url: /doc/4.0/qubes-core-stack/
+      - url: /doc/4.0/gui/
+      - url: /doc/4.0/networking/
+      - url: /doc/4.0/template-implementation/
+      - url: /doc/4.0/storage-pools/
+      - url: /doc/4.0/audio-virtualization/
 
   - title: Services
     subcategory: services
     sub-pages:
-      - url: /doc/qfilecopy/
-      - url: /doc/qmemman/
-      - url: /doc/dvm-impl/
-      - url: /doc/dom0-secure-updates/
-      - url: /doc/qrexec/
-      - url: /doc/qrexec-internals/
-      - url: /doc/qrexec-socket-services/
-      - url: /doc/admin-api/
+      - url: /doc/4.0/qfilecopy/
+      - url: /doc/4.0/qmemman/
+      - url: /doc/4.0/dvm-impl/
+      - url: /doc/4.0/dom0-secure-updates/
+      - url: /doc/4.0/qrexec/
+      - url: /doc/4.0/qrexec-internals/
+      - url: /doc/4.0/qrexec-socket-services/
+      - url: /doc/4.0/admin-api/
 
   - title: Debugging
     subcategory: debugging
     sub-pages:
-      - url: /doc/test-bench/
-      - url: /doc/automated-tests/
-      - url: /doc/profiling/
-      - url: /doc/vm-interface/
-      - url: /doc/windows-debugging/
-      - url: /doc/safe-remote-ttys/
-      - url: /doc/mount-lvm-image/
+      - url: /doc/4.0/test-bench/
+      - url: /doc/4.0/automated-tests/
+      - url: /doc/4.0/profiling/
+      - url: /doc/4.0/vm-interface/
+      - url: /doc/4.0/windows-debugging/
+      - url: /doc/4.0/safe-remote-ttys/
+      - url: /doc/4.0/mount-lvm-image/
 
   - title: Building
     subcategory: building
     sub-pages:
-      - url: /doc/qubes-builder/
-      - url: /doc/development-workflow/
-      - url: /doc/qubes-iso-building/
-      - url: /doc/qubes-template-configs/
+      - url: /doc/4.0/qubes-builder/
+      - url: /doc/4.0/development-workflow/
+      - url: /doc/4.0/qubes-iso-building/
+      - url: /doc/4.0/qubes-template-configs/
 
   - title: Releases
     subcategory: releases
@@ -213,7 +213,7 @@
       - url: /doc/releases/todo/
       - url: /doc/version-scheme/
 
-- title: External documentation
+- title: External docs
   subtitle: Unofficial, third-party documentation from the Qubes community and others.
   snippets:
   - snippet: For more, please see

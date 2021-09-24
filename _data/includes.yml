@@ -54,6 +54,15 @@
   prompt: 'Caution:'
   text: This page is intended for advanced users.
 
+- section: doc-not-reviewed
+  text: This page has not yet been reviewed for this Qubes OS release. Some content may be out-of-date.
+
+- section: doc-reviewed-4.0
+  text: This page has been updated and reviewed for Qubes OS 4.0.
+
+- section: doc-reviewed-4.1
+  text: This page has been updated and reviewed for Qubes OS 4.1.
+
 - section: doc-content
   text: Page contents
 

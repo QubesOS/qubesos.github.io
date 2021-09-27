@@ -1,21 +1,16 @@
 <!-- Variables -->
 {% include variables.html %}
-{% assign 4.0 = includes | where_exp: "item", "item.section == 'doc-reviewed-4.0'" | first %}
-{% assign 4.1 = includes | where_exp: "item", "item.section == 'doc-reviewed-4.1'" | first %}
+{% assign reviewed = includes | where_exp: "item", "item.section == 'doc-reviewed'" | first %}
 {% assign not-reviewed = includes | where_exp: "item", "item.section == 'doc-not-reviewed'" | first %}
 <!-- Alerts -->
-{% if page.passed_review == 4.0 %}
+{% if page.reviewed %}
 <div class="alert alert-success" role="alert">
   <i class="fa fa-check-circle"></i>
-  {{ 4.0.text }}
-</div>
-{% elsif page.passed_review == 4.1 %}
-<div class="alert alert-success" role="alert">
-  <i class="fa fa-check-circle"></i>
-  {{ 4.1.text }}
+  {{ reviewed.text }} {{ page.release }}.
 </div>
 {% else %}
 <div class="alert alert-sticky alert-warning" role="alert">
   <i class="fa fa-history"></i>
   {{ not-reviewed.text }}
 </div>
+{% endif %}

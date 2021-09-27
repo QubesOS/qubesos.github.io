@@ -69,7 +69,7 @@
     {% endif %}
   {% endif %}
 <!-- Doc link -->
-  {% assign doc_link = lang | append: "/doc/" %}
+  {% assign doc_link = lang | append: "/doc/" | append: page.release | append: "/" %}
 <!-- Team link -->
   {% assign team_link = lang | append: "/team/" %}
 <!-- News by category link -->

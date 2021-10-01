@@ -173,6 +173,7 @@
       - url: /doc/template-implementation/
       - url: /doc/storage-pools/
       - url: /doc/audio-virtualization/
+      - url: /doc/template-manager/
 
   - title: Services
     subcategory: services

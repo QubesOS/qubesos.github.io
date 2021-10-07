@@ -1596,3 +1596,7 @@
 - xsa: 384
   date: 2021-09-08
   affected: no
+
+- xsa: 386
+  date: 2021-10-05
+  affected: no

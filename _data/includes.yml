@@ -60,7 +60,7 @@
 - section: home-news
   snippets:
     - snippet: Posted in
-    - snippet: on
+    - snippet: "on"
 
 - section: footer
   title: The Qubes OS Project and others

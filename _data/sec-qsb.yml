@@ -285,3 +285,7 @@
 - qsb: "072"
   title: "Inconsistent handling of the override-redirect flag"
   date: 2021-09-27
+
+- qsb: "073"
+  title: "Race condition when setting override-redirect flag"
+  date: 2021-10-15

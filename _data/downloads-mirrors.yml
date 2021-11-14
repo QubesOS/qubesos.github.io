@@ -1,3 +1,10 @@
+- organization: Ignite Refereeing
+  org_url: https://igniterefereeing.com.au
+  location: Australia
+  urls:
+  - url: qubes-mirror.igniterefereeing.com.au
+  - url: ti4mfvefw2sx2xpf2l3dpaa6iuwiors7ef3hm3nyal7xhq3chrygorqd.onion
+
 - organization: Foundation for Applied Privacy
   org_url: https://applied-privacy.net/
   location: Austria

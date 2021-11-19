@@ -1600,3 +1600,7 @@
 - xsa: 386
   date: 2021-10-05
   affected: no
+
+- xsa: 390
+  date: 2021-11-19
+  affected: no

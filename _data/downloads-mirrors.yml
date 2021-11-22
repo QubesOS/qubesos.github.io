@@ -42,12 +42,6 @@
   urls:
   - url: https://mirror-2.hosthink.net/qubes
 
-- organization: Linux Users' Group of Durgapur
-  org_url: https://dgplug.org/
-  location: India
-  urls:
-  - url: https://mirrors.dgplug.org/qubes/
-
 - organization: RWTH Aachen University
   org_url: https://www.halifax.rwth-aachen.de
   location: Germany
@@ -71,6 +65,20 @@
   location: Hungary
   urls:
   - url: https://quantum-mirror.hu/mirrors/pub/qubes
+
+- organization: Linux Users' Group of Durgapur
+  org_url: https://dgplug.org/
+  location: India
+  urls:
+  - url: https://mirrors.dgplug.org/qubes/
+
+- organization: Q Continuum
+  org_url: https://qontinuum.space:4443/
+  location: Monaco
+  urls:
+  - url: https://qubes-os.qontinuum.space:4443/
+  - url: http://v5tpvgbz4c63qwb65h7n6yxphhyo3djkjxoetnbpjrk3kqpytdyr7eid.onion/
+  - url: rsync://qubes-os.qontinuum.space/qubes-os
 
 - organization: ICM, University of Warsaw
   org_url: http://icm.edu.pl

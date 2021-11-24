@@ -289,3 +289,7 @@
 - qsb: "073"
   title: "Race condition when setting override-redirect flag"
   date: 2021-10-15
+
+- qsb: "074"
+  title: "Xen issues related to populate-on-demand (XSA-388, XSA-389)"
+  date: 2021-11-23

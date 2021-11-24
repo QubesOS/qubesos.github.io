@@ -1597,9 +1597,27 @@
   date: 2021-09-08
   affected: no
 
+- xsa: 385
+  date: 2021-11-23
+  affected: no
+
 - xsa: 386
   date: 2021-10-05
   affected: no
+
+- xsa: 387
+  date: 2021-11-23
+  affected: no
+
+- xsa: 388
+  date: 2021-11-23
+  affected: yes
+  qsb: 074-2021
+
+- xsa: 389
+  date: 2021-11-23
+  affected: yes
+  qsb: 074-2021
 
 - xsa: 390
   date: 2021-11-19

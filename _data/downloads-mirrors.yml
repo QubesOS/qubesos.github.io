@@ -104,8 +104,8 @@
   org_url: https://linux.pizza/
   location: Sweden
   urls:
-  - url: http://mirror.linux.pizza/qubes-os.org/
-  - url: http://lxpizzamm6twgep2.onion/
+  - url: https://mirror.linux.pizza/qubes-os.org/
+  - url: rsync://mirror.linux.pizza/qubes-os.org/
 
 - organization: UKFast
   org_url: https://www.ukfast.co.uk/

@@ -105,7 +105,7 @@
   location: Sweden
   urls:
   - url: https://mirror.linux.pizza/qubes-os.org/
-  - url: rsync://mirror.linux.pizza/qubes-os.org/
+  - url: rsync://mirror.linux.pizza/mirror/qubes-os.org/
 
 - organization: UKFast
   org_url: https://www.ukfast.co.uk/

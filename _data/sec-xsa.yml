@@ -1565,6 +1565,10 @@
   affected: yes
   qsb: 069-2021
 
+- xsa: 376
+  date: 2021-12-20
+  affected: no
+
 - xsa: 377
   date: 2021-06-08
   affected: yes
@@ -1621,4 +1625,12 @@
 
 - xsa: 390
   date: 2021-11-19
+  affected: no
+
+- xsa: 391
+  date: 2021-12-20
+  affected: no
+
+- xsa: 392
+  date: 2021-12-20
   affected: no

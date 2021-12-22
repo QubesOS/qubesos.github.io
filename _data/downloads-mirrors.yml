@@ -11,6 +11,12 @@
   urls:
   - url: https://qubesos-mirror.applied-privacy.net/
 
+- organization: Alibaba Cloud
+  org_url: https://mirrors.aliyun.com/
+  location: China
+  urls:
+  - url: https://mirrors.aliyun.com/qubes/
+
 - organization: eScience Center, Nanjing University
   org_url: https://sci.nju.edu.cn/
   location: China

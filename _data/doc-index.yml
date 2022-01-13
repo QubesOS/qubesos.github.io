@@ -138,7 +138,7 @@
   - title: General
     subcategory: general
     sub-pages:
-      - url: /faq/
+      - url: /faq/#developers
       - url: /doc/package-contributions/
       - url: /gsoc/
       - url: /gsod/

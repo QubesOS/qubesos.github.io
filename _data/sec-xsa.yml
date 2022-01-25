@@ -1634,3 +1634,16 @@
 - xsa: 392
   date: 2021-12-20
   affected: no
+
+- xsa: 393
+  date: 2022-01-25
+  affected: no
+
+- xsa: 394
+  date: 2022-01-25
+  affected: no
+
+- xsa: 395
+  date: 2022-01-25
+  affected: yes
+  qsb: 075-2022

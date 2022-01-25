@@ -293,3 +293,7 @@
 - qsb: "074"
   title: "Xen issues related to populate-on-demand (XSA-388, XSA-389)"
   date: 2021-11-23
+
+- qsb: "075"
+  title: "Insufficient cleanup of passed-through device IRQs (XSA-395)"
+  date: 2022-01-25

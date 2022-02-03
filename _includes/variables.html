@@ -16,8 +16,8 @@
     {% assign downloads-page = site.data.downloads-page %}
 <!-- HCL -->
     {% assign hcl = site.data.hcl %}
-<!-- Experts -->
-    {% assign experts = site.data.experts %}
+<!-- Endorsements -->
+    {% assign endorsements = site.data.endorsements %}
 <!-- Team page -->
     {% assign team-page = site.data.team-page %}
 <!-- Style guide page -->
@@ -52,10 +52,10 @@
     {% if hcl == nil or hcl.size == 0 %}
       {% assign hcl = site.data.hcl %}
     {% endif %}
-<!-- Experts -->
-    {% assign experts = site.data.translation[page.lang].experts %}
-    {% if experts == nil or experts.size == 0 %}
-      {% assign experts = site.data.experts %}
+<!-- Endorsements -->
+    {% assign endorsements = site.data.translation[page.lang].endorsements %}
+    {% if endorsements == nil or endorsements.size == 0 %}
+      {% assign endorsements = site.data.endorsements %}
     {% endif %}
 <!-- Team page -->
     {% assign team-page = site.data.translation[page.lang].team-page %}

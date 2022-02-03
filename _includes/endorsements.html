@@ -1,15 +1,15 @@
 <!-- Variables -->
 {% include variables.html %}
-{% assign experts = experts | where_exp: "item", "item.experts == nil" | first %}
-<!-- List of quotations from experts -->
+{% assign endorsements = endorsements | where_exp: "item", "item.endorsements == nil" | first %}
+<!-- List of endorsements -->
 <div class="container">
   <div class="row more-top">
     <div class="col-lg-12 col-md-12">
-      <h2 class="text-center"><i class="fa fa-quote-left"></i> {{ experts.title }}</h2>
+      <h2 class="text-center"><i class="fa fa-quote-left"></i> {{ endorsements.title }}</h2>
     </div>
   </div>
   <div class="more-bottom">
-    {% for item in experts.expert %}
+    {% for item in endorsements.endorsement %}
       <div class="row featured-quotes">
         <div class="col-lg-3 col-md-3 text-center">
           <a class="avatar-large" href="{{ item.avatar}}"><img src="{{ item.img }}"></a>

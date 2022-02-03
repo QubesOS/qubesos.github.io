@@ -4,8 +4,8 @@
   sub-pages:
   - title: What is Qubes OS?
     url: /intro/
-  - title: Outside expert views
-    url: /experts/
+  - title: Endorsements
+    url: /endorsements/
   - title: Getting started
     url: /doc/getting-started/
     icon: fa-cubes

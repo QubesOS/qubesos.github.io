@@ -68,7 +68,7 @@ Instead, we rely on your financial support.
 If you rely on Qubes for secure computing in your work or personal life or see the value in our efforts, then please donate.
 
 Qubes OS is one of the few operating systems that places the security of its users above all else.
-[Here is what security and privacy experts say about the project.](/experts/)
+[Here is what others have to say about the project.](/endorsements/)
 A project like this requires a wide spectrum of expertise.
 In order to both retain and expand our core team, we deeply appreciate donations from supporters like you.
 

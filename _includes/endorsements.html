@@ -15,12 +15,18 @@
           <a class="avatar-large" href="{{ item.avatar}}"><img src="{{ item.img }}"></a>
         </div>
         <div class="col-lg-9 col-md-9 more-top">
+          {% if item.tweet %}
           <a href="{{ item.tweet }}" >
+          {% endif %}
             <blockquote>"{{ item.quote }}"
+              {% if item.tweet %}
               <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
-              <footer>{{ item.name }}<cite>, {{ item.occupation }}</cite></footer>
+              {% endif %}
+              <footer><b>{{ item.name }}</b>, {{ item.occupation }}</footer>
             </blockquote>
+          {% if item.tweet %}
           </a>
+          {% endif %}
         </div>
       </div>
     {% endfor %}

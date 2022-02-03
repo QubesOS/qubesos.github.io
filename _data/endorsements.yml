@@ -4,49 +4,47 @@
     - avatar: https://twitter.com/Snowden/status/781493632293605376
       img: /attachment/site/endorsement-edward-snowden.jpg
       tweet: https://twitter.com/Snowden/status/781493632293605376
-      quote: If you're serious about security, Qubes OS is the best OS available today. It's what I use, and free. Nobody does VM isolation better.
+      quote: If you're serious about security, @QubesOS is the best OS available today. It's what I use, and free. Nobody does VM isolation better.
       name: Edward Snowden
       occupation: whistleblower and privacy advocate
+    - avatar: 
+      img: /attachment/site/fpf-logo-square.png
+      quote: SecureDrop depends on Qubes OS for best-in-class isolation of sensitive workloads on journalist workstations. Providing journalists with a sane way to handle untrusted content from unknown sources is part of our job, and Qubes gives us the tools we need to do that job well.
+      name: Freedom of the Press Foundation
+      occupation: non-profit dedicated to supporting free speech and public-interest journalism
     - avatar: https://twitter.com/hashbreaker/status/577206817475850240
       img: /attachment/site/endorsement-daniel-j-bernstein.jpg
       tweet: https://twitter.com/hashbreaker/status/577206817475850240
       quote: "Happy thought of the day: An attacker who merely finds a browser bug can't listen to my microphone except when I've told Qubes to enable it."
       name: Daniel J. Bernstein
       occupation: mathematician, cryptologist, and computer scientist
+    - avatar: 
+      img: /attachment/site/lets-encrypt-logo.svg
+      quote: Qubes OS gives us greater confidence in the security of systems being used to remotely access our servers, mainly because powerful physical and logical privilege separation between workspaces allows our engineers to select appropriate degrees of isolation for different processes.
+      name: Let's Encrypt
+      occupation: non-profit, world's largest certificate authority
     - avatar: https://twitter.com/micahflee/status/577998730340622337
       img: /attachment/site/endorsement-micah-lee.jpg
       tweet: https://twitter.com/micahflee/status/577998730340622337
       quote: When I use Qubes I feel like a god. Software thinks that it's in control, that it can do what it wants? It can't. I'm in control.
       name: Micah Lee
-      occupation: Freedom of the Press Foundation, The Intercept
-    - avatar: https://twitter.com/csoghoian
-      img: /attachment/site/endorsement-christopher-soghoian.jpg
-      tweet: https://twitter.com/csoghoian
-      quote: I am so much happier and less stressed out after switching to QubesOS. Can wholeheartedly recommend.
-      name: Christopher Soghoian
-      occupation: privacy researcher, activist, and principal technologist at the ACLU
-    - avatar: https://twitter.com/isislovecruft
-      img: /attachment/site/endorsement-isis-agora-lovecruft.jpg
-      tweet: https://twitter.com/isislovecruft
-      quote: With QubesOS, I feel more comfortable accessing Tor Project infrastructure from the same laptop I use to execute random GameBoy ROMs I downloaded from the internet.
-      name: Isis Agora Lovecruft
-      occupation: cypherpunk and Tor Project core developer
+      occupation: Director of Infosec at The Intercept, board member at the Freedom of the Press Foundation, advisor at DDoSecrets
+    - avatar: https://twitter.com/mullvadnet/status/631010362083643392
+      img: /attachment/site/mullvad-logo.png
+      tweet: https://twitter.com/mullvadnet/status/631010362083643392
+      quote: 'Fun fact: We use @QubesOS on a majority of our workstations since a while back, and boy do we like it! #qubes #security #privacy #vpn'
+      name: Mullvad
+      occupation: privacy-focused VPN provider
     - avatar: https://twitter.com/petertoddbtc/status/924981145871060996
       img: /attachment/site/endorsement-peter-todd.jpg
       tweet: https://twitter.com/petertoddbtc/status/924981145871060996
-      quote: Donated a % of my consulting company's last year revenue to Qubes OS. I rely on it for all my work, and recommend it to clients too.
+      quote: Donated a % of my consulting company's last year revenue to @QubesOS. I rely on it for all my work, and recommend it to clients too.
       name: Peter Todd
       occupation:  Applied Cryptography Consultant
-    - avatar: https://twitter.com/legind/status/742504400854257664
-      img: /attachment/site/endorsement-bill-budington.jpg
-      tweet: https://twitter.com/legind/status/742504400854257664
-      quote: I really like it [Qubes OS]. If your hardware supports it, I recommend it. Everything is super well thought-out.
-      name: Bill Budington
-      occupation: security engineer and technologist, Electronic Frontier Foundation
     - avatar: https://twitter.com/kennwhite/status/914924731400425475
       img: /attachment/site/endorsement-kenn-white.jpg
       tweet: https://twitter.com/kennwhite/status/914924731400425475
-      quote: Periodic shout out to [Rutkowska] and the QubesOS team for *years* of hard work to improve desktop security. Qubes is the real deal.
+      quote: Periodic shout out to @rootkovska and the @QubesOS team for *years* of hard work to improve desktop security. Qubes is the real deal.
       name: Kenn White
       occupation: security researcher, Open Crypto Audit Project
     - avatar: https://twitter.com/vitalikbuterin/status/1086465679904038912
@@ -55,4 +53,21 @@
       quote: Trying out Qubes OS (qubes-os.org) recently; linux distro designed around increased security by virtualizing everything and making it really convenient to hop between VMs. Surprisingly good user-friendliness!
       name: Vitalik Buterin
       occupation: creator of Ethereum
-
+    - avatar: https://twitter.com/csoghoian
+      img: /attachment/site/endorsement-christopher-soghoian.jpg
+      tweet: https://twitter.com/csoghoian
+      quote: I am so much happier and less stressed out after switching to @QubesOS. Can wholeheartedly recommend.
+      name: Christopher Soghoian
+      occupation: privacy researcher, activist, and principal technologist at the ACLU
+    - avatar: https://twitter.com/isislovecruft
+      img: /attachment/site/endorsement-isis-agora-lovecruft.jpg
+      tweet: https://twitter.com/isislovecruft
+      quote: With @QubesOS, I feel more comfortable accessing Tor Project infrastructure from the same laptop I use to execute random GameBoy ROMs I downloaded from the internet.
+      name: Isis Agora Lovecruft
+      occupation: cypherpunk and Tor Project core developer
+    - avatar: https://twitter.com/legind/status/742504400854257664
+      img: /attachment/site/endorsement-bill-budington.jpg
+      tweet: https://twitter.com/legind/status/742504400854257664
+      quote: I really like it. If your hardware supports it, I recommend it. Everything is super well thought-out.
+      name: Bill Budington
+      occupation: security engineer and technologist, Electronic Frontier Foundation

@@ -102,6 +102,7 @@
       - url: /doc/usb-qubes/
       - url: /doc/managing-vm-kernels/
       - url: /doc/salt/
+      - url: /doc/guivm-configuration/
       - url: /doc/disposable-customization/
       - url: /doc/installing-contributed-packages/
       - url: /doc/bind-dirs/

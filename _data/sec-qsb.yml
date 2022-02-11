@@ -297,3 +297,7 @@
 - qsb: "075"
   title: "Insufficient cleanup of passed-through device IRQs (XSA-395)"
   date: 2022-01-25
+
+- qsb: "076"
+  title: "Intel microcode updates"
+  date: 2022-02-11

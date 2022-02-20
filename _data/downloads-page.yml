@@ -22,10 +22,10 @@
         - snippet: This is the latest stable Qubes OS release. We recommend this release for all new and existing users.
     - r_version: old
       snippets:
-        - snippet: This is an old, supported release. For the best Qubes OS experience, we suggest upgrading to the latest stable release.
+        - snippet: This is an older, supported release. For the best Qubes OS experience, consider upgrading to the latest stable release.
     - r_version: deprecated
       snippets:
-        - snippet: This is an old, unsupported release. We strongly recommend upgrading to a supported release in order to receive the latest security updates.
+        - snippet: This is an old, unsupported release. We strongly advise upgrading to a supported release in order to receive the latest security updates.
 
 - htmlsection: download-content
   links:

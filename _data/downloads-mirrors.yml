@@ -79,12 +79,12 @@
   - url: https://mirrors.dgplug.org/qubes/
 
 - organization: Q Continuum
-  org_url: https://qontinuum.space:4443/
+  org_url: https://qontinuum.space/
   location: Monaco
   urls:
-  - url: https://qubes-os.qontinuum.space:4443/
+  - url: https://qubes-os.qontinuum.space/qubes-os/
+  - url: rsync://qubes-os.qontinuum.space/qubes-os/
   - url: http://v5tpvgbz4c63qwb65h7n6yxphhyo3djkjxoetnbpjrk3kqpytdyr7eid.onion/
-  - url: rsync://qubes-os.qontinuum.space/qubes-os
 
 - organization: ICM, University of Warsaw
   org_url: http://icm.edu.pl

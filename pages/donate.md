@@ -20,7 +20,7 @@ We accept monetary donations via Bitcoin and credit card in the following three 
 ### 1. Give a one-time donation
 
 Donating with Bitcoin ensures that 100% of your money supports Qubes development because we do not incur any administrative costs.
-With credit card donations, [we lose roughly 14%](https://opencollective.com/faq) to administrative costs.
+With credit card donations, [we lose roughly 14%](https://docs.opencollective.foundation/how-it-works/fees) to administrative costs.
 
 **<i class="fa fa-2x fa-fw black-icon fa-bitcoin"></i> Bitcoin (BTC):** `3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq` ([How to verify our Bitcoin address](#how-do-i-verify-your-bitcoin-address))
 

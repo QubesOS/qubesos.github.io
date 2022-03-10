@@ -1647,3 +1647,8 @@
   date: 2022-01-25
   affected: yes
   qsb: 075-2022
+
+- xsa: 398
+  date: 2022-03-08
+  affected: yes
+  qsb: 077-2022

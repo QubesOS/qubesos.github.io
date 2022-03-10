@@ -305,3 +305,7 @@
 - qsb: "077"
   title: "Multiple speculative security issues (XSA-398)"
   date: 2022-03-09
+
+- qsb: "078"
+  title: "Linux kernel PV driver issues and LVM misconfiguration"
+  date: 2022-03-10

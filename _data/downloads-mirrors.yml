@@ -86,6 +86,12 @@
   - url: rsync://qubes-os.qontinuum.space/qubes-os/
   - url: http://v5tpvgbz4c63qwb65h7n6yxphhyo3djkjxoetnbpjrk3kqpytdyr7eid.onion/
 
+- organization: Evolution Host
+  org_url: https://evolution-host.com/
+  location: Poland
+  urls:
+  - url: https://polish-mirror.evolution-host.com/qubes/
+
 - organization: ICM, University of Warsaw
   org_url: http://icm.edu.pl
   location: Poland

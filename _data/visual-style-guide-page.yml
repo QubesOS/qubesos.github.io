@@ -23,8 +23,8 @@
   paragraph:
     - snippets:
       - snippet: Currently, all the icons on the Qubes-OS.org website are generated using
-      - snippet: FontAwesome.
-        url: http://fortawesome.github.io/Font-Awesome/
+      - snippet: Font Awesome.
+        url: https://fontawesome.com
     - snippets: As more custom work is done to generate icons for the operating system itself, they will be added here!
 
 - htmlsection: logos

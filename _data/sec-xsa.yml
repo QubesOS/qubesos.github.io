@@ -1653,7 +1653,21 @@
   affected: yes
   qsb: 078-2022
 
+- xsa: 397
+  date: 2022-04-05
+  affected: no
+
 - xsa: 398
   date: 2022-03-08
   affected: yes
   qsb: 077-2022
+
+- xsa: 399
+  date: 2022-04-05
+  affected: yes
+  qsb: 079-2022
+
+- xsa: 400
+  date: 2022-04-05
+  affected: yes
+  qsb: 079-2022

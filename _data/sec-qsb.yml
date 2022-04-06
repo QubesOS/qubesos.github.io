@@ -309,3 +309,7 @@
 - qsb: "078"
   title: "Linux kernel PV driver issues and LVM misconfiguration"
   date: 2022-03-10
+
+- qsb: "079"
+  title: "Two IOMMU-related Xen issues (XSA-399, XSA-400)"
+  date: 2022-04-05

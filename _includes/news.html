@@ -27,7 +27,7 @@
             {% if author_team %}
               <a href="{{ team_link }}#{{ post.author | slugify }}">{{ post.author }}</a>
             {% else %}
-              <a href="{{ team_link }}">{{ post.author }}</a>
+              {{ post.author }}
             {% endif %}
           {% else %}
              <a href="{{ team_link }}">{{ site.default_author }}</a>

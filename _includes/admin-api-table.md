@@ -75,6 +75,7 @@
 | `admin.vm.volume.Clear`                | vm        | volume    | -                                         | -                                                         | clear contents of volume |
 | `admin.vm.volume.CloneFrom`            | vm        | volume    | -                                         | token, to be used in `admin.vm.volume.CloneTo`            | obtain a token to copy `volume` of `vm`;<br/>the token is one time use only, it's invalidated by `admin.vm.volume.CloneTo`, even if the operation fails |
 | `admin.vm.volume.CloneTo`              | vm        | volume    | token, obtained with `admin.vm.volume.CloneFrom` | -                                                         | copy volume pointed by a token to `volume` of `vm` |
+| `admin.vm.CurrentState`                | vm        | -         | -                                         | `<state-property>=<value>\n`                              | state properties: `power_state`, `mem`, `mem_static_max`, `cputime`
 | `admin.vm.Start`                       | vm        | -         | -                                         | -                                                         |
 | `admin.vm.Shutdown`                    | vm        | -         | -                                         | -                                                         |
 | `admin.vm.Pause`                       | vm        | -         | -                                         | -                                                         |

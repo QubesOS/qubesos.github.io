@@ -95,7 +95,6 @@
       - url: /doc/how-to-install-software-in-dom0/
       - url: /doc/volume-backup-revert/
       - url: /doc/standalones-and-hvms/
-      - url: /doc/windows/
       - url: /doc/config-files/
       - url: /doc/secondary-storage/
       - url: /doc/rpc-policy/
@@ -226,6 +225,8 @@
 
   - title: Operating system guides
     sub-pages:
+      - text: "Windows qubes"
+        url: https://www.qubes-os.org/doc/windows/
       - text: "Template: Ubuntu"
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/os/ubuntu.md
       - text: "Template: Whonix"

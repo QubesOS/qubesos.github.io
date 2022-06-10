@@ -1671,3 +1671,13 @@
   date: 2022-04-05
   affected: yes
   qsb: 079-2022
+
+- xsa: 401
+  date: 2022-06-09
+  affected: yes
+  qsb: 080-2022
+
+- xsa: 402
+  date: 2022-06-09
+  affected: yes
+  qsb: 080-2022

@@ -313,3 +313,7 @@
 - qsb: "079"
   title: "Two IOMMU-related Xen issues (XSA-399, XSA-400)"
   date: 2022-04-05
+
+- qsb: "080"
+  title: "Issues with PV domains and PCI passthrough (XSA-401, XSA-402)"
+  date: 2022-06-09

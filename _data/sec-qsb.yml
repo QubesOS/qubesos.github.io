@@ -317,3 +317,7 @@
 - qsb: "080"
   title: "Issues with PV domains and PCI passthrough (XSA-401, XSA-402)"
   date: 2022-06-09
+
+- qsb: "081"
+  title: "x86: MMIO Stale Data vulnerabilities (XSA-404)"
+  date: 2022-06-17

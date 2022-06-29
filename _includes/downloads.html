@@ -1,12 +1,12 @@
 <!-- Variables -->
 {% include variables.html %}
 <!-- Showcase -->
-{% assign surv = downloads-page | where_exp: "item", "item.htmlsection == 'survey'" | first %}
+{% assign ann = downloads-page | where_exp: "item", "item.htmlsection == 'announcement'" | first %}
 <div class="row">
   <div class="col-xs-12">
-    <h3>{{ surv.title }}</h3>
-    <p>{{ surv.paragraph }}</p>
-    <a class="btn btn-lg btn-primary add-bottom" href="{{ surv.url }}">{{ surv.text }}</a>
+    <h3>{{ ann.title }}</h3>
+    <p>{{ ann.paragraph }}</p>
+    <a class="btn btn-lg btn-primary add-bottom" href="{{ ann.url }}">{{ ann.text }}</a>
   </div>
 </div>
 <hr class="more-bottom">

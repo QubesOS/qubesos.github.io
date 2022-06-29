@@ -4,7 +4,7 @@
   url: /donate/
   text: Donate
 
-- htmlsection: survey
+- htmlsection: announcement
   title: We want to learn from you!
   paragraph: The Qubes team is running our first ever survey of new, prospective, and longtime users. Our goal is to ensure Qubes OS meets the needs of the community by gathering responses to common questions about what the community seeks from Qubes OS. Surveys are 100% anonymous (no IP or timestamp information collected) and hosted on a server we own and operate. 5-10 minutes is all it should take.
   url: https://survey.qubes-os.org/index.php?r=survey/index&sid=868269&lang=en

@@ -1,9 +1,3 @@
-- htmlsection: donation
-  title: Qubes OS is made possible by your donations!
-  paragraph: As a free and open-source software project, we rely on donations from users like you in order to keep running. Your contributions directly support the developers who work hard every day to improve your security. Please consider making a donation today.
-  url: /donate/
-  text: Donate
-
 - htmlsection: announcement
   title: Qubes OS is made possible by your donations!
   paragraph: As a free and open-source software project, we rely on donations from users like you in order to keep running. Your contributions directly support the developers who work hard every day to improve your security. Please consider making a donation today.

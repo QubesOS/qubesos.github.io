@@ -1,17 +1,9 @@
 {% assign rowspan = device.versions | size %}
 {% assign range = rowspan | minus:1 %}
 {% for i in (0..range) %}
-{% if i > 0 %}
-<tr id="{{ device.brand | slugify }}_{{ device.model | slugify }}_{{ device.cpu-short | slugify }}_{{ device.chipset-short | slugify }}_{{ device.gpu-short | slugify }}_{{ i | string }}">
-{% else %}
-<tr id="{{ device.brand | slugify }}_{{ device.model | slugify }}_{{ device.cpu-short | slugify }}_{{ device.chipset-short | slugify }}_{{ device.gpu-short | slugify }}">
-{% endif %}
+<tr id="{{ device.brand | slugify }}_{{ device.model | slugify }}_{{ device.cpu-short | slugify }}_{{ device.gpu-short | slugify }}_{{ device.versions[i].credit | slugify }}_{{ device.versions[i].qubes | slugify }}">
   <td>
-    {% if i > 0 %}
-    <a href="#{{ device.brand | slugify }}_{{ device.model | slugify }}_{{ device.cpu-short | slugify }}_{{ device.chipset-short | slugify }}_{{ device.gpu-short | slugify }}_{{ i | string }}">
-    {% else %}
-    <a href="#{{ device.brand | slugify }}_{{ device.model | slugify }}_{{ device.cpu-short | slugify }}_{{ device.chipset-short | slugify }}_{{ device.gpu-short | slugify }}">
-    {% endif %}
+    <a href="#{{ device.brand | slugify }}_{{ device.model | slugify }}_{{ device.cpu-short | slugify }}_{{ device.gpu-short | slugify }}_{{ device.versions[i].credit | slugify }}_{{ device.versions[i].qubes | slugify }}">
       <strong>{{ device.brand }} {{ device.model }}</strong><br/>
       {% if device.cpu-short != "" or device.chipset-short != "" or device.gpu-short != "" %}
         <small>{{ device.cpu-short }} {{ device.chipset-short }} {{ device.gpu-short }}</small>

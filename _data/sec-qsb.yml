@@ -321,3 +321,7 @@
 - qsb: "081"
   title: "x86: MMIO Stale Data vulnerabilities (XSA-404)"
   date: 2022-06-17
+
+- qsb: "082"
+  title: "Memory management issues in PV frontend drivers"
+  date: 2022-07-05

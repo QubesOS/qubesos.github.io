@@ -1682,7 +1682,21 @@
   affected: yes
   qsb: 080-2022
 
+- xsa: 403
+  date: 2022-07-05
+  affected: yes
+  qsb: 082-2022
+
 - xsa: 404
   date: 2022-06-14
   affected: yes
   qsb: 081-2022
+
+- xsa: 405
+  date: 2022-07-05
+  affected: yes
+  qsb: 082-2022
+
+- xsa: 406
+  date: 2022-07-05
+  affected: no

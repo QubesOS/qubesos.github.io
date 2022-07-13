@@ -325,3 +325,7 @@
 - qsb: "082"
   title: "Memory management issues in PV frontend drivers"
   date: 2022-07-05
+
+- qsb: "083"
+  title: "Retbleed: Arbitrary speculative code execution with return instructions (XSA-407)"
+  date: 2022-07-13

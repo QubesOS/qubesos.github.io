@@ -1700,3 +1700,8 @@
 - xsa: 406
   date: 2022-07-05
   affected: no
+
+- xsa: 407
+  date: 2022-07-12
+  affected: yes
+  qsb: 083-2022

@@ -308,3 +308,10 @@
   role: "HCL page maintenance, HCL scripts"
   type: community
   fingerprint: 9AF3 388A 533E 73AD 1107  7E55 617D 7048 8F0E 7BC6
+
+- name: HPOA909 (Howard Chen)
+  email: hpoa.business@gmail.com
+  role: "Documentation modifier"
+  type: community
+  fingerprint: 
+  github: hpoa909

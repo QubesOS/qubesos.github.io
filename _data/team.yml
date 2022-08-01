@@ -129,6 +129,7 @@
   role: "Qubes Windows tools"
   type: emeritus
   email: alex@invisiblethingslab.com
+
 - name: Rafal Wojtczuk
   role: "Architecture and system-level work"
   type: emeritus

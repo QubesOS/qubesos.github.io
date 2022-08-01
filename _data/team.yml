@@ -125,15 +125,14 @@
   github: rootkovska
   twitter: rootkovska
 
-- name: Rafal Wojtczuk
-  role: "Architecture and system-level work"
-  type: emeritus
-  email: rafal@invisiblethingslab.com
-
 - name: Alexander Tereshkin
   role: "Qubes Windows tools"
   type: emeritus
   email: alex@invisiblethingslab.com
+- name: Rafal Wojtczuk
+  role: "Architecture and system-level work"
+  type: emeritus
+  email: rafal@invisiblethingslab.com
 
 - name: Rafał Wojdyła
   role: "Main developer of Qubes Windows tools"
@@ -162,6 +161,19 @@
   type: community
   fingerprint: 
 
+- name: HPOA909 (Howard Chen)
+  email: hpoa.business@gmail.com
+  role: "Documentation modifier"
+  type: community
+  fingerprint: 
+  github: hpoa909
+
+- name: Desobediente Civil
+  email: desci@riseup.net
+  role: "Localization team co-leader, core and documentation contributor"
+  type: community
+  fingerprint: 
+
 - name: Bruce A Downs
   email: bruceadowns@gmail.com
   role: "Various minor cleanups and miscellaneous work"
@@ -173,12 +185,6 @@
   role: "Qubes Forum administrator and moderator"
   type: community
   fingerprint: 67D7 D67D 6DB1 57ED A320 4AB5 499D 45F7 5259 D8AB
-
-- name: Desobediente Civil
-  email: desci@riseup.net
-  role: "Localization team co-leader, core and documentation contributor"
-  type: community
-  fingerprint: 
 
 - name: Davíð Steinn Geirsson
   email: david@dsg.is
@@ -308,10 +314,3 @@
   role: "HCL page maintenance, HCL scripts"
   type: community
   fingerprint: 9AF3 388A 533E 73AD 1107  7E55 617D 7048 8F0E 7BC6
-
-- name: HPOA909 (Howard Chen)
-  email: hpoa.business@gmail.com
-  role: "Documentation modifier"
-  type: community
-  fingerprint: 
-  github: hpoa909

@@ -1,8 +1,8 @@
 # The "testing", "latest", "aging", and "deprecated" entries under each release
 # can have the values "yes", "no", or a custom message to display.
 # "Latest" denotes the latest stable release.
-# "Aging" means old but still supported.
-# "Deprecated" means old and no longer supported.
+# "Aging" means not latest but still supported.
+# "Deprecated" means no longer supported.
 
 releases:
   Qubes release 4.1.1:
@@ -93,8 +93,8 @@ releases:
   Qubes release 4.0.4:
     testing: no
     latest: no
-    aging: yes
-    deprecated: no
+    aging: no
+    deprecated: yes
     sources:
       - name: qubes-os.org
         display: no

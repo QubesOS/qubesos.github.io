@@ -329,3 +329,7 @@
 - qsb: "083"
   title: "Retbleed: Arbitrary speculative code execution with return instructions (XSA-407)"
   date: 2022-07-13
+
+- qsb: "084"
+  title: "Split GPG: GnuPG file descriptor confusion and file existence leak"
+  date: 2022-08-06

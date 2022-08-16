@@ -120,13 +120,6 @@
   urls:
   - url: https://ftp.acc.umu.se/mirror/qubes-os.org/
 
-- organization: LinuxPizza
-  org_url: https://linux.pizza/
-  location: Sweden
-  urls:
-  - url: https://mirror.linux.pizza/qubes-os.org/
-  - url: rsync://mirror.linux.pizza/mirror/qubes-os.org/
-
 - organization: UKFast
   org_url: https://www.ukfast.co.uk/
   location: United Kingdom

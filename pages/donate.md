@@ -15,11 +15,11 @@ Your donation directly supports the continued development of Qubes OS.
 
 ## Ways to donate
 
-We accept monetary donations via Bitcoin and credit card in the following three ways:
+We accept monetary donations in the following ways:
 
 ### 1. Give a one-time donation
 
-Donating with Bitcoin ensures that 100% of your money supports Qubes development because we do not incur any administrative costs.
+Donating with cryptocurrency ensures that 100% of your money supports Qubes development because we do not incur any administrative costs.
 With credit card donations, [we lose roughly 14%](https://docs.opencollective.foundation/how-it-works/fees) to administrative costs.
 
 **<i class="fa fa-2x fa-fw black-icon fa-bitcoin"></i> Bitcoin (BTC):** `3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq` ([How to verify our Bitcoin address](#how-do-i-verify-your-bitcoin-address))
@@ -50,7 +50,7 @@ If you are a Qubes OS user or support our cause, help us expand our community by
 - Privacy advocates
 - IT companies
 - Individuals who value and appreciate privacy in general
-- Bitcoin companies
+- Cryptocurrency companies
 - Sysadmins and other professionals who work with security
 
 There are also [many more ways to contribute](/doc/contributing/)!
@@ -86,7 +86,7 @@ If we were to allocate these limited resources to providing support to individua
 
 ### Is my donation tax deductible?
 
-Donations via credit card or Bitcoin to the Qubes project are not tax deductible.
+Donations via credit card or cryptocurrency to the Qubes OS Project are not tax deductible.
 Donations via [EU Bank Transfer](#how-can-i-donate-via-eu-bank-transfer) should be tax deductible.
 
 ### How can I donate via EU bank transfer?

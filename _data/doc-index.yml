@@ -4,11 +4,17 @@
 - title: Introduction
   category: introduction
   sub-pages:
+    - url: /intro/
+    - url: /screenshots/
+    - url: /video-tours/
     - url: /doc/getting-started/
     - url: /faq/
     - url: /doc/issue-tracking/
     - url: /support/
     - url: /doc/contributing/
+    - url: /statistics/
+    - url: /code-of-conduct/
+    - url: /privacy/
 
 - title: User documentation
   subtitle: Core documentation for Qubes users.
@@ -22,12 +28,16 @@
       - url: /doc/certified-hardware/
       - url: /doc/community-recommended-hardware/
       - url: /hcl/
+      - url: /doc/how-to-use-the-hcl/
 
   - title: Downloading, installing, and upgrading Qubes
     subcategory: downloading-installing-upgrading
     sub-pages:
       - url: /downloads/
+      - url: /downloads/mirrors/
       - url: /doc/installation-guide/
+      - url: /doc/install-security/
+      - url: /doc/custom-install/
       - url: /doc/upgrade/
       - url: /doc/supported-releases/
       - url: /doc/testing/
@@ -48,13 +58,16 @@
       - url: /doc/how-to-use-usb-devices/
       - url: /doc/how-to-use-pci-devices/
       - url: /doc/how-to-use-optical-discs/
+      - url: /doc/how-to-reinstall-a-template/
 
   - title: Templates
     subcategory: templates
     sub-pages:
       - url: /doc/templates/
       - url: /doc/templates/fedora/
+      - url: /doc/templates/fedora/in-place-upgrade/
       - url: /doc/templates/debian/
+      - url: /doc/templates/debian/in-place-upgrade/
       - url: /doc/templates/minimal/
       - url: /doc/templates/xfce/
 
@@ -63,6 +76,7 @@
     sub-pages:
       - url: /doc/installation-troubleshooting/
       - url: /doc/update-troubleshooting/
+      - url: /doc/debian-and-whonix-update-troubleshooting/
       - url: /doc/hardware-troubleshooting/
       - url: /doc/uefi-troubleshooting/
       - url: /doc/autostart-troubleshooting/
@@ -180,12 +194,14 @@
     sub-pages:
       - url: /doc/qfilecopy/
       - url: /doc/qmemman/
-      - url: /doc/dvm-impl/
+      - url: /doc/disposablevm-implementation/
       - url: /doc/dom0-secure-updates/
       - url: /doc/qrexec/
+      - url: /doc/qrexec2/
       - url: /doc/qrexec-internals/
       - url: /doc/qrexec-socket-services/
       - url: /doc/admin-api/
+      - url: /doc/qfileexchgd/
 
   - title: Debugging
     subcategory: debugging
@@ -202,6 +218,7 @@
     subcategory: building
     sub-pages:
       - url: /doc/qubes-builder/
+      - url: /doc/qubes-builder-details/
       - url: /doc/development-workflow/
       - url: /doc/qubes-iso-building/
       - url: /doc/qubes-template-configs/

@@ -23,6 +23,13 @@ With credit card donations, [we lose roughly 14%](https://docs.opencollective.fo
 
 **<i class="fa fa-2x fa-fw black-icon fa-bitcoin"></i> Bitcoin (BTC):** `3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq` ([How to verify our Bitcoin address](#how-do-i-verify-your-bitcoin-address))
 
+**<i class="fa fa-2x fa-fw black-icon fa-ethereum"></i> Ethereum Mainnet:** `0xDaa04647e8ecb616801F9bE89712771F6D291a0C` ([How to verify our Ethereum address](#how-do-i-verify-your-ethereum-address))
+
+<div class="alert alert-danger" role="alert">
+  <i class="fa fa-exclamation-triangle"></i>
+  <b>Warning:</b> This <a href="https://gnosis-safe.io/">Gnosis Safe</a> Ethereum address supports <b>ether (ETH)</b> and all assets that fully comply with the <a href="https://ethereum.org/en/developers/docs/standards/tokens/erc-20/">ERC-20</a> standard (e.g., USDT, USDC, and DAI), but <em>only</em> on Ethereum Mainnet. Please <em>do not</em> send assets on any other network to this address, or else your donation may be lost. For example, please <em>do not</em> send assets on any Ethereum Layer 2 solution (e.g., Arbitrum, Optimism) or any sidechain (e.g., Polygon, xDai) to this address.
+</div>
+
 **<i class="fab fa-2x fa-fw black-icon fa-monero"></i> Monero (XMR):** `46PrVgXBdD4cps3SVkHoCDZvMfFdG5q4ej5DYKpuKpTnjiL7pv6KGv7dPh4DPijCGqTbxLDPqZJkobd9SttMiauoP1CQU4y` ([How to verify our Monero address](#how-do-i-verify-your-monero-address))
 
 **[<i class="fa fa-2x fa-fw black-icon fa-credit-card"></i> Credit card or PayPal via Open Collective](https://opencollective.com/qubes-os)**
@@ -124,6 +131,11 @@ We provide [detailed instructions for verifying the digital signatures](/securit
 
 The Qubes Project maintains a [decentralized Bitcoin fund using a multi-signature wallet](/news/2016/07/13/qubes-distributed-fund/).
 This means that no single person is capable of spending these funds.
+
+### How do I verify your Ethereum address?
+
+The donation address can be verified via the [Qubes Security Pack](/security/pack/), specifically in the [fund directory](https://github.com/QubesOS/qubes-secpack/tree/master/fund).
+We provide [detailed instructions for verifying the digital signatures](/security/pack/#how-to-obtain-and-authenticate).
 
 ### How do I verify your Monero address?
 

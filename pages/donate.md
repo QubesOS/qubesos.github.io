@@ -27,7 +27,7 @@ With credit card donations, [we lose roughly 14%](https://docs.opencollective.fo
 
 <div class="alert alert-danger" role="alert">
   <i class="fa fa-exclamation-triangle"></i>
-  <b>Warning:</b> This <a href="https://gnosis-safe.io/">Gnosis Safe</a> Ethereum address supports ether (ETH) and all assets that fully comply with the <a href="https://ethereum.org/en/developers/docs/standards/tokens/erc-20/">ERC-20</a> standard (e.g., USDT, USDC, and DAI), but <em>only</em> on <b>Ethereum Mainnet</b>. Please <em>do not</em> send assets on any other network to this address, or else your donation may be lost. For example, please <em>do not</em> send assets on any Ethereum Layer 2 solution (e.g., Arbitrum, Optimism) or any sidechain (e.g., Polygon, xDai) to this address.
+  <b>Warning:</b> This <a href="https://gnosis-safe.io/">Gnosis Safe</a> Ethereum address supports ether (ETH) and all assets that fully comply with the <a href="https://ethereum.org/en/developers/docs/standards/tokens/erc-20/">ERC-20</a> standard (e.g., USDT, USDC, and DAI), but <em>only</em> on <a href="https://ethereum.org/en/developers/docs/networks/#ethereum-mainnet">Ethereum Mainnet</a>. Please <em>do not</em> send assets on any other network to this address, or else your donation may be lost. For example, please <em>do not</em> send assets on any Ethereum Layer 2 solution (e.g., Arbitrum, Optimism) or any sidechain (e.g., Polygon, xDai) to this address.
 </div>
 
 **<i class="fab fa-2x fa-fw black-icon fa-monero"></i> Monero (XMR):** `46PrVgXBdD4cps3SVkHoCDZvMfFdG5q4ej5DYKpuKpTnjiL7pv6KGv7dPh4DPijCGqTbxLDPqZJkobd9SttMiauoP1CQU4y` ([How to verify our Monero address](#how-do-i-verify-your-monero-address))

@@ -56,6 +56,25 @@ Git submodules for content:
 
 ## Instructions
 
+### Rootless Podman
+
+Tested with a Fedora 38 XFCE qube.
+
+1. Install `podman`.
+
+2. Clone this repo, including all submodules, and enter it:
+
+        $ git clone --recursive https://github.com/QubesOS/qubesos.github.io.git
+        $ cd qubesos.github.io/
+
+3. Build and serve the website:
+
+        $ make rootless
+
+4. Open your browser and navigate to:
+
+        http://127.0.0.1:4000/
+
 ### Podman Compose
 
 These instructions have been tested on a Fedora 33 qube. Podman is not

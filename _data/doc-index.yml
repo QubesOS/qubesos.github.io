@@ -45,6 +45,7 @@
   - title: How-to guides
     subcategory: how-to-guides
     sub-pages:
+      - url: /doc/how-to-organize-your-qubes/
       - url: /doc/how-to-update/
       - url: /doc/how-to-back-up-restore-and-migrate/
       - url: /doc/how-to-copy-and-paste-text/

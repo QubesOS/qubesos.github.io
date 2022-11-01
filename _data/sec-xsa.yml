@@ -1359,6 +1359,10 @@
   affected: yes
   qsb: 063-2020
 
+- xsa: 326
+  date: 2022-11-01
+  affected: no
+
 - xsa: 327
   date: 2020-07-07
   affected: no
@@ -1722,6 +1726,43 @@
   date: 2022-10-11
   affected: no
 
+- xsa: 412
+  date: 2022-11-01
+  affected: no
+
 - xsa: 413
   date: 2022-10-11
+  affected: no
+
+- xsa: 414
+  date: 2022-11-01
+  affected: yes
+  qsb: 085-2022
+
+- xsa: 415
+  date: 2022-11-01
+  affected: no
+
+- xsa: 416
+  date: 2022-11-01
+  affected: no
+
+- xsa: 417
+  date: 2022-11-01
+  affected: no
+
+- xsa: 418
+  date: 2022-11-01
+  affected: no
+
+- xsa: 419
+  date: 2022-11-01
+  affected: no
+
+- xsa: 420
+  date: 2022-11-01
+  affected: no
+
+- xsa: 421
+  date: 2022-11-01
   affected: no

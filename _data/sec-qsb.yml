@@ -333,3 +333,7 @@
 - qsb: "084"
   title: "Split GPG: GnuPG file descriptor confusion and file existence leak"
   date: 2022-08-06
+
+- qsb: "085"
+  title: "Xenstore: Guests can crash xenstored (XSA-414)"
+  date: 2022-11-01

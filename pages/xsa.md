@@ -6,12 +6,23 @@ ref: 214
 title: Xen security advisory (XSA) tracker
 ---
 
-This tracker shows whether Qubes OS is affected by any given [Xen security
-advisory (XSA)](https://xenbits.xen.org/xsa/). Shortly after a new XSA is
-published, we will add a new row to this tracker. Whenever Qubes is
-significantly affected by an XSA, a [Qubes security bulletin
-(QSB)](/security/qsb/) is published, and a link to that QSB is added to
-the row for the associated XSA.
+Qubes OS uses the [Xen
+hypervisor](https://wiki.xenproject.org/wiki/Xen_Project_Software_Overview) as
+part of its [architecture](/doc/architecture/). When the [Xen
+Project](https://xenproject.org/) publicly discloses a vulnerability in the Xen
+hypervisor, they issue a notice called a [Xen security advisory
+(XSA)](https://xenproject.org/developers/security-policy/). Vulnerabilities in
+the Xen hypervisor sometimes have security implications for Qubes OS. When they
+do, we issue a notice called a [Qubes security bulletin (QSB)](/security/qsb/).
+(QSBs are also issued for non-Xen vulnerabilities.) However, QSBs can provide
+only *positive* confirmation that certain XSAs *do* affect the security of
+Qubes OS. QSBs cannot provide *negative* confirmation that other XSAs do *not*
+affect the security of Qubes OS. Therefore, we also maintain this XSA tracker,
+which is a comprehensive list of all XSAs publicly disclosed to date, including
+whether each one affects the security of Qubes OS. Shortly after a new XSA is
+published, we will add a new row to this tracker. If that XSA affects the
+security of Qubes OS, its row will also include a link to the associated [Qubes
+security bulletin (QSB)](/security/qsb/).
 
 Under the "Is Qubes Affected?" column, there are two possible values: **Yes**
 or **No**.

@@ -337,3 +337,7 @@
 - qsb: "085"
   title: "Xenstore: Guests can crash xenstored (XSA-414)"
   date: 2022-11-01
+
+- qsb: "086"
+  title: "Speculative security issues on AMD CPUs (XSA-422)"
+  date: 2022-11-08

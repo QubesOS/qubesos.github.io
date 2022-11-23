@@ -341,3 +341,7 @@
 - qsb: "086"
   title: "Speculative security issues on AMD CPUs (XSA-422)"
   date: 2022-11-08
+
+- qsb: "087"
+  title: "Qrexec: Injection of unsanitized data into log output"
+  date: 2022-11-23

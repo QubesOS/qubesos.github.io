@@ -1771,3 +1771,11 @@
   date: 2022-11-08
   affected: yes
   qsb: 086-2022
+
+- xsa: 423
+  date: 2022-12-06
+  affected: no
+
+- xsa: 424
+  date: 2022-12-06
+  affected: no

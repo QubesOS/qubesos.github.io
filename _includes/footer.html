@@ -36,7 +36,14 @@
       </a>
       <ul class="list-unstyled">
         {% for sub in section.sub-pages %}
-        <li><a href="{{sub.url}}">{{sub.title}}</a></li>
+        <li>
+          <a
+            {% if sub.rel %}
+              rel="{{sub.rel}}"
+            {% endif %}
+            href="{{sub.url}}">{{sub.title}}
+          </a>
+        </li>
         {% endfor %}
       </ul>
     </div>

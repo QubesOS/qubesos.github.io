@@ -34,12 +34,6 @@
       quote: 'Fun fact: We use @QubesOS on a majority of our workstations since a while back, and boy do we like it! #qubes #security #privacy #vpn'
       name: Mullvad
       occupation: privacy-focused VPN provider
-    - avatar: https://twitter.com/petertoddbtc/status/924981145871060996
-      img: /attachment/site/endorsement-peter-todd.jpg
-      tweet: https://twitter.com/petertoddbtc/status/924981145871060996
-      quote: Donated a % of my consulting company's last year revenue to @QubesOS. I rely on it for all my work, and recommend it to clients too.
-      name: Peter Todd
-      occupation:  Applied Cryptography Consultant
     - avatar: https://twitter.com/kennwhite/status/914924731400425475
       img: /attachment/site/endorsement-kenn-white.jpg
       tweet: https://twitter.com/kennwhite/status/914924731400425475
@@ -52,18 +46,6 @@
       quote: Trying out Qubes OS (qubes-os.org) recently; linux distro designed around increased security by virtualizing everything and making it really convenient to hop between VMs. Surprisingly good user-friendliness!
       name: Vitalik Buterin
       occupation: creator of Ethereum
-    - avatar: https://twitter.com/hashbreaker/status/577206817475850240
-      img: /attachment/site/endorsement-daniel-j-bernstein.jpg
-      tweet: https://twitter.com/hashbreaker/status/577206817475850240
-      quote: "Happy thought of the day: An attacker who merely finds a browser bug can't listen to my microphone except when I've told Qubes to enable it."
-      name: Daniel J. Bernstein
-      occupation: mathematician, cryptologist, and computer scientist
-    - avatar: https://twitter.com/isislovecruft
-      img: /attachment/site/endorsement-isis-agora-lovecruft.jpg
-      tweet: https://twitter.com/isislovecruft
-      quote: With @QubesOS, I feel more comfortable accessing Tor Project infrastructure from the same laptop I use to execute random GameBoy ROMs I downloaded from the internet.
-      name: Isis Agora Lovecruft
-      occupation: cypherpunk and Tor Project core developer
     - avatar: https://twitter.com/legind/status/742504400854257664
       img: /attachment/site/endorsement-bill-budington.jpg
       tweet: https://twitter.com/legind/status/742504400854257664

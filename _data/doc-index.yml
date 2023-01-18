@@ -71,6 +71,7 @@
       - url: /doc/templates/debian/in-place-upgrade/
       - url: /doc/templates/minimal/
       - url: /doc/templates/xfce/
+      - url: /dowc/windows/
 
   - title: Troubleshooting
     subcategory: troubleshooting

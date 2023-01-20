@@ -13,11 +13,6 @@
       name: Freedom of the Press Foundation
       occupation: non-profit dedicated to supporting free speech and public-interest journalism
     - avatar:
-      img: /attachment/site/endorsement-christopher-soghoian.jpg
-      quote: I am so much happier and less stressed out after switching to Qubes OS. Can wholeheartedly recommend.
-      name: Christopher Soghoian
-      occupation: privacy researcher and activist
-    - avatar:
       img: /attachment/site/lets-encrypt-logo.svg
       quote: Qubes OS gives us greater confidence in the security of systems being used to remotely access our servers, mainly because powerful physical and logical privilege separation between workspaces allows our engineers to select appropriate degrees of isolation for different processes.
       name: Let's Encrypt

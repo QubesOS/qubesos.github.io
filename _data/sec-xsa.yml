@@ -1783,3 +1783,7 @@
 - xsa: 425
   date: 2023-01-25
   affected: no
+
+- xsa: 426
+  date: 2023-02-14
+  affected: no

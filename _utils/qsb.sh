@@ -70,7 +70,7 @@ cat $QSB_FILE >> $POST
 printf "
 \`\`\`
 
-Source: <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-${QSB}-${YEAR}.txt>
+**Source:** <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-${QSB}-${YEAR}.txt>
 
 ## [Marek Marczykowski-Górecki](/team/#marek-marczykowski-górecki)'s PGP signature
 
@@ -79,7 +79,7 @@ Source: <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-${QSB}-${
 cat $SIG_MAREK >> $POST
 printf "\`\`\`
 
-Source: <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-${QSB}-${YEAR}.txt.sig.marmarek>
+**Source:** <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-${QSB}-${YEAR}.txt.sig.marmarek>
 
 ## [Simon Gaiser (aka HW42)](/team/#simon-gaiser-aka-hw42)'s PGP signature
 
@@ -88,7 +88,7 @@ Source: <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-${QSB}-${
 cat $SIG_SIMON >> $POST
 printf "\`\`\`
 
-Source: <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-${QSB}-${YEAR}.txt.sig.simon>
+**Source:** <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-${QSB}-${YEAR}.txt.sig.simon>
 
 ## What is the purpose of this announcement?
 
@@ -104,7 +104,7 @@ QSBs tell you what actions you must take in order to protect yourself from recen
 
 ## What are the PGP signatures that accompany QSBs?
 
-A [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) signature is a cryptographic [digital signature](https://en.wikipedia.org/wiki/Digital_signature) made in accordance with the [OpenPGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP) standard. PGP signatures can be cryptographically verified with programs like [GNU Privacy Guard (GPG)](https://en.wikipedia.org/wiki/GNU_Privacy_Guard). The Qubes security team cryptographically signs all QSBs so that Qubes users have a reliable way to check whether QSBs are genuine. The only way to be certain that a QSB is authentic is by verifying its PGP signatures.
+A [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) signature is a cryptographic [digital signature](https://en.wikipedia.org/wiki/Digital_signature) made in accordance with the [OpenPGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP) standard. PGP signatures can be cryptographically verified with programs like [GNU Privacy Guard (GPG)](https://gnupg.org/). The Qubes security team cryptographically signs all QSBs so that Qubes users have a reliable way to check whether QSBs are genuine. The only way to be certain that a QSB is authentic is by verifying its PGP signatures.
 
 ## Why should I care whether a QSB is authentic?
 

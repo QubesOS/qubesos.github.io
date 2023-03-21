@@ -345,3 +345,7 @@
 - qsb: "087"
   title: "Qrexec: Injection of unsanitized data into log output"
   date: 2022-11-23
+
+- qsb: "088"
+  title: "Two Xen issues affecting PV (stub-)domains (XSA-428, XSA-429)"
+  date: 2023-03-21

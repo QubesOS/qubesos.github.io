@@ -1787,3 +1787,17 @@
 - xsa: 426
   date: 2023-02-14
   affected: no
+
+- xsa: 427
+  date: 2023-03-21
+  affected: no
+
+- xsa: 428
+  date: 2023-03-21
+  affected: yes
+  qsb: 088-2023
+
+- xsa: 429
+  date: 2023-03-21
+  affected: yes
+  qsb: 088-2023

@@ -12,7 +12,7 @@ releases:
     deprecated: no
     sources:
       - name: qubes-os.org
-        display: true
+        display: false
         method: HTTPS
         type: ISO
         filename: Qubes-R4.1.2-x86_64.iso
@@ -23,7 +23,7 @@ releases:
           sig: https://ftp.qubes-os.org/iso/Qubes-R4.1.2-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-4-signing-key.asc
       - name: qubes-os.org
-        display: true
+        display: false
         method: BitTorrent
         type: Torrent
         filename: Qubes-R4.1.2-x86_64.torrent
@@ -34,7 +34,7 @@ releases:
           sig: https://ftp.qubes-os.org/iso/Qubes-R4.1.2-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-4-signing-key.asc
       - name: kernel.org
-        display: false
+        display: true
         method: HTTPS
         type: ISO
         filename: Qubes-R4.1.2-x86_64.iso
@@ -56,7 +56,7 @@ releases:
           sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R4.1.2-x86_64.iso.asc
           key: https://keys.qubes-os.org/keys/qubes-release-4-signing-key.asc
       - name: kernel.org
-        display: false
+        display: true
         method: BitTorrent
         type: Torrent
         filename: Qubes-R4.1.2-x86_64.torrent

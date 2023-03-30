@@ -11,32 +11,53 @@ ref: 5
 title: Donate to Qubes
 ---
 
-Your donation directly supports the continued development of Qubes OS.
+Your donation directly supports the continued development of Qubes OS. We accept monetary donations in the following ways:
 
-## Ways to donate
-
-We accept monetary donations in the following ways:
-
-### 1. Give a one-time donation
+## Option 1: Give a one-time donation
 
 With credit card donations, [we lose roughly 14%](https://docs.opencollective.foundation/how-it-works/fees) to administrative costs, while donating cryptocurrency avoids these costs.
 
-**<i class="fa fa-2x fa-fw black-icon fa-bitcoin"></i> Bitcoin (BTC):** `3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq` ([How to verify our Bitcoin address](#how-do-i-verify-your-bitcoin-address))
+### <i class="fa fa-2x fa-bitcoin"></i> Bitcoin (BTC)
 
-**<i class="fa fa-2x fa-fw black-icon fa-brands fa-ethereum"></i> Ethereum (Mainnet only):** `0xDaa04647e8ecb616801F9bE89712771F6D291a0C` ([How to verify our Ethereum address](#how-do-i-verify-your-ethereum-address))
+[![Qubes Bitcoin donation address QR code](/attachment/site/qr-bitcoin.png)](/attachment/site/qr-bitcoin.png)
+
+```
+3GakuQQDUGyyUnV1p5Jc3zd6CpQDkDwmDq
+```
+[Verify our Bitcoin address.](#how-do-i-verify-your-bitcoin-address)
+
+### <i class="fa fa-2x fa-brands fa-ethereum"></i> Ethereum (Mainnet only)
 
 <div class="alert alert-danger" role="alert">
   <i class="fa fa-exclamation-triangle"></i>
   <b>Warning:</b> This <a href="https://gnosis-safe.io/">Gnosis Safe</a> Ethereum address supports ether (ETH) and all assets that fully comply with the <a href="https://ethereum.org/en/developers/docs/standards/tokens/erc-20/">ERC-20</a> standard (e.g., USDT, USDC, and DAI), but <em>only</em> on <a href="https://ethereum.org/en/developers/docs/networks/#ethereum-mainnet">Ethereum Mainnet</a>. Please <em>do not</em> send assets on any other network to this address, or else your donation may be lost. For example, please <em>do not</em> send assets on any Ethereum Layer 2 solution (e.g., Arbitrum, Optimism) or any sidechain (e.g., Polygon, xDai) to this address.
 </div>
 
-**<i class="fab fa-2x fa-fw black-icon fa-monero"></i> Monero (XMR):** `46PrVgXBdD4cps3SVkHoCDZvMfFdG5q4ej5DYKpuKpTnjiL7pv6KGv7dPh4DPijCGqTbxLDPqZJkobd9SttMiauoP1CQU4y` ([How to verify our Monero address](#how-do-i-verify-your-monero-address))
+[![Qubes Ethereum donation address QR code](/attachment/site/qr-ethereum.png)](/attachment/site/qr-ethereum.png)
 
-**[<i class="fa fa-2x fa-fw black-icon fa-credit-card"></i> Credit card or PayPal via Open Collective](https://opencollective.com/qubes-os)**
+```
+0xDaa04647e8ecb616801F9bE89712771F6D291a0C
+```
+[Verify our Ethereum address.](#how-do-i-verify-your-ethereum-address)
 
-**[<i class="fa fa-2x fa-fw black-icon fa-bank"></i> Tax-deductible EU bank transfer](#how-can-i-donate-via-eu-bank-transfer)**
+### <i class="fab fa-2x fa-monero"></i> Monero (XMR)
 
-### 2. Join our sustaining supporters
+[![Qubes Monero donation address QR code](/attachment/site/qr-monero.png)](/attachment/site/qr-monero.png)
+
+```
+46PrVgXBdD4cps3SVkHoCDZvMfFdG5q4ej5DYKpuKpTnjiL7pv6KGv7dPh4DPijCGqTbxLDPqZJkobd9SttMiauoP1CQU4y
+```
+[Verify our Monero address.](#how-do-i-verify-your-monero-address)
+
+### <i class="fa fa-2x black-icon fa-credit-card"></i> Credit card or PayPal
+
+[Donate on Open Collective.](https://opencollective.com/qubes-os)
+
+### <i class="fa fa-2x black-icon fa-bank"></i> Tax-deductible EU bank transfer
+
+[Donate via tax-deductible EU bank transfer.](#how-can-i-donate-via-eu-bank-transfer)
+
+## Option 2: Join our sustaining supporters
 
 Please consider becoming a sustaining supporter of the Qubes Project by giving a recurring monthly donation.
 Qubes is a long and ongoing project.
@@ -45,7 +66,7 @@ If we know how much funding to expect every month, we can better plan our effort
 Set up an [automatically recurring donation on our Open Collective page](https://opencollective.com/qubes-os#support).
 Thank you!
 
-### 3. Become a Qubes Partner
+## Option 3: Become a Qubes Partner
 
 Are you an organization, company, or individual who believes in our vision and wants to make an impact on our efforts? [Become a Qubes Partner](/partners/) by giving a significant financial contribution.
 

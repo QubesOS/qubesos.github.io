@@ -6,7 +6,6 @@ redirect_from:
 - /people/
 - /doc/QubesDevelopers/
 - /wiki/QubesDevelopers/
-- /join/
 ref: 8
 title: Team
 ---

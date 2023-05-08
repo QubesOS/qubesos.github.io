@@ -131,6 +131,7 @@
     url: /team/#community-contributors
   - title: Join the team
     url: /join/
+    icon: fa-user-plus
 
 - title: Donate
   url: /donate/

@@ -14,8 +14,8 @@ Besides the positions below, there are many different ways you can [contribute t
 ### Main responsibilities
 
 - Updating the website when the project needs it
-- Fixing problems with the website that crop up
-- Reporting problems you can't fix yourself
+- Fixing problems with the website
+- Reporting website problems you can't fix yourself
 - Handling website repo pull requests
 
 ### Useful skills
@@ -29,8 +29,9 @@ Besides the positions below, there are many different ways you can [contribute t
 
 ### Main responsibilities
 
-- Copy editing
-- Updating documentation
+- Copy editing documentation
+- Updating documentation content
+- Fixing problems with the documentation
 - Reporting documentation problems you can't fix yourself
 - Handling documentation repo pull requests
 

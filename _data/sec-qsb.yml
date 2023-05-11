@@ -349,3 +349,7 @@
 - qsb: "088"
   title: "Two Xen issues affecting PV (stub-)domains (XSA-428, XSA-429)"
   date: 2023-03-21
+
+- qsb: "089"
+  title: "Qrexec: Memory corruption in service request handling"
+  date: 2023-05-11

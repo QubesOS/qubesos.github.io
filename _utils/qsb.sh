@@ -60,7 +60,7 @@ title: \"QSB-${QSB}: ${TITLE}\"
 categories: security
 ---
 
-We have published [Qubes Security Bulletin (QSB) ${QSB}: ${TITLE}](https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-${QSB}-${YEAR}.txt). The text of this QSB and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this QSB, please see the end of this announcement.
+We have published [Qubes Security Bulletin (QSB) ${QSB}: ${TITLE}](https://github.com/QubesOS/qubes-secpack/blob/main/QSBs/qsb-${QSB}-${YEAR}.txt). The text of this QSB and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this QSB, please see the end of this announcement.
 
 ## Qubes Security Bulletin $QSB
 
@@ -70,7 +70,7 @@ cat $QSB_FILE >> $POST
 printf "
 \`\`\`
 
-**Source:** <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-${QSB}-${YEAR}.txt>
+**Source:** <https://github.com/QubesOS/qubes-secpack/blob/main/QSBs/qsb-${QSB}-${YEAR}.txt>
 
 ## [Marek Marczykowski-Górecki](/team/#marek-marczykowski-górecki)'s PGP signature
 
@@ -79,7 +79,7 @@ printf "
 cat $SIG_MAREK >> $POST
 printf "\`\`\`
 
-**Source:** <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-${QSB}-${YEAR}.txt.sig.marmarek>
+**Source:** <https://github.com/QubesOS/qubes-secpack/blob/main/QSBs/qsb-${QSB}-${YEAR}.txt.sig.marmarek>
 
 ## [Simon Gaiser (aka HW42)](/team/#simon-gaiser-aka-hw42)'s PGP signature
 
@@ -88,7 +88,7 @@ printf "\`\`\`
 cat $SIG_SIMON >> $POST
 printf "\`\`\`
 
-**Source:** <https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-${QSB}-${YEAR}.txt.sig.simon>
+**Source:** <https://github.com/QubesOS/qubes-secpack/blob/main/QSBs/qsb-${QSB}-${YEAR}.txt.sig.simon>
 
 ## What is the purpose of this announcement?
 

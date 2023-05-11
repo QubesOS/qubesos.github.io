@@ -42,7 +42,7 @@ title: \"Qubes canary ${CANARY}\"
 categories: security
 ---
 
-We have published [Qubes canary ${CANARY}](https://github.com/QubesOS/qubes-secpack/blob/master/canaries/canary-${CANARY}-${YEAR}.txt). The text of this canary and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this canary, please see the end of this announcement.
+We have published [Qubes canary ${CANARY}](https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CANARY}-${YEAR}.txt). The text of this canary and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this canary, please see the end of this announcement.
 
 ## Qubes canary $CANARY
 
@@ -52,7 +52,7 @@ cat $CANARY_FILE >> $POST
 printf "
 \`\`\`
 
-Source: <https://github.com/QubesOS/qubes-secpack/blob/master/canaries/canary-${CANARY}-${YEAR}.txt>
+Source: <https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CANARY}-${YEAR}.txt>
 
 ## [Marek Marczykowski-Górecki](/team/#marek-marczykowski-górecki)'s PGP signature
 
@@ -61,7 +61,7 @@ Source: <https://github.com/QubesOS/qubes-secpack/blob/master/canaries/canary-${
 cat $SIG_MAREK >> $POST
 printf "\`\`\`
 
-Source: <https://github.com/QubesOS/qubes-secpack/blob/master/canaries/canary-${CANARY}-${YEAR}.txt.sig.marmarek>
+Source: <https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CANARY}-${YEAR}.txt.sig.marmarek>
 
 ## [Simon Gaiser (aka HW42)](/team/#simon-gaiser-aka-hw42)'s PGP signature
 
@@ -70,7 +70,7 @@ Source: <https://github.com/QubesOS/qubes-secpack/blob/master/canaries/canary-${
 cat $SIG_SIMON >> $POST
 printf "\`\`\`
 
-Source: <https://github.com/QubesOS/qubes-secpack/blob/master/canaries/canary-${CANARY}-${YEAR}.txt.sig.simon>
+Source: <https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CANARY}-${YEAR}.txt.sig.simon>
 
 ## What is the purpose of this announcement?
 

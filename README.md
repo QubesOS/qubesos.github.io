@@ -58,8 +58,7 @@ Git submodules for content:
 
 ### Podman Compose
 
-These instructions have been tested on a Fedora 33 qube. Podman is not
-available in Debian 10. You must use a Fedora-based machine or Debian 11.
+These instructions have been tested on a Fedora 36 qube.
 
 1. Install `podman` and `podman-compose`.
 

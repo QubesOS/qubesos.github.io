@@ -209,7 +209,6 @@
     sub-pages:
       - url: /doc/test-bench/
       - url: /doc/automated-tests/
-      - url: /doc/profiling/
       - url: /doc/vm-interface/
       - url: /doc/windows-debugging/
       - url: /doc/safe-remote-ttys/

@@ -101,7 +101,7 @@
       - url: /doc/device-handling-security/
       - url: /doc/anti-evil-maid/
       - url: /doc/split-gpg/
-      - url: /doc/u2f-proxy/
+      - url: /doc/ctap-proxy/
       - url: /doc/yubikey/
 
   - title: Advanced topics

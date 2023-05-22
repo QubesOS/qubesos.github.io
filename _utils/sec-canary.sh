@@ -38,13 +38,13 @@ POST=${HOME}/repo/qubes/qubesos.github.io/_posts/${POST_DATE}-canary-${CANARY}.m
 # Generate the post
 printf -- "---
 layout: post
-title: \"Qubes canary ${CANARY}\"
+title: \"Qubes Canary ${CANARY}\"
 categories: security
 ---
 
-We have published [Qubes canary ${CANARY}](https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CANARY}-${YEAR}.txt). The text of this canary and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this canary, please see the end of this announcement.
+We have published [Qubes Canary ${CANARY}](https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CANARY}-${YEAR}.txt). The text of this canary and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this canary, please see the end of this announcement.
 
-## Qubes canary $CANARY
+## Qubes Canary $CANARY
 
 \`\`\`
 " >> $POST
@@ -120,13 +120,13 @@ If you fail to notice that a canary is unhealthy or has died, you may continue t
 cat $SECPACK >> $POST
 printf "
 
-For this announcement (Qubes canary $CANARY), the commands are:
+For this announcement (Qubes Canary $CANARY), the commands are:
 
 \`\`\`
 $ gpg --verify canary-${CANARY}-${YEAR}.txt.sig.marmarek canary-${CANARY}-${YEAR}.txt
 $ gpg --verify canary-${CANARY}-${YEAR}.txt.sig.simon canary-${CANARY}-${YEAR}.txt
 \`\`\`
 
-You can also verify the signatures directly from this announcement in addition to or instead of verifying the files from the qubes-secpack. Simply copy and paste the Qubes canary $CANARY text into a plain text file and do the same for both signature files. Then, perform the same authentication steps as listed above, substituting the filenames above with the names of the files you just created." >> $POST
+You can also verify the signatures directly from this announcement in addition to or instead of verifying the files from the qubes-secpack. Simply copy and paste the Qubes Canary $CANARY text into a plain text file and do the same for both signature files. Then, perform the same authentication steps as listed above, substituting the filenames above with the names of the files you just created." >> $POST
 
 exit

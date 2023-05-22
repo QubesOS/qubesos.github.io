@@ -60,7 +60,7 @@ title: \"QSB-${QSB}: ${TITLE}\"
 categories: security
 ---
 
-We have published [Qubes Security Bulletin (QSB) ${QSB}: ${TITLE}](https://github.com/QubesOS/qubes-secpack/blob/main/QSBs/qsb-${QSB}-${YEAR}.txt). The text of this QSB and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this QSB, please see the end of this announcement.
+We have published [Qubes Security Bulletin ${QSB}: ${TITLE}](https://github.com/QubesOS/qubes-secpack/blob/main/QSBs/qsb-${QSB}-${YEAR}.txt). The text of this QSB and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this QSB, please see the end of this announcement.
 
 ## Qubes Security Bulletin $QSB
 
@@ -92,9 +92,9 @@ printf "\`\`\`
 
 ## What is the purpose of this announcement?
 
-The purpose of this announcement is to inform the Qubes community that a new Qubes Security Bulletin (QSB) has been published.
+The purpose of this announcement is to inform the Qubes community that a new Qubes security bulletin (QSB) has been published.
 
-## What is a Qubes Security Bulletin (QSB)?
+## What is a Qubes security bulletin (QSB)?
 
 A Qubes security bulletin (QSB) is a security announcement issued by the [Qubes security team](/security/#qubes-security-team). A QSB typically provides a summary and impact analysis of one or more recently-discovered software vulnerabilities, including details about patching to address them. A list of all QSBs is available [here](/security/qsb/).
 

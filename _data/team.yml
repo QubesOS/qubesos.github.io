@@ -4,13 +4,13 @@
   icon: fa-newspaper-o
   type: inquiries
   email: press@qubes-os.org
-  fingerprint: 
+  fingerprint:
 
 - name: Business
   icon: fa-briefcase
   type: inquiries
   email: business@qubes-os.org
-  fingerprint: 
+  fingerprint:
 
 - name: User research
   icon: fa-flask
@@ -59,7 +59,7 @@
   github: andrewdavidwong
   website: https://andrewdavidwong.com/
 
-- name: unman   
+- name: unman
   role: "Debian template maintainer"
   type: core
   email: unman@thirdeyesecurity.org
@@ -154,19 +154,19 @@
   email: abb@gremwell.com
   role: "PVUSB support"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: Blacklight
   email: blacklight447@protonmail.com
   role: "Localization team co-leader"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: Bruce A Downs
   email: bruceadowns@gmail.com
   role: "Various minor cleanups and miscellaneous work"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: deeplow
   email: deeplower@protonmail.com
@@ -178,25 +178,25 @@
   email: desci@riseup.net
   role: "Localization team co-leader, core and documentation contributor"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: Davíð Steinn Geirsson
   email: david@dsg.is
   role: "Initial Debian template integration"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: Tobias Killer
   email: tokidev@posteo.de
   role: "Localization team co-leader"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: Agnieszka Kostrzewa
   email: a.kostrzewa@alx.pl
   role: "Documentation, Qubes Manager"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: Chris Laprise
   email: tasket@posteo.net
@@ -214,19 +214,19 @@
   email: timo.lindfors@iki.fi
   role: "Minor core cleanups"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: Victor Lopez
   email: gallando@gmail.com`
   role: "Misc. minor fixes"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: Abel Luck
   email: abel@outcomedubious.im
   role: "Developed TorVM"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: Olivier Médoc
   email: o_medoc@yahoo.fr
@@ -238,7 +238,7 @@
   email: nrgaway@gmail.com
   role: "Debian templates improvements, Whonix integration"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: Simon Newton
   email: theplexus@ctemplar.com
@@ -268,7 +268,7 @@
   email: vincent.penquerch@collabora.co.uk
   role: "Code review, misc. fixes"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: Patrick Schleizer
   role: "Whonix, Tor, and Debian integration"
@@ -278,7 +278,7 @@
   fingerprint: 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
   website: https://www.whonix.org
   github: adrelanos
-  
+
 - name: Sven Semmler
   email: Sven@SvenSemmler.org
   role: "HCL maintainer, Qubes Forum moderator"
@@ -289,19 +289,19 @@
   email: andrew@localcoast.net
   role: "Misc. backup subsystem fixes"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: Tomasz Sterna
   email: tomek@xiaoka.com
   role: "Installer and GUI contributor"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: Radoslaw Szkodzinski
   email: astralstorm@gmail.com
   role: "Minor GUI build fixes"
   type: community
-  fingerprint: 
+  fingerprint:
 
 - name: László Zrubecz
   email: mail@zrubi.hu

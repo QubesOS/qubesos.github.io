@@ -51,7 +51,7 @@
   fingerprint: 8C8F F70B 60A4 726F F451  7D96 67F4 097B AF59 B942
 
 - name: Andrew David Wong
-  role: "Community manager, documentation and website maintainer"
+  role: "Community manager"
   type: core
   picture: team-andrew.jpg
   email: adw@qubes-os.org
@@ -60,7 +60,7 @@
   website: https://andrewdavidwong.com/
 
 - name: unman
-  role: "Debian template maintainer"
+  role: "Debian template, documentation, and website maintainer"
   type: core
   email: unman@thirdeyesecurity.org
   fingerprint: C6E2 533D 976E 4B29 A82B  79CB 0C6D 15D5 E0A9 816E

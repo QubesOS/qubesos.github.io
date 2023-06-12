@@ -136,7 +136,7 @@
   sub-pages:
   - title: How to donate
     url: /donate/
-  - title: Qubes partners
+  - title: Qubes Partners
     url: /partners/
     icon: fa-globe
   - title: How to contribute

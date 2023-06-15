@@ -82,10 +82,10 @@
   org_url: https://qontinuum.space/
   location: Monaco
   urls:
-  - https://mirrors.qontinuum.space/qubes-os
-  - http://rrtovkpcaxl6s2ommj5tigyxamzxaknasd74ecb5t5cdfnkodirjnwyd.onion/qubes-os
-  - rsync://mirrors.qontinuum.space/qubes-os
-  - rsync://qiavv4wvapmwnt65tkttxv4ecv7meksf2yxa6tbfqwek7d2tnl4f7nqd.onion/qubes-os
+  - url: https://mirrors.qontinuum.space/qubes-os
+  - url: http://rrtovkpcaxl6s2ommj5tigyxamzxaknasd74ecb5t5cdfnkodirjnwyd.onion/qubes-os
+  - url: rsync://mirrors.qontinuum.space/qubes-os
+  - url: rsync://qiavv4wvapmwnt65tkttxv4ecv7meksf2yxa6tbfqwek7d2tnl4f7nqd.onion/qubes-os
 
 - organization: Evolution Host
   org_url: https://evolution-host.com/

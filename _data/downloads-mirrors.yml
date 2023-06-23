@@ -72,6 +72,13 @@
   urls:
   - url: https://quantum-mirror.hu/mirrors/pub/qubes
 
+- organization: FlokiNET
+  org_url: https://flokinet.is/
+  location: Iceland
+  urls:
+  - url: https://is.mirror.flokinet.net
+  - url: rsync://is.mirror.flokinet.net
+
 - organization: Linux Users' Group of Durgapur
   org_url: https://dgplug.org/
   location: India
@@ -106,6 +113,13 @@
   - url: https://ftp.rnl.tecnico.ulisboa.pt/pub/qubesos/
   - url: ftp://ftp.rnl.tecnico.ulisboa.pt/pub/qubesos/
   - url: rsync://ftp.rnl.tecnico.ulisboa.pt/pub/qubesos
+
+- organization: FlokiNET
+  org_url: https://flokinet.is/
+  location: Romania
+  urls:
+  - url: https://ro.mirror.flokinet.net
+  - url: rsync://ro.mirror.flokinet.net
 
 - organization: krmir NPO
   org_url: https://krmir.org/

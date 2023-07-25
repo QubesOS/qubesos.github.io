@@ -1809,3 +1809,8 @@
 - xsa: 431
   date: 2023-05-16
   affected: no
+
+- xsa: 433
+  date: 2023-07-24
+  affected: yes
+  qsb: 090-2023

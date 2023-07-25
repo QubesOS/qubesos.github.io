@@ -353,3 +353,7 @@
 - qsb: "089"
   title: "Qrexec: Memory corruption in service request handling"
   date: 2023-05-11
+
+- qsb: "090"
+  title: "Zenbleed (CVE-2023-20593, XSA-433)"
+  date: 2023-07-24

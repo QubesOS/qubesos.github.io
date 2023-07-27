@@ -1492,6 +1492,11 @@
   date: 2020-12-15
   affected: no
 
+- xsa: 357
+  date: 2021-08-10
+  affected: no
+  unused: yes
+
 - xsa: 358
   date: 2020-12-15
   affected: no

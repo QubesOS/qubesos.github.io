@@ -66,7 +66,7 @@
         {% elsif xsa.affected == true %}
           <span title="Yes, the security of Qubes OS is affected by XSA-{{ xsa.xsa }}.">{{ tracker.yes_short }}</span>
           {% if xsa.qsb %}
-            | <a href="https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-{{ xsa.qsb }}.txt" title="Qubes Security Bulletin {{ xsa.qsb }}">QSB-{{ xsa.qsb | truncate: 3, "" }}&nbsp;<span class="fa fa-external-link"></span></a>
+            | <a href="https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-{{ xsa.qsb }}.txt" title="Qubes Security Bulletin {{ xsa.qsb | truncate: 3, '' }}">QSB-{{ xsa.qsb | truncate: 3, "" }}&nbsp;<span class="fa fa-external-link"></span></a>
           {% endif %}
         {% elsif xsa.affected == "tba" %}
           {% if xsa.tba %}

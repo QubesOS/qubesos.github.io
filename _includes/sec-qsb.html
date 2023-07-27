@@ -11,9 +11,9 @@
   </tr>
   {% for qsb in site.data.sec-qsb reversed %}
     <tr id="{{ qsb.qsb }}">
-      <td><a href="#{{ qsb.qsb }}" class="fa fa-link black-icon" title="Anchor link to QSB row: QSB #{{ qsb.qsb }}"></a></td>
+      <td><a href="#{{ qsb.qsb }}" class="fa fa-link black-icon" title="Anchor link to QSB row: QSB-{{ qsb.qsb }}"></a></td>
       <td>{{ qsb.date }}</td>
-      <td><a href="https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-{{ qsb.qsb }}-{{ qsb.date | date: '%Y' }}.txt">QSB #{{ qsb.qsb }}: {{ qsb.title | truncate: 68 }}</a></td>
+      <td><a href="https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-{{ qsb.qsb }}-{{ qsb.date | date: '%Y' }}.txt">QSB-{{ qsb.qsb }}: {{ qsb.title | truncate: 68 }}</a></td>
     </tr>
   {% endfor %}
 </table>

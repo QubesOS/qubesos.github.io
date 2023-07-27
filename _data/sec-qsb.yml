@@ -357,3 +357,7 @@
 - qsb: "090"
   title: "Zenbleed (CVE-2023-20593, XSA-433)"
   date: 2023-07-24
+
+- qsb: "091"
+  title: "Windows PV drivers potentially compromised"
+  date: 2023-07-26

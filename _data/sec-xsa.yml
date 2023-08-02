@@ -1819,3 +1819,7 @@
   date: 2023-07-24
   affected: yes
   qsb: 090-2023
+
+- xsa: 436
+  date: 2023-08-01
+  affected: no

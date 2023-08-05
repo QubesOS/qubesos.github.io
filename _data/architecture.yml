@@ -43,8 +43,8 @@
     url: /doc/installation-guide/
   - title: Verifying signatures
     url: /security/verifying-signatures/
-  - title: Supported versions
-    url: /doc/supported-versions/
+  - title: Supported releases
+    url: /doc/supported-releases/
   - title: Version scheme
     url: /doc/version-scheme/
   - title: Source code

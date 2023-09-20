@@ -1842,3 +1842,7 @@
 - xsa: 437
   date: 2023-09-05
   affected: no
+
+- xsa: 438
+  date: 2023-09-19
+  affected: no

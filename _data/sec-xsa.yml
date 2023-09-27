@@ -1846,3 +1846,8 @@
 - xsa: 438
   date: 2023-09-19
   affected: no
+
+- xsa: 439
+  date: 2023-09-25
+  affected: yes
+  qsb: 094-2023

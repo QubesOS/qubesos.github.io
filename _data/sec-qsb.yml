@@ -373,3 +373,7 @@
 - qsb: "094"
   title: "x86/AMD: Divide speculative information leak"
   date: 2023-09-27
+
+- qsb: "095"
+  title: "Missing IOMMU TLB flushing on x86 AMD systems"
+  date: 2023-10-10

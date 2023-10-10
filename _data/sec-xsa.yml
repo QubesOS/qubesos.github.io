@@ -1851,3 +1851,24 @@
   date: 2023-09-25
   affected: yes
   qsb: 094-2023
+
+- xsa: 440
+  date: 2023-10-10
+  affected: no
+
+- xsa: 441
+  date: 2023-10-10
+  affected: no
+
+- xsa: 442
+  date: 2023-10-10
+  affected: yes
+  qsb: 095-2023
+
+- xsa: 443
+  date: 2023-10-10
+  affected: no
+
+- xsa: 444
+  date: 2023-10-10
+  affected: no

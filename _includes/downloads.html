@@ -109,11 +109,11 @@
                 <i class="fa fa-fw fa-download"></i>{{ downcont.links[0].text }}
               </a>
             {% elsif verifier[0] == "sig" %}
-              <a class="btn btn-default btn-block" href="{{ verifier[1] }}" title="Detached PGP signature file for {{ release_name }} Right-click → Save link as...">
+              <a class="btn btn-default btn-block" href="{{ verifier[1] }}" title="Detached PGP signature file for {{ release_name }}. Right-click → Save link as...">
                 <i class="fa fa-fw fa-download"></i>{{ downcont.links[1].text }}
               </a>
             {% elsif verifier[0] == "key" %}
-              <a class="btn btn-default btn-block" href="{{ verifier[1] }}" title="PGP Release Signing Key for {{ release_name }} Right-click → Save link as...">
+              <a class="btn btn-default btn-block" href="{{ verifier[1] }}" title="PGP Release Signing Key for {{ release_name }}. Right-click → Save link as...">
                 <i class="fa fa-fw fa-download"></i>{{ downcont.links[2].text }}
               </a>
             {% endif %}

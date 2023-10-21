@@ -57,7 +57,6 @@
   email: adw@qubes-os.org
   fingerprint: BBAF 910D 1BC9 DDF4 1043  629F BC21 1FCE E9C5 4C53
   github: andrewdavidwong
-  website: https://andrewdavidwong.com/
 
 - name: unman
   role: "Debian template, documentation, and website maintainer"

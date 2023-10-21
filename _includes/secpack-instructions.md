@@ -1,4 +1,4 @@
-The following command-line instructions assume a Linux system with `git` and `gpg` installed. (See [here](/security/verifying-signatures/#openpgp-software) for Windows and Mac options.)
+The following command-line instructions assume a Linux system with `git` and `gpg` installed. (For Windows and Mac options, see [OpenPGP software](/security/verifying-signatures/#openpgp-software).)
 
 1. Obtain the Qubes Master Signing Key (QMSK), e.g.:
 
@@ -13,7 +13,7 @@ The following command-line instructions assume a Linux system with `git` and `gp
    gpg:               imported: 1
    ```
 
-   (See [here](/security/verifying-signatures/#how-to-import-and-authenticate-the-qubes-master-signing-key) for more ways to obtain the QMSK.)
+   (For more ways to obtain the QMSK, see [How to import and authenticate the Qubes Master Signing Key](/security/verifying-signatures/#how-to-import-and-authenticate-the-qubes-master-signing-key).)
 
 2. View the fingerprint of the PGP key you just imported. (Note: `gpg>` indicates a prompt inside of the GnuPG program. Type what appears after it when prompted.)
 
@@ -34,9 +34,9 @@ The following command-line instructions assume a Linux system with `git` and `gp
     Primary key fingerprint: 427F 11FD 0FAA 4B08 0123  F01C DDFA 1A3E 3687 9494
    ```
 
-3. **Important:** At this point, you still don't know whether the key you just imported is the genuine QMSK or a forgery. In order for this entire procedure to provide meaningful security benefits, you *must* authenticate the QMSK out-of-band. **Do not skip this step!** The standard method is to obtain the QMSK fingerprint from *multiple independent sources in several different ways* and check to see whether they match the key you just imported. See [here](/security/verifying-signatures/#how-to-import-and-authenticate-the-qubes-master-signing-key) for more details and ideas for how to do that.
+3. **Important:** At this point, you still don't know whether the key you just imported is the genuine QMSK or a forgery. In order for this entire procedure to provide meaningful security benefits, you *must* authenticate the QMSK out-of-band. **Do not skip this step!** The standard method is to obtain the QMSK fingerprint from *multiple independent sources in several different ways* and check to see whether they match the key you just imported. For more information, see [How to import and authenticate the Qubes Master Signing Key](/security/verifying-signatures/#how-to-import-and-authenticate-the-qubes-master-signing-key).
 
-   **Tip:** Record the genuine QMSK fingerprint in a safe place (or several) so that you don't have to repeat this step in the future.
+   **Tip:** After you have authenticated the QMSK out-of-band to your satisfaction, record the QMSK fingerprint in a safe place (or several) so that you don't have to repeat this step in the future.
 
 4. Once you are satisfied that you have the genuine QMSK, set its trust level to 5 ("ultimate"), then quit GnuPG with `q`.
 

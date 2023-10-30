@@ -71,6 +71,7 @@
       - url: /doc/templates/debian/in-place-upgrade/
       - url: /doc/templates/minimal/
       - url: /doc/templates/xfce/
+      - url: /doc/templates/windows/
 
   - title: Troubleshooting
     subcategory: troubleshooting
@@ -243,8 +244,6 @@
 
   - title: Operating system guides
     sub-pages:
-      - text: "Windows qubes"
-        url: https://www.qubes-os.org/doc/windows/
       - text: "Template: Ubuntu"
         url: https://github.com/Qubes-Community/Contents/blob/master/docs/os/ubuntu.md
       - text: "Template: Whonix"

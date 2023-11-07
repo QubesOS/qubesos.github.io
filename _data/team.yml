@@ -53,7 +53,6 @@
 - name: Andrew David Wong
   role: "Community manager"
   type: core
-  picture: team-andrew.jpg
   email: adw@qubes-os.org
   fingerprint: BBAF 910D 1BC9 DDF4 1043  629F BC21 1FCE E9C5 4C53
   github: andrewdavidwong

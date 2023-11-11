@@ -95,9 +95,9 @@ fi
 htmlproofer ./_site \
   --disable-external \
   --checks Links,Scripts \
-  --file-ignore ./_site/video-tours/index.html \
-  --only_4xx \
-  --url-ignore "/qubes-issues/" || all_ok=false
+  --ignore-files ./_site/video-tours/index.html \
+  --only-4xx \
+  --ignore-urls "/qubes-issues/" || all_ok=false
 
 if $all_ok; then
     echo 'All checks passed!'

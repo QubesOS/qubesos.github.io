@@ -94,7 +94,7 @@ fi
 
 htmlproofer ./_site \
   --disable-external \
-  --checks-to-ignore ImageCheck \
+  --checks Links,Scripts \
   --file-ignore ./_site/video-tours/index.html \
   --only_4xx \
   --url-ignore "/qubes-issues/" || all_ok=false

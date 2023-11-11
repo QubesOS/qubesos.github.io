@@ -29,9 +29,7 @@ cd "$(dirname "$0")/.."
 #     true in your environment. This is useful for increasing the speed of
 #     your Continuous Integration builds.
 export NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-gem install github-pages json
-# force old version to avoid gjtorikian/html-proofer#602
-gem install html-proofer --version 3.16.0
+gem install github-pages html-proofer json
 
 repo_owner=${CI_PROJECT_PATH%%/*}
 repo_name=${CI_PROJECT_PATH#*/}

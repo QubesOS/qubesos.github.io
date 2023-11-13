@@ -56,6 +56,30 @@ Git submodules for content:
 
 ## Instructions
 
+### Ruby Gems
+
+These instructions have been tested on a Fedora 38 qube. Unlike the Podman solution further down, which for some time has had significant issues, it is more likely to work.
+
+1. Install `ruby`, `ruby-devel` and `g++` in your template (or standalone).
+
+2. In your AppVM based on that template (or the same standalone) run:
+
+        $ gem install --user-install github-pages webrick
+
+3. Clone this repo, including all submodules, and enter it:
+
+        $ git clone --recursive https://github.com/QubesOS/qubesos.github.io.git
+        $ cd qubesos.github.io/
+
+4. Start and run the website:
+
+        $ jekyll serve
+
+5. Open your browser and navigate to:
+
+        http://127.0.0.1:4000/
+
+
 ### Podman Compose
 
 These instructions have been tested on a Fedora 33 qube. Podman is not

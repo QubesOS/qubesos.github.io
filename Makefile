@@ -4,4 +4,10 @@ all:
 clean:
 	$(RM) -r _site
 
-.PHONY: all clean
+rootless:
+	jekyll serve
+
+rootless-setup:
+	gem install --user-install github-pages webrick
+
+.PHONY: all clean rootless rootless-setup

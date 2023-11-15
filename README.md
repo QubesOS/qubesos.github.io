@@ -62,23 +62,25 @@ These instructions have been tested on a Fedora 38 qube. Unlike the Podman solut
 
 1. Install `ruby`, `ruby-devel` and `g++` in your template (or standalone).
 
-2. In your AppVM based on that template (or the same standalone) run:
-
-        $ gem install --user-install github-pages webrick
-
-3. Clone this repo, including all submodules, and enter it:
+2. In your AppVM based on that template (or the same standalone), clone this repo, incl. all submodules, and enter it:
 
         $ git clone --recursive https://github.com/QubesOS/qubesos.github.io.git
         $ cd qubesos.github.io/
 
-4. Start and run the website:
+3. Finish setup in the repo folder (requires internet connection):
 
-        $ jekyll serve
+        $ make rootless-setup
 
-5. Open your browser and navigate to:
+4. When you want to start the local server which runs the website:
+
+        $ make rootless
+
+5. Then open your browser and navigate to:
 
         http://127.0.0.1:4000/
+   or
 
+        http://localhost:4000/
 
 ### Podman Compose
 

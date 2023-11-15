@@ -381,3 +381,7 @@
 - qsb: "096"
   title: "BTC/SRSO fixes not fully effective (XSA-446)"
   date: 2023-11-14
+
+- qsb: "097"
+  title: '"Reptar" Intel redundant prefix vulnerability'
+  date: 2023-11-14

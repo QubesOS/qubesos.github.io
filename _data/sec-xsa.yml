@@ -1872,3 +1872,12 @@
 - xsa: 444
   date: 2023-10-10
   affected: no
+
+- xsa: 445
+  date: 2023-11-14
+  affected: no
+
+- xsa: 446
+  date: 2023-11-14
+  affected: yes
+  qsb: 096-2023

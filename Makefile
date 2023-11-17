@@ -5,6 +5,6 @@ clean:
 	$(RM) -r _site
 
 rootless:
-	podman run --interactive --tty --publish 4000:4000 --volume .:/srv/jekyll:Z --env JEKYLL_ROOTLESS=1 jekyll/jekyll:pages jekyll serve
+	podman run --rm --interactive --tty --publish 4000:4000 --volume .:/srv/jekyll:Z --env JEKYLL_ROOTLESS=1 jekyll/jekyll:pages jekyll serve
 
 .PHONY: all clean rootless

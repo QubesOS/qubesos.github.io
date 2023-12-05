@@ -72,7 +72,7 @@ These instructions have been tested on a Fedora 38 qube on QubesOS 4.1 and on th
         $ make rootless-setup
    On Debian-based AppVMs / Standalones, you need to also put the gems on your PATH:
    
-        $ echo "PATH=\$PATH:$(find ~/.local -type d -name bin | tail -n1)" >> ~/.bashrc
+        $ echo "PATH=\$PATH:$(find ~/.local/share/gem/ruby -type d -name bin | tail -n1)" >> ~/.bashrc
         $ . ~/.bashrc
 
 4. This concludes setup; when you want to start the local server which runs the website (offline):

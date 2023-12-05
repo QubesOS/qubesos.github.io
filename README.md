@@ -58,9 +58,9 @@ Git submodules for content:
 
 ### Ruby Gems
 
-These instructions have been tested on a Fedora 38 qube. Unlike the Podman solution further down, which for some time has had significant issues, it is more likely to work.
+These instructions have been tested on a Fedora 38 qube on QubesOS 4.1 and on the following qubes on QubesOS 4.2: `fedora-38`, `fedora-38-xfce`, `debian-12`, `debian-12-xfce`.
 
-1. Install `ruby`, `ruby-devel` and `g++` in your template (or standalone).
+1. Install in your template (or standalone): `ruby-devel` (if Fedora-based) or `ruby-all-dev`, `make`, `g++` (if Debian-based)
 
 2. In your AppVM based on that template (or the same standalone), clone this repo, incl. all submodules, and enter it:
 
@@ -70,8 +70,12 @@ These instructions have been tested on a Fedora 38 qube. Unlike the Podman solut
 3. Finish setup in the repo folder (requires internet connection):
 
         $ make rootless-setup
+   On Debian-based AppVMs / Standalones, you need to also put the gems on your PATH:
+   
+        $ echo "PATH=\$PATH:$(find ~/.local -type d -name bin | tail -n1)" >> ~/.bashrc
+        $ . ~/.bashrc
 
-4. When you want to start the local server which runs the website:
+4. This concludes setup; when you want to start the local server which runs the website (offline):
 
         $ make rootless
 

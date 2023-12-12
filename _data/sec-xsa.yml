@@ -1881,3 +1881,7 @@
   date: 2023-11-14
   affected: yes
   qsb: 096-2023
+
+- xsa: 447
+  date: 2023-12-12
+  affected: no

@@ -385,3 +385,7 @@
 - qsb: "097"
   title: '"Reptar" Intel redundant prefix vulnerability'
   date: 2023-11-14
+
+- qsb: "098"
+  title: "CPU microcode updates not loaded with dom0 kernel version 6.6.x"
+  date: 2023-12-15

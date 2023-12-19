@@ -92,7 +92,7 @@ releases:
       - Release notes
   Qubes release 4.1.2:
     testing: no
-    latest: yes
+    latest: no
     aging: yes
     deprecated: no
     sources:

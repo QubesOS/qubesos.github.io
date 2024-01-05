@@ -4,3 +4,6 @@ include:
 
 build:website:
   extends: .website
+  script:
+    - git clone https://gitlab.com/${CI_PROJECT_PATH%%/*}/qubesos.github.io ~/qubesos.github.io -b test
+    - ~/qubesos.github.io/_utils/gitlabci.sh

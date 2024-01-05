@@ -1,0 +1,12 @@
+---
+lang: en
+layout: doc
+permalink: /doc/qfilecopy/
+redirect_from:
+- /en/doc/qfilecopy/
+- /doc/Qfilecopy/
+- /wiki/Qfilecopy/
+redirect_to: https://doc.qubes-os.org/en/latest/developer/services/qfilecopy.html
+ref: 35
+title: Inter-qube file copying (qfilecopy)
+---

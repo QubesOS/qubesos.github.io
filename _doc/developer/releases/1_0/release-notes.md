@@ -1,0 +1,10 @@
+---
+lang: en
+layout: doc
+permalink: /doc/releases/1.0/release-notes/
+redirect_from:
+- /en/doc/releases/1.0/release-notes/
+redirect_to: https://doc.qubes-os.org/en/latest/developer/releases/1_0/release-notes.html
+ref: 18
+title: Qubes R1.0 release notes
+---

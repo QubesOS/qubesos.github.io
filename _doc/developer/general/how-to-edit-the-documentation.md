@@ -159,12 +159,12 @@ especially when your changes affect formatting, images, tables, styling, etc.
 
 ## Security
 
-*Also see: [Should I trust this website?](/faq/#should-i-trust-this-website)*
+*Also see: [Should I trust this website?](https://doc.qubes-os.org/en/latest/introduction/faq.html#should-i-trust-this-website)*
 
 All pull requests (PRs) against
 [qubes-doc](https://github.com/QubesOS/qubes-doc) must pass review prior to be
 merged, except in the case of [external
-documentation](/doc/#external-documentation) (see
+documentation](https://doc.qubes-os.org/en/latest/index.html#external-documentation) (see
 [#4693](https://github.com/QubesOS/qubes-issues/issues/4693)). This process is
 designed to ensure that contributed text is accurate and non-malicious. This
 process is a best effort that should provide a reasonable degree of assurance,

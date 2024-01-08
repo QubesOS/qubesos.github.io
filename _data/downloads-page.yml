@@ -40,5 +40,5 @@
     - column: Location
     - column: URL
   links:
-    - url: /downloads/mirrors/#instructions-for-mirror-operators
+    - url: https://doc.qubes-os.org/en/latest/user/downloading-installing-upgrading/download-mirrors.html#instructions-for-mirror-operators
       text: How to contribute a download mirror

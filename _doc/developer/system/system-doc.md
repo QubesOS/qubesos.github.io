@@ -7,7 +7,7 @@ redirect_from:
 - /doc/SystemDoc/
 - /wiki/SystemDoc/
 redirect_to:
-- /doc/#developer-documentation
+- https://doc.qubes-os.org/en/latest/index.html#developer-documentation
 ref: 62
 title: System documentation
 ---

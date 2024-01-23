@@ -1885,3 +1885,7 @@
 - xsa: 447
   date: 2023-12-12
   affected: no
+
+- xsa: 448
+  date: 2024-01-22
+  affected: no

@@ -393,3 +393,7 @@
 - qsb: "099"
   title: "Qrexec policy leak via policy.RegisterArgument service"
   date: 2024-01-19
+
+- qsb: "100"
+  title: "Incorrect handling of PCI devices with phantom functions (XSA-449)"
+  date: 2024-01-30

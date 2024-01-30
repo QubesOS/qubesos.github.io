@@ -1889,3 +1889,12 @@
 - xsa: 448
   date: 2024-01-22
   affected: no
+
+- xsa: 449
+  date: 2024-01-30
+  affected: yes
+  qsb: 100-2024
+
+- xsa: 450
+  date: 2024-01-30
+  affected: no

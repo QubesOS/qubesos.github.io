@@ -10,9 +10,6 @@ ref: 9
 title: Terms of Use
 ---
 
-Terms of Use
-============
-
 Revised: 2018-07-18
 
 Terms

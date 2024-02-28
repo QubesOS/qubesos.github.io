@@ -102,7 +102,7 @@
       - url: /doc/device-handling-security/
       - url: /doc/anti-evil-maid/
       - url: /doc/split-gpg/
-      - url: /doc/u2f-proxy/
+      - url: /doc/ctap-proxy/
       - url: /doc/yubikey/
 
   - title: Advanced topics
@@ -163,6 +163,7 @@
       - url: /doc/website-style-guide/
       - url: /doc/continuous-integration/
       - url: /doc/usability-ux/
+      - url: /doc/developing-gui-applications/
       - url: /doc/visual-style-guide/
       - url: /research/
       - url: /doc/devel-books/
@@ -210,7 +211,6 @@
     sub-pages:
       - url: /doc/test-bench/
       - url: /doc/automated-tests/
-      - url: /doc/profiling/
       - url: /doc/vm-interface/
       - url: /doc/windows-debugging/
       - url: /doc/safe-remote-ttys/

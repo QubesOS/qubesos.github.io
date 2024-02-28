@@ -94,6 +94,13 @@
   - url: rsync://mirrors.qontinuum.space/qubes-os
   - url: rsync://qiavv4wvapmwnt65tkttxv4ecv7meksf2yxa6tbfqwek7d2tnl4f7nqd.onion/qubes-os
 
+- organization: FlokiNET
+  org_url: https://flokinet.is/
+  location: Netherlands
+  urls:
+  - url: https://nl.mirror.flokinet.net
+  - url: rsync://nl.mirror.flokinet.net
+
 - organization: Evolution Host
   org_url: https://evolution-host.com/
   location: Poland
@@ -152,6 +159,12 @@
   location: United States
   urls:
   - url: https://mirror.hackingand.coffee/qubes/
+
+- organization: Hyperreal
+  org_url: https://mirrors.hyperreal.coffee/qubes
+  location: United States
+  urls:
+  - url: https://mirrors.hyperreal.coffee/qubes
 
 - organization: Purdue Linux Users Group
   org_url: https://plug-mirror.rcac.purdue.edu/info.html

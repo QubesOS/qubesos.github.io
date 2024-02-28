@@ -11,8 +11,6 @@ title: Website Privacy Policy
   <b>Note:</b> This Website Privacy Policy pertains only to the Qubes website. For non-website topics, please see our more general <a href="/privacy/">Privacy Policy</a>.
 </div>
 
-# Website Privacy Policy
-
 Effective date: 2018-07-26
 
 The Qubes OS Project ("us", "we", or "our") operates the <https://www.qubes-os.org/> website (the "Service"). This Privacy Policy applies only to the <https://www.qubes-os.org/> website (the "Service"). It does NOT apply to the Qubes OS operating system.

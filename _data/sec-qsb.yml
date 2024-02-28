@@ -385,3 +385,15 @@
 - qsb: "097"
   title: '"Reptar" Intel redundant prefix vulnerability'
   date: 2023-11-14
+
+- qsb: "098"
+  title: "CPU microcode updates not loaded with dom0 kernel version 6.6.x"
+  date: 2023-12-15
+
+- qsb: "099"
+  title: "Qrexec policy leak via policy.RegisterArgument service"
+  date: 2024-01-19
+
+- qsb: "100"
+  title: "Incorrect handling of PCI devices with phantom functions (XSA-449)"
+  date: 2024-01-30

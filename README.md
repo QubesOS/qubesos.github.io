@@ -58,7 +58,7 @@ Git submodules for content:
 
 ### Ruby Gems
 
-These instructions have been tested on a Fedora 38 qube on QubesOS 4.1 and on the following qubes on QubesOS 4.2: `fedora-38`, `fedora-38-xfce`, `debian-12`, `debian-12-xfce`.
+These instructions have been tested on a Fedora 38 qube on QubesOS 4.1 and on the following qubes on QubesOS 4.2: `debian-12-xfce`, `debian-12`, `fedora-39-xfce`, `fedora-39`, `fedora-38-xfce`, `fedora-38`.
 
 1. Install in your template (or standalone): `ruby-devel` (if Fedora-based) or `ruby-all-dev`, `make`, `g++` (if Debian-based)
 

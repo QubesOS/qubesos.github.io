@@ -1902,3 +1902,12 @@
 - xsa: 451
   date: 2024-02-27
   affected: no
+
+- xsa: 452
+  date: 2024-03-12
+  affected: yes
+  qsb: 101-2024
+
+- xsa: 453
+  date: 2024-03-12
+  affected: no

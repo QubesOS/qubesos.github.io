@@ -397,3 +397,7 @@
 - qsb: "100"
   title: "Incorrect handling of PCI devices with phantom functions (XSA-449)"
   date: 2024-01-30
+
+- qsb: "101"
+  title: "Register File Data Sampling (XSA-452)"
+  date: 2024-03-12

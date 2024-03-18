@@ -15,6 +15,7 @@ cd $QSB_LOC && git pl
 # Get user input
 read -p 'QSB number (e.g., 049): ' QSB
 read -p 'Post date: ' POST_DATE
+read -p 'Git commit hash (e.g., ea3a31c4295b91e3f77ee39a15bcabbbd956678b): ' COMMIT
 #read -p 'XSA Number (e.g., 123; leave blank if N/A): ' XSA
 #read -p 'XSA Date (leave blank if N/A): ' XSA_DATE
 
@@ -60,7 +61,7 @@ title: \"QSB-${QSB}: ${TITLE}\"
 categories: security
 ---
 
-We have published [Qubes Security Bulletin (QSB) ${QSB}: ${TITLE}](https://github.com/QubesOS/qubes-secpack/blob/main/QSBs/qsb-${QSB}-${YEAR}.txt). The text of this QSB and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this QSB, please see the end of this announcement.
+We have published [Qubes Security Bulletin (QSB) ${QSB}: ${TITLE}](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/QSBs/qsb-${QSB}-${YEAR}.txt). The text of this QSB and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this QSB, please see the end of this announcement.
 
 ## Qubes Security Bulletin $QSB
 
@@ -70,7 +71,7 @@ cat $QSB_FILE >> $POST
 printf "
 \`\`\`
 
-**Source:** <https://github.com/QubesOS/qubes-secpack/blob/main/QSBs/qsb-${QSB}-${YEAR}.txt>
+**Source:** <https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/QSBs/qsb-${QSB}-${YEAR}.txt>
 
 ## [Marek Marczykowski-Górecki](/team/#marek-marczykowski-górecki)'s PGP signature
 
@@ -79,7 +80,7 @@ printf "
 cat $SIG_MAREK >> $POST
 printf "\`\`\`
 
-**Source:** <https://github.com/QubesOS/qubes-secpack/blob/main/QSBs/qsb-${QSB}-${YEAR}.txt.sig.marmarek>
+**Source:** <https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/QSBs/qsb-${QSB}-${YEAR}.txt.sig.marmarek>
 
 ## [Simon Gaiser (aka HW42)](/team/#simon-gaiser-aka-hw42)'s PGP signature
 
@@ -88,7 +89,7 @@ printf "\`\`\`
 cat $SIG_SIMON >> $POST
 printf "\`\`\`
 
-**Source:** <https://github.com/QubesOS/qubes-secpack/blob/main/QSBs/qsb-${QSB}-${YEAR}.txt.sig.simon>
+**Source:** <https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/QSBs/qsb-${QSB}-${YEAR}.txt.sig.simon>
 
 ## What is the purpose of this announcement?
 

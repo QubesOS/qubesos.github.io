@@ -60,7 +60,7 @@ title: \"QSB-${QSB}: ${TITLE}\"
 categories: security
 ---
 
-We have published [Qubes Security Bulletin ${QSB}: ${TITLE}](https://github.com/QubesOS/qubes-secpack/blob/main/QSBs/qsb-${QSB}-${YEAR}.txt). The text of this QSB and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this QSB, please see the end of this announcement.
+We have published [Qubes Security Bulletin (QSB) ${QSB}: ${TITLE}](https://github.com/QubesOS/qubes-secpack/blob/main/QSBs/qsb-${QSB}-${YEAR}.txt). The text of this QSB and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this QSB, please see the end of this announcement.
 
 ## Qubes Security Bulletin $QSB
 

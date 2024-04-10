@@ -71,7 +71,7 @@ cat $QSB_FILE >> $POST
 printf "
 \`\`\`
 
-**Source:** <https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/QSBs/qsb-${QSB}-${YEAR}.txt>
+**Source:** [qsb-${QSB}-${YEAR}.txt](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/QSBs/qsb-${QSB}-${YEAR}.txt)
 
 ## [Marek Marczykowski-Górecki](/team/#marek-marczykowski-górecki)'s PGP signature
 
@@ -80,7 +80,7 @@ printf "
 cat $SIG_MAREK >> $POST
 printf "\`\`\`
 
-**Source:** <https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/QSBs/qsb-${QSB}-${YEAR}.txt.sig.marmarek>
+**Source:** [qsb-${QSB}-${YEAR}.txt.sig.marmarek](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/QSBs/qsb-${QSB}-${YEAR}.txt.sig.marmarek)
 
 ## [Simon Gaiser (aka HW42)](/team/#simon-gaiser-aka-hw42)'s PGP signature
 
@@ -89,7 +89,7 @@ printf "\`\`\`
 cat $SIG_SIMON >> $POST
 printf "\`\`\`
 
-**Source:** <https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/QSBs/qsb-${QSB}-${YEAR}.txt.sig.simon>
+**Source:** [qsb-${QSB}-${YEAR}.txt.sig.simon](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/QSBs/qsb-${QSB}-${YEAR}.txt.sig.simon)
 
 ## What is the purpose of this announcement?
 

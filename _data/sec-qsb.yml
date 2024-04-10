@@ -401,3 +401,7 @@
 - qsb: "101"
   title: "Register File Data Sampling (XSA-452)"
   date: 2024-03-12
+
+- qsb: "102"
+  title: "Multiple speculative-execution vulnerabilities: Spectre-BHB, BTC/SRSO (XSA-455, XSA-456)"
+  date: 2024-04-09

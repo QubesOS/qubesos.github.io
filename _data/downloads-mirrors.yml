@@ -113,6 +113,12 @@
   urls:
   - url: http://ftp.icm.edu.pl/pub/os/qubes/
 
+- organization: Tomás Leite de Castro
+  org_url: https://leitecastro.com/index.html/
+  location: Portugal
+  urls:
+  - url: https://mirror.leitecastro.com/qubes
+
 - organization: Instituto Superior Técnico, Universidade de Lisboa
   org_url: https://ftp.rnl.tecnico.ulisboa.pt/
   location: Portugal

@@ -1925,3 +1925,7 @@
   date: 2024-04-09
   affected: yes
   qsb: 102-2024
+
+- xsa: 457
+  date: 2024-05-07
+  affected: no

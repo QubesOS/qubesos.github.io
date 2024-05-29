@@ -190,6 +190,12 @@
   type: community
   fingerprint:
 
+- name: Elliot Killick
+  email: contact@elliotkillick.com
+  role: "Qvm-Create-Windows-Qube and Qubes Video Companion projects"
+  type: community
+  fingerprint: EEEE 1AE1 2A5B 3229 09EB  DC5D 2CEE A9CE 5BD0 EEEE
+
 - name: Agnieszka Kostrzewa
   email: a.kostrzewa@alx.pl
   role: "Documentation, Qubes Manager"

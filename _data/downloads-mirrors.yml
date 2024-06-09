@@ -142,11 +142,11 @@
   - url: ftp://mirror.krmir.org/qubes
   - url: rsync://mirror.krmir.org/qubes
 
-- organization: ACC, Umeå University
-  org_url: http://www.acc.umu.se/
+- organization: Academic Computer Club in Umeå
+  org_url: http://www.accum.se/
   location: Sweden
   urls:
-  - url: https://ftp.acc.umu.se/mirror/qubes-os.org/
+  - url: https://mirror.accum.se/mirror/qubes-os.org/
 
 - organization: UKFast
   org_url: https://www.ukfast.co.uk/

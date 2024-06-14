@@ -1,0 +1,6 @@
+Contact: https://www.qubes-os.org/security/
+Expires: 2028-01-01T08:00:00.000Z
+Encryption: https://keys.qubes-os.org/keys/qubes-os-security-team-key.asc
+Canonical: https://qubes-os.org/.well-known/security.txt
+Policy: https://www.qubes-os.org/security/
+

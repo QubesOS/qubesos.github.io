@@ -101,6 +101,14 @@
   - url: https://nl.mirror.flokinet.net
   - url: rsync://nl.mirror.flokinet.net
 
+- organization: Vuln Seeker
+  org_url: https://vulnseeker.org/
+  location: Netherlands
+  urls:
+  - url: https://mirror.vulnseeker.org/pub/qubes/
+  - url: http://mirror.vulnseeker.org/pub/qubes/
+  - url: rsync://mirror.vulnseeker.org/qubes
+
 - organization: Evolution Host
   org_url: https://evolution-host.com/
   location: Poland

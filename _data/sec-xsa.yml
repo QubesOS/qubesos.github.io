@@ -1929,3 +1929,8 @@
 - xsa: 457
   date: 2024-05-07
   affected: no
+
+- xsa: 458
+  date: 2024-07-16
+  affected: yes
+  qsb: 103-2024

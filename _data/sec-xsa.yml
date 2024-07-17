@@ -1934,3 +1934,7 @@
   date: 2024-07-16
   affected: yes
   qsb: 103-2024
+
+- xsa: 459
+  date: 2024-07-16
+  affected: no

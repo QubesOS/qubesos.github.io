@@ -244,6 +244,12 @@
   type: community
   fingerprint:
 
+- name: Ali Mirjamali
+  email: 
+  role: "Core and Qubes Manager contributions"
+  type: community
+  fingerprint:
+
 - name: Simon Newton
   email: theplexus@ctemplar.com
   role: "Qubes Forum moderator"

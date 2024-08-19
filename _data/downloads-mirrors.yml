@@ -92,6 +92,13 @@
   - url: https://nl.mirror.flokinet.net
   - url: rsync://nl.mirror.flokinet.net
 
+- organization: LAYLO
+  org_url: https://laylo.nl
+  location: Netherlands
+  urls:
+  - url: https://mirror.laylo.nl/pub/qubes/
+  - url: http://zqsjg25lnx7zratmne3dhbcqt5paehitom3qp2rjmwttuy7gzbzqwayd.onion/pub/qubes/
+
 - organization: Vuln Seeker
   org_url: https://vulnseeker.org/
   location: Netherlands

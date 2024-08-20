@@ -54,12 +54,6 @@
   urls:
   - url: http://ftp.halifax.rwth-aachen.de/qubes/iso/
 
-- organization: Kolja Sagorski
-  org_url: https://koljasagorski.de/
-  location: Germany
-  urls:
-  - url: https://mirror.koljasagorski.de/qubes/
-
 - organization: University of Crete Computer Center
   org_url: http://cc.uoc.gr/
   location: Greece
@@ -78,12 +72,6 @@
   urls:
   - url: https://is.mirror.flokinet.net
   - url: rsync://is.mirror.flokinet.net
-
-- organization: Linux Users' Group of Durgapur
-  org_url: https://dgplug.org/
-  location: India
-  urls:
-  - url: https://mirrors.dgplug.org/qubes/
 
 - organization: FlokiNET
   org_url: https://flokinet.is/
@@ -140,14 +128,6 @@
   - url: https://ro.mirror.flokinet.net
   - url: rsync://ro.mirror.flokinet.net
 
-- organization: krmir NPO
-  org_url: https://krmir.org/
-  location: South Korea
-  urls:
-  - url: https://mirror.krmir.org/qubes
-  - url: ftp://mirror.krmir.org/qubes
-  - url: rsync://mirror.krmir.org/qubes
-
 - organization: Academic Computer Club in Umeå
   org_url: http://www.accum.se/
   location: Sweden
@@ -165,18 +145,6 @@
   location: United States
   urls:
   - url: https://mirrors.gigenet.com/qubes/
-
-- organization: Hacking & Coffee
-  org_url: https://hackingand.coffee/
-  location: United States
-  urls:
-  - url: https://mirror.hackingand.coffee/qubes/
-
-- organization: Hyperreal
-  org_url: https://mirrors.hyperreal.coffee/qubes
-  location: United States
-  urls:
-  - url: https://mirrors.hyperreal.coffee/qubes
 
 - organization: Purdue Linux Users Group
   org_url: https://plug-mirror.rcac.purdue.edu/info.html

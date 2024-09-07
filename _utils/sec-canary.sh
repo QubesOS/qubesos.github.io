@@ -14,6 +14,7 @@ cd $CANARY_LOC && git pl
 read -p 'Canary number (e.g., 034): ' CANARY
 read -p 'Canary date (e.g., 2023-03-02): ' CANARY_DATE
 read -p 'Post date: ' POST_DATE
+read -p 'Git commit hash (e.g., ea3a31c4295b91e3f77ee39a15bcabbbd956678b): ' COMMIT
 
 # Get the year (assumes post year and canary year are the same)
 YEAR=`echo $POST_DATE | cut -c1-4`
@@ -42,7 +43,7 @@ title: \"Qubes Canary ${CANARY}\"
 categories: security
 ---
 
-We have published [Qubes Canary ${CANARY}](https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CANARY}-${YEAR}.txt). The text of this canary and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this canary, please see the end of this announcement.
+We have published [Qubes Canary ${CANARY}](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/canaries/canary-${CANARY}-${YEAR}.txt). The text of this canary and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this canary, please see the end of this announcement.
 
 ## Qubes Canary $CANARY
 
@@ -52,7 +53,7 @@ cat $CANARY_FILE >> $POST
 printf "
 \`\`\`
 
-Source: <https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CANARY}-${YEAR}.txt>
+Source: [canary-${CANARY}-${YEAR}.txt](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/canaries/canary-${CANARY}-${YEAR}.txt)
 
 ## [Marek Marczykowski-Górecki](/team/#marek-marczykowski-górecki)'s PGP signature
 
@@ -61,7 +62,7 @@ Source: <https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CA
 cat $SIG_MAREK >> $POST
 printf "\`\`\`
 
-Source: <https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CANARY}-${YEAR}.txt.sig.marmarek>
+Source: [canary-${CANARY}-${YEAR}.txt.sig.marmarek](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/canaries/canary-${CANARY}-${YEAR}.txt.sig.marmarek)
 
 ## [Simon Gaiser (aka HW42)](/team/#simon-gaiser-aka-hw42)'s PGP signature
 
@@ -70,7 +71,7 @@ Source: <https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CA
 cat $SIG_SIMON >> $POST
 printf "\`\`\`
 
-Source: <https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CANARY}-${YEAR}.txt.sig.simon>
+Source: [canary-${CANARY}-${YEAR}.txt.sig.simon](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/canaries/canary-${CANARY}-${YEAR}.txt.sig.simon)
 
 ## What is the purpose of this announcement?
 

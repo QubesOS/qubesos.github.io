@@ -413,3 +413,7 @@
 - qsb: "104"
   title: "GUI-related security bugs"
   date: 2024-07-30
+
+- qsb: "105"
+  title: "Missing enforced decorations for stubdomain windows under KDE"
+  date: 2024-10-17

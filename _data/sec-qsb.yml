@@ -417,3 +417,7 @@
 - qsb: "105"
   title: "Missing enforced decorations for stubdomain windows under KDE"
   date: 2024-10-17
+
+- qsb: "106"
+  title: "Information disclosure through uninitialized memory in libxl"
+  date: 2024-11-12

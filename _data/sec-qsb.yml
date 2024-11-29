@@ -419,5 +419,5 @@
   date: 2024-10-17
 
 - qsb: "106"
-  title: "Information disclosure through uninitialized memory in libxl"
+  title: "Information disclosure through uninitialized memory in libxl (XSA-464)"
   date: 2024-11-12

@@ -112,6 +112,20 @@
   fingerprint: 7687 4D9F 1336 BA22 5907  1C71 B288 B55F FF9C 22C1
   github: DemiMarie
 
+- name: Solène Rapenne
+  email: contact@lambda-solene.eu
+  role: "Documentation maintainer"
+  type: core
+  fingerprint: 4398 3BAD 3EDC B35C 9B8F  2442 8CD4 2DFD 57F0 A909
+  github: rapenne-s
+
+- name: m
+  email: qubedmaiska@protonmail.com
+  role: "Documentation maintainer"
+  type: core
+  fingerprint: 2E36 3FF6 0A81 92F5 F3EC  867E 8FB4 D514 D770 E6E1
+  github: maiska
+
 # Emeritus
 
 - name: Joanna Rutkowska

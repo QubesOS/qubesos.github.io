@@ -54,6 +54,17 @@
   urls:
   - url: http://ftp.halifax.rwth-aachen.de/qubes/iso/
 
+- organization: Internet Provider Berlin
+  org_url:  https://www.ipb.de/
+  location: Germany
+  urls:
+  - url: http://mirror.ipb.de/qubes
+  - url: https://mirror.ipb.de/qubes
+  - url: rsync://mirror.ipb.de/qubes
+  - url: http://mirror.as20647.net/qubes
+  - url: https://mirror.as20647.net/qubes
+  - url: rsync://mirror.as20647.net/qubes
+
 - organization: University of Crete Computer Center
   org_url: http://cc.uoc.gr/
   location: Greece

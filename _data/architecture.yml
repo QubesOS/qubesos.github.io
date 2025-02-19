@@ -105,9 +105,6 @@
   - title: Reddit
     url: https://www.reddit.com/r/Qubes/
     rel: me
-  - title: Facebook
-    url: https://www.facebook.com/QubesOS
-    rel: me
   - title: LinkedIn
     url: https://www.linkedin.com/company/qubes-os/
     rel: me

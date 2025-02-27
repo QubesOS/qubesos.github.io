@@ -1959,3 +1959,7 @@
   date: 2024-11-12
   affected: yes
   qsb: 106-2024
+
+- xsa: 467
+  date: 2025-02-27
+  affected: no

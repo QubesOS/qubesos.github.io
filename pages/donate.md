@@ -118,7 +118,7 @@ Donations via [EU Bank Transfer](#how-can-i-donate-via-eu-bank-transfer) should 
 
 ### How can I donate via EU bank transfer?
 
-For donations over 500EUR, we have partnered with the [Center for the Cultivation of Technology](https://techcultivation.org) (CCT) to handle EU bank transfers.
+We have partnered with the [Center for the Cultivation of Technology](https://techcultivation.org) (CCT) to handle EU bank transfers.
 CCT is a charitable non-profit host organization in Germany for international Free Software projects.
 They charge a 10% fee for this service.
 

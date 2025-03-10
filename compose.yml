@@ -1,6 +1,6 @@
 services:
     jekyll:
-        image: jekyll/jekyll:pages
+        image: jekyll/jekyll:4.2.0
         command: jekyll serve
         ports:
             - 4000:4000

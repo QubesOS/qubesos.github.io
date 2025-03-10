@@ -92,6 +92,7 @@
       - url: /doc/gui-troubleshooting/
       - url: /doc/media-troubleshooting/
       - url: /doc/vpn-troubleshooting/
+      - url: /doc/salt-troubleshooting/
 
   - title: Security in Qubes
     subcategory: security-in-qubes

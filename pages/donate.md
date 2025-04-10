@@ -15,7 +15,7 @@ Your donation directly supports the continued development of Qubes OS. We accept
 
 ## Option 1: Give a one-time donation
 
-With credit card donations, [we lose roughly 14%](https://docs.opencollective.foundation/how-it-works/fees) to administrative costs, while donating cryptocurrency avoids these costs.
+With credit card donations, [we lose roughly 14%](https://documentation.opencollective.com/why-open-collective/pricing) to administrative costs, while donating cryptocurrency avoids these costs.
 
 ### <i class="fa fa-2x fa-bitcoin"></i> Bitcoin (BTC)
 

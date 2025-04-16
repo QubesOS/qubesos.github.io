@@ -137,7 +137,7 @@ papers:
     category: intel-txt
 
   - title: Can you still trust your network card?
-    url: https://www.ssi.gouv.fr/IMG/pdf/csw-trustnetworkcard.pdf
+    url: https://cyber.gouv.fr/sites/default/files/IMG/pdf/csw-trustnetworkcard.pdf
     author: Loïc Duflot, Yves-Alexis Perez and others
     category: software-attacks-devices
 

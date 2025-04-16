@@ -112,6 +112,20 @@
   fingerprint: 7687 4D9F 1336 BA22 5907  1C71 B288 B55F FF9C 22C1
   github: DemiMarie
 
+- name: Solène Rapenne
+  email: contact@lambda-solene.eu
+  role: "Documentation maintainer"
+  type: core
+  fingerprint: 4398 3BAD 3EDC B35C 9B8F  2442 8CD4 2DFD 57F0 A909
+  github: rapenne-s
+
+- name: m
+  email: qubedmaiska@protonmail.com
+  role: "Documentation maintainer"
+  type: core
+  fingerprint: 2E36 3FF6 0A81 92F5 F3EC  867E 8FB4 D514 D770 E6E1
+  github: maiska
+
 # Emeritus
 
 - name: Joanna Rutkowska
@@ -244,11 +258,17 @@
   type: community
   fingerprint:
 
+- name: Ali Mirjamali
+  email: ali@mirjamali.com
+  role: "Core and Qubes Manager contributions"
+  type: community
+  fingerprint: 5E8C 6BC4 A310 0BD7 60CE 0AAF B4A5 C188 DF4F AB67
+
 - name: Simon Newton
-  email: theplexus@ctemplar.com
+  email: simon.newton+qubes@gmail.com
   role: "Qubes Forum moderator"
   type: community
-  fingerprint: D8C2 59FB C6DE 0B2B D56B EAF9 3CF5 EA56 759A E33D
+  fingerprint: F92A 17BE 55DC 8EC0 50E6  F300 A646 E4E8 8839 752B
 
 - name: Brennan Novak
   email: hi@brennannovak.com

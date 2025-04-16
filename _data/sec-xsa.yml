@@ -1929,3 +1929,37 @@
 - xsa: 457
   date: 2024-05-07
   affected: no
+
+- xsa: 458
+  date: 2024-07-16
+  affected: yes
+  qsb: 103-2024
+
+- xsa: 459
+  date: 2024-07-16
+  affected: no
+
+- xsa: 460
+  date: 2024-08-13
+  affected: no
+
+- xsa: 461
+  date: 2024-08-13
+  affected: no
+
+- xsa: 462
+  date: 2024-09-24
+  affected: no
+
+- xsa: 463
+  date: 2024-11-12
+  affected: no
+
+- xsa: 464
+  date: 2024-11-12
+  affected: yes
+  qsb: 106-2024
+
+- xsa: 467
+  date: 2025-02-27
+  affected: no

@@ -405,3 +405,19 @@
 - qsb: "102"
   title: "Multiple speculative-execution vulnerabilities: Spectre-BHB, BTC/SRSO (XSA-455, XSA-456)"
   date: 2024-04-09
+
+- qsb: "103"
+  title: "Double unlock in x86 guest IRQ handling (XSA-458)"
+  date: 2024-07-16
+
+- qsb: "104"
+  title: "GUI-related security bugs"
+  date: 2024-07-30
+
+- qsb: "105"
+  title: "Missing enforced decorations for stubdomain windows under KDE"
+  date: 2024-10-17
+
+- qsb: "106"
+  title: "Information disclosure through uninitialized memory in libxl (XSA-464)"
+  date: 2024-11-12

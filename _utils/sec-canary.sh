@@ -14,6 +14,7 @@ cd $CANARY_LOC && git pl
 read -p 'Canary number (e.g., 034): ' CANARY
 read -p 'Canary date (e.g., 2023-03-02): ' CANARY_DATE
 read -p 'Post date: ' POST_DATE
+read -p 'Git commit hash (e.g., ea3a31c4295b91e3f77ee39a15bcabbbd956678b): ' COMMIT
 
 # Get the year (assumes post year and canary year are the same)
 YEAR=`echo $POST_DATE | cut -c1-4`
@@ -42,7 +43,7 @@ title: \"Qubes Canary ${CANARY}\"
 categories: security
 ---
 
-We have published [Qubes Canary ${CANARY}](https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CANARY}-${YEAR}.txt). The text of this canary and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this canary, please see the end of this announcement.
+We have published [Qubes Canary ${CANARY}](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/canaries/canary-${CANARY}-${YEAR}.txt). The text of this canary and its accompanying cryptographic signatures are reproduced below. For an explanation of this announcement and instructions for authenticating this canary, please see the end of this announcement.
 
 ## Qubes Canary $CANARY
 
@@ -52,7 +53,7 @@ cat $CANARY_FILE >> $POST
 printf "
 \`\`\`
 
-Source: <https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CANARY}-${YEAR}.txt>
+Source: [canary-${CANARY}-${YEAR}.txt](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/canaries/canary-${CANARY}-${YEAR}.txt)
 
 ## [Marek Marczykowski-Górecki](/team/#marek-marczykowski-górecki)'s PGP signature
 
@@ -61,7 +62,7 @@ Source: <https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CA
 cat $SIG_MAREK >> $POST
 printf "\`\`\`
 
-Source: <https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CANARY}-${YEAR}.txt.sig.marmarek>
+Source: [canary-${CANARY}-${YEAR}.txt.sig.marmarek](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/canaries/canary-${CANARY}-${YEAR}.txt.sig.marmarek)
 
 ## [Simon Gaiser (aka HW42)](/team/#simon-gaiser-aka-hw42)'s PGP signature
 
@@ -70,7 +71,7 @@ Source: <https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CA
 cat $SIG_SIMON >> $POST
 printf "\`\`\`
 
-Source: <https://github.com/QubesOS/qubes-secpack/blob/main/canaries/canary-${CANARY}-${YEAR}.txt.sig.simon>
+Source: [canary-${CANARY}-${YEAR}.txt.sig.simon](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/canaries/canary-${CANARY}-${YEAR}.txt.sig.simon)
 
 ## What is the purpose of this announcement?
 
@@ -91,7 +92,7 @@ Canaries provide an important indication about the security status of the projec
 Here is a non-exhaustive list of examples:
 
 - **Dead canary.** In each canary, we state a window of time during which you should expect the next canary to be published. If no canary is published within that window of time and no good explanation is provided for missing the deadline, then the canary has died.
-- **Missing statement(s).** Every canary contains the same set of statements (sometimes along with special announcements, which are not the same in every canary). If an important statement was present in older canaries but suddenly goes missing from new canaries with no correction or explanation, then this may be an indication that the signers can no longer truthfully make that statement.
+- **Missing statement(s).** Canaries include a set of numbered statements at the top. These statements are generally the same across canaries, except for specific numbers and dates that have changed since the previous canary. If an important statement was present in older canaries but suddenly goes missing from new canaries with no correction or explanation, then this may be an indication that the signers can no longer truthfully make that statement.
 - **Missing signature(s).** Qubes canaries are signed by the members of the [Qubes security team](/security/#qubes-security-team) (see below). If one of them has been signing all canaries but suddenly and permanently stops signing new canaries without any explanation, then this may indicate that this person is under duress or can no longer truthfully sign the statements contained in the canary.
 
 ## Does every unexpected or unusual occurrence related to a canary indicate something bad?
@@ -101,10 +102,10 @@ No, there are many canary-related possibilities that should *not* worry you. Her
 - **Unusual reposts.** The only canaries that matter are the ones that are validly signed in the [Qubes security pack (qubes-secpack)](/security/pack/). Reposts of canaries (like the one in this announcement) do not have any authority (except insofar as they reproduce validly-signed text from the qubes-secpack). If the actual canary in the qubes-secpack is healthy, but reposts are late, absent, or modified on the website, mailing lists, forum, or social media platforms, you should not be concerned about the canary.
 - **Last-minute signature(s).** If the canary is signed at the last minute but before the deadline, that's okay. (People get busy and procrastinate sometimes.)
 - **Signatures at different times.** If one signature is earlier or later than the other, but both are present within a reasonable period of time, that's okay. (For example, sometimes one signer is out of town, but we try to plan the deadlines around this.)
-- **Permitted changes.** If something about a canary changes without violating any of statements in prior canaries, that's okay. (For example, canaries are usually scheduled for the first fourteen days of a given month, but there's no rule that says they have to be.)
+- **Permitted changes.** If something about a canary changes without violating any of the statements in prior canaries, that's okay. (For example, canaries are usually scheduled for the first fourteen days of a given month, but there's no rule that says they have to be.)
 - **Unusual but planned changes.** If something unusual happens, but it was announced in advance, and the appropriate statements are signed, that's okay (e.g., when Joanna left the security team and Simon joined it).
 
-In general, it would not be realistic for an organization to exist that never changed, had zero turnover, and never made mistakes. Therefore, it would be reasonable to expect such events to occur periodically, and it would be unreasonable to regard *every* unusual or unexpected canary-related event as a sign of compromise. For example, if something usual happens with a canary, and we say it was a mistake and correct it, you will have to decide for yourself whether it's more likely that it really was just a mistake or that something is wrong and that this is how we chose to send you a subtle signal about it. This will require you to think carefully about which among many possible scenarios is most likely given the evidence available to you. Since this is fundamentally a matter of judgment, canaries are ultimately a *social* scheme, not a technical one.
+In general, it would not be realistic for an organization to exist that never changed, had zero turnover, and never made mistakes. Therefore, it would be reasonable to expect such events to occur periodically, and it would be unreasonable to regard *every* unusual or unexpected canary-related event as a sign of compromise. For example, if something usual happens with a canary, and we say it was a mistake and correct it (with valid signatures), you will have to decide for yourself whether it's more likely that it really was just a mistake or that something is wrong and that this is how we chose to send you a subtle signal about it. This will require you to think carefully about which among many possible scenarios is most likely given the evidence available to you. Since this is fundamentally a matter of judgment, canaries are ultimately a *social* scheme, not a technical one.
 
 ## What are the PGP signatures that accompany canaries?
 
@@ -112,7 +113,9 @@ A [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) signature is a crypto
 
 ## Why should I care whether a canary is authentic?
 
-If you fail to notice that a canary is unhealthy or has died, you may continue to trust the Qubes security team even after they have signaled via the canary (or lack thereof) that they been compromised or coerced. Falsified canaries could include manipulated text designed to sow fear, uncertainty, and doubt about the security of Qubes OS or the status of the Qubes OS Project.
+If you fail to notice that a canary is unhealthy or has died, you may continue to trust the Qubes security team even after they have signaled via the canary (or lack thereof) that they been compromised or coerced.
+
+Alternatively, an adversary could fabricate a canary in an attempt to deceive the public. Such a canary would not be validly signed, but users who neglect to check the signatures on the fake canary would not be aware of this, so they may mistakenly believe it to be genuine, especially if it closely mimics the language of authentic canaries. Such falsified canaries could include manipulated text designed to sow fear, uncertainty, and doubt about the security of Qubes OS or the status of the Qubes OS Project.
 
 ## How do I verify the PGP signatures on a canary?
 

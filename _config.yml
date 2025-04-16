@@ -45,5 +45,4 @@ allowed_categories:
 default_author: "The Qubes team"
 default_category: "announcements"
 
-include:
-  - .well-known
+include: ['.well-known']

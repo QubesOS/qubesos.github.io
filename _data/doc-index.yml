@@ -219,7 +219,7 @@
   - title: Building
     subcategory: building
     sub-pages:
-      - url: /doc/qubes-builder/
+      - url: /doc/qubes-builder-v2/
       - url: /doc/qubes-builder-details/
       - url: /doc/development-workflow/
       - url: /doc/qubes-iso-building/

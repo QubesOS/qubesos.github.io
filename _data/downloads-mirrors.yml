@@ -42,12 +42,6 @@
   urls:
   - url: https://mirrors.dotsrc.org/qubes/
 
-- organization: Hosthink
-  org_url: https://www.hosthink.net/
-  location: Finland
-  urls:
-  - url: https://mirror-2.hosthink.net/qubes
-
 - organization: RWTH Aachen University
   org_url: https://www.halifax.rwth-aachen.de
   location: Germany

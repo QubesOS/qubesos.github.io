@@ -1963,3 +1963,8 @@
 - xsa: 467
   date: 2025-02-27
   affected: no
+
+- xsa: 469
+  date: 2025-05-12
+  affected: yes
+  qsb: 107-2025

@@ -421,3 +421,7 @@
 - qsb: "106"
   title: "Information disclosure through uninitialized memory in libxl (XSA-464)"
   date: 2024-11-12
+
+- qsb: "107"
+  title: "Multiple CPU branch prediction vulnerabilities"
+  date: 2025-05-15

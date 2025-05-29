@@ -78,6 +78,12 @@
   - url: https://is.mirror.flokinet.net
   - url: rsync://is.mirror.flokinet.net
 
+- organization: Hosthink Dedicated Servers
+  org_url: https://www.hosthink.net/
+  location: Moldova
+  urls:
+  - url: https://mirror.hosthink.net/qubes
+
 - organization: FlokiNET
   org_url: https://flokinet.is/
   location: Netherlands

@@ -1964,6 +1964,10 @@
   date: 2025-02-27
   affected: no
 
+- xsa: 468
+  date: 2025-05-27
+  affected: no
+
 - xsa: 469
   date: 2025-05-12
   affected: yes

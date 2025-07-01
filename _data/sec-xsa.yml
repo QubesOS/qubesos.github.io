@@ -1972,3 +1972,7 @@
   date: 2025-05-12
   affected: yes
   qsb: 107-2025
+
+- xsa: 470
+  date: 2025-07-01
+  affected: no

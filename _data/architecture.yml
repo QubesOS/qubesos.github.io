@@ -59,25 +59,25 @@
   icon: fa-book
   sub-pages:
   - title: Introduction
-    url: /doc/#introduction
+    url: https://doc.qubes-os.org/en/latest/index.html#introduction
   - title: Choosing hardware
-    url: /doc/#choosing-your-hardware
+    url: https://doc.qubes-os.org/en/latest/index.html#choosing-your-hardware
   - title: Installing and upgrading
-    url: /doc/#downloading-installing-and-upgrading-qubes
+    url: https://doc.qubes-os.org/en/latest/index.html#downloading-installing-and-upgrading-qubes
   - title: How-to guides
-    url: /doc/#how-to-guides
+    url: https://doc.qubes-os.org/en/latest/index.html#how-to-guides
   - title: Templates
-    url: /doc/#templates
+    url: https://doc.qubes-os.org/en/latest/index.html#templates
   - title: Troubleshooting
-    url: /doc/#troubleshooting
+    url: https://doc.qubes-os.org/en/latest/index.html#troubleshooting
   - title: Security in Qubes
-    url: /doc/#security-in-qubes
+    url: https://doc.qubes-os.org/en/latest/index.html#security-in-qubes
   - title: Project security
-    url: /doc/#project-security
+    url: https://doc.qubes-os.org/en/latest/index.html#project-security
   - title: Developer docs
-    url: /doc/#developer-documentation
+    url: https://doc.qubes-os.org/en/latest/index.html#developer-documentation
   - title: External docs
-    url: /doc/#external-documentation
+    url: https://doc.qubes-os.org/en/latest/index.html#external-documentation
 
 - title: News
   url: /news/

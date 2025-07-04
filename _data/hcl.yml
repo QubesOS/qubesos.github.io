@@ -10,7 +10,7 @@
     - url: '#hardware-motherboards'
       text: Motherboards
       id: 3
-    - url: /doc/how-to-use-the-hcl/#generating-and-submitting-new-reports
+    - url: https://doc.qubes-os.org/en/latest/user/hardware/how-to-use-the-hcl.html#generating-and-submitting-new-reports
       text: Add your device
       id: 4
 
@@ -20,7 +20,7 @@
     - url: /doc/how-to-use-the-hcl/
       text: What is the hardware compatibility list (HCL)?
       id: 1
-    - url: /doc/how-to-use-the-hcl/#generating-and-submitting-new-reports
+    - url: https://doc.qubes-os.org/en/latest/user/hardware/how-to-use-the-hcl.html#generating-and-submitting-new-reports
       text: How do I submit a report?
       id: 2
     - url: /doc/system-requirements/

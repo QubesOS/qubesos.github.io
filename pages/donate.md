@@ -148,7 +148,7 @@ However, if you or your organization has relevant knowledge, experience, leads, 
 ### How do I verify your Bitcoin address?
 
 The donation address can be verified via the [Qubes Security Pack](/security/pack/), specifically in the [fund directory](https://github.com/QubesOS/qubes-secpack/tree/master/fund).
-We provide [detailed instructions for verifying the digital signatures](/security/pack/#how-to-obtain-and-authenticate).
+We provide [detailed instructions for verifying the digital signatures](https://doc.qubes-os.org/en/latest/project-security/security-pack.html#how-to-obtain-and-authenticate).
 
 The Qubes Project maintains a [decentralized Bitcoin fund using a multi-signature wallet](/news/2016/07/13/qubes-distributed-fund/).
 This means that no single person is capable of spending these funds.
@@ -156,12 +156,12 @@ This means that no single person is capable of spending these funds.
 ### How do I verify your Ethereum address?
 
 The donation address can be verified via the [Qubes Security Pack](/security/pack/), specifically in the [fund directory](https://github.com/QubesOS/qubes-secpack/tree/master/fund).
-We provide [detailed instructions for verifying the digital signatures](/security/pack/#how-to-obtain-and-authenticate).
+We provide [detailed instructions for verifying the digital signatures](https://doc.qubes-os.org/en/latest/project-security/security-pack.html#how-to-obtain-and-authenticate).
 
 ### How do I verify your Monero address?
 
 The donation address can be verified via the [Qubes Security Pack](/security/pack/), specifically in the [fund directory](https://github.com/QubesOS/qubes-secpack/tree/master/fund).
-We provide [detailed instructions for verifying the digital signatures](/security/pack/#how-to-obtain-and-authenticate).
+We provide [detailed instructions for verifying the digital signatures](https://doc.qubes-os.org/en/latest/project-security/security-pack.html#how-to-obtain-and-authenticate).
 
 ### Is Qubes merchandise available?
 

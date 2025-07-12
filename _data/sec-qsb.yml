@@ -425,3 +425,7 @@
 - qsb: "107"
   title: "Multiple CPU branch prediction vulnerabilities"
   date: 2025-05-15
+
+- qsb: "108"
+  title: "Transitive Scheduler Attacks (XSA-471)"
+  date: 2025-07-08

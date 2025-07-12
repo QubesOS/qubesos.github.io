@@ -1976,3 +1976,8 @@
 - xsa: 470
   date: 2025-07-01
   affected: no
+
+- xsa: 471
+  date: 2025-07-08
+  affected: yes
+  qsb: 108-2025

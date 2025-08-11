@@ -21,7 +21,7 @@ releases:
       verifiers:
         hash: https://ftp.qubes-os.org/iso/Qubes-R4.3.0-rc1-x86_64.iso.DIGESTS
         sig: https://ftp.qubes-os.org/iso/Qubes-R4.3.0-rc1-x86_64.iso.asc
-        key: https://keys.qubes-os.org/keys/qubes-release-4.2-signing-key.asc
+        key: https://keys.qubes-os.org/keys/qubes-release-4.3-signing-key.asc
     - name: qubes-os.org
       display: false
       method: BitTorrent
@@ -32,7 +32,7 @@ releases:
       verifiers:
         hash: https://ftp.qubes-os.org/iso/Qubes-R4.3.0-rc1-x86_64.iso.DIGESTS
         sig: https://ftp.qubes-os.org/iso/Qubes-R4.3.0-rc1-x86_64.iso.asc
-        key: https://keys.qubes-os.org/keys/qubes-release-4.2-signing-key.asc
+        key: https://keys.qubes-os.org/keys/qubes-release-4.3-signing-key.asc
     - name: kernel.org
       display: true
       method: HTTPS
@@ -43,7 +43,7 @@ releases:
       verifiers:
         hash: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.3.0-rc1-x86_64.iso.DIGESTS
         sig: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.3.0-rc1-x86_64.iso.asc
-        key: https://keys.qubes-os.org/keys/qubes-release-4.2-signing-key.asc
+        key: https://keys.qubes-os.org/keys/qubes-release-4.3-signing-key.asc
     - name: halifax.rwth-aachen.de
       display: false
       method: HTTP
@@ -54,7 +54,7 @@ releases:
       verifiers:
         hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R4.3.0-rc1-x86_64.iso.DIGESTS
         sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R4.3.0-rc1-x86_64.iso.asc
-        key: https://keys.qubes-os.org/keys/qubes-release-4.2-signing-key.asc
+        key: https://keys.qubes-os.org/keys/qubes-release-4.3-signing-key.asc
     - name: kernel.org
       display: true
       method: BitTorrent
@@ -65,7 +65,7 @@ releases:
       verifiers:
         hash: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.3.0-rc1-x86_64.iso.DIGESTS
         sig: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.3.0-rc1-x86_64.iso.asc
-        key: https://keys.qubes-os.org/keys/qubes-release-4.2-signing-key.asc
+        key: https://keys.qubes-os.org/keys/qubes-release-4.3-signing-key.asc
     - name: halifax.rwth-aachen.de
       display: false
       method: BitTorrent
@@ -76,7 +76,7 @@ releases:
       verifiers:
         hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R4.3.0-rc1-x86_64.iso.DIGESTS
         sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R4.3.0-rc1-x86_64.iso.asc
-        key: https://keys.qubes-os.org/keys/qubes-release-4.2-signing-key.asc
+        key: https://keys.qubes-os.org/keys/qubes-release-4.3-signing-key.asc
     docs:
       Installation guide:
         featured: true

@@ -5,7 +5,7 @@
 # Releases are removed when they reach EOL.
 
 releases:
-  R4.3.0-rc1:
+  Qubes OS 4.3.0-rc1:
     testing: true
     latest: false
     aging: false

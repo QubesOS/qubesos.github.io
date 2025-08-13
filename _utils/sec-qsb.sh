@@ -73,7 +73,7 @@ printf "
 
 **Source:** [qsb-${QSB}-${YEAR}.txt](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/QSBs/qsb-${QSB}-${YEAR}.txt)
 
-## [Marek Marczykowski-Górecki](/team/#marek-marczykowski-górecki)'s PGP signature
+## [Marek Marczykowski-Górecki](https://www.qubes-os.org/team/#marek-marczykowski-górecki)'s PGP signature
 
 \`\`\`
 " >> $POST
@@ -82,7 +82,7 @@ printf "\`\`\`
 
 **Source:** [qsb-${QSB}-${YEAR}.txt.sig.marmarek](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/QSBs/qsb-${QSB}-${YEAR}.txt.sig.marmarek)
 
-## [Simon Gaiser (aka HW42)](/team/#simon-gaiser-aka-hw42)'s PGP signature
+## [Simon Gaiser (aka HW42)](https://www.qubes-os.org/team/#simon-gaiser-aka-hw42)'s PGP signature
 
 \`\`\`
 " >> $POST
@@ -97,11 +97,11 @@ The purpose of this announcement is to inform the Qubes community that a new Qub
 
 ## What is a Qubes security bulletin (QSB)?
 
-A Qubes security bulletin (QSB) is a security announcement issued by the [Qubes security team](/security/#qubes-security-team). A QSB typically provides a summary and impact analysis of one or more recently-discovered software vulnerabilities, including details about patching to address them. For a list of all QSBs, see [Qubes security bulletins (QSBs)](/security/qsb/).
+A [Qubes security bulletin (QSB)](https://www.qubes-os.org/security/qsb/) is a security announcement issued by the [Qubes security team](https://doc.qubes-os.org/en/latest/project-security/security.html#qubes-security-team). A QSB typically provides a summary and impact analysis of one or more recently-discovered software vulnerabilities, including details about patching to address them.
 
 ## Why should I care about QSBs?
 
-QSBs tell you what actions you must take in order to protect yourself from recently-discovered security vulnerabilities. In most cases, security vulnerabilities are addressed by [updating normally](/doc/how-to-update/). However, in some cases, special user action is required. In all cases, the required actions are detailed in QSBs.
+QSBs tell you what actions you must take in order to protect yourself from recently-discovered security vulnerabilities. In most cases, security vulnerabilities are addressed by [updating normally](https://doc.qubes-os.org/en/latest/user/how-to-guides/how-to-update.html). However, in some cases, special user action is required. In all cases, the required actions are detailed in QSBs.
 
 ## What are the PGP signatures that accompany QSBs?
 

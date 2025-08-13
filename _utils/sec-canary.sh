@@ -55,7 +55,7 @@ printf "
 
 Source: [canary-${CANARY}-${YEAR}.txt](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/canaries/canary-${CANARY}-${YEAR}.txt)
 
-## [Marek Marczykowski-Górecki](/team/#marek-marczykowski-górecki)'s PGP signature
+## [Marek Marczykowski-Górecki](https://www.qubes-os.org/team/#marek-marczykowski-górecki)'s PGP signature
 
 \`\`\`
 " >> $POST
@@ -64,7 +64,7 @@ printf "\`\`\`
 
 Source: [canary-${CANARY}-${YEAR}.txt.sig.marmarek](https://github.com/QubesOS/qubes-secpack/blob/${COMMIT}/canaries/canary-${CANARY}-${YEAR}.txt.sig.marmarek)
 
-## [Simon Gaiser (aka HW42)](/team/#simon-gaiser-aka-hw42)'s PGP signature
+## [Simon Gaiser (aka HW42)](https://www.qubes-os.org/team/#simon-gaiser-aka-hw42)'s PGP signature
 
 \`\`\`
 " >> $POST
@@ -79,7 +79,7 @@ The purpose of this announcement is to inform the Qubes community that a new Qub
 
 ## What is a Qubes canary?
 
-A Qubes canary is a security announcement periodically issued by the [Qubes security team](/security/#qubes-security-team) consisting of several statements to the effect that the signers of the canary have not been compromised. The idea is that, as long as signed canaries including such statements continue to be published, all is well. However, if the canaries should suddenly cease, if one or more signers begin declining to sign them, or if the included statements change significantly without plausible explanation, then this may indicate that something has gone wrong. A list of all canaries is available [here](/security/canary/).
+A [Qubes canary](https://www.qubes-os.org/security/canary/) is a security announcement periodically issued by the [Qubes security team](https://doc.qubes-os.org/en/latest/project-security/security.html#qubes-security-team) consisting of several statements to the effect that the signers of the canary have not been compromised. The idea is that, as long as signed canaries including such statements continue to be published, all is well. However, if the canaries should suddenly cease, if one or more signers begin declining to sign them, or if the included statements change significantly without plausible explanation, then this may indicate that something has gone wrong.
 
 The name originates from the practice in which miners would bring caged canaries into coal mines. If the level of methane gas in the mine reached a dangerous level, the canary would die, indicating to miners that they should evacuate. (See the [Wikipedia article on warrant canaries](https://en.wikipedia.org/wiki/Warrant_canary) for more information, but bear in mind that Qubes Canaries are not strictly limited to legal warrants.)
 
@@ -93,13 +93,13 @@ Here is a non-exhaustive list of examples:
 
 - **Dead canary.** In each canary, we state a window of time during which you should expect the next canary to be published. If no canary is published within that window of time and no good explanation is provided for missing the deadline, then the canary has died.
 - **Missing statement(s).** Canaries include a set of numbered statements at the top. These statements are generally the same across canaries, except for specific numbers and dates that have changed since the previous canary. If an important statement was present in older canaries but suddenly goes missing from new canaries with no correction or explanation, then this may be an indication that the signers can no longer truthfully make that statement.
-- **Missing signature(s).** Qubes canaries are signed by the members of the [Qubes security team](/security/#qubes-security-team) (see below). If one of them has been signing all canaries but suddenly and permanently stops signing new canaries without any explanation, then this may indicate that this person is under duress or can no longer truthfully sign the statements contained in the canary.
+- **Missing signature(s).** Qubes canaries are signed by the members of the [Qubes security team](https://doc.qubes-os.org/en/latest/project-security/security.html#qubes-security-team) (see below). If one of them has been signing all canaries but suddenly and permanently stops signing new canaries without any explanation, then this may indicate that this person is under duress or can no longer truthfully sign the statements contained in the canary.
 
 ## Does every unexpected or unusual occurrence related to a canary indicate something bad?
 
 No, there are many canary-related possibilities that should *not* worry you. Here is a non-exhaustive list of examples:
 
-- **Unusual reposts.** The only canaries that matter are the ones that are validly signed in the [Qubes security pack (qubes-secpack)](/security/pack/). Reposts of canaries (like the one in this announcement) do not have any authority (except insofar as they reproduce validly-signed text from the qubes-secpack). If the actual canary in the qubes-secpack is healthy, but reposts are late, absent, or modified on the website, mailing lists, forum, or social media platforms, you should not be concerned about the canary.
+- **Unusual reposts.** The only canaries that matter are the ones that are validly signed in the [Qubes security pack (qubes-secpack)](https://doc.qubes-os.org/en/latest/project-security/security-pack.html). Reposts of canaries (like the one in this announcement) do not have any authority (except insofar as they reproduce validly-signed text from the qubes-secpack). If the actual canary in the qubes-secpack is healthy, but reposts are late, absent, or modified on the website, mailing lists, forum, or social media platforms, you should not be concerned about the canary.
 - **Last-minute signature(s).** If the canary is signed at the last minute but before the deadline, that's okay. (People get busy and procrastinate sometimes.)
 - **Signatures at different times.** If one signature is earlier or later than the other, but both are present within a reasonable period of time, that's okay. (For example, sometimes one signer is out of town, but we try to plan the deadlines around this.)
 - **Permitted changes.** If something about a canary changes without violating any of the statements in prior canaries, that's okay. (For example, canaries are usually scheduled for the first fourteen days of a given month, but there's no rule that says they have to be.)

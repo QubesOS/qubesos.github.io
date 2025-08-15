@@ -429,3 +429,7 @@
 - qsb: "108"
   title: "Transitive Scheduler Attacks (XSA-471)"
   date: 2025-07-08
+
+- qsb: "109"
+  title: "Intel microcode updates"
+  date: 2025-08-14

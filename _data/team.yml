@@ -12,11 +12,11 @@
   email: business@qubes-os.org
   fingerprint:
 
-- name: User research
-  icon: fa-flask
-  type: inquiries
-  email: team@research.qubes-os.org
-  fingerprint: 4D2E B2FA E2BE 5E8F D785  2DE0 DE1B 6337 FF6C 36F1
+#- name: User research
+#  icon: fa-flask
+#  type: inquiries
+#  email: team@research.qubes-os.org
+#  fingerprint: 4D2E B2FA E2BE 5E8F D785  2DE0 DE1B 6337 FF6C 36F1
 
 # Core
 
@@ -27,14 +27,6 @@
   email: marmarek@invisiblethingslab.com
   fingerprint: 86BA 6E93 318F BA44 6642  A90A DB8F D31C CAD7 D72C
   github: marmarek
-
-- name: Wojtek Porczyk
-  role: "Python, Linux, and infrastructure"
-  type: core
-  picture: team-woju.jpg
-  email: woju@invisiblethingslab.com
-  fingerprint: 68ED 1515 FA6B D2D1 05EA  1624 BF6B D932 103A 2351
-  github: woju
 
 - name: Michael Carbone
   role: "Project management and funding"
@@ -96,22 +88,6 @@
   fingerprint: 6B52 7FE5 6308 5B7A 34B9  6C2F 8F90 3F3E 5662 199B
   github: MiCh
 
-- name: Nina Eleanor Alter
-  email: nina@research.qubes-os.org
-  role: "Design and user research"
-  type: core
-  picture: team-nina.jpg
-  fingerprint: C9D8 795D DFD1 7343 A66B  C406 8207 64BD 962D 8BBA
-  github: ninavizz
-
-- name: Demi Marie Obenour
-  email: demi@invisiblethingslab.com
-  role: "Software developer: Rust, Python, package management, GUI, and storage"
-  type: core
-  picture: team-demi.jpg
-  fingerprint: 7687 4D9F 1336 BA22 5907  1C71 B288 B55F FF9C 22C1
-  github: DemiMarie
-
 - name: Solène Rapenne
   email: contact@lambda-solene.eu
   role: "Documentation maintainer"
@@ -125,6 +101,13 @@
   type: core
   fingerprint: 2E36 3FF6 0A81 92F5 F3EC  867E 8FB4 D514 D770 E6E1
   github: maiska
+
+- name: Rafał Wojdyła
+  role: "Main developer of Qubes Windows tools"
+  type: core
+  email: omeg@invisiblethingslab.com
+  fingerprint: 3AC8 7FA3 04E4 59D0 DF08  21A1 045A 1328 4C85 173A
+  github: omeg
 
 # Emeritus
 
@@ -147,12 +130,13 @@
   type: emeritus
   email: alex@invisiblethingslab.com
 
-- name: Rafał Wojdyła
-  role: "Main developer of Qubes Windows tools"
+- name: Wojtek Porczyk
+  role: "Python, Linux, and infrastructure"
   type: emeritus
-  email: omeg@invisiblethingslab.com
-  fingerprint: 3AC8 7FA3 04E4 59D0 DF08  21A1 045A 1328 4C85 173A
-  github: omeg
+  picture: team-woju.jpg
+  email: woju@invisiblethingslab.com
+  fingerprint: 68ED 1515 FA6B D2D1 05EA  1624 BF6B D932 103A 2351
+  github: woju
 
 # Community
 
@@ -281,6 +265,14 @@
   role: "Documentation and website maintainer"
   type: community
   fingerprint: 3FCF 9A11 1135 0DE9 FA9C  3DD0 6E7A 27B9 09DA FB92
+
+- name: Demi Marie Obenour
+  email: demiobenour@gmail.com
+  role: "Software developer: Rust, Python, package management, GUI, and storage"
+  type: community
+  picture: team-demi.jpg
+  fingerprint: A294 2DA9 5256 D5A7 AEA3  DFEC B336 873A B329 F253
+  github: DemiMarie
 
 - name: Jean-Philippe Ouellet
   email: jpo@vt.edu

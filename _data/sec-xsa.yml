@@ -1981,3 +1981,15 @@
   date: 2025-07-08
   affected: yes
   qsb: 108-2025
+
+- xsa: 472
+  date: 2025-09-09
+  affected: no
+
+- xsa: 473
+  date: 2025-09-09
+  affected: no
+
+- xsa: 474
+  date: 2025-09-09
+  affected: no

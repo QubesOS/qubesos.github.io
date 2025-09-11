@@ -42,7 +42,7 @@ fi
 
 changed=
 
-for mod in _doc _hcl _posts attachment; do
+for mod in _hcl _posts attachment; do
     if update_submodule $mod; then
         git add $mod
         changed="$changed $mod"

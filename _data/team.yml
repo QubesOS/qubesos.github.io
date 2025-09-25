@@ -138,6 +138,14 @@
   fingerprint: 68ED 1515 FA6B D2D1 05EA  1624 BF6B D932 103A 2351
   github: woju
 
+- name: Nina Eleanor Alter
+  email: nina@research.qubes-os.org
+  role: "Design and user research"
+  type: emeritus
+  picture: team-nina.jpg
+  fingerprint: C9D8 795D DFD1 7343 A66B  C406 8207 64BD 962D 8BBA
+  github: ninavizz
+
 # Community
 
 - name: awokd

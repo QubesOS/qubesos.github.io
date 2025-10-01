@@ -109,6 +109,13 @@
   fingerprint: 3AC8 7FA3 04E4 59D0 DF08  21A1 045A 1328 4C85 173A
   github: omeg
 
+- name: Benjamin Grande
+  role: "Software developer"
+  type: core
+  email: ben@invisiblethingslab.com
+  fingerprint: DF38 3487 5B65 7587 13D9 2E91 A475 969D E4E3 71E3
+  github: ben-grande
+
 # Emeritus
 
 - name: Joanna Rutkowska

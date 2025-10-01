@@ -116,11 +116,11 @@
   fingerprint: DF38 3487 5B65 7587 13D9 2E91 A475 969D E4E3 71E3
   github: ben-grande
 
-# Emeritus
+# Former team members
 
 - name: Joanna Rutkowska
   role: "Founder and advisor (formerly architecture, security, and development)"
-  type: emeritus
+  type: former
   picture: team-joanna.jpg
   fingerprint: ED72 7C30 6E76 6BC8 5E62 1AA6 5FA6 C3E4 D9AF BB99
   website: https://blog.invisiblethings.org
@@ -129,17 +129,17 @@
 
 - name: Rafal Wojtczuk
   role: "Architecture and system-level work"
-  type: emeritus
+  type: former
   email: rafal@invisiblethingslab.com
 
 - name: Alexander Tereshkin
   role: "Qubes Windows tools"
-  type: emeritus
+  type: former
   email: alex@invisiblethingslab.com
 
 - name: Wojtek Porczyk
   role: "Python, Linux, and infrastructure"
-  type: emeritus
+  type: former
   picture: team-woju.jpg
   email: woju@invisiblethingslab.com
   fingerprint: 68ED 1515 FA6B D2D1 05EA  1624 BF6B D932 103A 2351
@@ -148,7 +148,7 @@
 - name: Nina Eleanor Alter
   email: nina@research.qubes-os.org
   role: "Design and user research"
-  type: emeritus
+  type: former
   picture: team-nina.jpg
   fingerprint: C9D8 795D DFD1 7343 A66B  C406 8207 64BD 962D 8BBA
   github: ninavizz

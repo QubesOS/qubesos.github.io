@@ -3,7 +3,7 @@
 {% assign inquiries = team-page | where_exp: "item", "item.htmlsection == 'inquiries'" | first %}
 {% assign coreteam = team-page | where_exp: "item", "item.htmlsection == 'core-team'" | first %}
 {% assign joined = team-page | where_exp: "item", "item.htmlsection == 'join'" | first %}
-{% assign emeritus = team-page | where_exp: "item", "item.htmlsection == 'emeritus'" | first %}
+{% assign former = team-page | where_exp: "item", "item.htmlsection == 'former'" | first %}
 {% assign community = team-page | where_exp: "item", "item.htmlsection == 'community'" | first %}
 {% assign team_link = lang | append: "/team/" %}
 {% assign teams = site.pages | concat: site.qubes-translated | where:'permalink', team_link %}
@@ -93,18 +93,18 @@
   </div>
   -->
 </div>
-<!-- Emeritus -->
+<!-- Former team members -->
 <div class="page-content more-bottom">
   <div class="col-lg-12">
-    <a href="{{ team_link }}#emeritus">
-      <h2 id="emeritus" class="text-center more-bottom">{{ emeritus.title }}</h2>
+    <a href="{{ team_link }}#former-team-members">
+      <h2 id="former-team-members" class="text-center more-bottom">{{ former.title }}</h2>
     </a>
     <p>
-      {{ emeritus.text }}
+      {{ former.text }}
     </p>
   </div>
   {% for team in site.data.team %}
-    {% if team.type == "emeritus" %}
+    {% if team.type == "former" %}
       {% assign name_array = team.name | split:" " %}
       <div class="row team">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">

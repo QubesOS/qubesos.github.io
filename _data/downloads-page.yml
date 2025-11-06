@@ -25,7 +25,7 @@
   links:
     - text: Cryptographic hash values
     - text: Detached PGP signature
-    - text: Qubes release signing key
+    - text: Release signing key
     - text: How to verify downloads
       url: /security/verifying-signatures/
     - text: All download mirrors

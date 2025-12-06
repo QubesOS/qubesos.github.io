@@ -8,9 +8,8 @@
   email: Email
   website: Website
 
-- htmlsection: emeritus
-  title: Emeritus
-  text: Emeriti are honorary members of the Qubes team who previously contributed to the project in a central way but who are no longer currently active.
+- htmlsection: former
+  title: Former team members
 
 - htmlsection: community
   title: Community contributors

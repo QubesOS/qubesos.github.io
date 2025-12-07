@@ -5,12 +5,6 @@
   - url: https://qubes-mirror.igniterefereeing.com.au
   - url: http://ti4mfvefw2sx2xpf2l3dpaa6iuwiors7ef3hm3nyal7xhq3chrygorqd.onion
 
-- organization: Foundation for Applied Privacy
-  org_url: https://applied-privacy.net/
-  location: Austria
-  urls:
-  - url: https://qubesos-mirror.applied-privacy.net/
-
 - organization: Alibaba Cloud
   org_url: https://mirrors.aliyun.com/
   location: China

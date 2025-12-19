@@ -48,9 +48,6 @@ git submodule update --init --recursive
 
 echo -e "section_end:$(date +%s):prepare\r\e[0K"
 
-#temp fixup
-git remote set-url origin $(git remote get-url origin | sed -e s/gitlab/github/)
-
 if is_pr; then
     echo -e "section_start:$(date +%s):build_orig\r\e[0KBuilding original site to compare"
     # exact value doesn't matter as long as it is in the future, but needs to

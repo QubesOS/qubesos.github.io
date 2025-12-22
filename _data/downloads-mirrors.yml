@@ -42,6 +42,16 @@
   urls:
   - url: http://ftp.halifax.rwth-aachen.de/qubes/iso/
 
+- organization: Diyar Ciftci
+  org_url:  https://diyarciftci.xyz
+  location: Germany
+  urls:
+  - url: http://mirror.diyarciftci.xyz/qubes/
+  - url: https://mirror.diyarciftci.xyz/qubes/
+  - url: rsync://mirror.diyarciftci.xyz/qubes/
+  - url: http://5gxsihf4vjdhimiotrhchihrfujoanondrplizofwparrtmgbwsafhid.onion/qubes/
+  - url: http://iue4ubnjvskey5gop7n3odkylyjvelb5sl7z4cx6xjwdnthv2hba.b32.i2p/qubes/
+
 - organization: Internet Provider Berlin
   org_url:  https://www.ipb.de/
   location: Germany

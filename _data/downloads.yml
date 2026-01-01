@@ -82,11 +82,11 @@ releases:
         featured: true
         url: https://doc.qubes-os.org/en/latest/user/downloading-installing-upgrading/installation-guide.html
       Release notes:
-        url: https://qubes-doc--1504.org.readthedocs.build/en/1504/developer/releases/4_3/release-notes.html
+        url: https://doc.qubes-os.org/en/latest/developer/releases/4_3/release-notes.html
       Release schedule:
-        url: https://qubes-doc--1504.org.readthedocs.build/en/1504/developer/releases/4_3/schedule.html
-      Upgrading to Qubes R4.2:
-        url: https://qubes-doc--1504.org.readthedocs.build/en/1504/user/downloading-installing-upgrading/upgrade/4_3.html
+        url: https://doc.qubes-os.org/en/latest/developer/releases/4_3/schedule.html
+      Upgrading to Qubes R4.3:
+        url: https://doc.qubes-os.org/en/latest/user/downloading-installing-upgrading/upgrade/4_3.html
     featured_docs:
       get:
       - Release notes

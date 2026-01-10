@@ -128,15 +128,7 @@
           {% for docdata in release.docs %}
             {% assign doc_name = docdata[0] %}
             {% assign doc = docdata[1] %}
-            {% if doc_name == "Installation guide" %}
-              <li><a href="{{ lang }}{{ doc.url }}" class="black-link" title="Installation guide">{{ doc_name }}</a></li>
-            {% endif %}
-            {% if doc_name == "Release notes" %}
-              <li><a href="{{ lang }}{{ doc.url }}" class="black-link" title="Release notes">{{ doc_name }}</a></li>
-            {% endif %}
-            {% if doc_name == "Release schedule" %}
-              <li><a href="{{ lang }}{{ doc.url }}" class="black-link" title="Release schedule">{{ doc_name }}</a></li>
-            {% endif %}
+            <li><a href="{{ lang }}{{ doc.url }}" class="black-link">{{ doc_name }}</a></li>
           {% endfor %}
         <li><a href="{{ downcont.links[4].url }}" class="black-link" title="{{ downcont.links[4].hover }}">{{ downcont.links[4].text }}</a></li>
       </ul>

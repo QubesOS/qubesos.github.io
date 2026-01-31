@@ -137,6 +137,12 @@
   - url: https://ro.mirror.flokinet.net
   - url: rsync://ro.mirror.flokinet.net
 
+- organization: Africloud
+  org_url: https://www.africloud.com
+  location: South Africa
+  urls:
+  - url: https://mirror.africloud.com/qubeos/
+
 - organization: Academic Computer Club in Umeå
   org_url: http://www.accum.se/
   location: Sweden

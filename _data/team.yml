@@ -295,6 +295,12 @@
   type: community
   fingerprint: C37B 75A1 1DC7 C9CC 6CD5  B7A9 AFE6 E6A3 D6EE 7AD6
 
+- name: parulin
+  email: 
+  role: "Documentation contributor and editor"
+  type: community
+  fingerprint: 
+
 - name: Vincent Penquerc'h
   email: vincent.penquerch@collabora.co.uk
   role: "Code review, misc. fixes"

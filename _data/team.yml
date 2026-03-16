@@ -116,6 +116,15 @@
   fingerprint: DF38 3487 5B65 7587 13D9 2E91 A475 969D E4E3 71E3
   github: ben-grande
 
+- name: Piotr Bartman-Szwarc
+  email: prbartman@invisiblethingslab.com
+  role: "Software developer"
+  type: core
+  picture: team-pbs.jpg
+  fingerprint: 2095 BC04 D0AA 2B26 B732 A74D E386 DC76 B775 C5C9
+  github: piotrbartman
+
+
 # Former team members
 
 - name: Joanna Rutkowska

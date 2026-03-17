@@ -433,3 +433,7 @@
 - qsb: "109"
   title: "Intel microcode updates"
   date: 2025-08-14
+
+- qsb: "110"
+  title: "Use after free of paging structures in EPT (XSA-480)"
+  date: 2026-03-17

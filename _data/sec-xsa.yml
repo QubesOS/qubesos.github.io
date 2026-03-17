@@ -2013,3 +2013,12 @@
 - xsa: 479
   date: 2026-01-27
   affected: no
+
+- xsa: 480
+  date: 2026-03-17
+  affected: yes
+  qsb: 110-2026
+
+- xsa: 481
+  date: 2026-03-17
+  affected: no

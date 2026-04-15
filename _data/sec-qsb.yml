@@ -437,3 +437,7 @@
 - qsb: "110"
   title: "Use after free of paging structures in EPT (XSA-480)"
   date: 2026-03-17
+
+- qsb: "111"
+  title: "xfce4-screensaver login bypass"
+  date: 2026-04-14

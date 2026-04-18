@@ -55,29 +55,29 @@
     url: /downloads/#mirrors
 
 - title: Documentation
-  url: /doc/
+  url: https://doc.qubes-os.org/en/r4.3/index.html
   icon: fa-book
   sub-pages:
   - title: Introduction
-    url: https://doc.qubes-os.org/en/latest/index.html#introduction
+    url: https://doc.qubes-os.org/en/r4.3/index.html#introduction
   - title: Choosing hardware
-    url: https://doc.qubes-os.org/en/latest/index.html#choosing-your-hardware
+    url: https://doc.qubes-os.org/en/r4.3/index.html#choosing-your-hardware
   - title: Installing and upgrading
-    url: https://doc.qubes-os.org/en/latest/index.html#downloading-installing-and-upgrading-qubes
+    url: https://doc.qubes-os.org/en/r4.3/index.html#downloading-installing-and-upgrading-qubes
   - title: How-to guides
-    url: https://doc.qubes-os.org/en/latest/index.html#how-to-guides
+    url: https://doc.qubes-os.org/en/r4.3/index.html#how-to-guides
   - title: Templates
-    url: https://doc.qubes-os.org/en/latest/index.html#templates
+    url: https://doc.qubes-os.org/en/r4.3/index.html#templates
   - title: Troubleshooting
-    url: https://doc.qubes-os.org/en/latest/index.html#troubleshooting
+    url: https://doc.qubes-os.org/en/r4.3/index.html#troubleshooting
   - title: Security in Qubes
-    url: https://doc.qubes-os.org/en/latest/index.html#security-in-qubes
+    url: https://doc.qubes-os.org/en/r4.3/index.html#security-in-qubes
   - title: Project security
-    url: https://doc.qubes-os.org/en/latest/index.html#project-security
+    url: https://doc.qubes-os.org/en/r4.3/index.html#project-security
   - title: Developer docs
-    url: https://doc.qubes-os.org/en/latest/index.html#developer-documentation
+    url: https://doc.qubes-os.org/en/r4.3/index.html#developer-documentation
   - title: External docs
-    url: https://doc.qubes-os.org/en/latest/index.html#external-documentation
+    url: https://doc.qubes-os.org/en/r4.3/index.html#external-documentation
 
 - title: News
   url: /news/

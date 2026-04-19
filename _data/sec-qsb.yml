@@ -441,3 +441,7 @@
 - qsb: "111"
   title: "xfce4-screensaver login bypass"
   date: 2026-04-14
+
+- qsb: "112"
+  title: "Floating Point Divider State Sampling (XSA-488)"
+  date: 2026-04-18

@@ -2027,7 +2027,31 @@
   date: 2026-03-24
   affected: no
 
+- xsa: 483
+  date: 2026-04-28
+  affected: no
+
+- xsa: 484
+  date: 2026-04-28
+  affected: no
+
+- xsa: 485
+  date: 2026-04-28
+  affected: no
+
+- xsa: 486
+  date: 2026-04-28
+  affected: no
+
+- xsa: 487
+  date: 2026-04-28
+  affected: no
+
 - xsa: 488
   date: 2026-04-17
   affected: yes
   qsb: 112-2026
+
+- xsa: 489
+  date: 2026-04-28
+  affected: no

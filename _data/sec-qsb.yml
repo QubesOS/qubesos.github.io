@@ -445,3 +445,7 @@
 - qsb: "112"
   title: "Floating Point Divider State Sampling (XSA-488)"
   date: 2026-04-18
+
+- qsb: "113"
+  title: "AMD CPU Opcode Cache corruption (XSA-490)"
+  date: 2026-05-12

@@ -2055,3 +2055,8 @@
 - xsa: 489
   date: 2026-04-28
   affected: no
+
+- xsa: 490
+  date: 2026-05-12
+  affected: yes
+  qsb: 113-2026

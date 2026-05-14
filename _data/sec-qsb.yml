@@ -449,3 +449,7 @@
 - qsb: "113"
   title: "AMD CPU Opcode Cache corruption (XSA-490)"
   date: 2026-05-12
+
+- qsb: "114"
+  title: "Intel CPU data exposure vulnerability"
+  date: 2026-05-13

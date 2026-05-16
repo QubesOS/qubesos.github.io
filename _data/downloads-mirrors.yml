@@ -130,6 +130,14 @@
   - url: ftp://ftp.rnl.tecnico.ulisboa.pt/pub/qubesos/
   - url: rsync://ftp.rnl.tecnico.ulisboa.pt/pub/qubesos
 
+- organization: Randhost
+  org_url: https://randhost.com
+  location: Portugal, South Africa
+  urls:
+  - url: http://mirror.randhost.com/qubes/
+  - url: https://mirror.randhost.com/qubes/
+  - url: rsync://mirror.randhost.com/qubes/
+
 - organization: FlokiNET
   org_url: https://flokinet.is/
   location: Romania

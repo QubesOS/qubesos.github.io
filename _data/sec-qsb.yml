@@ -453,3 +453,7 @@
 - qsb: "114"
   title: "Intel CPU data exposure vulnerability"
   date: 2026-05-13
+
+- qsb: "115"
+  title: "HVM I/O port list traversal (XSA-491)"
+  date: 2026-06-09

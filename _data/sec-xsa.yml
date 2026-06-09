@@ -2060,3 +2060,20 @@
   date: 2026-05-12
   affected: yes
   qsb: 113-2026
+
+- xsa: 491
+  date: 2026-06-09
+  affected: yes
+  qsb: 115-2026
+
+- xsa: 492
+  date: 2026-06-09
+  affected: no
+
+- xsa: 493
+  date: 2026-06-09
+  affected: no
+
+- xsa: 494
+  date: 2026-06-09
+  affected: no

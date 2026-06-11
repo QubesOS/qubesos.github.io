@@ -1,8 +1,8 @@
 - htmlsection: announcement
-  title: Qubes OS User Survey 2026: Shape the future of Qubes! (10-20 minutes)
-  paragraph: Whether you're a long-time Qubes user or haven't even installed it yet, we want to hear about your experiences and about what matters to you. Help us make Qubes the best reasonably secure operating system it can be. If you've ever wanted to influence the development of Qubes, now is your chance. Make your voice heard! (Note: This survey is fully anonymous. We do not collect any data except for the answers you provide.)
+  title: Qubes OS User Survey 2026
+  paragraph: Whether you're a long-time Qubes user or haven't even installed it yet, we want to hear about your experiences and about what matters to you. Help us make Qubes the best reasonably secure operating system it can be. The survey takes 10-20 minutes and is fully anonymous. We do not collect any data except for the answers you provide. If you've ever wanted to influence the development of Qubes, now is your chance. Make your voice heard!
   url: https://pad.itl.space/form/#/2/form/view/4+jrJP2pyim2EyFwrbXrOVbQpzUg71Kt+DWR6p2M3IU/
-  text: Qubes OS User Survey 2026
+  text: Take the survey
 
 - htmlsection: loop-releases
   releases:

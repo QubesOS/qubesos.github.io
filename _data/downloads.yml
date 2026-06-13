@@ -20,7 +20,7 @@ releases:
       url: https://ftp.qubes-os.org/iso/Qubes-R4.3.1-x86_64.iso
       verifiers:
         hash: https://ftp.qubes-os.org/iso/Qubes-R4.3.1-x86_64.iso.DIGESTS
-        sig: https://ftp.qubes-os.org/iso/Qubes-R4.3.1-x86_64.iso.DIGESTS.asc
+        sig: https://ftp.qubes-os.org/iso/Qubes-R4.3.1-x86_64.iso.asc
         key: https://keys.qubes-os.org/keys/qubes-release-4.3-signing-key.asc
     - name: qubes-os.org
       display: false
@@ -31,7 +31,7 @@ releases:
       url: https://ftp.qubes-os.org/iso/Qubes-R4.3.1-x86_64.torrent
       verifiers:
         hash: https://ftp.qubes-os.org/iso/Qubes-R4.3.1-x86_64.iso.DIGESTS
-        sig: https://ftp.qubes-os.org/iso/Qubes-R4.3.1-x86_64.iso.DIGESTS.asc
+        sig: https://ftp.qubes-os.org/iso/Qubes-R4.3.1-x86_64.iso.asc
         key: https://keys.qubes-os.org/keys/qubes-release-4.3-signing-key.asc
     - name: kernel.org
       display: true
@@ -42,7 +42,7 @@ releases:
       url: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.3.1-x86_64.iso
       verifiers:
         hash: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.3.1-x86_64.iso.DIGESTS
-        sig: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.3.1-x86_64.iso.DIGESTS.asc
+        sig: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.3.1-x86_64.iso.asc
         key: https://keys.qubes-os.org/keys/qubes-release-4.3-signing-key.asc
     - name: halifax.rwth-aachen.de
       display: false
@@ -53,7 +53,7 @@ releases:
       url: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R4.3.1-x86_64.iso
       verifiers:
         hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R4.3.1-x86_64.iso.DIGESTS
-        sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R4.3.1-x86_64.iso.DIGESTS.asc
+        sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R4.3.1-x86_64.iso.asc
         key: https://keys.qubes-os.org/keys/qubes-release-4.3-signing-key.asc
     - name: kernel.org
       display: true
@@ -64,7 +64,7 @@ releases:
       url: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.3.1-x86_64.torrent
       verifiers:
         hash: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.3.1-x86_64.iso.DIGESTS
-        sig: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.3.1-x86_64.iso.DIGESTS.asc
+        sig: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.3.1-x86_64.iso.asc
         key: https://keys.qubes-os.org/keys/qubes-release-4.3-signing-key.asc
     - name: halifax.rwth-aachen.de
       display: false
@@ -75,7 +75,7 @@ releases:
       url: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R4.3.1-x86_64.torrent
       verifiers:
         hash: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R4.3.1-x86_64.iso.DIGESTS
-        sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R4.3.1-x86_64.iso.DIGESTS.asc
+        sig: http://ftp.halifax.rwth-aachen.de/qubes/iso/Qubes-R4.3.1-x86_64.iso.asc
         key: https://keys.qubes-os.org/keys/qubes-release-4.3-signing-key.asc
     docs:
       Installation guide:

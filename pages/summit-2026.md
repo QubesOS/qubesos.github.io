@@ -10,13 +10,14 @@ Qubes OS Summit 2026 is a three-day gathering of security enthusiasts, open-sour
 
 ## When and where
 
-**Friday, October 30 --- Sunday, November 1**  
-(2026-10-30 to 2026-11-01)
+**Friday, October 30 @ 9:30 AM --- Sunday, November 1 @ 3:00 PM (GMT+1)**  
+[<i class="fa fa-calendar-plus"></i> Download .ics](/attachment/site/qubes-os-summit-2026.ics)  
+(A more specific schedule will be published after the speaker lineup is finalized.)
 
 [Refugio Berlin](https://refugio.berlin/)  
 Lenaustraße 3-4  
 12047 Berlin  
-[View on OpenStreetMap](https://www.openstreetmap.org/way/263350430)
+[<i class="fa fa-map-marker"></i> View on OpenStreetMap](https://www.openstreetmap.org/way/263350430)
 
 ## Attend in person or online
 
@@ -51,5 +52,7 @@ If you or your organization are interested in sponsoring Qubes OS Summit 2026 or
 ## Code of conduct
 
 This event is covered by [the Qubes OS Project's code of conduct](https://doc.qubes-os.org/en/latest/introduction/code-of-conduct.html).
+
+-----
 
 <div data-hievents-id="8953" data-hievents-primary-color="#63a0ff" data-hievents-primary-text-color="#000000" data-hievents-secondary-color="#63a0ff" data-hievents-secondary-text-color="#ffffff" data-hievents-background-color="#ffffff" data-hievents-widget-type="widget" data-hievents-widget-version="1.0" data-hievents-locale="en" data-hievents-padding="20px" data-hievents-autoresize="true" data-hievents-continue-button-text="Continue" class="hievents-widget"></div>

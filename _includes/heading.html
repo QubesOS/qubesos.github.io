@@ -14,6 +14,9 @@
         {% endfor %}
       {% endif %}
     {% endfor %}
+    {% if page.icon %}
+      <i class="add-left fa {{ page.icon }}"></i>
+    {% endif %}
     {{ page.title }}
   </a>
 </h1>

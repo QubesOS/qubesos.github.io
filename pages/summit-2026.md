@@ -4,6 +4,7 @@ layout: site
 title: Qubes OS Summit 2026
 permalink: /summit-2026/
 load_hievents: true
+icon: fa-mountain
 ---
 
 Qubes OS Summit 2026 is a three-day gathering of security enthusiasts, open-source developers, and digital privacy experts.

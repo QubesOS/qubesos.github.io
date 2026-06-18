@@ -10,12 +10,12 @@ Qubes OS Summit 2026 is a three-day gathering of security enthusiasts, open-sour
 
 ## When and where
 
-**Friday, October 30 --- Sunday, November 1**
+**Friday, October 30 --- Sunday, November 1**  
 (2026-10-30 to 2026-11-01)
 
-[Refugio Berlin](https://refugio.berlin/)
-Lenaustraße 3-4
-12047 Berlin
+[Refugio Berlin](https://refugio.berlin/)  
+Lenaustraße 3-4  
+12047 Berlin  
 [View on OpenStreetMap](https://www.openstreetmap.org/way/263350430)
 
 ## Attend in person or online
@@ -34,8 +34,6 @@ All three options allow you to watch and listen to the presentations. If you att
 
 The free virtual tickets are for those who are presenting remotely and for remote attendees who wish to engage in active discussion online during the Summit. If you just want to watch the presentations online, no ticket or registration is required. The streams and recordings will be publicly available, and you can simply view them at your convenience.
 
-<div data-hievents-id="8953" data-hievents-primary-color="#63a0ff" data-hievents-primary-text-color="#000000" data-hievents-secondary-color="#63a0ff" data-hievents-secondary-text-color="#ffffff" data-hievents-background-color="#ffffff" data-hievents-widget-type="widget" data-hievents-widget-version="1.0" data-hievents-locale="en" data-hievents-padding="20px" data-hievents-autoresize="true" data-hievents-continue-button-text="Continue" class="hievents-widget"></div>
-
 **Note:** Presenters have the option to request that their presentations not be recorded. If a presenter opts out of recording, there will be a "no recording" icon next to that presentation in the conference schedule. Only on-site attendees will be able to view that presentation. It will not be streamed or recorded for later viewing.
 
 ## Become a presenter
@@ -53,3 +51,5 @@ If you or your organization are interested in sponsoring Qubes OS Summit 2026 or
 ## Code of conduct
 
 This event is covered by [the Qubes OS Project's code of conduct](https://doc.qubes-os.org/en/latest/introduction/code-of-conduct.html).
+
+<div data-hievents-id="8953" data-hievents-primary-color="#63a0ff" data-hievents-primary-text-color="#000000" data-hievents-secondary-color="#63a0ff" data-hievents-secondary-text-color="#ffffff" data-hievents-background-color="#ffffff" data-hievents-widget-type="widget" data-hievents-widget-version="1.0" data-hievents-locale="en" data-hievents-padding="20px" data-hievents-autoresize="true" data-hievents-continue-button-text="Continue" class="hievents-widget"></div>

@@ -2078,6 +2078,62 @@
   date: 2026-06-09
   affected: no
 
+- xsa: 495
+  date: 2026-07-28
+  affected: no
+
+- xsa: 496
+  date: 2026-07-28
+  affected: no
+
+- xsa: 497
+  date: 2026-07-28
+  affected: no
+
 - xsa: 498
   date: 2026-07-14
+  affected: no
+
+- xsa: 499
+  date: 2026-07-28
+  affected: no
+
+- xsa: 500
+  date: 2026-07-28
+  affected: yes
+  qsb: 116-2026
+
+- xsa: 501
+  date: 2026-07-28
+  affected: no
+
+- xsa: 502
+  date: 2026-07-28
+  affected: no
+
+- xsa: 503
+  date: 2026-07-28
+  affected: no
+
+- xsa: 504
+  date: 2026-07-28
+  affected: no
+
+- xsa: 505
+  date: 2026-07-28
+  affected: yes
+  qsb: 116-2026
+
+- xsa: 506
+  date: 2026-07-28
+  affected: yes
+  qsb: 116-2026
+
+- xsa: 507
+  date: 2026-07-28
+  affected: yes
+  qsb: 116-2026
+
+- xsa: 508
+  date: 2026-07-28
   affected: no

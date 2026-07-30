@@ -1,8 +1,8 @@
 - htmlsection: announcement
-  title: Qubes OS is made possible by your donations!
-  paragraph: As a free and open-source software project, we rely on donations from users like you in order to keep running. Your contributions directly support the developers who work hard every day to improve your security. Please consider making a donation today.
-  url: /donate/
-  text: Donate
+  title: Qubes OS Summit 2026
+  paragraph: Join us Oct 30 — Nov 1 in Berlin for this three-day gathering of security enthusiasts, open-source developers, and digital privacy experts. Speaker proposals now open!
+  url: https://pretix.eu/qubes/summit2026/
+  text: Get tickets!
 
 - htmlsection: loop-releases
   releases:

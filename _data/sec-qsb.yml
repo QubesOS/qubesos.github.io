@@ -461,3 +461,7 @@
 - qsb: "116"
   title: "Multiple Xen issues (XSA-500, XSA-505, XSA-506, XSA-507)"
   date: 2026-07-28
+
+- qsb: "117"
+  title: "Intel CPU firmware vulnerabilities"
+  date: 2026-08-28

@@ -1,33 +1,33 @@
 - section: doc-widget
   title: Page contents
   links:
-    - url: /doc/
+    - url: https://doc.qubes-os.org/en/latest/index.html
       text: Table of contents
       icon: fa-list
-    - url: /doc/glossary/
+    - url: https://doc.qubes-os.org/en/latest/user/reference/glossary.html
       text: Glossary of terms
       icon: fa-book-reader
-    - url: /support/
+    - url: https://doc.qubes-os.org/en/latest/introduction/support.html
       text: Help and support
       icon: fa-question-circle
     - text: Page source on GitHub
       icon: fa-github
-    - url: /doc/how-to-edit-the-documentation/
+    - url: https://doc.qubes-os.org/en/latest/developer/general/how-to-edit-the-rst-documentation.html
       text: How to edit the docs
       icon: fa-file-signature
-    - url: /doc/issue-tracking/
+    - url: https://doc.qubes-os.org/en/latest/introduction/issue-tracking.html
       text: How to report a bug
       icon: fa-bug
-    - url: /security/
+    - url: https://doc.qubes-os.org/en/latest/project-security/security.html
       text: Report a security issue
       icon: fa-shield-alt
 
 - section: intro
   links:
-    - url: /video-tours/
+    - url: https://doc.qubes-os.org/en/latest/introduction/video-tours.html
       text: Video tours
       id: 1
-    - url: /screenshots/
+    - url: https://doc.qubes-os.org/en/latest/introduction/screenshots.html
       text: Screenshots
       id: 2
 
@@ -74,10 +74,10 @@
     - url: http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion
       text: Tor onion service
       id: 2
-    - url: /privacy/
+    - url: https://doc.qubes-os.org/en/latest/introduction/privacy.html
       text: Privacy policy
       id: 3
-    - url: /doc/issue-tracking/
+    - url: https://doc.qubes-os.org/en/latest/introduction/issue-tracking.html
       text: Report a problem
       id: 4
     - url: /terms/

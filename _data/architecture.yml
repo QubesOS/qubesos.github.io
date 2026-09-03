@@ -3,54 +3,54 @@
   icon: fa-flag
   sub-pages:
   - title: What is Qubes OS?
-    url: /intro/
+    url: https://doc.qubes-os.org/en/latest/introduction/intro.html
   - title: Endorsements
     url: /endorsements/
   - title: Getting started
-    url: /doc/getting-started/
+    url: https://doc.qubes-os.org/en/latest/introduction/getting-started.html
     icon: fa-cubes
   - title: Video tours
-    url: /video-tours/
+    url: https://doc.qubes-os.org/en/latest/introduction/video-tours.html
     icon: fa-play-circle
   - title: Screenshots
-    url: /screenshots/
+    url: /https://doc.qubes-os.org/en/latest/introduction/screenshots.html
     icon: fa-picture-o
   - title: FAQ
-    url: /faq/
+    url: https://doc.qubes-os.org/en/latest/introduction/faq.html
   - title: Help and support
-    url: /support/
+    url: https://doc.qubes-os.org/en/latest/introduction/support.html
     icon: fa-question-circle
   - title: Security center
-    url: /security/
+    url: https://doc.qubes-os.org/en/latest/project-security/security.html
     icon: fa-shield-alt
   - title: Architecture
-    url: /doc/architecture/
+    url: https://doc.qubes-os.org/en/latest/developer/system/architecture.html
   - title: Code of conduct
-    url: /code-of-conduct/
+    url: https://doc.qubes-os.org/en/latest/introduction/code-of-conduct.html
 
 - title: Downloads
   url: /downloads/
   icon: fa-download
   sub-pages:
   - title: System requirements
-    url: /doc/system-requirements/
+    url: https://doc.qubes-os.org/en/latest/user/hardware/system-requirements.html
   - title: Certified hardware
-    url: /doc/certified-hardware/
+    url: https://doc.qubes-os.org/en/latest/user/hardware/certified-hardware/certified-hardware.html
   - title: Compatibility list
     url: /hcl/
     icon: fa-power-off
   - title: Installation guide
-    url: /doc/installation-guide/
+    url: https://doc.qubes-os.org/en/latest/user/downloading-installing-upgrading/installation-guide.html
   - title: Verifying signatures
-    url: /security/verifying-signatures/
+    url: https://doc.qubes-os.org/en/latest/project-security/verifying-signatures.html
   - title: Supported releases
-    url: /doc/supported-releases/
+    url: https://doc.qubes-os.org/en/latest/user/downloading-installing-upgrading/supported-releases.html
   - title: Version scheme
-    url: /doc/version-scheme/
+    url: https://doc.qubes-os.org/en/latest/developer/releases/version-scheme.html
   - title: Source code
-    url: /doc/source-code/
+    url: https://doc.qubes-os.org/en/latest/developer/code/source-code.html
   - title: Software license
-    url: /doc/license/
+    url: https://doc.qubes-os.org/en/latest/developer/code/license.html
   - title: Download mirrors
     url: /downloads/#mirrors
 
@@ -86,11 +86,11 @@
   - title: Announcements
     url: /news/categories/#announcements
   - title: Userbase statistics
-    url: /statistics/
+    url: https://doc.qubes-os.org/en/latest/introduction/statistics.html
     icon: fa-bar-chart
   - title: Research
     icon: fa-file-text
-    url: /research/
+    url: https://doc.qubes-os.org/en/latest/developer/general/research.html
   - title: GitHub
     url: https://github.com/QubesOS
     rel: me
@@ -114,9 +114,9 @@
   icon: fa-users
   sub-pages:
   - title: Report a bug
-    url: /doc/issue-tracking/
+    url: https://doc.qubes-os.org/en/latest/introduction/issue-tracking.html
   - title: Report a security Issue
-    url: /security/
+    url: https://doc.qubes-os.org/en/latest/project-security/security.html
     icon: fa-shield-alt
   - title: Inquiries
     url: /team/#inquiries

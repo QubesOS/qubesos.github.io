@@ -469,3 +469,7 @@
 - qsb: "118"
   title: "Dom0 arbitrary code execution in qvm-copy-to-vm error reporting"
   date: 2026-08-28
+
+- qsb: "119"
+  title: "Potential attacker-controlled format string in qvm-open-in-vm"
+  date: 2026-09-15

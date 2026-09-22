@@ -25,7 +25,7 @@
 
 // Navbar heading
 //
-// Groups `.navbar-brand` and `.navbar-toggle` into a single component for easy
+// Groups `.navbar-brand` and `.navbar-toggler` into a single component for easy
 // styling of responsive aspects.
 
 .navbar-header {
@@ -190,7 +190,7 @@
 // Custom button for toggling the `.navbar-collapse`, powered by the collapse
 // JavaScript plugin.
 
-.navbar-toggle {
+.navbar-toggler {
   position: relative;
   float: right;
   margin-right: $navbar-padding-horizontal;
@@ -439,7 +439,7 @@
     }
   }
 
-  .navbar-toggle {
+  .navbar-toggler {
     border-color: $navbar-default-toggle-border-color;
     &:hover,
     &:focus {
@@ -574,7 +574,7 @@
   }
 
   // Darken the responsive nav toggle
-  .navbar-toggle {
+  .navbar-toggler {
     border-color: $navbar-inverse-toggle-border-color;
     &:hover,
     &:focus {

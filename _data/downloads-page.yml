@@ -9,7 +9,7 @@
     - r_version: testing
       snippets:
         - snippet: This is a testing release.
-          url: /doc/testing/
+          url: https://doc.qubes-os.org/en/latest/user/downloading-installing-upgrading/testing.html
         - snippet: Please help us improve it by reporting any bugs you encounter. For important work, we recommend the latest stable release.
     - r_version: stable
       snippets:
@@ -27,7 +27,7 @@
     - text: Detached PGP signature
     - text: Release signing key
     - text: How to verify downloads
-      url: /security/verifying-signatures/
+      url: https://doc.qubes-os.org/en/latest/project-security/verifying-signatures.html
     - text: All download mirrors
       url: '#mirrors'
       hover: View all download mirrors

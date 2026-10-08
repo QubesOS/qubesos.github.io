@@ -473,3 +473,7 @@
 - qsb: "119"
   title: "Potential attacker-controlled format string in qvm-open-in-vm"
   date: 2026-09-15
+
+- qsb: "120"
+  title: "Two CTAP proxy vulnerabilities"
+  date: 2026-10-08

@@ -2157,3 +2157,7 @@
 - xsa: 513
   date: 2026-09-08
   affected: no
+
+- xsa: 522
+  date: 2026-10-09
+  affected: no

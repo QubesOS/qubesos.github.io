@@ -16,50 +16,6 @@
 }
 
 
-/* Style Guide */
-@mixin visual-style-guide-focus() {
-  background-color: $gray-lighter;
-  border-radius: $border-radius-base;
-  padding: $spacing-unit;
-}
-
-.visual-style-guide {
-
-  .swatch {
-    display: inline-block;
-
-    .color {
-      width: 90px;
-      height: 90px;
-      border-radius: $border-radius-base;
-    }
-
-    strong {
-      display: block;
-    }
-  }
-
-  .focus {
-
-    background-color: $gray-lighter;
-    border-radius: $border-radius-base;
-    padding: $spacing-unit;
-
-    .font {
-      font-size: 30px;
-      line-height: 30px;
-    }
-
-    img {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      max-height: 175px;
-    }
-  }
-
-}
-
-
 // Font
 .ostrich {
   font-family: $ostrich;

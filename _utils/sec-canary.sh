@@ -130,6 +130,7 @@ $ gpg --verify canary-${CANARY}-${YEAR}.txt.sig.marmarek canary-${CANARY}-${YEAR
 $ gpg --verify canary-${CANARY}-${YEAR}.txt.sig.simon canary-${CANARY}-${YEAR}.txt
 \`\`\`
 
-You can also verify the signatures directly from this announcement in addition to or instead of verifying the files from the qubes-secpack. Simply copy and paste the Qubes Canary $CANARY text into a plain text file and do the same for both signature files. Then, perform the same authentication steps as listed above, substituting the filenames above with the names of the files you just created." >> $POST
+You can also verify the signatures directly from this announcement in addition to or instead of verifying the files from the qubes-secpack. Simply copy and paste the Qubes Canary $CANARY text into a plain text file and do the same for both signature files. Then, perform the same authentication steps as listed above, substituting the filenames above with the names of the files you just created.
+" >> $POST
 
 exit

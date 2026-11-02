@@ -65,9 +65,7 @@
     </div>
     <p>
       &#169;
-      <script type="text/javascript">
-        document.write(new Date().getFullYear());
-      </script>
+      {{ site.time | date: "%Y" }}
       {{ foot.title }}<br>
       <a href="{{ web-source.url }}">{{ web-source.text }}</a> |
       <a href="{{ onion.url }}">{{ onion.text }}</a> |
@@ -88,24 +86,10 @@
   <!-- Doc page table of contents -->
   {% if page.path contains '_doc/' %}
     <script src="/js/jquery.toc.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('#doc-content').toc({
-          renderIn: '#page-toc',
-          anchorPrefix: 'tocAnchor-', // the default prefix used for generated TOC elements IDs
-          showAlways: true, //Show TOC also if only one H1 is present on page, the TOC is never show if no H1s are found on page
-          saveShowStatus: false, // Save the collapse status using a cookie (see dependecies for further details)
-          contentsText: 'Contents', // The label text shown for Content, you can localize passing another string
-          hideText: 'hide', // The label text shown for hide button, you can localize passing another string
-          showText: 'show' // The label text shown for show button, you can localize passing another string
-        })
-      })
-    </script>
+    <script src="/js/toc-init.js"></script>
   {% endif %}
-<!-- Heading anchor links -->
-<script src="/js/anchor.min.js"></script>
-<script>anchors.add();</script>
-  <!-- Remove anchors on team page -->
-  {% if page.permalink == '/team/' %}
-    <script>anchors.removeAll();</script>
-  {% endif %}
+<!-- Heading anchor links (not on team page) -->
+{% unless page.permalink == '/team/' %}
+  <script src="/js/anchor.min.js"></script>
+  <script src="/js/anchor-init.js"></script>
+{% endunless %}

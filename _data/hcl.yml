@@ -37,7 +37,7 @@
   title: Terms &amp; colors
   colors:
     - green: feature is working correctly
-    - blue: a blank cell indicates we lack information
+    - blue: we lack information
     - trump: some tweaking is needed, see remarks for more information
     - red: does not work or is not present
 

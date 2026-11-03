@@ -2193,3 +2193,8 @@
 - xsa: 522
   date: 2026-10-09
   affected: no
+
+- xsa: 523
+  date: 2026-11-03
+  affected: yes
+  qsb: 121-2026

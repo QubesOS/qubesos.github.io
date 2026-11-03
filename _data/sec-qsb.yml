@@ -477,3 +477,7 @@
 - qsb: "120"
   title: "Two CTAP proxy vulnerabilities"
   date: 2026-10-08
+
+- qsb: "121"
+  title: "Arbitrary read/write via grant copy (XSA-523)"
+  date: 2026-11-03

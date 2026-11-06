@@ -24,6 +24,7 @@
 - htmlsection: download-content
   links:
     - text: Cryptographic hash values
+    - text: Signature for hash values
     - text: Detached PGP signature
     - text: Release signing key
     - text: How to verify downloads

@@ -104,22 +104,21 @@
             <samp>{{ source.filename }}</samp>
           </a>
           {% for verifier in source.verifiers %}
-            {% comment Do not show hash method until clearsigned signatures removed %}
-            {% raw %}
             {% if verifier[0] == "hash" %}
               <a class="btn btn-default btn-block" href="{{ verifier[1] }}" title="Cryptographic hash values for {{ release_name }}. Right-click → Save link as...">
                 <i class="fa fa-fw fa-download"></i>{{ downcont.links[0].text }}
               </a>
-            {% elif verifier[0] == "sig" %}
-            {% endraw %}
-            {% endcomment %}
-            {% if verifier[0] == "sig" %}
-              <a class="btn btn-default btn-block" href="{{ verifier[1] }}" title="Detached PGP signature file for {{ release_name }}. Right-click → Save link as...">
+            {% elsif verifier[0] == "hash_sig" %}
+              <a class="btn btn-default btn-block" href="{{ verifier[1] }}" title="Detached PGP signature file for the hash values of {{ release_name }}. Right-click → Save link as...">
                 <i class="fa fa-fw fa-download"></i>{{ downcont.links[1].text }}
+              </a>
+            {% elsif verifier[0] == "sig" %}
+              <a class="btn btn-default btn-block" href="{{ verifier[1] }}" title="Detached PGP signature file for {{ release_name }}. Right-click → Save link as...">
+                <i class="fa fa-fw fa-download"></i>{{ downcont.links[2].text }}
               </a>
             {% elsif verifier[0] == "key" %}
               <a class="btn btn-default btn-block" href="{{ verifier[1] }}" title="PGP Release Signing Key for {{ release_name }}. Right-click → Save link as...">
-                <i class="fa fa-fw fa-download"></i>{{ downcont.links[2].text }}
+                <i class="fa fa-fw fa-download"></i>{{ downcont.links[3].text }}
               </a>
             {% endif %}
           {% endfor %}
@@ -129,7 +128,7 @@
     <!-- Download helper links -->
     <div class="col-xs-12 col-sm-6 col-lg-4">
       <ul class="list-unstyled">
-        <li><a href="{{ downcont.links[3].url }}" class="black-link">{{ downcont.links[3].text }}</a></li>
+        <li><a href="{{ downcont.links[4].url }}" class="black-link">{{ downcont.links[4].text }}</a></li>
           {% for docdata in release.docs %}
             {% assign doc_name = docdata[0] %}
             {% assign doc = docdata[1] %}
@@ -143,7 +142,7 @@
               <li><a href="{{ lang }}{{ doc.url }}" class="black-link" title="Release schedule">{{ doc_name }}</a></li>
             {% endif %}
           {% endfor %}
-        <li><a href="{{ downcont.links[4].url }}" class="black-link" title="{{ downcont.links[4].hover }}">{{ downcont.links[4].text }}</a></li>
+        <li><a href="{{ downcont.links[5].url }}" class="black-link" title="{{ downcont.links[5].hover }}">{{ downcont.links[5].text }}</a></li>
       </ul>
     </div>
   </div>

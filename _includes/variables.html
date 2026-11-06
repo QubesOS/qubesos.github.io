@@ -20,8 +20,6 @@
     {% assign endorsements = site.data.endorsements %}
 <!-- Team page -->
     {% assign team-page = site.data.team-page %}
-<!-- Style guide page -->
-    {% assign visual-style-guide-page = site.data.visual-style-guide-page %}
   {% else %}
 <!-- Page language -->
     {% assign lang = "/" | append: page.lang %}
@@ -61,11 +59,6 @@
     {% assign team-page = site.data.translation[page.lang].team-page %}
     {% if team-page == nil or team-page.size == 0 %}
       {% assign team-page = site.data.team-page %}
-    {% endif %}
-<!-- Style guide page -->
-    {% assign visual-style-guide-page = site.data.translation[page.lang].visual-style-guide-page %}
-    {% if visual-style-guide-page == nil or visual-style-guide-page.size == 0 %}
-      {% assign visual-style-guide-page = site.data.visual-style-guide-page %}
     {% endif %}
   {% endif %}
 <!-- Doc link -->

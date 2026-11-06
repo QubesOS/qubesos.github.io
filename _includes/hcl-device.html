@@ -10,7 +10,7 @@
       {% endif %}
     </a>
   </td>
-  <td>{{ device.bios }}</td>
+  <td>{{ device.bios | default: 'unknown' }}</td>
   {% assign param=device.hvm %}
   {% include hcl-cell.html param=param %}
   {% assign param=device.iommu %}

@@ -481,3 +481,7 @@
 - qsb: "121"
   title: "Arbitrary read/write via grant copy (XSA-523)"
   date: 2026-11-03
+
+- qsb: "122"
+  title: "Package verification bypass in APT (DSA-6607-1)"
+  date: 2026-11-06

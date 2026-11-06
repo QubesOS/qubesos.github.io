@@ -100,6 +100,18 @@ li.list-links-normal {
   font-size: 18px;
 }
 
+/**
+ * External links
+ */
+// Skip buttons, image links and links that already have an icon
+.page-content a[href^="http"]:not([href^="https://www.qubes-os.org"]):not([href^="https://qubes-os.org"]):not([href^="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion"]):not(.btn):not(:has(img, .fa, .fas, .fab, .fa-solid, .fa-brands))::after {
+  // \00a0 = no-break space
+  content: "\00a0\f08e";
+  font: var(--fa-font-solid);
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+}
+
 
 //
 // Extras - Adding & Removing Margins

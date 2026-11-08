@@ -27,11 +27,19 @@ SIG_SIMON=${CANARY_LOC}/canary-${CANARY}-${YEAR}.txt.sig.simon
 # Get the input canary file
 CANARY_FILE=${CANARY_LOC}/canary-${CANARY}-${YEAR}.txt
 
+# Verify signatures
+printf 'Checking PGP signatures...\n'
+if
+  gpg --verify $SIG_MAREK $CANARY_FILE &&
+  gpg --verify $SIG_SIMON $CANARY_FILE; then
+    printf '\n\033[32m%s\033[0m\n' "Signature verification successful. Proceeding..."
+
 # Update canary website data
 printf -- "
 - canary: \"${CANARY}\"
   date: $CANARY_DATE
 " >> $CANARY_DATA
+echo "Appended canary $CANARY to $CANARY_DATA"
 
 # Output post file
 POST=${HOME}/repo/qubes/qubesos.github.io/_posts/${POST_DATE}-canary-${CANARY}.md
@@ -132,5 +140,11 @@ $ gpg --verify canary-${CANARY}-${YEAR}.txt.sig.simon canary-${CANARY}-${YEAR}.t
 
 You can also verify the signatures directly from this announcement in addition to or instead of verifying the files from the qubes-secpack. Simply copy and paste the Qubes Canary $CANARY text into a plain text file and do the same for both signature files. Then, perform the same authentication steps as listed above, substituting the filenames above with the names of the files you just created.
 " >> $POST
-
+echo "Generated canary $CANARY announcement post: $POST"
+echo "Done."
 exit
+
+else
+  printf '\n\033[31m%s\033[0m\n' "Signature verification FAILED. Aborting." >&2
+  exit 1
+fi

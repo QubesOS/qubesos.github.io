@@ -27,6 +27,13 @@ QSB_FILE=${QSB_LOC}/qsb-${QSB}-${YEAR}.txt
 SIG_MAREK=${QSB_LOC}/qsb-${QSB}-${YEAR}.txt.sig.marmarek
 SIG_SIMON=${QSB_LOC}/qsb-${QSB}-${YEAR}.txt.sig.simon
 
+# Verify signatures
+printf 'Checking PGP signatures...\n'
+if
+  gpg --verify $SIG_MAREK $QSB_FILE &&
+  gpg --verify $SIG_SIMON $QSB_FILE; then
+    printf '\n\033[32m%s\033[0m\n' "Signature verification successful. Proceeding..."
+
 # Get the QSB title
 TITLE=`sed -n '6p' $QSB_FILE | sed -e 's/^[ \t]*//'`
 # Get the QSB date
@@ -38,6 +45,7 @@ printf -- "
   title: \"${TITLE}\"
   date: $QSB_DATE
 " >> $QSB_DATA
+echo "Appended QSB-${QSB} to $QSB_DATA"
 
 # Update XSA website data (if applicable)
 #@TODO: Create a loop to handle multiple XSAs
@@ -126,5 +134,11 @@ $ gpg --verify qsb-${QSB}-${YEAR}.txt.sig.simon qsb-${QSB}-${YEAR}.txt
 
 You can also verify the signatures directly from this announcement in addition to or instead of verifying the files from the qubes-secpack. Simply copy and paste the QSB-$QSB text into a plain text file and do the same for both signature files. Then, perform the same authentication steps as listed above, substituting the filenames above with the names of the files you just created.
 " >> $POST
-
+echo "Generated QSB-${QSB} announcement post: $POST"
+echo "Done."
 exit
+
+else
+  printf '\n\033[31m%s\033[0m\n' "Signature verification FAILED. Aborting." >&2
+  exit 1
+fi

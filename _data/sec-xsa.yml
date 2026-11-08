@@ -2198,3 +2198,15 @@
   date: 2026-11-03
   affected: yes
   qsb: 121-2026
+
+- xsa: 526
+  date: 2026-11-06
+  affected: no
+
+- xsa: 527
+  date: 2026-11-06
+  affected: no
+
+- xsa: 528
+  date: 2026-11-06
+  affected: no

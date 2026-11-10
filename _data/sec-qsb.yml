@@ -485,3 +485,7 @@
 - qsb: "122"
   title: "Package verification bypass in APT (DSA-6607-1)"
   date: 2026-11-06
+
+- qsb: "123"
+  title: "AMD CPU vulnerabilities (XSA-524, XSA-525)"
+  date: 2026-11-10

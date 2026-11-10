@@ -2199,6 +2199,16 @@
   affected: yes
   qsb: 121-2026
 
+- xsa: 524
+  date: 2026-11-10
+  affected: yes
+  qsb: 123-2026
+
+- xsa: 525
+  date: 2026-11-10
+  affected: yes
+  qsb: 123-2026
+
 - xsa: 526
   date: 2026-11-06
   affected: no
@@ -2210,3 +2220,19 @@
 - xsa: 528
   date: 2026-11-06
   affected: no
+
+- xsa: 529
+  date: 2026-11-10
+  affected: no
+
+- xsa: 530
+  date: 2026-11-10
+  affected: no
+
+- xsa: 531
+  date: 2026-11-10
+  affected: no
+
+- xsa: 532
+  date: 2026-11-10
+  affected: tba

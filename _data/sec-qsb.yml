@@ -489,3 +489,7 @@
 - qsb: "123"
   title: "AMD CPU vulnerabilities (XSA-524, XSA-525)"
   date: 2026-11-10
+
+- qsb: "124"
+  title: "Partial filtering bypass in split-gpg2"
+  date: 2026-11-13

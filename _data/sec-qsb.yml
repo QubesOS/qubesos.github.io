@@ -493,3 +493,7 @@
 - qsb: "124"
   title: "Partial filtering bypass in split-gpg2"
   date: 2026-11-13
+
+- qsb: "125"
+  title: "Incorrect ordering of page-freeing and p2m flush (XSA-535)"
+  date: 2026-11-26

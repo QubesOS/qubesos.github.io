@@ -2236,3 +2236,8 @@
 - xsa: 532
   date: 2026-11-10
   affected: tba
+
+- xsa: 535
+  date: 2026-11-26
+  affected: yes
+  qsb: 125-2026

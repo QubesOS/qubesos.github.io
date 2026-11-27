@@ -36,6 +36,13 @@
   urls:
   - url: https://mirrors.dotsrc.org/qubes/
 
+- organization: Simafri
+  org_url: https://www.simafri.com/en/managed-vps/
+  location: France
+  urls:
+  - url: https://qubes.mirror.simafri.com/qubes/iso/
+  - url: rsync://qubes.mirror.simafri.com/qubes/iso/
+
 - organization: RWTH Aachen University
   org_url: https://www.halifax.rwth-aachen.de
   location: Germany

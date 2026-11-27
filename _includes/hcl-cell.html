@@ -2,11 +2,7 @@
   {% assign value = include.param.message %}
   {% assign status = include.param.status %}
 {% else %}
-  {% if include.param %}
-    {% assign value = include.param %}
-  {% else %}
-    {% assign value = 'unknown' %}
-  {% endif %}
+  {% assign value = include.param | default: 'unknown' %}
     {% assign status = value %}
 {% endif %}
 <td class="{% include hcl-color.css value=status %} text-center">

@@ -16,6 +16,26 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Content Security Policy -->
+  <!-- Allow only our own files, plus the few outside sources used by some pages:
+       Open Collective (donate and partners pages), YouTube (news posts),
+       tools.qubes-os.org (old news post) and DuckDuckGo (footer search).
+       The style hash is for an empty <style> element, which AnchorJS and the
+       Open Collective script add and then fill using JavaScript. AnchorJS also
+       loads its link icon font from a data: URL. -->
+  {% capture csp %}
+    default-src 'none';
+    script-src 'self' https://opencollective.com/qubes-os/banner.js;
+    style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';
+    img-src 'self' https://opencollective.com/static/images/ https://tools.qubes-os.org/counter/;
+    font-src 'self' data:;
+    manifest-src 'self';
+    frame-src https://opencollective.com/qubes-os/ https://www.youtube-nocookie.com/embed/;
+    object-src https://opencollective.com/qubes-os/tiers/;
+    form-action https://duckduckgo.com/;
+    base-uri 'none'
+  {% endcapture %}
+  <meta http-equiv="Content-Security-Policy" content="{{ csp | normalize_whitespace }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="onion-location" content="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion{{ page.url | replace:'index.html','' }}">
   <!-- Page title -->

@@ -32,9 +32,19 @@ div.home-banner {
   }
 
   div.home-big-button {
+    display: flex;
     padding-top: $spacing-unit;
-    width: 400px;
+    width: 600px;
     margin: 0px auto;
+    .btn {
+      flex: 1;
+      margin: 0 ($spacing-unit / 4);
+    }
+    .btn-default {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     small {
       color: #dbe8ff;
     }
@@ -121,6 +131,18 @@ img.featured-logo {
       padding-top: 0px;
       width: 70%;
       margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+
+  div.home-banner {
+    div.home-big-button {
+      flex-direction: column;
+      .btn {
+        margin: 0 0 ($spacing-unit / 2);
+      }
     }
   }
 }
